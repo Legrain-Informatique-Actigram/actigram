@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<ListUpdates>
+	<Updates>
+		<Update VersionAvant="8.5"   VersionApres="9.5"   NomScript="ScriptMigration9.5.sql"   />
+		<Update VersionAvant="9.5"   VersionApres="9.6"   NomScript="ScriptMigration9.6.sql"   />
+    <Update VersionAvant="9.6"   VersionApres="9.7"   NomScript="ScriptMigration9.7.sql"   />
+    <Update VersionAvant="9.7"   VersionApres="9.8"   NomScript="ScriptMigration9.8.sql"   />
+    <Update VersionAvant="9.8"   VersionApres="9.9"   NomScript="ScriptMigration9.9.sql"   />
+    <Update VersionAvant="9.9"   VersionApres="10.0"   NomScript="ScriptMigration10.0.sql"   />
+    <Update VersionAvant="10.0"   VersionApres="10.1"   NomScript="ScriptMigration10.1.sql"   />
+    <Update VersionAvant="10.1"   VersionApres="10.2"   NomScript="ScriptMigration10.2.sql"   />
+	</Updates>
+</ListUpdates>

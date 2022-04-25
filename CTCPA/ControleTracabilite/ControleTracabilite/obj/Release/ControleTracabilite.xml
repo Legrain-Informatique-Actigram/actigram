@@ -1,0 +1,408 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+ControleTracabilite
+</name>
+</assembly>
+<members>
+<member name="T:ControleTracabilite.AgrifactTracaDataSet.ABonReceptionDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ControleTracabilite.AgrifactTracaDataSet.ABonReception_DetailDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ControleTracabilite.AgrifactTracaDataSet.CompositionProduitDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ControleTracabilite.AgrifactTracaDataSet.EntrepriseDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ControleTracabilite.AgrifactTracaDataSet.FamilleDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ControleTracabilite.AgrifactTracaDataSet.LotDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ControleTracabilite.AgrifactTracaDataSet.MouvementDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ControleTracabilite.AgrifactTracaDataSet.Mouvement_DetailDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ControleTracabilite.AgrifactTracaDataSet.ProduitDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ControleTracabilite.AgrifactTracaDataSet.ListeChoixDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ControleTracabilite.AgrifactTracaDataSet.TelephoneEntrepriseDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ControleTracabilite.AgrifactTracaDataSet.EtatStockDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ControleTracabilite.AgrifactTracaDataSet.DefinitionControleDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ControleTracabilite.AgrifactTracaDataSet.BaremeDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ControleTracabilite.AgrifactTracaDataSet.ResultatControleDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ControleTracabilite.AgrifactTracaDataSet.ResultatBaremeDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ControleTracabilite.AgrifactTracaDataSet.ModeleBaremeDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ControleTracabilite.AgrifactTracaDataSet.ModeleDefinitionControleDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ControleTracabilite.AgrifactTracaDataSet.CritereModeleDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ControleTracabilite.AgrifactTracaDataSet.ABonReceptionRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ControleTracabilite.AgrifactTracaDataSet.ABonReception_DetailRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ControleTracabilite.AgrifactTracaDataSet.CompositionProduitRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ControleTracabilite.AgrifactTracaDataSet.EntrepriseRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ControleTracabilite.AgrifactTracaDataSet.FamilleRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ControleTracabilite.AgrifactTracaDataSet.LotRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ControleTracabilite.AgrifactTracaDataSet.MouvementRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ControleTracabilite.AgrifactTracaDataSet.Mouvement_DetailRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ControleTracabilite.AgrifactTracaDataSet.ProduitRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ControleTracabilite.AgrifactTracaDataSet.ListeChoixRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ControleTracabilite.AgrifactTracaDataSet.TelephoneEntrepriseRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ControleTracabilite.AgrifactTracaDataSet.EtatStockRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ControleTracabilite.AgrifactTracaDataSet.DefinitionControleRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ControleTracabilite.AgrifactTracaDataSet.BaremeRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ControleTracabilite.AgrifactTracaDataSet.ResultatControleRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ControleTracabilite.AgrifactTracaDataSet.ResultatBaremeRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ControleTracabilite.AgrifactTracaDataSet.ModeleBaremeRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ControleTracabilite.AgrifactTracaDataSet.ModeleDefinitionControleRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ControleTracabilite.AgrifactTracaDataSet.CritereModeleRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ControleTracabilite.AgrifactTracaDataSet.ABonReceptionRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ControleTracabilite.AgrifactTracaDataSet.ABonReception_DetailRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ControleTracabilite.AgrifactTracaDataSet.CompositionProduitRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ControleTracabilite.AgrifactTracaDataSet.EntrepriseRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ControleTracabilite.AgrifactTracaDataSet.FamilleRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ControleTracabilite.AgrifactTracaDataSet.LotRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ControleTracabilite.AgrifactTracaDataSet.MouvementRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ControleTracabilite.AgrifactTracaDataSet.Mouvement_DetailRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ControleTracabilite.AgrifactTracaDataSet.ProduitRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ControleTracabilite.AgrifactTracaDataSet.ListeChoixRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ControleTracabilite.AgrifactTracaDataSet.TelephoneEntrepriseRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ControleTracabilite.AgrifactTracaDataSet.EtatStockRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ControleTracabilite.AgrifactTracaDataSet.DefinitionControleRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ControleTracabilite.AgrifactTracaDataSet.BaremeRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ControleTracabilite.AgrifactTracaDataSet.ResultatControleRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ControleTracabilite.AgrifactTracaDataSet.ResultatBaremeRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ControleTracabilite.AgrifactTracaDataSet.ModeleBaremeRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ControleTracabilite.AgrifactTracaDataSet.ModeleDefinitionControleRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ControleTracabilite.AgrifactTracaDataSet.CritereModeleRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ControleTracabilite.AgrifactTracaDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:ControleTracabilite.AgrifactTracaDataSetTableAdapters.ABonReceptionTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ControleTracabilite.AgrifactTracaDataSetTableAdapters.ABonReception_DetailTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ControleTracabilite.AgrifactTracaDataSetTableAdapters.CompositionProduitTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ControleTracabilite.AgrifactTracaDataSetTableAdapters.EntrepriseTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ControleTracabilite.AgrifactTracaDataSetTableAdapters.FamilleTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ControleTracabilite.AgrifactTracaDataSetTableAdapters.LotTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ControleTracabilite.AgrifactTracaDataSetTableAdapters.MouvementTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ControleTracabilite.AgrifactTracaDataSetTableAdapters.Mouvement_DetailTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ControleTracabilite.AgrifactTracaDataSetTableAdapters.ProduitTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ControleTracabilite.AgrifactTracaDataSetTableAdapters.ListeChoixTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ControleTracabilite.AgrifactTracaDataSetTableAdapters.TelephoneEntrepriseTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ControleTracabilite.AgrifactTracaDataSetTableAdapters.EtatStockTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ControleTracabilite.AgrifactTracaDataSetTableAdapters.DefinitionControleTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ControleTracabilite.AgrifactTracaDataSetTableAdapters.BaremeTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ControleTracabilite.AgrifactTracaDataSetTableAdapters.ResultatControleTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ControleTracabilite.AgrifactTracaDataSetTableAdapters.ResultatBaremeTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ControleTracabilite.AgrifactTracaDataSetTableAdapters.ModeleBaremeTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ControleTracabilite.AgrifactTracaDataSetTableAdapters.ModeleDefinitionControleTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ControleTracabilite.AgrifactTracaDataSetTableAdapters.CritereModeleTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="P:ControleTracabilite.My.Resources.IconesControles.ResourceManager">
+	<summary>
+  Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+</summary>
+</member><member name="P:ControleTracabilite.My.Resources.IconesControles.Culture">
+	<summary>
+  Remplace la propriété CurrentUICulture du thread actuel pour toutes
+  les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+</summary>
+</member><member name="T:ControleTracabilite.My.Resources.IconesControles">
+	<summary>
+  Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+</summary>
+</member><member name="T:ControleTracabilite.EtatsDataset.EtatTracaLotDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ControleTracabilite.EtatsDataset.ListeLotsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ControleTracabilite.EtatsDataset.EtatTracaMPDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ControleTracabilite.EtatsDataset.EtatTracaLotRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ControleTracabilite.EtatsDataset.ListeLotsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ControleTracabilite.EtatsDataset.EtatTracaMPRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ControleTracabilite.EtatsDataset.EtatTracaLotRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ControleTracabilite.EtatsDataset.ListeLotsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ControleTracabilite.EtatsDataset.EtatTracaMPRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ControleTracabilite.EtatsDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:ControleTracabilite.EtatsDatasetTableAdapters.EtatTracaLotTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ControleTracabilite.EtatsDatasetTableAdapters.ListeLotsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ControleTracabilite.EtatsDatasetTableAdapters.EtatTracaMPTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="P:ControleTracabilite.My.Resources.Resources.ResourceManager">
+	<summary>
+  Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+</summary>
+</member><member name="P:ControleTracabilite.My.Resources.Resources.Culture">
+	<summary>
+  Remplace la propriété CurrentUICulture du thread actuel pour toutes
+  les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+</summary>
+</member><member name="P:ControleTracabilite.My.Resources.Resources.Menus">
+	<summary>
+  Recherche une chaîne localisée semblable à &lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;ArrayOfMenu&gt;
+  &lt;Menu Nom="Donnees" Text="Données" Image=""&gt;
+    &lt;Items&gt;
+      &lt;Item Type="Separator" Nom="Sep" Text="Fournisseurs" /&gt;
+      &lt;Item Type="MenuItem" Nom="ListeFour" Text="Liste des fournisseurs" Form="Fournisseurs.FrListeFourn" Image="liste" IconSize="16" /&gt;
+      &lt;Item Type="MenuItem" Nom="SaisieFour" Text="Nouveau fournisseur" Form="Fournisseurs.FrSaisieFourn" Image="_new" IconSize="16" /&gt;
+      &lt;Item Type="Separator" Nom="Sep" Text="Produits" /&gt; [le reste de la chaîne a été tronqué]";.
+</summary>
+</member><member name="T:ControleTracabilite.My.Resources.Resources">
+	<summary>
+  Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+</summary>
+</member>
+</members>
+</doc>

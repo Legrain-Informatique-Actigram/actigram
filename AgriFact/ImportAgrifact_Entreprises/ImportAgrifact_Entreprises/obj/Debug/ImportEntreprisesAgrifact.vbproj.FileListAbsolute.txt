@@ -1,0 +1,16 @@
+D:\Visual Studio 2008\Projects\MDA37\ImportEntreprisesAgrifact\ImportEntreprisesAgrifact\bin\Debug\ImportEntreprisesAgrifact.exe.config
+D:\Visual Studio 2008\Projects\MDA37\ImportEntreprisesAgrifact\ImportEntreprisesAgrifact\bin\Debug\ImportEntreprisesAgrifact.exe
+D:\Visual Studio 2008\Projects\MDA37\ImportEntreprisesAgrifact\ImportEntreprisesAgrifact\bin\Debug\ImportEntreprisesAgrifact.pdb
+D:\Visual Studio 2008\Projects\MDA37\ImportEntreprisesAgrifact\ImportEntreprisesAgrifact\bin\Debug\ImportEntreprisesAgrifact.xml
+D:\Visual Studio 2008\Projects\MDA37\ImportEntreprisesAgrifact\ImportEntreprisesAgrifact\obj\Debug\ResolveAssemblyReference.cache
+D:\Visual Studio 2008\Projects\MDA37\ImportEntreprisesAgrifact\ImportEntreprisesAgrifact\obj\Debug\ImportEntreprisesAgrifact.FrAccueil.resources
+D:\Visual Studio 2008\Projects\MDA37\ImportEntreprisesAgrifact\ImportEntreprisesAgrifact\obj\Debug\ImportEntreprisesAgrifact.Resources.resources
+D:\Visual Studio 2008\Projects\MDA37\ImportEntreprisesAgrifact\ImportEntreprisesAgrifact\obj\Debug\ImportEntreprisesAgrifact.SqlConnectionConfig.resources
+D:\Visual Studio 2008\Projects\MDA37\ImportEntreprisesAgrifact\ImportEntreprisesAgrifact\obj\Debug\ImportEntreprisesAgrifact.vbproj.GenerateResource.Cache
+D:\Visual Studio 2008\Projects\MDA37\ImportEntreprisesAgrifact\ImportEntreprisesAgrifact\obj\Debug\ImportEntreprisesAgrifact.exe
+D:\Visual Studio 2008\Projects\MDA37\ImportEntreprisesAgrifact\ImportEntreprisesAgrifact\obj\Debug\ImportEntreprisesAgrifact.xml
+D:\Visual Studio 2008\Projects\MDA37\ImportEntreprisesAgrifact\ImportEntreprisesAgrifact\obj\Debug\ImportEntreprisesAgrifact.pdb
+D:\Visual Studio 2008\Projects\MDA37\ImportAgrifact_Entreprises\ImportAgrifact_Entreprises\bin\Debug\ImportEntreprisesAgrifact.exe.config
+D:\Visual Studio 2008\Projects\MDA37\ImportAgrifact_Entreprises\ImportAgrifact_Entreprises\obj\Debug\ImportEntreprisesAgrifact.exe
+D:\Visual Studio 2008\Projects\MDA37\ImportAgrifact_Entreprises\ImportAgrifact_Entreprises\obj\Debug\ImportEntreprisesAgrifact.xml
+D:\Visual Studio 2008\Projects\MDA37\ImportAgrifact_Entreprises\ImportAgrifact_Entreprises\obj\Debug\ImportEntreprisesAgrifact.pdb

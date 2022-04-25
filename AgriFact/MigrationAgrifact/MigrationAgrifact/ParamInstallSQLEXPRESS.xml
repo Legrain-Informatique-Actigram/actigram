@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ParamInstallSQLEXPRESS>
+	<InstanceSql>SQLEXPRESS</InstanceSql>
+	<VersionSql>SqlExpress</VersionSql>
+	<Account>LOCALSYSTEM</Account>
+	<SaPwd>ludo</SaPwd>
+	<CheminAccesFichierInstallSQLEXPRESS>\Support\Components\SQLEXPR32_FRA.EXE</CheminAccesFichierInstallSQLEXPRESS>
+</ParamInstallSQLEXPRESS>

@@ -1,0 +1,819 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+DatabaseUpdate
+</name>
+</assembly>
+<members>
+<member name="P:DatabaseUpdate.My.Resources.Scripts.ResourceManager">
+	<summary>
+  Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+</summary>
+</member><member name="P:DatabaseUpdate.My.Resources.Scripts.Culture">
+	<summary>
+  Remplace la propriété CurrentUICulture du thread actuel pour toutes
+  les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+</summary>
+</member><member name="P:DatabaseUpdate.My.Resources.Scripts.ScriptMigration1_2">
+	<summary>
+  Recherche une chaîne localisée semblable à -------------------------------------------------------------------
+--		DEBUT DU SCRIPT
+-------------------------------------------------------------------
+BEGIN TRANSACTION
+GO
+-------------------------------------------------------------------
+--		MODIFS STRUCTURE
+-------------------------------------------------------------------
+-- BanqueRemise =&gt; Type Remise.nBanque passé de Decimal en Numeric
+ALTER TABLE Remise
+ALTER COLUMN nBanque numeric(18,0)
+GO
+-- PrescripteurVFacture =&gt; VFacture. [le reste de la chaîne a été tronqué]";.
+</summary>
+</member><member name="P:DatabaseUpdate.My.Resources.Scripts.ScriptMigration1_2_1">
+	<summary>
+  Recherche une chaîne localisée semblable à BEGIN TRANSACTION
+GO
+--Produit
+ALTER TABLE Produit ALTER COLUMN PrixAHT decimal(18, 5) NULL;
+GO
+ALTER TABLE Produit ALTER COLUMN PrixATTC decimal(18, 5) NULL;
+GO
+ALTER TABLE Produit ALTER COLUMN PrixVHT decimal(18, 5) NULL;
+GO
+ALTER TABLE Produit ALTER COLUMN PrixVTTC decimal(18, 5) NULL;
+GO
+--Tarif_Detail
+ALTER TABLE Tarif_Detail ALTER COLUMN PrixVHT decimal(18, 5) NULL;
+GO
+ALTER TABLE Tarif_Detail ALTER COLUMN PrixVTTC decimal(18, 5) NULL;
+GO
+--VBonCommande_Detail
+ALTER TABLE VBonCo [le reste de la chaîne a été tronqué]";.
+</summary>
+</member><member name="P:DatabaseUpdate.My.Resources.Scripts.ScriptMigration1_2_2">
+	<summary>
+  Recherche une chaîne localisée semblable à BEGIN TRANSACTION
+GO
+CREATE PROCEDURE RemoveLastNFacture (
+	@NomTable as Varchar(50),
+	@NFactureAAnnuler as int, 
+	@Simu as bit) AS
+DECLARE @NFacture int;
+BEGIN TRANSACTION
+-- Trouver valeur courante
+Select @NFacture=Max(NFacture) From NFacture Where TypePiece=@NomTable;
+-- Calculer la nouvelle valeur et suivant le cas crer la ligne ou la mettre  jour
+If @NFacture = @NFactureAAnnuler  begin
+	Update NFacture set NFacture =@NFactureAAnnuler-1 where TypePiece=@NomTable;
+end
+-- On n'enregist [le reste de la chaîne a été tronqué]";.
+</summary>
+</member><member name="P:DatabaseUpdate.My.Resources.Scripts.ScriptMigration1_3">
+	<summary>
+  Recherche une chaîne localisée semblable à BEGIN TRANSACTION
+GO
+-------------------------------------------------------------------
+--		MODIFS OPTIONS DE CHAMPS
+-------------------------------------------------------------------
+update niveau2 set ListeChoix=null where [table]='Vfacture' and Champs='nClient'
+GO
+update niveau2 set StopSaisi=0 where [table]='Reglement' and Champs='nMode'
+GO
+UPDATE [Niveau2] SET [IsObligatoire]=0 WHERE [Table] = 'Banque' AND [Champs] = 'NCompte'
+GO
+UPDATE [Niveau2] SET [IsObligatoire]=0 WHERE [Table] = 'Ba [le reste de la chaîne a été tronqué]";.
+</summary>
+</member><member name="P:DatabaseUpdate.My.Resources.Scripts.ScriptMigration1_3_1">
+	<summary>
+  Recherche une chaîne localisée semblable à BEGIN TRANSACTION
+GO
+update vfacture_detail 
+set montantLigneHT = round(fd.montantligneTTC/(1+(t.tTaux/100)),2),
+montantLigneTVA= case t.tTaux when 0 then 0 else round(fd.montantligneTTC / (1+(100/t.tTaux)),2) end
+from VFacture_detail fd
+inner join VFacture f on fd.ndevis=f.ndevis
+inner join tva t on fd.ttva=t.ttva
+where f.facturationttc=1
+and abs(montantlignettc - montantligneht - montantlignetva) &gt; 0.01
+GO
+COMMIT TRANSACTION
+GO
+.
+</summary>
+</member><member name="P:DatabaseUpdate.My.Resources.Scripts.ScriptMigration1_4">
+	<summary>
+  Recherche une chaîne localisée semblable à BEGIN TRANSACTION
+GO
+alter table lot alter column Famille1 smallint;
+GO
+if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[CalculEtatStock]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+drop procedure [dbo].[CalculEtatStock]
+GO
+CREATE PROC CalculEtatStock
+(@dtDeb datetime, @dtFin datetime,@depot nvarchar(50))
+AS
+/*SET @dtDeb='01/01/2007'
+SET @dtFin='01/05/2007'
+SET @depot=''*/
+SET @dtFin = dateadd(day,1,@dtFin)
+IF OBJECT_ID('tempdb..#tmp') IS NOT NULL drop ta [le reste de la chaîne a été tronqué]";.
+</summary>
+</member><member name="P:DatabaseUpdate.My.Resources.Scripts.ScriptMigration1_4_1">
+	<summary>
+  Recherche une chaîne localisée semblable à BEGIN TRANSACTION
+GO
+if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[FK_CompositionProduit_Produit2]') and OBJECTPROPERTY(id, N'IsForeignKey') = 1)
+ALTER TABLE dbo.CompositionProduit DROP CONSTRAINT FK_CompositionProduit_Produit2
+GO
+COMMIT TRANSACTION
+.
+</summary>
+</member><member name="P:DatabaseUpdate.My.Resources.Scripts.ScriptMigration1_4_2">
+	<summary>
+  Recherche une chaîne localisée semblable à BEGIN TRANSACTION
+GO
+IF NOT EXISTS(SELECT * FROM [ListeChoix] WHERE NomChoix='ListeTypeMouvement' AND Valeur='Inventaire') 
+BEGIN
+	INSERT INTO [ListeChoix]([NomChoix], [nOrdreValeur], [Valeur])
+	VALUES('ListeTypeMouvement', 51, 'Inventaire')
+END
+GO
+if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[CalculEtatStock]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+drop procedure [dbo].[CalculEtatStock]
+GO
+SET QUOTED_IDENTIFIER ON 
+GO
+SET ANSI_NULLS ON 
+GO
+CREATE PROC Calcul [le reste de la chaîne a été tronqué]";.
+</summary>
+</member><member name="P:DatabaseUpdate.My.Resources.Scripts.ScriptMigration1_4_3">
+	<summary>
+  Recherche une chaîne localisée semblable à BEGIN TRANSACTION
+GO
+if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[CalculEtatStock]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+drop procedure [dbo].[CalculEtatStock]
+GO
+SET QUOTED_IDENTIFIER ON 
+GO
+SET ANSI_NULLS ON 
+GO
+CREATE PROC CalculEtatStock(@dtDeb datetime, @dtFin datetime,@depot nvarchar(50))AS
+/*DECLARE @dtDeb datetime, @dtFin datetime,@depot nvarchar(50)
+SET @dtDeb='01/08/2007'
+SET @dtFin='22/08/2007'
+SET @depot='Centrale'*/
+SET @dtFin = dateadd(day,1 [le reste de la chaîne a été tronqué]";.
+</summary>
+</member><member name="P:DatabaseUpdate.My.Resources.Scripts.ScriptMigration1_4_4">
+	<summary>
+  Recherche une chaîne localisée semblable à BEGIN TRANSACTION
+GO
+if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[CalculEtatStock]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+drop procedure [dbo].[CalculEtatStock]
+GO
+SET QUOTED_IDENTIFIER ON 
+GO
+SET ANSI_NULLS ON 
+GO
+CREATE PROC CalculEtatStock(@dtDeb datetime, @dtFin datetime,@depot nvarchar(50),@gestionLot bit=1)AS
+/*DECLARE @dtDeb datetime, @dtFin datetime,@depot nvarchar(50),@gestionLot bit
+SET @dtDeb='01/08/2007'
+SET @dtFin='22/08/2007'
+SET @depot='Tous'
+ [le reste de la chaîne a été tronqué]";.
+</summary>
+</member><member name="P:DatabaseUpdate.My.Resources.Scripts.ScriptMigration1_4_5">
+	<summary>
+  Recherche une chaîne localisée semblable à GRANT EXEC ON CalculEtatStock TO Utilisateurs.
+</summary>
+</member><member name="P:DatabaseUpdate.My.Resources.Scripts.ScriptMigration1_4_6">
+	<summary>
+  Recherche une chaîne localisée semblable à BEGIN TRANSACTION
+GO
+if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[CalculEtatStock]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+drop procedure [dbo].[CalculEtatStock]
+GO
+SET QUOTED_IDENTIFIER ON 
+GO
+SET ANSI_NULLS ON 
+GO
+CREATE PROC CalculEtatStock(@dtDeb datetime, @dtFin datetime,@depot nvarchar(50),@gestionLot bit=1)AS
+/*DECLARE @dtDeb datetime, @dtFin datetime,@depot nvarchar(50),@gestionLot bit
+SET @dtDeb='01/08/2007'
+SET @dtFin='22/08/2007'
+SET @depot='Tous'
+ [le reste de la chaîne a été tronqué]";.
+</summary>
+</member><member name="P:DatabaseUpdate.My.Resources.Scripts.ScriptMigration1_4_7">
+	<summary>
+  Recherche une chaîne localisée semblable à BEGIN TRANSACTION
+GO
+if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[FK_Mouvement_Detail_Lot]') and OBJECTPROPERTY(id, N'IsForeignKey') = 1)
+ALTER TABLE [dbo].[Mouvement_Detail] DROP CONSTRAINT FK_Mouvement_Detail_Lot
+GO
+if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[CalculEtatStock]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+drop procedure [dbo].[CalculEtatStock]
+GO
+SET QUOTED_IDENTIFIER ON 
+GO
+SET ANSI_NULLS ON 
+GO
+CREATE PROC CalculEtatS [le reste de la chaîne a été tronqué]";.
+</summary>
+</member><member name="P:DatabaseUpdate.My.Resources.Scripts.ScriptMigration1_4_8">
+	<summary>
+  Recherche une chaîne localisée semblable à --Modif de la table VFacture pour l'impression des lettres de relance
+BEGIN TRANSACTION
+GO
+ALTER TABLE dbo.VFacture ADD
+	nRelance int NULL,
+	DateRelance datetime NULL
+GO
+ALTER TABLE dbo.VFacture ADD CONSTRAINT
+	DF_VFacture_nRelance DEFAULT 0 FOR nRelance
+GO
+COMMIT.
+</summary>
+</member><member name="P:DatabaseUpdate.My.Resources.Scripts.ScriptMigration1_5_0">
+	<summary>
+  Recherche une chaîne localisée semblable à BEGIN TRANSACTION
+GO
+ALTER TABLE dbo.Parametres ADD
+	Cle nvarchar(50) NULL,
+    TypePiece nvarchar(50) NULL,
+	Valeur ntext NULL
+GO
+UPDATE dbo.Parametres SET Cle='Logo' WHERE Logo IS NOT NULL
+GO
+COMMIT.
+</summary>
+</member><member name="P:DatabaseUpdate.My.Resources.Scripts.ScriptMigration1_5_1">
+	<summary>
+  Recherche une chaîne localisée semblable à BEGIN TRANSACTION
+GO
+ALTER TABLE dbo.VFacture ADD DateImpr datetime NULL
+GO
+-- Init pour les factures existantes ??	
+-- Celles dont la date d'échéance est dépassée
+UPDATE VFacture SET DateImpr=DateEcheance
+WHERE DateEcheance is not null and DateEcheance&lt;GetDate()
+-- Celles qui ont des réglements
+UPDATE VFacture SET DateImpr=DateReglement 
+FROM VFacture 
+INNER JOIN Reglement_Detail d ON VFacture.nDevis=d.nFacture
+INNER JOIN Reglement r ON d.nReglement=r.nReglement
+GO
+COMMIT.
+</summary>
+</member><member name="P:DatabaseUpdate.My.Resources.Scripts.ScriptMigration1_5_2">
+	<summary>
+  Recherche une chaîne localisée semblable à BEGIN TRANSACTION
+GO
+if not exists (select * from syscolumns where id=object_id('Produit') and name='IsSortieImpr') begin
+    ALTER TABLE dbo.Produit ADD	IsSortieImpr bit NOT NULL CONSTRAINT DF_Produit_IsSortieImpr DEFAULT 1
+end
+GO
+IF NOT EXISTS(SELECT * FROM [Niveau2] WHERE [Table]='Produit' AND [Champs]='IsSortieImpr') BEGIN
+    INSERT INTO [dbo].[Niveau2]([nNiveau1], [nNiveau2], [Table], [Champs], [Libelle]) 
+    SELECT 0,MAX(nNiveau2)+1,'Produit', 'IsSortieImpr', 'Impression facture' FROM  [ [le reste de la chaîne a été tronqué]";.
+</summary>
+</member><member name="P:DatabaseUpdate.My.Resources.Scripts.ScriptMigration1_5_3">
+	<summary>
+  Recherche une chaîne localisée semblable à -- Correction Etats des stocks
+ALTER PROC CalculEtatStock(@dtDeb datetime, @dtFin datetime,@depot nvarchar(50),@gestionLot bit=1)AS
+/*DECLARE @dtDeb datetime, @dtFin datetime,@depot nvarchar(50),@gestionLot bit
+SET @dtDeb='01/01/2008'
+SET @dtFin='01/04/2008'
+SET @depot='Global'
+SET @gestionLot=0*/
+SET @dtFin = dateadd(day,1,@dtFin) --On ajoute un jour pour inclure tous les mouvements de @dtFin
+IF OBJECT_ID('tempdb..#tmp') IS NOT NULL drop table #tmp
+IF OBJECT_ID('tempdb..#tmp2') IS NOT NULL d [le reste de la chaîne a été tronqué]";.
+</summary>
+</member><member name="P:DatabaseUpdate.My.Resources.Scripts.ScriptMigration1_5_4">
+	<summary>
+  Recherche une chaîne localisée semblable à --Correction export compta : Ajout Montant Escompte plus correction de la régulation de TVA sur encaissement partiel
+BEGIN TRANSACTION
+GO
+ALTER TABLE Reglement_Detail
+ADD MtEscompte DECIMAL(18,2);
+GO
+IF EXISTS (SELECT * FROM dbo.sysobjects WHERE id = object_id(N'[dbo].[FactureMontantExport]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+BEGIN
+	DROP TABLE [dbo].[FactureMontantExport];
+	CREATE TABLE [dbo].[FactureMontantExport] (
+		[nDevis] [decimal](18, 0) NOT NULL ,
+		[TTVA] [nvarchar] (50)  [le reste de la chaîne a été tronqué]";.
+</summary>
+</member><member name="P:DatabaseUpdate.My.Resources.Scripts.ScriptMigration1_5_5">
+	<summary>
+  Recherche une chaîne localisée semblable à --Correction etat des stocks
+ALTER PROC CalculEtatStock(@dtDeb datetime, @dtFin datetime,@depot nvarchar(50),@gestionLot bit=1)AS
+/*DECLARE @dtDeb datetime, @dtFin datetime,@depot nvarchar(50),@gestionLot bit
+SET @dtDeb='01/01/2008'
+SET @dtFin='01/04/2008'
+SET @depot='Global'
+SET @gestionLot=0*/
+SET @dtFin = dateadd(day,1,@dtFin) --On ajoute un jour pour inclure tous les mouvements de @dtFin
+IF OBJECT_ID('tempdb..#tmp') IS NOT NULL drop table #tmp
+IF OBJECT_ID('tempdb..#tmp2') IS NOT NULL drop  [le reste de la chaîne a été tronqué]";.
+</summary>
+</member><member name="P:DatabaseUpdate.My.Resources.Scripts.ScriptMigration1_6_0">
+	<summary>
+  Recherche une chaîne localisée semblable à -- APPROFACT : Ajout des colonnes
+BEGIN TRANSACTION
+GO
+if not exists (select * from syscolumns cols inner join sysobjects t on t.id=cols.id
+	where t.Name='Produit' AND cols.Name='AMM')
+ALTER TABLE Produit ADD	
+	[AMM] [varchar] (10) COLLATE French_CI_AS NULL ,
+	[TAXSM] [decimal](18, 5) NULL ,
+	[IsAMM] [bit] NOT NULL DEFAULT 0 ,
+	[DateMaj] [datetime] NULL 
+GO
+if not exists (select * from syscolumns cols inner join sysobjects t on t.id=cols.id
+	where t.Name='VDevis_Detail' AND cols.Name='PrixUAch [le reste de la chaîne a été tronqué]";.
+</summary>
+</member><member name="P:DatabaseUpdate.My.Resources.Scripts.ScriptMigration1_6_1">
+	<summary>
+  Recherche une chaîne localisée semblable à -- Modifs pour exports compta : gestion des Journaux dans Agrifact
+BEGIN TRANSACTION
+GO
+alter table entreprise alter column Remise decimal(18,2)
+GO
+alter table Comptes
+alter column CLib nVarchar(30)
+GO
+IF NOT EXISTS (select * from dbo.sysobjects where id = object_id(N'[dbo].[Journal]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+BEGIN
+	CREATE TABLE [dbo].[Journal] (
+		[JCodeJournal] [nvarchar] (2) COLLATE French_CI_AS NOT NULL ,
+		[JCodeLibelle] [nvarchar] (50) COLLATE French_CI_AS NULL ,
+		[JT [le reste de la chaîne a été tronqué]";.
+</summary>
+</member><member name="P:DatabaseUpdate.My.Resources.Scripts.ScriptMigration1_6_2">
+	<summary>
+  Recherche une chaîne localisée semblable à --Modif pour Point De Vente : ajout des tables pour la gestion du Journal de Caisse
+BEGIN TRANSACTION
+GO
+if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[JournalCaisse]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+drop table [dbo].[JournalCaisse]
+GO
+CREATE TABLE [dbo].[JournalCaisse] (
+	[IdMvtCaisse] [int] IDENTITY (1, 1) NOT NULL ,
+	[NCaisse] [int] NOT NULL ,
+	[DateCaisse] [datetime] NOT NULL ,
+	[Type] [tinyint] NOT NULL ,
+	[Montant] [decimal](18, 2) NOT NULL ,
+	[Libelle [le reste de la chaîne a été tronqué]";.
+</summary>
+</member><member name="P:DatabaseUpdate.My.Resources.Scripts.ScriptMigration1_6_3">
+	<summary>
+  Recherche une chaîne localisée semblable à --Correction pour Approfact : Perte des décimales sur les prix d'achats
+BEGIN TRANSACTION
+--On corrige la structure de la base
+alter table vbonlivraison_detail alter column PrixUAchatHT decimal(18, 2) null;
+alter table vfacture_detail alter column PrixUAchatHT decimal(18, 2) null;
+COMMIT TRANSACTION.
+</summary>
+</member><member name="P:DatabaseUpdate.My.Resources.Scripts.ScriptMigration1_6_4">
+	<summary>
+  Recherche une chaîne localisée semblable à --Update Niveau2 pour permettre l'utilisation de comptes AlphaNumériques
+BEGIN TRANSACTION
+--On corrige la structure de la base
+alter table mouvement_detail alter column Libelle nvarchar(255) null;
+UPDATE Niveau2 SET FiltreType='CCpt&gt;''401'' And CCpt&lt;''402''' 							WHERE [Table]='Entreprise' AND Champs='NCompteF';
+UPDATE Niveau2 SET FiltreType='CCpt&gt;''411'' And CCpt&lt;''412''' 									WHERE [Table]='Entreprise' AND Champs='NCompteC';
+UPDATE Niveau2 SET FiltreType='(CCpt&gt;''511'' And CCpt&lt;''513'') O [le reste de la chaîne a été tronqué]";.
+</summary>
+</member><member name="P:DatabaseUpdate.My.Resources.Scripts.ScriptMigration1_6_5">
+	<summary>
+  Recherche une chaîne localisée semblable à -- Gestion de la date de début de gestion des stocks dans le calcul de stocks
+BEGIN TRANSACTION
+GO
+ALTER PROC CalculEtatStock(@dtDeb datetime, @dtFin datetime,@depot nvarchar(50),@gestionLot bit=1,@dtInit datetime='01/01/2000',@debug bit=0) AS
+/*DECLARE @dtDeb datetime, @dtFin datetime,@depot nvarchar(50),@gestionLot bit,@dtInit datetime
+SET @dtInit='01/11/2008'
+SET @dtDeb='01/11/2008'
+SET @dtFin='16/11/2008'
+SET @depot='Global'
+SET @gestionLot=0*/
+SET @dtFin = dateadd(day,1,@dtFin) --On ajoute  [le reste de la chaîne a été tronqué]";.
+</summary>
+</member><member name="P:DatabaseUpdate.My.Resources.Scripts.ScriptMigration1_6_6">
+	<summary>
+  Recherche une chaîne localisée semblable à --Correction par rapport au 1.6.4
+UPDATE Niveau2 SET FiltreType='CCpt&gt;''401'' And CCpt&lt;''402''' 							WHERE [Table]='Entreprise' AND Champs='NCompteF';
+.
+</summary>
+</member><member name="P:DatabaseUpdate.My.Resources.Scripts.ScriptMigration1_6_7">
+	<summary>
+  Recherche une chaîne localisée semblable à --Modif de gestion des stocks
+BEGIN TRANSACTION 
+GO
+-- Griser la modif de type mouvement
+UPDATE Niveau2 SET nNiveau2=2736,ListeChoix=NULL,StopSaisi=1 WHERE [Table]='Mouvement' AND Champs='TypeMouvement'
+GO
+-- Changer le type "Mouvement" en "Transfert dépôt"
+IF EXISTS(SELECT * FROM [ListeChoix] WHERE NomChoix='ListeTypeMouvement' AND Valeur='Mouvement') BEGIN
+	UPDATE [ListeChoix] SET Valeur='Transfert dépôt' WHERE NomChoix='ListeTypeMouvement' AND Valeur='Mouvement'
+END
+GO
+UPDATE Mouveme [le reste de la chaîne a été tronqué]";.
+</summary>
+</member><member name="P:DatabaseUpdate.My.Resources.Scripts.ScriptMigration1_7_0">
+	<summary>
+  Recherche une chaîne localisée semblable à BEGIN TRANSACTION
+GO
+if not exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[Appro_BCD_AFD]') and OBJECTPROPERTY(id, N'IsUserTable') = 1) BEGIN
+	CREATE TABLE dbo.Appro_BCD_AFD
+		(
+		BCD_nDevisDetail decimal(10, 0) NOT NULL,
+		AFD_nDevisDetail decimal(10, 0) NOT NULL,
+		BLD_nDevisDetail decimal(10, 0) NULL,
+		BC_Unite1 decimal(10, 3) NULL,
+		BC_Unite2 decimal(10, 3) NULL,
+		AF_Unite1 decimal(10, 3) NULL,
+		AF_Unite2 decimal(10, 3) NULL
+		)  ON [PRIMARY]
+	ALTER TABLE dbo.App [le reste de la chaîne a été tronqué]";.
+</summary>
+</member><member name="P:DatabaseUpdate.My.Resources.Scripts.ScriptMigration1_8_0">
+	<summary>
+  Recherche une chaîne localisée semblable à BEGIN TRANSACTION
+SET QUOTED_IDENTIFIER ON
+SET ARITHABORT ON
+SET NUMERIC_ROUNDABORT OFF
+SET CONCAT_NULL_YIELDS_NULL ON
+SET ANSI_NULLS ON
+SET ANSI_PADDING ON
+SET ANSI_WARNINGS ON
+GO
+ALTER TABLE dbo.Produit ADD
+	SeuilStock decimal(18, 2) NOT NULL CONSTRAINT DF_Produit_SeuilStock DEFAULT 0
+GO
+IF EXISTS (SELECT * FROM sysobjects WHERE id = OBJECT_ID(N'[dbo].[CalculInventaire]') AND type in (N'P', N'PC'))
+BEGIN
+	DROP PROC [dbo].[CalculInventaire]
+END
+GO
+EXEC dbo.sp_executesql @statement = N'
+CR [le reste de la chaîne a été tronqué]";.
+</summary>
+</member><member name="P:DatabaseUpdate.My.Resources.Scripts.ScriptMigration1_8_1">
+	<summary>
+  Recherche une chaîne localisée semblable à BEGIN TRANSACTION
+SET QUOTED_IDENTIFIER ON
+SET ARITHABORT ON
+SET NUMERIC_ROUNDABORT OFF
+SET CONCAT_NULL_YIELDS_NULL ON
+SET ANSI_NULLS ON
+SET ANSI_PADDING ON
+SET ANSI_WARNINGS ON
+GO
+IF EXISTS (SELECT * FROM sysobjects WHERE id = OBJECT_ID(N'[dbo].[CalculInventaire]') AND type in (N'P', N'PC'))
+BEGIN
+	DROP PROC [dbo].[CalculInventaire]
+END
+GO
+EXEC dbo.sp_executesql @statement = N'
+CREATE PROCEDURE [dbo].[CalculInventaire](@dtDeb datetime, @dtFin datetime,@depot nvarchar(50),@gestionLot bit=1)
+ [le reste de la chaîne a été tronqué]";.
+</summary>
+</member><member name="P:DatabaseUpdate.My.Resources.Scripts.ScriptMigration1_8_2">
+	<summary>
+  Recherche une chaîne localisée semblable à BEGIN TRANSACTION
+GO
+if not exists (select * from syscolumns c inner join sysobjects t on c.id=t.id where c.name='Depot' and t.name='ABonReception')
+alter table abonreception add Depot nvarchar(50) null
+if not exists (select * from syscolumns c inner join sysobjects t on c.id=t.id where c.name='Depot' and t.name='AFacture')
+alter table afacture add Depot nvarchar(50) null
+if not exists (select * from syscolumns c inner join sysobjects t on c.id=t.id where c.name='Depot' and t.name='VDevis')
+alter tab [le reste de la chaîne a été tronqué]";.
+</summary>
+</member><member name="P:DatabaseUpdate.My.Resources.Scripts.ScriptMigration1_8_3">
+	<summary>
+  Recherche une chaîne localisée semblable à BEGIN TRANSACTION
+GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'[dbo].[FichierClient]') AND OBJECTPROPERTY(id, N'IsUserTable') = 1)
+BEGIN
+CREATE TABLE [dbo].[FichierClient](
+	[nFichier] [int] IDENTITY(1,1) NOT NULL,
+	[nEntreprise] [decimal](10, 0) NOT NULL,
+	[nPersonneAuteur] [decimal](10, 0) NULL,
+	[CheminFichier] [nvarchar](512) NOT NULL,
+	[IsLocal] [bit] NOT NULL CONSTRAINT [DF_FichierClient_IsLocal]  DEFAULT (1),
+	[Ma [le reste de la chaîne a été tronqué]";.
+</summary>
+</member><member name="P:DatabaseUpdate.My.Resources.Scripts.ScriptMigration2_0_0">
+	<summary>
+  Recherche une chaîne localisée semblable à BEGIN TRANSACTION
+GO
+update [Niveau2] set ListeChoix='ListeEntreprise' where Champs='nClient'
+AND [Table] in ('VDevis','VBonCommande','VBonLivraison','VFacture','AFacture','ABonReception')
+update [Niveau2] set LX=NULL,LW=NULL where Champs='Secteur'
+AND [Table] in ('VDevis','VBonCommande','VBonLivraison','VFacture','AFacture','ABonReception')
+update [Niveau2] set nNiveau2=n.nNiveau2+1, LW=32,LX=0,LY=NULL,TX=NULL,TY=NULL 
+from [Niveau2] inner join Niveau2 as n on n.nNiveau1=0 AND n.[Table]=[Niveau2 [le reste de la chaîne a été tronqué]";.
+</summary>
+</member><member name="P:DatabaseUpdate.My.Resources.Scripts.ScriptMigration2_0_1">
+	<summary>
+  Recherche une chaîne localisée semblable à BEGIN TRANSACTION
+IF not exists(select * from syscolumns c inner join sysobjects o on c.id=o.id where c.name='NomFacturation' and o.name='Entreprise') 
+BEGIN
+	ALTER TABLE Entreprise ADD NomFacturation NVARCHAR(255) NULL;
+END
+GO
+IF not exists(select * from syscolumns c inner join sysobjects o on c.id=o.id where c.name='NomLivraison' and o.name='Entreprise') 
+BEGIN
+	ALTER TABLE Entreprise ADD NomLivraison NVARCHAR(255) NULL;
+END
+GO
+IF not exists(select * from syscolumns c inner join sysobject [le reste de la chaîne a été tronqué]";.
+</summary>
+</member><member name="P:DatabaseUpdate.My.Resources.Scripts.ScriptMigration2_1_0">
+	<summary>
+  Recherche une chaîne localisée semblable à BEGIN TRANSACTION
+IF not exists(select * from syscolumns c inner join sysobjects o on c.id=o.id where c.name='ObservationLivraison' and o.name='Entreprise') 
+BEGIN
+	ALTER TABLE Entreprise ADD ObservationLivraison NVARCHAR(255) NULL;
+END
+GO
+IF not exists(select * from syscolumns c inner join sysobjects o on c.id=o.id where c.name='TxCommission' and o.name='vDevis') 
+BEGIN
+	ALTER TABLE vDevis ADD TxCommission INT NULL;
+END
+GO
+IF not exists(select * from syscolumns c inner join sysobjects o on [le reste de la chaîne a été tronqué]";.
+</summary>
+</member><member name="P:DatabaseUpdate.My.Resources.Scripts.ScriptMigration2_2_0">
+	<summary>
+  Recherche une chaîne localisée semblable à BEGIN TRANSACTION
+IF not exists(select * from syscolumns c inner join sysobjects o on c.id=o.id where c.name='IsEnVente' and o.name='Produit') 
+BEGIN
+	ALTER TABLE Produit ADD IsEnVente BIT NOT NULL DEFAULT (1);
+END
+GO
+IF not exists(select * from syscolumns c inner join sysobjects o on c.id=o.id where c.name='isComm' and o.name='Produit') 
+BEGIN
+	ALTER TABLE Produit ADD isComm BIT NULL;
+END
+GO
+IF not exists(select * from syscolumns c inner join sysobjects o on c.id=o.id where c.name='Conditi [le reste de la chaîne a été tronqué]";.
+</summary>
+</member><member name="P:DatabaseUpdate.My.Resources.Scripts.ScriptMigration2_3_0">
+	<summary>
+  Recherche une chaîne localisée semblable à BEGIN TRANSACTION
+IF not exists(select * from syscolumns c inner join sysobjects o on c.id=o.id where c.name='IndEscompteSpecifique' and o.name='Entreprise') 
+BEGIN
+	ALTER TABLE Entreprise ADD IndEscompteSpecifique BIT NOT NULL DEFAULT (0);
+END
+GO
+IF not exists(select * from syscolumns c inner join sysobjects o on c.id=o.id where c.name='TauxEscompteSpecifique' and o.name='Entreprise') 
+BEGIN
+	ALTER TABLE Entreprise ADD TauxEscompteSpecifique DECIMAL(9,2) NULL;
+END
+GO
+IF not exists(select * [le reste de la chaîne a été tronqué]";.
+</summary>
+</member><member name="P:DatabaseUpdate.My.Resources.Scripts.ScriptMigration2_4_0">
+	<summary>
+  Recherche une chaîne localisée semblable à BEGIN TRANSACTION
+IF not exists(select * from syscolumns c inner join sysobjects o on c.id=o.id where c.name='IsExport' and o.name='Entreprise') 
+BEGIN
+	ALTER TABLE Entreprise ADD IsExport BIT NULL DEFAULT (0);
+END
+GO
+IF not exists(select * from syscolumns c inner join sysobjects o on c.id=o.id where c.name='NCompteX' and o.name='Produit') 
+BEGIN
+  ALTER TABLE Produit ADD NCompteX NVARCHAR(8) NULL;
+END
+GO
+IF not exists(select * from syscolumns c inner join sysobjects o on c.id=o.id where c. [le reste de la chaîne a été tronqué]";.
+</summary>
+</member><member name="P:DatabaseUpdate.My.Resources.Scripts.ScriptMigration2_4_1">
+	<summary>
+  Recherche une chaîne localisée semblable à BEGIN TRANSACTION
+IF not exists(select * from syscolumns c inner join sysobjects o on c.id=o.id where c.name='Ingredients' and o.name='Produit') 
+BEGIN
+	ALTER TABLE Produit ADD Ingredients NTEXT NULL;
+END
+GO
+COMMIT TRANSACTION.
+</summary>
+</member><member name="P:DatabaseUpdate.My.Resources.Scripts.ScriptMigration2_5_0">
+	<summary>
+  Recherche une chaîne localisée semblable à BEGIN TRANSACTION
+--Ajout de la valeur 'Habillage' dans la table ListeChoix
+DECLARE @NBNOMCHOIX INT
+SET @NBNOMCHOIX = (	SELECT COUNT(NomChoix) AS NBNOMCHOIX 
+					FROM ListeChoix 
+					WHERE (NomChoix = 'ListeTypeMouvement') AND (nOrdreValeur = 81))
+IF (@NBNOMCHOIX = 0)
+BEGIN
+	INSERT INTO ListeChoix(NomChoix, nOrdreValeur, Valeur) VALUES('ListeTypeMouvement', 81, 'Habillage') 
+END
+GO
+--Ajout de la valeur 'Mise en bouteille' dans la table ListeChoix
+DECLARE @NBNOMCHOIX INT
+SET @NBNOMCH [le reste de la chaîne a été tronqué]";.
+</summary>
+</member><member name="P:DatabaseUpdate.My.Resources.Scripts.ScriptMigration2_5_1">
+	<summary>
+  Recherche une chaîne localisée semblable à BEGIN TRANSACTION
+--Création de la table LotProduit
+IF NOT EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'[dbo].[LotProduit]') AND OBJECTPROPERTY(id, N'IsUserTable') = 1)
+BEGIN
+	CREATE TABLE [dbo].[LotProduit](
+		[IdLotProduit] [int] IDENTITY(1,1) NOT NULL,
+		[nLot] [nvarchar](50) NOT NULL,
+		[CodeProduit] [nvarchar](255) NOT NULL,
+		[DateCreation] [datetime] NULL,
+		[DateModif] [datetime] NULL,
+	 CONSTRAINT [PK_LotProduit] PRIMARY KEY CLUSTERED 
+	(
+		[IdLotProduit] ASC
+	) ON [PR [le reste de la chaîne a été tronqué]";.
+</summary>
+</member><member name="P:DatabaseUpdate.My.Resources.Scripts.ScriptMigration2_5_2">
+	<summary>
+  Recherche une chaîne localisée semblable à BEGIN TRANSACTION
+IF not exists(select * from syscolumns c inner join sysobjects o on c.id=o.id where c.name='TxCommission' and o.name='VFacture') 
+BEGIN
+	ALTER TABLE VFacture ADD TxCommission INT NULL;
+END
+GO
+COMMIT TRANSACTION.
+</summary>
+</member><member name="P:DatabaseUpdate.My.Resources.Scripts.ScriptMigration2_5_3">
+	<summary>
+  Recherche une chaîne localisée semblable à BEGIN TRANSACTION
+IF not exists(select * from syscolumns c inner join sysobjects o on c.id=o.id where c.name='nCommercial' and o.name='Entreprise') 
+BEGIN
+	ALTER TABLE Entreprise ADD nCommercial INT NULL;
+END
+GO
+COMMIT TRANSACTION.
+</summary>
+</member><member name="P:DatabaseUpdate.My.Resources.Scripts.ScriptMigration2_5_4">
+	<summary>
+  Recherche une chaîne localisée semblable à -- Création de la table DefinitionControle
+IF NOT EXISTS(SELECT *
+              FROM   INFORMATION_SCHEMA.tables 
+              WHERE  TABLE_NAME = 'DefinitionControle')
+BEGIN
+	CREATE TABLE [dbo].[DefinitionControle](
+		[nControle] [int] IDENTITY(1,1) NOT NULL,
+		[IdControle] [int] NOT NULL,
+		[CodeProduit] [nvarchar](255) NOT NULL,
+		[Ordre] [int] NOT NULL,
+		[Groupe] [nvarchar](100) NULL,
+		[Libelle] [nvarchar](255) NULL,
+		[Type] [nvarchar](25) NULL,
+		[ValeursPossibles] [nvarchar](255) NULL [le reste de la chaîne a été tronqué]";.
+</summary>
+</member><member name="P:DatabaseUpdate.My.Resources.Scripts.ScriptMigration2_6_0">
+	<summary>
+  Recherche une chaîne localisée semblable à BEGIN TRANSACTION
+--Création de la table ColonneListe
+IF NOT EXISTS(SELECT *
+              FROM   INFORMATION_SCHEMA.tables 
+              WHERE  TABLE_NAME = 'ColonneListe')
+BEGIN              
+	CREATE TABLE [dbo].[ColonneListe](
+		[ID_ColonneListe] [int] IDENTITY(1,1) NOT NULL,
+		[TypeListe] [nvarchar](50) NULL,
+		[TypePiece] [nvarchar](50) NULL,
+		[DataPropertyName] [nvarchar](255) NULL,
+		[Visible] [bit] NOT NULL,
+		[Width] [int] NULL,
+	 CONSTRAINT [PK_ColonneListe] PRIMARY KEY CLUSTERED  [le reste de la chaîne a été tronqué]";.
+</summary>
+</member><member name="P:DatabaseUpdate.My.Resources.Scripts.ScriptMigration2_6_1">
+	<summary>
+  Recherche une chaîne localisée semblable à BEGIN TRANSACTION
+--Rend actif le Nom du payeur lors de la saisie d'un règlement
+UPDATE Niveau2 SET [TableListeChoixType]='cb', [TableListeChoixTri]='Nom' WHERE [Table]='Reglement' AND [Champs]='nEntreprise'
+COMMIT TRANSACTION.
+</summary>
+</member><member name="P:DatabaseUpdate.My.Resources.Scripts.ScriptMigration2_6_2">
+	<summary>
+  Recherche une chaîne localisée semblable à BEGIN TRANSACTION
+--Ajout de la colonne LitigeEnCours dans la table Entreprise
+IF NOT EXISTS(	SELECT * 
+				FROM syscolumns c INNER JOIN sysobjects o ON c.id=o.id 
+				WHERE c.name='LitigeEnCours' and o.name='Entreprise') 
+BEGIN
+	ALTER TABLE Entreprise ADD LitigeEnCours BIT DEFAULT(0) NOT NULL;
+END
+GO
+--Ajout de la colonne EnCoursMax dans la table Entreprise
+IF NOT EXISTS(	SELECT * 
+				FROM syscolumns c INNER JOIN sysobjects o ON c.id=o.id 
+				WHERE c.name='EnCoursMax' and o.name='Entrepri [le reste de la chaîne a été tronqué]";.
+</summary>
+</member><member name="P:DatabaseUpdate.My.Resources.Scripts.ScriptMigration2_6_3">
+	<summary>
+  Recherche une chaîne localisée semblable à BEGIN TRANSACTION
+--Tri le taux de TVA de la fiche produit par libellé
+UPDATE Niveau2 SET [TableListeChoixTri]='TLibelle' WHERE [Table]='Produit' AND [Champs]='TTVA'
+COMMIT TRANSACTION.
+</summary>
+</member><member name="P:DatabaseUpdate.My.Resources.Scripts.ScriptMigration2_6_4">
+	<summary>
+  Recherche une chaîne localisée semblable à BEGIN TRANSACTION
+--Création de la procédure stockée CalculEtatStockParCodeProduit 
+IF OBJECT_ID ( 'CalculEtatStockParCodeProduit', 'P' ) IS NOT NULL 
+    DROP PROCEDURE CalculEtatStockParCodeProduit;
+GO
+ 
+CREATE PROC [dbo].[CalculEtatStockParCodeProduit]
+	@dtDeb datetime, 
+	@dtFin datetime,
+	@depot nvarchar(50),
+	@gestionLot bit=1,
+	@dtInit datetime='01/01/2000',
+	@debug bit=0,
+	@CodeProduit NVARCHAR(255) 
+AS
+/*DECLARE @dtDeb datetime, @dtFin datetime,@depot nvarchar(50),@gestionLot bit,@dtI [le reste de la chaîne a été tronqué]";.
+</summary>
+</member><member name="P:DatabaseUpdate.My.Resources.Scripts.ScriptMigration2_6_5">
+	<summary>
+  Recherche une chaîne localisée semblable à BEGIN TRANSACTION
+IF NOT EXISTS(SELECT *
+              FROM   INFORMATION_SCHEMA.tables 
+              WHERE  TABLE_NAME = 'ModeReglement_Detail')
+BEGIN
+	CREATE TABLE [dbo].[ModeReglement_Detail](
+		[ID_ModeReglement_Detail] [int] IDENTITY(1,1) NOT NULL,
+		[ModeReglement] [nvarchar](50) NULL,
+		[nBanque] [numeric](18, 0) NULL,
+		[RemiseAuto] [bit] NOT NULL,
+	 CONSTRAINT [PK_ModeReglement_Detail] PRIMARY KEY CLUSTERED 
+	(
+		[ID_ModeReglement_Detail] ASC
+	) ON [PRIMARY]
+	) ON [PRIMARY]
+	ALT [le reste de la chaîne a été tronqué]";.
+</summary>
+</member><member name="P:DatabaseUpdate.My.Resources.Scripts.ScriptMigration2_6_6">
+	<summary>
+  Recherche une chaîne localisée semblable à --Création table NDevis-----------------
+BEGIN TRANSACTION
+IF NOT EXISTS(SELECT *
+              FROM   INFORMATION_SCHEMA.tables 
+              WHERE  TABLE_NAME = 'NDevis')
+BEGIN
+	CREATE TABLE [dbo].[NDevis](
+		[NDevis] [decimal](18, 0) NOT NULL,
+		[TypePiece] [nvarchar](50) NOT NULL
+	) ON [PRIMARY]
+	
+	GRANT  SELECT ,  UPDATE ,  INSERT ,  DELETE  ON [dbo].[NDevis]  TO [Utilisateurs]
+END
+GO
+COMMIT TRANSACTION
+GO
+--Création table NDetailDevis-----------------
+BEGIN TRANSACTION
+IF NO [le reste de la chaîne a été tronqué]";.
+</summary>
+</member><member name="T:DatabaseUpdate.My.Resources.Scripts">
+	<summary>
+  Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+</summary>
+</member><member name="P:DatabaseUpdate.My.Resources.Resources.ResourceManager">
+	<summary>
+  Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+</summary>
+</member><member name="P:DatabaseUpdate.My.Resources.Resources.Culture">
+	<summary>
+  Remplace la propriété CurrentUICulture du thread actuel pour toutes
+  les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+</summary>
+</member><member name="P:DatabaseUpdate.My.Resources.Resources.ListUpdates">
+	<summary>
+  Recherche une chaîne localisée semblable à &lt;?xml version="1.0" encoding="utf-8" ?&gt; 
+&lt;ListUpdates&gt;
+	&lt;Updates&gt;
+		&lt;Update VersionAvant="0.0"   VersionApres="1.2"   NomScript="ScriptMigration1.2.sql"   /&gt;
+		&lt;Update VersionAvant="1.2"   VersionApres="1.2.1" NomScript="ScriptMigration1.2.1.sql" /&gt;
+		&lt;Update VersionAvant="1.2.1" VersionApres="1.2.2" NomScript="ScriptMigration1.2.2.sql" /&gt;
+		&lt;Update VersionAvant="1.2.2" VersionApres="1.3"   NomScript="ScriptMigration1.3.sql"   /&gt;
+		&lt;Update VersionAvant="1.3"   VersionApres="1.3.1" NomScript="ScriptMi [le reste de la chaîne a été tronqué]";.
+</summary>
+</member><member name="T:DatabaseUpdate.My.Resources.Resources">
+	<summary>
+  Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+</summary>
+</member>
+</members>
+</doc>

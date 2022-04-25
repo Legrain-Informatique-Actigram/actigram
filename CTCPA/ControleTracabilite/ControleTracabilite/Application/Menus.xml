@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfMenu>
+  <Menu Nom="Donnees" Text="Données" Image="">
+    <Items>
+      <Item Type="Separator" Nom="Sep" Text="Fournisseurs" />
+      <Item Type="MenuItem" Nom="ListeFour" Text="Liste des fournisseurs" Form="Fournisseurs.FrListeFourn" Image="liste" IconSize="16" />
+      <Item Type="MenuItem" Nom="SaisieFour" Text="Nouveau fournisseur" Form="Fournisseurs.FrSaisieFourn" Image="_new" IconSize="16" />
+      <Item Type="Separator" Nom="Sep" Text="Produits" />
+      <Item Type="MenuItem" Nom="Familles" Text="Familles" Form="FrListeFamilles" Image="liste" IconSize="16" />
+      <!--<Item Type="MenuItem" Nom="ListeProduits" Text="Liste des Produits" Form="FrListeProduits" Image="liste" IconSize="16" />-->
+      <Item Type="MenuItem" Nom="ListeProduitsMP" Text="Matières Premières" Form="FrListeProduits" Arguments="MatieresPremieres"  Image="liste" IconSize="16" />
+      <Item Type="MenuItem" Nom="ListeProduitsPF" Text="Produits Finis" Form="FrListeProduits" Arguments="ProduitsFinis"  Image="liste" IconSize="16" />
+      <Item Type="MenuItem" Nom="SaisieProduit" Text="Nouveau Produit" Form="FrFicheProduit" Image="_new" IconSize="16" />
+      <Item Type="Separator" Nom="Sep" Text="Modèles de Fabrication" />
+      <Item Type="MenuItem" Nom="ListeMod" Text="Liste des modèles" Form="Fabrications.FrListeTransfo" Arguments="ModeleFab" Image="liste" IconSize="16" />
+      <Item Type="MenuItem" Nom="SaisieMod" Text="Nouveau modèle" Form="Fabrications.FrSaisieTransfo" Arguments="ModeleFab" Image="_new" IconSize="16" />
+    </Items>
+  </Menu>
+  <Menu Nom="Tracabilite" Text="Traçabilité" Image="">
+    <Items>
+      <!--<Item Type="Separator" Nom="Sep" Text="Lots" />
+      <Item Type="MenuItem" Nom="ListeLots" Text="Liste des lots" Form="Lots.FrListeLots" Image="liste" IconSize="16" />
+      <Item Type="MenuItem" Nom="SaisieLots" Text="Nouveau lot" Form="Lots.FrSaisieLot" Image="_new" IconSize="16" />-->
+      <Item Type="Separator" Nom="Sep" Text="Réceptions" />
+      <Item Type="MenuItem" Nom="ListeBR" Text="Liste des réceptions" Form="Receptions.FrListeBR" Image="liste" IconSize="16" />
+      <Item Type="MenuItem" Nom="SaisieBR" Text="Nouvelle réception" Form="Receptions.FrSaisieBR" Image="_new" IconSize="16" />
+      <Item Type="Separator" Nom="Sep" Text="Fabrications" />
+      <Item Type="MenuItem" Nom="ListeFab" Text="Liste des fabrications" Form="Fabrications.FrListeTransfo" Arguments="Conditionnement" Image="liste" IconSize="16" />
+      <Item Type="MenuItem" Nom="SaisieFab" Text="Nouvelle fabrication" Form="Fabrications.FrSaisieTransfo" Arguments="Conditionnement" Image="_new" IconSize="16" />
+    </Items>
+  </Menu>
+  <Menu Nom="Stocks" Text="Stocks" Image="">
+    <Items>
+      <Item Type="MenuItem" Nom="Mouvements" Text="Liste des Mouvements" Form="Stocks.FrListeMouvements" Image="liste" IconSize="16" />
+      <Item Type="MenuItem" Nom="Inventaire" Text="Inventaire" Form="Stocks.FrInventaire" Image="_new" IconSize="16" />
+      <Item Type="MenuItem" Nom="Stock" Text="Etat des stocks" Form="Etats.FrEtatStock" Image="impr" IconSize="16" />
+    </Items>
+  </Menu>
+  <Menu Nom="Etats" Text="Etats" Image="">
+    <Items>
+      <Item Type="MenuItem" Nom="TracaLot" Text="Tracabilité Fabrication" Form="Etats.FrEtatTracaLot" Image="impr" IconSize="16" />
+      <Item Type="MenuItem" Nom="TracaProd" Text="Tracabilité Matière première" Form="Etats.FrEtatTracaMP" Image="impr" IconSize="16" />
+      <Item Type="MenuItem" Nom="Conf" Text="Non-conformités" Form="Etats.FrEtatNonConf" Image="impr" IconSize="16" />
+    </Items>
+  </Menu>
+</ArrayOfMenu>

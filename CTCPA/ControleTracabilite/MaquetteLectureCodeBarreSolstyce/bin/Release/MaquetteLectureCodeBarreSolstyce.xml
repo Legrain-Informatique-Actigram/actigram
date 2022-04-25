@@ -1,0 +1,322 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+MaquetteLectureCodeBarreSolstyce
+</name>
+</assembly>
+<members>
+<member name="M:MaquetteLectureCodeBarreSolstyce.XmlUtils.GetTransformXSLTFile(System.Xml.XmlDocument,System.String)">
+	<summary>
+ Transformation XSLT d'un fichier XML
+ </summary>
+	<param name="reader">Le document XML a transformer</param>
+	<param name="XSL_Filename">L'URI serveur du fichier xslt de transformation</param>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSet.ABonReceptionDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSet.ABonReception_DetailDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSet.CompositionProduitDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSet.EntrepriseDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSet.FamilleDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSet.LotDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSet.MouvementDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSet.Mouvement_DetailDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSet.ProduitDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSet.ListeChoixDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSet.TelephoneEntrepriseDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSet.DefinitionControleDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSet.BaremeDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSet.ResultatControleDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSet.ResultatBaremeDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSet.ModeleBaremeDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSet.ModeleDefinitionControleDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSet.CritereModeleDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSet.ABonReceptionRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSet.ABonReception_DetailRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSet.CompositionProduitRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSet.EntrepriseRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSet.FamilleRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSet.LotRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSet.MouvementRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSet.Mouvement_DetailRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSet.ProduitRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSet.ListeChoixRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSet.TelephoneEntrepriseRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSet.DefinitionControleRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSet.BaremeRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSet.ResultatControleRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSet.ResultatBaremeRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSet.ModeleBaremeRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSet.ModeleDefinitionControleRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSet.CritereModeleRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSet.ABonReceptionRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSet.ABonReception_DetailRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSet.CompositionProduitRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSet.EntrepriseRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSet.FamilleRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSet.LotRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSet.MouvementRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSet.Mouvement_DetailRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSet.ProduitRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSet.ListeChoixRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSet.TelephoneEntrepriseRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSet.DefinitionControleRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSet.BaremeRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSet.ResultatControleRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSet.ResultatBaremeRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSet.ModeleBaremeRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSet.ModeleDefinitionControleRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSet.CritereModeleRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSetTableAdapters.ABonReceptionTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSetTableAdapters.ABonReception_DetailTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSetTableAdapters.CompositionProduitTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSetTableAdapters.EntrepriseTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSetTableAdapters.FamilleTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSetTableAdapters.LotTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSetTableAdapters.MouvementTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSetTableAdapters.Mouvement_DetailTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSetTableAdapters.ProduitTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSetTableAdapters.ListeChoixTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSetTableAdapters.TelephoneEntrepriseTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSetTableAdapters.DefinitionControleTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSetTableAdapters.BaremeTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSetTableAdapters.ResultatControleTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSetTableAdapters.ResultatBaremeTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSetTableAdapters.ModeleBaremeTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSetTableAdapters.ModeleDefinitionControleTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSetTableAdapters.CritereModeleTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="P:MaquetteLectureCodeBarreSolstyce.My.Resources.Resources.ResourceManager">
+	<summary>
+  Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+</summary>
+</member><member name="P:MaquetteLectureCodeBarreSolstyce.My.Resources.Resources.Culture">
+	<summary>
+  Remplace la propriété CurrentUICulture du thread actuel pour toutes
+  les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.My.Resources.Resources">
+	<summary>
+  Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+</summary>
+</member>
+</members>
+</doc>

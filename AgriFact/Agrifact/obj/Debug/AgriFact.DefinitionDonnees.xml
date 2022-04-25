@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Définitions données pour la version 1.5 -->
+<DefinitionDonnees>
+	<Tables>
+		<Table nom="Entreprise" cle="nEntreprise" autonum="nEntreprise" />
+		<Table nom="TelephoneEntreprise" cle="nEntreprise,Type" />
+		<Table nom="Personne" cle="nPersonne" autonum="nPersonne" />
+		<Table nom="Telephone" cle="nPersonne,Type" />
+		<Table nom="Evenement" cle="nEvenement" autonum="nEvenement" />
+		<Table nom="Produit" cle="nProduit" autonum="nProduit" />
+		<Table nom="CompositionProduit" cle="nCompositionProduit" autonum="nCompositionProduit" />
+		<!--<Table nom="LiaisonProduit" cle="nLiaisonProduit" autonum="nLiaisonProduit" />-->
+		<Table nom="ListeChoix" cle="NomChoix,nOrdreValeur" tri="NomChoix,nOrdreValeur" param="true" />
+		<Table nom="Niveau1" tri="nNiveau" param="true" />
+		<Table nom="Niveau2" tri="nNiveau1,nNiveau2" param="true" />
+		<Table nom="EvenementPersonne" cle="nEvenementPersonne" autonum="nEvenementPersonne" />
+		<Table nom="EvenementPiece" cle="nEvenementPiece" autonum="nEvenementPiece" />
+		<Table nom="Utilisateurs" param="true" filtre=" Where Utilisateur='{0}'" />
+		<Table nom="Autorisations" />
+		<Table nom="Reglement" cle="nReglement" autonum="nReglement" />
+		<Table nom="Reglement_Detail" cle="nDetailReglement" autonum="nDetailReglement" />
+		<Table nom="AReglement" cle="nReglement" autonum="nReglement" />
+		<Table nom="AReglement_Detail" cle="nDetailReglement" autonum="nDetailReglement" />
+		<Table nom="Remise" cle="nRemise" autonum="nRemise" />
+		<Table nom="Remise_Detail" cle="nDetailRemise" autonum="nDetailRemise" />
+		<Table nom="Lot" cle="nLot" />
+		<Table nom="TVA" cle="nTVA" autonum="nTVA" />
+		<Table nom="ABonReception" cle="nDevis" autonum="nDevis" />
+		<Table nom="ABonReception_Detail" cle="nDetailDevis" autonum="nDetailDevis" />
+		<Table nom="AFacture" cle="nDevis" autonum="nDevis" />
+		<Table nom="AFacture_Detail" cle="nDetailDevis" autonum="nDetailDevis" />
+		<Table nom="VDevis" cle="nDevis" autonum="nDevis" />
+		<Table nom="VDevis_Detail" cle="nDetailDevis" autonum="nDetailDevis" />
+		<Table nom="VBonCommande" cle="nDevis" autonum="nDevis" />
+		<Table nom="VBonCommande_Detail" cle="nDetailDevis" autonum="nDetailDevis" />
+		<Table nom="VBonLivraison" cle="nDevis" autonum="nDevis" />
+		<Table nom="VBonLivraison_Detail" cle="nDetailDevis" autonum="nDetailDevis" />
+		<Table nom="VFacture" cle="nDevis" autonum="nDevis" />
+		<Table nom="VFacture_Detail" cle="nDetailDevis" autonum="nDetailDevis" />
+		<Table nom="Mouvement" cle="nMouvement" autonum="nMouvement" />
+		<Table nom="Mouvement_Detail" cle="nMouvementDetail" autonum="nMouvementDetail" />
+		<Table nom="Fabrication" cle="nFabrication" autonum="nFabrication" />
+		<Table nom="Fabrication_Detail" cle="nFabricationDetail" autonum="nFabricationDetail" />
+		<Table nom="Groupe" cle="nGroupe" />
+		<Table nom="Famille" cle="nFamille" />
+		<Table nom="Trame" cle="nTrame" autonum="nTrame" />
+		<!--<Table nom="Communes" cle="nVille" autonum="nVille" />-->
+    <Table nom="Dossiers" cle="DDossier" />
+    <Table nom="Journal" cle="JCodeJournal" />
+		<Table nom="Activites" cle="ADossier,AActi" />
+		<Table nom="Comptes" cle="CDossier,CCpt" />
+		<Table nom="PlanComptable" cle="PlDossier,PlCpt,PlActi" />
+		<Table nom="Banque" cle="nBanque" autonum="nBanque" />
+		<Table nom="Tarif" cle="nTarif" autonum="nTarif" />
+		<Table nom="Tarif_Detail" cle="nTarifDetail" autonum="nTarifDetail" />
+		<Table nom="Parametres" cle="nParametre" autonum="nParametre" ignoreErr="true"/>
+	</Tables>
+	<Relations>
+		<!-- Tarifs -->
+		<Relation nom="TarifTarif_Detail" parentTable="Tarif" parentCol="nTarif" childTable="Tarif_Detail" childCol="nTarif"  creerContraintes="true" />
+		<Relation nom="ProduitTarif_Detail" parentTable="Produit" parentCol="CodeProduit" childTable="Tarif_Detail" childCol="CodeProduit"  creerContraintes="false" />
+		<!-- Paramètres -->
+		<Relation nom="Niveau1Niveau2" parentTable="Niveau1" parentCol="nNiveau" childTable="Niveau2" childCol="nNiveau1"  creerContraintes="true" />
+		<Relation nom="AutorisationsUtilistateurs" parentTable="Autorisations" parentCol="nGroupeAutorisation" childTable="Utilisateurs" childCol="nGroupe"  creerContraintes="true" />
+		<Relation nom="PersonneUtilisateurs" parentTable="Personne" parentCol="nPersonne" childTable="Utilisateurs" childCol="nPersonne" creerContraintes="true" childDeleteRule="None" />
+		<Relation nom="PersonneTelephone" parentTable="Personne" parentCol="nPersonne" childTable="Telephone" childCol="nPersonne" creerContraintes="true" />
+		<!-- Produits -->
+		<Relation nom="ProduitCompositionProduit" parentTable="Produit" parentCol="CodeProduit" childTable="CompositionProduit" childCol="CodeProduit" creerContraintes="true" />
+		<!--<Relation nom="ProduitCompositionProduit2" parentTable="Produit" parentCol="CodeProduit" childTable="CompositionProduit" childCol="CodeProduitComposition" creerContraintes="true" />-->
+		<!--<Relation nom="ProduitLiaisonProduit" parentTable="Produit" parentCol="CodeProduit" childTable="LiaisonProduit" childCol="CodeProduit" creerContraintes="true" />
+		<Relation nom="ProduitLiaisonProduit2" parentTable="Produit" parentCol="CodeProduit" childTable="LiaisonProduit" childCol="CodeProduitLie" creerContraintes="true" />-->
+		<!-- Stock -->
+		<Relation nom="MouvementMouvement_Detail" parentTable="Mouvement" parentCol="nMouvement" childTable="Mouvement_Detail" childCol="nMouvement" creerContraintes="true" />
+		<Relation nom="FabricationFabrication_Detail" parentTable="Fabrication" parentCol="nFabrication" childTable="Fabrication_Detail" childCol="nFabrication" creerContraintes="true" />
+		<!-- Liaison FamilleProduit -->
+		<Relation nom="FamilleProduit" parentTable="Famille" parentCol="nFamille" childTable="Produit" childCol="Famille1" creerContraintes="true" childDeleteRule="None" />
+    <Relation nom="FamilleLot" parentTable="Famille" parentCol="nFamille" childTable="Lot" childCol="Famille1" creerContraintes="true" childDeleteRule="None" />
+    <Relation nom="FournisseurProduit" parentTable="Entreprise" parentCol="nEntreprise" childTable="Produit" childCol="nFournisseur" creerContraintes="false" childDeleteRule="None" />
+		<!-- Evenements -->
+		<Relation nom="EvenementEvenementPersonne" parentTable="Evenement" parentCol="nEvenement" childTable="EvenementPersonne" childCol="nEvenement" creerContraintes="true" />
+		<Relation nom="EvenementEvenementPiece" parentTable="Evenement" parentCol="nEvenement" childTable="EvenementPiece" childCol="nEvenement" creerContraintes="true" />
+		<Relation nom="PersonneEvenementPersonne" parentTable="Personne" parentCol="nPersonne" childTable="EvenementPersonne" childCol="nPersonne" creerContraintes="true" childDeleteRule="None" />
+		<Relation nom="EntrepriseEvenementPersonne" parentTable="Entreprise" parentCol="nEntreprise" childTable="EvenementPersonne" childCol="nEntreprise" creerContraintes="true" childDeleteRule="None" />
+		<Relation nom="PersonneEvenement" parentTable="Personne" parentCol="nPersonne" childTable="Evenement" childCol="nPersonneAuteur" creerContraintes="true" childDeleteRule="None" />
+		<Relation nom="ClientEvenement" parentTable="Entreprise" parentCol="nEntreprise" childTable="Evenement" childCol="nClient" creerContraintes="true" childDeleteRule="None" />
+		<!-- Entreprise -->
+		<Relation nom="EntrepriseContact" parentTable="Entreprise" parentCol="nEntreprise" childTable="Personne" childCol="nEntreprise" creerContraintes="false" childDeleteRule="None" />
+		<Relation nom="EntrepriseFiliale" parentTable="Entreprise" parentCol="nEntreprise" childTable="Entreprise" childCol="nMaisonMere" creerContraintes="true" childDeleteRule="None" />
+		<Relation nom="EntrepriseTelephone" parentTable="Entreprise" parentCol="nEntreprise" childTable="TelephoneEntreprise" childCol="nEntreprise" creerContraintes="true" />
+		<!-- Devis -->
+		<Relation nom="VDevisVDevis_Detail" parentTable="VDevis" parentCol="nDevis" childTable="VDevis_Detail" childCol="nDevis" creerContraintes="true" />
+		<Relation nom="ClientVDevis" parentTable="Entreprise" parentCol="nEntreprise" childTable="VDevis" childCol="nClient" creerContraintes="true" childDeleteRule="None" />
+		<!-- VBonCommande -->
+		<Relation nom="VBonCommandeVBonCommande_Detail" parentTable="VBonCommande" parentCol="nDevis" childTable="VBonCommande_Detail" childCol="nDevis" creerContraintes="true" />
+		<Relation nom="ClientVBonCommande" parentTable="Entreprise" parentCol="nEntreprise" childTable="VBonCommande" childCol="nClient" creerContraintes="true" childDeleteRule="None" />
+		<!-- VBonLivraison -->
+		<Relation nom="VBonLivraisonVBonLivraison_Detail" parentTable="VBonLivraison" parentCol="nDevis" childTable="VBonLivraison_Detail" childCol="nDevis" creerContraintes="true" />
+		<Relation nom="ClientVBonLivraison" parentTable="Entreprise" parentCol="nEntreprise" childTable="VBonLivraison" childCol="nClient" creerContraintes="true" childDeleteRule="None" />
+		<!-- VFacture -->
+		<Relation nom="VFactureVFacture_Detail" parentTable="VFacture" parentCol="nDevis" childTable="VFacture_Detail" childCol="nDevis" creerContraintes="true" />
+		<Relation nom="ClientVFacture" parentTable="Entreprise" parentCol="nEntreprise" childTable="VFacture" childCol="nClient" creerContraintes="true" childDeleteRule="None" />
+		<!-- Reglement Vente -->
+		<Relation nom="VFactureReglement_Detail" parentTable="VFacture" parentCol="nDevis" childTable="Reglement_Detail" childCol="nFacture" creerContraintes="true" childDeleteRule="None" />
+		<Relation nom="ReglementReglement_Detail" parentTable="Reglement" parentCol="nReglement" childTable="Reglement_Detail" childCol="nReglement" creerContraintes="true" />
+		<Relation nom="EntrepriseReglement" parentTable="Entreprise" parentCol="nEntreprise" childTable="Reglement" childCol="nEntreprise" creerContraintes="true" childDeleteRule="None" />
+		<Relation nom="BanqueRemise" parentTable="Banque" parentCol="nBanque" childTable="Remise" childCol="nBanque"  creerContraintes="true"  childDeleteRule="None"/>
+		<Relation nom="RemiseRemise_Detail" parentTable="Remise" parentCol="nRemise" childTable="Remise_Detail" childCol="nRemise" creerContraintes="true" />
+		<Relation nom="ReglementRemise_Detail" parentTable="Reglement" parentCol="nReglement" childTable="Remise_Detail" childCol="nReglement" creerContraintes="true" />
+		<!-- ABonReception -->
+		<Relation nom="ABonReceptionABonReception_Detail" parentTable="ABonReception" parentCol="nDevis" childTable="ABonReception_Detail" childCol="nDevis" creerContraintes="true" />
+		<Relation nom="FournisseurABonReception" parentTable="Entreprise" parentCol="nEntreprise" childTable="ABonReception" childCol="nClient" creerContraintes="true" childDeleteRule="None" />
+		<!-- AFacture -->
+		<Relation nom="AFactureAFacture_Detail" parentTable="AFacture" parentCol="nDevis" childTable="AFacture_Detail" childCol="nDevis" creerContraintes="true" />
+		<Relation nom="ClientAFacture" parentTable="Entreprise" parentCol="nEntreprise" childTable="AFacture" childCol="nClient" creerContraintes="true" childDeleteRule="None" />
+		<Relation nom="PrescripteurVFacture" parentTable="Entreprise" parentCol="nEntreprise" childTable="VDevis" childCol="nPrescripteur" creerContraintes="true" childDeleteRule="None" />
+		<Relation nom="PayeurVFacture" parentTable="Entreprise" parentCol="nEntreprise" childTable="VFacture" childCol="nPayeur" creerContraintes="true" childDeleteRule="None" />
+		<Relation nom="ContactVFacture" parentTable="Personne" parentCol="nPersonne" childTable="VFacture" childCol="nContact" creerContraintes="true" childDeleteRule="None" />
+		<Relation nom="CommercialVFacture" parentTable="Personne" parentCol="nPersonne" childTable="VFacture" childCol="nCommercial" creerContraintes="true" childDeleteRule="None" />
+		<!-- Reglement Achat -->
+		<Relation nom="AFactureAReglement_Detail" parentTable="AFacture" parentCol="nDevis" childTable="AReglement_Detail" childCol="nFacture" creerContraintes="true"  childDeleteRule="None" />
+		<Relation nom="AReglementAReglement_Detail" parentTable="AReglement" parentCol="nReglement" childTable="AReglement_Detail" childCol="nReglement" creerContraintes="true" />
+		<Relation nom="EntrepriseAReglement" parentTable="Entreprise" parentCol="nEntreprise" childTable="AReglement" childCol="nEntreprise" creerContraintes="true" childDeleteRule="None" />
+	</Relations>
+</DefinitionDonnees>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfFormatFichierIsagri xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <FormatFichierIsagri Version="0200000">
+    <FormatsLigne>
+      <item>
+        <key>
+          <string>VER</string>
+        </key>
+        <value>
+          <string>VER   .{1,27}(?&lt;Destruction&gt;\d{1})</string>
+        </value>
+      </item>
+      <item>
+        <key>
+          <string>DOS</string>
+        </key>
+        <value>
+          <string>DOS   (?&lt;Exploitation&gt;(\s|\w){8})...(?&lt;Nom1&gt;.{40})</string>
+        </value>
+      </item>
+      <item>
+        <key>
+          <string>EXO</string>
+        </key>
+        <value>
+          <string>EXO   (?&lt;DateDebEx&gt;\d{8})(?&lt;DateFinEx&gt;\d{8})(?&lt;Destruction&gt;\d{1})</string>
+        </value>
+      </item>
+      <item>
+        <key>
+          <string>ECR</string>
+        </key>
+        <value>
+          <string>ECR   (?&lt;CodeJournal&gt;\w{2})(?&lt;DatePiece&gt;\d{8})(?&lt;NumPiece&gt;.{8})(?&lt;Libelle&gt;.{30}).{65}(?&lt;ADetruire&gt;\d)</string>
+        </value>
+      </item>
+      <item>
+        <key>
+          <string>MVT</string>
+        </key>
+        <value>
+          <string>MVT   (?&lt;Compte&gt;(\s|\w){10})(?&lt;LibMvt&gt;.{30})(?&lt;MontantD&gt;(\d|\W){13})(?&lt;MontantC&gt;(\d|\W){13})(?&lt;Qte1&gt;(\d|\W){11})(?&lt;Qte2&gt;(\d|\W){11}).{8}(?&lt;CodeTva&gt;(\w|\s){2})(?&lt;CodeTvaCompte&gt;(\w|\s){2})(?&lt;FlagLettrage&gt;(\d|\s){1})(?&lt;CodeLettrage&gt;(\w|\s){3})(?&lt;DatePointage&gt;(\d|\s){8})(?&lt;NbAct&gt;(\d|\s){4})(?&lt;FlagEcheances&gt;(\d|\s){1})(?&lt;DateDeclaration&gt;(\d|\s){8}).{20}(?&lt;DateValeur&gt;(\d|\s){8})</string>
+        </value>
+      </item>
+      <item>
+        <key>
+          <string>ANAMVT</string>
+        </key>
+        <value>
+          <string>ANAMVT  (?&lt;CodeAct&gt;(\s|\w){1,6}).{42}(?&lt;Pourcentage&gt;(\d|\W){10})</string>
+        </value>
+      </item>
+      <item>
+        <key>
+          <string>ANA</string>
+        </key>
+        <value>
+          <string>ANA   (?&lt;CodeAct&gt;(\s|\w){6})..(?&lt;LibAct&gt;(\s|\W|\w){40}).{6}(?&lt;Unite1&gt;(\s|\w){5})(?&lt;Qte1&gt;(\W|\d){11})</string>
+        </value>
+      </item>
+      <item>
+        <key>
+          <string>CPT</string>
+        </key>
+        <value>
+          <string>CPT   (?&lt;NCompte&gt;(\s|\w){10})(?&lt;LibCompte&gt;(\s|\W|\w){30}).{10}(?&lt;Unite1&gt;(\s|\W|\w){3})(?&lt;LibUnite1&gt;(\s|\W|\w){10})(?&lt;Unite2&gt;(\s|\W|\w){3})(?&lt;LibUnite2&gt;(\s|\W|\w){10})</string>
+        </value>
+      </item>
+    </FormatsLigne>
+  </FormatFichierIsagri>
+  <FormatFichierIsagri Version="0900200">
+    <FormatsLigne>
+      <item>
+        <key>
+          <string>VER</string>
+        </key>
+        <value>
+          <string>VER   .{1,27}(?&lt;Destruction&gt;\d{1})</string>
+        </value>
+      </item>
+      <item>
+        <key>
+          <string>DOS</string>
+        </key>
+        <value>
+          <string>DOS   (?&lt;Exploitation&gt;(\s|\w){8})...(?&lt;Nom1&gt;.{40})</string>
+        </value>
+      </item>
+      <item>
+        <key>
+          <string>EXO</string>
+        </key>
+        <value>
+          <string>EXO   (?&lt;DateDebEx&gt;\d{8})(?&lt;DateFinEx&gt;\d{8})(?&lt;Destruction&gt;\d{1})</string>
+        </value>
+      </item>
+      <item>
+        <key>
+          <string>ECR</string>
+        </key>
+        <value>
+          <string>ECR   (?&lt;CodeJournal&gt;\w{2})(?&lt;DatePiece&gt;\d{8})(?&lt;NumPiece&gt;.{8})(?&lt;Libelle&gt;.{30}).{65}(?&lt;ADetruire&gt;\d)</string>
+        </value>
+      </item>
+      <item>
+        <key>
+          <string>MVT</string>
+        </key>
+        <value>
+          <string>MVT   (?&lt;Compte&gt;(\s|\w){10})(?&lt;LibMvt&gt;.{30})(?&lt;MontantD&gt;(\d|\W){17})(?&lt;MontantC&gt;(\d|\W){17})(?&lt;Qte1&gt;(\d|\W){17})(?&lt;Qte2&gt;(\d|\W){17}).{8}(?&lt;CodeTva&gt;(\w|\s){2})(?&lt;CodeTvaCompte&gt;(\w|\s){2})(?&lt;FlagLettrage&gt;(\d|\s){1})(?&lt;CodeLettrage&gt;(\w|\s){3})(?&lt;DatePointage&gt;(\d|\s){8})(?&lt;NbAct&gt;(\d|\s){4})(?&lt;FlagEcheances&gt;(\d|\s){1})(?&lt;DateDeclaration&gt;(\d|\s){8}).{20}(?&lt;DateValeur&gt;(\d|\s){8})</string>
+        </value>
+      </item>
+      <item>
+        <key>
+          <string>ANAMVT</string>
+        </key>
+        <value>
+          <string>ANAMVT  (?&lt;CodeAct&gt;(\s|\w){1,6}).{42}(?&lt;Pourcentage&gt;(\d|\W){10})</string>
+        </value>
+      </item>
+      <item>
+        <key>
+          <string>ANA</string>
+        </key>
+        <value>
+          <string>ANA   (?&lt;CodeAct&gt;(\s|\w){6})..(?&lt;LibAct&gt;(\s|\W|\w){40}).{6}(?&lt;Unite1&gt;(\s|\w){5})(?&lt;Qte1&gt;(\W|\d){11})</string>
+        </value>
+      </item>
+      <item>
+        <key>
+          <string>CPT</string>
+        </key>
+        <value>
+          <string>CPT   (?&lt;NCompte&gt;(\s|\w){10})(?&lt;LibCompte&gt;(\s|\W|\w){30}).{10}(?&lt;Unite1&gt;(\s|\W|\w){3})(?&lt;LibUnite1&gt;(\s|\W|\w){10})(?&lt;Unite2&gt;(\s|\W|\w){3})(?&lt;LibUnite2&gt;(\s|\W|\w){10})</string>
+        </value>
+      </item>
+    </FormatsLigne>
+  </FormatFichierIsagri>
+</ArrayOfFormatFichierIsagri>
+
+

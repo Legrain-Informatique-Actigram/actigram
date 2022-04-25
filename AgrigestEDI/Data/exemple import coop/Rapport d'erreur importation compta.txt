@@ -1,0 +1,3 @@
+﻿Il y a un problème dans l'enregistrement de pièce.
+   à AgrigestEDI.Interfaces.IsAgri.Importateur.Importer(dbSauvRest& dsImport, String fichier, String sVersionFichier, Int32 nCodePage) dans C:\ACTIGRAM\Externe\AgrigestEDI\AgrigestEDI\Exports\ClassExportationIsAgri.vb:ligne 220
+   à AgrigestEDI.FrImportationIsagri.Importer(String fichierImport) dans C:\ACTIGRAM\Externe\AgrigestEDI\AgrigestEDI\Exports\FrImportationIsagri.vb:ligne 212

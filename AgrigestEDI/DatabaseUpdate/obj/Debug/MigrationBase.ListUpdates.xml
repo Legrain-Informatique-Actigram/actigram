@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<ListUpdates>
+	<Updates>
+		<Update VersionAvant="8.5"   VersionApres="9.5"   NomScript="ScriptMigration9.5.sql"   />
+		<Update VersionAvant="9.5"   VersionApres="9.6"   NomScript="ScriptMigration9.6.sql"   />
+	</Updates>
+</ListUpdates>

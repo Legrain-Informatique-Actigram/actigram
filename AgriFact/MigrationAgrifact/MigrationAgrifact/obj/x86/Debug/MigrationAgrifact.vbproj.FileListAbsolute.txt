@@ -1,0 +1,9 @@
+C:\ACTIGRAM\VBNET2.0\AgriFact\MigrationAgrifact\MigrationAgrifact\bin\x86\Debug\MigrationAgrifact.exe
+C:\ACTIGRAM\VBNET2.0\AgriFact\MigrationAgrifact\MigrationAgrifact\bin\x86\Debug\MigrationAgrifact.pdb
+C:\ACTIGRAM\VBNET2.0\AgriFact\MigrationAgrifact\MigrationAgrifact\bin\x86\Debug\MigrationAgrifact.xml
+C:\ACTIGRAM\VBNET2.0\AgriFact\MigrationAgrifact\MigrationAgrifact\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\ACTIGRAM\VBNET2.0\AgriFact\MigrationAgrifact\MigrationAgrifact\obj\x86\Debug\MigrationAgrifact.Resources.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\MigrationAgrifact\MigrationAgrifact\obj\x86\Debug\MigrationAgrifact.vbproj.GenerateResource.Cache
+C:\ACTIGRAM\VBNET2.0\AgriFact\MigrationAgrifact\MigrationAgrifact\obj\x86\Debug\MigrationAgrifact.exe
+C:\ACTIGRAM\VBNET2.0\AgriFact\MigrationAgrifact\MigrationAgrifact\obj\x86\Debug\MigrationAgrifact.xml
+C:\ACTIGRAM\VBNET2.0\AgriFact\MigrationAgrifact\MigrationAgrifact\obj\x86\Debug\MigrationAgrifact.pdb

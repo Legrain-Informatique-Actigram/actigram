@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfParametrageImportFichier xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<ParametrageImportFichier Type="Balance">
+		<Items>
+			<Item Codage="1252 (ANSI - Latin I)" TypeDelimiter="Delimité" Delimiter="Semicolon {;}" Header="False" Nom="Fichier cvs ANouveau">
+				<Affectation>
+					<item>
+						<key>
+							<string>Compte</string>
+						</key>
+						<value>
+							<string>Colonne 0</string>
+						</value>
+					</item>
+					<item>
+						<key>
+							<string>Activite</string>
+						</key>
+						<value>
+							<string />
+						</value>
+					</item>
+					<item>
+						<key>
+							<string>Libelle du compte</string>
+						</key>
+						<value>
+							<string>Colonne 1</string>
+						</value>
+					</item>
+					<item>
+						<key>
+							<string>Debit</string>
+						</key>
+						<value>
+							<string>Colonne 6</string>
+						</value>
+					</item>
+					<item>
+						<key>
+							<string>Credit</string>
+						</key>
+						<value>
+							<string>Colonne 7</string>
+						</value>
+					</item>
+				</Affectation>
+			</Item>
+		</Items>
+	</ParametrageImportFichier>
+</ArrayOfParametrageImportFichier>

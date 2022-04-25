@@ -1,0 +1,86 @@
+MatPrem;Critére;Valeur critère;IdControle;Ordre;Groupe;Libelle;Type;ValeursPossibles;ValeursDefaut;Expression;Action corrective;PDF
+0;PROCESS;DECOUPE;2;2;CONTRÔLE FABRICATION;Heure de début:;TimePicker;;;;;
+0;PROCESS;DECOUPE;3;3;CONTRÔLE FABRICATION;Heure de fin:;TimePicker;;;;;
+0;PROCESS;DECOUPE;4;4;CONTRÔLE FABRICATION;Durée:;Expression;c3-c2;;;;
+0;PROCESS;DECOUPE;5;5;CONTRÔLE FABRICATION;T° en salle de production:;NumericUpDown;;;val<=12;Contrôle des températures cœur produit toute les heures (Température inferieur  < 5°C ) ou report de la fabrication;
+0;PROCESS;DECOUPE;6;6;CONTRÔLE FABRICATION;T° produit à cœur début:;NumericUpDown;;;val<7;Maintenir les produits en CF reprendre la fabrication unique lorsque la température de 4°C est atteinte;
+0;PROCESS;DECOUPE;7;7;CONTRÔLE FABRICATION;T° produit à cœur fin:;NumericUpDown;;;val<7;Utilisation des produits dans des préparations avec traitement thermique;
+0;PROCESS;SALAGE;2;2;CONTRÔLE FABRICATION;Heure de début:;TimePicker;;;;;
+0;PROCESS;SALAGE;3;3;CONTRÔLE FABRICATION;Heure de fin:;TimePicker;;;;;
+0;PROCESS;SALAGE;4;4;CONTRÔLE FABRICATION;Durée:;Expression;c3-c2;;;;
+0;PROCESS;SALAGE;5;5;CONTRÔLE FABRICATION;T° en salle de production:;NumericUpDown;;;val<=12;Contrôle des températures cœur produit toute les heures (Température inferieur  < 5°C ) ou report de la fabrication;
+0;PROCESS;SALAGE;6;6;CONTRÔLE FABRICATION;T° produit à cœur début:;NumericUpDown;;;val<7;Maintenir les produits en CF reprendre la fabrication unique lorsque la température de 4°C est atteinte;
+0;PROCESS;SALAGE;7;7;CONTRÔLE FABRICATION;T° produit à cœur fin:;NumericUpDown;;;val<7;Utilisation des produits dans des préparations avec traitement thermique;
+0;PROCESS;SALAGE;8;8;CONTRÔLE FABRICATION;Taux de sel (g/kg):;NumericUpDown;;;;;
+0;FORMAT;PLASTIQUE THERMO-SONDE;15;15;CONTRÔLE FERMETURE CONDITIONNEMENT;Contrôle visuel:;RadioButton;"Bon;Mauvais";;val='Bon';Réglage machine. Cf.PDF;
+0;FORMAT;PLASTIQUE THERMO-SONDE;16;16;CONTRÔLE FERMETURE CONDITIONNEMENT;T° de soudure:;NumericUpDown;;;;;
+0;FORMAT;PLASTIQUE THERMO-SONDE;17;17;CONTRÔLE FERMETURE CONDITIONNEMENT;Heure de début conditionnement:;TimePicker;;;;;
+0;FORMAT;PLASTIQUE THERMO-SONDE;18;18;CONTRÔLE FERMETURE CONDITIONNEMENT;Heure de fin conditionnement:;TimePicker;;;;;
+0;FORMAT;PLASTIQUE THERMO-SONDE;19;19;CONTRÔLE FERMETURE CONDITIONNEMENT;Durée:;Expression;c18-c17;;Val<= 4h;Contrôle des températures cœur produit si T° > 5°c entré les produits en chambre froide;
+0;FORMAT;PLASTIQUE THERMO-SONDE;20;20;CONTRÔLE FERMETURE CONDITIONNEMENT;Contrôle résistance pression:;RadioButton;"Bon;Mauvais";;val='Bon';Réglage machine. Cf.PDF;pdf  fourni plus tard 
+0;FORMAT;PLASTIQUE THERMO-SONDE;21;21;CONTRÔLE FERMETURE CONDITIONNEMENT;Contrôle CO2;NumericUpDown;;;val<= X and val >=Y;Réglage machine. Verication mélange Gaz utilisé;
+0;FORMAT;PLASTIQUE THERMO-SONDE;22;22;CONTRÔLE FERMETURE CONDITIONNEMENT;Contrôle O2 (en %);NumericUpDown;;;val<1;Réglage machine. Verication mélange Gaz utilisé;
+0;FORMAT;PLASTIQUE THERMO-SONDE;23;23;CONTRÔLE FERMETURE CONDITIONNEMENT;T° salle de conditionnement;NumericUpDown;;;val<=12;Contrôle des températures cœur produit toute les heures (Température inferieur  < 5°C ) ou report du conditionnement;
+0;FORMAT;PLASTIQUE THERMO-SONDE;24;24;CONTRÔLE FERMETURE CONDITIONNEMENT;T° produit à cœur avant conditionnement:;NumericUpDown;;;val<7;Maintenir les produits en CF reprendre la fabrication unique lorsque la température de 4°C est atteinte;
+0;FORMAT;VERRE BOCAUX LPS;24;24;CONTRÔLE FERMETURE CONDITIONNEMENT;Contrôle de dépression bocal par décrochage manuel et vérification de la présence d’une dépression : ;RadioButton;"Bon;Mauvais";;val='Bon';Refaire le réglage dans le cas d’un vide mécanique sur la machine sous vide. Cf. PDF;conditionnnementverre.pdf
+0;FORMAT;VERRE BOCAUX TWIST OFF;25;25;CONTRÔLE FERMETURE CONDITIONNEMENT;Contrôle visuel par le flip (si présence) : ;RadioButton;"Bon;Mauvais";;val='Bon';Refaire le réglage de la capsuleuse. Cf. PDF;conditionnnementverre.pdf
+0;FORMAT;VERRE BOCAUX TWIST OFF;26;26;CONTRÔLE FERMETURE CONDITIONNEMENT;Contrôle croissure TO : ;NumericUpDown;;;val>=4 and val<=7;Refaire le réglage de la capsuleuse. Cf. PDF;conditionnnementverre.pdf
+0;FORMAT;VERRE BOCAUX TWIST OFF;27;27;CONTRÔLE FERMETURE CONDITIONNEMENT;Mesure de la dépression au vaccuomètre (bar):;NumericUpDown;1;;val<-0.3;Refaire le réglage de la capsuleuse. Cf. PDF;conditionnnementverre.pdf
+0;FORMAT;FER 5/1;27;27;CONTRÔLE FERMETURE CONDITIONNEMENT;Contrôle visuel:;RadioButton;"Bon;Mauvais";;val='Bon';Refaire le réglage de la sertisseuse. Cf.PDF;pdf CCP sertissage.pdf
+0;FORMAT;FER 5/1;28;28;CONTRÔLE FERMETURE CONDITIONNEMENT;Contrôle tactile:;RadioButton;"Bon;Mauvais";;val='Bon';Refaire le réglage de la sertisseuse. Cf.PDF;pdf CCP sertissage.pdf
+0;FORMAT;FER 5/1;29;29;CONTRÔLE FERMETURE CONDITIONNEMENT;Contrôle pression:;RadioButton;"Bon;Mauvais";;val='Bon';Refaire le réglage de la sertisseuse. Cf.PDF;pdf CCP sertissage.pdf
+0;FORMAT;FER 5/1;30;30;CONTRÔLE FERMETURE CONDITIONNEMENT;Pourcentage d'ondulation (%):;NumericUpDown;;;val<=30;Resserrer la deuxième passe. Cf. PDF;pdf CCP sertissage.pdf
+0;FORMAT;FER 5/1;31;31;CONTRÔLE FERMETURE CONDITIONNEMENT;Calcul de la croisure (mm):;Expression;(c33+c34+c35)-c32;;val>= X;Refaire le réglage de la sertisseuse. Cf.PDF;pdf CCP sertissage.pdf
+0;FORMAT;FER 5/1;32;32;CONTRÔLE FERMETURE CONDITIONNEMENT;     a) Hauteur serti (mm):;NumericUpDown;;;;;
+0;FORMAT;FER 5/1;33;33;CONTRÔLE FERMETURE CONDITIONNEMENT;     b) Crochet de corps (mm):;NumericUpDown;;;;;
+0;FORMAT;FER 5/1;34;34;CONTRÔLE FERMETURE CONDITIONNEMENT;     c) Crochet de fond (mm):;NumericUpDown;;;;;
+0;FORMAT;FER 5/1;35;35;CONTRÔLE FERMETURE CONDITIONNEMENT;     d) Epaisseur métal fond (mm):;NumericUpDown;;;;;
+0;FORMAT;FER 5/1;36;36;CONTRÔLE FERMETURE CONDITIONNEMENT;     e) Epaisseur métal corps boite (mm):;NumericUpDown;;;;;
+0;FORMAT;FER 5/1;37;37;CONTRÔLE FERMETURE CONDITIONNEMENT;Calcul % recouvrement (mm):;Expression;c31/c32- 2*c35-c36;;val>0.45;Refaire le réglage de la sertisseuse. Cf.PDF;pdf CCP sertissage.pdf
+0;FORMAT;FER 5/1;38;38;CONTRÔLE FERMETURE CONDITIONNEMENT;Calcul equilibre crochet (mm);Expression;c33-34;;val<0.2;Refaire le réglage de la sertisseuse. Cf.PDF;pdf CCP sertissage.pdf
+0;FORMAT;FER AUTRES;27;27;CONTRÔLE FERMETURE CONDITIONNEMENT;Contrôle visuel:;RadioButton;"Bon;Mauvais";;val='Bon';Refaire le réglage de la sertisseuse. Cf.PDF;pdf CCP sertissage.pdf
+0;FORMAT;FER AUTRES;28;28;CONTRÔLE FERMETURE CONDITIONNEMENT;Contrôle tactile:;RadioButton;"Bon;Mauvais";;val='Bon';Refaire le réglage de la sertisseuse. Cf.PDF;pdf CCP sertissage.pdf
+0;FORMAT;FER AUTRES;29;29;CONTRÔLE FERMETURE CONDITIONNEMENT;Contrôle pression:;RadioButton;"Bon;Mauvais";;val='Bon';Refaire le réglage de la sertisseuse. Cf.PDF;pdf CCP sertissage.pdf
+0;FORMAT;FER AUTRES;30;30;CONTRÔLE FERMETURE CONDITIONNEMENT;Pourcentage d'ondulation (%):;NumericUpDown;;;val<=30;Resserrer la deuxième passe. Cf. PDF;pdf CCP sertissage.pdf
+0;FORMAT;FER AUTRES;31;31;CONTRÔLE FERMETURE CONDITIONNEMENT;Calcul de la croisure (mm):;Expression;(c33+c34+c35)-c32;;val>= X;Refaire le réglage de la sertisseuse. Cf.PDF;pdf CCP sertissage.pdf
+0;FORMAT;FER AUTRES;32;32;CONTRÔLE FERMETURE CONDITIONNEMENT;     a) Hauteur serti (mm):;NumericUpDown;;;;;
+0;FORMAT;FER AUTRES;33;33;CONTRÔLE FERMETURE CONDITIONNEMENT;     b) Crochet de corps (mm):;NumericUpDown;;;;;
+0;FORMAT;FER AUTRES;34;34;CONTRÔLE FERMETURE CONDITIONNEMENT;     c) Crochet de fond (mm):;NumericUpDown;;;;;;;;;;;
+0;FORMAT;FER AUTRES;35;35;CONTRÔLE FERMETURE CONDITIONNEMENT;     d) Epaisseur métal fond (mm):;NumericUpDown;;;;;;;;;;;
+0;FORMAT;FER AUTRES;36;36;CONTRÔLE FERMETURE CONDITIONNEMENT;     e) Epaisseur métal corps boite (mm):;NumericUpDown;;;;;;;;;;;
+0;FORMAT;FER AUTRES;37;37;CONTRÔLE FERMETURE CONDITIONNEMENT;Calcul % recouvrement(mm):;Expression;c31/c32- 2*c35-c36;;val>0.45;Refaire le réglage de la sertisseuse. Cf.PDF;pdf CCP sertissage.pdf;;;;;;
+0;FORMAT;FER AUTRES;38;38;CONTRÔLE FERMETURE CONDITIONNEMENT;Calcul equilibre crochet (mm);Expression;c33-34;;val<0.2;Refaire le réglage de la sertisseuse. Cf.PDF;pdf CCP sertissage.pdf;;;;;;
+0;PROCESS;PASTEURISATION;38;2;CONTRÔLE TRAITEMENT THERMIQUE;T°initilale Produit;NumericUpDown;;;val>= X;;;;;;;;
+0;PROCESS;PASTEURISATION;39;3;CONTRÔLE TRAITEMENT THERMIQUE;Heure de début cycle:;TimePicker;;;;;;;;;;;
+0;PROCESS;PASTEURISATION;40;4;CONTRÔLE TRAITEMENT THERMIQUE;Heure de début barème;TimePicker;;;;;;;;;;;
+0;PROCESS;PASTEURISATION;41;5;CONTRÔLE TRAITEMENT THERMIQUE;Heure de fin barème;TimePicker;;;;;;;;;;;
+0;PROCESS;PASTEURISATION;42;6;CONTRÔLE TRAITEMENT THERMIQUE;Heure de fin cycle;TimePicker;;;;;;;;;;;
+0;PROCESS;PASTEURISATION;43;7;CONTRÔLE TRAITEMENT THERMIQUE;Température barème;NumericUpDown;;;val<X;correction immédiate de la température pendant le barème et bloquage du lot avec analyse microbiologique libératoire ET ENREGISTREMENT DE L'ACTION CORRECTIVE MISE EN PLACE;;;;;;;
+0;PROCESS;PASTEURISATION;44;8;CONTRÔLE TRAITEMENT THERMIQUE;Température fin de cycle;NumericUpDown;;;val<X;poursuivre le refroidissement jusqu'à la consigne ;;;;;;;
+0;PROCESS;PASTEURISATION;45;9;CONTRÔLE TRAITEMENT THERMIQUE; Calcul DMR;Expression;c40-c39;;val>=X;bloquage du lot avec analyse microbiologique libératoire;;;;;;;
+0;PROCESS;PASTEURISATION;46;10;CONTRÔLE TRAITEMENT THERMIQUE; Calcul durée du barème;Expression;c40-c41;;val>=X;bloquage du lot avec analyse microbiologique libératoire;;;;;;;
+0;PROCESS;PASTEURISATION;47;11;CONTRÔLE TRAITEMENT THERMIQUE;calcul durée de refroidissement;Expression;c41-c42;;val>=X;bloquage du lot avec analyse microbiologique libératoire;;;;;;;
+0;PROCESS;STERILISATION;47;2;CONTRÔLE TRAITEMENT THERMIQUE;T°initilale Produit;NumericUpDown;;;val>= X;;;;;;;;
+0;PROCESS;STERILISATION;48;3;CONTRÔLE TRAITEMENT THERMIQUE;Heure de début cycle:;TimePicker;;;;
+0;PROCESS;STERILISATION;49;4;CONTRÔLE TRAITEMENT THERMIQUE;Heure de début barème;TimePicker;;;;
+0;PROCESS;STERILISATION;50;5;CONTRÔLE TRAITEMENT THERMIQUE;Heure de fin barème;TimePicker;;;;
+0;PROCESS;STERILISATION;51;6;CONTRÔLE TRAITEMENT THERMIQUE;Heure de fin cycle;TimePicker;;;;
+0;PROCESS;STERILISATION;52;7;CONTRÔLE TRAITEMENT THERMIQUE;Température barème;NumericUpDown;;;val<X;correction immédiate de la température pendant le barème et bloquage du lot avec analyse contrôle de stabilité  libératoire ET ENREGISTREMENT DE L'ACTION CORRECTIVE MISE EN PLACE
+0;PROCESS;STERILISATION;53;8;CONTRÔLE TRAITEMENT THERMIQUE;Pression barème;NumericUpDown;;;val<X;correction immédiate de la température pendant le barème et bloquage du lot avec analyse microbiologique libératoire ET ENREGISTREMENT DE L'ACTION CORRECTIVE MISE EN PLACE 
+0;PROCESS;STERILISATION;54;9;CONTRÔLE TRAITEMENT THERMIQUE;Pression Refroidissement;NumericUpDown;;;val<X;correction imédiate de la pression pendant le barème 
+0;PROCESS;STERILISATION;55;10;CONTRÔLE TRAITEMENT THERMIQUE; Calcul DMR;Expression;c40-c39;;val>=X;bloquage du lot avec analyse microbiologique libératoire
+0;PROCESS;STERILISATION;56;11;CONTRÔLE TRAITEMENT THERMIQUE; Calcul durée du barème;Expression;c42-c41;;val>=X;bloquage du lot avec analyse microbiologique libératoire
+0; PROCESS;STERILISATION;57;12;CONTRÔLE TRAITEMENT STERILISATION;Date de mise en étuve à 37°C;DatePicker;;;;
+0;PROCESS;STERILISATION;58;13;CONTRÔLE TRAITEMENT STERILISATION;Date de sortie en étuve à 37°C;DatePicker;;;;
+0;PROCESS;STERILISATION;59;14;CONTRÔLE TRAITEMENT STERILISATION;Durée d'etuvage à 37° (j);Expression;(c58-c57)/1440;;val>= 7;poursuivre l'étuvage
+0;PROCESS;STERILISATION;60;15;CONTRÔLE TRAITEMENT STERILISATION;Contrôle visuel:;RadioButton;"Bon;Mauvais";;val='Bon';bloquage du lot en chambre froide analyse complémentaire, destruction du lot ou recyclage avec maitrise du risque sanitaire , ENREGISTREMENT DE L'ACTION CORRECTION
+0;PROCESS;STERILISATION;61;16;CONTRÔLE TRAITEMENT STERILISATION;Mesure pH  boite étuvé 37°C;NumericUpDown;;;;
+0;PROCESS;STERILISATION;62;17;CONTRÔLE TRAITEMENT STERILISATION;Mesure pH  témoin  20°c;NumericUpDown;;;;
+0;PROCESS;STERILISATION;63;18;CONTRÔLE TRAITEMENT STERILISATION;Calcul variation;Expression;abs(c62-c61);;val>0.5;bloquage du lot en chambre froide analyse complémentaire, destruction du lot ou recyclage avec maitrise du risque sanitaire , ENREGISTREMENT DE L'ACTION CORRECTION
+0;PROCESS;STERILISATION;64;19;CONTRÔLE TRAITEMENT STERILISATION;Date de mise en étuve à 55°C;DatePicker;;;;
+0;PROCESS;STERILISATION;65;20;CONTRÔLE TRAITEMENT STERILISATION;Date de sortie en étuve à 55°C;DatePicker;;;;
+0;PROCESS;STERILISATION;66;21;CONTRÔLE TRAITEMENT STERILISATION;Durée d'etuvage à 55°C;Expression;(c65-c64)/1440;;val>= 7;poursuivre l'étuvage
+0;PROCESS;STERILISATION;67;22;CONTRÔLE TRAITEMENT STERILISATION;Contrôle visuel:;RadioButton;"Bon;Mauvais";;val='Bon';bloquage du lot en chambre froide analyse complémentaire, destruction du lot ou recyclage avec maitrise du risque sanitaire , ENREGISTREMENT DE L'ACTION CORRECTION
+0;PROCESS;STERILISATION;68;23;CONTRÔLE TRAITEMENT STERILISATION;Mesure pH  boite étuvé 55°C;NumericUpDown;;;;
+0;PROCESS;STERILISATION;69;24;CONTRÔLE TRAITEMENT STERILISATION;Mesure pH  témoin  20°c;NumericUpDown;;;;
+0;PROCESS;STERILISATION;70;25;CONTRÔLE TRAITEMENT STERILISATION;Calcul variation;Expression;abs(c68-c69);;val>0.5;commercialisation possible sous régime froid

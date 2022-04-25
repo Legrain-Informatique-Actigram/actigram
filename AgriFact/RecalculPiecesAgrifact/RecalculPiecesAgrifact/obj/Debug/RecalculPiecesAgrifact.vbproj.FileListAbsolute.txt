@@ -1,0 +1,24 @@
+D:\Visual Studio 2008\Projects\RecalculPiecesAgrifact\RecalculPiecesAgrifact\bin\Debug\RecalculPiecesAgrifact.exe.config
+D:\Visual Studio 2008\Projects\RecalculPiecesAgrifact\RecalculPiecesAgrifact\bin\Debug\RecalculPiecesAgrifact.exe
+D:\Visual Studio 2008\Projects\RecalculPiecesAgrifact\RecalculPiecesAgrifact\bin\Debug\RecalculPiecesAgrifact.pdb
+D:\Visual Studio 2008\Projects\RecalculPiecesAgrifact\RecalculPiecesAgrifact\bin\Debug\RecalculPiecesAgrifact.xml
+D:\Visual Studio 2008\Projects\RecalculPiecesAgrifact\RecalculPiecesAgrifact\obj\Debug\ResolveAssemblyReference.cache
+D:\Visual Studio 2008\Projects\RecalculPiecesAgrifact\RecalculPiecesAgrifact\obj\Debug\RecalculPiecesAgrifact.FrAccueil.resources
+D:\Visual Studio 2008\Projects\RecalculPiecesAgrifact\RecalculPiecesAgrifact\obj\Debug\RecalculPiecesAgrifact.Resources.resources
+D:\Visual Studio 2008\Projects\RecalculPiecesAgrifact\RecalculPiecesAgrifact\obj\Debug\RecalculPiecesAgrifact.SqlConnectionConfig.resources
+D:\Visual Studio 2008\Projects\RecalculPiecesAgrifact\RecalculPiecesAgrifact\obj\Debug\RecalculPiecesAgrifact.vbproj.GenerateResource.Cache
+D:\Visual Studio 2008\Projects\RecalculPiecesAgrifact\RecalculPiecesAgrifact\obj\Debug\RecalculPiecesAgrifact.exe
+D:\Visual Studio 2008\Projects\RecalculPiecesAgrifact\RecalculPiecesAgrifact\obj\Debug\RecalculPiecesAgrifact.xml
+D:\Visual Studio 2008\Projects\RecalculPiecesAgrifact\RecalculPiecesAgrifact\obj\Debug\RecalculPiecesAgrifact.pdb
+C:\ACTIGRAM\VBNET2.0\AgriFact\RecalculPiecesAgrifact\RecalculPiecesAgrifact\bin\Debug\RecalculPiecesAgrifact.exe.config
+C:\ACTIGRAM\VBNET2.0\AgriFact\RecalculPiecesAgrifact\RecalculPiecesAgrifact\obj\Debug\RecalculPiecesAgrifact.exe
+C:\ACTIGRAM\VBNET2.0\AgriFact\RecalculPiecesAgrifact\RecalculPiecesAgrifact\obj\Debug\RecalculPiecesAgrifact.xml
+C:\ACTIGRAM\VBNET2.0\AgriFact\RecalculPiecesAgrifact\RecalculPiecesAgrifact\obj\Debug\RecalculPiecesAgrifact.pdb
+C:\ACTIGRAM\VBNET2.0\AgriFact\RecalculPiecesAgrifact\RecalculPiecesAgrifact\bin\Debug\RecalculPiecesAgrifact.exe
+C:\ACTIGRAM\VBNET2.0\AgriFact\RecalculPiecesAgrifact\RecalculPiecesAgrifact\bin\Debug\RecalculPiecesAgrifact.pdb
+C:\ACTIGRAM\VBNET2.0\AgriFact\RecalculPiecesAgrifact\RecalculPiecesAgrifact\bin\Debug\RecalculPiecesAgrifact.xml
+C:\ACTIGRAM\VBNET2.0\AgriFact\RecalculPiecesAgrifact\RecalculPiecesAgrifact\obj\Debug\ResolveAssemblyReference.cache
+C:\ACTIGRAM\VBNET2.0\AgriFact\RecalculPiecesAgrifact\RecalculPiecesAgrifact\obj\Debug\RecalculPiecesAgrifact.FrAccueil.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\RecalculPiecesAgrifact\RecalculPiecesAgrifact\obj\Debug\RecalculPiecesAgrifact.Resources.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\RecalculPiecesAgrifact\RecalculPiecesAgrifact\obj\Debug\RecalculPiecesAgrifact.SqlConnectionConfig.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\RecalculPiecesAgrifact\RecalculPiecesAgrifact\obj\Debug\RecalculPiecesAgrifact.vbproj.GenerateResource.Cache

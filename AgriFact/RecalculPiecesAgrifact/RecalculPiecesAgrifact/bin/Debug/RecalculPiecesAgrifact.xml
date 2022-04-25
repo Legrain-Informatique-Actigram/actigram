@@ -1,0 +1,220 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+RecalculPiecesAgrifact
+</name>
+</assembly>
+<members>
+<member name="P:RecalculPiecesAgrifact.My.Resources.Resources.ResourceManager">
+	<summary>
+  Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+</summary>
+</member><member name="P:RecalculPiecesAgrifact.My.Resources.Resources.Culture">
+	<summary>
+  Remplace la propriété CurrentUICulture du thread actuel pour toutes
+  les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+</summary>
+</member><member name="T:RecalculPiecesAgrifact.My.Resources.Resources">
+	<summary>
+  Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+</summary>
+</member><member name="T:RecalculPiecesAgrifact.DataSetAgrifact.VFactureDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:RecalculPiecesAgrifact.DataSetAgrifact.VFacture_DetailDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:RecalculPiecesAgrifact.DataSetAgrifact.ProduitDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:RecalculPiecesAgrifact.DataSetAgrifact.TVADataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:RecalculPiecesAgrifact.DataSetAgrifact.VBonCommandeDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:RecalculPiecesAgrifact.DataSetAgrifact.VBonCommande_DetailDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:RecalculPiecesAgrifact.DataSetAgrifact.VBonLivraisonDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:RecalculPiecesAgrifact.DataSetAgrifact.VBonLivraison_DetailDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:RecalculPiecesAgrifact.DataSetAgrifact.VDevisDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:RecalculPiecesAgrifact.DataSetAgrifact.VDevis_DetailDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:RecalculPiecesAgrifact.DataSetAgrifact.VFactureRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:RecalculPiecesAgrifact.DataSetAgrifact.VFacture_DetailRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:RecalculPiecesAgrifact.DataSetAgrifact.ProduitRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:RecalculPiecesAgrifact.DataSetAgrifact.TVARow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:RecalculPiecesAgrifact.DataSetAgrifact.VBonCommandeRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:RecalculPiecesAgrifact.DataSetAgrifact.VBonCommande_DetailRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:RecalculPiecesAgrifact.DataSetAgrifact.VBonLivraisonRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:RecalculPiecesAgrifact.DataSetAgrifact.VBonLivraison_DetailRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:RecalculPiecesAgrifact.DataSetAgrifact.VDevisRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:RecalculPiecesAgrifact.DataSetAgrifact.VDevis_DetailRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:RecalculPiecesAgrifact.DataSetAgrifact.VFactureRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:RecalculPiecesAgrifact.DataSetAgrifact.VFacture_DetailRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:RecalculPiecesAgrifact.DataSetAgrifact.ProduitRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:RecalculPiecesAgrifact.DataSetAgrifact.TVARowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:RecalculPiecesAgrifact.DataSetAgrifact.VBonCommandeRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:RecalculPiecesAgrifact.DataSetAgrifact.VBonCommande_DetailRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:RecalculPiecesAgrifact.DataSetAgrifact.VBonLivraisonRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:RecalculPiecesAgrifact.DataSetAgrifact.VBonLivraison_DetailRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:RecalculPiecesAgrifact.DataSetAgrifact.VDevisRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:RecalculPiecesAgrifact.DataSetAgrifact.VDevis_DetailRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:RecalculPiecesAgrifact.DataSetAgrifact">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:RecalculPiecesAgrifact.DataSetAgrifactTableAdapters.VFactureTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:RecalculPiecesAgrifact.DataSetAgrifactTableAdapters.VFacture_DetailTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:RecalculPiecesAgrifact.DataSetAgrifactTableAdapters.ProduitTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:RecalculPiecesAgrifact.DataSetAgrifactTableAdapters.TVATableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:RecalculPiecesAgrifact.DataSetAgrifactTableAdapters.VBonCommandeTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:RecalculPiecesAgrifact.DataSetAgrifactTableAdapters.VBonCommande_DetailTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:RecalculPiecesAgrifact.DataSetAgrifactTableAdapters.VBonLivraisonTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:RecalculPiecesAgrifact.DataSetAgrifactTableAdapters.VBonLivraison_DetailTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:RecalculPiecesAgrifact.DataSetAgrifactTableAdapters.VDevisTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:RecalculPiecesAgrifact.DataSetAgrifactTableAdapters.VDevis_DetailTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:RecalculPiecesAgrifact.DataSetAgrifactTableAdapters.TableAdapterManager.UpdateUpdatedRows(RecalculPiecesAgrifact.DataSetAgrifact,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:RecalculPiecesAgrifact.DataSetAgrifactTableAdapters.TableAdapterManager.UpdateInsertedRows(RecalculPiecesAgrifact.DataSetAgrifact,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:RecalculPiecesAgrifact.DataSetAgrifactTableAdapters.TableAdapterManager.UpdateDeletedRows(RecalculPiecesAgrifact.DataSetAgrifact,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:RecalculPiecesAgrifact.DataSetAgrifactTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:RecalculPiecesAgrifact.DataSetAgrifactTableAdapters.TableAdapterManager.UpdateAll(RecalculPiecesAgrifact.DataSetAgrifact)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:RecalculPiecesAgrifact.DataSetAgrifactTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:RecalculPiecesAgrifact.DataSetAgrifactTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:RecalculPiecesAgrifact.DataSetAgrifactTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+</members>
+</doc>

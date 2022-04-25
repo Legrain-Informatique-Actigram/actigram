@@ -1,0 +1,421 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="StocksDataSet" targetNamespace="http://tempuri.org/StocksDataSet.xsd" xmlns:mstns="http://tempuri.org/StocksDataSet.xsd" xmlns="http://tempuri.org/StocksDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="ConnString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="ConnString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.ControleTracabilite.My.MySettings.GlobalReference.Default.ConnString" Provider="System.Data.SqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="LotsProduitsTA" GeneratorDataComponentClassName="LotsProduitsTA" Name="LotsProduits" UserDataComponentName="LotsProduitsTA">
+            <MainSource>
+              <DbSource ConnectionRef="ConnString (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="False" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="False">
+                    <CommandText>Select distinct codeproduit,nlot ,m.DateMouvement as Dt,m.TypeMouvement as tp,m.Description
+from mouvement_detail md
+inner join mouvement m on m.nmouvement=md.nmouvement
+where nlot is not null and codeproduit is not null 
+and (m.TypeMouvement ='Entrées' 
+	OR m.TypeMouvement ='Fabrication' 
+	OR (m.TypeMouvement='Conditionnement' AND unite1&gt;0))
+UNION
+Select distinct codeproduit,nlot ,br.datefacture as Dt,'Réception' as tp,e.Nom
+from abonreception_detail brd
+inner join abonreception br on brd.ndevis=br.ndevis
+inner join entreprise e on br.nclient=e.nentreprise
+where nlot is not null and codeproduit is not null</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="codeproduit" DataSetColumn="codeproduit" />
+              <Mapping SourceColumn="nlot" DataSetColumn="nlot" />
+              <Mapping SourceColumn="Dt" DataSetColumn="Dt" />
+              <Mapping SourceColumn="tp" DataSetColumn="tp" />
+              <Mapping SourceColumn="Description" DataSetColumn="Description" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="ConnString (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillByCodeProduit" GenerateMethods="Both" GenerateShortCommands="True" GeneratorGetMethodName="GetDataByCodeProduit" GeneratorSourceName="FillByCodeProduit" GetMethodModifier="Public" GetMethodName="GetDataByCodeProduit" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="True" UserGetMethodName="GetDataByCodeProduit" UserSourceName="FillByCodeProduit">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="False">
+                    <CommandText>Select distinct codeproduit,nlot ,m.DateMouvement as Dt,m.TypeMouvement as tp,m.Description
+from mouvement_detail md
+inner join mouvement m on m.nmouvement=md.nmouvement
+where nlot is not null and codeproduit is not null 
+and (m.TypeMouvement ='Entrées' 
+	OR m.TypeMouvement ='Fabrication' 
+	OR (m.TypeMouvement='Conditionnement' AND unite1&gt;0))
+and codeproduit=@codeproduit
+and m.nMouvement&lt;&gt;@nMouvement
+UNION
+Select distinct codeproduit,nlot ,br.datefacture as Dt,'Réception' as tp,e.Nom
+from abonreception_detail brd
+inner join abonreception br on brd.ndevis=br.ndevis
+inner join entreprise e on br.nclient=e.nentreprise
+where nlot is not null and codeproduit is not null
+and codeproduit=@codeproduit</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="True" AutogeneratedName="codeproduit" ColumnName="CodeProduit" DataSourceName="" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@codeproduit" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="CodeProduit" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="nMouvement" ColumnName="" DataSourceName="" DataTypeServer="numeric(18, 0)" DbType="Decimal" Direction="Input" ParameterName="@nMouvement" Precision="18" Scale="0" Size="9" SourceColumn="" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="InventaireTA" GeneratorDataComponentClassName="InventaireTA" Name="Inventaire" UserDataComponentName="InventaireTA">
+            <MainSource>
+              <DbSource ConnectionRef="ConnString (MySettings)" DbObjectName="SolstyceMauco.dbo.CalculInventaireSchema" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="True" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="False">
+                    <CommandText>dbo.CalculInventaireSchema</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@dtDeb" Precision="23" ProviderType="DateTime" Scale="3" Size="8" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@dtFin" Precision="23" ProviderType="DateTime" Scale="3" Size="8" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@depot" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@gestionLot" Precision="1" ProviderType="Bit" Scale="0" Size="1" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Famille" DataSetColumn="Famille" />
+              <Mapping SourceColumn="CodeProduit" DataSetColumn="CodeProduit" />
+              <Mapping SourceColumn="Libelle" DataSetColumn="Libelle" />
+              <Mapping SourceColumn="LibUnite1" DataSetColumn="LibUnite1" />
+              <Mapping SourceColumn="LibUnite2" DataSetColumn="LibUnite2" />
+              <Mapping SourceColumn="U1U2Independant" DataSetColumn="U1U2Independant" />
+              <Mapping SourceColumn="CoefU2" DataSetColumn="CoefU2" />
+              <Mapping SourceColumn="Depot" DataSetColumn="Depot" />
+              <Mapping SourceColumn="nLot" DataSetColumn="nLot" />
+              <Mapping SourceColumn="QteU1Depart" DataSetColumn="QteU1Depart" />
+              <Mapping SourceColumn="QteU1" DataSetColumn="QteU1" />
+              <Mapping SourceColumn="DepartU1" DataSetColumn="DepartU1" />
+              <Mapping SourceColumn="EntréeU1" DataSetColumn="EntréeU1" />
+              <Mapping SourceColumn="SortieU1" DataSetColumn="SortieU1" />
+              <Mapping SourceColumn="DepartU2" DataSetColumn="DepartU2" />
+              <Mapping SourceColumn="EntréeU2" DataSetColumn="EntréeU2" />
+              <Mapping SourceColumn="SortieU2" DataSetColumn="SortieU2" />
+              <Mapping SourceColumn="QteU2Depart" DataSetColumn="QteU2Depart" />
+              <Mapping SourceColumn="QteU2" DataSetColumn="QteU2" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="ConnString (MySettings)" DbObjectName="" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillInv" GenerateMethods="Both" GenerateShortCommands="True" GeneratorGetMethodName="GetDataInv" GeneratorSourceName="FillInv" GetMethodModifier="Public" GetMethodName="GetDataInv" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="True" UserGetMethodName="GetDataInv" UserSourceName="FillInv">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>EXEC dbo.CalculInventaire @dtDeb, @dtFin, @depot, @gestionLot</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@dtDeb" Precision="23" ProviderType="DateTime" Scale="3" Size="8" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@dtFin" Precision="23" ProviderType="DateTime" Scale="3" Size="8" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@depot" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@gestionLot" Precision="1" ProviderType="Bit" Scale="0" Size="1" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="EtatStockTA" GeneratorDataComponentClassName="EtatStockTA" Name="EtatStock" UserDataComponentName="EtatStockTA">
+            <MainSource>
+              <DbSource ConnectionRef="ConnString (MySettings)" DbObjectName="AgrifactLaffont.dbo.CalculEtatStockSchema" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="False" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="False">
+                    <CommandText>dbo.CalculEtatStockSchema</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@dtDeb" Precision="23" ProviderType="DateTime" Scale="3" Size="8" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@dtFin" Precision="23" ProviderType="DateTime" Scale="3" Size="8" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@depot" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@gestionLot" Precision="1" ProviderType="Bit" Scale="0" Size="1" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Depot" DataSetColumn="Depot" />
+              <Mapping SourceColumn="nLot" DataSetColumn="nLot" />
+              <Mapping SourceColumn="Famille" DataSetColumn="Famille" />
+              <Mapping SourceColumn="CodeProduit" DataSetColumn="CodeProduit" />
+              <Mapping SourceColumn="Libelle" DataSetColumn="Libelle" />
+              <Mapping SourceColumn="LibUnite1" DataSetColumn="LibUnite1" />
+              <Mapping SourceColumn="LibUnite2" DataSetColumn="LibUnite2" />
+              <Mapping SourceColumn="Depart" DataSetColumn="Depart" />
+              <Mapping SourceColumn="Entrée" DataSetColumn="Entrée" />
+              <Mapping SourceColumn="Sortie" DataSetColumn="Sortie" />
+              <Mapping SourceColumn="EnCommande" DataSetColumn="EnCommande" />
+              <Mapping SourceColumn="DepartU2" DataSetColumn="DepartU2" />
+              <Mapping SourceColumn="EntréeU2" DataSetColumn="EntréeU2" />
+              <Mapping SourceColumn="SortieU2" DataSetColumn="SortieU2" />
+              <Mapping SourceColumn="EnCommandeU2" DataSetColumn="EnCommandeU2" />
+              <Mapping SourceColumn="SeuilStock" DataSetColumn="SeuilStock" />
+              <Mapping SourceColumn="ProduitAchat" DataSetColumn="ProduitAchat" />
+              <Mapping SourceColumn="ProduitVente" DataSetColumn="ProduitVente" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="ConnString (MySettings)" DbObjectName="" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillEtatStock" GenerateMethods="Both" GenerateShortCommands="True" GeneratorGetMethodName="GetEtatStockData" GeneratorSourceName="FillEtatStock" GetMethodModifier="Public" GetMethodName="GetEtatStockData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="True" UserGetMethodName="GetEtatStockData" UserSourceName="FillEtatStock">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>EXEC dbo.CalculEtatStock @dtDeb, @dtFin, @depot, @gestionLot, @afficheBRTermine</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@dtDeb" Precision="23" ProviderType="DateTime" Scale="3" Size="8" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@dtFin" Precision="23" ProviderType="DateTime" Scale="3" Size="8" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@depot" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@gestionLot" Precision="1" ProviderType="Bit" Scale="0" Size="1" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@afficheBRTermine" Precision="1" ProviderType="Bit" Scale="0" Size="1" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="ConnString (MySettings)" DbObjectName="" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillEtatStockGlobalByDate" GenerateMethods="Both" GenerateShortCommands="True" GeneratorGetMethodName="GetEtatStockGlobalDataByDate" GeneratorSourceName="FillEtatStockGlobalByDate" GetMethodModifier="Public" GetMethodName="GetEtatStockGlobalDataByDate" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="True" UserGetMethodName="GetEtatStockGlobalDataByDate" UserSourceName="FillEtatStockGlobalByDate">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>EXEC dbo.CalculEtatStock @dtDeb, @dtFin, 'Global', 1</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@dtDeb" Precision="23" ProviderType="DateTime" Scale="3" Size="8" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="False" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@dtFin" Precision="23" ProviderType="DateTime" Scale="3" Size="8" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="ConnString (MySettings)" DbObjectName="" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillStockGlobalActuel" GenerateMethods="Both" GenerateShortCommands="True" GeneratorGetMethodName="GetStockGlobalActuelData" GeneratorSourceName="FillStockGlobalActuel" GetMethodModifier="Public" GetMethodName="GetStockGlobalActuelData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="True" UserGetMethodName="GetStockGlobalActuelData" UserSourceName="FillStockGlobalActuel">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>
+                      declare @dtDeb datetime, @dtFin datetime
+                      set @dtDeb = getdate()
+                      set @dtFin = getdate()
+                      EXEC dbo.CalculEtatStock @dtDeb , @dtFin ,'Global',1
+                    </CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="StocksDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="StocksDataSet" msprop:Generator_DataSetName="StocksDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="LotsProduits" msprop:Generator_UserTableName="LotsProduits" msprop:Generator_RowDeletedName="LotsProduitsRowDeleted" msprop:Generator_RowChangedName="LotsProduitsRowChanged" msprop:Generator_RowClassName="LotsProduitsRow" msprop:Generator_RowChangingName="LotsProduitsRowChanging" msprop:Generator_RowEvArgName="LotsProduitsRowChangeEvent" msprop:Generator_RowEvHandlerName="LotsProduitsRowChangeEventHandler" msprop:Generator_TableClassName="LotsProduitsDataTable" msprop:Generator_TableVarName="tableLotsProduits" msprop:Generator_RowDeletingName="LotsProduitsRowDeleting" msprop:Generator_TablePropName="LotsProduits">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="codeproduit" msdata:ReadOnly="true" msprop:Generator_UserColumnName="codeproduit" msprop:Generator_ColumnPropNameInRow="codeproduit" msprop:Generator_ColumnVarNameInTable="columncodeproduit" msprop:Generator_ColumnPropNameInTable="codeproduitColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="nlot" msdata:ReadOnly="true" msprop:Generator_UserColumnName="nlot" msprop:Generator_ColumnPropNameInRow="nlot" msprop:Generator_ColumnVarNameInTable="columnnlot" msprop:Generator_ColumnPropNameInTable="nlotColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Dt" msdata:ReadOnly="true" msprop:Generator_UserColumnName="Dt" msprop:Generator_ColumnPropNameInRow="Dt" msprop:Generator_ColumnVarNameInTable="columnDt" msprop:Generator_ColumnPropNameInTable="DtColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="tp" msdata:ReadOnly="true" msprop:Generator_UserColumnName="tp" msprop:Generator_ColumnPropNameInRow="tp" msprop:Generator_ColumnVarNameInTable="columntp" msprop:Generator_ColumnPropNameInTable="tpColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Description" msdata:ReadOnly="true" msprop:Generator_UserColumnName="Description" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Inventaire" msprop:Generator_UserTableName="Inventaire" msprop:Generator_RowDeletedName="InventaireRowDeleted" msprop:Generator_RowChangedName="InventaireRowChanged" msprop:Generator_RowClassName="InventaireRow" msprop:Generator_RowChangingName="InventaireRowChanging" msprop:Generator_RowEvArgName="InventaireRowChangeEvent" msprop:Generator_RowEvHandlerName="InventaireRowChangeEventHandler" msprop:Generator_TableClassName="InventaireDataTable" msprop:Generator_TableVarName="tableInventaire" msprop:Generator_RowDeletingName="InventaireRowDeleting" msprop:Generator_TablePropName="Inventaire">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Famille" msprop:Generator_UserColumnName="Famille" msprop:Generator_ColumnPropNameInRow="Famille" msprop:Generator_ColumnVarNameInTable="columnFamille" msprop:Generator_ColumnPropNameInTable="FamilleColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CodeProduit" msprop:Generator_UserColumnName="CodeProduit" msprop:Generator_ColumnPropNameInRow="CodeProduit" msprop:Generator_ColumnVarNameInTable="columnCodeProduit" msprop:Generator_ColumnPropNameInTable="CodeProduitColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Libelle" msprop:Generator_UserColumnName="Libelle" msprop:Generator_ColumnPropNameInRow="Libelle" msprop:Generator_ColumnVarNameInTable="columnLibelle" msprop:Generator_ColumnPropNameInTable="LibelleColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LibUnite1" msdata:ReadOnly="true" msprop:Generator_UserColumnName="LibUnite1" msprop:Generator_ColumnPropNameInRow="LibUnite1" msprop:Generator_ColumnVarNameInTable="columnLibUnite1" msprop:Generator_ColumnPropNameInTable="LibUnite1Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LibUnite2" msdata:ReadOnly="true" msprop:Generator_UserColumnName="LibUnite2" msprop:Generator_ColumnPropNameInRow="LibUnite2" msprop:Generator_ColumnVarNameInTable="columnLibUnite2" msprop:Generator_ColumnPropNameInTable="LibUnite2Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="U1U2Independant" msprop:Generator_UserColumnName="U1U2Independant" msprop:Generator_ColumnPropNameInRow="U1U2Independant" msprop:Generator_ColumnVarNameInTable="columnU1U2Independant" msprop:Generator_ColumnPropNameInTable="U1U2IndependantColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="CoefU2" msprop:Generator_UserColumnName="CoefU2" msprop:Generator_ColumnPropNameInRow="CoefU2" msprop:Generator_ColumnVarNameInTable="columnCoefU2" msprop:Generator_ColumnPropNameInTable="CoefU2Column" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Depot" msdata:ReadOnly="true" msprop:Generator_UserColumnName="Depot" msprop:Generator_ColumnPropNameInRow="Depot" msprop:Generator_ColumnVarNameInTable="columnDepot" msprop:Generator_ColumnPropNameInTable="DepotColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="nLot" msdata:ReadOnly="true" msprop:Generator_UserColumnName="nLot" msprop:Generator_ColumnPropNameInRow="nLot" msprop:Generator_ColumnVarNameInTable="columnnLot" msprop:Generator_ColumnPropNameInTable="nLotColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="QteU1Depart" msprop:Generator_UserColumnName="QteU1Depart" msprop:Generator_ColumnPropNameInRow="QteU1Depart" msprop:Generator_ColumnVarNameInTable="columnQteU1Depart" msprop:Generator_ColumnPropNameInTable="QteU1DepartColumn" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="QteU1" msprop:Generator_UserColumnName="QteU1" msprop:Generator_ColumnPropNameInRow="QteU1" msprop:Generator_ColumnVarNameInTable="columnQteU1" msprop:Generator_ColumnPropNameInTable="QteU1Column" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="DepartU1" msprop:Generator_UserColumnName="DepartU1" msprop:Generator_ColumnPropNameInRow="DepartU1" msprop:Generator_ColumnVarNameInTable="columnDepartU1" msprop:Generator_ColumnPropNameInTable="DepartU1Column" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="EntréeU1" msprop:Generator_UserColumnName="EntréeU1" msprop:Generator_ColumnPropNameInRow="EntréeU1" msprop:Generator_ColumnVarNameInTable="columnEntréeU1" msprop:Generator_ColumnPropNameInTable="EntréeU1Column" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="SortieU1" msprop:Generator_UserColumnName="SortieU1" msprop:Generator_ColumnPropNameInRow="SortieU1" msprop:Generator_ColumnVarNameInTable="columnSortieU1" msprop:Generator_ColumnPropNameInTable="SortieU1Column" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="DepartU2" msprop:Generator_UserColumnName="DepartU2" msprop:Generator_ColumnPropNameInRow="DepartU2" msprop:Generator_ColumnVarNameInTable="columnDepartU2" msprop:Generator_ColumnPropNameInTable="DepartU2Column" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="EntréeU2" msprop:Generator_UserColumnName="EntréeU2" msprop:Generator_ColumnPropNameInRow="EntréeU2" msprop:Generator_ColumnVarNameInTable="columnEntréeU2" msprop:Generator_ColumnPropNameInTable="EntréeU2Column" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="SortieU2" msprop:Generator_UserColumnName="SortieU2" msprop:Generator_ColumnPropNameInRow="SortieU2" msprop:Generator_ColumnVarNameInTable="columnSortieU2" msprop:Generator_ColumnPropNameInTable="SortieU2Column" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="QteU2Depart" msprop:Generator_UserColumnName="QteU2Depart" msprop:Generator_ColumnPropNameInRow="QteU2Depart" msprop:Generator_ColumnVarNameInTable="columnQteU2Depart" msprop:Generator_ColumnPropNameInTable="QteU2DepartColumn" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="QteU2" msprop:Generator_UserColumnName="QteU2" msprop:Generator_ColumnPropNameInRow="QteU2" msprop:Generator_ColumnVarNameInTable="columnQteU2" msprop:Generator_ColumnPropNameInTable="QteU2Column" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="EcartU1" msdata:ReadOnly="true" msdata:Expression="iif(QteU1 is null,0,QteU1)-iif(QteU1Depart is null,0,QteU1Depart)" msprop:Generator_UserColumnName="EcartU1" msprop:Generator_ColumnPropNameInRow="EcartU1" msprop:Generator_ColumnVarNameInTable="columnEcartU1" msprop:Generator_ColumnPropNameInTable="EcartU1Column" type="xs:decimal" minOccurs="0" />
+              <xs:element name="EcartU2" msdata:ReadOnly="true" msdata:Expression="iif(QteU2 is null,0,QteU2)-iif(QteU2Depart is null,0,QteU2Depart)" msprop:Generator_UserColumnName="EcartU2" msprop:Generator_ColumnPropNameInRow="EcartU2" msprop:Generator_ColumnVarNameInTable="columnEcartU2" msprop:Generator_ColumnPropNameInTable="EcartU2Column" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="EtatStock" msprop:Generator_UserTableName="EtatStock" msprop:Generator_RowDeletedName="EtatStockRowDeleted" msprop:Generator_RowChangedName="EtatStockRowChanged" msprop:Generator_RowClassName="EtatStockRow" msprop:Generator_RowChangingName="EtatStockRowChanging" msprop:Generator_RowEvArgName="EtatStockRowChangeEvent" msprop:Generator_RowEvHandlerName="EtatStockRowChangeEventHandler" msprop:Generator_TableClassName="EtatStockDataTable" msprop:Generator_TableVarName="tableEtatStock" msprop:Generator_RowDeletingName="EtatStockRowDeleting" msprop:Generator_TablePropName="EtatStock">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Depot" msdata:ReadOnly="true" msprop:Generator_UserColumnName="Depot" msprop:Generator_ColumnVarNameInTable="columnDepot" msprop:Generator_ColumnPropNameInRow="Depot" msprop:Generator_ColumnPropNameInTable="DepotColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="nLot" msdata:ReadOnly="true" msprop:Generator_UserColumnName="nLot" msprop:Generator_ColumnVarNameInTable="columnnLot" msprop:Generator_ColumnPropNameInRow="nLot" msprop:Generator_ColumnPropNameInTable="nLotColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Famille" msprop:Generator_UserColumnName="Famille" msprop:Generator_ColumnVarNameInTable="columnFamille" msprop:Generator_ColumnPropNameInRow="Famille" msprop:Generator_ColumnPropNameInTable="FamilleColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CodeProduit" msdata:ReadOnly="true" msprop:Generator_UserColumnName="CodeProduit" msprop:Generator_ColumnVarNameInTable="columnCodeProduit" msprop:Generator_ColumnPropNameInRow="CodeProduit" msprop:Generator_ColumnPropNameInTable="CodeProduitColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Libelle" msprop:Generator_UserColumnName="Libelle" msprop:Generator_ColumnVarNameInTable="columnLibelle" msprop:Generator_ColumnPropNameInRow="Libelle" msprop:Generator_ColumnPropNameInTable="LibelleColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LibUnite1" msdata:ReadOnly="true" msprop:Generator_UserColumnName="LibUnite1" msprop:Generator_ColumnVarNameInTable="columnLibUnite1" msprop:Generator_ColumnPropNameInRow="LibUnite1" msprop:Generator_ColumnPropNameInTable="LibUnite1Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LibUnite2" msdata:ReadOnly="true" msprop:Generator_UserColumnName="LibUnite2" msprop:Generator_ColumnVarNameInTable="columnLibUnite2" msprop:Generator_ColumnPropNameInRow="LibUnite2" msprop:Generator_ColumnPropNameInTable="LibUnite2Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Depart" msdata:ReadOnly="true" msprop:Generator_UserColumnName="Depart" msprop:Generator_ColumnVarNameInTable="columnDepart" msprop:Generator_ColumnPropNameInRow="Depart" msprop:Generator_ColumnPropNameInTable="DepartColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Entrée" msdata:ReadOnly="true" msprop:Generator_UserColumnName="Entrée" msprop:Generator_ColumnVarNameInTable="columnEntrée" msprop:Generator_ColumnPropNameInRow="Entrée" msprop:Generator_ColumnPropNameInTable="EntréeColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Sortie" msdata:ReadOnly="true" msprop:Generator_UserColumnName="Sortie" msprop:Generator_ColumnVarNameInTable="columnSortie" msprop:Generator_ColumnPropNameInRow="Sortie" msprop:Generator_ColumnPropNameInTable="SortieColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="EnCommande" msdata:ReadOnly="true" msprop:Generator_UserColumnName="EnCommande" msprop:Generator_ColumnVarNameInTable="columnEnCommande" msprop:Generator_ColumnPropNameInRow="EnCommande" msprop:Generator_ColumnPropNameInTable="EnCommandeColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DepartU2" msdata:ReadOnly="true" msprop:Generator_UserColumnName="DepartU2" msprop:Generator_ColumnVarNameInTable="columnDepartU2" msprop:Generator_ColumnPropNameInRow="DepartU2" msprop:Generator_ColumnPropNameInTable="DepartU2Column" type="xs:decimal" minOccurs="0" />
+              <xs:element name="EntréeU2" msdata:ReadOnly="true" msprop:Generator_UserColumnName="EntréeU2" msprop:Generator_ColumnVarNameInTable="columnEntréeU2" msprop:Generator_ColumnPropNameInRow="EntréeU2" msprop:Generator_ColumnPropNameInTable="EntréeU2Column" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SortieU2" msdata:ReadOnly="true" msprop:Generator_UserColumnName="SortieU2" msprop:Generator_ColumnVarNameInTable="columnSortieU2" msprop:Generator_ColumnPropNameInRow="SortieU2" msprop:Generator_ColumnPropNameInTable="SortieU2Column" type="xs:decimal" minOccurs="0" />
+              <xs:element name="EnCommandeU2" msdata:ReadOnly="true" msprop:Generator_UserColumnName="EnCommandeU2" msprop:Generator_ColumnVarNameInTable="columnEnCommandeU2" msprop:Generator_ColumnPropNameInRow="EnCommandeU2" msprop:Generator_ColumnPropNameInTable="EnCommandeU2Column" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BRTermine" msprop:Generator_UserColumnName="BRTermine" msprop:Generator_ColumnPropNameInRow="BRTermine" msprop:Generator_ColumnVarNameInTable="columnBRTermine" msprop:Generator_ColumnPropNameInTable="BRTermineColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="BRDate" msprop:Generator_UserColumnName="BRDate" msprop:Generator_ColumnPropNameInRow="BRDate" msprop:Generator_ColumnVarNameInTable="columnBRDate" msprop:Generator_ColumnPropNameInTable="BRDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="SeuilStock" msprop:Generator_UserColumnName="SeuilStock" msprop:Generator_ColumnPropNameInRow="SeuilStock" msprop:Generator_ColumnVarNameInTable="columnSeuilStock" msprop:Generator_ColumnPropNameInTable="SeuilStockColumn" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="Attention" msdata:ReadOnly="true" msdata:Expression="iif(Disponible Is Null,StockActuel&gt;SeuilStock,Disponible&gt;SeuilStock)" msprop:Generator_UserColumnName="Attention" msprop:Generator_ColumnPropNameInRow="Attention" msprop:Generator_ColumnVarNameInTable="columnAttention" msprop:Generator_ColumnPropNameInTable="AttentionColumn" type="xs:boolean" default="true" minOccurs="0" />
+              <xs:element name="Disponible" msdata:ReadOnly="true" msdata:Expression="Depart+Entrée+Sortie+EnCommande" msprop:Generator_UserColumnName="Disponible" msprop:Generator_ColumnPropNameInRow="Disponible" msprop:Generator_ColumnVarNameInTable="columnDisponible" msprop:Generator_ColumnPropNameInTable="DisponibleColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="StockActuel" msdata:ReadOnly="true" msdata:Expression="Depart+Entrée+Sortie" msprop:Generator_UserColumnName="StockActuel" msprop:Generator_ColumnPropNameInRow="StockActuel" msprop:Generator_ColumnVarNameInTable="columnStockActuel" msprop:Generator_ColumnPropNameInTable="StockActuelColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="StockActuelU2" msdata:ReadOnly="true" msdata:Expression="DepartU2+EntréeU2+SortieU2" msprop:Generator_UserColumnName="StockActuelU2" msprop:Generator_ColumnVarNameInTable="columnStockActuelU2" msprop:Generator_ColumnPropNameInRow="StockActuelU2" msprop:Generator_ColumnPropNameInTable="StockActuelU2Column" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ProduitAchat" msprop:Generator_UserColumnName="ProduitAchat" msprop:Generator_ColumnPropNameInRow="ProduitAchat" msprop:Generator_ColumnVarNameInTable="columnProduitAchat" msprop:Generator_ColumnPropNameInTable="ProduitAchatColumn" type="xs:boolean" default="false" minOccurs="0" />
+              <xs:element name="ProduitVente" msprop:Generator_UserColumnName="ProduitVente" msprop:Generator_ColumnPropNameInRow="ProduitVente" msprop:Generator_ColumnVarNameInTable="columnProduitVente" msprop:Generator_ColumnPropNameInTable="ProduitVenteColumn" type="xs:boolean" default="false" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

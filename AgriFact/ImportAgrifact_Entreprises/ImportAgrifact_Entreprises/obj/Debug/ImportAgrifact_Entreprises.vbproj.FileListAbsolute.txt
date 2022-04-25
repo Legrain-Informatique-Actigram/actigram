@@ -1,0 +1,24 @@
+D:\Visual Studio 2008\Projects\MDA37\ImportAgrifact_Entreprises\ImportAgrifact_Entreprises\bin\Debug\ImportAgrifact_Entreprises.exe.config
+D:\Visual Studio 2008\Projects\MDA37\ImportAgrifact_Entreprises\ImportAgrifact_Entreprises\obj\Debug\ResolveAssemblyReference.cache
+D:\Visual Studio 2008\Projects\MDA37\ImportAgrifact_Entreprises\ImportAgrifact_Entreprises\obj\Debug\ImportAgrifact_Entreprises.FrAccueil.resources
+D:\Visual Studio 2008\Projects\MDA37\ImportAgrifact_Entreprises\ImportAgrifact_Entreprises\obj\Debug\ImportAgrifact_Entreprises.Resources.resources
+D:\Visual Studio 2008\Projects\MDA37\ImportAgrifact_Entreprises\ImportAgrifact_Entreprises\obj\Debug\ImportAgrifact_Entreprises.SqlConnectionConfig.resources
+D:\Visual Studio 2008\Projects\MDA37\ImportAgrifact_Entreprises\ImportAgrifact_Entreprises\obj\Debug\ImportAgrifact_Entreprises.vbproj.GenerateResource.Cache
+D:\Visual Studio 2008\Projects\MDA37\ImportAgrifact_Entreprises\ImportAgrifact_Entreprises\bin\Debug\ImportAgrifact_Entreprises.exe
+D:\Visual Studio 2008\Projects\MDA37\ImportAgrifact_Entreprises\ImportAgrifact_Entreprises\bin\Debug\ImportAgrifact_Entreprises.pdb
+D:\Visual Studio 2008\Projects\MDA37\ImportAgrifact_Entreprises\ImportAgrifact_Entreprises\bin\Debug\ImportAgrifact_Entreprises.xml
+D:\Visual Studio 2008\Projects\MDA37\ImportAgrifact_Entreprises\ImportAgrifact_Entreprises\obj\Debug\ImportAgrifact_Entreprises.exe
+D:\Visual Studio 2008\Projects\MDA37\ImportAgrifact_Entreprises\ImportAgrifact_Entreprises\obj\Debug\ImportAgrifact_Entreprises.xml
+D:\Visual Studio 2008\Projects\MDA37\ImportAgrifact_Entreprises\ImportAgrifact_Entreprises\obj\Debug\ImportAgrifact_Entreprises.pdb
+C:\ACTIGRAM\VBNET2.0\AgriFact\ImportAgrifact_Entreprises\ImportAgrifact_Entreprises\bin\Debug\ImportAgrifact_Entreprises.exe.config
+C:\ACTIGRAM\VBNET2.0\AgriFact\ImportAgrifact_Entreprises\ImportAgrifact_Entreprises\obj\Debug\ImportAgrifact_Entreprises.exe
+C:\ACTIGRAM\VBNET2.0\AgriFact\ImportAgrifact_Entreprises\ImportAgrifact_Entreprises\obj\Debug\ImportAgrifact_Entreprises.xml
+C:\ACTIGRAM\VBNET2.0\AgriFact\ImportAgrifact_Entreprises\ImportAgrifact_Entreprises\obj\Debug\ImportAgrifact_Entreprises.pdb
+C:\ACTIGRAM\VBNET2.0\AgriFact\ImportAgrifact_Entreprises\ImportAgrifact_Entreprises\bin\Debug\ImportAgrifact_Entreprises.exe
+C:\ACTIGRAM\VBNET2.0\AgriFact\ImportAgrifact_Entreprises\ImportAgrifact_Entreprises\bin\Debug\ImportAgrifact_Entreprises.pdb
+C:\ACTIGRAM\VBNET2.0\AgriFact\ImportAgrifact_Entreprises\ImportAgrifact_Entreprises\bin\Debug\ImportAgrifact_Entreprises.xml
+C:\ACTIGRAM\VBNET2.0\AgriFact\ImportAgrifact_Entreprises\ImportAgrifact_Entreprises\obj\Debug\ResolveAssemblyReference.cache
+C:\ACTIGRAM\VBNET2.0\AgriFact\ImportAgrifact_Entreprises\ImportAgrifact_Entreprises\obj\Debug\ImportAgrifact_Entreprises.FrAccueil.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\ImportAgrifact_Entreprises\ImportAgrifact_Entreprises\obj\Debug\ImportAgrifact_Entreprises.Resources.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\ImportAgrifact_Entreprises\ImportAgrifact_Entreprises\obj\Debug\ImportAgrifact_Entreprises.SqlConnectionConfig.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\ImportAgrifact_Entreprises\ImportAgrifact_Entreprises\obj\Debug\ImportAgrifact_Entreprises.vbproj.GenerateResource.Cache

@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="impressionControles.xsl"?>
+<ArrayOfGroupeControle xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <GroupeControle TitreGroupe="CONTRÔLE TRAITEMENT THERMIQUE">
+    <Controles>
+      <DefinitionControle>
+        <nControle>335</nControle>
+        <IdControle>47</IdControle>
+        <Ordre>1</Ordre>
+        <CodeProduit>BOUDPNTO230</CodeProduit>
+        <GroupeControle>CONTRÔLE TRAITEMENT THERMIQUE</GroupeControle>
+        <Libelle>T°initiale Produit</Libelle>
+        <Type>NumericUpDown</Type>
+        <ValeursPossibles />
+        <Baremes>
+          <Bareme>
+            <IdBareme>94</IdBareme>
+            <Expression>val&gt;= X</Expression>
+            <ResultatConformite>false</ResultatConformite>
+            <ActionCorrective />
+            <CheminDoc />
+          </Bareme>
+        </Baremes>
+        <ValeursDefaut />
+      </DefinitionControle>
+      <DefinitionControle>
+        <nControle>336</nControle>
+        <IdControle>48</IdControle>
+        <Ordre>2</Ordre>
+        <CodeProduit>BOUDPNTO230</CodeProduit>
+        <GroupeControle>CONTRÔLE TRAITEMENT THERMIQUE</GroupeControle>
+        <Libelle>Heure de début cycle:</Libelle>
+        <Type>TimePicker</Type>
+        <ValeursPossibles />
+        <Baremes />
+        <ValeursDefaut />
+      </DefinitionControle>
+      <DefinitionControle>
+        <nControle>337</nControle>
+        <IdControle>49</IdControle>
+        <Ordre>3</Ordre>
+        <CodeProduit>BOUDPNTO230</CodeProduit>
+        <GroupeControle>CONTRÔLE TRAITEMENT THERMIQUE</GroupeControle>
+        <Libelle>Heure de début barème</Libelle>
+        <Type>TimePicker</Type>
+        <ValeursPossibles />
+        <Baremes />
+        <ValeursDefaut />
+      </DefinitionControle>
+      <DefinitionControle>
+        <nControle>338</nControle>
+        <IdControle>50</IdControle>
+        <Ordre>4</Ordre>
+        <CodeProduit>BOUDPNTO230</CodeProduit>
+        <GroupeControle>CONTRÔLE TRAITEMENT THERMIQUE</GroupeControle>
+        <Libelle>Heure de fin barème</Libelle>
+        <Type>TimePicker</Type>
+        <ValeursPossibles />
+        <Baremes />
+        <ValeursDefaut />
+      </DefinitionControle>
+      <DefinitionControle>
+        <nControle>339</nControle>
+        <IdControle>51</IdControle>
+        <Ordre>5</Ordre>
+        <CodeProduit>BOUDPNTO230</CodeProduit>
+        <GroupeControle>CONTRÔLE TRAITEMENT THERMIQUE</GroupeControle>
+        <Libelle>Heure de fin cycle</Libelle>
+        <Type>TimePicker</Type>
+        <ValeursPossibles />
+        <Baremes />
+        <ValeursDefaut />
+      </DefinitionControle>
+      <DefinitionControle>
+        <nControle>340</nControle>
+        <IdControle>52</IdControle>
+        <Ordre>6</Ordre>
+        <CodeProduit>BOUDPNTO230</CodeProduit>
+        <GroupeControle>CONTRÔLE TRAITEMENT THERMIQUE</GroupeControle>
+        <Libelle>Température barème</Libelle>
+        <Type>NumericUpDown</Type>
+        <ValeursPossibles />
+        <Baremes>
+          <Bareme>
+            <IdBareme>95</IdBareme>
+            <Expression>val&lt;X</Expression>
+            <ResultatConformite>false</ResultatConformite>
+            <ActionCorrective>correction immédiate de la température pendant le barème et bloquage du lot avec analyse contrôle de stabilité  libératoire ET ENREGISTREMENT DE L'ACTION CORRECTIVE MISE EN PLACE</ActionCorrective>
+          </Bareme>
+        </Baremes>
+        <ValeursDefaut />
+      </DefinitionControle>
+      <DefinitionControle>
+        <nControle>341</nControle>
+        <IdControle>53</IdControle>
+        <Ordre>7</Ordre>
+        <CodeProduit>BOUDPNTO230</CodeProduit>
+        <GroupeControle>CONTRÔLE TRAITEMENT THERMIQUE</GroupeControle>
+        <Libelle>Pression barème</Libelle>
+        <Type>NumericUpDown</Type>
+        <ValeursPossibles />
+        <Baremes>
+          <Bareme>
+            <IdBareme>96</IdBareme>
+            <Expression>val&lt;X</Expression>
+            <ResultatConformite>false</ResultatConformite>
+            <ActionCorrective>correction immédiate de la température pendant le barème et bloquage du lot avec analyse microbiologique libératoire ET ENREGISTREMENT DE L'ACTION CORRECTIVE MISE EN PLACE</ActionCorrective>
+          </Bareme>
+        </Baremes>
+        <ValeursDefaut />
+      </DefinitionControle>
+      <DefinitionControle>
+        <nControle>342</nControle>
+        <IdControle>54</IdControle>
+        <Ordre>8</Ordre>
+        <CodeProduit>BOUDPNTO230</CodeProduit>
+        <GroupeControle>CONTRÔLE TRAITEMENT THERMIQUE</GroupeControle>
+        <Libelle>Pression Refroidissement</Libelle>
+        <Type>NumericUpDown</Type>
+        <ValeursPossibles />
+        <Baremes>
+          <Bareme>
+            <IdBareme>97</IdBareme>
+            <Expression>val&lt;X</Expression>
+            <ResultatConformite>false</ResultatConformite>
+            <ActionCorrective>correction imédiate de la pression pendant le barème</ActionCorrective>
+          </Bareme>
+        </Baremes>
+        <ValeursDefaut />
+      </DefinitionControle>
+      <DefinitionControle>
+        <nControle>343</nControle>
+        <IdControle>55</IdControle>
+        <Ordre>9</Ordre>
+        <CodeProduit>BOUDPNTO230</CodeProduit>
+        <GroupeControle>CONTRÔLE TRAITEMENT THERMIQUE</GroupeControle>
+        <Libelle>Calcul DMR</Libelle>
+        <Type>Expression</Type>
+        <ValeursPossibles>c40-c39</ValeursPossibles>
+        <Baremes>
+          <Bareme>
+            <IdBareme>98</IdBareme>
+            <Expression>val&gt;=X</Expression>
+            <ResultatConformite>false</ResultatConformite>
+            <ActionCorrective>bloquage du lot avec analyse microbiologique libératoire</ActionCorrective>
+          </Bareme>
+        </Baremes>
+        <ValeursDefaut />
+      </DefinitionControle>
+      <DefinitionControle>
+        <nControle>343</nControle>
+        <IdControle>55</IdControle>
+        <Ordre>9</Ordre>
+        <CodeProduit>BOUDPNTO230</CodeProduit>
+        <GroupeControle>CONTRÔLE TRAITEMENT THERMIQUE</GroupeControle>
+        <Libelle>Calcul DMR</Libelle>
+        <Type>Separator</Type>
+        <ValeursPossibles>c40-c39</ValeursPossibles>
+        <Baremes>
+          <Bareme>
+            <IdBareme>98</IdBareme>
+            <Expression>val&gt;=X</Expression>
+            <ResultatConformite>false</ResultatConformite>
+            <ActionCorrective>bloquage du lot avec analyse microbiologique libératoire</ActionCorrective>
+          </Bareme>
+        </Baremes>
+        <ValeursDefaut />
+      </DefinitionControle>
+      <DefinitionControle>
+        <nControle>344</nControle>
+        <IdControle>56</IdControle>
+        <Ordre>10</Ordre>
+        <CodeProduit>BOUDPNTO230</CodeProduit>
+        <GroupeControle>CONTRÔLE TRAITEMENT THERMIQUE</GroupeControle>
+        <Libelle>Calcul durée du barème</Libelle>
+        <Type>Expression</Type>
+        <ValeursPossibles>c42-c41</ValeursPossibles>
+        <Baremes>
+          <Bareme>
+            <IdBareme>99</IdBareme>
+            <Expression>val&gt;=X</Expression>
+            <ResultatConformite>false</ResultatConformite>
+            <ActionCorrective>bloquage du lot avec analyse microbiologique libératoire</ActionCorrective>
+          </Bareme>
+        </Baremes>
+        <ValeursDefaut />
+      </DefinitionControle>
+    </Controles>
+  </GroupeControle>
+  <GroupeControle TitreGroupe="CONTRÔLE TRAITEMENT STERILISATION">
+    <Controles>
+      <DefinitionControle>
+        <nControle>345</nControle>
+        <IdControle>57</IdControle>
+        <Ordre>11</Ordre>
+        <CodeProduit>BOUDPNTO230</CodeProduit>
+        <GroupeControle>CONTRÔLE TRAITEMENT STERILISATION</GroupeControle>
+        <Libelle>Date de mise en étuve à 37°C</Libelle>
+        <Type>DatePicker</Type>
+        <ValeursPossibles />
+        <Baremes />
+        <ValeursDefaut />
+      </DefinitionControle>
+      <DefinitionControle>
+        <nControle>346</nControle>
+        <IdControle>58</IdControle>
+        <Ordre>12</Ordre>
+        <CodeProduit>BOUDPNTO230</CodeProduit>
+        <GroupeControle>CONTRÔLE TRAITEMENT STERILISATION</GroupeControle>
+        <Libelle>Date de sortie en étuve à 37°C</Libelle>
+        <Type>DatePicker</Type>
+        <ValeursPossibles />
+        <Baremes />
+        <ValeursDefaut />
+      </DefinitionControle>
+      <DefinitionControle>
+        <nControle>347</nControle>
+        <IdControle>59</IdControle>
+        <Ordre>13</Ordre>
+        <CodeProduit>BOUDPNTO230</CodeProduit>
+        <GroupeControle>CONTRÔLE TRAITEMENT STERILISATION</GroupeControle>
+        <Libelle>Durée d'etuvage à 37° (j)</Libelle>
+        <Type>Expression</Type>
+        <ValeursPossibles>(c58-c57)/1440</ValeursPossibles>
+        <Baremes>
+          <Bareme>
+            <IdBareme>100</IdBareme>
+            <Expression>val&gt;= 7</Expression>
+            <ResultatConformite>false</ResultatConformite>
+            <ActionCorrective>poursuivre l'étuvage</ActionCorrective>
+          </Bareme>
+        </Baremes>
+        <ValeursDefaut />
+      </DefinitionControle>
+      <DefinitionControle>
+        <nControle>348</nControle>
+        <IdControle>60</IdControle>
+        <Ordre>14</Ordre>
+        <CodeProduit>BOUDPNTO230</CodeProduit>
+        <GroupeControle>CONTRÔLE TRAITEMENT STERILISATION</GroupeControle>
+        <Libelle>Contrôle visuel:</Libelle>
+        <Type>CheckBox</Type>
+        <ValeursPossibles>Bon;Mauvais</ValeursPossibles>
+        <Baremes>
+          <Bareme>
+            <IdBareme>101</IdBareme>
+            <Expression>val='Bon'</Expression>
+            <ResultatConformite>false</ResultatConformite>
+            <ActionCorrective>bloquage du lot en chambre froide analyse complémentaire, destruction du lot ou recyclage avec maitrise du risque sanitaire , ENREGISTREMENT DE L'ACTION CORRECTION</ActionCorrective>
+          </Bareme>
+        </Baremes>
+        <ValeursDefaut />
+      </DefinitionControle>
+      <DefinitionControle>
+        <nControle>349</nControle>
+        <IdControle>61</IdControle>
+        <Ordre>15</Ordre>
+        <CodeProduit>BOUDPNTO230</CodeProduit>
+        <GroupeControle>CONTRÔLE TRAITEMENT STERILISATION</GroupeControle>
+        <Libelle>Mesure pH  boite étuvé 37°C</Libelle>
+        <Type>NumericUpDown</Type>
+        <ValeursPossibles />
+        <Baremes />
+        <ValeursDefaut />
+      </DefinitionControle>
+      <DefinitionControle>
+        <nControle>350</nControle>
+        <IdControle>62</IdControle>
+        <Ordre>16</Ordre>
+        <CodeProduit>BOUDPNTO230</CodeProduit>
+        <GroupeControle>CONTRÔLE TRAITEMENT STERILISATION</GroupeControle>
+        <Libelle>Mesure pH  témoin  20°c</Libelle>
+        <Type>NumericUpDown</Type>
+        <ValeursPossibles />
+        <Baremes />
+        <ValeursDefaut />
+      </DefinitionControle>
+      <DefinitionControle>
+        <nControle>351</nControle>
+        <IdControle>63</IdControle>
+        <Ordre>17</Ordre>
+        <CodeProduit>BOUDPNTO230</CodeProduit>
+        <GroupeControle>CONTRÔLE TRAITEMENT STERILISATION</GroupeControle>
+        <Libelle>Calcul variation</Libelle>
+        <Type>Expression</Type>
+        <ValeursPossibles>abs(c62-c61)</ValeursPossibles>
+        <Baremes>
+          <Bareme>
+            <IdBareme>102</IdBareme>
+            <Expression>val&gt;0.5</Expression>
+            <ResultatConformite>false</ResultatConformite>
+            <ActionCorrective>bloquage du lot en chambre froide analyse complémentaire, destruction du lot ou recyclage avec maitrise du risque sanitaire , ENREGISTREMENT DE L'ACTION CORRECTION</ActionCorrective>
+          </Bareme>
+        </Baremes>
+        <ValeursDefaut />
+      </DefinitionControle>
+      <DefinitionControle>
+        <nControle>352</nControle>
+        <IdControle>64</IdControle>
+        <Ordre>18</Ordre>
+        <CodeProduit>BOUDPNTO230</CodeProduit>
+        <GroupeControle>CONTRÔLE TRAITEMENT STERILISATION</GroupeControle>
+        <Libelle>Date de mise en étuve à 55°C</Libelle>
+        <Type>DatePicker</Type>
+        <ValeursPossibles />
+        <Baremes />
+        <ValeursDefaut />
+      </DefinitionControle>
+      <DefinitionControle>
+        <nControle>353</nControle>
+        <IdControle>65</IdControle>
+        <Ordre>19</Ordre>
+        <CodeProduit>BOUDPNTO230</CodeProduit>
+        <GroupeControle>CONTRÔLE TRAITEMENT STERILISATION</GroupeControle>
+        <Libelle>Date de sortie en étuve à 55°C</Libelle>
+        <Type>DatePicker</Type>
+        <ValeursPossibles />
+        <Baremes />
+        <ValeursDefaut />
+      </DefinitionControle>
+      <DefinitionControle>
+        <nControle>354</nControle>
+        <IdControle>66</IdControle>
+        <Ordre>20</Ordre>
+        <CodeProduit>BOUDPNTO230</CodeProduit>
+        <GroupeControle>CONTRÔLE TRAITEMENT STERILISATION</GroupeControle>
+        <Libelle>Durée d'etuvage à 55°C</Libelle>
+        <Type>Expression</Type>
+        <ValeursPossibles>(c64-c65)/1440</ValeursPossibles>
+        <Baremes>
+          <Bareme>
+            <IdBareme>103</IdBareme>
+            <Expression>val&gt;= 7</Expression>
+            <ResultatConformite>false</ResultatConformite>
+            <ActionCorrective>poursuivre l'étuvage</ActionCorrective>
+          </Bareme>
+        </Baremes>
+        <ValeursDefaut />
+      </DefinitionControle>
+      <DefinitionControle>
+        <nControle>355</nControle>
+        <IdControle>67</IdControle>
+        <Ordre>21</Ordre>
+        <CodeProduit>BOUDPNTO230</CodeProduit>
+        <GroupeControle>CONTRÔLE TRAITEMENT STERILISATION</GroupeControle>
+        <Libelle>Contrôle visuel:</Libelle>
+        <Type>RadioButton</Type>
+        <ValeursPossibles>Bon;Mauvais</ValeursPossibles>
+        <Baremes>
+          <Bareme>
+            <IdBareme>104</IdBareme>
+            <Expression>val='Bon'</Expression>
+            <ResultatConformite>false</ResultatConformite>
+            <ActionCorrective>bloquage du lot en chambre froide analyse complémentaire, destruction du lot ou recyclage avec maitrise du risque sanitaire , ENREGISTREMENT DE L'ACTION CORRECTION</ActionCorrective>
+          </Bareme>
+        </Baremes>
+        <ValeursDefaut />
+      </DefinitionControle>
+      <DefinitionControle>
+        <nControle>356</nControle>
+        <IdControle>68</IdControle>
+        <Ordre>22</Ordre>
+        <CodeProduit>BOUDPNTO230</CodeProduit>
+        <GroupeControle>CONTRÔLE TRAITEMENT STERILISATION</GroupeControle>
+        <Libelle>Mesure pH  boite étuvé 55°C</Libelle>
+        <Type>NumericUpDown</Type>
+        <ValeursPossibles />
+        <Baremes />
+        <ValeursDefaut />
+      </DefinitionControle>
+      <DefinitionControle>
+        <nControle>357</nControle>
+        <IdControle>69</IdControle>
+        <Ordre>23</Ordre>
+        <CodeProduit>BOUDPNTO230</CodeProduit>
+        <GroupeControle>CONTRÔLE TRAITEMENT STERILISATION</GroupeControle>
+        <Libelle>Mesure pH  témoin  20°c</Libelle>
+        <Type>NumericUpDown</Type>
+        <ValeursPossibles />
+        <Baremes />
+        <ValeursDefaut />
+      </DefinitionControle>
+      <DefinitionControle>
+        <nControle>359</nControle>
+        <IdControle>70</IdControle>
+        <Ordre>24</Ordre>
+        <CodeProduit>BOUDPNTO230</CodeProduit>
+        <GroupeControle>CONTRÔLE TRAITEMENT STERILISATION</GroupeControle>
+        <Libelle>Calcul variation</Libelle>
+        <Type>Expression</Type>
+        <ValeursPossibles>abs(c68-c69)</ValeursPossibles>
+        <Baremes>
+          <Bareme>
+            <IdBareme>106</IdBareme>
+            <Expression>val&gt;0.5</Expression>
+            <ResultatConformite>false</ResultatConformite>
+            <ActionCorrective>commercialisation possible sous régime froid</ActionCorrective>
+          </Bareme>
+        </Baremes>
+        <ValeursDefaut />
+      </DefinitionControle>
+    </Controles>
+  </GroupeControle>
+  <GroupeControle TitreGroupe="CONTRÔLE FERMETURE CONDITIONNEMENT">
+    <Controles>
+      <DefinitionControle>
+        <nControle>358</nControle>
+        <IdControle>25</IdControle>
+        <Ordre>25</Ordre>
+        <CodeProduit>BOUDPNTO230</CodeProduit>
+        <GroupeControle>CONTRÔLE FERMETURE CONDITIONNEMENT</GroupeControle>
+        <Libelle>Contrôle visuel par le flip (si présence) :</Libelle>
+        <Type>RadioButton</Type>
+        <ValeursPossibles>20°;37°;55°</ValeursPossibles>
+        <Baremes>
+          <Bareme>
+            <IdBareme>105</IdBareme>
+            <Expression>val='Bon'</Expression>
+            <ResultatConformite>false</ResultatConformite>
+            <ActionCorrective>Refaire le réglage de la capsuleuse. Cf. PDF</ActionCorrective>
+            <CheminDoc>conditionnnementverre.pdf</CheminDoc>
+          </Bareme>
+        </Baremes>
+        <ValeursDefaut />
+      </DefinitionControle>
+      <DefinitionControle>
+        <nControle>360</nControle>
+        <IdControle>26</IdControle>
+        <Ordre>26</Ordre>
+        <CodeProduit>BOUDPNTO230</CodeProduit>
+        <GroupeControle>CONTRÔLE FERMETURE CONDITIONNEMENT</GroupeControle>
+        <Libelle>Contrôle croissure TO :</Libelle>
+        <Type>NumericUpDown</Type>
+        <ValeursPossibles />
+        <Baremes>
+          <Bareme>
+            <IdBareme>107</IdBareme>
+            <Expression>val&gt;=4 and val&lt;=7</Expression>
+            <ResultatConformite>false</ResultatConformite>
+            <ActionCorrective>Refaire le réglage de la capsuleuse. Cf. PDF</ActionCorrective>
+            <CheminDoc>conditionnnementverre.pdf</CheminDoc>
+          </Bareme>
+        </Baremes>
+        <ValeursDefaut />
+      </DefinitionControle>
+      <DefinitionControle>
+        <nControle>361</nControle>
+        <IdControle>27</IdControle>
+        <Ordre>27</Ordre>
+        <CodeProduit>BOUDPNTO230</CodeProduit>
+        <GroupeControle>CONTRÔLE FERMETURE CONDITIONNEMENT</GroupeControle>
+        <Libelle>Mesure de la dépression au vaccuomètre (bar):</Libelle>
+        <Type>NumericUpDown</Type>
+        <ValeursPossibles>1</ValeursPossibles>
+        <Baremes>
+          <Bareme>
+            <IdBareme>108</IdBareme>
+            <Expression>val&lt;-0.3</Expression>
+            <ResultatConformite>false</ResultatConformite>
+            <ActionCorrective>Refaire le réglage de la capsuleuse. Cf. PDF</ActionCorrective>
+            <CheminDoc>conditionnnementverre.pdf</CheminDoc>
+          </Bareme>
+        </Baremes>
+        <ValeursDefaut />
+      </DefinitionControle>
+    </Controles>
+  </GroupeControle>
+</ArrayOfGroupeControle>

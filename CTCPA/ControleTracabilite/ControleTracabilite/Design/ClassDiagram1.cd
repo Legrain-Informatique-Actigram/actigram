@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="ControleTracabilite.Produit">
+    <Position X="10.5" Y="4" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>Data\Produit.vb</FileName>
+      <HashCode>AAACAAAAAAAAAIQAAgAAQAAAAIgAAAAAAAAAAAAAAEA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Format" />
+      <Property Name="Process" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ControleTracabilite.Process">
+    <Position X="10" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Data\Produit.vb</FileName>
+      <HashCode>AAACAAAAAAAAAAAAAAAAQAAABCAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ControleTracabilite.Format">
+    <Position X="12.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Data\Produit.vb</FileName>
+      <HashCode>AAACAAAAAAAAAAAAAAAAQAAABCAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ControleTracabilite.Controles.Bareme">
+    <Position X="2" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Controles\DefinitionControle.vb</FileName>
+      <HashCode>AgAAAFAIAACAIAAAAAABAAAAAAAAAAAQAAAAhAAAACA=</HashCode>
+    </TypeIdentifier>
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+  </Class>
+  <Class Name="ControleTracabilite.Controles.ResultatBareme">
+    <Position X="2.75" Y="5.75" Width="2" />
+    <TypeIdentifier>
+      <FileName>Controles\ResultatControle.vb</FileName>
+      <HashCode>ggAAAGAAAAAAAAAEAAAQAAAACgAAAKAAAIAAgAAAAAg=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Bareme" />
+    </ShowAsAssociation>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+  </Class>
+  <Class Name="ControleTracabilite.Controles.ResultatControle">
+    <Position X="5.75" Y="5.5" Width="2" />
+    <TypeIdentifier>
+      <FileName>Controles\ResultatControle.vb</FileName>
+      <HashCode>AAACEECIAIgAAJQEABQAAQAAAAFBABAAARABCAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+  </Class>
+  <Class Name="ControleTracabilite.Controles.DefinitionControle">
+    <Position X="4.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Controles\DefinitionControle.vb</FileName>
+      <HashCode>AAAAACAKBFwEAJYWoQ5AICKAIAACIAIgAQCAABQCABA=</HashCode>
+    </TypeIdentifier>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+  </Class>
+</ClassDiagram>

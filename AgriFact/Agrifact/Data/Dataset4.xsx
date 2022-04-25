@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Ce fichier est automatiquement généré par le Concepteur de schéma XML. Il contient des informations de disposition pour les composants dans l'aire du concepteur.-->
+<XSDDesignerLayout layoutVersion="2" viewPortLeft="804" viewPortTop="-391" zoom="100">
+    <Reglement_XmlElement left="10266" top="10292" width="5292" height="2963" selected="0" zOrder="2" index="0" expanded="1" />
+    <Reglement_Detail_XmlElement left="17965" top="8678" width="5292" height="2963" selected="0" zOrder="4" index="1" expanded="1" />
+    <Remise_XmlElement left="18124" top="12647" width="5292" height="2963" selected="0" zOrder="6" index="2" expanded="1" />
+    <Remise_Detail_XmlElement left="22781" top="5794" width="5292" height="2963" selected="0" zOrder="8" index="3" expanded="1" />
+    <TelephoneEntreprise_XmlElement left="20397" top="2170" width="5292" height="2963" selected="0" zOrder="9" index="4" expanded="1" />
+    <Personne_XmlElement left="-1746" top="609" width="5291" height="8890" selected="0" zOrder="0" index="5" expanded="1" />
+    <Telephone_XmlElement left="10798" top="4657" width="5292" height="2963" selected="0" zOrder="10" index="6" expanded="1" />
+    <Evenement_XmlElement left="16724" top="4657" width="5292" height="2963" selected="0" zOrder="12" index="7" expanded="1" />
+    <EvenementPersonne_XmlElement left="22650" top="4657" width="5292" height="2963" selected="0" zOrder="14" index="8" expanded="1" />
+    <Entreprise_XmlElement left="12567" top="1244" width="5292" height="2540" selected="0" zOrder="15" index="9" expanded="1" />
+    <CAClientMois_XmlElement left="25183" top="11424" width="5292" height="2963" selected="0" zOrder="17" index="10" expanded="1" />
+    <VFacture_XmlElement left="3847" top="799" width="5292" height="2963" selected="0" zOrder="22" index="11" expanded="1" />
+    <VFacture_Detail_XmlElement left="4508" top="4161" width="5292" height="2963" selected="0" zOrder="23" index="12" expanded="1" />
+</XSDDesignerLayout>

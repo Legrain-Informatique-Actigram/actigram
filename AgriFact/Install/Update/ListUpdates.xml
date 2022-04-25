@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<ListUpdates>
+	<Updates>
+		<Update Version="1.3.2666" Url="AgrifactUpdate.exe" NomExe="AgrifactUpdate.exe" Description="Correction chargement Compta.\nCorrection restauration sauvegarde." TailleMaj="2067423" />
+	</Updates>
+</ListUpdates>

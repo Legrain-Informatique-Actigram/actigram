@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:import namespace="http://tempuri.org/DsPrepaCommande.xsd" />
+      <s:import schemaLocation="http://localhost:50950/PreparationCommandeWS/ServiceAgrifact.asmx?schema=DsPrepaCommande" namespace="http://tempuri.org/DsPrepaCommande.xsd" />
+      <s:element name="ToString">
+        <s:complexType />
+      </s:element>
+      <s:element name="ToStringResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ToStringResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TestEcriture">
+        <s:complexType />
+      </s:element>
+      <s:element name="TestEcritureResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="Version">
+        <s:complexType />
+      </s:element>
+      <s:element name="VersionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VersionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetListeBC">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetListeBCResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetListeBCResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+                <s:attribute fixed="http://tempuri.org/DsPrepaCommande.xsd" name="namespace" />
+                <s:attribute fixed="BCDataTable" name="tableTypeName" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetBL">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="nbc" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="dateBc" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetBLResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetBLResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any namespace="http://tempuri.org/DsPrepaCommande.xsd" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetBLByNDevisBL">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="nDevisBL" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetBLByNDevisBLResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetBLByNDevisBLResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any namespace="http://tempuri.org/DsPrepaCommande.xsd" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateBL">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ds">
+              <s:complexType>
+                <s:sequence>
+                  <s:any namespace="http://tempuri.org/DsPrepaCommande.xsd" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateBLResponse">
+        <s:complexType />
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ToStringSoapIn">
+    <wsdl:part name="parameters" element="tns:ToString" />
+  </wsdl:message>
+  <wsdl:message name="ToStringSoapOut">
+    <wsdl:part name="parameters" element="tns:ToStringResponse" />
+  </wsdl:message>
+  <wsdl:message name="TestEcritureSoapIn">
+    <wsdl:part name="parameters" element="tns:TestEcriture" />
+  </wsdl:message>
+  <wsdl:message name="TestEcritureSoapOut">
+    <wsdl:part name="parameters" element="tns:TestEcritureResponse" />
+  </wsdl:message>
+  <wsdl:message name="VersionSoapIn">
+    <wsdl:part name="parameters" element="tns:Version" />
+  </wsdl:message>
+  <wsdl:message name="VersionSoapOut">
+    <wsdl:part name="parameters" element="tns:VersionResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetListeBCSoapIn">
+    <wsdl:part name="parameters" element="tns:GetListeBC" />
+  </wsdl:message>
+  <wsdl:message name="GetListeBCSoapOut">
+    <wsdl:part name="parameters" element="tns:GetListeBCResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetBLSoapIn">
+    <wsdl:part name="parameters" element="tns:GetBL" />
+  </wsdl:message>
+  <wsdl:message name="GetBLSoapOut">
+    <wsdl:part name="parameters" element="tns:GetBLResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetBLByNDevisBLSoapIn">
+    <wsdl:part name="parameters" element="tns:GetBLByNDevisBL" />
+  </wsdl:message>
+  <wsdl:message name="GetBLByNDevisBLSoapOut">
+    <wsdl:part name="parameters" element="tns:GetBLByNDevisBLResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateBLSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateBL" />
+  </wsdl:message>
+  <wsdl:message name="UpdateBLSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateBLResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ServiceAgrifactSoap">
+    <wsdl:operation name="ToString">
+      <wsdl:input message="tns:ToStringSoapIn" />
+      <wsdl:output message="tns:ToStringSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TestEcriture">
+      <wsdl:input message="tns:TestEcritureSoapIn" />
+      <wsdl:output message="tns:TestEcritureSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Version">
+      <wsdl:input message="tns:VersionSoapIn" />
+      <wsdl:output message="tns:VersionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListeBC">
+      <wsdl:input message="tns:GetListeBCSoapIn" />
+      <wsdl:output message="tns:GetListeBCSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBL">
+      <wsdl:input message="tns:GetBLSoapIn" />
+      <wsdl:output message="tns:GetBLSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBLByNDevisBL">
+      <wsdl:input message="tns:GetBLByNDevisBLSoapIn" />
+      <wsdl:output message="tns:GetBLByNDevisBLSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateBL">
+      <wsdl:input message="tns:UpdateBLSoapIn" />
+      <wsdl:output message="tns:UpdateBLSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServiceAgrifactSoap" type="tns:ServiceAgrifactSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ToString">
+      <soap:operation soapAction="http://tempuri.org/ToString" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestEcriture">
+      <soap:operation soapAction="http://tempuri.org/TestEcriture" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Version">
+      <soap:operation soapAction="http://tempuri.org/Version" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListeBC">
+      <soap:operation soapAction="http://tempuri.org/GetListeBC" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBL">
+      <soap:operation soapAction="http://tempuri.org/GetBL" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBLByNDevisBL">
+      <soap:operation soapAction="http://tempuri.org/GetBLByNDevisBL" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateBL">
+      <soap:operation soapAction="http://tempuri.org/UpdateBL" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceAgrifactSoap12" type="tns:ServiceAgrifactSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ToString">
+      <soap12:operation soapAction="http://tempuri.org/ToString" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestEcriture">
+      <soap12:operation soapAction="http://tempuri.org/TestEcriture" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Version">
+      <soap12:operation soapAction="http://tempuri.org/Version" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListeBC">
+      <soap12:operation soapAction="http://tempuri.org/GetListeBC" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBL">
+      <soap12:operation soapAction="http://tempuri.org/GetBL" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBLByNDevisBL">
+      <soap12:operation soapAction="http://tempuri.org/GetBLByNDevisBL" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateBL">
+      <soap12:operation soapAction="http://tempuri.org/UpdateBL" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServiceAgrifact">
+    <wsdl:port name="ServiceAgrifactSoap" binding="tns:ServiceAgrifactSoap">
+      <soap:address location="http://localhost:50950/PreparationCommandeWS/ServiceAgrifact.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServiceAgrifactSoap12" binding="tns:ServiceAgrifactSoap12">
+      <soap12:address location="http://localhost:50950/PreparationCommandeWS/ServiceAgrifact.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

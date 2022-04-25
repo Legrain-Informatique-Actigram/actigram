@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="DsFicheTraca" targetNamespace="http://tempuri.org/DsFicheTraca.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/DsFicheTraca.xsd" xmlns:mstns="http://tempuri.org/DsFicheTraca.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="DsFicheTraca" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="Factures">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="nLot" type="xs:string" minOccurs="0" />
+							<xs:element name="nFacture" type="xs:decimal" minOccurs="0" />
+							<xs:element name="DateFacture" type="xs:date" minOccurs="0" />
+							<xs:element name="Nom" type="xs:string" minOccurs="0" />
+							<xs:element name="CodeProduit" type="xs:string" minOccurs="0" />
+							<xs:element name="Libelle" type="xs:string" minOccurs="0" />
+							<xs:element name="unite1" type="xs:decimal" minOccurs="0" />
+							<xs:element name="LibUnite1" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Lot">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="nLot" type="xs:string" />
+							<xs:element name="DateCreation" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="Famille1" type="xs:string" minOccurs="0" />
+							<xs:element name="Famille2" type="xs:string" minOccurs="0" />
+							<xs:element name="Famille3" type="xs:string" minOccurs="0" />
+							<xs:element name="QtDepart" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Unite" type="xs:string" minOccurs="0" />
+							<xs:element name="Termine" type="xs:boolean" minOccurs="0" />
+							<xs:element name="Observation" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Mouvement">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="nMouvement" type="xs:decimal" />
+							<xs:element name="nPiece" type="xs:string" minOccurs="0" />
+							<xs:element name="DateMouvement" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="DateModif" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="TypeMouvement" type="xs:string" minOccurs="0" />
+							<xs:element name="DepotDepart" type="xs:string" minOccurs="0" />
+							<xs:element name="DepotDest" type="xs:string" minOccurs="0" />
+							<xs:element name="Description" type="xs:string" minOccurs="0" />
+							<xs:element name="Caracteristique" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Mouvement_Detail">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="nMouvementDetail" type="xs:decimal" />
+							<xs:element name="nMouvement" type="xs:decimal" minOccurs="0" />
+							<xs:element name="nLigne" type="xs:decimal" minOccurs="0" />
+							<xs:element name="nLot" type="xs:string" minOccurs="0" />
+							<xs:element name="CodeProduit" type="xs:string" minOccurs="0" />
+							<xs:element name="Libelle" type="xs:string" minOccurs="0" />
+							<xs:element name="Unite1" type="xs:decimal" minOccurs="0" />
+							<xs:element name="LibUnite1" type="xs:string" minOccurs="0" />
+							<xs:element name="Unite2" type="xs:decimal" minOccurs="0" />
+							<xs:element name="LibUnite2" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="DsFicheTracaKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:Lot" />
+			<xs:field xpath="mstns:nLot" />
+		</xs:unique>
+		<xs:keyref name="LotFactures" refer="DsFicheTracaKey1">
+			<xs:selector xpath=".//mstns:Factures" />
+			<xs:field xpath="mstns:nLot" />
+		</xs:keyref>
+		<xs:unique name="DsFicheTracaKey2" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:Mouvement" />
+			<xs:field xpath="mstns:nMouvement" />
+		</xs:unique>
+		<xs:unique name="DsFicheTracaKey3" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:Mouvement_Detail" />
+			<xs:field xpath="mstns:nMouvementDetail" />
+		</xs:unique>
+		<xs:keyref name="MouvementMouvement_Detail" refer="DsFicheTracaKey2">
+			<xs:selector xpath=".//mstns:Mouvement_Detail" />
+			<xs:field xpath="mstns:nMouvement" />
+		</xs:keyref>
+	</xs:element>
+</xs:schema>

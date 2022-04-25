@@ -1,0 +1,9 @@
+C:\ACTIGRAM\VBNET2.0\AgriFact\InstallAuto\bin\InstallAuto.exe
+C:\ACTIGRAM\VBNET2.0\AgriFact\InstallAuto\bin\InstallAuto.pdb
+C:\ACTIGRAM\VBNET2.0\AgriFact\InstallAuto\obj\Debug\ResolveAssemblyReference.cache
+C:\ACTIGRAM\VBNET2.0\AgriFact\InstallAuto\obj\Debug\InstallAuto.FrTachesInstallation.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\InstallAuto\obj\Debug\InstallAuto.vbproj.GenerateResource.Cache
+C:\ACTIGRAM\VBNET2.0\AgriFact\InstallAuto\obj\Debug\InstallAuto.exe
+C:\ACTIGRAM\VBNET2.0\AgriFact\InstallAuto\obj\Debug\InstallAuto.pdb
+C:\Dev\Actigram\AgriFact\InstallAuto\obj\Debug\InstallAuto.exe
+C:\Dev\Actigram\AgriFact\InstallAuto\obj\Debug\InstallAuto.pdb

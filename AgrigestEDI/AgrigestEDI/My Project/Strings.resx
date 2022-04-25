@@ -1,0 +1,738 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AfficherEcran_LeNomDeClasseEstIncorrect" xml:space="preserve">
+    <value>Le nom de classe est incorrect</value>
+  </data>
+  <data name="AfficherEcran_PasUnEcran" xml:space="preserve">
+    <value>La classe définie n'est pas un écran</value>
+  </data>
+  <data name="ArreterLaTeleintervention" xml:space="preserve">
+    <value>Arrêter la téléintervention</value>
+  </data>
+  <data name="LancerLaTeleintervention" xml:space="preserve">
+    <value>Lancer la téléintervention</value>
+  </data>
+  <data name="TeleinterventionEnCours" xml:space="preserve">
+    <value> - Ultra VNC : Téléintervention en cours</value>
+  </data>
+  <data name="Initialisation" xml:space="preserve">
+    <value>Initialisation</value>
+  </data>
+  <data name="Demarrage_VerifCle" xml:space="preserve">
+    <value>Vérification de la clé d'activation</value>
+  </data>
+  <data name="Demarrage_CopiePasActivee" xml:space="preserve">
+    <value>Cette copie d'Agrigest n'est pas activée</value>
+  </data>
+  <data name="Demarrage_ChoixDeLExploitation" xml:space="preserve">
+    <value>Choix de l'exploitation</value>
+  </data>
+  <data name="Demarrage_ConnexionBase" xml:space="preserve">
+    <value>Connexion à la base</value>
+  </data>
+  <data name="Demarrage_CompactageDeLaBase" xml:space="preserve">
+    <value>Compactage de la base</value>
+  </data>
+  <data name="Demarrage_Restauration" xml:space="preserve">
+    <value>Restauration</value>
+  </data>
+  <data name="Demarrage_Restore" xml:space="preserve">
+    <value>L'application va revenir à la dernière sauvegarde automatique.</value>
+  </data>
+  <data name="Demarrage_Restore1" xml:space="preserve">
+    <value>La base de données est introuvable.</value>
+  </data>
+  <data name="Demarrage_ChoixDuDossier" xml:space="preserve">
+    <value>Choix de l'exercice</value>
+  </data>
+  <data name="Demarrage_OuvertureDeLApplication" xml:space="preserve">
+    <value>Ouverture de l'application</value>
+  </data>
+  <data name="Cle_Expiree" xml:space="preserve">
+    <value>La clé d'activation a expiré depuis le {0:dd/MM/yy}.</value>
+  </data>
+  <data name="Cle_PasValide" xml:space="preserve">
+    <value>La clé d'activation n'est pas valide.</value>
+  </data>
+  <data name="Restore_RepertoireEstIntrouvable" xml:space="preserve">
+    <value>Le répertoire de sauvegarde est introuvable.</value>
+  </data>
+  <data name="Restore_AucuneSauvegardeDisponible" xml:space="preserve">
+    <value>Aucune sauvegarde disponible pour le fichier '{0}{1}'.</value>
+  </data>
+  <data name="Restore_Restauree" xml:space="preserve">
+    <value>La sauvegarde de '{0}{1}' du {2:dd/MM/yy HH:mm} a été restaurée</value>
+  </data>
+  <data name="Restauration_SauvegardeEndommagee" xml:space="preserve">
+    <value>La sauvegarde est endommagée.</value>
+  </data>
+  <data name="FichierIntrouvable" xml:space="preserve">
+    <value>Le fichier {0} n'existe pas</value>
+  </data>
+  <data name="Restore_LectureDeLaSauvegarde" xml:space="preserve">
+    <value>Lecture de la sauvegarde...</value>
+  </data>
+  <data name="Restore_ProblemeDeLectureDuFichier" xml:space="preserve">
+    <value>Probleme de lecture du fichier : </value>
+  </data>
+  <data name="ChargementDesDonnees" xml:space="preserve">
+    <value>Chargement des données...</value>
+  </data>
+  <data name="Restore_Succes" xml:space="preserve">
+    <value>Restauration effectuée avec succès</value>
+  </data>
+  <data name="Restauration" xml:space="preserve">
+    <value>Restauration</value>
+  </data>
+  <data name="Restore_Cancel" xml:space="preserve">
+    <value>Restauration annulée</value>
+  </data>
+  <data name="Restore_AskEcraserDossier" xml:space="preserve">
+    <value>Cet exercice est déjà présent sur votre ordinateur. Souhaitez vous l'écraser ?</value>
+  </data>
+  <data name="Restore_RecapProblemes" xml:space="preserve">
+    <value>La restauration n'a pas pu être réalisée à cause des problèmes suivants :</value>
+  </data>
+  <data name="EnregistrerRapport" xml:space="preserve">
+    <value>Souhaitez-vous enregistrer ce rapport ?</value>
+  </data>
+  <data name="FIchierExistant" xml:space="preserve">
+    <value>Le fichier {0} existe déjà, voulez-vous le remplacer ?</value>
+  </data>
+  <data name="EcritureDuFichier" xml:space="preserve">
+    <value>Ecriture du fichier...</value>
+  </data>
+  <data name="Sauvegarde_CompressionDesDonnees" xml:space="preserve">
+    <value>Compression des données...</value>
+  </data>
+  <data name="Sauvegarde_Achevee" xml:space="preserve">
+    <value>Sauvegarde achevée...</value>
+  </data>
+  <data name="Sauvegarde_Succes" xml:space="preserve">
+    <value>Sauvegarde réalisée avec succès</value>
+  </data>
+  <data name="Sauvegarde" xml:space="preserve">
+    <value>Sauvegarde</value>
+  </data>
+  <data name="Sauvegarde_RecapProblemes" xml:space="preserve">
+    <value>La sauvegarde n'a pas pu être réalisée à cause des problèmes suivants :</value>
+  </data>
+  <data name="EnregistrerLesModifications" xml:space="preserve">
+    <value>Voulez-vous enregistrer les modifications ?</value>
+  </data>
+  <data name="SuppressionPiece" xml:space="preserve">
+    <value>Etes-vous sûr de vouloir supprimer la pièce : {0} du {1:dd/MM/yy} ?</value>
+  </data>
+  <data name="SuppressionDePiece" xml:space="preserve">
+    <value>Suppression d'une pièce</value>
+  </data>
+  <data name="PieceSupprimee" xml:space="preserve">
+    <value>Pièce supprimée</value>
+  </data>
+  <data name="ImpossibleDeSupprimerPiece" xml:space="preserve">
+    <value>Impossible de supprimer la pièce : </value>
+  </data>
+  <data name="OuvertureEtat" xml:space="preserve">
+    <value>Ouverture de l'état...</value>
+  </data>
+  <data name="Expl_EnleverExploitation" xml:space="preserve">
+    <value>Etes-vous sûr de vouloir enlever l'exploitation '{0}' de la liste ?</value>
+  </data>
+  <data name="Expl_SupprimerBDD" xml:space="preserve">
+    <value>Voulez-vous aussi supprimer la base de données '{0}' ?</value>
+  </data>
+  <data name="Expl_BDDAIntegrer" xml:space="preserve">
+    <value>Sélectionnez la base de données à intégrer</value>
+  </data>
+  <data name="SelectionDate" xml:space="preserve">
+    <value>Sélection de date</value>
+  </data>
+  <data name="SelectionDate_DateInferieureADateFin" xml:space="preserve">
+    <value>Veuillez choisir une date inférieure à la date de fin</value>
+  </data>
+  <data name="Date_Ecart14Mois" xml:space="preserve">
+    <value>Vous ne pouvez mettre de date ayant un écart supérieur à 14 mois</value>
+  </data>
+  <data name="Cloture_NoCloture" xml:space="preserve">
+    <value>L'exercice n'a plus de clôture</value>
+  </data>
+  <data name="Cloture" xml:space="preserve">
+    <value>Clôture</value>
+  </data>
+  <data name="Cloture_TrouverExercice" xml:space="preserve">
+    <value>Détermination d'un exercice existant</value>
+  </data>
+  <data name="Cloture_CreerCodeExercice" xml:space="preserve">
+    <value>Génération du nouveau nom de l'exercice</value>
+  </data>
+  <data name="Cloture_PlusDeCodeDispo" xml:space="preserve">
+    <value>Veuillez changer d'année pour votre début d'exercice</value>
+  </data>
+  <data name="Cloture_CreerNouvelExercice" xml:space="preserve">
+    <value>Création du nouvel exercice</value>
+  </data>
+  <data name="Cloture_DateNouveauDossier" xml:space="preserve">
+    <value>Détermination des dates du nouvel exercice</value>
+  </data>
+  <data name="Cloture_DateAncienDossier" xml:space="preserve">
+    <value>Détermination des dates de l'exercice actuel</value>
+  </data>
+  <data name="Cloture_CalculDesReports" xml:space="preserve">
+    <value>Calcul des reports</value>
+  </data>
+  <data name="Cloture_EnregistrerReport" xml:space="preserve">
+    <value>Mise à jour des données de report</value>
+  </data>
+  <data name="Cloture_AvertissementProblemeBalance" xml:space="preserve">
+    <value>Vous ne pouvez pas clôturer cet exercice car la balance n'est pas juste. Votre écart est de {0}€</value>
+  </data>
+  <data name="Cloture_ExerciceCloture" xml:space="preserve">
+    <value>Exercice clôturé</value>
+  </data>
+  <data name="Cloture_ClotureProvisoireOK" xml:space="preserve">
+    <value>Clôture provisoire réalisée</value>
+  </data>
+  <data name="Expl_BrowseBDD" xml:space="preserve">
+    <value>Indiquez le chemin de la base de données.</value>
+  </data>
+  <data name="Expl_BrowseBDDPlanType" xml:space="preserve">
+    <value>Indiquez le chemin de la base de données du plan type.</value>
+  </data>
+  <data name="Dossier_TextCreation" xml:space="preserve">
+    <value>Création d'exercice</value>
+  </data>
+  <data name="Dossier_TextModif" xml:space="preserve">
+    <value>Modification d'exercice</value>
+  </data>
+  <data name="TransfertDossier_PbDossierInexistant" xml:space="preserve">
+    <value>Vous ne pouvez pas transférer les pièces car il n'existe pas d'exercice et vous ne pouvez pas en créer.</value>
+  </data>
+  <data name="TransfertDossier" xml:space="preserve">
+    <value>Transfert de pièce</value>
+  </data>
+  <data name="TransfertDossier_Pb" xml:space="preserve">
+    <value>Problème lors des transferts de pièces vers un autre exercice</value>
+  </data>
+  <data name="SouhaitezVousContinuer" xml:space="preserve">
+    <value>Souhaitez vous continuer ?</value>
+  </data>
+  <data name="TransfertDossier_MsgAttention1" xml:space="preserve">
+    <value>Attention : des pièces vont être transférées vers l'exercice {0} depuis l'exercice {1}.</value>
+  </data>
+  <data name="TransfertDossier_MsgAttention2FIN" xml:space="preserve">
+    <value>La nouvelle date de fin d'exercice du dossier {1} va devenir {2:dd/MM/yyyy}.</value>
+  </data>
+  <data name="TransfertDossier_MsgAttention2DEB" xml:space="preserve">
+    <value>La nouvelle date de début d'exercice du dossier {1} va devenir {2:dd/MM/yyyy}.</value>
+  </data>
+  <data name="SaisieIncomplete" xml:space="preserve">
+    <value>Saisie incomplète</value>
+  </data>
+  <data name="Dossier_CodeExplUtilise" xml:space="preserve">
+    <value>Ce code exploitation est déjà utilisé.</value>
+  </data>
+  <data name="Expl_VerfiSaisieNom" xml:space="preserve">
+    <value>Veuillez saisir un nom d'exploitation</value>
+  </data>
+  <data name="Expl_VerifSaisieCode" xml:space="preserve">
+    <value>Veuillez saisir un code d'exploitation ex : 00001</value>
+  </data>
+  <data name="Information" xml:space="preserve">
+    <value>Information</value>
+  </data>
+  <data name="Date_Ecart1Jour" xml:space="preserve">
+    <value>L'exercice doit au minimum durer un jour.</value>
+  </data>
+  <data name="Expl_ExplIntrouvable" xml:space="preserve">
+    <value>L'exploitation {0} est introuvable.</value>
+  </data>
+  <data name="Expl_DossierIntrouvable" xml:space="preserve">
+    <value>L'exercice {0} est introuvable.</value>
+  </data>
+  <data name="Dossier_AvertissementTransfert" xml:space="preserve">
+    <value>Attention : il existe des pièces avant cette date pour un exercice.</value>
+  </data>
+  <data name="Dossier_AvertissementTransfert2" xml:space="preserve">
+    <value>Celles-ci seront transférées lors de la modification.</value>
+  </data>
+  <data name="Dossier_PbChoixDate" xml:space="preserve">
+    <value>Il existe déjà un exercice comprenant cette date. Veuillez changer de date.</value>
+  </data>
+  <data name="Dossier_AvertissementTransfert3" xml:space="preserve">
+    <value>Attention il existe des pièces après cette date pour un exercice.</value>
+  </data>
+  <data name="SuppressionDeDossier" xml:space="preserve">
+    <value>Suppression d'exercice</value>
+  </data>
+  <data name="SuppressionDExploitation" xml:space="preserve">
+    <value>Suppression d'exploitation</value>
+  </data>
+  <data name="Dossier_AskSuppression" xml:space="preserve">
+    <value>Voulez-vous supprimer l'exercice : {0} ?</value>
+  </data>
+  <data name="Expl_AskSuppression" xml:space="preserve">
+    <value>Voulez-vous supprimer tous les exercices de cette exploitation  : {0} ?</value>
+  </data>
+  <data name="Expl_ExploitationSupprimee" xml:space="preserve">
+    <value>Exploitation supprimée</value>
+  </data>
+  <data name="Etats_DateDeb" xml:space="preserve">
+    <value>Date de début de période</value>
+  </data>
+  <data name="Etats_DateFin" xml:space="preserve">
+    <value>Date de fin de période</value>
+  </data>
+  <data name="Etats_CptDeb" xml:space="preserve">
+    <value>Compte début</value>
+  </data>
+  <data name="Etats_CptFin" xml:space="preserve">
+    <value>Compte fin</value>
+  </data>
+  <data name="Etats_BtImprimer" xml:space="preserve">
+    <value>Imprimer</value>
+  </data>
+  <data name="Etats_LibPeriode" xml:space="preserve">
+    <value>Période du {0} au {1}</value>
+  </data>
+  <data name="Export_ExportActi" xml:space="preserve">
+    <value>Export des activités...</value>
+  </data>
+  <data name="Export_ExportPLC" xml:space="preserve">
+    <value>Export du plan comptable...</value>
+  </data>
+  <data name="Export_ExportTVA" xml:space="preserve">
+    <value>Export des codes TVA...</value>
+  </data>
+  <data name="Export_ExportPieces" xml:space="preserve">
+    <value>Export des pièces...</value>
+  </data>
+  <data name="Export_AucuneEcrExportee" xml:space="preserve">
+    <value>Aucune écriture n'a pu être exportée.</value>
+  </data>
+  <data name="EnregistrementDesDonnees" xml:space="preserve">
+    <value>Enregistrement des données...</value>
+  </data>
+  <data name="Import_ErreurDImportation" xml:space="preserve">
+    <value>Erreur d'importation</value>
+  </data>
+  <data name="Import_ErreurLignes1" xml:space="preserve">
+    <value>Ligne DOS avant la ligne VER. Veuillez vérifier votre fichier.</value>
+  </data>
+  <data name="Import_ErreurLignes2" xml:space="preserve">
+    <value>Ligne EXO avant la ligne DOS. Veuillez vérifier votre fichier.</value>
+  </data>
+  <data name="Import_ErreurLignes3" xml:space="preserve">
+    <value>Ligne ECR avant la ligne EXO. Veuillez vérifier votre fichier.</value>
+  </data>
+  <data name="Import_ErreurFichier" xml:space="preserve">
+    <value>Il y a un problème dans l'enregistrement de pièce.</value>
+  </data>
+  <data name="Import_ErreurEquilibre" xml:space="preserve">
+    <value>La pièce {0} du {1:dd/MM/yyyy} n'est pas équilibrée.</value>
+  </data>
+  <data name="Export_Succes" xml:space="preserve">
+    <value>Exportation réalisée avec succès</value>
+  </data>
+  <data name="Export_RecapProblemes" xml:space="preserve">
+    <value>L'exportation n'a pas pu être réalisée à cause des problèmes suivants :</value>
+  </data>
+  <data name="Export_DescriptionRaccourciExports" xml:space="preserve">
+    <value>Répertoire contenant les exports de comptabilité AgrigestEDI pour transmission au comptable.</value>
+  </data>
+  <data name="Export_AskAnnulation" xml:space="preserve">
+    <value>Etes-vous sûr de vouloir annuler les exports sélectionnés ?</value>
+  </data>
+  <data name="Import_FormatECRInconnu" xml:space="preserve">
+    <value>Le fichier {0} n'est pas formaté dans une version connu de AgriGestEDI</value>
+  </data>
+  <data name="Import_FichierVide" xml:space="preserve">
+    <value>Il n'y a pas de données dans ce fichier. Veuillez en prendre un autre.</value>
+  </data>
+  <data name="Import_Succes" xml:space="preserve">
+    <value>L'importation a été effectuée avec succès</value>
+  </data>
+  <data name="Import_RecapProblemes" xml:space="preserve">
+    <value>L'importation n'a pas pu être réalisée à cause des problèmes suivants :</value>
+  </data>
+  <data name="Import_ConfirmationEcraseDossier" xml:space="preserve">
+    <value>Attention : Etes-vous sur de vouloir remplacer cet exercice ?</value>
+  </data>
+  <data name="Etebac_VerifMonnaie" xml:space="preserve">
+    <value>Le relevé de compte contient  des opérations qui ne sont pas libellées en euros.</value>
+  </data>
+  <data name="FichierInexistant" xml:space="preserve">
+    <value>Fichier inexistant.</value>
+  </data>
+  <data name="ErreurAppli" xml:space="preserve">
+    <value>Une erreur s'est produite : </value>
+  </data>
+  <data name="ErreurCritique" xml:space="preserve">
+    <value>Une erreur s'est produite, l'application va se terminer : </value>
+  </data>
+  <data name="UltraVNC_Fin" xml:space="preserve">
+    <value>La téléintervention est terminée</value>
+  </data>
+  <data name="UltraVNC_Debut" xml:space="preserve">
+    <value>La téléintervention peut commencer</value>
+  </data>
+  <data name="Cle_CodeUtilisateurInvalide" xml:space="preserve">
+    <value>Code Utilisateur invalide</value>
+  </data>
+  <data name="PLC_EnleverActi" xml:space="preserve">
+    <value>Enlever les activités sélectionnées</value>
+  </data>
+  <data name="PLC_AjouterActi" xml:space="preserve">
+    <value>Ajouter les activités sélectionnées</value>
+  </data>
+  <data name="PLC_SelectActi" xml:space="preserve">
+    <value>Sélectionnez ou saisissez les activités à affecter aux comptes</value>
+  </data>
+  <data name="PLC_SelectActi2" xml:space="preserve">
+    <value>Sélection des activités</value>
+  </data>
+  <data name="PLC_CreerActi" xml:space="preserve">
+    <value>Ajouter une activité...</value>
+  </data>
+  <data name="PLC_AffectionActi" xml:space="preserve">
+    <value>Affectation d'activités</value>
+  </data>
+  <data name="PLC_ActiInterdite" xml:space="preserve">
+    <value>L'activité {0} ne peut être associée au compte {1}</value>
+  </data>
+  <data name="PLC_SuppressionImpossible" xml:space="preserve">
+    <value>Impossible de supprimer le couple {1}/{2} car il est utilisé.</value>
+  </data>
+  <data name="PLC_ChoixDuCompte" xml:space="preserve">
+    <value>Choix du compte...</value>
+  </data>
+  <data name="PLC_CompteExiste" xml:space="preserve">
+    <value>Le compte {0} existe déjà pour cet exercice.</value>
+  </data>
+  <data name="PLC_CompteDejaSelect" xml:space="preserve">
+    <value>Le compte {0} a déjà été sélectionné.</value>
+  </data>
+  <data name="PLC_PasDansPlanType" xml:space="preserve">
+    <value>Le compte {0} ne correspond à aucune racine comptable.</value>
+  </data>
+  <data name="PLC_CreationDesComptes" xml:space="preserve">
+    <value>Création des comptes...</value>
+  </data>
+  <data name="RecupInfos" xml:space="preserve">
+    <value>Récupération des informations...</value>
+  </data>
+  <data name="PLC_CoupleExiste" xml:space="preserve">
+    <value>Le compte {0}-{1} est déjà dans le plan comptable de cet exercice.</value>
+  </data>
+  <data name="ACTIVITEGENERALE" xml:space="preserve">
+    <value>ACTIVITE GENERALE</value>
+  </data>
+  <data name="SuppressionAnnulee" xml:space="preserve">
+    <value>Suppression annulée</value>
+  </data>
+  <data name="PLC_VerifSupprCompte" xml:space="preserve">
+    <value>Voulez-vous vraiment supprimer ce compte ?</value>
+  </data>
+  <data name="Suppression" xml:space="preserve">
+    <value>Suppression</value>
+  </data>
+  <data name="Saisie_VeuillezSaisirMontantTVA" xml:space="preserve">
+    <value>Veuillez saisir tous les montants de TVA.</value>
+  </data>
+  <data name="ErreurDEnregistrement" xml:space="preserve">
+    <value>Erreur d'enregistrement</value>
+  </data>
+  <data name="Saisie_AppelTVASansLignes" xml:space="preserve">
+    <value>Vous devez avoir des lignes pour effectuer la TVA</value>
+  </data>
+  <data name="Saisie_CollisionPieces" xml:space="preserve">
+    <value>Impossible d'intégrer la pièce {0}, elle existe déjà en base</value>
+  </data>
+  <data name="Saisie_PieceInexistante" xml:space="preserve">
+    <value>Cette pièce n'existe pas</value>
+  </data>
+  <data name="Saisie_PieceSupprimee" xml:space="preserve">
+    <value>Piece supprimée</value>
+  </data>
+  <data name="Saisie_VeuillezSaisirUneQte" xml:space="preserve">
+    <value>Veuillez saisir une quantité.</value>
+  </data>
+  <data name="Saisie_VerifConformiteQte" xml:space="preserve">
+    <value>La quantité saisie n'est pas conforme. Veuillez vérifier votre saisie</value>
+  </data>
+  <data name="Saisie_CompteIntrouvableDansLePlanType" xml:space="preserve">
+    <value>Compte introuvable dans le plan type</value>
+  </data>
+  <data name="Saisie_SolderPiece" xml:space="preserve">
+    <value>Clôture de pièce</value>
+  </data>
+  <data name="Saisie_SoldeImpossibleSurCpte" xml:space="preserve">
+    <value>Vous ne pouvez pas solder la pièce avec ce compte.</value>
+  </data>
+  <data name="Saisie_AskResetContrepartie" xml:space="preserve">
+    <value>Souhaitez vous réinitialiser toutes les lignes de contrepartie ?</value>
+  </data>
+  <data name="Saisie_AskResetContrePartie2" xml:space="preserve">
+    <value>Attention : toutes les lignes ayant un compte de contre partie seront supprimées et réécrites</value>
+  </data>
+  <data name="Saisie_AskResetTVA" xml:space="preserve">
+    <value>Souhaitez-vous réinitialiser toutes les lignes de TVA ?</value>
+  </data>
+  <data name="Saisie_AskResetTVA2" xml:space="preserve">
+    <value>Attention : toutes les lignes ayant un compte TVA seront supprimées et ré-écrites</value>
+  </data>
+  <data name="Sasie_CalculDeTVA" xml:space="preserve">
+    <value>Calcul de TVA</value>
+  </data>
+  <data name="Saisie_AttentionPasPuCalcTVA" xml:space="preserve">
+    <value>Attention, la TVA n'a pas pu être calculée pour certaines lignes.</value>
+  </data>
+  <data name="Modele_ModeleIntrouvable" xml:space="preserve">
+    <value>Ce modèle n'existe pas</value>
+  </data>
+  <data name="Modele_Collision" xml:space="preserve">
+    <value>Un modèle portant ce nom existe déjà.</value>
+  </data>
+  <data name="Modele_Enregistrement" xml:space="preserve">
+    <value>Enregistrement de modèle</value>
+  </data>
+  <data name="Modele_Suppression" xml:space="preserve">
+    <value>Suppression de modéle</value>
+  </data>
+  <data name="Etats_EditeAvecAgrigestEDI" xml:space="preserve">
+    <value>Edité avec AgrigestEDI le {0:dd/MM/yy}</value>
+  </data>
+  <data name="ExerciceDuDate0AuDate1" xml:space="preserve">
+    <value>Exercice du {0:dd/MM/yyyy} au {1:dd/MM/yyyy}</value>
+  </data>
+  <data name="Saisie_TextConsultation" xml:space="preserve">
+    <value>Consultation de la pièce</value>
+  </data>
+  <data name="Enregistrement" xml:space="preserve">
+    <value>Enregistrement</value>
+  </data>
+  <data name="Saisie_VerifSolde" xml:space="preserve">
+    <value>Veuillez vérifier le solde de votre pièce.</value>
+  </data>
+  <data name="Saisie_BlocageCloture" xml:space="preserve">
+    <value>Votre comptabilité est clôturée, vous ne pouvez pas ajouter de pièce.</value>
+  </data>
+  <data name="ComptabiliteCloturee" xml:space="preserve">
+    <value>Comptabilité clôturée</value>
+  </data>
+  <data name="Saisie_NumeroExistant" xml:space="preserve">
+    <value>Ce numéro de pièce existe déjà</value>
+  </data>
+  <data name="ErreurDeSaisie" xml:space="preserve">
+    <value>Erreur de saisie</value>
+  </data>
+  <data name="ErreurSuppression" xml:space="preserve">
+    <value>Erreur Suppression</value>
+  </data>
+  <data name="VerifSuppression" xml:space="preserve">
+    <value>Etes vous sur de vouloir supprimer cet enregistrement?</value>
+  </data>
+  <data name="Saisie_ProblemeSelection" xml:space="preserve">
+    <value>Aucune pièce n'est sélectionnée</value>
+  </data>
+  <data name="Modele_CreationDeModele" xml:space="preserve">
+    <value>Création de modèle</value>
+  </data>
+  <data name="Modele_VeuillezSaisirLeNomDuModele" xml:space="preserve">
+    <value>Veuillez saisir le nom du modèle.</value>
+  </data>
+  <data name="Saisie_VeuillezSaisirDesLignes" xml:space="preserve">
+    <value>Veuillez saisir des lignes.</value>
+  </data>
+  <data name="Saisie_LignesEnErreur" xml:space="preserve">
+    <value>Vous ne pouvez pas enregistrer la pièce car elle comporte des lignes en erreur.</value>
+  </data>
+  <data name="Saisie_PieceDejaExportee" xml:space="preserve">
+    <value>Vous ne pouvez pas modifier cette pièce. Elle a déjà été exportée.</value>
+  </data>
+  <data name="Saisie_ProblemeEquilibre" xml:space="preserve">
+    <value>Veuillez équilibrer vos écritures</value>
+  </data>
+  <data name="Saisie_VeuillezSaisirLaTVA" xml:space="preserve">
+    <value>Veuillez saisir la TVA.</value>
+  </data>
+  <data name="Saisie_LignesSansMontant" xml:space="preserve">
+    <value>Vous avez des lignes sans montant au débit ni au crédit</value>
+  </data>
+  <data name="Modele_ProblemeSelection" xml:space="preserve">
+    <value>Vous n'avez aucun modèle de sélectionné</value>
+  </data>
+  <data name="Saisie_SelectionJournal" xml:space="preserve">
+    <value>Veuillez sélectionner un journal</value>
+  </data>
+  <data name="SuppressionModele" xml:space="preserve">
+    <value>Etes vous sur de vouloir supprimer le modèle {0}?</value>
+  </data>
+  <data name="Modele_ModeleSupprime" xml:space="preserve">
+    <value>Le modèle est supprimé</value>
+  </data>
+  <data name="Saisie_CheckSaisieDesMontantsEnTTC" xml:space="preserve">
+    <value>Saisie des montants en TTC</value>
+  </data>
+  <data name="Saisie_SoldeDeBase" xml:space="preserve">
+    <value> Solde de base : {0:C2}</value>
+  </data>
+  <data name="Saisie_JournalEnCours" xml:space="preserve">
+    <value>Journal en cours : </value>
+  </data>
+  <data name="Saisie_TextConsultationBordereau" xml:space="preserve">
+    <value>Consultation des pièces sur bordereau</value>
+  </data>
+  <data name="Saisie_VerifResetPiece" xml:space="preserve">
+    <value>Etes-vous sûr de vouloir supprimer toutes les lignes de cette pièce ?</value>
+  </data>
+  <data name="Saisie_CollisionPiece" xml:space="preserve">
+    <value>Veuillez changer le numéro de la pièce et/ou la date, car celle ci existe déjà.</value>
+  </data>
+  <data name="Saisie_BloquageSupprDernierePiece" xml:space="preserve">
+    <value>Impossible de supprimer une pièce unique.</value>
+  </data>
+  <data name="Saisie_ProblemeDateNum" xml:space="preserve">
+    <value>Vous avez des pièces ayant une mauvaise date ou numéro de pièce</value>
+  </data>
+  <data name="Saisie_AucunePiece" xml:space="preserve">
+    <value>Aucune pièce à enregistrer</value>
+  </data>
+  <data name="Saisie_PbPieceVide" xml:space="preserve">
+    <value>La pièce est vide</value>
+  </data>
+  <data name="Saisie_LignesSansMontantDansPiece" xml:space="preserve">
+    <value>Vous avez des lignes sans montant au débit ou au crédit dans la pièce {0}.</value>
+  </data>
+  <data name="Saisie_LignesEnErreurDansPiece" xml:space="preserve">
+    <value>Vous ne pouvez pas enregistrer la pièce {0}. Elle comporte des lignes en erreur.</value>
+  </data>
+  <data name="Saisie_PieceDejaExporteDansPiece" xml:space="preserve">
+    <value>Vous ne pouvez pas modifier la pièce {0}. Elle a déjà été exportée.</value>
+  </data>
+  <data name="Saisie_ProblemeEquilibrePourPiece" xml:space="preserve">
+    <value>Veuillez équilibrer vos écritures sur la pièce {0}.</value>
+  </data>
+  <data name="Etats_ActDeb" xml:space="preserve">
+    <value>Activité début</value>
+  </data>
+  <data name="Etats_ActFin" xml:space="preserve">
+    <value>Activité fin</value>
+  </data>
+</root>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+    <userSettings>
+        <ControleTracabilite.My.MySettings>
+            <setting name="RepPDF" serializeAs="String">
+                <value>C:\logiciel solstyce</value>
+            </setting>
+            <setting name="ConnStringUserOverride" serializeAs="String">
+                <value>Data Source=.\SQLEXPRESS;Initial Catalog=Solstyce;Integrated Security=True</value>
+            </setting>
+            <setting name="PeriodeHisto" serializeAs="String">
+                <value>60</value>
+            </setting>
+            <setting name="AdresseVNC" serializeAs="String">
+                <value>193.251.24.103:5500</value>
+            </setting>
+            <setting name="AdresseVNCID" serializeAs="String">
+                <value>1</value>
+            </setting>
+            <setting name="FormatLotBR" serializeAs="String">
+                <value>11{num}0</value>
+            </setting>
+            <setting name="FormatLotFab" serializeAs="String">
+                <value>{date:aaaa/MM/jj jjjj}{num}</value>
+            </setting>
+            <setting name="CheminVNC" serializeAs="String">
+                <value>C:\Program Files\Actigram\UltraVNC\</value>
+            </setting>
+            <setting name="UpdateRequired" serializeAs="String">
+                <value>False</value>
+            </setting>
+        </ControleTracabilite.My.MySettings>
+    </userSettings>
+</configuration>

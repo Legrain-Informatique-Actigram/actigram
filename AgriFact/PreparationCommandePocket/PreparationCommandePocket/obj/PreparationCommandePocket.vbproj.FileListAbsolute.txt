@@ -1,0 +1,12 @@
+C:\ACTIGRAM\VBNET2.0\AgriFact\PreparationCommandePocket\PreparationCommandePocket\bin\Debug\url.txt
+C:\ACTIGRAM\VBNET2.0\AgriFact\PreparationCommandePocket\PreparationCommandePocket\bin\Debug\PreparationCommandePocket.exe
+C:\ACTIGRAM\VBNET2.0\AgriFact\PreparationCommandePocket\PreparationCommandePocket\bin\Debug\PreparationCommandePocket.pdb
+C:\ACTIGRAM\VBNET2.0\AgriFact\PreparationCommandePocket\PreparationCommandePocket\obj\Debug\ResolveAssemblyReference.cache
+C:\ACTIGRAM\VBNET2.0\AgriFact\PreparationCommandePocket\PreparationCommandePocket\obj\Debug\PreparationCommandePocket.FrLectureCodeBarre.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\PreparationCommandePocket\PreparationCommandePocket\obj\Debug\PreparationCommandePocket.FrSplash.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\PreparationCommandePocket\PreparationCommandePocket\obj\Debug\PreparationCommandePocket.Resources.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\PreparationCommandePocket\PreparationCommandePocket\obj\Debug\PreparationCommandePocket.vbproj.GenerateResource.Cache
+C:\ACTIGRAM\VBNET2.0\AgriFact\PreparationCommandePocket\PreparationCommandePocket\obj\Debug\PreparationCommandePocket.exe
+C:\ACTIGRAM\VBNET2.0\AgriFact\PreparationCommandePocket\PreparationCommandePocket\obj\Debug\PreparationCommandePocket.pdb
+C:\ACTIGRAM\VBNET2.0\AgriFact\PreparationCommandePocket\PreparationCommandePocket\obj\Debug\PreparationCommandePocket.FrEditLigne.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\PreparationCommandePocket\PreparationCommandePocket\obj\Debug\PreparationCommandePocket.FrDebugCodeBarre.resources

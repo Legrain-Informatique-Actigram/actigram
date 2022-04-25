@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="DsImpressionLstProduit" targetNamespace="http://tempuri.org/DsImpressionLstProduit.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/DsImpressionLstProduit.xsd"
+	xmlns:mstns="http://tempuri.org/DsImpressionLstProduit.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="DsImpressionLstProduit" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="Famille">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="nFamille" type="xs:short" />
+							<xs:element name="Famille" type="xs:string" minOccurs="0" />
+							<xs:element name="nGroupe" type="xs:short" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Produit">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="CodeProduit" type="xs:string" />
+							<xs:element name="Libelle" type="xs:string" minOccurs="0" />
+							<xs:element name="LibelleLong" type="xs:string" minOccurs="0" />
+							<xs:element name="TTVA" type="xs:string" minOccurs="0" />
+							<xs:element name="PrixAHT" type="xs:decimal" minOccurs="0" />
+							<xs:element name="PrixATTC" type="xs:decimal" minOccurs="0" />
+							<xs:element name="PrixVHT" type="xs:decimal" minOccurs="0" />
+							<xs:element name="PrixVTTC" type="xs:decimal" minOccurs="0" />
+							<xs:element name="IsPrixHT" type="xs:boolean" />
+							<xs:element name="Unite1" type="xs:string" minOccurs="0" />
+							<xs:element name="Unite2" type="xs:string" minOccurs="0" />
+							<xs:element name="ProduitAchat" type="xs:boolean" />
+							<xs:element name="ProduitVente" type="xs:boolean" />
+							<xs:element name="NCompteA" type="xs:string" minOccurs="0" />
+							<xs:element name="NActiviteA" type="xs:string" minOccurs="0" />
+							<xs:element name="NCompteV" type="xs:string" minOccurs="0" />
+							<xs:element name="NActiviteV" type="xs:string" minOccurs="0" />
+							<xs:element name="Famille1" type="xs:short" minOccurs="0" />
+							<xs:element name="Famille2" type="xs:string" minOccurs="0" />
+							<xs:element name="Famille3" type="xs:string" minOccurs="0" />
+							<xs:element name="U1U2Independant" type="xs:boolean" minOccurs="0" />
+							<xs:element name="U1xU2" type="xs:decimal" minOccurs="0" />
+							<xs:element name="CodeBarre" type="xs:string" minOccurs="0" />
+							<xs:element name="Inactif" type="xs:boolean" minOccurs="0" />
+							<xs:element name="CoefU2" type="xs:decimal" minOccurs="0" />
+							<xs:element name="TypeFacturation" type="xs:string" minOccurs="0" />
+							<xs:element name="CoefAV" type="xs:decimal" minOccurs="0" />
+							<xs:element name="ProduitCompose" type="xs:boolean" minOccurs="0" />
+							<xs:element name="Image" type="xs:string" minOccurs="0" />
+							<xs:element name="GestionStock" type="xs:boolean" minOccurs="0" />
+							<xs:element name="PrixVTTC2" type="xs:decimal" minOccurs="0" />
+							<xs:element name="NomFamille" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="TVA">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="nTVA" type="xs:decimal" />
+							<xs:element name="TTVA" type="xs:string" minOccurs="0" />
+							<xs:element name="TLibelle" type="xs:string" minOccurs="0" />
+							<xs:element name="TTaux" type="xs:decimal" minOccurs="0" />
+							<xs:element name="TCpt" type="xs:string" minOccurs="0" />
+							<xs:element name="TJournal" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="DsImpressionLstProduitKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:Famille" />
+			<xs:field xpath="mstns:nFamille" />
+		</xs:unique>
+		<xs:unique name="DsImpressionLstProduitKey2" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:Produit" />
+			<xs:field xpath="mstns:CodeProduit" />
+		</xs:unique>
+		<xs:unique name="DsImpressionLstProduitKey3" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:TVA" />
+			<xs:field xpath="mstns:nTVA" />
+		</xs:unique>
+	</xs:element>
+</xs:schema>

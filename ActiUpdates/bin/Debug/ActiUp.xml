@@ -1,0 +1,66 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+ActiUp
+</name>
+</assembly>
+<members>
+<member name="M:ActiUpdates.XmlUtils.GetTransformXSLTFile(System.Xml.XmlDocument,System.String)">
+	<summary>
+ Transformation XSLT d'un fichier XML
+ </summary>
+	<param name="reader">Le document XML a transformer</param>
+	<param name="XSL_Filename">L'URI serveur du fichier xslt de transformation</param>
+</member><member name="T:ActiUpdates.dsActiUpdates.ApplicationsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ActiUpdates.dsActiUpdates.UpdatesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ActiUpdates.dsActiUpdates.ApplicationsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ActiUpdates.dsActiUpdates.UpdatesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ActiUpdates.dsActiUpdates.ApplicationsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ActiUpdates.dsActiUpdates.UpdatesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ActiUpdates.dsActiUpdates">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:ActiUpdates.dsActiUpdatesTableAdapters.ApplicationsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ActiUpdates.dsActiUpdatesTableAdapters.UpdatesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="P:ActiUpdates.My.Resources.Resources.ResourceManager">
+	<summary>
+  Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+</summary>
+</member><member name="P:ActiUpdates.My.Resources.Resources.Culture">
+	<summary>
+  Remplace la propriété CurrentUICulture du thread actuel pour toutes
+  les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+</summary>
+</member><member name="T:ActiUpdates.My.Resources.Resources">
+	<summary>
+  Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+</summary>
+</member>
+</members>
+</doc>

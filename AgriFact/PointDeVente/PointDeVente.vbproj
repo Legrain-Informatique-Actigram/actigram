@@ -1,0 +1,411 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BC3662CA-8CF0-4F50-9458-F042D243C333}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>PointDeVente.My.MyApplication</StartupObject>
+    <RootNamespace>PointDeVente</RootNamespace>
+    <AssemblyName>PointDeVente</AssemblyName>
+    <MyType>WindowsForms</MyType>
+    <OptionStrict>On</OptionStrict>
+    <ApplicationIcon>sac.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>PointDeVente.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>PointDeVente.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DocumentationFile>PointDeVente.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>PointDeVente.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ascend, Version=1.0.0.6, Culture=neutral, PublicKeyToken=25c7a393ba3f37cd">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ascend.Resources, Version=1.0.0.6, Culture=neutral, PublicKeyToken=9c9aecb37b1e03b6">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ascend.Windows.Forms, Version=1.0.0.6, Culture=neutral, PublicKeyToken=ecd86ece2d3eb46d">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Application\ApplicationEvents.vb" />
+    <Compile Include="Application\EcranCrystal.designer.vb">
+      <DependentUpon>EcranCrystal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Application\EcranCrystal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Application\FrParametres.designer.vb">
+      <DependentUpon>FrParametres.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Application\FrParametres.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrListeChoix.Designer.vb">
+      <DependentUpon>FrListeChoix.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrListeChoix.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionImpressionFacture.vb" />
+    <Compile Include="GestionImpressionTicket.vb" />
+    <Compile Include="Etats\ParamsEtats.designer.vb">
+      <DependentUpon>ParamsEtats.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Etats\ParamsEtats.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Caisse\FrCaisse.designer.vb">
+      <DependentUpon>FrCaisse.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Caisse\FrCaisse.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Caisse\FrOpeCaisse.designer.vb">
+      <DependentUpon>FrOpeCaisse.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Caisse\FrOpeCaisse.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Etats\DsEtats.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsEtats.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FrReglement.designer.vb">
+      <DependentUpon>FrReglement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrReglement.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Data\DsAgrifact.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsAgrifact.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data\DsAgrifact.vb">
+      <DependentUpon>DsAgrifact.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FrListeFactures.designer.vb">
+      <DependentUpon>FrListeFactures.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrListeFactures.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrRecherche.designer.vb">
+      <DependentUpon>FrRecherche.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrRecherche.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.vb">
+      <DependentUpon>Main.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrSaisieClient.designer.vb">
+      <DependentUpon>FrSaisieClient.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrSaisieClient.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utils\FrModifTxt.designer.vb">
+      <DependentUpon>FrModifTxt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\FrModifTxt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Utils\DatagridViewUtils.vb" />
+    <Compile Include="Utils\FrProgressBar.designer.vb">
+      <DependentUpon>FrProgressBar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\FrProgressBar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utils\FrSearch.Designer.vb">
+      <DependentUpon>FrSearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\FrSearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utils\MoveControl.vb" />
+    <Compile Include="Utils\SqlConnectionConfig.designer.vb">
+      <DependentUpon>SqlConnectionConfig.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\SqlConnectionConfig.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Utils\SqlProxy.vb" />
+    <Compile Include="Utils\Utils.vb">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Application\EcranCrystal.resx">
+      <DependentUpon>EcranCrystal.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Application\FrParametres.resx">
+      <DependentUpon>FrParametres.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Etats\ParamsEtats.resx">
+      <DependentUpon>ParamsEtats.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Caisse\FrCaisse.resx">
+      <DependentUpon>FrCaisse.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Caisse\FrOpeCaisse.resx">
+      <DependentUpon>FrOpeCaisse.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Content Include="Etats\RptEtatCaisse.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptCaArticle.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptJournalEncaissement.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptFactureVenteTTC.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="FrListeChoix.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrListeChoix.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrReglement.resx">
+      <DependentUpon>FrReglement.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrListeFactures.resx">
+      <DependentUpon>FrListeFactures.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrRecherche.resx">
+      <DependentUpon>FrRecherche.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Main.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrSaisieClient.resx">
+      <DependentUpon>FrSaisieClient.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utils\FrModifTxt.resx">
+      <DependentUpon>FrModifTxt.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utils\FrProgressBar.resx">
+      <DependentUpon>FrProgressBar.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utils\FrSearch.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrSearch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utils\SqlConnectionConfig.resx">
+      <DependentUpon>SqlConnectionConfig.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\impr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\open.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outils.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\suppr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aide.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\DsAgrifact.xsc">
+      <DependentUpon>DsAgrifact.xsd</DependentUpon>
+    </None>
+    <None Include="Data\DsAgrifact.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsAgrifact.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Data\DsAgrifact.xss">
+      <DependentUpon>DsAgrifact.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\liste.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actif.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inactif.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bi-0035-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Etats\DsEtats.xsc">
+      <DependentUpon>DsEtats.xsd</DependentUpon>
+    </None>
+    <None Include="Etats\DsEtats.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsEtats.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Etats\DsEtats.xss">
+      <DependentUpon>DsEtats.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\DataSources\PointDeVente.My.MySettings.datasource" />
+    <None Include="My Project\DataSources\RecapTVA.datasource" />
+    <None Include="Resources\search.bmp" />
+    <None Include="Resources\CopyHS.png" />
+    <Content Include="Data\requetes.sql" />
+    <None Include="Resources\hi0046-32.png" />
+    <None Include="Resources\bi-0035-32.png" />
+    <None Include="Resources\RefreshDocViewHS.png" />
+    <None Include="Resources\filter.png" />
+    <None Include="Resources\impr32.png" />
+    <None Include="Resources\refresh32.png" />
+    <None Include="Resources\params32.png" />
+    <None Include="Resources\especes.png" />
+    <None Include="Resources\cb.png" />
+    <None Include="Resources\cheque.gif" />
+    <None Include="Resources\cheque.png" />
+    <None Include="Resources\pay.png" />
+    <None Include="Resources\log.png" />
+    <None Include="Resources\aide32.png" />
+    <None Include="Resources\aide24.png" />
+    <None Include="Resources\Input.bmp" />
+    <None Include="Resources\Output.bmp" />
+    <None Include="Resources\preview.png" />
+    <None Include="Resources\Retry.bmp" />
+    <None Include="Resources\RolledBack.bmp" />
+    <None Include="Resources\ticket.png" />
+    <None Include="Resources\stats.png" />
+    <None Include="Resources\search_glyph.png" />
+    <Content Include="sac.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

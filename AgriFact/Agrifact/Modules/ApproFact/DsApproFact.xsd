@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="DsApproFact" targetNamespace="http://tempuri.org/DsApproFact.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/DsApproFact.xsd" xmlns:mstns="http://tempuri.org/DsApproFact.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="DsApproFact" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="BilanVenteApproFact">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Libelle" type="xs:string" minOccurs="0" />
+							<xs:element name="AMM" type="xs:string" minOccurs="0" />
+							<xs:element name="CodePostal" type="xs:string" minOccurs="0" />
+							<xs:element name="nFacture" type="xs:int" minOccurs="0" />
+							<xs:element name="DateFacture" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="MontantLigneHT" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Unite1" type="xs:decimal" minOccurs="0" />
+							<xs:element name="LibUnite1" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Appro_ProdsEnCommande">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="nom" type="xs:string" minOccurs="0" />
+							<xs:element name="nfacture" type="xs:decimal" minOccurs="0" />
+							<xs:element name="datefacture" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="nDetailDevis" type="xs:decimal" />
+							<xs:element name="codeproduit" type="xs:string" minOccurs="0" />
+							<xs:element name="libelle" type="xs:string" minOccurs="0" />
+							<xs:element name="unite1" type="xs:decimal" minOccurs="0" />
+							<xs:element name="libunite1" type="xs:string" minOccurs="0" />
+							<xs:element name="unite2" type="xs:decimal" minOccurs="0" />
+							<xs:element name="libunite2" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

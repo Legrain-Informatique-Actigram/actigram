@@ -1,0 +1,146 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+ImportFacturesWeb
+</name>
+</assembly>
+<members>
+<member name="T:ImportFacturesWeb.DsAgrifact.TVADataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ImportFacturesWeb.DsAgrifact.ProduitDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ImportFacturesWeb.DsAgrifact.EntrepriseDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ImportFacturesWeb.DsAgrifact.VFactureDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ImportFacturesWeb.DsAgrifact.VFacture_DetailDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ImportFacturesWeb.DsAgrifact.TelephoneEntrepriseDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ImportFacturesWeb.DsAgrifact.FamilleDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ImportFacturesWeb.DsAgrifact.TVARow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ImportFacturesWeb.DsAgrifact.ProduitRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ImportFacturesWeb.DsAgrifact.EntrepriseRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ImportFacturesWeb.DsAgrifact.VFactureRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ImportFacturesWeb.DsAgrifact.VFacture_DetailRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ImportFacturesWeb.DsAgrifact.TelephoneEntrepriseRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ImportFacturesWeb.DsAgrifact.FamilleRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ImportFacturesWeb.DsAgrifact.TVARowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ImportFacturesWeb.DsAgrifact.ProduitRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ImportFacturesWeb.DsAgrifact.EntrepriseRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ImportFacturesWeb.DsAgrifact.VFactureRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ImportFacturesWeb.DsAgrifact.VFacture_DetailRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ImportFacturesWeb.DsAgrifact.TelephoneEntrepriseRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ImportFacturesWeb.DsAgrifact.FamilleRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ImportFacturesWeb.DsAgrifact">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:ImportFacturesWeb.DsAgrifactTableAdapters.TVATableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ImportFacturesWeb.DsAgrifactTableAdapters.ProduitTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ImportFacturesWeb.DsAgrifactTableAdapters.EntrepriseTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ImportFacturesWeb.DsAgrifactTableAdapters.VFactureTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ImportFacturesWeb.DsAgrifactTableAdapters.VFacture_DetailTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ImportFacturesWeb.DsAgrifactTableAdapters.TelephoneEntrepriseTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ImportFacturesWeb.DsAgrifactTableAdapters.FamilleTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="P:ImportFacturesWeb.My.Resources.Resources.ResourceManager">
+	<summary>
+  Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+</summary>
+</member><member name="P:ImportFacturesWeb.My.Resources.Resources.Culture">
+	<summary>
+  Remplace la propriété CurrentUICulture du thread actuel pour toutes
+  les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+</summary>
+</member><member name="T:ImportFacturesWeb.My.Resources.Resources">
+	<summary>
+  Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+</summary>
+</member><member name="M:ImportFacturesWeb.XmlUtils.GetTransformXSLTFile(System.Xml.XmlDocument,System.String)">
+	<summary>
+ Transformation XSLT d'un fichier XML
+ </summary>
+	<param name="reader">Le document XML a transformer</param>
+	<param name="XSL_Filename">L'URI serveur du fichier xslt de transformation</param>
+</member>
+</members>
+</doc>

@@ -1,0 +1,96 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="DebugSql" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="RepEtats" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Etats</Value>
+    </Setting>
+    <Setting Name="CheminVNC" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Program Files\UltraVNC</Value>
+    </Setting>
+    <Setting Name="AdresseVNC" Type="System.String" Scope="User">
+      <Value Profile="(Default)">193.251.24.103:5500</Value>
+    </Setting>
+    <Setting Name="CG" Type="System.String" Scope="User">
+      <Value Profile="(Default)">CO</Value>
+    </Setting>
+    <Setting Name="SuggestLibPiece" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="DernierExploit" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="AdresseVNCID" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="SupportTel" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">05.62.72.78.37</Value>
+    </Setting>
+    <Setting Name="SupportMail" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">info@actigram.com</Value>
+    </Setting>
+    <Setting Name="dbPlantypeCOConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|\Data\dbPlantypeCO.mdb&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.OleDb&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|\Data\dbPlantypeCO.mdb</Value>
+    </Setting>
+    <Setting Name="dbDonneesConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Provider=Microsoft.Jet.OLEDB.4.0;Data Source="C:\ProgramData\Actigram\Agrigest EDI\Data\dbDonneesM00001_100712180119.mdb"&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.OleDb&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Provider=Microsoft.Jet.OLEDB.4.0;Data Source="C:\ProgramData\Actigram\Agrigest EDI\Data\dbDonneesM00001_100712180119.mdb"</Value>
+    </Setting>
+    <Setting Name="AdminPassw" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">admin</Value>
+    </Setting>
+    <Setting Name="BloqueExporte" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="MustUpgrade" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="FiltreCptesAReporterNonLettres" Type="System.String" Scope="User">
+      <Value Profile="(Default)">4;512;58</Value>
+    </Setting>
+    <Setting Name="AutoUpdate" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="NiveauUpdate" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="AgrigestEDI_ActiUpdates_Updates" Type="(Web Service URL)" Scope="User">
+      <Value Profile="(Default)">http://193.251.24.103/ActiUpdates/Updates.asmx</Value>
+    </Setting>
+    <Setting Name="VersionBase" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">10.2</Value>
+    </Setting>
+    <Setting Name="AutoCheckFTP" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="AutoImportEDI" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="BaremesConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Provider=Microsoft.Jet.OLEDB.4.0;Data Source="C:\Program Files\Actigram\AgrigestEDI\Data\Baremes.mdb"&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.OleDb&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Provider=Microsoft.Jet.OLEDB.4.0;Data Source="C:\Program Files\Actigram\AgrigestEDI\Data\Baremes.mdb"</Value>
+    </Setting>
+    <Setting Name="BaremesConnectionStringUserOverride" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="FichierDataPlanTypeXML" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Plantype\DataPlanType.xml</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

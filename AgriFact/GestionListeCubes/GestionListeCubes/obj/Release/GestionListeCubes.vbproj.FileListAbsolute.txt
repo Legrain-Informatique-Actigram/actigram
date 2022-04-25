@@ -1,0 +1,14 @@
+C:\ACTIGRAM\VBNET2.0\AgriFact\GestionListeCubes\GestionListeCubes\bin\Release\GestionListeCubes.exe
+C:\ACTIGRAM\VBNET2.0\AgriFact\GestionListeCubes\GestionListeCubes\bin\Release\GestionListeCubes.pdb
+C:\ACTIGRAM\VBNET2.0\AgriFact\GestionListeCubes\GestionListeCubes\bin\Release\GestionListeCubes.xml
+C:\ACTIGRAM\VBNET2.0\AgriFact\GestionListeCubes\GestionListeCubes\bin\Release\ClassLibraryCubes.dll
+C:\ACTIGRAM\VBNET2.0\AgriFact\GestionListeCubes\GestionListeCubes\bin\Release\sg_cubenet.dll
+C:\ACTIGRAM\VBNET2.0\AgriFact\GestionListeCubes\GestionListeCubes\bin\Release\ClassLibraryCubes.pdb
+C:\ACTIGRAM\VBNET2.0\AgriFact\GestionListeCubes\GestionListeCubes\bin\Release\ClassLibraryCubes.xml
+C:\ACTIGRAM\VBNET2.0\AgriFact\GestionListeCubes\GestionListeCubes\obj\Release\ResolveAssemblyReference.cache
+C:\ACTIGRAM\VBNET2.0\AgriFact\GestionListeCubes\GestionListeCubes\obj\Release\GestionListeCubes.FrAccueil.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\GestionListeCubes\GestionListeCubes\obj\Release\GestionListeCubes.Resources.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\GestionListeCubes\GestionListeCubes\obj\Release\GestionListeCubes.vbproj.GenerateResource.Cache
+C:\ACTIGRAM\VBNET2.0\AgriFact\GestionListeCubes\GestionListeCubes\obj\Release\GestionListeCubes.exe
+C:\ACTIGRAM\VBNET2.0\AgriFact\GestionListeCubes\GestionListeCubes\obj\Release\GestionListeCubes.xml
+C:\ACTIGRAM\VBNET2.0\AgriFact\GestionListeCubes\GestionListeCubes\obj\Release\GestionListeCubes.pdb

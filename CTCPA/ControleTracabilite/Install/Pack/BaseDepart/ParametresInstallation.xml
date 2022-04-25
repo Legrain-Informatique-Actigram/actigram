@@ -1,0 +1,20 @@
+<?xml version="1.0" standalone="yes"?>
+<ParametresInstallation>
+	<InstanceSql>SQLEXPRESS</InstanceSql>
+	<VersionSql>SqlExpress</VersionSql>
+	<Account>LOCALSYSTEM</Account>
+	<SaPwd>ludo</SaPwd>
+	<!-- Peut aussi être NetworkService ou bien LocalService. -->
+    <Dossiers>
+		<Dossier>
+			<NomDossier>Solstyce</NomDossier>
+			<BaseSql>Solstyce</BaseSql>
+			<FichierBaseSource>{Wrk}\BaseDepart\SolstyceVide</FichierBaseSource>
+			<RepBaseDest>{App}\Data</RepBaseDest>
+			<RecreerUtils>true</RecreerUtils>
+			<!--
+			Ou utiliser le parametre suivant pour installer la base dans "C:\Program Files\Microsoft SQL Server\MSSQL$AGRIFACT\Data"
+			<RepBaseDest>{SqlData}<RepBaseDest>-->
+		</Dossier>
+	</Dossiers>	
+</ParametresInstallation>

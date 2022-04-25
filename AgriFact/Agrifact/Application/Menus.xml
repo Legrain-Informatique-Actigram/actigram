@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ArrayOfMenu>
+  <Menu Nom="Partenaires" Text="Partenaires" Image="Clients">
+    <Items>
+      <Item Type="MenuItem" Nom="Clients" Text="Clients" Form=""  Image="Fleche" IconSize="16"/>
+      <Item Type="MenuItem" Nom="Fournisseurs" Text="Fournisseurs" Form=""  Image="Fleche" IconSize="16"/>
+      <Item Type="MenuItem" Nom="Contacts" Text="Contacts" Form="FrListePersonne"  Image="Fleche" IconSize="16"/>
+      <Item Type="MenuItem" Nom="ListeParam" Text="Listes Paramétrées" Form="FrListeParam"  Image="Fleche" IconSize="16"/>
+    </Items>
+  </Menu>
+  <Menu Nom="Agenda" Text="Agenda" Image="Agenda">
+    <Items>
+      <Item Type="MenuItem" Nom="Evenements" Text="Evènements" Form="FrEvenement"  Image="Fleche" IconSize="16"/>
+      <Item Type="MenuItem" Nom="Agenda" Text="Mon Agenda" Form="FrAgenda"  Image="Fleche" IconSize="16"/>
+    </Items>
+  </Menu>
+  <Menu Nom="Produits" Text="Produits" Image="Factures">
+    <Items>
+      <Item Type="MenuItem" Nom="Produits.Familles" Text="Familles" Form="FrListeFamilles"  Image="Fleche" IconSize="16"/>
+      <Item Type="MenuItem" Nom="Produits.Produits" Text="Produits" Form="FrListeProduits"  Image="Fleche" IconSize="16"/>
+      <Item Type="MenuItem" Nom="Tarifs" Text="Tarifs" Form="FrListeTarifs"  Image="Fleche" IconSize="16"/>
+      <Item Type="MenuItem" Nom="Approfact.ImportPhytoData" Text="Import Phyto Data" Form="FrImportPhytoData"  Image="Fleche" IconSize="16"/>
+    </Items>
+  </Menu>
+  <Menu Nom="Stocks" Text="Stocks" Image="Cube">
+    <Items>
+      <Item Type="MenuItem" Nom="Lots" Text="Lots" Form="FrListeLots"  Image="Fleche" IconSize="16"/>
+      <Item Type="MenuItem" Nom="Mouvements" Text="Mouvements" Form="Stocks.FrListeMouvements"  Image="Fleche" IconSize="16"/>
+      <Item Type="MenuItem" Nom="EtatStocks" Text="Etat des Stocks" Form="FrEtatStock"  Image="Fleche" IconSize="16"/>
+      <Item Type="MenuItem" Nom="Inventaire" Text="Inventaire" Form="FrInventaire"  Image="Fleche" IconSize="16"/>
+    </Items>
+  </Menu>
+  <Menu Nom="Achats" Text="Achats" Image="Factures">
+    <Items>
+      <Item Type="MenuItem" Nom="BR" Text="Bons de Réception" Form=""  Image="Fleche" IconSize="16"/>
+      <Item Type="MenuItem" Nom="Achats.Factures" Text="Factures" Form=""  Image="Fleche" IconSize="16"/>
+      <Item Type="MenuItem" Nom="Achats.Reglements" Text="Réglements" Form=""  Image="Fleche" IconSize="16"/>
+    </Items>
+  </Menu>
+  <Menu Nom="Ventes" Text="Ventes" Image="Finance">
+    <Items>
+      <Item Type="MenuItem" Nom="Devis" Text="Devis" Form=""  Image="Fleche" IconSize="16"/>
+      <Item Type="MenuItem" Nom="BC" Text="Bons de Commande" Form=""  Image="Fleche" IconSize="16"/>
+      <Item Type="MenuItem" Nom="BL" Text="Bons de Livraison" Form=""  Image="Fleche" IconSize="16"/>
+      <Item Type="MenuItem" Nom="Ventes.Factures" Text="Factures" Form=""  Image="Fleche" IconSize="16"/>
+      <Item Type="MenuItem" Nom="Ventes.Reglements" Text="Réglements" Form=""  Image="Fleche" IconSize="16"/>
+      <Item Type="MenuItem" Nom="Remises" Text="Remises Bancaires" Form="FrListeRemise"  Image="Fleche" IconSize="16"/>
+      <Item Type="MenuItem" Nom="Banques" Text="Banques" Form="FrListeBanque"  Image="Fleche" IconSize="16"/>
+      <Item Type="MenuItem" Nom="Approfact.BilanPhyto" Text="Bilan des ventes Phyto" Form="FrOptionsImprBilan"  Image="Fleche" IconSize="16"/>
+    </Items>
+  </Menu>
+  <Menu Nom="Statistiques" Text="Statistiques" Image="Stats">
+    <Items>
+      <Item Type="MenuItem" Nom="Statistiques.Clients" Text="Clients" Form=""  Image="Fleche" IconSize="16"/>
+      <Item Type="MenuItem" Nom="Statistiques.Produits" Text="Produits" Form=""  Image="Fleche" IconSize="16"/>
+      <Item Type="MenuItem" Nom="Statistiques.Perso" Text="Requêtes" Form=""  Image="Fleche" IconSize="16"/>
+      <Item Type="MenuItem" Nom="Statistiques.Cubes" Text="Cubes" Form=""  Image="Fleche" IconSize="16"/>
+      <!--<Item Type="MenuItem" Nom="Statistiques.Perso.Maquette" Text="Test" Form=""  Image="Fleche" IconSize="16"/>-->
+    </Items>
+  </Menu>
+  <Menu Nom="Balance" Text="Balance" Image="Stats" Specifique="true">
+    <Items>
+      <Item Type="MenuItem" Nom="Balance.RecupVentes" Text="Récup Ventes" Form=""  Image="Fleche" IconSize="16"/>
+      <Item Type="MenuItem" Nom="Balance.Groupes" Text="Groupes" Form="FrGroupe"  Image="Fleche" IconSize="16"/>
+      <Item Type="MenuItem" Nom="Balance.Familles" Text="Familles" Form="FrListeFamille"  Image="Fleche" IconSize="16"/>
+      <Item Type="MenuItem" Nom="Balance.Tickets" Text="Tickets" Form="FrListeTrames"  Image="Fleche" IconSize="16"/>
+      <Item Type="MenuItem" Nom="Balance.RecupProduits" Text="Récup Produits" Form=""  Image="Fleche" IconSize="16"/>
+      <Item Type="MenuItem" Nom="Balance.Maj" Text="Maj Balance" Form=""  Image="Fleche" IconSize="16"/>
+    </Items>
+  </Menu>
+  <Menu Nom="Web" Text="Site web" Image="Site" Specifique="true">
+    <Items>
+      <Item Type="MenuItem" Nom="Web.Maj" Text="Mettre à jour le Site" Form=""  Image="Fleche" IconSize="16"/>
+      <Item Type="MenuItem" Nom="Web.Recup" Text="Récup infos Site" Form=""  Image="Fleche" IconSize="16"/>
+    </Items>
+  </Menu>
+  <Menu Nom="Compta" Text="Compta" Image="Compta">
+    <Items>
+      <Item Type="MenuItem" Nom="Compta.Param" Text="Paramètres" Form=""  Image="Fleche" IconSize="16"/>
+      <Item Type="MenuItem" Nom="Agrigest" Text="Ouvrir Agrigest" Form=""  Image="Fleche" IconSize="16"/>
+      <Item Type="MenuItem" Nom="Compta.Export" Text="Export Compta" Form="FrExportCompta"  Image="Fleche" IconSize="16" Dialog="true"/>
+      <!--<Item Type="MenuItem" Nom="Compta.ExportFichier" Text="Export Compta Fichier" Form="FrExportComptaFichier"  Image="Fleche" IconSize="16" Dialog="true"/>-->
+      <Item Type="MenuItem" Nom="Compta.AnnulExport" Text="Annulation Export" Form="FrAnnulExportCompta"  Image="Fleche" IconSize="16" Dialog="true"/>
+    </Items>
+  </Menu>
+  <Menu Nom="Pub" Text="Publicité" Image="">
+    <Items>
+      <Item Type="MenuItem" Nom="OrdresInsertion" Text="Ordres d'insertion" Form="FrlisteOrdresInsertion"  Image="Fleche" IconSize="16"/>
+    </Items>
+  </Menu>
+</ArrayOfMenu>

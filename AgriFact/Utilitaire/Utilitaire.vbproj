@@ -1,0 +1,273 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CB23C8C3-F382-4BDC-86F5-FB3D933CF902}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>icone_util.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Utilitaire</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>On</OptionStrict>
+    <RootNamespace>Utilitaire</RootNamespace>
+    <StartupObject>Utilitaire.My.MyApplication</StartupObject>
+    <WebReference_EnableProperties>true</WebReference_EnableProperties>
+    <WebReference_EnableSQLTypes>false</WebReference_EnableSQLTypes>
+    <WebReference_EnableLegacyEventingModel>true</WebReference_EnableLegacyEventingModel>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>WindowsForms</MyType>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Utilitaire.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032</NoWarn>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Utilitaire.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032</NoWarn>
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ascend, Version=1.0.0.6, Culture=neutral, PublicKeyToken=25c7a393ba3f37cd">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ascend.Resources, Version=1.0.0.6, Culture=neutral, PublicKeyToken=9c9aecb37b1e03b6">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ascend.Windows.Forms, Version=1.0.0.6, Culture=neutral, PublicKeyToken=ecd86ece2d3eb46d">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.85.5.452, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Composants Tiers\SharpZipLib0855\net-20\ICSharpCode.SharpZipLib.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Name>System.Web.Services</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Agrifact\Application\Parametres\FrGestionParametres.vb">
+      <Link>FrGestionParametres.vb</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DatagridUtils.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FrRequete.Designer.vb">
+      <DependentUpon>FrRequete.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sauvegardes\FrOptionsRestauration.designer.vb">
+      <DependentUpon>FrOptionsRestauration.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sauvegardes\FrOptionsRestauration.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utils\DatagridViewUtils.vb" />
+    <Compile Include="Sauvegardes\FrChoixRestauration.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrColonnes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrParametres.designer.vb">
+      <DependentUpon>FrParametres.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrParametres.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrRequete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sauvegardes\GestionSauvegarde.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\FrProgressBar.designer.vb">
+      <DependentUpon>FrProgressBar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\FrProgressBar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utils\SqlConnectionConfig.designer.vb">
+      <DependentUpon>SqlConnectionConfig.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\SqlConnectionConfig.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Utils\SqlProxy.vb" />
+    <Compile Include="Utils\Utils.vb" />
+    <EmbeddedResource Include="..\Agrifact\Application\Parametres\FrGestionParametres.resx">
+      <Link>FrGestionParametres.resx</Link>
+      <DependentUpon>FrGestionParametres.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DatagridUtils.resx">
+      <DependentUpon>DatagridUtils.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sauvegardes\FrChoixRestauration.resx">
+      <DependentUpon>FrChoixRestauration.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrColonnes.resx">
+      <DependentUpon>FrColonnes.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrParametres.resx">
+      <DependentUpon>FrParametres.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrRequete.resx">
+      <DependentUpon>FrRequete.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <SubType>Designer</SubType>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sauvegardes\FrOptionsRestauration.resx">
+      <DependentUpon>FrOptionsRestauration.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utils\FrProgressBar.resx">
+      <DependentUpon>FrProgressBar.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utils\SqlConnectionConfig.resx">
+      <DependentUpon>SqlConnectionConfig.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="icone_util.ico" />
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\connect.png" />
+    <None Include="img\db.png" />
+    <None Include="img\exec.png" />
+    <None Include="img\execresults.png" />
+    <None Include="img\filter.ico" />
+    <None Include="img\folder.png" />
+    <None Include="img\open.png" />
+    <None Include="img\save.png" />
+    <None Include="img\table.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="img\alter.png" />
+    <None Include="img\clear.png" />
+    <None Include="img\savedatabase.png" />
+    <None Include="img\restoredatabase.png" />
+    <None Include="img\disconnect.png" />
+    <None Include="img\proc.png" />
+    <None Include="img\vue.png" />
+    <Content Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </Content>
+    <None Include="Resources\restore.png" />
+    <None Include="Resources\VSProject_script.bmp" />
+    <None Include="Resources\export.png" />
+    <None Include="My Project\Settings.settings">
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Resources\DeleteHS.png" />
+    <None Include="Resources\EditTableHS.png" />
+    <None Include="Resources\AddTableHS.png" />
+    <None Include="Resources\PropertiesHS.png" />
+    <None Include="Resources\DataSet_TableView.bmp" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

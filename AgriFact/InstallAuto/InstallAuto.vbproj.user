@@ -1,0 +1,9 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectView>ShowAllFiles</ProjectView>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <StartArguments>-auto -parm="C:\ACTIGRAM\VBNET2.0\AgriFact\Install\Pack\BaseDepart\ParametresInstallation.xml"</StartArguments>
+    <StartWorkingDirectory>C:\ACTIGRAM\VBNET2.0\AgriFact\Install\Pack</StartWorkingDirectory>
+  </PropertyGroup>
+</Project>

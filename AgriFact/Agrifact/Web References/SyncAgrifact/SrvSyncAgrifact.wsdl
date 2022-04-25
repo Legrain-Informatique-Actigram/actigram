@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/ActiWebCommande/SrvSyncAgrifact" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/ActiWebCommande/SrvSyncAgrifact" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/ActiWebCommande/SrvSyncAgrifact">
+      <s:import namespace="http://www.w3.org/2001/XMLSchema" />
+      <s:element name="GetProduit">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProduitResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetProduitResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCategorie">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCategorieResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCategorieResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetClient">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetClientResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetClientResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCommande">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCommandeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCommandeResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpDateProduit">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ds">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpDateProduitResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpDateProduitResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpDateClient">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ds">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpDateClientResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpDateClientResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetProduitSoapIn">
+    <wsdl:part name="parameters" element="tns:GetProduit" />
+  </wsdl:message>
+  <wsdl:message name="GetProduitSoapOut">
+    <wsdl:part name="parameters" element="tns:GetProduitResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCategorieSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCategorie" />
+  </wsdl:message>
+  <wsdl:message name="GetCategorieSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCategorieResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetClientSoapIn">
+    <wsdl:part name="parameters" element="tns:GetClient" />
+  </wsdl:message>
+  <wsdl:message name="GetClientSoapOut">
+    <wsdl:part name="parameters" element="tns:GetClientResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCommandeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCommande" />
+  </wsdl:message>
+  <wsdl:message name="GetCommandeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCommandeResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpDateProduitSoapIn">
+    <wsdl:part name="parameters" element="tns:UpDateProduit" />
+  </wsdl:message>
+  <wsdl:message name="UpDateProduitSoapOut">
+    <wsdl:part name="parameters" element="tns:UpDateProduitResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpDateClientSoapIn">
+    <wsdl:part name="parameters" element="tns:UpDateClient" />
+  </wsdl:message>
+  <wsdl:message name="UpDateClientSoapOut">
+    <wsdl:part name="parameters" element="tns:UpDateClientResponse" />
+  </wsdl:message>
+  <wsdl:portType name="SrvSyncAgrifactSoap">
+    <wsdl:operation name="GetProduit">
+      <wsdl:input message="tns:GetProduitSoapIn" />
+      <wsdl:output message="tns:GetProduitSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCategorie">
+      <wsdl:input message="tns:GetCategorieSoapIn" />
+      <wsdl:output message="tns:GetCategorieSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetClient">
+      <wsdl:input message="tns:GetClientSoapIn" />
+      <wsdl:output message="tns:GetClientSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCommande">
+      <wsdl:input message="tns:GetCommandeSoapIn" />
+      <wsdl:output message="tns:GetCommandeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpDateProduit">
+      <wsdl:input message="tns:UpDateProduitSoapIn" />
+      <wsdl:output message="tns:UpDateProduitSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpDateClient">
+      <wsdl:input message="tns:UpDateClientSoapIn" />
+      <wsdl:output message="tns:UpDateClientSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SrvSyncAgrifactSoap" type="tns:SrvSyncAgrifactSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetProduit">
+      <soap:operation soapAction="http://tempuri.org/ActiWebCommande/SrvSyncAgrifact/GetProduit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCategorie">
+      <soap:operation soapAction="http://tempuri.org/ActiWebCommande/SrvSyncAgrifact/GetCategorie" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetClient">
+      <soap:operation soapAction="http://tempuri.org/ActiWebCommande/SrvSyncAgrifact/GetClient" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCommande">
+      <soap:operation soapAction="http://tempuri.org/ActiWebCommande/SrvSyncAgrifact/GetCommande" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpDateProduit">
+      <soap:operation soapAction="http://tempuri.org/ActiWebCommande/SrvSyncAgrifact/UpDateProduit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpDateClient">
+      <soap:operation soapAction="http://tempuri.org/ActiWebCommande/SrvSyncAgrifact/UpDateClient" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SrvSyncAgrifact">
+    <documentation xmlns="http://schemas.xmlsoap.org/wsdl/" />
+    <wsdl:port name="SrvSyncAgrifactSoap" binding="tns:SrvSyncAgrifactSoap">
+      <soap:address location="http://localhost/ActiWebCommande/admin/SrvSyncAgrifact.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

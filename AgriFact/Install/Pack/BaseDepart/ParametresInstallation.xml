@@ -1,0 +1,19 @@
+<?xml version="1.0" standalone="yes"?>
+<ParametresInstallation>
+	<InstanceSql>SQLEXPRESS</InstanceSql>
+    <VersionSql>SqlExpress</VersionSql>
+	<Account>LOCALSYSTEM</Account>
+	<SaPwd>ludo</SaPwd>    
+    <FichierParametresAppli>{App}\Parametres.xml</FichierParametresAppli>    
+	<Dossiers>
+		<Dossier>
+			<NomDossier>Agrifact</NomDossier>
+			<BaseSql>AGRIFACT</BaseSql>
+			<FichierBaseSource>{App}\BaseDepart\AGRIFACTVide</FichierBaseSource>
+			<RepBaseDest>{App}\Data</RepBaseDest>
+			<!--
+			Ou utiliser le parametre suivant pour installer la base dans "C:\Program Files\Microsoft SQL Server\MSSQL$AGRIFACT\Data"
+			<RepBaseDest>{SqlData}<RepBaseDest>-->
+		</Dossier>
+	</Dossiers>	
+</ParametresInstallation>

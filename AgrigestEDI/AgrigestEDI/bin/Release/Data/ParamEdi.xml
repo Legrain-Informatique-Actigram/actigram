@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ParamsFtp>
+  <Server>partage.idea-gie-info.com</Server>
+  <Login>agrigest@partage.idea-gie-info.com</Login>
+  <Password>agrigestgie</Password>
+  <FileDescriptions>
+    <EdiFileDescription FilenamePattern="{0}-*.ecr" RemoteDirPattern="/Cogedis/ECR" LocalDirPattern="ECR"/>
+    <EdiFileDescription FilenamePattern="{0}-*.rib" RemoteDirPattern="/Cogedis/RIB" LocalDirPattern="RIB"/>
+    <EdiFileDescription FilenamePattern="{0}-*.zip" RemoteDirPattern="/Cogedis/ECR" LocalDirPattern="ECR"/>
+    <EdiFileDescription FilenamePattern="{0}-*.zip" RemoteDirPattern="/Cogedis/RIB" LocalDirPattern="RIB"/>
+  </FileDescriptions>
+</ParamsFtp>

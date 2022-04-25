@@ -1,0 +1,12 @@
+C:\ACTIGRAM\VBNET2.0\AgriFact\GestionLicence\bin\GestionLicence.exe
+C:\ACTIGRAM\VBNET2.0\AgriFact\GestionLicence\bin\GestionLicence.pdb
+C:\ACTIGRAM\VBNET2.0\AgriFact\GestionLicence\bin\GestionLicence.xml
+C:\ACTIGRAM\VBNET2.0\AgriFact\GestionLicence\bin\Actigram.dll
+C:\ACTIGRAM\VBNET2.0\AgriFact\GestionLicence\bin\Actigram.pdb
+C:\ACTIGRAM\VBNET2.0\AgriFact\GestionLicence\bin\Actigram.xml
+C:\ACTIGRAM\VBNET2.0\AgriFact\GestionLicence\obj\Debug\ResolveAssemblyReference.cache
+C:\ACTIGRAM\VBNET2.0\AgriFact\GestionLicence\obj\Debug\GestionLicence.Form1.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\GestionLicence\obj\Debug\GestionLicence.vbproj.GenerateResource.Cache
+C:\ACTIGRAM\VBNET2.0\AgriFact\GestionLicence\obj\Debug\GestionLicence.exe
+C:\ACTIGRAM\VBNET2.0\AgriFact\GestionLicence\obj\Debug\GestionLicence.xml
+C:\ACTIGRAM\VBNET2.0\AgriFact\GestionLicence\obj\Debug\GestionLicence.pdb

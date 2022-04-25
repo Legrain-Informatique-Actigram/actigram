@@ -1,0 +1,39 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+RequetesPerso
+</name>
+</assembly>
+<members>
+<member name="P:RequetesPerso.My.Resources.Resources.ResourceManager">
+	<summary>
+  Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+</summary>
+</member><member name="P:RequetesPerso.My.Resources.Resources.Culture">
+	<summary>
+  Remplace la propriété CurrentUICulture du thread actuel pour toutes
+  les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+</summary>
+</member><member name="P:RequetesPerso.My.Resources.Resources.defaultCss">
+	<summary>
+  Recherche une chaîne localisée semblable à body{font-family: Arial;font-size: 8pt;}
+h1 {font-family: Verdana;font-size: 14pt;color:#3333cc}
+h2 {font-size: 10pt;margin-bottom:0}
+ul {margin-top:0}
+div.date{font-style:italic;margin-bottom:10px}
+table {border:solid 1px navy;border-left:none}
+th {border-left:solid 1px navy;border-bottom:solid 1px navy;background:cornflowerblue}
+td {border-left:solid 1px navy;padding:2px}
+td.left {text-align:left}
+td.right {text-align:right}
+td.center {text-align:center}
+tr.even {background:lavender}.
+</summary>
+</member><member name="T:RequetesPerso.My.Resources.Resources">
+	<summary>
+  Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+</summary>
+</member>
+</members>
+</doc>

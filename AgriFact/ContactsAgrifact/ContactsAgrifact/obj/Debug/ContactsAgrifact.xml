@@ -1,0 +1,326 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+ContactsAgrifact
+</name>
+</assembly>
+<members>
+<member name="F:ContactsAgrifact.Reg.SHGetFileInfoConstants.SHGFI_ICON">
+	<summary>
+ Get icon.  Combine with SHGFI_LARGEICON, SHGFI_SMALLICON,
+ SHGFI_OPENICON, SHGFI_SHELLICONSIZE, SHGFI_LINKOVERLAY,
+ SHGFI_SELECTED, SHGFI_ADDOVERLAYS to specify icon
+ size.
+ </summary>
+</member><member name="F:ContactsAgrifact.Reg.SHGetFileInfoConstants.SHGFI_DISPLAYNAME">
+	<summary>
+ Get the Display name of the file.
+ </summary>
+</member><member name="F:ContactsAgrifact.Reg.SHGetFileInfoConstants.SHGFI_TYPENAME">
+	<summary>
+ Get the TypeName of the file.
+ </summary>
+</member><member name="F:ContactsAgrifact.Reg.SHGetFileInfoConstants.SHGFI_ATTRIBUTES">
+	<summary>
+ Get the attributes of the file.
+ </summary>
+</member><member name="F:ContactsAgrifact.Reg.SHGetFileInfoConstants.SHGFI_ICONLOCATION">
+	<summary>
+ Get the icon location (not used in this class)
+ </summary>
+</member><member name="F:ContactsAgrifact.Reg.SHGetFileInfoConstants.SHGFI_EXETYPE">
+	<summary>
+ Get the exe type (not used in this class)
+ </summary>
+</member><member name="F:ContactsAgrifact.Reg.SHGetFileInfoConstants.SHGFI_SYSICONINDEX">
+	<summary>
+ Get the index of the icon in the System Image List (use
+ vbAccelerator SystemImageList class instead)
+ </summary>
+</member><member name="F:ContactsAgrifact.Reg.SHGetFileInfoConstants.SHGFI_LINKOVERLAY">
+	<summary>
+ Put a link overlay on icon 
+ </summary>
+</member><member name="F:ContactsAgrifact.Reg.SHGetFileInfoConstants.SHGFI_SELECTED">
+	<summary>
+ Show icon in selected state 
+ </summary>
+</member><member name="F:ContactsAgrifact.Reg.SHGetFileInfoConstants.SHGFI_ATTR_SPECIFIED">
+	<summary>
+ Get only specified attributes (not supported in this class)
+ </summary>
+</member><member name="F:ContactsAgrifact.Reg.SHGetFileInfoConstants.SHGFI_LARGEICON">
+	<summary>
+ get large icon 
+ </summary>
+</member><member name="F:ContactsAgrifact.Reg.SHGetFileInfoConstants.SHGFI_SMALLICON">
+	<summary>
+ get small icon 
+ </summary>
+</member><member name="F:ContactsAgrifact.Reg.SHGetFileInfoConstants.SHGFI_OPENICON">
+	<summary>
+ get open icon 
+ </summary>
+</member><member name="F:ContactsAgrifact.Reg.SHGetFileInfoConstants.SHGFI_SHELLICONSIZE">
+	<summary>
+ get shell size icon 
+ </summary>
+</member><member name="F:ContactsAgrifact.Reg.SHGetFileInfoConstants.SHGFI_USEFILEATTRIBUTES">
+	<summary>
+ Use passed dwFileAttribute
+ </summary>
+</member><member name="F:ContactsAgrifact.Reg.SHGetFileInfoConstants.SHGFI_ADDOVERLAYS">
+	<summary>
+ Apply the appropriate overlays
+ </summary>
+</member><member name="F:ContactsAgrifact.Reg.SHGetFileInfoConstants.SHGFI_OVERLAYINDEX">
+	<summary>
+ Get the index of the overlay (not used in this class)
+ </summary>
+</member><member name="M:ContactsAgrifact.XmlUtils.GetTransformXSLTFile(System.Xml.XmlDocument,System.String)">
+	<summary>
+ Transformation XSLT d'un fichier XML
+ </summary>
+	<param name="reader">Le document XML a transformer</param>
+	<param name="XSL_Filename">L'URI serveur du fichier xslt de transformation</param>
+</member><member name="P:ContactsAgrifact.My.Resources.Resources.ResourceManager">
+	<summary>
+  Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+</summary>
+</member><member name="P:ContactsAgrifact.My.Resources.Resources.Culture">
+	<summary>
+  Remplace la propriété CurrentUICulture du thread actuel pour toutes
+  les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+</summary>
+</member><member name="T:ContactsAgrifact.My.Resources.Resources">
+	<summary>
+  Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+</summary>
+</member><member name="T:ContactsAgrifact.DsAgrifact.RechercheDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ContactsAgrifact.DsAgrifact.TelephoneEntrepriseDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ContactsAgrifact.DsAgrifact.PersonneDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ContactsAgrifact.DsAgrifact.TelephoneDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ContactsAgrifact.DsAgrifact.EntrepriseDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ContactsAgrifact.DsAgrifact.EvenementDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ContactsAgrifact.DsAgrifact.RecapProduitsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ContactsAgrifact.DsAgrifact.RecapCompteDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ContactsAgrifact.DsAgrifact.Niveau2DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ContactsAgrifact.DsAgrifact.ListeChoixDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ContactsAgrifact.DsAgrifact.RechercheEvDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ContactsAgrifact.DsAgrifact.FichierClientDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ContactsAgrifact.DsAgrifact.ParamApplicationDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ContactsAgrifact.DsAgrifact.ChampsPersosDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ContactsAgrifact.DsAgrifact.RechercheRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ContactsAgrifact.DsAgrifact.TelephoneEntrepriseRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ContactsAgrifact.DsAgrifact.PersonneRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ContactsAgrifact.DsAgrifact.TelephoneRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ContactsAgrifact.DsAgrifact.EntrepriseRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ContactsAgrifact.DsAgrifact.EvenementRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ContactsAgrifact.DsAgrifact.RecapProduitsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ContactsAgrifact.DsAgrifact.RecapCompteRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ContactsAgrifact.DsAgrifact.Niveau2Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ContactsAgrifact.DsAgrifact.ListeChoixRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ContactsAgrifact.DsAgrifact.RechercheEvRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ContactsAgrifact.DsAgrifact.FichierClientRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ContactsAgrifact.DsAgrifact.ParamApplicationRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ContactsAgrifact.DsAgrifact.ChampsPersosRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ContactsAgrifact.DsAgrifact.RechercheRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ContactsAgrifact.DsAgrifact.TelephoneEntrepriseRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ContactsAgrifact.DsAgrifact.PersonneRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ContactsAgrifact.DsAgrifact.TelephoneRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ContactsAgrifact.DsAgrifact.EntrepriseRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ContactsAgrifact.DsAgrifact.EvenementRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ContactsAgrifact.DsAgrifact.RecapProduitsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ContactsAgrifact.DsAgrifact.RecapCompteRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ContactsAgrifact.DsAgrifact.Niveau2RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ContactsAgrifact.DsAgrifact.ListeChoixRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ContactsAgrifact.DsAgrifact.RechercheEvRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ContactsAgrifact.DsAgrifact.FichierClientRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ContactsAgrifact.DsAgrifact.ParamApplicationRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ContactsAgrifact.DsAgrifact.ChampsPersosRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ContactsAgrifact.DsAgrifact">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:ContactsAgrifact.DsAgrifactTableAdapters.RechercheTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ContactsAgrifact.DsAgrifactTableAdapters.TelephoneEntrepriseTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ContactsAgrifact.DsAgrifactTableAdapters.PersonneTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ContactsAgrifact.DsAgrifactTableAdapters.TelephoneTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ContactsAgrifact.DsAgrifactTableAdapters.EntrepriseTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ContactsAgrifact.DsAgrifactTableAdapters.EvenementTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ContactsAgrifact.DsAgrifactTableAdapters.RecapProduitsTA">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ContactsAgrifact.DsAgrifactTableAdapters.RecapCompteTA">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ContactsAgrifact.DsAgrifactTableAdapters.Niveau2TA">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ContactsAgrifact.DsAgrifactTableAdapters.ListeChoixTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ContactsAgrifact.DsAgrifactTableAdapters.RechercheEvTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ContactsAgrifact.DsAgrifactTableAdapters.FichierClientTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ContactsAgrifact.DsAgrifactTableAdapters.ParamApplicationTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+</members>
+</doc>

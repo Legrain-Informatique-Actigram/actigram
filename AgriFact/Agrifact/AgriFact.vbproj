@@ -1,0 +1,2014 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'GlobalBin|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\GlobalBin\</OutputPath>
+    <BaseAddress>285212672</BaseAddress>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42030,42032,42036,42104,42108,42109</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <BaseAddress>285212672</BaseAddress>
+    <Optimize>true</Optimize>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42030,42032,42036,42104,42108,42109</NoWarn>
+    <DebugType>
+    </DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'LeaAdmin|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\LeaAdmin\</OutputPath>
+    <BaseAddress>285212672</BaseAddress>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42030,42032,42036,42104,42108,42109</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{30F54C45-BEE7-41B8-87D0-2EE6B5C5D5BB}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>Logo_Agrifact.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>AgriFact</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <RootNamespace>AgriFact</RootNamespace>
+    <StartupObject>AgriFact.My.MyApplication</StartupObject>
+    <WebReference_EnableProperties>true</WebReference_EnableProperties>
+    <WebReference_EnableSQLTypes>false</WebReference_EnableSQLTypes>
+    <WebReference_EnableLegacyEventingModel>true</WebReference_EnableLegacyEventingModel>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>WindowsForms</MyType>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <ManifestCertificateThumbprint>3F870989B9FEAFB2E0B2655A741BB7C891D48449</ManifestCertificateThumbprint>
+    <ManifestKeyFile>AgriFact_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>true</SignManifests>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42030,42032,42036,42104,42108,42109</NoWarn>
+    <DebugType>full</DebugType>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42030,42032,42036,42104,42108,42109</NoWarn>
+    <DebugType>none</DebugType>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'LeaAdmin|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42030,42032,42036,42104,42108,42109</NoWarn>
+    <DebugType>full</DebugType>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'GlobalBin|AnyCPU' ">
+    <OutputPath>..\SortieCompilationGlobale\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42030,42032,42036,42104,42108,42109</NoWarn>
+    <DebugType>full</DebugType>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <BaseAddress>285212672</BaseAddress>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42030,42032,42036,42104,42108,42109</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ascend, Version=1.0.0.6, Culture=neutral, PublicKeyToken=25c7a393ba3f37cd">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ascend.Resources, Version=1.0.0.6, Culture=neutral, PublicKeyToken=9c9aecb37b1e03b6">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ascend.Windows.Forms, Version=1.0.0.6, Culture=neutral, PublicKeyToken=ecd86ece2d3eb46d">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="GNWizardFrameWork, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\MiniProjets\GN Wizard\GNWizard\bin\GNWizardFrameWork.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.85.5.452, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Composants Tiers\SharpZipLib0855\net-20\ICSharpCode.SharpZipLib.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Interop.Dymo, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>obj\x86\Debug\Interop.Dymo.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic">
+      <Name>Microsoft.VisualBasic</Name>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Services">
+      <Name>System.Web.Services</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="Windark.Windows.Controls, Version=1.0.3553.24851, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Composants Tiers\Controls\Windark.Windows\Windark.Windows.Controls\bin\Debug\Windark.Windows.Controls.dll</HintPath>
+    </Reference>
+    <ProjectReference Include="..\..\ActigramControl\Actigram.Balance.Mira\Actigram.Balance.Mira.vbproj">
+      <Name>Actigram.Balance.Mira</Name>
+      <Project>{F328F9C7-C96C-4B1C-AC49-17DC82BE42EA}</Project>
+      <Package>{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ActigramControl\Actigram.Com\Com\Com.vbproj">
+      <Name>Com</Name>
+      <Project>{C9AC7F71-8A0A-42E2-B429-5DDBFBA649E5}</Project>
+      <Package>{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ActigramControl\Actigram.Windows.Forms.ControlGRC\GRC\GRC.vbproj">
+      <Name>GRC</Name>
+      <Project>{76A3EBC8-E6F7-4284-8B99-249F1F92F56A}</Project>
+      <Package>{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ActigramControl\Actigram.Windows.Forms\Actigram.vbproj">
+      <Name>Actigram</Name>
+      <Project>{0174B2AD-10C2-444B-A7BF-68FCDB973B6E}</Project>
+      <Package>{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\ClassLibraryCubes\ClassLibraryCubes.vbproj">
+      <Project>{1454D03C-8EDC-4DF9-ACFB-7FF1A5B1F93F}</Project>
+      <Name>ClassLibraryCubes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EXPORTCOMPTA\ExportCompta.vbproj">
+      <Name>ExportCompta</Name>
+      <Project>{29F386DC-16FD-497E-99D7-960C5267DABA}</Project>
+      <Package>{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\RequetesPerso\RequetesPerso.vbproj">
+      <Project>{FEE6FF70-5D82-4995-A07E-28711678455A}</Project>
+      <Name>RequetesPerso</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Application\AboutBox.designer.vb">
+      <DependentUpon>AboutBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Application\AboutBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Application\Parametres\FrAssistantDemarrage.Designer.vb">
+      <DependentUpon>FrAssistantDemarrage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Application\Parametres\FrAssistantDemarrage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Application\Parametres\FrParametrerListes.Designer.vb">
+      <DependentUpon>FrParametrerListes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Application\Parametres\FrParametrerListes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Application\Rapport.vb" />
+    <Compile Include="Application\Utils\EcranCrystal.designer.vb">
+      <DependentUpon>EcranCrystal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Application\Utils\EcranCrystal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Application\Utils\ExportCsv.vb" />
+    <Compile Include="Application\Utils\ForceDataAdapter.vb" />
+    <Compile Include="Application\Utils\FrModifTxt.designer.vb">
+      <DependentUpon>FrModifTxt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Application\Utils\FrModifTxt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Application\Utils\FrProgressBar.designer.vb">
+      <DependentUpon>FrProgressBar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Application\Utils\FrProgressBar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Application\Utils\FrSelection.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Application\Utils\MoveControl.vb" />
+    <Compile Include="Application\Utils\SqlProxy.vb" />
+    <Compile Include="Clients\DsEntreprises.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsEntreprises.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Clients\DsEntreprises.vb">
+      <DependentUpon>DsEntreprises.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Clients\FrFusionnerTiers.Designer.vb">
+      <DependentUpon>FrFusionnerTiers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Clients\FrFusionnerTiers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clients\Listes\FrListePersonne.Designer.vb">
+      <DependentUpon>FrListePersonne.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Clients\Listes\FrListePersonne.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clients\Listes\FrListeClient.Designer.vb">
+      <DependentUpon>FrListeClient.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Clients\Listes\FrListeClient.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cubes\FrCubes.Designer.vb">
+      <DependentUpon>FrCubes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cubes\FrCubes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Data\ColonneListeDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ColonneListeDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data\DefinitionDonnees.vb" />
+    <Compile Include="Data\DsAgrifact.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsAgrifact.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data\DsAgrifact.vb">
+      <DependentUpon>DsAgrifact.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data\DsImpressionFacture.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsImpressionFacture.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data\DsImpressionFacture.vb">
+      <DependentUpon>DsImpressionFacture.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data\PubDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PubDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data\PubDataSet.vb">
+      <DependentUpon>PubDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Etats\RptStandard\RptBonLivraisonVenteHT.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptBonLivraisonVenteHT.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Etats\RptStandard\RptBonLivraisonVenteNonChiffre.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptBonLivraisonVenteNonChiffre.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Etats\RptStandard\RptListeordresInsertion.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptListeordresInsertion.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Etats\RptStandard\RptListeVFactureDetailleeParClient.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptListeVFactureDetailleeParClient.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Etats\RptStandard\RptListeVFactureDetailleeParClientProduit.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptListeVFactureDetailleeParClientProduit.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Etats\RptStandard\RptListeVFactureParClientParCom.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptListeVFactureParClientParCom.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Etats\RptStandard\RptOrdreInsertion.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptOrdreInsertion.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Modules\ApproFact\ApproFactDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ApproFactDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ApproFact\ApproFactDataSet.vb">
+      <DependentUpon>ApproFactDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ApproFact\ExportBilan.vb" />
+    <Compile Include="Modules\ApproFact\FrAjusterCommandeFourn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\ApproFact\FrCreerCommandeFourn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\ApproFact\FrImportPhytoData.Designer.vb">
+      <DependentUpon>FrImportPhytoData.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ApproFact\FrImportPhytoData.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\ApproFact\FrOptionsGeneAvoirs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\ApproFact\FrOptionsImprBilan.Designer.vb">
+      <DependentUpon>FrOptionsImprBilan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ApproFact\FrOptionsImprBilan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\ApproFact\GestionApproFact.vb" />
+    <Compile Include="Modules\Compta\DsAgrigest.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsAgrigest.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Compta\FrAnnulExportCompta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Application\FrUpdates.designer.vb">
+      <DependentUpon>FrUpdates.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Application\FrUpdates.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\Evenements\DsEvenements.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsEvenements.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Evenements\DsEvenements.vb">
+      <DependentUpon>DsEvenements.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Evenements\IconesTypeEv.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IconesTypeEv.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Stocks\FrDupliquerLot.Designer.vb">
+      <DependentUpon>FrDupliquerLot.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Stocks\FrDupliquerLot.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\Stocks\FrEtatStock.designer.vb">
+      <DependentUpon>FrEtatStock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Stocks\FrEtatStock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\Stocks\FrInventaire.designer.vb">
+      <DependentUpon>FrInventaire.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Stocks\FrInventaire.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\Stocks\FrLot.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\Stocks\GestionStock.vb" />
+    <Compile Include="Modules\Stocks\ListeLotsProduits.vb" />
+    <Compile Include="Modules\Stocks\Listes\FrListeLots.Designer.vb">
+      <DependentUpon>FrListeLots.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Stocks\Listes\FrListeLots.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\Stocks\Listes\FrListeMouvements.designer.vb">
+      <DependentUpon>FrListeMouvements.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Stocks\Listes\FrListeMouvements.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\Stocks\LotProduit.vb" />
+    <Compile Include="Modules\Stocks\StocksDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StocksDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Stocks\StocksDataSet.vb">
+      <DependentUpon>StocksDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Tarifs\FrAssistantTarif.Designer.vb">
+      <DependentUpon>FrAssistantTarif.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Tarifs\FrAssistantTarif.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\Tarifs\FrListeTarifs.designer.vb">
+      <DependentUpon>FrListeTarifs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Tarifs\FrListeTarifs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Pieces\DsPieces.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsPieces.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Pieces\DsPieces.vb">
+      <DependentUpon>DsPieces.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Pieces\FrAffecterFacturesAReglement.Designer.vb">
+      <DependentUpon>FrAffecterFacturesAReglement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pieces\FrAffecterFacturesAReglement.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pieces\FrBonCommande.Designer.vb">
+      <DependentUpon>FrBonCommande.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pieces\FrRemplacerCodeProduitPiece.Designer.vb">
+      <DependentUpon>FrRemplacerCodeProduitPiece.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pieces\FrRemplacerCodeProduitPiece.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pieces\Listes\FrListePieces2.Designer.vb">
+      <DependentUpon>FrListePieces2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pieces\Listes\FrListePieces2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pieces\Listes\FrListeReglement.Designer.vb">
+      <DependentUpon>FrListeReglement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pieces\Listes\FrListeReglement.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pieces\Listes\FrListeBanque.Designer.vb">
+      <DependentUpon>FrListeBanque.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pieces\Listes\FrListeBanque.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pieces\Listes\FrListeRemise.Designer.vb">
+      <DependentUpon>FrListeRemise.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pieces\Pieces.vb" />
+    <Compile Include="Produits\DsProduits.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsProduits.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Produits\DsProduits.vb">
+      <DependentUpon>DsProduits.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Produits\FrFusionnerProduits.Designer.vb">
+      <DependentUpon>FrFusionnerProduits.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produits\FrFusionnerProduits.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produits\FrModifierCodeProduit.Designer.vb">
+      <DependentUpon>FrModifierCodeProduit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produits\FrModifierCodeProduit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produits\Listes\FrListeFamilles.designer.vb">
+      <DependentUpon>FrListeFamilles.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produits\Listes\FrListeFamilles.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pieces\FrReglementAvances.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\Tarifs\FrSaisieTarifs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produits\Listes\FrListeProduits.Designer.vb">
+      <DependentUpon>FrListeProduits.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produits\Listes\FrListeProduits.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pub\FrChercherClient.Designer.vb">
+      <DependentUpon>FrChercherClient.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pub\FrChercherClient.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pub\FrCompteRendu.Designer.vb">
+      <DependentUpon>FrCompteRendu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pub\FrCompteRendu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pub\FrListeChoix.Designer.vb">
+      <DependentUpon>FrListeChoix.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pub\FrListeChoix.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pub\FrListeOrdresInsertion.Designer.vb">
+      <DependentUpon>FrListeOrdresInsertion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pub\FrListeOrdresInsertion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pub\FrOrdreInsertion.Designer.vb">
+      <DependentUpon>FrOrdreInsertion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pub\FrOrdreInsertion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\LogoApplication.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LogoApplication.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Application\ApplicationEvents.vb" />
+    <Compile Include="Application\AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Modules\Compta\Compta.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Modules\Compta\FrActivite.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Application\FrApplication.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clients\Listes\FrListeParam.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pieces\FrBanque.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pieces\FrBonCommande.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clients\FrCarteFrance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Application\Utils\DatagridUtils.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Application\Utils\DatagridViewUtils.vb" />
+    <Compile Include="Application\Utils\FrActivation.designer.vb">
+      <DependentUpon>FrActivation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Application\Utils\FrActivation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Application\Sauvegarde\FrChoixRestauration.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\Compta\FrCompte.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Application\FrConnexion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clients\FrEntreprise.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\Evenements\FrEvenement.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\Compta\FrExportCompta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Application\Parametres\FrGestionParametres.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Application\Parametres\FrInfosGenerales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\Stocks\FrInventaireOptions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clients\FrLettreType.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\Evenements\FrAgenda.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pieces\Listes\FrListeRemise.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\Balance\FrTrames.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\Stocks\FrMouvement.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\Compta\FrParametreCompta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clients\FrPersonne.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produits\FrProduit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pieces\FrReglement.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pieces\FrRemise.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Application\Utils\FrParamNV.designer.vb">
+      <DependentUpon>FrParamNV.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Application\Utils\FrParamNV.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Application\Utils\FrParamVNC.designer.vb">
+      <DependentUpon>FrParamVNC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Application\Utils\FrParamVNC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Application\Utils\FrSelectionMultiple.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Application\FrStatistiques.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Application\FrTableauBord.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pieces\GestionFactureMasse.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Modules\Balance\GestionBalance.vb" />
+    <Compile Include="Application\Utils\GestionImpression.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Application\Sauvegarde\GestionSauvegarde.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Modules\Site\GestionSite.vb" />
+    <Compile Include="Application\Utils\Menu.vb" />
+    <Compile Include="Application\Utils\SaisieCle.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Application\Utils\UltraVNC.vb" />
+    <Compile Include="Application\Utils\MesClass.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="Clients\Statistiques.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Application\Utils\Utils.vb" />
+    <Compile Include="Web References\ActiUpdates\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\SyncAgrifact\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Content Include="Application\Menus.xml" />
+    <Content Include="Cubes\Cubes.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Dataset4.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Data\DsFicheTraca.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Data\DsImpressionFacture.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsImpressionFacture.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Data\DsImpressionLstProduit.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Data\DsImpressionTrame.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Adresse.LWL">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Export.mdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="AgriFact_TemporaryKey.pfx" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
+    <None Include="ClassDiagram3.cd" />
+    <None Include="Data\ColonneListeDataSet.xsc">
+      <DependentUpon>ColonneListeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Data\ColonneListeDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ColonneListeDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Data\ColonneListeDataSet.xss">
+      <DependentUpon>ColonneListeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Data\DsImpressionTrame.xss">
+      <DependentUpon>DsImpressionTrame.xsd</DependentUpon>
+    </None>
+    <None Include="Data\PubDataSet.xsc">
+      <DependentUpon>PubDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Data\PubDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PubDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Data\PubDataSet.xss">
+      <DependentUpon>PubDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="GestionModulesSansActivation.xml" />
+    <Content Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Produit.LWL">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Clients\DsEntreprises.xsc">
+      <DependentUpon>DsEntreprises.xsd</DependentUpon>
+    </None>
+    <None Include="Clients\DsEntreprises.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsEntreprises.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Clients\DsEntreprises.xss">
+      <DependentUpon>DsEntreprises.xsd</DependentUpon>
+    </None>
+    <Content Include="Cubes\Presentations\REGLEMENT_DETAIL_Details_Reglements_Par_Payeur_Par_Facture.cubes">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Cubes\Presentations\REGLEMENT_Liste_Reglements_Par_Client_Par_Annee.cubes">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Cubes\Presentations\REGLEMENT_Liste_Reglements_Par_Date.cubes">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Cubes\Presentations\REGLEMENT_Liste_Reglements_Par_Mode_Reglement.cubes">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Cubes\Presentations\REGLEMENT_Total_Reglements_Par_Mode_Reglement_Par_Mois.cubes">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Cubes\Presentations\VBONCOMMANDE_DETAIL_Recapitulatif_BC_Clients.cubes">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Cubes\Presentations\VFACTURE_CA_Par_Client_Par_Annee.cubes">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Cubes\Presentations\VFACTURE_CA_Par_Client_Par_Mois.cubes">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Cubes\Presentations\VFACTURE_CA_Par_Commercial_Par_Annee.cubes">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Cubes\Presentations\VFACTURE_CA_Par_Commercial_Par_Mois.cubes">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Cubes\Presentations\VFACTURE_Commissions_Par_Facture_Par_Commercial_Par_Annee.cubes">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Cubes\Presentations\VFACTURE_Commissions_Par_Facture_Par_Commercial_Par_Mois.cubes">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Cubes\Presentations\VFACTURE_DETAIL_Comparatif_CA_Par_Famille_Par_Mois.cubes">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Cubes\Presentations\VFACTURE_DETAIL_Comparatif_CA_Par_Famille_Par_Annee.cubes">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Cubes\Presentations\VFACTURE_DETAIL_Comparatif_CA_Par_Produit_Par_Annee.cubes">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Cubes\Presentations\VFACTURE_DETAIL_Comparatif_CA_Par_Produit_Par_Mois.cubes">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Cubes\Presentations\VFACTURE_DETAIL_Quantites_Vendues_Par_Commercial_Par_Produit_Par_Annee.cubes">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Cubes\Presentations\VFACTURE_DETAIL_Quantites_Vendues_Par_Commercial_Par_Produit_Par_Mois.cubes">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Cubes\Presentations\VFACTURE_IMP_Liste_Factures_Impayees.cubes">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Cubes\Presentations\VFACTURE_IMP_Liste_Factures_Impayees_Par_Annee.cubes">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Cubes\Presentations\VFACTURE_Liste_Factures_Par_Client_Par_Annee.cubes">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Cubes\Presentations\REMISE_DETAIL_Liste_Remises_Par_Num_Remise.cubes">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Cubes\Presentations\VBONLIVRAISON_DETAIL_Recapitulatif_BL_Clients.cubes">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Data\DsAgrifact.xsc">
+      <DependentUpon>DsAgrifact.xsd</DependentUpon>
+    </None>
+    <None Include="Data\DsAgrifact.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsAgrifact.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Data\DsAgrifact.xss">
+      <DependentUpon>DsAgrifact.xsd</DependentUpon>
+    </None>
+    <None Include="Data\DsAgrifact.xsx">
+      <DependentUpon>DsAgrifact.xsd</DependentUpon>
+    </None>
+    <None Include="Data\DsFicheTraca.xss">
+      <DependentUpon>DsFicheTraca.xsd</DependentUpon>
+    </None>
+    <None Include="Data\DsImpressionFacture.xss">
+      <DependentUpon>DsImpressionFacture.xsd</DependentUpon>
+    </None>
+    <None Include="Data\DsImpressionLstProduit.xss">
+      <DependentUpon>DsImpressionLstProduit.xsd</DependentUpon>
+    </None>
+    <None Include="Etats\EtatsTiers\Guitres\DsImpressionGuitres.xsc">
+      <DependentUpon>DsImpressionGuitres.xsd</DependentUpon>
+    </None>
+    <None Include="Etats\EtatsTiers\Guitres\DsImpressionGuitres.xss">
+      <DependentUpon>DsImpressionGuitres.xsd</DependentUpon>
+    </None>
+    <None Include="Modules\ApproFact\ApproFactDataSet.xsc">
+      <DependentUpon>ApproFactDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Modules\ApproFact\ApproFactDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ApproFactDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Modules\ApproFact\ApproFactDataSet.xss">
+      <DependentUpon>ApproFactDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Modules\ApproFact\bilan_2009.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Modules\ApproFact\bilan_2009.xsx">
+      <DependentUpon>bilan_2009.xsd</DependentUpon>
+    </None>
+    <None Include="Modules\ApproFact\bilan_2011.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Modules\ApproFact\bilan_2011.xsx">
+      <DependentUpon>bilan_2011.xsd</DependentUpon>
+    </None>
+    <None Include="Modules\Compta\DsAgrigest.xsc">
+      <DependentUpon>DsAgrigest.xsd</DependentUpon>
+    </None>
+    <None Include="Modules\Compta\DsAgrigest.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsAgrigest.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Modules\Compta\DsAgrigest.xss">
+      <DependentUpon>DsAgrigest.xsd</DependentUpon>
+    </None>
+    <None Include="Modules\Evenements\DsEvenements.xsc">
+      <DependentUpon>DsEvenements.xsd</DependentUpon>
+    </None>
+    <None Include="Modules\Evenements\DsEvenements.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsEvenements.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Modules\Evenements\DsEvenements.xss">
+      <DependentUpon>DsEvenements.xsd</DependentUpon>
+    </None>
+    <None Include="Modules\Stocks\StocksDataSet.xsc">
+      <DependentUpon>StocksDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Modules\Stocks\StocksDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StocksDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Modules\Stocks\StocksDataSet.xss">
+      <DependentUpon>StocksDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\DataSources\AgriFact.Stocks.LotProduit.datasource" />
+    <None Include="Pieces\DsPieces.xsc">
+      <DependentUpon>DsPieces.xsd</DependentUpon>
+    </None>
+    <None Include="Pieces\DsPieces.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsPieces.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Pieces\DsPieces.xss">
+      <DependentUpon>DsPieces.xsd</DependentUpon>
+    </None>
+    <None Include="Produits\DsProduits.xsc">
+      <DependentUpon>DsProduits.xsd</DependentUpon>
+    </None>
+    <None Include="Produits\DsProduits.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsProduits.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Produits\DsProduits.xss">
+      <DependentUpon>DsProduits.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\ultravnc.png" />
+    <None Include="Resources\netviewer16.png" />
+    <None Include="Resources\log.png" />
+    <None Include="Resources\icone_admin16.png" />
+    <None Include="Resources\icone_util16.png" />
+    <None Include="Resources\icone_update_appli16.png" />
+    <None Include="Resources\save1.png" />
+    <None Include="Resources\restore.png" />
+    <None Include="Resources\PrimaryKeyHS.png" />
+    <None Include="Resources\outils.png" />
+    <None Include="Resources\openfolderHS.png" />
+    <None Include="Resources\aide.png" />
+    <None Include="app.config" />
+    <None Include="Data\Dataset4.xss">
+      <DependentUpon>Dataset4.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\ActiUpdates\dsUpdates.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ActiUpdates\dsUpdates.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\ActiUpdates\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\ActiUpdates\Updates.wsdl" />
+    <None Include="Web References\SyncAgrifact\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\SyncAgrifact\SrvSyncAgrifact.disco" />
+    <None Include="Modules\ApproFact\bilan_2008.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Modules\ApproFact\bilan_2008.xsx">
+      <DependentUpon>bilan_2008.xsd</DependentUpon>
+    </None>
+    <None Include="Modules\ApproFact\DsApproFact.xsc">
+      <DependentUpon>DsApproFact.xsd</DependentUpon>
+    </None>
+    <None Include="Modules\ApproFact\DsApproFact.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Modules\ApproFact\DsApproFact.xss">
+      <DependentUpon>DsApproFact.xsd</DependentUpon>
+    </None>
+    <None Include="Modules\ApproFact\DsApproFact.xsx">
+      <DependentUpon>DsApproFact.xsd</DependentUpon>
+    </None>
+    <None Include="Data\Dataset4.xsc">
+      <DependentUpon>Dataset4.xsd</DependentUpon>
+    </None>
+    <None Include="Data\DsFicheTraca.xsc">
+      <DependentUpon>DsFicheTraca.xsd</DependentUpon>
+    </None>
+    <None Include="Data\DsImpressionFacture.xsc">
+      <DependentUpon>DsImpressionFacture.xsd</DependentUpon>
+    </None>
+    <None Include="Data\DsImpressionLstProduit.xsc">
+      <DependentUpon>DsImpressionLstProduit.xsd</DependentUpon>
+    </None>
+    <None Include="Data\DsImpressionTrame.xsc">
+      <DependentUpon>DsImpressionTrame.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\Logo_Agrifact1.png" />
+    <None Include="Resources\Logo_Agrifact.png" />
+    <Content Include="Aide\Guide AgriFact V2.0.pdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStandard\LstPersonne.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStandard\RptABonReception.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStandard\RptABonReceptionMarge.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStandard\RptBonCommandeVenteHT.rpt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStandard\RptBonCommandeVenteTTC.rpt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStandard\RptBonLivraisonVenteTTC.rpt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStandard\RptCAClientMois.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStandard\RptCampagneEt.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStandard\RptCaParJour3.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStandard\RptCaParJour4.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStandard\RptCaParJour5.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStandard\RptCaParJourFamille3.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStandard\RptCaParJourFamille4.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStandard\RptCaParJourFamille5.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStandard\RptCaParMois.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStandard\RptCaParMois3.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStandard\RptCaParMois4.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStandard\RptCaParMois5.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStandard\RptCaParMoisFamille3.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStandard\RptCaParMoisFamille4.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStandard\RptCaParMoisFamille5.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStandard\RptCaParSemaine.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStandard\RptCaParSemaine2.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStandard\RptCaParSemaine3.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStandard\RptCaParSemaine4.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStandard\RptCaParSemaine5.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStandard\RptCaParSemaineFamille3.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStandard\RptCaParSemaineFamille4.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStandard\RptCaParSemaineFamille5.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStandard\original_RptDevisVenteHT.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStandard\RptDevisVenteTTC.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStandard\RptEtatStock.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStandard\RptEtatStock2.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStandard\RptFactureAchatHT.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStandard\RptFactureAchatTTC.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStandard\RptFactureVenteTTC.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStandard\RptFactureVenteTTCGroupe.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStandard\RptFicheContactEv.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStandard\RptFicheTraca.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStandard\RptInventaire.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStandard\RptLettreRelance.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStandard\RptListeABonReception.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStandard\RptListeAFacture.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStandard\RptListeAReglement.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStandard\RptListeClient.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStandard\RptListeContact.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStandard\RptListeProduit.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStandard\RptListeReglement.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStandard\RptListeRemises.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStandard\RptListeVBonCommande.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStandard\RptListeVBonLivraison.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStandard\RptListeVDevis.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStandard\RptListeVFacture.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStandard\RptLstEvOrganisme.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStandard\RptPlanning.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStandard\RptRemise.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="bin\Parametres.xml" />
+    <Content Include="Etats\RptStatsClients\Evolution du chiffre d%27affaires par année.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStatsClients\Evolution du chiffre d%27affaires par mois et par année.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStatsClients\Evolution du chiffre d%27affaires par mois.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStatsClients\Panier moyen par type client.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStatsClients\Recap Bon de Commande par Fournisseur.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStatsClients\Récap TVA Achats.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStatsClients\Récap TVA Ventes.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStatsClients\Répartition des clients par type client.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStatsClients\Répartition des clients par type contact.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStatsClients\Répartition du chiffre d%27affaires par client.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStatsClients\Répartition du chiffre d%27affaires par type client.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStatsClients\Répartition du chiffre d%27affaires par type contact.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStatsClients\Répartition géographique des clients.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStatsProduits\Evolution du chiffre d%27affaires par mois et par famille.rpt">
+      <SubType>Code</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStatsProduits\Evolution du chiffre d%27affaires par mois et par produit.rpt">
+      <SubType>Code</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStatsProduits\Mercuriale.rpt">
+      <SubType>Code</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStatsProduits\Quantité de produits bio fournis par client.rpt">
+      <SubType>Code</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStatsProduits\Quantité vendue par produit.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStatsProduits\Répartition de l%27origine des produits fournis en valeur.rpt">
+      <SubType>Code</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStatsProduits\Répartition de l%27origine des produits par client.rpt">
+      <SubType>Code</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStatsProduits\Répartition des familles de produits par Client.rpt">
+      <SubType>Code</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStatsProduits\Répartition des produits selon le pourcentage de chiffre d%27affaires.rpt">
+      <SubType>Code</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStatsProduits\Répartition du chiffre d%27affaires par famille.rpt">
+      <SubType>Code</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStatsProduits\Répartition du chiffre d%27affaires par Fournisseur.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStatsProduits\Répartition du chiffre d%27affaires par produit.rpt">
+      <SubType>Code</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStatsProduits\Répartition géographique du chiffre d%27affaires Fournisseur.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStats\Etiquettes Mailing.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStats\Liste Clients.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Data\Dataset4.xsx">
+      <DependentUpon>Dataset4.xsd</DependentUpon>
+    </None>
+    <None Include="Data\DsFicheTraca.xsx">
+      <DependentUpon>DsFicheTraca.xsd</DependentUpon>
+    </None>
+    <None Include="Data\DsImpressionFacture.xsx">
+      <DependentUpon>DsImpressionFacture.xsd</DependentUpon>
+    </None>
+    <None Include="Data\DsImpressionLstProduit.xsx">
+      <DependentUpon>DsImpressionLstProduit.xsd</DependentUpon>
+    </None>
+    <None Include="Data\DsImpressionTrame.xsx">
+      <DependentUpon>DsImpressionTrame.xsd</DependentUpon>
+    </None>
+    <None Include="Logo_Agrifact.ico" />
+    <None Include="Web References\SyncAgrifact\SrvSyncAgrifact.wsdl" />
+    <EmbeddedResource Include="Application\AboutBox.resx">
+      <DependentUpon>AboutBox.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Application\Parametres\FrAssistantDemarrage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrAssistantDemarrage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Application\Parametres\FrParametrerListes.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrParametrerListes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Application\Utils\EcranCrystal.resx">
+      <DependentUpon>EcranCrystal.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Application\Utils\FrModifTxt.resx">
+      <DependentUpon>FrModifTxt.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Application\Utils\FrProgressBar.resx">
+      <DependentUpon>FrProgressBar.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Application\Utils\FrSelection.resx">
+      <DependentUpon>FrSelection.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clients\FrFusionnerTiers.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrFusionnerTiers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clients\Listes\FrListePersonne.resx">
+      <DependentUpon>FrListePersonne.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clients\Listes\FrListeClient.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrListeClient.vb</DependentUpon>
+    </EmbeddedResource>
+    <Content Include="Etats\RptStandard\RptBonLivraisonVenteNonChiffre.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptBonLivraisonVenteNonChiffre.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="Cubes\FrCubes.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrCubes.vb</DependentUpon>
+    </EmbeddedResource>
+    <Content Include="Etats\RptStats\Liste Complète Tiers.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStandard\RptListeVFactureDetailleeParClient.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptListeVFactureDetailleeParClient.vb</LastGenOutput>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStandard\RptListeVFactureParClientParCom.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptListeVFactureParClientParCom.vb</LastGenOutput>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStandard\RptListeVFactureDetailleeParClientProduit.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptListeVFactureDetailleeParClientProduit.vb</LastGenOutput>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStandard\RptListeordresInsertion.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptListeordresInsertion.vb</LastGenOutput>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStandard\RptOrdreInsertion.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptOrdreInsertion.vb</LastGenOutput>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStatsClients\Récap factures impayées_original.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStandard\Original_RptFactureVenteHT.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStandard\RptFactureVenteHT.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStandard\RptFactureVenteHT_3.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="Etats\RptStandard\RptBonLivraisonVenteHT.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptBonLivraisonVenteHT.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ApproFact\FrAjusterCommandeFourn.resx">
+      <DependentUpon>FrAjusterCommandeFourn.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ApproFact\FrCreerCommandeFourn.resx">
+      <DependentUpon>FrCreerCommandeFourn.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ApproFact\FrImportPhytoData.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrImportPhytoData.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ApproFact\FrOptionsGeneAvoirs.resx">
+      <DependentUpon>FrOptionsGeneAvoirs.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ApproFact\FrOptionsImprBilan.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrOptionsImprBilan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Compta\FrAnnulExportCompta.resx">
+      <DependentUpon>FrAnnulExportCompta.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\DefinitionDonnees.xml" />
+    <EmbeddedResource Include="Modules\Evenements\IconesTypeEv.resx">
+      <SubType>Designer</SubType>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>IconesTypeEv.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Stocks\FrDupliquerLot.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrDupliquerLot.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Stocks\FrEtatStock.resx">
+      <DependentUpon>FrEtatStock.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Stocks\FrInventaire.resx">
+      <DependentUpon>FrInventaire.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Stocks\FrLot.resx">
+      <DependentUpon>FrLot.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Stocks\Listes\FrListeLots.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrListeLots.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Stocks\Listes\FrListeMouvements.resx">
+      <DependentUpon>FrListeMouvements.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Tarifs\FrAssistantTarif.resx">
+      <DependentUpon>FrAssistantTarif.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Tarifs\FrListeTarifs.resx">
+      <DependentUpon>FrListeTarifs.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pieces\FrAffecterFacturesAReglement.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrAffecterFacturesAReglement.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pieces\FrRemplacerCodeProduitPiece.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrRemplacerCodeProduitPiece.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pieces\Listes\FrListePieces2.resx">
+      <DependentUpon>FrListePieces2.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pieces\Listes\FrListeReglement.resx">
+      <DependentUpon>FrListeReglement.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pieces\Listes\FrListeBanque.resx">
+      <DependentUpon>FrListeBanque.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produits\FrFusionnerProduits.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrFusionnerProduits.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produits\FrModifierCodeProduit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrModifierCodeProduit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produits\Listes\FrListeFamilles.resx">
+      <DependentUpon>FrListeFamilles.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produits\Listes\FrListeProduits.resx">
+      <DependentUpon>FrListeProduits.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pub\FrChercherClient.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrChercherClient.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pub\FrCompteRendu.resx">
+      <DependentUpon>FrCompteRendu.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pub\FrListeChoix.resx">
+      <DependentUpon>FrListeChoix.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pub\FrListeOrdresInsertion.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrListeOrdresInsertion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pub\FrOrdreInsertion.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrOrdreInsertion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\DonneesGeo\dep_france_dom.mid" />
+    <EmbeddedResource Include="Resources\DonneesGeo\dep_france_dom.mif" />
+    <None Include="Resources\DonneesGeo\FranceR3.gif" />
+    <EmbeddedResource Include="Modules\Compta\FrActivite.resx">
+      <DependentUpon>FrActivite.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Application\FrApplication.resx">
+      <DependentUpon>FrApplication.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Content Include="Etats\RptStandard\RptBilanVenteApproFact.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStandard\RptDetailStock.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStandard\RptListeMouvement.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStandard\RptListeVFactureParClient.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStandard\RptRecapCommandeApprofact.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="Application\FrUpdates.resx">
+      <DependentUpon>FrUpdates.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <SubType>Designer</SubType>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clients\Listes\FrListeParam.resx">
+      <DependentUpon>FrListeParam.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pieces\FrReglementAvances.resx">
+      <DependentUpon>FrReglementAvances.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pieces\FrBanque.resx">
+      <DependentUpon>FrBanque.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pieces\FrBonCommande.resx">
+      <DependentUpon>FrBonCommande.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clients\FrCarteFrance.resx">
+      <DependentUpon>FrCarteFrance.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Tarifs\FrSaisieTarifs.resx">
+      <DependentUpon>FrSaisieTarifs.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\LogoApplication.resx">
+      <SubType>Designer</SubType>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>LogoApplication.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <Content Include="Etats\RptStats\Etiquettes Mailing Avery 635x381.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStats\Lettre Mailing.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStats\Liste Clients par département.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStatsClients\Etat Commissionnement.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStatsClients\Liste facture par client.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStatsClients\Quantité vendue par client.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStatsClients\Récap factures impayées par activité.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStatsClients\Récap factures impayées.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStatsClients\Répartition du chiffre d%27affaires par commercial.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStatsClients\Répartition du chiffre d%27affaires par type client %28export%29.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStatsProduits\Bouteilles vendues par commercial.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStatsProduits\Quantité de produits offerts.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStatsProduits\Quantité vendue par commercial.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStatsProduits\Quantité vendue par produit et par client.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStatsProduits\Répartition du chiffre d%27affaires par produit et par type client.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptStatsProduits\Répartition du chiffre d%27affaires par produit, commercial et type client.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\plus.png" />
+    <None Include="Resources\Removehyperlink.png" />
+    <None Include="Resources\GetPermission.png" />
+    <None Include="Resources\exportcsv.png" />
+    <None Include="Resources\SychronizeListHS.png" />
+    <None Include="Resources\EditTableHS.png" />
+    <None Include="Resources\bloque.png" />
+    <None Include="Resources\eps_openHS.png" />
+    <None Include="Resources\export.png" />
+    <None Include="Resources\uncheck.png" />
+    <None Include="Resources\checkAll.png" />
+    <None Include="Resources\userAccounts.bmp" />
+    <None Include="Resources\user.bmp" />
+    <None Include="Resources\Calendar-BusinessMonthView_32.png" />
+    <None Include="Resources\base_map.png" />
+    <None Include="Resources\Users.png" />
+    <None Include="Resources\112_RightArrowShort_Orange_32x32_72.png" />
+    <None Include="Resources\IssueTracking_32x32.png" />
+    <None Include="Resources\base_envelope_32.png" />
+    <None Include="Resources\Send-to-mobileHH.png" />
+    <None Include="Resources\clock.png" />
+    <None Include="Resources\IconesGauche\Factures1.png" />
+    <None Include="Resources\next24.png" />
+    <None Include="Resources\prev24.png" />
+    <None Include="Resources\Collapse_large.bmp" />
+    <None Include="Resources\Retry.bmp" />
+    <None Include="Resources\reglement_rejete.png" />
+    <None Include="Resources\remise.png" />
+    <None Include="Resources\liste_reglement.png" />
+    <None Include="Resources\Finance16.png" />
+    <None Include="Resources\109_AllAnnotations_Complete_16x16_72.png" />
+    <None Include="Resources\109_AllAnnotations_Warning_16x16_72.png" />
+    <None Include="Resources\vide.png" />
+    <None Include="Resources\RoutingSlipHS.png" />
+    <None Include="Resources\cheque.png" />
+    <None Include="Resources\Expand_large.bmp" />
+    <None Include="Resources\CopyHS.png" />
+    <None Include="Resources\report.png" />
+    <None Include="Resources\preview32.png" />
+    <None Include="Resources\impr32.png" />
+    <None Include="Resources\DialHS.png" />
+    <None Include="Resources\IconesHaut\Aide.png" />
+    <None Include="Resources\save24.png" />
+    <None Include="Resources\Suppr24.png" />
+    <None Include="Resources\NewFactures.png" />
+    <None Include="Resources\RecycleBin.png" />
+    <None Include="Resources\Corbeille.gif" />
+    <None Include="Resources\wi0062-24.png" />
+    <None Include="Resources\suppr.png" />
+    <None Include="Resources\NewCardHS.png" />
+    <None Include="Resources\calendar.png" />
+    <None Include="Resources\liste.png" />
+    <None Include="Resources\close.png" />
+    <None Include="Resources\check.png" />
+    <None Include="Resources\search.bmp" />
+    <None Include="Resources\filter.png" />
+    <None Include="Resources\new.png" />
+    <None Include="Resources\impr.png" />
+    <None Include="Resources\IconesHaut\Save.png" />
+    <None Include="Resources\IconesHaut\Find.png" />
+    <None Include="Resources\IconesHaut\Web.png" />
+    <None Include="Resources\IconesHaut\Close.png" />
+    <None Include="Resources\IconesGauche\Stats.png" />
+    <None Include="Resources\IconesGauche\Fleche.png" />
+    <None Include="Resources\IconesGauche\Finance.png" />
+    <None Include="Resources\IconesGauche\Factures.png" />
+    <None Include="Resources\IconesGauche\Cube.png" />
+    <None Include="Resources\IconesGauche\Compta.png" />
+    <None Include="Resources\IconesGauche\Clients.png" />
+    <None Include="Resources\IconesGauche\Site.png" />
+    <None Include="Resources\IconesGauche\Agenda.png" />
+    <None Include="Web References\ActiUpdates\Updates.disco" />
+    <EmbeddedResource Include="Application\Utils\FrActivation.resx">
+      <DependentUpon>FrActivation.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Application\Sauvegarde\FrChoixRestauration.resx">
+      <DependentUpon>FrChoixRestauration.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Compta\FrCompte.resx">
+      <DependentUpon>FrCompte.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Application\FrConnexion.resx">
+      <DependentUpon>FrConnexion.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clients\FrEntreprise.resx">
+      <DependentUpon>FrEntreprise.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Evenements\FrEvenement.resx">
+      <DependentUpon>FrEvenement.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Compta\FrExportCompta.resx">
+      <DependentUpon>FrExportCompta.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Application\Parametres\FrGestionParametres.resx">
+      <DependentUpon>FrGestionParametres.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Application\Parametres\FrInfosGenerales.resx">
+      <DependentUpon>FrInfosGenerales.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Stocks\FrInventaireOptions.resx">
+      <DependentUpon>FrInventaireOptions.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clients\FrLettreType.resx">
+      <DependentUpon>FrLettreType.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Evenements\FrAgenda.resx">
+      <DependentUpon>FrAgenda.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pieces\Listes\FrListeRemise.resx">
+      <DependentUpon>FrListeRemise.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Balance\FrTrames.resx">
+      <DependentUpon>FrTrames.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Stocks\FrMouvement.resx">
+      <DependentUpon>FrMouvement.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Compta\FrParametreCompta.resx">
+      <DependentUpon>FrParametreCompta.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clients\FrPersonne.resx">
+      <DependentUpon>FrPersonne.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produits\FrProduit.resx">
+      <DependentUpon>FrProduit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pieces\FrReglement.resx">
+      <DependentUpon>FrReglement.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pieces\FrRemise.resx">
+      <DependentUpon>FrRemise.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Application\Utils\FrParamNV.resx">
+      <DependentUpon>FrParamNV.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Application\Utils\FrParamVNC.resx">
+      <DependentUpon>FrParamVNC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Application\Utils\FrSelectionMultiple.resx">
+      <DependentUpon>FrSelectionMultiple.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Application\FrStatistiques.resx">
+      <DependentUpon>FrStatistiques.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Application\FrTableauBord.resx">
+      <DependentUpon>FrTableauBord.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Application\Utils\MesClass.resx">
+      <DependentUpon>MesClass.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Application\Utils\SaisieCle.resx">
+      <DependentUpon>SaisieCle.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <WebReferenceUrl Include="http://localhost/ActiUpdates/Updates.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\ActiUpdates\</RelPath>
+      <UpdateFromURL>http://localhost/ActiUpdates/Updates.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>AgriFact_ActiUpdates_Updates</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost/ActiWebCommande/admin/SrvSyncAgrifact.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\SyncAgrifact\</RelPath>
+      <UpdateFromURL>http://localhost/ActiWebCommande/admin/SrvSyncAgrifact.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>AgriFact_SyncAgrifact_SrvSyncAgrifact</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfMenu>
+   <Menu Nom="Journaux" Text="Journaux" Image="create">
+    <Items>
+		<Item Type="Separator" Master="Journaux" Nom="Sep" Text="Journaux" />
+		<Item Type="MenuItem" Master="Journaux" Nom="JournalAchats" Text="Journaux" Etat="" Image="create" IconSize="16" LockEmptyDossier="true"/>
+		<!--<Item Type="MenuItem" Master="Journaux" Nom="JournalVentes" Text="Journal ventes" Etat="" Image="create" IconSize="16" LockEmptyDossier="true"/>
+		<Item Type="MenuItem" Master="Journaux" Nom="JournalOD" Text="Journal OD" Etat="" Image="create" IconSize="16" LockEmptyDossier="true"/>
+		<Item Type="MenuItem" Master="Journaux" Nom="JournauxMI" Text="Journaux MI" Etat="" Image="create" IconSize="16" LockEmptyDossier="true"/>
+		<Item Type="MenuItem" Master="Journaux" Nom="JournalTresorerie" Text="Journal trésorerie" Etat="" Image="create" IconSize="16" LockEmptyDossier="true"/>
+		<Item Type="MenuItem" Master="Journaux" Nom="RecapJournaux" Text="Récapitulatif journaux" Etat="" Image="create" IconSize="16" LockEmptyDossier="true"/>-->
+    </Items>
+  </Menu>
+  <Menu Nom="TVA" Text="TVA" Image="create">
+    <Items>
+      <Item Type="Separator" Master="TVA" Nom="Sep" Text="TVA" />
+      <Item Type="MenuItem" Master="TVA" Nom="RecapTVA" Text="Récapitulatif TVA" Etat="" Image="create" IconSize="16" LockEmptyDossier="true"/>
+      <Item Type="MenuItem" Master="TVA" Nom="TVAVente" Text="Détail TVA ventes" Etat="" Image="create" IconSize="16" LockEmptyDossier="true"/>
+      <Item Type="MenuItem" Master="TVA" Nom="TVAAchat" Text="Détail TVA achats" Etat="" Image="create" IconSize="16" LockEmptyDossier="true"/>
+    </Items>
+  </Menu>
+<Menu Nom="GrandsLivres" Text="Grand Livre" Image="book">
+	<Items>
+		<Item Type="Separator" Master="Grand Livre" Nom="Sep" Text="Grand Livre" />
+    <Item Type="MenuItem" Master="Grand Livre" Nom="GrandLivreGen" Text="Grand livre format paysage" Etat="" Image="utils" IconSize="16" Dialog="true" LockEmptyDossier="true"/>
+    <Item Type="MenuItem" Master="Grand Livre" Nom="GrandLivrePort" Text="Grand livre format portrait" Etat="" Image="utils" IconSize="16" Dialog="true" LockEmptyDossier="true"/>
+    <Item Type="MenuItem" Master="Grand Livre" Nom="GrandLivreAnaPort" Text="Grand livre analytique format portrait" Etat="" Image="utils" IconSize="16" Dialog="true" LockEmptyDossier="true"/>
+	</Items>
+</Menu>
+<!--<Menu Nom="Autres" Text="Autres" Image="export">
+	<Items>
+		<Item Type="Separator" Master="Autres" Nom="Sep" Text="Autres" />
+		<Item Type="MenuItem" Master="Autres" Nom="CompteRendu" Text="Compte rendu de saisie" Etat="" Image="export" IconSize="16" Dialog="true" LockEmptyDossier="true"/>
+		<Item Type="MenuItem" Master="Autres" Nom="Mouv" Text="Mouvements sur une période" Etat="" Image="export" IconSize="16" Dialog="true" LockEmptyDossier="true"/>
+		<Item Type="MenuItem" Master="Autres" Nom="Detail" Text="Détail des comptes non soldés" Etat="" Image="export" IconSize="16" Dialog="true" LockEmptyDossier="true"/>
+	</Items>
+</Menu>-->
+<Menu Nom="Balances" Text="Balance" Image="book">
+	<Items>
+		<Item Type="Separator" Master="Balance" Nom="Sep" Text="Balance" />
+		<Item Type="MenuItem" Master="Balance" Nom="BalanceGen" Text="Balance générale" Etat="" Image="book" IconSize="16" Dialog="true" LockEmptyDossier="true"/>
+		<Item Type="MenuItem" Master="Balance" Nom="BalanceAna" Text="Balance analytique" Etat="" Image="book" IconSize="16" Dialog="true" LockEmptyDossier="true"/>
+    <!--<Item Type="MenuItem" Master="Balances" Nom="BalanceComp" Text="Balance comparative" Etat="" Image="book" IconSize="16" Dialog="true" LockEmptyDossier="true"/>
+		<Item Type="MenuItem" Master="Balances" Nom="CompteRes" Text="Compte de résultat en liste" Etat="" Image="book" IconSize="16" Dialog="true" LockEmptyDossier="true"/>
+		<Item Type="MenuItem" Master="Balances" Nom="BilanListe" Text="Bilan en liste" Etat="" Image="book" IconSize="16" Dialog="true" LockEmptyDossier="true"/>-->
+	</Items>
+</Menu>
+  <Menu Nom="Inventaire" Text="Inventaire" Image="book">
+    <Items>
+      <Item Type="Separator" Master="Inventaire" Nom="Sep" Text="Inventaire" />
+      <Item Type="MenuItem" Master="Inventaire" Nom="InvComplet" Text="Inventaire complet" Etat="" Image="book" IconSize="16" Dialog="true" LockEmptyDossier="true"/>
+      <Item Type="MenuItem" Master="Inventaire" Nom="InvRecap" Text="Récapitulatif" Etat="" Image="book" IconSize="16" Dialog="true" LockEmptyDossier="true"/>
+      <Item Type="MenuItem" Master="Inventaire" Nom="AnnexesTiers" Text="Annexes de tiers" Etat="" Image="book" IconSize="16" Dialog="true" LockEmptyDossier="true"/>
+    </Items>
+  </Menu>
+</ArrayOfMenu>

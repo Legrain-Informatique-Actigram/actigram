@@ -1,0 +1,1 @@
+http://172.20.22.13/PreparationCommandeWS/ServiceAgrifact.asmx

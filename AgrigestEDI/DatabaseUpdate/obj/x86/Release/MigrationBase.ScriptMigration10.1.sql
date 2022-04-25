@@ -1,0 +1,4 @@
+﻿ALTER TABLE [Dossiers] ADD [DDtClotureTVA] DATETIME
+GO
+
+

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Ce fichier est automatiquement généré par le Concepteur de schéma XML. Il contient des informations de disposition pour les composants dans l'aire du concepteur.-->
+<XSDDesignerLayout layoutVersion="2" viewPortLeft="45989" viewPortTop="2033" zoom="100">
+    <AReglement_XmlElement left="35559" top="371" width="5292" height="7620" selected="0" zOrder="22" index="0" expanded="1" />
+    <Personne_XmlElement left="47809" top="-345" width="5292" height="11853" selected="0" zOrder="1" index="1" expanded="1" />
+    <Produit_XmlElement left="59082" top="5212" width="5292" height="14816" selected="0" zOrder="2" index="2" expanded="1" />
+    <TVA_XmlElement left="65055" top="6085" width="5292" height="2963" selected="0" zOrder="4" index="3" expanded="1" />
+    <VBonCommande_XmlElement left="70928" top="5212" width="5292" height="2963" selected="0" zOrder="23" index="4" expanded="1" />
+    <VBonCommande_Detail_XmlElement left="76854" top="5212" width="5292" height="2963" selected="0" zOrder="25" index="5" expanded="1" />
+    <VBonLivraison_XmlElement left="82780" top="5212" width="5292" height="2963" selected="0" zOrder="26" index="6" expanded="1" />
+    <VBonLivraison_Detail_XmlElement left="88706" top="5212" width="5292" height="2963" selected="0" zOrder="27" index="7" expanded="1" />
+    <VDevis_XmlElement left="94632" top="5212" width="5292" height="2963" selected="0" zOrder="28" index="8" expanded="1" />
+    <VDevis_Detail_XmlElement left="100558" top="5212" width="5292" height="2963" selected="0" zOrder="29" index="9" expanded="1" />
+    <VFacture_XmlElement left="106494" top="5212" width="5291" height="13546" selected="0" zOrder="30" index="10" expanded="1" />
+    <VFacture_Detail_XmlElement left="112420" top="5212" width="5292" height="12700" selected="0" zOrder="31" index="11" expanded="1" />
+    <Telephone_XmlElement left="118336" top="5212" width="5292" height="2963" selected="0" zOrder="32" index="12" expanded="1" />
+    <TelephoneEntreprise_XmlElement left="124262" top="5212" width="5292" height="2963" selected="0" zOrder="33" index="13" expanded="1" />
+    <ABonReception_XmlElement left="21595" top="8705" width="5292" height="2963" selected="0" zOrder="34" index="14" expanded="1" />
+    <ABonReception_Detail_XmlElement left="27521" top="8705" width="5292" height="2963" selected="0" zOrder="35" index="15" expanded="1" />
+    <AFacture_XmlElement left="21572" top="4445" width="5292" height="2963" selected="0" zOrder="36" index="16" expanded="1" />
+    <AFacture_Detail_XmlElement left="27498" top="4445" width="5292" height="2963" selected="0" zOrder="37" index="17" expanded="1" />
+    <Famille_XmlElement left="36315" top="9499" width="5292" height="2963" selected="0" zOrder="38" index="18" expanded="1" />
+    <Reglement_XmlElement left="47202" top="15214" width="5292" height="4656" selected="0" zOrder="6" index="19" expanded="1" />
+    <Reglement_Detail_XmlElement left="53420" top="-1270" width="5292" height="5080" selected="0" zOrder="8" index="20" expanded="1" />
+    <Remise_Detail_XmlElement left="41244" top="5080" width="5292" height="2963" selected="0" zOrder="39" index="21" expanded="1" />
+    <Remise_XmlElement left="42070" top="8123" width="5291" height="5926" selected="0" zOrder="17" index="22" expanded="1" />
+    <Banque_XmlElement left="37492" top="14004" width="5292" height="4233" selected="0" zOrder="16" index="23" expanded="1" />
+    <Parametres_XmlElement left="47764" top="11767" width="5292" height="2963" selected="0" zOrder="10" index="24" expanded="1" />
+    <Entreprise_XmlElement left="53446" top="5239" width="5292" height="17357" selected="0" zOrder="12" index="25" expanded="1" />
+    <TVA_Detail_XmlElement left="65088" top="9340" width="5291" height="3810" selected="0" zOrder="14" index="26" expanded="1" />
+    <BanqueRemise_XmlKeyref left="46816" top="14619" width="503" height="503" selected="0" zOrder="18" />
+</XSDDesignerLayout>

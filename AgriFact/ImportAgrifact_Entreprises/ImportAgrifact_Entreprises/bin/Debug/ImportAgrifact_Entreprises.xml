@@ -1,0 +1,124 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+ImportAgrifact_Entreprises
+</name>
+</assembly>
+<members>
+<member name="T:ImportAgrifact_Entreprises.DataSetAgrifact.EntrepriseDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ImportAgrifact_Entreprises.DataSetAgrifact.TelephoneEntrepriseDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ImportAgrifact_Entreprises.DataSetAgrifact.PersonneDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ImportAgrifact_Entreprises.DataSetAgrifact._Feuil1_DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ImportAgrifact_Entreprises.DataSetAgrifact.EntrepriseRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ImportAgrifact_Entreprises.DataSetAgrifact.TelephoneEntrepriseRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ImportAgrifact_Entreprises.DataSetAgrifact.PersonneRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ImportAgrifact_Entreprises.DataSetAgrifact._Feuil1_Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ImportAgrifact_Entreprises.DataSetAgrifact.EntrepriseRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ImportAgrifact_Entreprises.DataSetAgrifact.TelephoneEntrepriseRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ImportAgrifact_Entreprises.DataSetAgrifact.PersonneRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ImportAgrifact_Entreprises.DataSetAgrifact._Feuil1_RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:ImportAgrifact_Entreprises.DataSetAgrifact">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:ImportAgrifact_Entreprises.DataSetAgrifactTableAdapters.EntrepriseTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ImportAgrifact_Entreprises.DataSetAgrifactTableAdapters.TelephoneEntrepriseTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ImportAgrifact_Entreprises.DataSetAgrifactTableAdapters.PersonneTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:ImportAgrifact_Entreprises.DataSetAgrifactTableAdapters.Feuil1_TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:ImportAgrifact_Entreprises.DataSetAgrifactTableAdapters.TableAdapterManager.UpdateUpdatedRows(ImportAgrifact_Entreprises.DataSetAgrifact,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:ImportAgrifact_Entreprises.DataSetAgrifactTableAdapters.TableAdapterManager.UpdateInsertedRows(ImportAgrifact_Entreprises.DataSetAgrifact,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:ImportAgrifact_Entreprises.DataSetAgrifactTableAdapters.TableAdapterManager.UpdateDeletedRows(ImportAgrifact_Entreprises.DataSetAgrifact,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:ImportAgrifact_Entreprises.DataSetAgrifactTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:ImportAgrifact_Entreprises.DataSetAgrifactTableAdapters.TableAdapterManager.UpdateAll(ImportAgrifact_Entreprises.DataSetAgrifact)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:ImportAgrifact_Entreprises.DataSetAgrifactTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:ImportAgrifact_Entreprises.DataSetAgrifactTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:ImportAgrifact_Entreprises.DataSetAgrifactTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="P:ImportAgrifact_Entreprises.My.Resources.Resources.ResourceManager">
+	<summary>
+  Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+</summary>
+</member><member name="P:ImportAgrifact_Entreprises.My.Resources.Resources.Culture">
+	<summary>
+  Remplace la propriété CurrentUICulture du thread actuel pour toutes
+  les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+</summary>
+</member><member name="T:ImportAgrifact_Entreprises.My.Resources.Resources">
+	<summary>
+  Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+</summary>
+</member>
+</members>
+</doc>

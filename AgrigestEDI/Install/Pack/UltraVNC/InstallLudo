@@ -1,0 +1,6 @@
+[Setup]
+Dir=C:\Program Files\Actigram\AgrigestEDI\UltraVNC
+Lang=fr
+Group=UltraVNC
+NoIcons=1
+Components=server

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfMenu>
+  <Menu Nom="General" Text="Général" Image="compta">
+    <Items>
+      <Item Type="Separator" Master="SepEcr" Nom="SepEcr" Text="Ecritures" Acceuil="true"/>
+      <Item Type="MenuItem" Master="SepEcr" Nom="SaisiePiece" Text="Saisie sur pièce" Form="FrSaisiePiece" Image="_new" IconSize="16" Dialog="true" LockEmptyDossier="true" Acceuil="true">
+        <Description>Saisir les écritures une à une</Description>
+      </Item>
+      <Item Type="MenuItem" Master="SepEcr" Nom="SaisieBordereau" Text="Saisie sur bordereau" Form="FrBordereau" Image="_new" IconSize="16" Dialog="true" LockEmptyDossier="true" Acceuil="true">
+        <Description>Saisir un relevé bancaire</Description>
+      </Item>
+      <Item Type="MenuItem" Master="SepEcr" Nom="RecherchePiece" Text="Consulter les écritures" Form="FrVisuPiece" Image="book" IconSize="16" LockEmptyDossier="true" Acceuil="true">
+        <Description>avec recherche par critère</Description>
+      </Item>
+      <Item Type="MenuItem" Master="SepEcr" Nom="RechercheBordereau" Text="Consultation de bordereau" Form="FrBordereau" Image="book" IconSize="16" Dialog="true"  LockEmptyDossier="true" Acceuil="true">
+        <Description>pour une période donnée</Description>
+      </Item>
+      <Item Type="MenuItem" Master="SepEcr" Nom="ExportationIsagri" Text="Exporter les écritures" Form="FrExportationIsagri" Image="export" IconSize="16" Dialog="true" LockEmptyDossier="true" Acceuil="false"/>
+      <Item Type="MenuItem" Master="SepEcr" Nom="Modele" Text="Gérer les modèles" Form="FrChoixModele" Image="book" IconSize="16" Dialog="true" LockEmptyDossier="true" Acceuil="false"/>
+      <Item Type="Separator" Master="SepComptes" Nom="SepComptes" Text="Comptes" Acceuil="true"/>
+      <Item Type="MenuItem" Master="SepComptes" Nom="PLC" Text="Plan Comptable" Form="FrPlanComptable" Image="liste" IconSize="16" LockEmptyDossier="true" Acceuil="false"/>
+      <Item Type="MenuItem" Master="SepComptes" Nom="ConsultCompte" Text="Consultation de compte" Form="FrVisuCompte" Image="book" IconSize="16" LockEmptyDossier="true" Acceuil="true">
+        <Description>et lettrage des écritures</Description>
+      </Item>
+      <Item Type="MenuItem" Master="SepComptes" Nom="RappBancaire" Text="Rapprochement bancaire" Form="RappBancaire" Image="liste" IconSize="16" LockEmptyDossier="true" Acceuil="false"/>
+      <Item Type="Separator" Master="SepImmo" Nom="SepImmo" Text="Immobilisations" Acceuil="true"/>
+      <Item Type="MenuItem" Master="SepImmo" Nom="GestImmo" Text="Gestion des immobilisations" Form="FrImmo" Image="book" IconSize="16" Dialog="false" LockEmptyDossier="true" Acceuil="false"/>
+      <Item Type="Separator" Master="SepInventaire" Nom="SepInventaire" Text="Inventaire" Acceuil="true"/>
+      <Item Type="MenuItem" Master="SepInventaire" Nom="InvStocksMag" Text="Stocks en magasin" Form="" Image="book" IconSize="16" Dialog="false" LockEmptyDossier="true" Acceuil="false"/>
+      <Item Type="MenuItem" Master="SepInventaire" Nom="InvAnimaux" Text="Animaux" Form="" Image="book" IconSize="16" Dialog="false" LockEmptyDossier="true" Acceuil="false"/>
+      <Item Type="MenuItem" Master="SepInventaire" Nom="InvStocksPdtTerre" Text="Stocks de produits en terre" Form="" Image="book" IconSize="16" Dialog="false" LockEmptyDossier="true" Acceuil="false"/>
+      <Item Type="MenuItem" Master="SepInventaire" Nom="InvFacCult" Text="Façons culturales" Form="" Image="book" IconSize="16" Dialog="false" LockEmptyDossier="true" Acceuil="false"/>
+      <Item Type="MenuItem" Master="SepInventaire" Nom="InvAvCult" Text="Avances aux cultures" Form="" Image="book" IconSize="16" Dialog="false" LockEmptyDossier="true" Acceuil="false"/>
+      <Item Type="MenuItem" Master="SepInventaire" Nom="InvStocksPdtFinis" Text="Stocks de produits finis" Form="" Image="book" IconSize="16" Dialog="false" LockEmptyDossier="true" Acceuil="false"/>
+      <Item Type="MenuItem" Master="SepInventaire" Nom="GererMatExpl" Text="Gérer le matériel" Form="FrGererMaterielExploitation" Image="_new" IconSize="16" Dialog="false" LockEmptyDossier="true" Acceuil="false"/>
+      <Item Type="Separator" Master="SepImpr" Nom="SepImpr" Text="Impression" Acceuil="true"/>
+      <Item Type="MenuItem" Master="SepImpr" Nom="ImpressionJBGL" Text="Impression documents comptables" Form="FrEtats" Image="impr" IconSize="16" LockEmptyDossier="true" Acceuil="true">
+        <Description>Grand livre, journaux, TVA...</Description>
+      </Item>
+      <Item Type="Separator" Master="SepCloture" Nom="SepCloture" Text="Clôture" Acceuil="false"/>
+      <Item Type="MenuItem" Master="SepClotureTVA" Nom="EffectuerClotureTVA" Text="Effectuer la clôture TVA" Form="FrClotureTVA" Image="book" IconSize="16" Dialog="true" LockEmptyDossier="true" Acceuil="false"/>
+      <Item Type="MenuItem" Master="SepCloture" Nom="EffectuerCloture" Text="Effectuer la clôture de l'exercice" Form="FrCloture" Image="book" IconSize="16" Dialog="true" LockEmptyDossier="true" Acceuil="false"/>
+    </Items>
+  </Menu>
+  <Menu Nom="Utilitaires" Text="Utilitaires" Image="utils">
+    <Items>
+      <Item Type="Separator" Master="SepImport" Nom="SepImport" Text="Importations" Acceuil="true"/>
+      <Item Type="MenuItem" Master="SepImport" Nom="ImportEcriture" Text="Importer les écritures" Form="" Image="restore" IconSize="16" Dialog="true" LockEmptyDossier="false" Acceuil="false"/>
+      <Item Type="MenuItem" Master="SepImport" Nom="Import relevé bancaire" Text="Import banque" Form="FrImportETEBAC" Image="book" IconSize="16" Dialog="true" LockEmptyDossier="true" Acceuil="true">
+        <Description>Importer un relevé bancaire au format ETEBAC</Description>
+      </Item>
+      <Item Type="MenuItem" Master="SepImport" Nom="ImportEDI" Text="Import EDI" Form="" Image="book" IconSize="16" Dialog="true" LockEmptyDossier="true" Acceuil="true">
+        <Description>Importer les EDI COOP</Description>
+      </Item>
+      <Item Type="Separator" Master="SepExport" Nom="SepExport" Text="Exportations" Acceuil="false"/>
+      <Item Type="MenuItem" Master="SepExport" Nom="ExportEcriture" Text="Exporter les écritures" Form="FrExportationIsagri" Image="export" IconSize="16" Dialog="true" LockEmptyDossier="true" Acceuil="false"/>
+      <Item Type="MenuItem" Master="SepExport" Nom="ExportGrandLivre" Text="Exporter le grand livre" Form="FrExportationGrandLivre" Image="export" IconSize="16" Dialog="true" LockEmptyDossier="true" Acceuil="false"/>
+      <Item Type="MenuItem" Master="SepExport" Nom="ExportBalance" Text="Exporter la balance" Form="FrExportationBalance" Image="export" IconSize="16" Dialog="true" LockEmptyDossier="true" Acceuil="false"/>
+    </Items>
+  </Menu>
+</ArrayOfMenu>

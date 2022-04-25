@@ -1,0 +1,12 @@
+C:\ACTIGRAM\Externe\AgrigestEDI\EDIZipper\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\ACTIGRAM\Externe\AgrigestEDI\EDIZipper\obj\x86\Debug\EDIZipper.FrMain.resources
+C:\ACTIGRAM\Externe\AgrigestEDI\EDIZipper\obj\x86\Debug\EDIZipper.Resources.resources
+C:\ACTIGRAM\Externe\AgrigestEDI\EDIZipper\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+C:\ACTIGRAM\Externe\AgrigestEDI\EDIZipper\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
+C:\ACTIGRAM\Externe\AgrigestEDI\EDIZipper\bin\Debug\EDIZipper.exe
+C:\ACTIGRAM\Externe\AgrigestEDI\EDIZipper\bin\Debug\EDIZipper.pdb
+C:\ACTIGRAM\Externe\AgrigestEDI\EDIZipper\bin\Debug\EDIZipper.xml
+C:\ACTIGRAM\Externe\AgrigestEDI\EDIZipper\obj\x86\Debug\EDIZipper.exe
+C:\ACTIGRAM\Externe\AgrigestEDI\EDIZipper\obj\x86\Debug\EDIZipper.xml
+C:\ACTIGRAM\Externe\AgrigestEDI\EDIZipper\obj\x86\Debug\EDIZipper.pdb
+C:\ACTIGRAM\Externe\AgrigestEDI\EDIZipper\bin\Debug\ICSharpCode.SharpZipLib.dll

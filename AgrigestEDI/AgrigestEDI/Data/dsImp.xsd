@@ -1,0 +1,660 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsImp" targetNamespace="http://tempuri.org/dsImp.xsd" xmlns:mstns="http://tempuri.org/dsImp.xsd" xmlns="http://tempuri.org/dsImp.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="2" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="dbDonneesConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="dbDonneesConnectionString (MySettings)" PropertyReference="ApplicationSettings.AgrigestEDI.My.MySettings.GlobalReference.Default.dbDonneesConnectionString" Provider="System.Data.OleDb">
+          </Connection>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="dbDonneesConnectionString1" IsAppSettingsProperty="True" Modifier="Assembly" Name="dbDonneesConnectionString1 (MySettings)" PropertyReference="ApplicationSettings.AgrigestEDI.My.MySettings.GlobalReference.Default.dbDonneesConnectionString1" Provider="System.Data.OleDb">
+          </Connection>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="dbPlantypeCOConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="dbPlantypeCOConnectionString (MySettings)" PropertyReference="ApplicationSettings.AgrigestEDI.My.MySettings.GlobalReference.Default.dbPlantypeCOConnectionString" Provider="System.Data.OleDb">
+          </Connection>
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ImpJournalTableAdapter" GeneratorDataComponentClassName="ImpJournalTableAdapter" Name="ImpJournal" UserDataComponentName="ImpJournalTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbDonneesConnectionString (MySettings)" DbObjectName="" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="False" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>SELECT     Mouvements.MDossier, Mouvements.MDate, Mouvements.MPiece, Mouvements.MLig, Lignes.LLib, Mouvements.MMtDeb, Mouvements.MMtCre, 
+                      Lignes.LTva, Lignes.LJournal, Comptes.CLib, Mouvements.MActi, Pieces.Libelle, Mouvements.MCpt, Mouvements.MQte1
+FROM         (((Mouvements INNER JOIN
+                      Lignes ON Lignes.LDossier = Mouvements.MDossier AND Lignes.LPiece = Mouvements.MPiece AND Lignes.LDate = Mouvements.MDate AND 
+                      Lignes.LLig = Mouvements.MLig) INNER JOIN
+                      Comptes ON Mouvements.MCpt = Comptes.CCpt AND Mouvements.MDossier = Comptes.CDossier) INNER JOIN
+                      Pieces ON Lignes.LDossier = Pieces.PDossier AND Lignes.LPiece = Pieces.PPiece AND Lignes.LDate = Pieces.PDate)</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="MDossier" DataSetColumn="MDossier" />
+              <Mapping SourceColumn="MDate" DataSetColumn="MDate" />
+              <Mapping SourceColumn="MPiece" DataSetColumn="MPiece" />
+              <Mapping SourceColumn="MLig" DataSetColumn="MLig" />
+              <Mapping SourceColumn="LLib" DataSetColumn="LLib" />
+              <Mapping SourceColumn="MMtDeb" DataSetColumn="MMtDeb" />
+              <Mapping SourceColumn="MMtCre" DataSetColumn="MMtCre" />
+              <Mapping SourceColumn="LTva" DataSetColumn="LTva" />
+              <Mapping SourceColumn="LJournal" DataSetColumn="LJournal" />
+              <Mapping SourceColumn="CLib" DataSetColumn="CLib" />
+              <Mapping SourceColumn="MActi" DataSetColumn="MActi" />
+              <Mapping SourceColumn="Libelle" DataSetColumn="Libelle" />
+              <Mapping SourceColumn="MCpt" DataSetColumn="MCpt" />
+              <Mapping SourceColumn="MQte1" DataSetColumn="MQte1" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="JournalTableAdapter" GeneratorDataComponentClassName="JournalTableAdapter" Name="Journal" UserDataComponentName="JournalTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbPlantypeCOConnectionString (MySettings)" DbObjectName="Journal" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="True" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="True" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="False">
+                    <CommandText>DELETE FROM `Journal` WHERE ((`JCodeJournal` = ?) AND ((? = 1 AND `JLibelle` IS NULL) OR (`JLibelle` = ?)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_JCodeJournal" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="JCodeJournal" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_JLibelle" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="JLibelle" SourceColumnNullMapping="True" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_JLibelle" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="JLibelle" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="False">
+                    <CommandText>INSERT INTO `Journal` (`JCodeJournal`, `JLibelle`) VALUES (?, ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="JCodeJournal" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="JCodeJournal" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="JLibelle" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="JLibelle" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>SELECT     JCodeJournal, JLibelle
+FROM         Journal</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="False">
+                    <CommandText>UPDATE `Journal` SET `JCodeJournal` = ?, `JLibelle` = ? WHERE ((`JCodeJournal` = ?) AND ((? = 1 AND `JLibelle` IS NULL) OR (`JLibelle` = ?)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="JCodeJournal" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="JCodeJournal" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="JLibelle" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="JLibelle" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_JCodeJournal" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="JCodeJournal" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_JLibelle" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="JLibelle" SourceColumnNullMapping="True" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_JLibelle" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="JLibelle" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="JCodeJournal" DataSetColumn="JCodeJournal" />
+              <Mapping SourceColumn="JLibelle" DataSetColumn="JLibelle" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="TVATableAdapter" GeneratorDataComponentClassName="TVATableAdapter" Name="TVA" UserDataComponentName="TVATableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbPlantypeCOConnectionString (MySettings)" DbObjectName="TVA" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="True" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="True" UserGetMethodName="GetData" UserSourceName="Fill">
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="False">
+                    <CommandText>INSERT INTO `TVA` (`TTVA`, `TJournal`, `TypTVA`, `TMtTVA`, `TCpt`, `TCtrlMt`, `TTaux`, `TColonne`, `TLigne`, `TCtrlCl_DC`, `TCtrlCl_Num`, `Libellé`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="TTVA" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="TTVA" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="TJournal" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="TJournal" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="TypTVA" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="TypTVA" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="TMtTVA" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="TMtTVA" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="TCpt" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="TCpt" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="TCtrlMt" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="TCtrlMt" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="Single" Direction="Input" ParameterName="TTaux" Precision="0" ProviderType="Single" Scale="0" Size="0" SourceColumn="TTaux" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="Byte" Direction="Input" ParameterName="TColonne" Precision="0" ProviderType="UnsignedTinyInt" Scale="0" Size="0" SourceColumn="TColonne" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="Byte" Direction="Input" ParameterName="TLigne" Precision="0" ProviderType="UnsignedTinyInt" Scale="0" Size="0" SourceColumn="TLigne" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="TCtrlCl_DC" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="TCtrlCl_DC" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="TCtrlCl_Num" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="TCtrlCl_Num" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Libellé" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="Libellé" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>SELECT     TVA.*
+FROM         TVA</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="TTVA" DataSetColumn="TTVA" />
+              <Mapping SourceColumn="TJournal" DataSetColumn="TJournal" />
+              <Mapping SourceColumn="TypTVA" DataSetColumn="TypTVA" />
+              <Mapping SourceColumn="TMtTVA" DataSetColumn="TMtTVA" />
+              <Mapping SourceColumn="TCpt" DataSetColumn="TCpt" />
+              <Mapping SourceColumn="TCtrlMt" DataSetColumn="TCtrlMt" />
+              <Mapping SourceColumn="TTaux" DataSetColumn="TTaux" />
+              <Mapping SourceColumn="TColonne" DataSetColumn="TColonne" />
+              <Mapping SourceColumn="TLigne" DataSetColumn="TLigne" />
+              <Mapping SourceColumn="TCtrlCl_DC" DataSetColumn="TCtrlCl_DC" />
+              <Mapping SourceColumn="TCtrlCl_Num" DataSetColumn="TCtrlCl_Num" />
+              <Mapping SourceColumn="Libellé" DataSetColumn="Libellé" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="TVARecapTableAdapter" GeneratorDataComponentClassName="TVARecapTableAdapter" Name="TVARecap" UserDataComponentName="TVARecapTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbPlantypeCOConnectionString (MySettings)" DbObjectName="TVARecap" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="True" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="True" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="False">
+                    <CommandText>DELETE FROM `TVARecap` WHERE ((`TRJournal` = ?) AND (`TRLigne` = ?) AND ((? = 1 AND `TRLib` IS NULL) OR (`TRLib` = ?)) AND ((? = 1 AND `TRRecup` IS NULL) OR (`TRRecup` = ?)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_TRJournal" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="TRJournal" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="Byte" Direction="Input" ParameterName="Original_TRLigne" Precision="0" ProviderType="UnsignedTinyInt" Scale="0" Size="0" SourceColumn="TRLigne" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_TRLib" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="TRLib" SourceColumnNullMapping="True" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_TRLib" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="TRLib" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_TRRecup" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="TRRecup" SourceColumnNullMapping="True" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_TRRecup" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="TRRecup" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="False">
+                    <CommandText>INSERT INTO `TVARecap` (`TRJournal`, `TRLigne`, `TRLib`, `TRRecup`) VALUES (?, ?, ?, ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="TRJournal" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="TRJournal" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="Byte" Direction="Input" ParameterName="TRLigne" Precision="0" ProviderType="UnsignedTinyInt" Scale="0" Size="0" SourceColumn="TRLigne" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="TRLib" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="TRLib" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="TRRecup" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="TRRecup" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>SELECT     TVARecap.*
+FROM         TVARecap</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="False">
+                    <CommandText>UPDATE `TVARecap` SET `TRJournal` = ?, `TRLigne` = ?, `TRLib` = ?, `TRRecup` = ? WHERE ((`TRJournal` = ?) AND (`TRLigne` = ?) AND ((? = 1 AND `TRLib` IS NULL) OR (`TRLib` = ?)) AND ((? = 1 AND `TRRecup` IS NULL) OR (`TRRecup` = ?)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="TRJournal" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="TRJournal" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="Byte" Direction="Input" ParameterName="TRLigne" Precision="0" ProviderType="UnsignedTinyInt" Scale="0" Size="0" SourceColumn="TRLigne" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="TRLib" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="TRLib" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="TRRecup" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="TRRecup" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_TRJournal" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="TRJournal" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="Byte" Direction="Input" ParameterName="Original_TRLigne" Precision="0" ProviderType="UnsignedTinyInt" Scale="0" Size="0" SourceColumn="TRLigne" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_TRLib" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="TRLib" SourceColumnNullMapping="True" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_TRLib" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="TRLib" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_TRRecup" Precision="0" ProviderType="Integer" Scale="0" Size="0" SourceColumn="TRRecup" SourceColumnNullMapping="True" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_TRRecup" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="TRRecup" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="TRJournal" DataSetColumn="TRJournal" />
+              <Mapping SourceColumn="TRLigne" DataSetColumn="TRLigne" />
+              <Mapping SourceColumn="TRLib" DataSetColumn="TRLib" />
+              <Mapping SourceColumn="TRRecup" DataSetColumn="TRRecup" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ImpRecapTVATableAdapter" GeneratorDataComponentClassName="ImpRecapTVATableAdapter" Name="ImpRecapTVA" UserDataComponentName="ImpRecapTVATableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbDonneesConnectionString (MySettings)" DbObjectName="" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="True" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>SELECT 'C50168A9' AS mdossier, TVARecap.TRLigne, TVARecap.TRLib, TVARecap.TRJournal, TVARecap.TRRecup AS Recap,  [MMtDeb]AS mmtDeb, [MMtCre] as MmtCre, TVA.TLigne,  (SELECT     MD_C    FROM(Mouvements)    WHERE     (MDossier =l.ldossier) AND (MPiece =l.lpiece) AND (MLig =l.llig) AND (MOrdre = 2)) as D_C, MOrdre FROM (((Exploitations INNER JOIN (Dossiers INNER JOIN Pieces ON Dossiers.DDossier = Pieces.PDossier) ON Exploitations.EExpl = Dossiers.DExpl) INNER JOIN (Lignes l INNER JOIN Mouvements ON (l.LLig = Mouvements.MLig) AND (l.LDate = Mouvements.MDate) AND (l.LPiece = Mouvements.MPiece) AND (l.LDossier = Mouvements.MDossier)) ON (Pieces.PDate = l.LDate) AND (Pieces.PPiece = l.LPiece) AND (Pieces.PDossier = l.LDossier)) INNER JOIN TVA ON  (l.LMtTVA = TVA.TTVA or l.LTVA = TVA.TTVA)) INNER JOIN TVARecap ON (TVA.TLigne = TVARecap.TRLigne) AND (TVA.TJournal = TVARecap.TRJournal) WHERE Exploitations.EExpl='C50168'  And (MDate&gt;=#06/01/08# And MDate&lt;=#05/31/09#)  </CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ImpPLCTableAdapter" GeneratorDataComponentClassName="ImpPLCTableAdapter" Name="ImpPLC" UserDataComponentName="ImpPLCTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbPlantypeCOConnectionString (MySettings)" DbObjectName="TVARecap" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="True" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="True" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="False">
+                    <CommandText>DELETE FROM `TVARecap` WHERE ((`TRJournal` = ?) AND (`TRLigne` = ?))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_TRJournal" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="TRJournal" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="Byte" Direction="Input" ParameterName="Original_TRLigne" Precision="0" ProviderType="UnsignedTinyInt" Scale="0" Size="0" SourceColumn="TRLigne" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="False">
+                    <CommandText>INSERT INTO `TVARecap` (`TRJournal`, `TRLigne`) VALUES (?, ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="TRJournal" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="TRJournal" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="Byte" Direction="Input" ParameterName="TRLigne" Precision="0" ProviderType="UnsignedTinyInt" Scale="0" Size="0" SourceColumn="TRLigne" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="False">
+                    <CommandText>SELECT TRJournal, TRLigne FROM TVARecap</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="False">
+                    <CommandText>UPDATE `TVARecap` SET `TRJournal` = ?, `TRLigne` = ? WHERE ((`TRJournal` = ?) AND (`TRLigne` = ?))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="TRJournal" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="TRJournal" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="Byte" Direction="Input" ParameterName="TRLigne" Precision="0" ProviderType="UnsignedTinyInt" Scale="0" Size="0" SourceColumn="TRLigne" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_TRJournal" Precision="0" ProviderType="VarWChar" Scale="0" Size="0" SourceColumn="TRJournal" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                      <Parameter AllowDbNull="True" AutogeneratedName="" DataSourceName="" DbType="Byte" Direction="Input" ParameterName="Original_TRLigne" Precision="0" ProviderType="UnsignedTinyInt" Scale="0" Size="0" SourceColumn="TRLigne" SourceColumnNullMapping="False" SourceVersion="Original">
+                      </Parameter>
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="TRJournal" DataSetColumn="PlLib" />
+              <Mapping SourceColumn="TRLigne" DataSetColumn="PlCpt" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ImpRappBancaireTableAdapter" GeneratorDataComponentClassName="ImpRappBancaireTableAdapter" Name="ImpRappBancaire" UserDataComponentName="ImpRappBancaireTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbPlantypeCOConnectionString (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="True" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>SELECT     Comptes.CDossier, Comptes.CCpt, Comptes.CLib, Mouvements.MDate, Mouvements.MPiece, Pieces.Libelle, Lignes.LLib, Mouvements.MMtDeb, mouvements.MMtCre, Mouvements.MPointage, Mouvements.MDatePointage 
+            FROM         (((Comptes INNER JOIN
+            Mouvements ON Comptes.CDossier = Mouvements.MDossier) INNER JOIN 
+            Lignes ON Mouvements.MDossier = Lignes.LDossier AND Mouvements.MPiece = Lignes.LPiece AND Mouvements.MDate = Lignes.LDate AND 
+            Mouvements.MLig = Lignes.LLig) INNER JOIN 
+            Pieces ON Lignes.LDossier = Pieces.PDossier AND Lignes.LPiece = Pieces.PPiece AND Lignes.LDate = Pieces.PDate) 
+            WHERE     (Comptes.CDossier = 'Y1500110') AND (Comptes.CCpt LIKE '512%')</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsImp" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsImp" msprop:Generator_DataSetName="dsImp">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ImpJournal" msprop:Generator_UserTableName="ImpJournal" msprop:Generator_RowDeletedName="ImpJournalRowDeleted" msprop:Generator_RowChangedName="ImpJournalRowChanged" msprop:Generator_RowClassName="ImpJournalRow" msprop:Generator_RowChangingName="ImpJournalRowChanging" msprop:Generator_RowEvArgName="ImpJournalRowChangeEvent" msprop:Generator_RowEvHandlerName="ImpJournalRowChangeEventHandler" msprop:Generator_TableClassName="ImpJournalDataTable" msprop:Generator_TableVarName="tableImpJournal" msprop:Generator_RowDeletingName="ImpJournalRowDeleting" msprop:Generator_TablePropName="ImpJournal">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MDossier" msprop:Generator_UserColumnName="MDossier" msprop:Generator_ColumnVarNameInTable="columnMDossier" msprop:Generator_ColumnPropNameInRow="MDossier" msprop:Generator_ColumnPropNameInTable="MDossierColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MDate" msprop:Generator_UserColumnName="MDate" msprop:Generator_ColumnVarNameInTable="columnMDate" msprop:Generator_ColumnPropNameInRow="MDate" msprop:Generator_ColumnPropNameInTable="MDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="MPiece" msprop:Generator_UserColumnName="MPiece" msprop:Generator_ColumnVarNameInTable="columnMPiece" msprop:Generator_ColumnPropNameInRow="MPiece" msprop:Generator_ColumnPropNameInTable="MPieceColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="MLig" msprop:Generator_UserColumnName="MLig" msprop:Generator_ColumnVarNameInTable="columnMLig" msprop:Generator_ColumnPropNameInRow="MLig" msprop:Generator_ColumnPropNameInTable="MLigColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="LLib" msprop:Generator_UserColumnName="LLib" msprop:Generator_ColumnVarNameInTable="columnLLib" msprop:Generator_ColumnPropNameInRow="LLib" msprop:Generator_ColumnPropNameInTable="LLibColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="35" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MMtDeb" msprop:Generator_UserColumnName="MMtDeb" msprop:Generator_ColumnVarNameInTable="columnMMtDeb" msprop:Generator_ColumnPropNameInRow="MMtDeb" msprop:Generator_ColumnPropNameInTable="MMtDebColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MMtCre" msprop:Generator_UserColumnName="MMtCre" msprop:Generator_ColumnVarNameInTable="columnMMtCre" msprop:Generator_ColumnPropNameInRow="MMtCre" msprop:Generator_ColumnPropNameInTable="MMtCreColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="LTva" msprop:Generator_UserColumnName="LTva" msprop:Generator_ColumnVarNameInTable="columnLTva" msprop:Generator_ColumnPropNameInRow="LTva" msprop:Generator_ColumnPropNameInTable="LTvaColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LJournal" msprop:Generator_UserColumnName="LJournal" msprop:Generator_ColumnVarNameInTable="columnLJournal" msprop:Generator_ColumnPropNameInRow="LJournal" msprop:Generator_ColumnPropNameInTable="LJournalColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CLib" msprop:Generator_UserColumnName="CLib" msprop:Generator_ColumnVarNameInTable="columnCLib" msprop:Generator_ColumnPropNameInRow="CLib" msprop:Generator_ColumnPropNameInTable="CLibColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MActi" msprop:Generator_UserColumnName="MActi" msprop:Generator_ColumnVarNameInTable="columnMActi" msprop:Generator_ColumnPropNameInRow="MActi" msprop:Generator_ColumnPropNameInTable="MActiColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Libelle" msprop:Generator_UserColumnName="Libelle" msprop:Generator_ColumnPropNameInRow="Libelle" msprop:Generator_ColumnVarNameInTable="columnLibelle" msprop:Generator_ColumnPropNameInTable="LibelleColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MCpt" msprop:Generator_UserColumnName="MCpt" msprop:Generator_ColumnVarNameInTable="columnMCpt" msprop:Generator_ColumnPropNameInRow="MCpt" msprop:Generator_ColumnPropNameInTable="MCptColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MQte1" msprop:Generator_UserColumnName="MQte1" msprop:Generator_ColumnPropNameInRow="MQte1" msprop:Generator_ColumnVarNameInTable="columnMQte1" msprop:Generator_ColumnPropNameInTable="MQte1Column" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MOrdre" msprop:Generator_UserColumnName="MOrdre" msprop:Generator_ColumnVarNameInTable="columnMOrdre" msprop:Generator_ColumnPropNameInRow="MOrdre" msprop:Generator_ColumnPropNameInTable="MOrdreColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Journal" msprop:Generator_UserTableName="Journal" msprop:Generator_RowDeletedName="JournalRowDeleted" msprop:Generator_RowChangedName="JournalRowChanged" msprop:Generator_RowClassName="JournalRow" msprop:Generator_RowChangingName="JournalRowChanging" msprop:Generator_RowEvArgName="JournalRowChangeEvent" msprop:Generator_RowEvHandlerName="JournalRowChangeEventHandler" msprop:Generator_TableClassName="JournalDataTable" msprop:Generator_TableVarName="tableJournal" msprop:Generator_RowDeletingName="JournalRowDeleting" msprop:Generator_TablePropName="Journal">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="JCodeJournal" msprop:Generator_UserColumnName="JCodeJournal" msprop:Generator_ColumnVarNameInTable="columnJCodeJournal" msprop:Generator_ColumnPropNameInRow="JCodeJournal" msprop:Generator_ColumnPropNameInTable="JCodeJournalColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="JLibelle" msprop:Generator_UserColumnName="JLibelle" msprop:Generator_ColumnVarNameInTable="columnJLibelle" msprop:Generator_ColumnPropNameInRow="JLibelle" msprop:Generator_ColumnPropNameInTable="JLibelleColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TVA" msprop:Generator_UserTableName="TVA" msprop:Generator_RowDeletedName="TVARowDeleted" msprop:Generator_RowChangedName="TVARowChanged" msprop:Generator_RowClassName="TVARow" msprop:Generator_RowChangingName="TVARowChanging" msprop:Generator_RowEvArgName="TVARowChangeEvent" msprop:Generator_RowEvHandlerName="TVARowChangeEventHandler" msprop:Generator_TableClassName="TVADataTable" msprop:Generator_TableVarName="tableTVA" msprop:Generator_RowDeletingName="TVARowDeleting" msprop:Generator_TablePropName="TVA">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TTVA" msprop:Generator_UserColumnName="TTVA" msprop:Generator_ColumnPropNameInRow="TTVA" msprop:Generator_ColumnVarNameInTable="columnTTVA" msprop:Generator_ColumnPropNameInTable="TTVAColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TJournal" msprop:Generator_UserColumnName="TJournal" msprop:Generator_ColumnPropNameInRow="TJournal" msprop:Generator_ColumnVarNameInTable="columnTJournal" msprop:Generator_ColumnPropNameInTable="TJournalColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TypTVA" msprop:Generator_UserColumnName="TypTVA" msprop:Generator_ColumnPropNameInRow="TypTVA" msprop:Generator_ColumnVarNameInTable="columnTypTVA" msprop:Generator_ColumnPropNameInTable="TypTVAColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TMtTVA" msprop:Generator_UserColumnName="TMtTVA" msprop:Generator_ColumnPropNameInRow="TMtTVA" msprop:Generator_ColumnVarNameInTable="columnTMtTVA" msprop:Generator_ColumnPropNameInTable="TMtTVAColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TCpt" msprop:Generator_UserColumnName="TCpt" msprop:Generator_ColumnPropNameInRow="TCpt" msprop:Generator_ColumnVarNameInTable="columnTCpt" msprop:Generator_ColumnPropNameInTable="TCptColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TCtrlMt" msprop:Generator_UserColumnName="TCtrlMt" msprop:Generator_ColumnPropNameInRow="TCtrlMt" msprop:Generator_ColumnVarNameInTable="columnTCtrlMt" msprop:Generator_ColumnPropNameInTable="TCtrlMtColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TTaux" msprop:Generator_UserColumnName="TTaux" msprop:Generator_ColumnPropNameInRow="TTaux" msprop:Generator_ColumnVarNameInTable="columnTTaux" msprop:Generator_ColumnPropNameInTable="TTauxColumn" type="xs:float" minOccurs="0" />
+              <xs:element name="TColonne" msprop:Generator_UserColumnName="TColonne" msprop:Generator_ColumnPropNameInRow="TColonne" msprop:Generator_ColumnVarNameInTable="columnTColonne" msprop:Generator_ColumnPropNameInTable="TColonneColumn" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="TLigne" msprop:Generator_UserColumnName="TLigne" msprop:Generator_ColumnPropNameInRow="TLigne" msprop:Generator_ColumnVarNameInTable="columnTLigne" msprop:Generator_ColumnPropNameInTable="TLigneColumn" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="TCtrlCl_DC" msprop:Generator_UserColumnName="TCtrlCl_DC" msprop:Generator_ColumnPropNameInRow="TCtrlCl_DC" msprop:Generator_ColumnVarNameInTable="columnTCtrlCl_DC" msprop:Generator_ColumnPropNameInTable="TCtrlCl_DCColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TCtrlCl_Num" msprop:Generator_UserColumnName="TCtrlCl_Num" msprop:Generator_ColumnPropNameInRow="TCtrlCl_Num" msprop:Generator_ColumnVarNameInTable="columnTCtrlCl_Num" msprop:Generator_ColumnPropNameInTable="TCtrlCl_NumColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Libellé" msprop:Generator_UserColumnName="Libellé" msprop:Generator_ColumnPropNameInRow="Libellé" msprop:Generator_ColumnVarNameInTable="columnLibellé" msprop:Generator_ColumnPropNameInTable="LibelléColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TVARecap" msprop:Generator_UserTableName="TVARecap" msprop:Generator_RowDeletedName="TVARecapRowDeleted" msprop:Generator_RowChangedName="TVARecapRowChanged" msprop:Generator_RowClassName="TVARecapRow" msprop:Generator_RowChangingName="TVARecapRowChanging" msprop:Generator_RowEvArgName="TVARecapRowChangeEvent" msprop:Generator_RowEvHandlerName="TVARecapRowChangeEventHandler" msprop:Generator_TableClassName="TVARecapDataTable" msprop:Generator_TableVarName="tableTVARecap" msprop:Generator_RowDeletingName="TVARecapRowDeleting" msprop:Generator_TablePropName="TVARecap">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TRJournal" msprop:Generator_UserColumnName="TRJournal" msprop:Generator_ColumnPropNameInRow="TRJournal" msprop:Generator_ColumnVarNameInTable="columnTRJournal" msprop:Generator_ColumnPropNameInTable="TRJournalColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TRLigne" msprop:Generator_UserColumnName="TRLigne" msprop:Generator_ColumnPropNameInRow="TRLigne" msprop:Generator_ColumnVarNameInTable="columnTRLigne" msprop:Generator_ColumnPropNameInTable="TRLigneColumn" type="xs:unsignedByte" />
+              <xs:element name="TRLib" msprop:Generator_UserColumnName="TRLib" msprop:Generator_ColumnPropNameInRow="TRLib" msprop:Generator_ColumnVarNameInTable="columnTRLib" msprop:Generator_ColumnPropNameInTable="TRLibColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TRRecup" msprop:Generator_UserColumnName="TRRecup" msprop:Generator_ColumnPropNameInRow="TRRecup" msprop:Generator_ColumnVarNameInTable="columnTRRecup" msprop:Generator_ColumnPropNameInTable="TRRecupColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ImpRecapTVA" msprop:Generator_UserTableName="ImpRecapTVA" msprop:Generator_RowDeletedName="ImpRecapTVARowDeleted" msprop:Generator_RowChangedName="ImpRecapTVARowChanged" msprop:Generator_RowClassName="ImpRecapTVARow" msprop:Generator_RowChangingName="ImpRecapTVARowChanging" msprop:Generator_RowEvArgName="ImpRecapTVARowChangeEvent" msprop:Generator_RowEvHandlerName="ImpRecapTVARowChangeEventHandler" msprop:Generator_TableClassName="ImpRecapTVADataTable" msprop:Generator_TableVarName="tableImpRecapTVA" msprop:Generator_RowDeletingName="ImpRecapTVARowDeleting" msprop:Generator_TablePropName="ImpRecapTVA">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MDossier" msprop:Generator_UserColumnName="MDossier" msprop:Generator_ColumnVarNameInTable="columnMDossier" msprop:Generator_ColumnPropNameInRow="MDossier" msprop:Generator_ColumnPropNameInTable="MDossierColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TRLigne" msprop:Generator_UserColumnName="TRLigne" msprop:Generator_ColumnVarNameInTable="columnTRLigne" msprop:Generator_ColumnPropNameInRow="TRLigne" msprop:Generator_ColumnPropNameInTable="TRLigneColumn" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="TRLib" msprop:Generator_UserColumnName="TRLib" msprop:Generator_ColumnVarNameInTable="columnTRLib" msprop:Generator_ColumnPropNameInRow="TRLib" msprop:Generator_ColumnPropNameInTable="TRLibColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TRJournal" msprop:Generator_UserColumnName="TRJournal" msprop:Generator_ColumnVarNameInTable="columnTRJournal" msprop:Generator_ColumnPropNameInRow="TRJournal" msprop:Generator_ColumnPropNameInTable="TRJournalColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Recap" msprop:Generator_UserColumnName="Recap" msprop:Generator_ColumnVarNameInTable="columnRecap" msprop:Generator_ColumnPropNameInRow="Recap" msprop:Generator_ColumnPropNameInTable="RecapColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="MMtDeb" msprop:Generator_UserColumnName="MMtDeb" msprop:Generator_ColumnVarNameInTable="columnMMtDeb" msprop:Generator_ColumnPropNameInRow="MMtDeb" msprop:Generator_ColumnPropNameInTable="MMtDebColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MMtCre" msprop:Generator_UserColumnName="MMtCre" msprop:Generator_ColumnVarNameInTable="columnMMtCre" msprop:Generator_ColumnPropNameInRow="MMtCre" msprop:Generator_ColumnPropNameInTable="MMtCreColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="D_C" msprop:Generator_UserColumnName="D_C" msprop:Generator_ColumnVarNameInTable="columnD_C" msprop:Generator_ColumnPropNameInRow="D_C" msprop:Generator_ColumnPropNameInTable="D_CColumn" type="xs:string" default="99" minOccurs="0" />
+              <xs:element name="MOrdre" msprop:Generator_UserColumnName="MOrdre" msprop:Generator_ColumnVarNameInTable="columnMOrdre" msprop:Generator_ColumnPropNameInRow="MOrdre" msprop:Generator_ColumnPropNameInTable="MOrdreColumn" type="xs:float" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ImpPLC" msprop:Generator_UserTableName="ImpPLC" msprop:Generator_RowDeletedName="ImpPLCRowDeleted" msprop:Generator_RowChangedName="ImpPLCRowChanged" msprop:Generator_RowClassName="ImpPLCRow" msprop:Generator_RowChangingName="ImpPLCRowChanging" msprop:Generator_RowEvArgName="ImpPLCRowChangeEvent" msprop:Generator_RowEvHandlerName="ImpPLCRowChangeEventHandler" msprop:Generator_TableClassName="ImpPLCDataTable" msprop:Generator_TableVarName="tableImpPLC" msprop:Generator_RowDeletingName="ImpPLCRowDeleting" msprop:Generator_TablePropName="ImpPLC">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PlLib" msdata:Caption="TRJournal" msprop:Generator_UserColumnName="PlLib" msprop:Generator_ColumnVarNameInTable="columnPlLib" msprop:Generator_ColumnPropNameInRow="PlLib" msprop:Generator_ColumnPropNameInTable="PlLibColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="35" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PlCpt" msdata:Caption="TRLigne" msprop:Generator_UserColumnName="PlCpt" msprop:Generator_ColumnVarNameInTable="columnPlCpt" msprop:Generator_ColumnPropNameInRow="PlCpt" msprop:Generator_ColumnPropNameInTable="PlCptColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ImpRappBancaire" msprop:Generator_UserTableName="ImpRappBancaire" msprop:Generator_RowDeletedName="ImpRappBancaireRowDeleted" msprop:Generator_RowChangedName="ImpRappBancaireRowChanged" msprop:Generator_RowClassName="ImpRappBancaireRow" msprop:Generator_RowChangingName="ImpRappBancaireRowChanging" msprop:Generator_RowEvArgName="ImpRappBancaireRowChangeEvent" msprop:Generator_RowEvHandlerName="ImpRappBancaireRowChangeEventHandler" msprop:Generator_TableClassName="ImpRappBancaireDataTable" msprop:Generator_TableVarName="tableImpRappBancaire" msprop:Generator_RowDeletingName="ImpRappBancaireRowDeleting" msprop:Generator_TablePropName="ImpRappBancaire">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MDossier" msprop:Generator_UserColumnName="MDossier" msprop:Generator_ColumnVarNameInTable="columnMDossier" msprop:Generator_ColumnPropNameInRow="MDossier" msprop:Generator_ColumnPropNameInTable="MDossierColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="MCpt" msprop:Generator_UserColumnName="MCpt" msprop:Generator_ColumnVarNameInTable="columnMCpt" msprop:Generator_ColumnPropNameInRow="MCpt" msprop:Generator_ColumnPropNameInTable="MCptColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CLib" msprop:Generator_UserColumnName="CLib" msprop:Generator_ColumnVarNameInTable="columnCLib" msprop:Generator_ColumnPropNameInRow="CLib" msprop:Generator_ColumnPropNameInTable="CLibColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="MDate" msprop:Generator_UserColumnName="MDate" msprop:Generator_ColumnVarNameInTable="columnMDate" msprop:Generator_ColumnPropNameInRow="MDate" msprop:Generator_ColumnPropNameInTable="MDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="MPiece" msprop:Generator_UserColumnName="MPiece" msprop:Generator_ColumnVarNameInTable="columnMPiece" msprop:Generator_ColumnPropNameInRow="MPiece" msprop:Generator_ColumnPropNameInTable="MPieceColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Libelle" msprop:Generator_UserColumnName="Libelle" msprop:Generator_ColumnVarNameInTable="columnLibelle" msprop:Generator_ColumnPropNameInRow="Libelle" msprop:Generator_ColumnPropNameInTable="LibelleColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="LLib" msprop:Generator_UserColumnName="LLib" msprop:Generator_ColumnVarNameInTable="columnLLib" msprop:Generator_ColumnPropNameInRow="LLib" msprop:Generator_ColumnPropNameInTable="LLibColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="MmtDeb" msprop:Generator_UserColumnName="MmtDeb" msprop:Generator_ColumnVarNameInTable="columnMmtDeb" msprop:Generator_ColumnPropNameInRow="MmtDeb" msprop:Generator_ColumnPropNameInTable="MmtDebColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MmtCre" msprop:Generator_UserColumnName="MmtCre" msprop:Generator_ColumnVarNameInTable="columnMmtCre" msprop:Generator_ColumnPropNameInRow="MmtCre" msprop:Generator_ColumnPropNameInTable="MmtCreColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MPointage" msprop:Generator_UserColumnName="MPointage" msprop:Generator_ColumnVarNameInTable="columnMPointage" msprop:Generator_ColumnPropNameInRow="MPointage" msprop:Generator_ColumnPropNameInTable="MPointageColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="MDatePointage" msprop:Generator_UserColumnName="MDatePointage" msprop:Generator_ColumnVarNameInTable="columnMDatePointage" msprop:Generator_ColumnPropNameInRow="MDatePointage" msprop:Generator_ColumnPropNameInTable="MDatePointageColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="MLib" msprop:Generator_UserColumnName="MLib" msprop:Generator_ColumnPropNameInRow="MLib" msprop:Generator_ColumnVarNameInTable="columnMLib" msprop:Generator_ColumnPropNameInTable="MLibColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ImpVisuPiece" msprop:Generator_UserTableName="ImpVisuPiece" msprop:Generator_RowDeletedName="ImpVisuPieceRowDeleted" msprop:Generator_RowChangedName="ImpVisuPieceRowChanged" msprop:Generator_RowClassName="ImpVisuPieceRow" msprop:Generator_RowChangingName="ImpVisuPieceRowChanging" msprop:Generator_RowEvArgName="ImpVisuPieceRowChangeEvent" msprop:Generator_RowEvHandlerName="ImpVisuPieceRowChangeEventHandler" msprop:Generator_TableClassName="ImpVisuPieceDataTable" msprop:Generator_TableVarName="tableImpVisuPiece" msprop:Generator_RowDeletingName="ImpVisuPieceRowDeleting" msprop:Generator_TablePropName="ImpVisuPiece">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MDossier" msprop:Generator_UserColumnName="MDossier" msprop:Generator_ColumnVarNameInTable="columnMDossier" msprop:Generator_ColumnPropNameInRow="MDossier" msprop:Generator_ColumnPropNameInTable="MDossierColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="MPiece" msprop:Generator_UserColumnName="MPiece" msprop:Generator_ColumnVarNameInTable="columnMPiece" msprop:Generator_ColumnPropNameInRow="MPiece" msprop:Generator_ColumnPropNameInTable="MPieceColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="MDate" msprop:Generator_UserColumnName="MDate" msprop:Generator_ColumnVarNameInTable="columnMDate" msprop:Generator_ColumnPropNameInRow="MDate" msprop:Generator_ColumnPropNameInTable="MDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="MLig" msprop:Generator_UserColumnName="MLig" msprop:Generator_ColumnVarNameInTable="columnMLig" msprop:Generator_ColumnPropNameInRow="MLig" msprop:Generator_ColumnPropNameInTable="MLigColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="LLib" msprop:Generator_UserColumnName="LLib" msprop:Generator_ColumnVarNameInTable="columnLLib" msprop:Generator_ColumnPropNameInRow="LLib" msprop:Generator_ColumnPropNameInTable="LLibColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Cpt" msprop:Generator_UserColumnName="Cpt" msprop:Generator_ColumnVarNameInTable="columnCpt" msprop:Generator_ColumnPropNameInRow="Cpt" msprop:Generator_ColumnPropNameInTable="CptColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Acti" msprop:Generator_UserColumnName="Acti" msprop:Generator_ColumnVarNameInTable="columnActi" msprop:Generator_ColumnPropNameInRow="Acti" msprop:Generator_ColumnPropNameInTable="ActiColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Debit" msprop:Generator_UserColumnName="Debit" msprop:Generator_ColumnVarNameInTable="columnDebit" msprop:Generator_ColumnPropNameInRow="Debit" msprop:Generator_ColumnPropNameInTable="DebitColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Credit" msprop:Generator_UserColumnName="Credit" msprop:Generator_ColumnVarNameInTable="columnCredit" msprop:Generator_ColumnPropNameInRow="Credit" msprop:Generator_ColumnPropNameInTable="CreditColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CptCtr" msprop:Generator_UserColumnName="CptCtr" msprop:Generator_ColumnVarNameInTable="columnCptCtr" msprop:Generator_ColumnPropNameInRow="CptCtr" msprop:Generator_ColumnPropNameInTable="CptCtrColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ActiCtr" msprop:Generator_UserColumnName="ActiCtr" msprop:Generator_ColumnVarNameInTable="columnActiCtr" msprop:Generator_ColumnPropNameInRow="ActiCtr" msprop:Generator_ColumnPropNameInTable="ActiCtrColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="MQte1" msprop:Generator_UserColumnName="MQte1" msprop:Generator_ColumnVarNameInTable="columnMQte1" msprop:Generator_ColumnPropNameInRow="MQte1" msprop:Generator_ColumnPropNameInTable="MQte1Column" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CU1" msprop:Generator_UserColumnName="CU1" msprop:Generator_ColumnVarNameInTable="columnCU1" msprop:Generator_ColumnPropNameInRow="CU1" msprop:Generator_ColumnPropNameInTable="CU1Column" type="xs:string" minOccurs="0" />
+              <xs:element name="MQte2" msprop:Generator_UserColumnName="MQte2" msprop:Generator_ColumnVarNameInTable="columnMQte2" msprop:Generator_ColumnPropNameInRow="MQte2" msprop:Generator_ColumnPropNameInTable="MQte2Column" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CU2" msprop:Generator_UserColumnName="CU2" msprop:Generator_ColumnVarNameInTable="columnCU2" msprop:Generator_ColumnPropNameInRow="CU2" msprop:Generator_ColumnPropNameInTable="CU2Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Signe" msprop:Generator_UserColumnName="Signe" msprop:Generator_ColumnVarNameInTable="columnSigne" msprop:Generator_ColumnPropNameInRow="Signe" msprop:Generator_ColumnPropNameInTable="SigneColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="LTVA" msprop:Generator_UserColumnName="LTVA" msprop:Generator_ColumnVarNameInTable="columnLTVA" msprop:Generator_ColumnPropNameInRow="LTVA" msprop:Generator_ColumnPropNameInTable="LTVAColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Libelle" msprop:Generator_UserColumnName="Libelle" msprop:Generator_ColumnVarNameInTable="columnLibelle" msprop:Generator_ColumnPropNameInRow="Libelle" msprop:Generator_ColumnPropNameInTable="LibelleColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ImpTVAVente" msprop:Generator_UserTableName="ImpTVAVente" msprop:Generator_RowDeletedName="ImpTVAVenteRowDeleted" msprop:Generator_RowChangedName="ImpTVAVenteRowChanged" msprop:Generator_RowClassName="ImpTVAVenteRow" msprop:Generator_RowChangingName="ImpTVAVenteRowChanging" msprop:Generator_RowEvArgName="ImpTVAVenteRowChangeEvent" msprop:Generator_RowEvHandlerName="ImpTVAVenteRowChangeEventHandler" msprop:Generator_TableClassName="ImpTVAVenteDataTable" msprop:Generator_TableVarName="tableImpTVAVente" msprop:Generator_RowDeletingName="ImpTVAVenteRowDeleting" msprop:Generator_TablePropName="ImpTVAVente">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MDossier" msprop:Generator_UserColumnName="MDossier" msprop:Generator_ColumnPropNameInRow="MDossier" msprop:Generator_ColumnVarNameInTable="columnMDossier" msprop:Generator_ColumnPropNameInTable="MDossierColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="MDate" msprop:Generator_UserColumnName="MDate" msprop:Generator_ColumnPropNameInRow="MDate" msprop:Generator_ColumnVarNameInTable="columnMDate" msprop:Generator_ColumnPropNameInTable="MDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="MPiece" msprop:Generator_UserColumnName="MPiece" msprop:Generator_ColumnPropNameInRow="MPiece" msprop:Generator_ColumnVarNameInTable="columnMPiece" msprop:Generator_ColumnPropNameInTable="MPieceColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Libelle" msprop:Generator_UserColumnName="Libelle" msprop:Generator_ColumnPropNameInRow="Libelle" msprop:Generator_ColumnVarNameInTable="columnLibelle" msprop:Generator_ColumnPropNameInTable="LibelleColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="HT" msprop:Generator_UserColumnName="HT" msprop:Generator_ColumnPropNameInRow="HT" msprop:Generator_ColumnVarNameInTable="columnHT" msprop:Generator_ColumnPropNameInTable="HTColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TVA" msprop:Generator_UserColumnName="TVA" msprop:Generator_ColumnPropNameInRow="TVA" msprop:Generator_ColumnVarNameInTable="columnTVA" msprop:Generator_ColumnPropNameInTable="TVAColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TTC" msprop:Generator_UserColumnName="TTC" msprop:Generator_ColumnPropNameInRow="TTC" msprop:Generator_ColumnVarNameInTable="columnTTC" msprop:Generator_ColumnPropNameInTable="TTCColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TRLib" msprop:Generator_UserColumnName="TRLib" msprop:Generator_ColumnPropNameInRow="TRLib" msprop:Generator_ColumnVarNameInTable="columnTRLib" msprop:Generator_ColumnPropNameInTable="TRLibColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TJournal" msprop:Generator_UserColumnName="TJournal" msprop:Generator_ColumnPropNameInRow="TJournal" msprop:Generator_ColumnVarNameInTable="columnTJournal" msprop:Generator_ColumnPropNameInTable="TJournalColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Journal" />
+      <xs:field xpath="mstns:JCodeJournal" />
+    </xs:unique>
+    <xs:unique name="TVARecap_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:TVARecap" />
+      <xs:field xpath="mstns:TRJournal" />
+      <xs:field xpath="mstns:TRLigne" />
+    </xs:unique>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="Journal_ImpJournal" msdata:parent="Journal" msdata:child="ImpJournal" msdata:parentkey="JCodeJournal" msdata:childkey="LJournal" msprop:Generator_UserRelationName="Journal_ImpJournal" msprop:Generator_RelationVarName="relationJournal_ImpJournal" msprop:Generator_UserChildTable="ImpJournal" msprop:Generator_UserParentTable="Journal" msprop:Generator_ParentPropName="JournalRow" msprop:Generator_ChildPropName="GetImpJournalRows" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

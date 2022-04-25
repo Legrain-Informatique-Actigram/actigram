@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:mstns="http://tempuri.org/DsPrepaCommande.xsd" xmlns="http://tempuri.org/DsPrepaCommande.xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://tempuri.org/DsPrepaCommande.xsd" id="DsPrepaCommande" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element msdata:IsDataSet="true" msdata:UseCurrentLocale="true" name="DsPrepaCommande">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="BL">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nDevis" type="xs:decimal" />
+              <xs:element minOccurs="0" name="Origine">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1073741823" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="nOrigine" type="xs:decimal" />
+              <xs:element minOccurs="0" name="nClient" type="xs:decimal" />
+              <xs:element minOccurs="0" name="Nom">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="nFacture" type="xs:decimal" />
+              <xs:element minOccurs="0" name="DateFacture" type="xs:dateTime" />
+              <xs:element name="Paye" type="xs:boolean" />
+              <xs:element minOccurs="0" name="Observation">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1073741823" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="Depot">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element default="0" name="nbCartons" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="BL_Detail">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" name="nDetailDevis" type="xs:decimal" />
+              <xs:element minOccurs="0" name="nDevis" type="xs:decimal" />
+              <xs:element minOccurs="0" name="nLigne" type="xs:int" />
+              <xs:element minOccurs="0" name="NLot">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="CodeProduit">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="Libelle">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1073741823" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="Unite1" type="xs:decimal" />
+              <xs:element minOccurs="0" name="LibUnite1">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="Unite2" type="xs:decimal" />
+              <xs:element minOccurs="0" name="LibUnite2">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="CodeBarre">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="PrixUHT" type="xs:decimal" />
+              <xs:element minOccurs="0" name="TTVA">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="PrixUTTC" type="xs:decimal" />
+              <xs:element minOccurs="0" name="Remise" type="xs:decimal" />
+              <xs:element minOccurs="0" name="NCompte">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="NActivite">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="MontantLigneHT" type="xs:decimal" />
+              <xs:element minOccurs="0" name="MontantLigneTVA" type="xs:decimal" />
+              <xs:element minOccurs="0" name="MontantLigneTTC" type="xs:decimal" />
+              <xs:element minOccurs="0" name="U1U2Independant" type="xs:boolean" />
+              <xs:element minOccurs="0" name="CoefU2" type="xs:decimal" />
+              <xs:element minOccurs="0" name="TypeFacturation">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="NbParution" type="xs:decimal" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="BC">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nDevis" type="xs:decimal" />
+              <xs:element minOccurs="0" name="nClient" type="xs:decimal" />
+              <xs:element minOccurs="0" name="Nom">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="nFacture" type="xs:decimal" />
+              <xs:element minOccurs="0" name="DateFacture" type="xs:dateTime" />
+              <xs:element name="Paye" type="xs:boolean" />
+              <xs:element minOccurs="0" name="Depot">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="Observation">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1073741823" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique msdata:PrimaryKey="true" name="Constraint1">
+      <xs:selector xpath=".//mstns:BL" />
+      <xs:field xpath="mstns:nDevis" />
+    </xs:unique>
+    <xs:unique msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true" name="BL_Detail_Constraint1">
+      <xs:selector xpath=".//mstns:BL_Detail" />
+      <xs:field xpath="mstns:nDetailDevis" />
+    </xs:unique>
+    <xs:unique msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true" name="BC_Constraint1">
+      <xs:selector xpath=".//mstns:BC" />
+      <xs:field xpath="mstns:nDevis" />
+    </xs:unique>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="BL_BL_Detail" msdata:parent="BL" msdata:child="BL_Detail" msdata:parentkey="nDevis" msdata:childkey="nDevis" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" />
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="BL_BL_Detail" msdata:parent="BL" msdata:child="BL_Detail" msdata:parentkey="nDevis" msdata:childkey="nDevis" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

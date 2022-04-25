@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Ce fichier est automatiquement généré par le Concepteur de schéma XML. Il contient des informations de disposition pour les composants dans l'aire du concepteur.-->
+<XSDDesignerLayout layoutVersion="2" viewPortLeft="95465" viewPortTop="0" zoom="100">
+    <BILAN_XmlElement left="16132" top="1000" width="5292" height="2963" selected="0" zOrder="1" index="0" expanded="1">
+        <DISTRIBUTEUR_XmlElement left="1317" top="4471" width="5292" height="2963" selected="0" zOrder="71" index="0" expanded="0" />
+        <ETABLISSEMENTS_XmlElement left="7243" top="4471" width="5292" height="2963" selected="0" zOrder="73" index="1" expanded="0" />
+        <ANNEE_BILAN_XmlAttribute left="13169" top="4471" width="5292" height="847" selected="0" zOrder="75" index="2" expanded="1">
+            <_x0028_ANNEE_BILAN_x0029__XmlSimpleType left="13169" top="5826" width="5292" height="2963" selected="0" zOrder="84" index="0" expanded="0" />
+        </ANNEE_BILAN_XmlAttribute>
+        <SOURCE_XmlAttribute left="19095" top="4471" width="5292" height="847" selected="0" zOrder="77" index="3" expanded="1">
+            <_x0028_SOURCE_x0029__XmlSimpleType left="19095" top="5826" width="5292" height="2963" selected="0" zOrder="87" index="0" expanded="0" />
+        </SOURCE_XmlAttribute>
+        <VERSION_XmlAttribute left="25021" top="4471" width="5292" height="847" selected="0" zOrder="80" index="4" expanded="1">
+            <_x0028_VERSION_x0029__XmlSimpleType left="25021" top="5826" width="5292" height="2963" selected="0" zOrder="90" index="0" expanded="0" />
+        </VERSION_XmlAttribute>
+        <DATE_CREATION_XmlAttribute left="30947" top="4471" width="5292" height="847" selected="0" zOrder="82" index="5" expanded="1">
+            <_x0028_DATE_CREATION_x0029__XmlSimpleType left="30947" top="5826" width="5292" height="2963" selected="0" zOrder="93" index="0" expanded="0" />
+        </DATE_CREATION_XmlAttribute>
+    </BILAN_XmlElement>
+    <ADRESSEType_XmlComplexType left="45762" top="1000" width="5292" height="2963" selected="0" zOrder="9" index="1" expanded="1">
+        <BATIMENT_XmlElement left="36873" top="4471" width="5292" height="847" selected="0" zOrder="10" index="0" expanded="1">
+            <_x0028_BATIMENT_x0029__XmlSimpleType left="36873" top="5826" width="5292" height="2963" selected="0" zOrder="12" index="0" expanded="1" />
+        </BATIMENT_XmlElement>
+        <NUMERO_ET_VOIE_XmlElement left="42799" top="4471" width="5292" height="847" selected="0" zOrder="15" index="1" expanded="1">
+            <_x0028_NUMERO_ET_VOIE_x0029__XmlSimpleType left="42799" top="5826" width="5292" height="2963" selected="0" zOrder="17" index="0" expanded="1" />
+        </NUMERO_ET_VOIE_XmlElement>
+        <LIEU_DIT_XmlElement left="48725" top="4471" width="5292" height="847" selected="0" zOrder="19" index="2" expanded="1">
+            <_x0028_LIEU_DIT_x0029__XmlSimpleType left="48725" top="5826" width="5292" height="2963" selected="0" zOrder="21" index="0" expanded="1" />
+        </LIEU_DIT_XmlElement>
+        <INSEE_XmlElement left="54651" top="4471" width="5292" height="847" selected="0" zOrder="23" index="3" expanded="1">
+            <_x0028_INSEE_x0029__XmlSimpleType left="54651" top="5826" width="5292" height="2963" selected="0" zOrder="25" index="0" expanded="1" />
+        </INSEE_XmlElement>
+    </ADRESSEType_XmlComplexType>
+    <VENTESType_XmlComplexType left="60577" top="1000" width="5292" height="2963" selected="0" zOrder="27" index="2" expanded="1">
+        <PRODUIT_XmlElement left="60577" top="4471" width="5292" height="2963" selected="0" zOrder="28" index="0" expanded="1">
+            <AMM_XmlElement left="60577" top="7942" width="5292" height="847" selected="0" zOrder="30" index="0" expanded="1">
+                <_x0028_AMM_x0029__XmlSimpleType left="60577" top="9297" width="5292" height="2963" selected="0" zOrder="32" index="0" expanded="1" />
+            </AMM_XmlElement>
+        </PRODUIT_XmlElement>
+    </VENTESType_XmlComplexType>
+    <ETABLISSEMENTSType_XmlComplexType left="72429" top="1000" width="5292" height="2963" selected="0" zOrder="34" index="3" expanded="1">
+        <ETABLISSEMENT_XmlElement left="72429" top="4471" width="5292" height="2963" selected="0" zOrder="35" index="0" expanded="1">
+            <NOM_XmlElement left="66503" top="7942" width="5292" height="847" selected="0" zOrder="37" index="0" expanded="1">
+                <_x0028_NOM_x0029__XmlSimpleType left="66503" top="9297" width="5292" height="2963" selected="0" zOrder="39" index="0" expanded="1" />
+            </NOM_XmlElement>
+            <ADRESSE_XmlElement left="72429" top="7942" width="5292" height="2963" selected="0" zOrder="41" index="2" expanded="0" />
+            <VENTES_XmlElement left="78355" top="7942" width="5292" height="2963" selected="0" zOrder="43" index="3" expanded="0" />
+        </ETABLISSEMENT_XmlElement>
+    </ETABLISSEMENTSType_XmlComplexType>
+    <DISTRIBUTEURType_XmlComplexType left="96133" top="1000" width="5292" height="2963" selected="0" zOrder="45" index="4" expanded="1">
+        <NOM_ORGANISME_XmlElement left="84281" top="4471" width="5292" height="847" selected="0" zOrder="46" index="0" expanded="1">
+            <_x0028_NOM_ORGANISME_x0029__XmlSimpleType left="84281" top="5826" width="5292" height="2963" selected="0" zOrder="48" index="0" expanded="1" />
+        </NOM_ORGANISME_XmlElement>
+        <NOM_SIEGE_XmlElement left="90207" top="4471" width="5292" height="847" selected="0" zOrder="50" index="1" expanded="1">
+            <_x0028_NOM_SIEGE_x0029__XmlSimpleType left="90207" top="5826" width="5292" height="2963" selected="0" zOrder="52" index="0" expanded="1" />
+        </NOM_SIEGE_XmlElement>
+        <ADRESSE_XmlElement left="96133" top="4471" width="5292" height="2963" selected="0" zOrder="54" index="2" expanded="0" />
+        <NUMERO_AGREMENT_XmlElement left="102059" top="4471" width="5292" height="847" selected="0" zOrder="56" index="3" expanded="1">
+            <_x0028_NUMERO_AGREMENT_x0029__XmlSimpleType left="102059" top="5826" width="5292" height="2963" selected="0" zOrder="58" index="0" expanded="1" />
+        </NUMERO_AGREMENT_XmlElement>
+        <CODE_NAF_XmlElement left="107985" top="4471" width="5292" height="847" selected="0" zOrder="60" index="5" expanded="1">
+            <_x0028_CODE_NAF_x0029__XmlSimpleType left="107985" top="5826" width="5292" height="2963" selected="0" zOrder="62" index="0" expanded="1" />
+        </CODE_NAF_XmlElement>
+    </DISTRIBUTEURType_XmlComplexType>
+    <SIRET_XmlElement left="113911" top="1000" width="5292" height="847" selected="0" zOrder="64" index="5" expanded="1">
+        <_x0028_SIRET_x0029__XmlSimpleType left="113911" top="2355" width="5292" height="2963" selected="0" zOrder="65" index="0" expanded="1" />
+    </SIRET_XmlElement>
+</XSDDesignerLayout>

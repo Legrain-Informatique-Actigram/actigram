@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ControleTracabilite", "ControleTracabilite\ControleTracabilite.vbproj", "{6F3A014F-FF2B-46B0-91F4-FC35DE2C5E91}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SetupControleTraca", "SetupControleTracabilite\SetupControleTraca.vdproj", "{91E5CB14-55D6-4611-BA7C-EEC937A32C46}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6F3A014F-FF2B-46B0-91F4-FC35DE2C5E91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F3A014F-FF2B-46B0-91F4-FC35DE2C5E91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F3A014F-FF2B-46B0-91F4-FC35DE2C5E91}.Debug|x86.ActiveCfg = Debug|x86
+		{6F3A014F-FF2B-46B0-91F4-FC35DE2C5E91}.Debug|x86.Build.0 = Debug|x86
+		{6F3A014F-FF2B-46B0-91F4-FC35DE2C5E91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F3A014F-FF2B-46B0-91F4-FC35DE2C5E91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F3A014F-FF2B-46B0-91F4-FC35DE2C5E91}.Release|x86.ActiveCfg = Release|x86
+		{6F3A014F-FF2B-46B0-91F4-FC35DE2C5E91}.Release|x86.Build.0 = Release|x86
+		{91E5CB14-55D6-4611-BA7C-EEC937A32C46}.Debug|Any CPU.ActiveCfg = Debug
+		{91E5CB14-55D6-4611-BA7C-EEC937A32C46}.Debug|Any CPU.Build.0 = Debug
+		{91E5CB14-55D6-4611-BA7C-EEC937A32C46}.Debug|x86.ActiveCfg = Debug
+		{91E5CB14-55D6-4611-BA7C-EEC937A32C46}.Debug|x86.Build.0 = Debug
+		{91E5CB14-55D6-4611-BA7C-EEC937A32C46}.Release|Any CPU.ActiveCfg = Release
+		{91E5CB14-55D6-4611-BA7C-EEC937A32C46}.Release|Any CPU.Build.0 = Release
+		{91E5CB14-55D6-4611-BA7C-EEC937A32C46}.Release|x86.ActiveCfg = Release
+		{91E5CB14-55D6-4611-BA7C-EEC937A32C46}.Release|x86.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

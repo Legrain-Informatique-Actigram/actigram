@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org/ActigramGRC/Service1" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" targetNamespace="http://tempuri.org/ActigramGRC/Service1" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/ActigramGRC/Service1">
+      <s:import namespace="http://www.w3.org/2001/XMLSchema" />
+      <s:element name="GetAdherent">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Nom" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="prenom" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strErreur" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAdherentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAdherentResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="strErreur" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpDateNbAnnonceAdherent">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nRef" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="nbAnnonce" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="strErreur" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpDateNbAnnonceAdherentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpDateNbAnnonceAdherentResult" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="strErreur" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Utilisateur">
+        <s:complexType />
+      </s:element>
+      <s:element name="UtilisateurResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UtilisateurResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateSchemaDonnees">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strSchema" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Utilisateur" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MotPasse" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateSchemaDonneesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CreateSchemaDonneesResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSchemaDonnees">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Utilisateur" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MotPasse" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="nVersion" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSchemaDonneesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSchemaDonneesResult" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="nVersion" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RecupBase">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="nbLastConnection" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="Utilisateur" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MotPasse" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RecupBaseResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RecupBaseResult" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="nbLastConnection" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SynchroPartiel">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strDonneesPartiel" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Utilisateur" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MotPasse" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SynchroPartielResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SynchroPartielResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RecupModif">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="nbLastConnection" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="Utilisateur" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MotPasse" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="XmlSchema" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RecupModifResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RecupModifResult" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="nbLastConnection" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="XmlSchema" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SynchroDonnees">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Utilisateur" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MotPasse" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strDonnees" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strLstErreur" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SynchroDonneesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SynchroDonneesResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strLstErreur" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreerDeclancheurBase">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Utilisateur" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MotPasse" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreerDeclancheurBaseResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CreerDeclancheurBaseResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VerifNouvelleVersionFichier">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Utilisateur" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MotPasse" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nVersion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NomFichier" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VerifNouvelleVersionFichierResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VerifNouvelleVersionFichierResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpLoadNouvelleVersionFichier">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Utilisateur" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MotPasse" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nVersion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NomFichier" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Fichier" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpLoadNouvelleVersionFichierResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpLoadNouvelleVersionFichierResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetAdherentSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAdherent" />
+  </wsdl:message>
+  <wsdl:message name="GetAdherentSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAdherentResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpDateNbAnnonceAdherentSoapIn">
+    <wsdl:part name="parameters" element="tns:UpDateNbAnnonceAdherent" />
+  </wsdl:message>
+  <wsdl:message name="UpDateNbAnnonceAdherentSoapOut">
+    <wsdl:part name="parameters" element="tns:UpDateNbAnnonceAdherentResponse" />
+  </wsdl:message>
+  <wsdl:message name="UtilisateurSoapIn">
+    <wsdl:part name="parameters" element="tns:Utilisateur" />
+  </wsdl:message>
+  <wsdl:message name="UtilisateurSoapOut">
+    <wsdl:part name="parameters" element="tns:UtilisateurResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateSchemaDonneesSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateSchemaDonnees" />
+  </wsdl:message>
+  <wsdl:message name="CreateSchemaDonneesSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateSchemaDonneesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSchemaDonneesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSchemaDonnees" />
+  </wsdl:message>
+  <wsdl:message name="GetSchemaDonneesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSchemaDonneesResponse" />
+  </wsdl:message>
+  <wsdl:message name="RecupBaseSoapIn">
+    <wsdl:part name="parameters" element="tns:RecupBase" />
+  </wsdl:message>
+  <wsdl:message name="RecupBaseSoapOut">
+    <wsdl:part name="parameters" element="tns:RecupBaseResponse" />
+  </wsdl:message>
+  <wsdl:message name="SynchroPartielSoapIn">
+    <wsdl:part name="parameters" element="tns:SynchroPartiel" />
+  </wsdl:message>
+  <wsdl:message name="SynchroPartielSoapOut">
+    <wsdl:part name="parameters" element="tns:SynchroPartielResponse" />
+  </wsdl:message>
+  <wsdl:message name="RecupModifSoapIn">
+    <wsdl:part name="parameters" element="tns:RecupModif" />
+  </wsdl:message>
+  <wsdl:message name="RecupModifSoapOut">
+    <wsdl:part name="parameters" element="tns:RecupModifResponse" />
+  </wsdl:message>
+  <wsdl:message name="SynchroDonneesSoapIn">
+    <wsdl:part name="parameters" element="tns:SynchroDonnees" />
+  </wsdl:message>
+  <wsdl:message name="SynchroDonneesSoapOut">
+    <wsdl:part name="parameters" element="tns:SynchroDonneesResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreerDeclancheurBaseSoapIn">
+    <wsdl:part name="parameters" element="tns:CreerDeclancheurBase" />
+  </wsdl:message>
+  <wsdl:message name="CreerDeclancheurBaseSoapOut">
+    <wsdl:part name="parameters" element="tns:CreerDeclancheurBaseResponse" />
+  </wsdl:message>
+  <wsdl:message name="VerifNouvelleVersionFichierSoapIn">
+    <wsdl:part name="parameters" element="tns:VerifNouvelleVersionFichier" />
+  </wsdl:message>
+  <wsdl:message name="VerifNouvelleVersionFichierSoapOut">
+    <wsdl:part name="parameters" element="tns:VerifNouvelleVersionFichierResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpLoadNouvelleVersionFichierSoapIn">
+    <wsdl:part name="parameters" element="tns:UpLoadNouvelleVersionFichier" />
+  </wsdl:message>
+  <wsdl:message name="UpLoadNouvelleVersionFichierSoapOut">
+    <wsdl:part name="parameters" element="tns:UpLoadNouvelleVersionFichierResponse" />
+  </wsdl:message>
+  <wsdl:portType name="Service1Soap">
+    <wsdl:operation name="GetAdherent">
+      <wsdl:input message="tns:GetAdherentSoapIn" />
+      <wsdl:output message="tns:GetAdherentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpDateNbAnnonceAdherent">
+      <wsdl:input message="tns:UpDateNbAnnonceAdherentSoapIn" />
+      <wsdl:output message="tns:UpDateNbAnnonceAdherentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Utilisateur">
+      <wsdl:input message="tns:UtilisateurSoapIn" />
+      <wsdl:output message="tns:UtilisateurSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateSchemaDonnees">
+      <wsdl:input message="tns:CreateSchemaDonneesSoapIn" />
+      <wsdl:output message="tns:CreateSchemaDonneesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSchemaDonnees">
+      <wsdl:input message="tns:GetSchemaDonneesSoapIn" />
+      <wsdl:output message="tns:GetSchemaDonneesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RecupBase">
+      <wsdl:input message="tns:RecupBaseSoapIn" />
+      <wsdl:output message="tns:RecupBaseSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SynchroPartiel">
+      <wsdl:input message="tns:SynchroPartielSoapIn" />
+      <wsdl:output message="tns:SynchroPartielSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RecupModif">
+      <wsdl:input message="tns:RecupModifSoapIn" />
+      <wsdl:output message="tns:RecupModifSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SynchroDonnees">
+      <wsdl:input message="tns:SynchroDonneesSoapIn" />
+      <wsdl:output message="tns:SynchroDonneesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreerDeclancheurBase">
+      <wsdl:input message="tns:CreerDeclancheurBaseSoapIn" />
+      <wsdl:output message="tns:CreerDeclancheurBaseSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VerifNouvelleVersionFichier">
+      <wsdl:input message="tns:VerifNouvelleVersionFichierSoapIn" />
+      <wsdl:output message="tns:VerifNouvelleVersionFichierSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpLoadNouvelleVersionFichier">
+      <wsdl:input message="tns:UpLoadNouvelleVersionFichierSoapIn" />
+      <wsdl:output message="tns:UpLoadNouvelleVersionFichierSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="Service1Soap" type="tns:Service1Soap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document" />
+    <wsdl:operation name="GetAdherent">
+      <soap:operation soapAction="http://tempuri.org/ActigramGRC/Service1/GetAdherent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpDateNbAnnonceAdherent">
+      <soap:operation soapAction="http://tempuri.org/ActigramGRC/Service1/UpDateNbAnnonceAdherent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Utilisateur">
+      <soap:operation soapAction="http://tempuri.org/ActigramGRC/Service1/Utilisateur" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateSchemaDonnees">
+      <soap:operation soapAction="http://tempuri.org/ActigramGRC/Service1/CreateSchemaDonnees" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSchemaDonnees">
+      <soap:operation soapAction="http://tempuri.org/ActigramGRC/Service1/GetSchemaDonnees" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RecupBase">
+      <soap:operation soapAction="http://tempuri.org/ActigramGRC/Service1/RecupBase" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SynchroPartiel">
+      <soap:operation soapAction="http://tempuri.org/ActigramGRC/Service1/SynchroPartiel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RecupModif">
+      <soap:operation soapAction="http://tempuri.org/ActigramGRC/Service1/RecupModif" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SynchroDonnees">
+      <soap:operation soapAction="http://tempuri.org/ActigramGRC/Service1/SynchroDonnees" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreerDeclancheurBase">
+      <soap:operation soapAction="http://tempuri.org/ActigramGRC/Service1/CreerDeclancheurBase" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerifNouvelleVersionFichier">
+      <soap:operation soapAction="http://tempuri.org/ActigramGRC/Service1/VerifNouvelleVersionFichier" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpLoadNouvelleVersionFichier">
+      <soap:operation soapAction="http://tempuri.org/ActigramGRC/Service1/UpLoadNouvelleVersionFichier" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <documentation xmlns="http://schemas.xmlsoap.org/wsdl/" />
+    <wsdl:port name="Service1Soap" binding="tns:Service1Soap">
+      <soap:address location="http://dell/actigramgrc/service1.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

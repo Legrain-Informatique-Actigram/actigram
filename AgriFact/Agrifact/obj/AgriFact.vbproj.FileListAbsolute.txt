@@ -1,0 +1,765 @@
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\Debug\ResolveAssemblyReference.cache
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\Debug\Interop.Dymo.dll
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\Debug\AgriFact.vbproj.ResolveComReference.cache
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\Debug\AgriFact.DefinitionDonnees.xml
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\Debug\AgriFact.dep_france_dom.mid
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\Debug\AgriFact.dep_france_dom.mif
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\Debug\AgriFact.AboutBox.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\Debug\AgriFact.FrAjusterCommandeFourn.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\Debug\AgriFact.FrCreerCommandeFourn.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\Debug\AgriFact.FrImportPhytoData.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\Debug\AgriFact.FrOptionsGeneAvoirs.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\Debug\AgriFact.FrOptionsImprBilan.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\Debug\AgriFact.FrAnnulExportCompta.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\Debug\AgriFact.FrActivite.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\Debug\AgriFact.FrApplication.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\Debug\AgriFact.FrUpdates.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\Debug\AgriFact.Resources.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\Debug\AgriFact.FrAssistantDemarrage.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\Debug\AgriFact.FrReglementAvances.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\Debug\AgriFact.FrAssistantTarif.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\Debug\AgriFact.FrBanque.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\Debug\AgriFact.FrBonCommande.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\Debug\AgriFact.FrCarteFrance.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\Debug\AgriFact.FrSaisieTarifs.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\Debug\AgriFact.LogoApplication.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\Debug\AgriFact.Securite.Activation.FrActivation.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\Debug\AgriFact.FrChoixRestauration.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\Debug\AgriFact.FrCompte.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\Debug\AgriFact.FrConnexion.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\Debug\AgriFact.FrEntreprise.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\Debug\AgriFact.FrEtatStock.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\Debug\AgriFact.FrEvenement.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\Debug\AgriFact.FrExportCompta.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\Debug\AgriFact.FrGestionParametres.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\Debug\AgriFact.FrInfosGenerales.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\Debug\AgriFact.FrInventaire.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\Debug\AgriFact.FrInventaireOptions.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\Debug\AgriFact.FrLettreType.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\Debug\AgriFact.FrListeBanque.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\Debug\AgriFact.FrListeReglement.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\Debug\AgriFact.FrListeRemise.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\Debug\AgriFact.FrMouvement.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\Debug\AgriFact.FrParametreCompta.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\Debug\AgriFact.FrPersonne.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\Debug\AgriFact.FrProduit.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\Debug\AgriFact.FrReglement.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\Debug\AgriFact.FrRemise.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\Debug\AgriFact.FrParamNV.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\Debug\AgriFact.FrParamVNC.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\Debug\AgriFact.FrSelectionMultiple.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\Debug\AgriFact.FrStatistiques.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\Debug\AgriFact.FrTableauBord.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\Debug\AgriFact.GestionControles.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\Debug\AgriFact.Securite.Activation.SaisieCle.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\Debug\AgriFact.vbproj.GenerateResource.Cache
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\Debug\AgriFact.exe
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\Debug\AgriFact.pdb
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\Debug\AgriFact.FrAgenda.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\Debug\AgriFact.FrTrames.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\Debug\AgriFact.FrListeClient.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\Debug\AgriFact.FrProgressBar.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\Debug\AgriFact.EcranCrystal.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\Debug\AgriFact.FrListePersonne.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\Debug\AgriFact.FrModifTxt.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\Debug\AgriFact.FrListeFamilles.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\Debug\AgriFact.FrListeProduits.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\Debug\AgriFact.FrListeTarifs.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\Debug\AgriFact.FrListePieces2.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\Debug\AgriFact.Stocks.FrListeMouvements.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\Debug\AgriFact.FrSelection.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\Debug\AgriFact.IconesTypeEv.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\Debug\AgriFact.FrListeParam.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\Debug\AgriFact.FrLot.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\Debug\AgriFact.FrListeLots.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\Debug\AgriFact.FrModifierCodeProduit.resources
+\\Dev2\agrifact2\Agrifact\bin\AgriFact.exe.config
+\\Dev2\agrifact2\Agrifact\obj\Debug\AgriFact.exe
+\\Dev2\agrifact2\Agrifact\obj\Debug\AgriFact.pdb
+\\Dev2\agrifact2\Agrifact\obj\Debug\ResolveAssemblyReference.cache
+\\Dev2\agrifact2\Agrifact\obj\Debug\AgriFact.vbproj.ResolveComReference.cache
+\\Dev2\agrifact2\Agrifact\obj\Debug\AgriFact.RptBonLivraisonVenteNonChiffre.rpt
+\\Dev2\agrifact2\Agrifact\obj\Debug\AgriFact.DefinitionDonnees.xml
+\\Dev2\agrifact2\Agrifact\obj\Debug\AgriFact.dep_france_dom.mid
+\\Dev2\agrifact2\Agrifact\obj\Debug\AgriFact.dep_france_dom.mif
+\\Dev2\agrifact2\Agrifact\obj\Debug\AgriFact.AboutBox.resources
+\\Dev2\agrifact2\Agrifact\obj\Debug\AgriFact.FrAssistantDemarrage.resources
+\\Dev2\agrifact2\Agrifact\obj\Debug\AgriFact.EcranCrystal.resources
+\\Dev2\agrifact2\Agrifact\obj\Debug\AgriFact.FrModifTxt.resources
+\\Dev2\agrifact2\Agrifact\obj\Debug\AgriFact.FrProgressBar.resources
+\\Dev2\agrifact2\Agrifact\obj\Debug\AgriFact.FrSelection.resources
+\\Dev2\agrifact2\Agrifact\obj\Debug\AgriFact.FrListePersonne.resources
+\\Dev2\agrifact2\Agrifact\obj\Debug\AgriFact.FrListeClient.resources
+\\Dev2\agrifact2\Agrifact\obj\Debug\AgriFact.FrAjusterCommandeFourn.resources
+\\Dev2\agrifact2\Agrifact\obj\Debug\AgriFact.FrCreerCommandeFourn.resources
+\\Dev2\agrifact2\Agrifact\obj\Debug\AgriFact.FrImportPhytoData.resources
+\\Dev2\agrifact2\Agrifact\obj\Debug\AgriFact.FrOptionsGeneAvoirs.resources
+\\Dev2\agrifact2\Agrifact\obj\Debug\AgriFact.FrOptionsImprBilan.resources
+\\Dev2\agrifact2\Agrifact\obj\Debug\AgriFact.FrAnnulExportCompta.resources
+\\Dev2\agrifact2\Agrifact\obj\Debug\AgriFact.IconesTypeEv.resources
+\\Dev2\agrifact2\Agrifact\obj\Debug\AgriFact.FrEtatStock.resources
+\\Dev2\agrifact2\Agrifact\obj\Debug\AgriFact.FrInventaire.resources
+\\Dev2\agrifact2\Agrifact\obj\Debug\AgriFact.FrLot.resources
+\\Dev2\agrifact2\Agrifact\obj\Debug\AgriFact.FrListeLots.resources
+\\Dev2\agrifact2\Agrifact\obj\Debug\AgriFact.Stocks.FrListeMouvements.resources
+\\Dev2\agrifact2\Agrifact\obj\Debug\AgriFact.FrAssistantTarif.resources
+\\Dev2\agrifact2\Agrifact\obj\Debug\AgriFact.FrListeTarifs.resources
+\\Dev2\agrifact2\Agrifact\obj\Debug\AgriFact.FrListePieces2.resources
+\\Dev2\agrifact2\Agrifact\obj\Debug\AgriFact.FrListeReglement.resources
+\\Dev2\agrifact2\Agrifact\obj\Debug\AgriFact.FrListeBanque.resources
+\\Dev2\agrifact2\Agrifact\obj\Debug\AgriFact.FrModifierCodeProduit.resources
+\\Dev2\agrifact2\Agrifact\obj\Debug\AgriFact.FrListeFamilles.resources
+\\Dev2\agrifact2\Agrifact\obj\Debug\AgriFact.FrListeProduits.resources
+\\Dev2\agrifact2\Agrifact\obj\Debug\AgriFact.FrActivite.resources
+\\Dev2\agrifact2\Agrifact\obj\Debug\AgriFact.FrApplication.resources
+\\Dev2\agrifact2\Agrifact\obj\Debug\AgriFact.FrUpdates.resources
+\\Dev2\agrifact2\Agrifact\obj\Debug\AgriFact.Resources.resources
+\\Dev2\agrifact2\Agrifact\obj\Debug\AgriFact.FrListeParam.resources
+\\Dev2\agrifact2\Agrifact\obj\Debug\AgriFact.FrReglementAvances.resources
+\\Dev2\agrifact2\Agrifact\obj\Debug\AgriFact.FrBanque.resources
+\\Dev2\agrifact2\Agrifact\obj\Debug\AgriFact.FrBonCommande.resources
+\\Dev2\agrifact2\Agrifact\obj\Debug\AgriFact.FrCarteFrance.resources
+\\Dev2\agrifact2\Agrifact\obj\Debug\AgriFact.FrSaisieTarifs.resources
+\\Dev2\agrifact2\Agrifact\obj\Debug\AgriFact.LogoApplication.resources
+\\Dev2\agrifact2\Agrifact\obj\Debug\AgriFact.Securite.Activation.FrActivation.resources
+\\Dev2\agrifact2\Agrifact\obj\Debug\AgriFact.FrChoixRestauration.resources
+\\Dev2\agrifact2\Agrifact\obj\Debug\AgriFact.FrCompte.resources
+\\Dev2\agrifact2\Agrifact\obj\Debug\AgriFact.FrConnexion.resources
+\\Dev2\agrifact2\Agrifact\obj\Debug\AgriFact.FrEntreprise.resources
+\\Dev2\agrifact2\Agrifact\obj\Debug\AgriFact.FrEvenement.resources
+\\Dev2\agrifact2\Agrifact\obj\Debug\AgriFact.FrExportCompta.resources
+\\Dev2\agrifact2\Agrifact\obj\Debug\AgriFact.FrGestionParametres.resources
+\\Dev2\agrifact2\Agrifact\obj\Debug\AgriFact.FrInfosGenerales.resources
+\\Dev2\agrifact2\Agrifact\obj\Debug\AgriFact.FrInventaireOptions.resources
+\\Dev2\agrifact2\Agrifact\obj\Debug\AgriFact.FrLettreType.resources
+\\Dev2\agrifact2\Agrifact\obj\Debug\AgriFact.FrAgenda.resources
+\\Dev2\agrifact2\Agrifact\obj\Debug\AgriFact.FrListeRemise.resources
+\\Dev2\agrifact2\Agrifact\obj\Debug\AgriFact.FrTrames.resources
+\\Dev2\agrifact2\Agrifact\obj\Debug\AgriFact.FrMouvement.resources
+\\Dev2\agrifact2\Agrifact\obj\Debug\AgriFact.FrParametreCompta.resources
+\\Dev2\agrifact2\Agrifact\obj\Debug\AgriFact.FrPersonne.resources
+\\Dev2\agrifact2\Agrifact\obj\Debug\AgriFact.FrProduit.resources
+\\Dev2\agrifact2\Agrifact\obj\Debug\AgriFact.FrReglement.resources
+\\Dev2\agrifact2\Agrifact\obj\Debug\AgriFact.FrRemise.resources
+\\Dev2\agrifact2\Agrifact\obj\Debug\AgriFact.FrParamNV.resources
+\\Dev2\agrifact2\Agrifact\obj\Debug\AgriFact.FrParamVNC.resources
+\\Dev2\agrifact2\Agrifact\obj\Debug\AgriFact.FrSelectionMultiple.resources
+\\Dev2\agrifact2\Agrifact\obj\Debug\AgriFact.FrStatistiques.resources
+\\Dev2\agrifact2\Agrifact\obj\Debug\AgriFact.FrTableauBord.resources
+\\Dev2\agrifact2\Agrifact\obj\Debug\AgriFact.GestionControles.resources
+\\Dev2\agrifact2\Agrifact\obj\Debug\AgriFact.Securite.Activation.SaisieCle.resources
+\\Dev2\agrifact2\Agrifact\obj\Debug\AgriFact.vbproj.GenerateResource.Cache
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\Debug\AgriFact.FrFusionnerProduits.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\Debug\AgriFact.FrFusionnerTiers.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\Debug\AgriFact.FrCubes.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\Debug\AgriFact.FrAffecterFacturesAReglement.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Cubes\Cubes.xml
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Adresse.LWL
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Export.mdb
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Produit.LWL
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Cubes\Presentations\REGLEMENT_DETAIL_Details_Reglements_Par_Payeur_Par_Facture.cubes
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Cubes\Presentations\REGLEMENT_Liste_Reglements_Par_Client_Par_Annee.cubes
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Cubes\Presentations\REGLEMENT_Liste_Reglements_Par_Date.cubes
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Cubes\Presentations\REGLEMENT_Liste_Reglements_Par_Mode_Reglement.cubes
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Cubes\Presentations\REGLEMENT_Total_Reglements_Par_Mode_Reglement_Par_Mois.cubes
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Cubes\Presentations\VBONCOMMANDE_DETAIL_Recapitulatif_BC_Clients.cubes
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Cubes\Presentations\VFACTURE_CA_Par_Client_Par_Annee.cubes
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Cubes\Presentations\VFACTURE_CA_Par_Client_Par_Mois.cubes
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Cubes\Presentations\VFACTURE_CA_Par_Commercial_Par_Annee.cubes
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Cubes\Presentations\VFACTURE_CA_Par_Commercial_Par_Mois.cubes
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Cubes\Presentations\VFACTURE_Commissions_Par_Facture_Par_Commercial_Par_Annee.cubes
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Cubes\Presentations\VFACTURE_Commissions_Par_Facture_Par_Commercial_Par_Mois.cubes
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Cubes\Presentations\VFACTURE_DETAIL_Comparatif_CA_Par_Famille_Par_Mois.cubes
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Cubes\Presentations\VFACTURE_DETAIL_Comparatif_CA_Par_Famille_Par_Annee.cubes
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Cubes\Presentations\VFACTURE_DETAIL_Comparatif_CA_Par_Produit_Par_Annee.cubes
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Cubes\Presentations\VFACTURE_DETAIL_Comparatif_CA_Par_Produit_Par_Mois.cubes
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Cubes\Presentations\VFACTURE_DETAIL_Quantites_Vendues_Par_Commercial_Par_Produit_Par_Annee.cubes
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Cubes\Presentations\VFACTURE_DETAIL_Quantites_Vendues_Par_Commercial_Par_Produit_Par_Mois.cubes
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Cubes\Presentations\VFACTURE_IMP_Liste_Factures_Impayees.cubes
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Cubes\Presentations\VFACTURE_IMP_Liste_Factures_Impayees_Par_Annee.cubes
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Cubes\Presentations\VFACTURE_Liste_Factures_Par_Client_Par_Annee.cubes
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Cubes\Presentations\REMISE_DETAIL_Liste_Remises_Par_Num_Remise.cubes
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Cubes\Presentations\VBONLIVRAISON_DETAIL_Recapitulatif_BL_Clients.cubes
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Aide\Guide AgriFact V2.0.pdf
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStandard\LstPersonne.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStandard\RptABonReception.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStandard\RptABonReceptionMarge.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStandard\RptCAClientMois.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStandard\RptCampagneEt.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStandard\RptCaParJour3.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStandard\RptCaParJour4.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStandard\RptCaParJour5.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStandard\RptCaParJourFamille3.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStandard\RptCaParJourFamille4.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStandard\RptCaParJourFamille5.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStandard\RptCaParMois.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStandard\RptCaParMois3.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStandard\RptCaParMois4.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStandard\RptCaParMois5.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStandard\RptCaParMoisFamille3.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStandard\RptCaParMoisFamille4.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStandard\RptCaParMoisFamille5.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStandard\RptCaParSemaine.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStandard\RptCaParSemaine2.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStandard\RptCaParSemaine3.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStandard\RptCaParSemaine4.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStandard\RptCaParSemaine5.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStandard\RptCaParSemaineFamille3.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStandard\RptCaParSemaineFamille4.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStandard\RptCaParSemaineFamille5.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStandard\RptDevisVenteHT.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStandard\RptDevisVenteTTC.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStandard\RptEtatStock.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStandard\RptEtatStock2.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStandard\RptFactureAchatHT.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStandard\RptFactureAchatTTC.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStandard\RptFactureVenteHT.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStandard\RptFactureVenteTTC.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStandard\RptFactureVenteTTCGroupe.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStandard\RptFicheContactEv.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStandard\RptFicheTraca.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStandard\RptInventaire.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStandard\RptLettreRelance.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStandard\RptListeABonReception.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStandard\RptListeAFacture.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStandard\RptListeAReglement.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStandard\RptListeClient.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStandard\RptListeContact.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStandard\RptListeProduit.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStandard\RptListeReglement.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStandard\RptListeRemises.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStandard\RptListeVBonCommande.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStandard\RptListeVBonLivraison.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStandard\RptListeVDevis.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStandard\RptListeVFacture.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStandard\RptLstEvOrganisme.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStandard\RptPlanning.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStandard\RptRemise.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStandard\RptTraite.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStatsClients\Evolution du chiffre d'affaires par année.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStatsClients\Evolution du chiffre d'affaires par mois et par année.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStatsClients\Evolution du chiffre d'affaires par mois.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStatsClients\Panier moyen par type client.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStatsClients\Recap Bon de Commande par Fournisseur.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStatsClients\Récap TVA Achats.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStatsClients\Récap TVA Ventes.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStatsClients\Répartition des clients par type client.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStatsClients\Répartition des clients par type contact.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStatsClients\Répartition du chiffre d'affaires par client.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStatsClients\Répartition du chiffre d'affaires par type client.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStatsClients\Répartition du chiffre d'affaires par type contact.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStatsClients\Répartition géographique des clients.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStatsProduits\Evolution du chiffre d'affaires par mois et par famille.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStatsProduits\Evolution du chiffre d'affaires par mois et par produit.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStatsProduits\Mercuriale.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStatsProduits\Quantité de produits bio fournis par client.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStatsProduits\Quantité vendue par produit.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStatsProduits\Répartition de l'origine des produits fournis en valeur.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStatsProduits\Répartition de l'origine des produits par client.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStatsProduits\Répartition des familles de produits par Client.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStatsProduits\Répartition des produits selon le pourcentage de chiffre d'affaires.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStatsProduits\Répartition du chiffre d'affaires par famille.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStatsProduits\Répartition du chiffre d'affaires par Fournisseur.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStatsProduits\Répartition du chiffre d'affaires par produit.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStatsProduits\Répartition géographique du chiffre d'affaires Fournisseur.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStats\Etiquettes Mailing.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStats\Liste Clients.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStats\Liste Complète Tiers.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStandard\RptListeVFactureDetailleeParClient.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStandard\RptListeVFactureParClientParCom.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStandard\RptBilanVenteApproFact.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStandard\RptDetailStock.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStandard\RptListeMouvement.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStandard\RptListeVFactureParClient.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStandard\RptRecapCommandeApprofact.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStats\Etiquettes Mailing Avery 635x381.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStats\Lettre Mailing.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStats\Liste Clients par département.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStatsClients\Etat Commissionnement.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStatsClients\Liste facture par client.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStatsClients\Quantité vendue par client.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStatsClients\Récap factures impayées par activité.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStatsClients\Récap factures impayées.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStatsClients\Répartition du chiffre d'affaires par commercial.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStatsClients\Répartition du chiffre d'affaires par type client (export).rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStatsProduits\Bouteilles vendues par commercial.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStatsProduits\Quantité de produits offerts.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStatsProduits\Quantité vendue par commercial.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStatsProduits\Quantité vendue par produit et par client.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStatsProduits\Répartition du chiffre d'affaires par produit et par type client.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStatsProduits\Répartition du chiffre d'affaires par produit, commercial et type client.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStandard\RptBonCommandeVenteHT.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStandard\RptBonCommandeVenteTTC.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStandard\RptBonLivraisonVenteHT.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStandard\RptBonLivraisonVenteTTC.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStandard\RptBonLivraisonVenteNonChiffre.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\AgriFact.exe.config
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\AgriFact.exe
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\AgriFact.pdb
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Actigram.Balance.Mira.dll
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Actigram.dll
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Ascend.dll
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Ascend.Resources.dll
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Ascend.Windows.Forms.dll
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\ClassLibraryCubes.dll
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Com.dll
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\ExportCompta.dll
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\GNWizardFrameWork.dll
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\GRC.dll
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\ICSharpCode.SharpZipLib.dll
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\RequetesPerso.dll
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Windark.Windows.Controls.dll
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Interop.Dymo.dll
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\sg_cubenet.dll
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\GRC.pdb
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Ascend.Windows.Forms.xml
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Ascend.Resources.xml
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Actigram.Balance.Mira.pdb
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\ClassLibraryCubes.pdb
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\ClassLibraryCubes.xml
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\RequetesPerso.pdb
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\RequetesPerso.xml
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Actigram.pdb
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Com.pdb
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Ascend.xml
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Windark.Windows.Controls.pdb
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\ExportCompta.pdb
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\GNWizardFrameWork.xml
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\Interop.Dymo.dll
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.vbproj.ResolveComReference.cache
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.DefinitionDonnees.xml
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.dep_france_dom.mid
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.dep_france_dom.mif
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.AboutBox.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrAssistantDemarrage.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.EcranCrystal.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrModifTxt.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrProgressBar.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrSelection.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrFusionnerTiers.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrListePersonne.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrListeClient.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrCubes.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrAjusterCommandeFourn.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrCreerCommandeFourn.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrImportPhytoData.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrOptionsGeneAvoirs.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrOptionsImprBilan.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrAnnulExportCompta.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.IconesTypeEv.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrEtatStock.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrInventaire.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrLot.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrListeLots.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.Stocks.FrListeMouvements.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrAssistantTarif.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrListeTarifs.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrAffecterFacturesAReglement.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrListePieces2.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrListeReglement.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrListeBanque.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrFusionnerProduits.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrModifierCodeProduit.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrListeFamilles.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrListeProduits.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrActivite.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrApplication.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrUpdates.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.Resources.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrListeParam.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrReglementAvances.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrBanque.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrBonCommande.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrCarteFrance.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrSaisieTarifs.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.LogoApplication.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.Securite.Activation.FrActivation.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrChoixRestauration.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrCompte.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrConnexion.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrEntreprise.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrEvenement.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrExportCompta.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrGestionParametres.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrInfosGenerales.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrInventaireOptions.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrLettreType.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrAgenda.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrListeRemise.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrTrames.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrMouvement.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrParametreCompta.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrPersonne.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrProduit.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrReglement.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrRemise.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrParamNV.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrParamVNC.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrSelectionMultiple.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrStatistiques.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrTableauBord.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.GestionControles.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.Securite.Activation.SaisieCle.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.vbproj.GenerateResource.Cache
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.exe
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.pdb
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrParametrerListes.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStandard\RptListeVFactureDetailleeParClientProduit.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrDupliquerLot.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrlisteOrdresInsertion.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrChercherClient.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrCompteRendu.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrOrdreInsertion.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrListeChoix.resources
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStandard\RptListeordresInsertion.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\bin\Etats\RptStandard\RptOrdreInsertion.rpt
+C:\ACTIGRAM\VBNET2.0\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrRemplacerCodeProduitPiece.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.exe
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.pdb
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.vbproj.ResolveComReference.cache
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.DefinitionDonnees.xml
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.dep_france_dom.mid
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.dep_france_dom.mif
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.AboutBox.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrAssistantDemarrage.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrParametrerListes.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.EcranCrystal.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrModifTxt.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrProgressBar.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrSelection.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrFusionnerTiers.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrListePersonne.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrListeClient.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrCubes.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrAjusterCommandeFourn.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrCreerCommandeFourn.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrImportPhytoData.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrOptionsGeneAvoirs.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrOptionsImprBilan.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrAnnulExportCompta.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.IconesTypeEv.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrDupliquerLot.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrEtatStock.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrInventaire.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrLot.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrListeLots.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.Stocks.FrListeMouvements.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrAssistantTarif.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrListeTarifs.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrAffecterFacturesAReglement.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrRemplacerCodeProduitPiece.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrListePieces2.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrListeReglement.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrListeBanque.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrFusionnerProduits.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrModifierCodeProduit.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrListeFamilles.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrListeProduits.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrChercherClient.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrCompteRendu.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrListeChoix.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrlisteOrdresInsertion.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrOrdreInsertion.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrActivite.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrApplication.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrUpdates.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.Resources.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrListeParam.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrReglementAvances.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrBanque.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrBonCommande.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrCarteFrance.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrSaisieTarifs.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.LogoApplication.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.Securite.Activation.FrActivation.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrChoixRestauration.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrCompte.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrConnexion.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrEntreprise.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrEvenement.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrExportCompta.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrGestionParametres.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrInfosGenerales.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrInventaireOptions.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrLettreType.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrAgenda.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrListeRemise.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrTrames.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrMouvement.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrParametreCompta.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrPersonne.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrProduit.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrReglement.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrRemise.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrParamNV.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrParamVNC.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrSelectionMultiple.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrStatistiques.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.FrTableauBord.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.GestionControles.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.Securite.Activation.SaisieCle.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\x86\Debug\AgriFact.vbproj.GenerateResource.Cache
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Cubes\Cubes.xml
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Adresse.LWL
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Export.mdb
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Produit.LWL
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Cubes\Presentations\REGLEMENT_DETAIL_Details_Reglements_Par_Payeur_Par_Facture.cubes
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Cubes\Presentations\REGLEMENT_Liste_Reglements_Par_Client_Par_Annee.cubes
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Cubes\Presentations\REGLEMENT_Liste_Reglements_Par_Date.cubes
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Cubes\Presentations\REGLEMENT_Liste_Reglements_Par_Mode_Reglement.cubes
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Cubes\Presentations\REGLEMENT_Total_Reglements_Par_Mode_Reglement_Par_Mois.cubes
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Cubes\Presentations\VBONCOMMANDE_DETAIL_Recapitulatif_BC_Clients.cubes
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Cubes\Presentations\VFACTURE_CA_Par_Client_Par_Annee.cubes
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Cubes\Presentations\VFACTURE_CA_Par_Client_Par_Mois.cubes
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Cubes\Presentations\VFACTURE_CA_Par_Commercial_Par_Annee.cubes
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Cubes\Presentations\VFACTURE_CA_Par_Commercial_Par_Mois.cubes
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Cubes\Presentations\VFACTURE_Commissions_Par_Facture_Par_Commercial_Par_Annee.cubes
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Cubes\Presentations\VFACTURE_Commissions_Par_Facture_Par_Commercial_Par_Mois.cubes
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Cubes\Presentations\VFACTURE_DETAIL_Comparatif_CA_Par_Famille_Par_Mois.cubes
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Cubes\Presentations\VFACTURE_DETAIL_Comparatif_CA_Par_Famille_Par_Annee.cubes
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Cubes\Presentations\VFACTURE_DETAIL_Comparatif_CA_Par_Produit_Par_Annee.cubes
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Cubes\Presentations\VFACTURE_DETAIL_Comparatif_CA_Par_Produit_Par_Mois.cubes
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Cubes\Presentations\VFACTURE_DETAIL_Quantites_Vendues_Par_Commercial_Par_Produit_Par_Annee.cubes
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Cubes\Presentations\VFACTURE_DETAIL_Quantites_Vendues_Par_Commercial_Par_Produit_Par_Mois.cubes
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Cubes\Presentations\VFACTURE_IMP_Liste_Factures_Impayees.cubes
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Cubes\Presentations\VFACTURE_IMP_Liste_Factures_Impayees_Par_Annee.cubes
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Cubes\Presentations\VFACTURE_Liste_Factures_Par_Client_Par_Annee.cubes
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Cubes\Presentations\REMISE_DETAIL_Liste_Remises_Par_Num_Remise.cubes
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Cubes\Presentations\VBONLIVRAISON_DETAIL_Recapitulatif_BL_Clients.cubes
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Aide\Guide AgriFact V2.0.pdf
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStandard\LstPersonne.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStandard\RptABonReception.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStandard\RptABonReceptionMarge.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStandard\RptCAClientMois.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStandard\RptCampagneEt.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStandard\RptCaParJour3.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStandard\RptCaParJour4.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStandard\RptCaParJour5.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStandard\RptCaParJourFamille3.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStandard\RptCaParJourFamille4.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStandard\RptCaParJourFamille5.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStandard\RptCaParMois.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStandard\RptCaParMois3.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStandard\RptCaParMois4.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStandard\RptCaParMois5.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStandard\RptCaParMoisFamille3.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStandard\RptCaParMoisFamille4.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStandard\RptCaParMoisFamille5.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStandard\RptCaParSemaine.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStandard\RptCaParSemaine2.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStandard\RptCaParSemaine3.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStandard\RptCaParSemaine4.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStandard\RptCaParSemaine5.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStandard\RptCaParSemaineFamille3.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStandard\RptCaParSemaineFamille4.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStandard\RptCaParSemaineFamille5.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStandard\original_RptDevisVenteHT.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStandard\RptDevisVenteTTC.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStandard\RptEtatStock.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStandard\RptEtatStock2.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStandard\RptFactureAchatHT.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStandard\RptFactureAchatTTC.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStandard\RptFactureVenteTTC.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStandard\RptFactureVenteTTCGroupe.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStandard\RptFicheContactEv.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStandard\RptFicheTraca.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStandard\RptInventaire.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStandard\RptLettreRelance.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStandard\RptListeABonReception.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStandard\RptListeAFacture.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStandard\RptListeAReglement.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStandard\RptListeClient.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStandard\RptListeContact.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStandard\RptListeProduit.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStandard\RptListeReglement.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStandard\RptListeRemises.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStandard\RptListeVBonCommande.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStandard\RptListeVBonLivraison.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStandard\RptListeVDevis.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStandard\RptListeVFacture.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStandard\RptLstEvOrganisme.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStandard\RptPlanning.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStandard\RptRemise.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStatsClients\Evolution du chiffre d'affaires par année.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStatsClients\Evolution du chiffre d'affaires par mois et par année.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStatsClients\Evolution du chiffre d'affaires par mois.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStatsClients\Panier moyen par type client.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStatsClients\Recap Bon de Commande par Fournisseur.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStatsClients\Récap TVA Achats.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStatsClients\Récap TVA Ventes.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStatsClients\Répartition des clients par type client.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStatsClients\Répartition des clients par type contact.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStatsClients\Répartition du chiffre d'affaires par client.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStatsClients\Répartition du chiffre d'affaires par type client.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStatsClients\Répartition du chiffre d'affaires par type contact.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStatsClients\Répartition géographique des clients.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStatsProduits\Evolution du chiffre d'affaires par mois et par famille.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStatsProduits\Evolution du chiffre d'affaires par mois et par produit.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStatsProduits\Mercuriale.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStatsProduits\Quantité de produits bio fournis par client.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStatsProduits\Quantité vendue par produit.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStatsProduits\Répartition de l'origine des produits fournis en valeur.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStatsProduits\Répartition de l'origine des produits par client.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStatsProduits\Répartition des familles de produits par Client.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStatsProduits\Répartition des produits selon le pourcentage de chiffre d'affaires.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStatsProduits\Répartition du chiffre d'affaires par famille.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStatsProduits\Répartition du chiffre d'affaires par Fournisseur.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStatsProduits\Répartition du chiffre d'affaires par produit.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStatsProduits\Répartition géographique du chiffre d'affaires Fournisseur.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStats\Etiquettes Mailing.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStats\Liste Clients.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStats\Liste Complète Tiers.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStandard\RptListeVFactureDetailleeParClient.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStandard\RptListeVFactureParClientParCom.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStandard\RptListeVFactureDetailleeParClientProduit.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStandard\RptListeordresInsertion.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStandard\RptOrdreInsertion.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStatsClients\Récap factures impayées_original.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStandard\Original_RptFactureVenteHT.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStandard\RptFactureVenteHT.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStandard\RptFactureVenteHT_3.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStandard\RptBilanVenteApproFact.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStandard\RptDetailStock.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStandard\RptListeMouvement.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStandard\RptListeVFactureParClient.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStandard\RptRecapCommandeApprofact.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStats\Etiquettes Mailing Avery 635x381.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStats\Lettre Mailing.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStats\Liste Clients par département.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStatsClients\Etat Commissionnement.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStatsClients\Liste facture par client.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStatsClients\Quantité vendue par client.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStatsClients\Récap factures impayées par activité.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStatsClients\Récap factures impayées.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStatsClients\Répartition du chiffre d'affaires par commercial.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStatsClients\Répartition du chiffre d'affaires par type client (export).rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStatsProduits\Bouteilles vendues par commercial.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStatsProduits\Quantité de produits offerts.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStatsProduits\Quantité vendue par commercial.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStatsProduits\Quantité vendue par produit et par client.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStatsProduits\Répartition du chiffre d'affaires par produit et par type client.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStatsProduits\Répartition du chiffre d'affaires par produit, commercial et type client.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStandard\RptBonCommandeVenteHT.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStandard\RptBonCommandeVenteTTC.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStandard\RptBonLivraisonVenteTTC.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Etats\RptStandard\RptBonLivraisonVenteNonChiffre.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\bin\AgriFact.exe.config
+C:\Dev\Actigram\AgriFact\Agrifact\bin\AgriFact.exe.manifest
+C:\Dev\Actigram\AgriFact\Agrifact\bin\AgriFact.application
+C:\Dev\Actigram\AgriFact\Agrifact\bin\AgriFact.exe
+C:\Dev\Actigram\AgriFact\Agrifact\bin\AgriFact.pdb
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Actigram.Balance.Mira.dll
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Actigram.dll
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Ascend.dll
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Ascend.Resources.dll
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Ascend.Windows.Forms.dll
+C:\Dev\Actigram\AgriFact\Agrifact\bin\ClassLibraryCubes.dll
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Com.dll
+C:\Dev\Actigram\AgriFact\Agrifact\bin\ExportCompta.dll
+C:\Dev\Actigram\AgriFact\Agrifact\bin\GRC.dll
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Interop.Dymo.dll
+C:\Dev\Actigram\AgriFact\Agrifact\bin\RequetesPerso.dll
+C:\Dev\Actigram\AgriFact\Agrifact\bin\sg_cubenet.dll
+C:\Dev\Actigram\AgriFact\Agrifact\bin\GRC.pdb
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Ascend.Windows.Forms.xml
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Ascend.Resources.xml
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Actigram.Balance.Mira.pdb
+C:\Dev\Actigram\AgriFact\Agrifact\bin\ClassLibraryCubes.pdb
+C:\Dev\Actigram\AgriFact\Agrifact\bin\ClassLibraryCubes.xml
+C:\Dev\Actigram\AgriFact\Agrifact\bin\RequetesPerso.pdb
+C:\Dev\Actigram\AgriFact\Agrifact\bin\RequetesPerso.xml
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Actigram.pdb
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Com.pdb
+C:\Dev\Actigram\AgriFact\Agrifact\bin\Ascend.xml
+C:\Dev\Actigram\AgriFact\Agrifact\bin\ExportCompta.pdb
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\ResolveAssemblyReference.cache
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.vbproj.ResolveComReference.cache
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.RptBonLivraisonVenteHT.rpt
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.DefinitionDonnees.xml
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.dep_france_dom.mid
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.dep_france_dom.mif
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.AboutBox.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.FrAssistantDemarrage.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.FrParametrerListes.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.EcranCrystal.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.FrModifTxt.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.FrProgressBar.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.FrSelection.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.FrFusionnerTiers.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.FrListePersonne.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.FrListeClient.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.FrCubes.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.FrAjusterCommandeFourn.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.FrCreerCommandeFourn.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.FrImportPhytoData.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.FrOptionsGeneAvoirs.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.FrOptionsImprBilan.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.FrAnnulExportCompta.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.IconesTypeEv.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.FrDupliquerLot.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.FrEtatStock.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.FrInventaire.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.FrLot.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.FrListeLots.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.Stocks.FrListeMouvements.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.FrAssistantTarif.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.FrListeTarifs.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.FrAffecterFacturesAReglement.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.FrRemplacerCodeProduitPiece.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.FrListePieces2.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.FrListeReglement.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.FrListeBanque.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.FrFusionnerProduits.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.FrModifierCodeProduit.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.FrListeFamilles.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.FrListeProduits.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.FrChercherClient.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.FrCompteRendu.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.FrListeChoix.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.FrlisteOrdresInsertion.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.FrOrdreInsertion.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.FrActivite.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.FrApplication.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.FrUpdates.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.Resources.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.FrListeParam.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.FrReglementAvances.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.FrBanque.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.FrBonCommande.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.FrCarteFrance.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.FrSaisieTarifs.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.LogoApplication.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.Securite.Activation.FrActivation.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.FrChoixRestauration.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.FrCompte.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.FrConnexion.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.FrEntreprise.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.FrEvenement.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.FrExportCompta.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.FrGestionParametres.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.FrInfosGenerales.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.FrInventaireOptions.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.FrLettreType.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.FrAgenda.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.FrListeRemise.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.FrTrames.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.FrMouvement.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.FrParametreCompta.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.FrPersonne.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.FrProduit.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.FrReglement.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.FrRemise.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.FrParamNV.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.FrParamVNC.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.FrSelectionMultiple.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.FrStatistiques.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.FrTableauBord.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.GestionControles.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.Securite.Activation.SaisieCle.resources
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.vbproj.GenerateResource.Cache
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.exe.manifest
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.application
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.exe
+C:\Dev\Actigram\AgriFact\Agrifact\obj\Debug\AgriFact.pdb

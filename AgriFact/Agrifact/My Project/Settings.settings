@@ -1,0 +1,68 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="AgriFact_SyncAgrifact_SrvSyncAgrifact" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/ActiWebCommande/admin/SrvSyncAgrifact.asmx</Value>
+    </Setting>
+    <Setting Name="MustUpgrade" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="NiveauUpdate" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="AdresseVNC" Type="System.String" Scope="User">
+      <Value Profile="(Default)">193.251.24.103</Value>
+    </Setting>
+    <Setting Name="AdresseVNCID" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="AgriFact_ActiUpdates_Updates" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/ActiUpdates/Updates.asmx</Value>
+    </Setting>
+    <Setting Name="AgrifactConnString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=DEN\SQLEXPRESS;Initial Catalog=GIEdeletoile;Persist Security Info=True;User ID=sa;Password=ludo&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=DEN\SQLEXPRESS;Initial Catalog=GIEdeletoile;Persist Security Info=True;User ID=sa;Password=ludo</Value>
+    </Setting>
+    <Setting Name="AgrifactConnStringUserOverride" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Data Source=.\ciedeletoile;Initial Catalog=CIEdeletoile;Persist Security Info=True;User ID=sa;Password=ludo</Value>
+    </Setting>
+    <Setting Name="DebugSql" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="IntervalleTimerAdherents" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1000</Value>
+    </Setting>
+    <Setting Name="UtiliserTimerAdherents" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="AgrigestConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=DEN\SQLEXPRESS;Initial Catalog=GIEdeletoile;Persist Security Info=True;User ID=sa;Password=ludo&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.OleDb&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=DEN\SQLEXPRESS;Initial Catalog=GIEdeletoile;Persist Security Info=True;User ID=sa;Password=ludo</Value>
+    </Setting>
+    <Setting Name="ConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=DEN\SQLEXPRESS;Persist Security Info=True;User ID=sa;Password=ludo&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=DEN\SQLEXPRESS;Persist Security Info=True;User ID=sa;Password=ludo</Value>
+    </Setting>
+    <Setting Name="GIEdeletoileConnectionString" Type="(Connection string)" Scope="User">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=DEN\SQLEXPRESS;Initial Catalog=GIEdeletoile;Persist Security Info=True;User ID=sa;Password=ludo&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=DEN\SQLEXPRESS;Initial Catalog=GIEdeletoile;Persist Security Info=True;User ID=sa;Password=ludo</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

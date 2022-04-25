@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "AgrifactAdmin", "AgrifactAdmin.vbproj", "{C0A5E676-DB51-4FE4-9506-56A0FEDA9965}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		GlobalBin|Any CPU = GlobalBin|Any CPU
+		GlobalBin|x86 = GlobalBin|x86
+		LeaAdmin|Any CPU = LeaAdmin|Any CPU
+		LeaAdmin|x86 = LeaAdmin|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C0A5E676-DB51-4FE4-9506-56A0FEDA9965}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0A5E676-DB51-4FE4-9506-56A0FEDA9965}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0A5E676-DB51-4FE4-9506-56A0FEDA9965}.Debug|x86.ActiveCfg = Debug|x86
+		{C0A5E676-DB51-4FE4-9506-56A0FEDA9965}.Debug|x86.Build.0 = Debug|x86
+		{C0A5E676-DB51-4FE4-9506-56A0FEDA9965}.GlobalBin|Any CPU.ActiveCfg = GlobalBin|Any CPU
+		{C0A5E676-DB51-4FE4-9506-56A0FEDA9965}.GlobalBin|Any CPU.Build.0 = GlobalBin|Any CPU
+		{C0A5E676-DB51-4FE4-9506-56A0FEDA9965}.GlobalBin|x86.ActiveCfg = GlobalBin|x86
+		{C0A5E676-DB51-4FE4-9506-56A0FEDA9965}.GlobalBin|x86.Build.0 = GlobalBin|x86
+		{C0A5E676-DB51-4FE4-9506-56A0FEDA9965}.LeaAdmin|Any CPU.ActiveCfg = LeaAdmin|Any CPU
+		{C0A5E676-DB51-4FE4-9506-56A0FEDA9965}.LeaAdmin|Any CPU.Build.0 = LeaAdmin|Any CPU
+		{C0A5E676-DB51-4FE4-9506-56A0FEDA9965}.LeaAdmin|x86.ActiveCfg = LeaAdmin|x86
+		{C0A5E676-DB51-4FE4-9506-56A0FEDA9965}.LeaAdmin|x86.Build.0 = LeaAdmin|x86
+		{C0A5E676-DB51-4FE4-9506-56A0FEDA9965}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0A5E676-DB51-4FE4-9506-56A0FEDA9965}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0A5E676-DB51-4FE4-9506-56A0FEDA9965}.Release|x86.ActiveCfg = Release|x86
+		{C0A5E676-DB51-4FE4-9506-56A0FEDA9965}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

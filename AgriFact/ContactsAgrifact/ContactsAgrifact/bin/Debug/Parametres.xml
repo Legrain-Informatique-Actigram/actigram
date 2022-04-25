@@ -1,0 +1,665 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Parametres>
+    <NomDossier>Actimedia _*PROD*_</NomDossier>
+    <UseNewInterface>True</UseNewInterface>
+    <ServiceURL>http://serveur/update/interne/agrifact/listupdates.xml</ServiceURL>
+    <ServeurSQL>SERVEUR\AGRIFACT</ServeurSQL>
+    <BaseSQL>AgrifactActimedia</BaseSQL>
+    <saPwd>ludo</saPwd>
+    <IdMaj>Guyot</IdMaj>
+    <PwdMaj>jc</PwdMaj>
+    <Type>TDT</Type>
+    <VerifAutoMAJ>False</VerifAutoMAJ>
+    <ObjectifMarge>30</ObjectifMarge>
+    <Deconnecter>false</Deconnecter>
+    <EnTete>Actigram</EnTete>
+    <EnTeteDetail>75 voie de TOEC
+31075 Toulouse Cedex 3
+Tel : 05 67 69 69 99</EnTeteDetail>
+    <PiedPageDetail>ACTIMEDIA - 75 VOIE DU TOEC - 31076 TOULOUSE CEDEX 3
+TEL : 05 34 39 10 69 - FAX : 05 67 69 69 98 - MAIL : info@actimedia.fr
+N° TVA INTRA : FR32 480 761 527 00013 - RCS TOULOUSE</PiedPageDetail>
+    <InfoLegale>La présente facture est soumise aux conditions générales de services indiquées sur le devis. Tout retard de paiement entraînera des intérêts de retard calculés sur le montant TTC,</InfoLegale>
+    <CodeEtablissement>13106</CodeEtablissement>
+    <CodeGuichet>00500</CodeGuichet>
+    <NCompte>10009251151</NCompte>
+    <CleRIB>97</CleRIB>
+    <Domiciliation>CRCA TOULOUSE</Domiciliation>
+    <InfoLegale2> au taux de 1,50 % par mois et ce, à compter de la date d'échéance et sans mise en demeure.
+En cas de contestation, seul le Tribunal de Commerce de Toulouse est compétent.</InfoLegale2>
+    <EMail />
+    <ServiceGestionSite>http://www.actigram.com/Services/service1.asmx</ServiceGestionSite>
+    <ServerSMTP>smtp.wanadoo.fr</ServerSMTP>
+    <AdresseSite>http://www.actigram.com/services</AdresseSite>
+    <BlocNPieceDebutA>20000</BlocNPieceDebutA>
+    <BlocNPieceFinA>29999</BlocNPieceFinA>
+    <BlocNPieceDebutV>65000</BlocNPieceDebutV>
+    <BlocNPieceFinV>65999</BlocNPieceFinV>
+    <NDossierCompta>A00092</NDossierCompta>
+    <DebutExCompta>01/01/2006 00:00:00</DebutExCompta>
+    <FinExCompta>31/12/2006 00:00:00</FinExCompta>
+    <TypeTVA>TVA sur Facturation</TypeTVA>
+    <ClientFacturationTTC>False</ClientFacturationTTC>
+    <ClientNActivite>0000</ClientNActivite>
+    <ClientNCompte>41100000</ClientNCompte>
+    <ClientNCompteAuto>False</ClientNCompteAuto>
+    <FacturationClient1>32000</FacturationClient1>
+    <FacturationFournisseur1>10000</FacturationFournisseur1>
+    <FournisseurFacturationTTC>False</FournisseurFacturationTTC>
+    <FournisseurNActivite>0000</FournisseurNActivite>
+    <FournisseurNCompte>40100000</FournisseurNCompte>
+    <FournisseurNCompteAuto>False</FournisseurNCompteAuto>
+    <NFax />
+    <NPortModem>3</NPortModem>
+    <NTel />
+    <ProduitAchat>False</ProduitAchat>
+    <ProduitDecompteStockAuto>False</ProduitDecompteStockAuto>
+    <ProduitGestionStock>False</ProduitGestionStock>
+    <ProduitNActiviteA>0000</ProduitNActiviteA>
+    <ProduitNActiviteV>0000</ProduitNActiviteV>
+    <ProduitNCompteA>60100000</ProduitNCompteA>
+    <ProduitNCompteAAuto>False</ProduitNCompteAAuto>
+    <ProduitNCompteV>70100000</ProduitNCompteV>
+    <ProduitNCompteVAuto>False</ProduitNCompteVAuto>
+    <ProduitTxTVAVente>5.5</ProduitTxTVAVente>
+    <ProduitTypeFacturation>U1</ProduitTypeFacturation>
+    <ProduitVente>True</ProduitVente>
+    <StandardModem />
+    <EcartReglement>5</EcartReglement>
+    <CodeBarreGroupe>false</CodeBarreGroupe>
+    <ImpressionSQLServer>false</ImpressionSQLServer>
+    <ModeCalculCoefRestoBio>true</ModeCalculCoefRestoBio>
+    <CheminVNC>C:\Program Files\Actigram\AgriFact\UltraVNC</CheminVNC>
+    <AdresseVNC>193.251.24.103:5500</AdresseVNC>
+    <AdresseVNCID>1</AdresseVNCID>
+    <LastLogin>Jérémie</LastLogin>
+    <BlocNPieceDebutVReglement>0</BlocNPieceDebutVReglement>
+    <BlocNPieceFinVReglement>99999</BlocNPieceFinVReglement>
+    <BlocNPieceDebutAReglement>0</BlocNPieceDebutAReglement>
+    <BlocNPieceFinAReglement>99999</BlocNPieceFinAReglement>
+    <RepEtatsSpecifiques>EtatsTiers\Actimedia</RepEtatsSpecifiques>
+    <MarquerFacturesImprimees>True</MarquerFacturesImprimees>
+    <ModeCompta>Deconnecte</ModeCompta>
+    <NomDossierCompta />
+    <ModeExport>Isacompta</ModeExport>
+  </Parametres>
+  <Parametres>
+    <NomDossier>ApprofactEpitouraine</NomDossier>
+    <UseNewInterface>True</UseNewInterface>
+    <ServiceURL>http://193.251.24.103/ActiUpdates/Updates.asmx</ServiceURL>
+    <ServeurSQL>.\AGRIFACT</ServeurSQL>
+    <BaseSQL>ApprofactEpitouraine</BaseSQL>
+    <saPwd>ludo</saPwd>
+    <IdMaj>Guyot</IdMaj>
+    <PwdMaj>jc</PwdMaj>
+    <Type>TDT</Type>
+    <VerifAutoMAJ>True</VerifAutoMAJ>
+    <ObjectifMarge>30</ObjectifMarge>
+    <Deconnecter>False</Deconnecter>
+    <ServiceGestionSite>http://www.actigram.com/Services/service1.asmx</ServiceGestionSite>
+    <ServerSMTP>smtp.wanadoo.fr</ServerSMTP>
+    <AdresseSite>http://www.actigram.com/services</AdresseSite>
+    <BlocNPieceDebutA>0</BlocNPieceDebutA>
+    <BlocNPieceFinA>99999</BlocNPieceFinA>
+    <BlocNPieceDebutV>0</BlocNPieceDebutV>
+    <BlocNPieceFinV>99999</BlocNPieceFinV>
+    <NDossierCompta>XXX</NDossierCompta>
+    <DebutExCompta>01/01/2008 00:00:00</DebutExCompta>
+    <FinExCompta>31/12/2008 00:00:00</FinExCompta>
+    <TypeTVA>TVA sur Encaissement</TypeTVA>
+    <ClientFacturationTTC>False</ClientFacturationTTC>
+    <ClientNActivite>0000</ClientNActivite>
+    <ClientNCompte>41100000</ClientNCompte>
+    <ClientNCompteAuto>False</ClientNCompteAuto>
+    <FacturationClient1>32000</FacturationClient1>
+    <FacturationFournisseur1>10000</FacturationFournisseur1>
+    <FournisseurFacturationTTC>False</FournisseurFacturationTTC>
+    <FournisseurNActivite>0000</FournisseurNActivite>
+    <FournisseurNCompte>40100000</FournisseurNCompte>
+    <FournisseurNCompteAuto>False</FournisseurNCompteAuto>
+    <NPortModem>3</NPortModem>
+    <ProduitAchat>False</ProduitAchat>
+    <ProduitDecompteStockAuto>False</ProduitDecompteStockAuto>
+    <ProduitGestionStock>False</ProduitGestionStock>
+    <ProduitNActiviteA>0000</ProduitNActiviteA>
+    <ProduitNActiviteV>0000</ProduitNActiviteV>
+    <ProduitNCompteA>60100000</ProduitNCompteA>
+    <ProduitNCompteAAuto>False</ProduitNCompteAAuto>
+    <ProduitNCompteV>70100000</ProduitNCompteV>
+    <ProduitNCompteVAuto>False</ProduitNCompteVAuto>
+    <ProduitTxTVAVente>19.6</ProduitTxTVAVente>
+    <ProduitTypeFacturation>U1</ProduitTypeFacturation>
+    <ProduitVente>True</ProduitVente>
+    <StandardModem />
+    <EcartReglement>5</EcartReglement>
+    <CodeBarreGroupe>false</CodeBarreGroupe>
+    <ImpressionSQLServer>false</ImpressionSQLServer>
+    <ModeCalculCoefRestoBio>true</ModeCalculCoefRestoBio>
+    <CheminVNC>C:\Program Files\Actigram\AgriFact\UltraVNC</CheminVNC>
+    <AdresseVNC>193.251.24.103:5500</AdresseVNC>
+    <AdresseVNCID>1</AdresseVNCID>
+    <LastLogin>Demo</LastLogin>
+    <BlocNPieceDebutVReglement>0</BlocNPieceDebutVReglement>
+    <BlocNPieceFinVReglement>99999</BlocNPieceFinVReglement>
+    <BlocNPieceDebutAReglement>0</BlocNPieceDebutAReglement>
+    <BlocNPieceFinAReglement>99999</BlocNPieceFinAReglement>
+    <RepEtatsSpecifiques>EtatsTiers\SanDeGuilhem</RepEtatsSpecifiques>
+    <MarquerFacturesImprimees>True</MarquerFacturesImprimees>
+    <ModeCompta>Deconnecte</ModeCompta>
+    <NomDossierCompta>ACTIMEDIA</NomDossierCompta>
+    <ModeExport>Epicea</ModeExport>
+    <nBanqueEntreprise>1001</nBanqueEntreprise>
+  </Parametres>
+  <Parametres>
+    <NomDossier>Agrifact Cabannes</NomDossier>
+    <UseNewInterface>True</UseNewInterface>
+    <ServiceURL>http://serveur/update/interne/agrifact/listupdates.xml</ServiceURL>
+    <ServeurSQL>.\AGRIFACT</ServeurSQL>
+    <BaseSQL>AgrifactCabannesGaec</BaseSQL>
+    <saPwd>ludo</saPwd>
+    <IdMaj>Guyot</IdMaj>
+    <PwdMaj>jc</PwdMaj>
+    <Type>TDT</Type>
+    <VerifAutoMAJ>True</VerifAutoMAJ>
+    <ObjectifMarge>30</ObjectifMarge>
+    <Deconnecter>false</Deconnecter>
+    <ServiceGestionSite>http://www.actigram.com/Services/service1.asmx</ServiceGestionSite>
+    <ServerSMTP>serveur</ServerSMTP>
+    <AdresseSite>http://www.actigram.com/services</AdresseSite>
+    <BlocNPieceDebutA>20000</BlocNPieceDebutA>
+    <BlocNPieceFinA>29999</BlocNPieceFinA>
+    <BlocNPieceDebutV>65000</BlocNPieceDebutV>
+    <BlocNPieceFinV>65999</BlocNPieceFinV>
+    <NDossierCompta>C16028A9</NDossierCompta>
+    <DebutExCompta>01/02/2008 00:00:00</DebutExCompta>
+    <FinExCompta>31/01/2009 00:00:00</FinExCompta>
+    <TypeTVA>TVA sur Encaissement</TypeTVA>
+    <ClientFacturationTTC>False</ClientFacturationTTC>
+    <ClientNActivite>0000</ClientNActivite>
+    <ClientNCompte>41100000</ClientNCompte>
+    <ClientNCompteAuto>False</ClientNCompteAuto>
+    <FacturationClient1>1</FacturationClient1>
+    <FacturationFournisseur1>10000</FacturationFournisseur1>
+    <FournisseurFacturationTTC>False</FournisseurFacturationTTC>
+    <FournisseurNActivite>0000</FournisseurNActivite>
+    <FournisseurNCompte>40100000</FournisseurNCompte>
+    <FournisseurNCompteAuto>False</FournisseurNCompteAuto>
+    <NPortModem>3</NPortModem>
+    <ProduitAchat>False</ProduitAchat>
+    <ProduitDecompteStockAuto>False</ProduitDecompteStockAuto>
+    <ProduitGestionStock>False</ProduitGestionStock>
+    <ProduitNActiviteA>0000</ProduitNActiviteA>
+    <ProduitNActiviteV>0000</ProduitNActiviteV>
+    <ProduitNCompteA>60100000</ProduitNCompteA>
+    <ProduitNCompteAAuto>False</ProduitNCompteAAuto>
+    <ProduitNCompteV>70100000</ProduitNCompteV>
+    <ProduitNCompteVAuto>False</ProduitNCompteVAuto>
+    <ProduitTxTVAVente>V5.5</ProduitTxTVAVente>
+    <ProduitTypeFacturation>U1</ProduitTypeFacturation>
+    <ProduitVente>True</ProduitVente>
+    <StandardModem />
+    <EcartReglement>5</EcartReglement>
+    <CodeBarreGroupe>false</CodeBarreGroupe>
+    <ImpressionSQLServer>false</ImpressionSQLServer>
+    <ModeCalculCoefRestoBio>true</ModeCalculCoefRestoBio>
+    <CheminVNC>C:\Program Files\Actigram\AgriFact\UltraVNC</CheminVNC>
+    <AdresseVNC>193.251.24.103:5500</AdresseVNC>
+    <AdresseVNCID>1</AdresseVNCID>
+    <LastLogin>Demo</LastLogin>
+    <BlocNPieceDebutVReglement>80000</BlocNPieceDebutVReglement>
+    <BlocNPieceFinVReglement>100000</BlocNPieceFinVReglement>
+    <BlocNPieceDebutAReglement>100000</BlocNPieceDebutAReglement>
+    <BlocNPieceFinAReglement>150000</BlocNPieceFinAReglement>
+    <RepEtatsSpecifiques>EtatsTiers\Cabannes</RepEtatsSpecifiques>
+    <MarquerFacturesImprimees>True</MarquerFacturesImprimees>
+    <ModeCompta>Deconnecte</ModeCompta>
+    <NomDossierCompta />
+    <ModeExport>Isacompta</ModeExport>
+    <nBanqueEntreprise>1001</nBanqueEntreprise>
+  </Parametres>
+  <Parametres>
+    <NomDossier>Agrifact Guitres</NomDossier>
+    <UseNewInterface>true</UseNewInterface>
+    <ServiceURL>http://193.251.24.103/UpDateAgriFact/Service1.asmx</ServiceURL>
+    <ServeurSQL>.\AGRIFACT</ServeurSQL>
+    <BaseSQL>AgrifactCarteron</BaseSQL>
+    <saPwd>ludo</saPwd>
+    <IdMaj>Guyot</IdMaj>
+    <PwdMaj>jc</PwdMaj>
+    <Type>TDT</Type>
+    <VerifAutoMAJ>False</VerifAutoMAJ>
+    <ObjectifMarge>30</ObjectifMarge>
+    <Deconnecter>false</Deconnecter>
+    <ServiceGestionSite>http://www.actigram.com/Services/service1.asmx</ServiceGestionSite>
+    <ServerSMTP>smtp.wanadoo.fr</ServerSMTP>
+    <AdresseSite>http://www.actigram.com/services</AdresseSite>
+    <BlocNPieceDebutA>20000</BlocNPieceDebutA>
+    <BlocNPieceFinA>29999</BlocNPieceFinA>
+    <BlocNPieceDebutV>0</BlocNPieceDebutV>
+    <BlocNPieceFinV>79999</BlocNPieceFinV>
+    <NDossierCompta>C00036</NDossierCompta>
+    <DebutExCompta>01/08/2006 00:00:00</DebutExCompta>
+    <FinExCompta>31/08/2007 00:00:00</FinExCompta>
+    <TypeTVA>TVA sur Facturation</TypeTVA>
+    <ClientFacturationTTC>True</ClientFacturationTTC>
+    <ClientNActivite>0000</ClientNActivite>
+    <ClientNCompte>41100000</ClientNCompte>
+    <ClientNCompteAuto>True</ClientNCompteAuto>
+    <FacturationClient1>70001</FacturationClient1>
+    <FacturationFournisseur1>10000</FacturationFournisseur1>
+    <FournisseurFacturationTTC>False</FournisseurFacturationTTC>
+    <FournisseurNActivite>0000</FournisseurNActivite>
+    <FournisseurNCompte>40100000</FournisseurNCompte>
+    <FournisseurNCompteAuto>False</FournisseurNCompteAuto>
+    <NPortModem>3</NPortModem>
+    <ProduitAchat>False</ProduitAchat>
+    <ProduitDecompteStockAuto>True</ProduitDecompteStockAuto>
+    <ProduitGestionStock>True</ProduitGestionStock>
+    <ProduitNActiviteA>0000</ProduitNActiviteA>
+    <ProduitNActiviteV>0000</ProduitNActiviteV>
+    <ProduitNCompteA>60100000</ProduitNCompteA>
+    <ProduitNCompteAAuto>False</ProduitNCompteAAuto>
+    <ProduitNCompteV>70300000</ProduitNCompteV>
+    <ProduitNCompteVAuto>False</ProduitNCompteVAuto>
+    <ProduitTxTVAVente>19.6</ProduitTxTVAVente>
+    <ProduitTypeFacturation>U1</ProduitTypeFacturation>
+    <ProduitVente>True</ProduitVente>
+    <StandardModem />
+    <EcartReglement>5</EcartReglement>
+    <CodeBarreGroupe>false</CodeBarreGroupe>
+    <ImpressionSQLServer>false</ImpressionSQLServer>
+    <ModeCalculCoefRestoBio>true</ModeCalculCoefRestoBio>
+    <CheminVNC>C:\Program Files\Actigram\AgriFact\UltraVNC</CheminVNC>
+    <AdresseVNC>193.251.24.103:5500</AdresseVNC>
+    <AdresseVNCID>1</AdresseVNCID>
+    <LastLogin>Demo</LastLogin>
+    <BlocNPieceDebutVReglement>80000</BlocNPieceDebutVReglement>
+    <BlocNPieceFinVReglement>89999</BlocNPieceFinVReglement>
+    <BlocNPieceDebutAReglement>0</BlocNPieceDebutAReglement>
+    <BlocNPieceFinAReglement>99999</BlocNPieceFinAReglement>
+    <RepEtatsSpecifiques>EtatsTiers\Yseult</RepEtatsSpecifiques>
+    <MarquerFacturesImprimees>True</MarquerFacturesImprimees>
+    <ModeCompta>AgrigestEDI</ModeCompta>
+    <NomDossierCompta>fg</NomDossierCompta>
+    <ModeExport>AgrigestEDI</ModeExport>
+    <nBanqueEntreprise>1002</nBanqueEntreprise>
+  </Parametres>
+  <Parametres>
+    <NomDossier>Agrifact Cabriole</NomDossier>
+    <UseNewInterface>True</UseNewInterface>
+    <ServiceURL>http://193.251.24.103/UpDateAgriFact/Service1.asmx</ServiceURL>
+    <ServeurSQL>.\AGRIFACT</ServeurSQL>
+    <BaseSQL>AgrifactCabriole</BaseSQL>
+    <saPwd>ludo</saPwd>
+    <IdMaj>Guyot</IdMaj>
+    <PwdMaj>jc</PwdMaj>
+    <Type>TDT</Type>
+    <VerifAutoMAJ>True</VerifAutoMAJ>
+    <ObjectifMarge>30</ObjectifMarge>
+    <Deconnecter>false</Deconnecter>
+    <ServiceGestionSite>http://www.actigram.com/Services/service1.asmx</ServiceGestionSite>
+    <ServerSMTP>smtp.wanadoo.fr</ServerSMTP>
+    <AdresseSite>http://www.actigram.com/services</AdresseSite>
+    <BlocNPieceDebutA>0</BlocNPieceDebutA>
+    <BlocNPieceFinA>99999</BlocNPieceFinA>
+    <BlocNPieceDebutV>0</BlocNPieceDebutV>
+    <BlocNPieceFinV>99999</BlocNPieceFinV>
+    <NDossierCompta>C16028</NDossierCompta>
+    <DebutExCompta>01/02/2008 00:00:00</DebutExCompta>
+    <FinExCompta>31/01/2009 00:00:00</FinExCompta>
+    <TypeTVA>TVA sur Facturation</TypeTVA>
+    <ClientFacturationTTC>False</ClientFacturationTTC>
+    <ClientNActivite>0000</ClientNActivite>
+    <ClientNCompte>41100000</ClientNCompte>
+    <ClientNCompteAuto>False</ClientNCompteAuto>
+    <FacturationClient1>32000</FacturationClient1>
+    <FacturationFournisseur1>10000</FacturationFournisseur1>
+    <FournisseurFacturationTTC>False</FournisseurFacturationTTC>
+    <FournisseurNActivite>0000</FournisseurNActivite>
+    <FournisseurNCompte>40100000</FournisseurNCompte>
+    <FournisseurNCompteAuto>False</FournisseurNCompteAuto>
+    <NPortModem>3</NPortModem>
+    <ProduitAchat>False</ProduitAchat>
+    <ProduitDecompteStockAuto>False</ProduitDecompteStockAuto>
+    <ProduitGestionStock>False</ProduitGestionStock>
+    <ProduitNActiviteA>0000</ProduitNActiviteA>
+    <ProduitNActiviteV>0000</ProduitNActiviteV>
+    <ProduitNCompteA>60100000</ProduitNCompteA>
+    <ProduitNCompteAAuto>False</ProduitNCompteAAuto>
+    <ProduitNCompteV>70100000</ProduitNCompteV>
+    <ProduitNCompteVAuto>False</ProduitNCompteVAuto>
+    <ProduitTxTVAVente>5.5</ProduitTxTVAVente>
+    <ProduitTypeFacturation>U1</ProduitTypeFacturation>
+    <ProduitVente>True</ProduitVente>
+    <StandardModem />
+    <EcartReglement>5</EcartReglement>
+    <CodeBarreGroupe>true</CodeBarreGroupe>
+    <ImpressionSQLServer>false</ImpressionSQLServer>
+    <ModeCalculCoefRestoBio>true</ModeCalculCoefRestoBio>
+    <CheminVNC>C:\Program Files\Actigram\AgriFact\UltraVNC</CheminVNC>
+    <AdresseVNC>193.251.24.103:5500</AdresseVNC>
+    <AdresseVNCID>1</AdresseVNCID>
+    <LastLogin>Demo</LastLogin>
+    <BlocNPieceDebutVReglement>0</BlocNPieceDebutVReglement>
+    <BlocNPieceFinVReglement>99999</BlocNPieceFinVReglement>
+    <BlocNPieceDebutAReglement>0</BlocNPieceDebutAReglement>
+    <BlocNPieceFinAReglement>99999</BlocNPieceFinAReglement>
+    <RepEtatsSpecifiques>EtatsTiers\Guitres</RepEtatsSpecifiques>
+    <MarquerFacturesImprimees>True</MarquerFacturesImprimees>
+    <ModeCompta>Deconnecte</ModeCompta>
+    <NomDossierCompta>CABRIOLE</NomDossierCompta>
+  </Parametres>
+  <Parametres>
+    <NomDossier>Agrifact Vide</NomDossier>
+    <ServiceURL>http://193.251.24.103/UpDateAgriFact/Service1.asmx</ServiceURL>
+    <ServeurSQL>.\AGRIFACT</ServeurSQL>
+    <BaseSQL>AgrifactVide</BaseSQL>
+    <saPwd>ludo</saPwd>
+    <IdMaj>Guyot</IdMaj>
+    <PwdMaj>jc</PwdMaj>
+    <Type>TDT</Type>
+    <VerifAutoMAJ>False</VerifAutoMAJ>
+    <ObjectifMarge>30</ObjectifMarge>
+    <Deconnecter>false</Deconnecter>
+    <ServiceGestionSite>http://www.actigram.com/Services/service1.asmx</ServiceGestionSite>
+    <ServerSMTP>smtp.wanadoo.fr</ServerSMTP>
+    <AdresseSite>http://www.actigram.com/services</AdresseSite>
+    <BlocNPieceDebutA>20000</BlocNPieceDebutA>
+    <BlocNPieceFinA>29999</BlocNPieceFinA>
+    <BlocNPieceDebutV>65000</BlocNPieceDebutV>
+    <BlocNPieceFinV>65999</BlocNPieceFinV>
+    <NDossierCompta />
+    <DebutExCompta>01/01/2006 00:00:00</DebutExCompta>
+    <FinExCompta>31/12/2006 00:00:00</FinExCompta>
+    <TypeTVA>TVA sur Facturation</TypeTVA>
+    <ClientFacturationTTC>False</ClientFacturationTTC>
+    <ClientNActivite>0000</ClientNActivite>
+    <ClientNCompte>41100000</ClientNCompte>
+    <ClientNCompteAuto>False</ClientNCompteAuto>
+    <FacturationClient1>5</FacturationClient1>
+    <FacturationFournisseur1>6</FacturationFournisseur1>
+    <FournisseurFacturationTTC>False</FournisseurFacturationTTC>
+    <FournisseurNActivite>0000</FournisseurNActivite>
+    <FournisseurNCompte>40100000</FournisseurNCompte>
+    <FournisseurNCompteAuto>False</FournisseurNCompteAuto>
+    <NPortModem>3</NPortModem>
+    <ProduitAchat>False</ProduitAchat>
+    <ProduitDecompteStockAuto>False</ProduitDecompteStockAuto>
+    <ProduitGestionStock>False</ProduitGestionStock>
+    <ProduitNActiviteA>0000</ProduitNActiviteA>
+    <ProduitNActiviteV>0000</ProduitNActiviteV>
+    <ProduitNCompteA>60100000</ProduitNCompteA>
+    <ProduitNCompteAAuto>False</ProduitNCompteAAuto>
+    <ProduitNCompteV>70100000</ProduitNCompteV>
+    <ProduitNCompteVAuto>False</ProduitNCompteVAuto>
+    <ProduitTxTVAVente>5.5</ProduitTxTVAVente>
+    <ProduitTypeFacturation>U1</ProduitTypeFacturation>
+    <ProduitVente>True</ProduitVente>
+    <StandardModem />
+    <EcartReglement>5</EcartReglement>
+    <CodeBarreGroupe>false</CodeBarreGroupe>
+    <ImpressionSQLServer>false</ImpressionSQLServer>
+    <ModeCalculCoefRestoBio>true</ModeCalculCoefRestoBio>
+    <CheminVNC>C:\Program Files\Actigram\AgriFact\UltraVNC</CheminVNC>
+    <AdresseVNC>193.251.24.103:5500</AdresseVNC>
+    <AdresseVNCID>1</AdresseVNCID>
+    <LastLogin>demo</LastLogin>
+    <BlocNPieceDebutVReglement>80000</BlocNPieceDebutVReglement>
+    <BlocNPieceFinVReglement>100000</BlocNPieceFinVReglement>
+    <BlocNPieceDebutAReglement>100000</BlocNPieceDebutAReglement>
+    <BlocNPieceFinAReglement>150000</BlocNPieceFinAReglement>
+    <RepEtatsSpecifiques />
+  </Parametres>
+  <Parametres>
+    <NomDossier>Agrifact Bajon</NomDossier>
+    <UseNewInterface>True</UseNewInterface>
+    <ServiceURL>http://serveur/update/externe/agrifact/listupdates.xml</ServiceURL>
+    <ServeurSQL>.\AGRIFACT</ServeurSQL>
+    <BaseSQL>AGRIFACTBAJON</BaseSQL>
+    <saPwd>ludo</saPwd>
+    <IdMaj>actigram</IdMaj>
+    <PwdMaj>admin</PwdMaj>
+    <Type>TDT</Type>
+    <VerifAutoMAJ>True</VerifAutoMAJ>
+    <ObjectifMarge>30</ObjectifMarge>
+    <Deconnecter>false</Deconnecter>
+    <ServiceGestionSite>http://localhost/ActiWebCommande/admin/SrvSyncAgrifact.asmx</ServiceGestionSite>
+    <ServerSMTP>smtp.wanadoo.fr</ServerSMTP>
+    <AdresseSite>http://www.actigram.com/services</AdresseSite>
+    <BlocNPieceDebutA>20000</BlocNPieceDebutA>
+    <BlocNPieceFinA>29999</BlocNPieceFinA>
+    <BlocNPieceDebutV>0</BlocNPieceDebutV>
+    <BlocNPieceFinV>40000</BlocNPieceFinV>
+    <NDossierCompta>B11111</NDossierCompta>
+    <DebutExCompta>01/01/2006 00:00:00</DebutExCompta>
+    <FinExCompta>31/12/2006 00:00:00</FinExCompta>
+    <TypeTVA>TVA sur Encaissement</TypeTVA>
+    <ClientFacturationTTC>True</ClientFacturationTTC>
+    <ClientNActivite>0000</ClientNActivite>
+    <ClientNCompte>41199990</ClientNCompte>
+    <ClientNCompteAuto>True</ClientNCompteAuto>
+    <FacturationClient1>32000</FacturationClient1>
+    <FacturationFournisseur1>10000</FacturationFournisseur1>
+    <FournisseurFacturationTTC>False</FournisseurFacturationTTC>
+    <FournisseurNActivite>0000</FournisseurNActivite>
+    <FournisseurNCompte>40100000</FournisseurNCompte>
+    <FournisseurNCompteAuto>False</FournisseurNCompteAuto>
+    <NPortModem>3</NPortModem>
+    <ProduitAchat>False</ProduitAchat>
+    <ProduitDecompteStockAuto>False</ProduitDecompteStockAuto>
+    <ProduitGestionStock>False</ProduitGestionStock>
+    <ProduitNActiviteA>0000</ProduitNActiviteA>
+    <ProduitNActiviteV>0000</ProduitNActiviteV>
+    <ProduitNCompteA>60100000</ProduitNCompteA>
+    <ProduitNCompteAAuto>False</ProduitNCompteAAuto>
+    <ProduitNCompteV>70100000</ProduitNCompteV>
+    <ProduitNCompteVAuto>False</ProduitNCompteVAuto>
+    <ProduitTxTVAVente>RPCH</ProduitTxTVAVente>
+    <ProduitTypeFacturation>U1</ProduitTypeFacturation>
+    <ProduitVente>True</ProduitVente>
+    <StandardModem />
+    <EcartReglement>5</EcartReglement>
+    <CodeBarreGroupe>false</CodeBarreGroupe>
+    <ImpressionSQLServer>false</ImpressionSQLServer>
+    <ModeCalculCoefRestoBio>true</ModeCalculCoefRestoBio>
+    <CheminVNC>C:\Program Files\Actigram\AgriFact\UltraVNC</CheminVNC>
+    <AdresseVNC>193.251.24.103:5500</AdresseVNC>
+    <AdresseVNCID>1</AdresseVNCID>
+    <LastLogin>bajon</LastLogin>
+    <BlocNPieceDebutVReglement>50000</BlocNPieceDebutVReglement>
+    <BlocNPieceFinVReglement>60000</BlocNPieceFinVReglement>
+    <BlocNPieceDebutAReglement>0</BlocNPieceDebutAReglement>
+    <BlocNPieceFinAReglement>99999</BlocNPieceFinAReglement>
+    <RepEtatsSpecifiques>EtatsTiers\TerroirPyrenees</RepEtatsSpecifiques>
+    <MarquerFacturesImprimees>True</MarquerFacturesImprimees>
+    <ModeCompta>Agrigest2</ModeCompta>
+    <NomDossierCompta>BAJON bic</NomDossierCompta>
+    <ModeExport>Isacompta</ModeExport>
+    <nBanqueEntreprise>9001</nBanqueEntreprise>
+  </Parametres>
+  <Parametres>
+    <NomDossier>Agrifact</NomDossier>
+    <ServiceURL>http://193.251.24.103/UpDateAgriFact/Service1.asmx</ServiceURL>
+    <ServeurSQL>.\AGRIFACT</ServeurSQL>
+    <BaseSQL>AGRIFACT</BaseSQL>
+    <saPwd>ludo</saPwd>
+    <IdMaj>Guyot</IdMaj>
+    <PwdMaj>jc</PwdMaj>
+    <Type>TDT</Type>
+    <VerifAutoMAJ>False</VerifAutoMAJ>
+    <ObjectifMarge>30</ObjectifMarge>
+    <Deconnecter>false</Deconnecter>
+    <ServiceGestionSite>http://www.actigram.com/Services/service1.asmx</ServiceGestionSite>
+    <ServerSMTP>smtp.wanadoo.fr</ServerSMTP>
+    <AdresseSite>http://www.actigram.com/services</AdresseSite>
+    <BlocNPieceDebutA>20000</BlocNPieceDebutA>
+    <BlocNPieceFinA>29999</BlocNPieceFinA>
+    <BlocNPieceDebutV>65000</BlocNPieceDebutV>
+    <BlocNPieceFinV>65999</BlocNPieceFinV>
+    <NDossierCompta>B2960007</NDossierCompta>
+    <DebutExCompta>01/10/2006 00:00:00</DebutExCompta>
+    <FinExCompta>30/09/2007 00:00:00</FinExCompta>
+    <TypeTVA>TVA sur Facturation</TypeTVA>
+    <ClientFacturationTTC>False</ClientFacturationTTC>
+    <ClientNActivite>0000</ClientNActivite>
+    <ClientNCompte>41100000</ClientNCompte>
+    <ClientNCompteAuto>False</ClientNCompteAuto>
+    <FacturationClient1>32000</FacturationClient1>
+    <FacturationFournisseur1>10000</FacturationFournisseur1>
+    <FournisseurFacturationTTC>False</FournisseurFacturationTTC>
+    <FournisseurNActivite>0000</FournisseurNActivite>
+    <FournisseurNCompte>40100000</FournisseurNCompte>
+    <FournisseurNCompteAuto>False</FournisseurNCompteAuto>
+    <NPortModem>3</NPortModem>
+    <ProduitAchat>False</ProduitAchat>
+    <ProduitDecompteStockAuto>False</ProduitDecompteStockAuto>
+    <ProduitGestionStock>False</ProduitGestionStock>
+    <ProduitNActiviteA>0000</ProduitNActiviteA>
+    <ProduitNActiviteV>0000</ProduitNActiviteV>
+    <ProduitNCompteA>60100000</ProduitNCompteA>
+    <ProduitNCompteAAuto>False</ProduitNCompteAAuto>
+    <ProduitNCompteV>70100000</ProduitNCompteV>
+    <ProduitNCompteVAuto>False</ProduitNCompteVAuto>
+    <ProduitTxTVAVente>5.5</ProduitTxTVAVente>
+    <ProduitTypeFacturation>U1</ProduitTypeFacturation>
+    <ProduitVente>True</ProduitVente>
+    <StandardModem />
+    <EcartReglement>5</EcartReglement>
+    <CodeBarreGroupe>false</CodeBarreGroupe>
+    <ImpressionSQLServer>false</ImpressionSQLServer>
+    <ModeCalculCoefRestoBio>true</ModeCalculCoefRestoBio>
+    <CheminVNC>C:\Program Files\Actigram\AgriFact\UltraVNC</CheminVNC>
+    <AdresseVNC>193.251.24.103:5500</AdresseVNC>
+    <AdresseVNCID>1</AdresseVNCID>
+    <LastLogin>Jérémie</LastLogin>
+  </Parametres>
+  <Parametres>
+    <NomDossier>Agrifact Larroque</NomDossier>
+    <ServiceURL>http://193.251.24.103/UpDateAgriFact/Service1.asmx</ServiceURL>
+    <ServeurSQL>.\AGRIFACT</ServeurSQL>
+    <BaseSQL>AgrifactLarroque</BaseSQL>
+    <saPwd>ludo</saPwd>
+    <IdMaj>Guyot</IdMaj>
+    <PwdMaj>jc</PwdMaj>
+    <Type>TDT</Type>
+    <VerifAutoMAJ>False</VerifAutoMAJ>
+    <ObjectifMarge>30</ObjectifMarge>
+    <Deconnecter>False</Deconnecter>
+    <ServiceGestionSite>http://www.actigram.com/Services/service1.asmx</ServiceGestionSite>
+    <ServerSMTP>smtp.wanadoo.fr</ServerSMTP>
+    <AdresseSite>http://www.actigram.com/services</AdresseSite>
+    <BlocNPieceDebutA>20000</BlocNPieceDebutA>
+    <BlocNPieceFinA>30000</BlocNPieceFinA>
+    <BlocNPieceDebutV>65000</BlocNPieceDebutV>
+    <BlocNPieceFinV>66000</BlocNPieceFinV>
+    <NDossierCompta>A0009207</NDossierCompta>
+    <DebutExCompta>01/05/2006 00:00:00</DebutExCompta>
+    <FinExCompta>30/04/2007 00:00:00</FinExCompta>
+    <TypeTVA>TVA sur Facturation</TypeTVA>
+    <ClientFacturationTTC>False</ClientFacturationTTC>
+    <ClientNActivite>0000</ClientNActivite>
+    <ClientNCompte>41100000</ClientNCompte>
+    <ClientNCompteAuto>False</ClientNCompteAuto>
+    <FacturationClient1>32000</FacturationClient1>
+    <FacturationFournisseur1>10000</FacturationFournisseur1>
+    <FournisseurFacturationTTC>False</FournisseurFacturationTTC>
+    <FournisseurNActivite>0000</FournisseurNActivite>
+    <FournisseurNCompte>40100000</FournisseurNCompte>
+    <FournisseurNCompteAuto>False</FournisseurNCompteAuto>
+    <NPortModem>3</NPortModem>
+    <ProduitAchat>False</ProduitAchat>
+    <ProduitDecompteStockAuto>False</ProduitDecompteStockAuto>
+    <ProduitGestionStock>False</ProduitGestionStock>
+    <ProduitNActiviteA>0000</ProduitNActiviteA>
+    <ProduitNActiviteV>0000</ProduitNActiviteV>
+    <ProduitNCompteA>60100000</ProduitNCompteA>
+    <ProduitNCompteAAuto>False</ProduitNCompteAAuto>
+    <ProduitNCompteV>70100000</ProduitNCompteV>
+    <ProduitNCompteVAuto>False</ProduitNCompteVAuto>
+    <ProduitTxTVAVente>19.6</ProduitTxTVAVente>
+    <ProduitTypeFacturation>U1</ProduitTypeFacturation>
+    <ProduitVente>True</ProduitVente>
+    <StandardModem />
+    <EcartReglement>5</EcartReglement>
+    <CodeBarreGroupe>false</CodeBarreGroupe>
+    <ImpressionSQLServer>false</ImpressionSQLServer>
+    <ModeCalculCoefRestoBio>true</ModeCalculCoefRestoBio>
+    <CheminVNC>C:\Program Files\Actigram\AgriFact\UltraVNC</CheminVNC>
+    <AdresseVNC>193.251.24.103:5500</AdresseVNC>
+    <AdresseVNCID>1</AdresseVNCID>
+    <LastLogin>Demo</LastLogin>
+    <BlocNPieceDebutVReglement>80000</BlocNPieceDebutVReglement>
+    <BlocNPieceFinVReglement>100000</BlocNPieceFinVReglement>
+    <BlocNPieceDebutAReglement>100000</BlocNPieceDebutAReglement>
+    <BlocNPieceFinAReglement>150000</BlocNPieceFinAReglement>
+    <ModeCompta>Deconnecte</ModeCompta>
+    <NomDossierCompta />
+    <ModeExport>Isacompta</ModeExport>
+  </Parametres>
+  <Parametres>
+    <NomDossier>Actigram *DEV*</NomDossier>
+    <ServiceURL>http://193.251.24.103/UpDateAgriFact/Service1.asmx</ServiceURL>
+    <ServeurSQL>.\AGRIFACT</ServeurSQL>
+    <BaseSQL>AgrifactActigram</BaseSQL>
+    <saPwd>ludo</saPwd>
+    <IdMaj>Guyot</IdMaj>
+    <PwdMaj>jc</PwdMaj>
+    <Type>TDT</Type>
+    <VerifAutoMAJ>False</VerifAutoMAJ>
+    <ObjectifMarge>30</ObjectifMarge>
+    <Deconnecter>False</Deconnecter>
+    <ServiceGestionSite>http://www.actigram.com/Services/service1.asmx</ServiceGestionSite>
+    <ServerSMTP>smtp.wanadoo.fr</ServerSMTP>
+    <AdresseSite>http://www.actigram.com/services</AdresseSite>
+    <BlocNPieceDebutA>20000</BlocNPieceDebutA>
+    <BlocNPieceFinA>30000</BlocNPieceFinA>
+    <BlocNPieceDebutV>3000</BlocNPieceDebutV>
+    <BlocNPieceFinV>3999</BlocNPieceFinV>
+    <NDossierCompta>A00000</NDossierCompta>
+    <DebutExCompta>01/01/2008 00:00:00</DebutExCompta>
+    <FinExCompta>31/12/2008 00:00:00</FinExCompta>
+    <TypeTVA>TVA sur Encaissement</TypeTVA>
+    <ClientFacturationTTC>False</ClientFacturationTTC>
+    <ClientNActivite>0000</ClientNActivite>
+    <ClientNCompte>41100000</ClientNCompte>
+    <ClientNCompteAuto>False</ClientNCompteAuto>
+    <FacturationClient1>32000</FacturationClient1>
+    <FacturationFournisseur1>10000</FacturationFournisseur1>
+    <FournisseurFacturationTTC>False</FournisseurFacturationTTC>
+    <FournisseurNActivite>0000</FournisseurNActivite>
+    <FournisseurNCompte>40100000</FournisseurNCompte>
+    <FournisseurNCompteAuto>False</FournisseurNCompteAuto>
+    <NPortModem>3</NPortModem>
+    <ProduitAchat>False</ProduitAchat>
+    <ProduitDecompteStockAuto>False</ProduitDecompteStockAuto>
+    <ProduitGestionStock>False</ProduitGestionStock>
+    <ProduitNActiviteA>0000</ProduitNActiviteA>
+    <ProduitNActiviteV>0000</ProduitNActiviteV>
+    <ProduitNCompteA>60100000</ProduitNCompteA>
+    <ProduitNCompteAAuto>False</ProduitNCompteAAuto>
+    <ProduitNCompteV>70100000</ProduitNCompteV>
+    <ProduitNCompteVAuto>False</ProduitNCompteVAuto>
+    <ProduitTxTVAVente>19.6</ProduitTxTVAVente>
+    <ProduitTypeFacturation>U1</ProduitTypeFacturation>
+    <ProduitVente>True</ProduitVente>
+    <StandardModem />
+    <EcartReglement>5</EcartReglement>
+    <CodeBarreGroupe>false</CodeBarreGroupe>
+    <ImpressionSQLServer>false</ImpressionSQLServer>
+    <ModeCalculCoefRestoBio>true</ModeCalculCoefRestoBio>
+    <CheminVNC>C:\Program Files\Actigram\AgriFact\UltraVNC</CheminVNC>
+    <AdresseVNC>193.251.24.103:5500</AdresseVNC>
+    <AdresseVNCID>1</AdresseVNCID>
+    <LastLogin>agnes</LastLogin>
+    <BlocNPieceDebutVReglement>4000</BlocNPieceDebutVReglement>
+    <BlocNPieceFinVReglement>5999</BlocNPieceFinVReglement>
+    <BlocNPieceDebutAReglement>99999</BlocNPieceDebutAReglement>
+    <BlocNPieceFinAReglement>99999</BlocNPieceFinAReglement>
+    <RepEtatsSpecifiques />
+    <MarquerFacturesImprimees>True</MarquerFacturesImprimees>
+    <ModeCompta>AgrigestEDI</ModeCompta>
+    <NomDossierCompta>ACTIGRAM</NomDossierCompta>
+    <nBanqueEntreprise>1001</nBanqueEntreprise>
+  </Parametres>
+</NewDataSet>

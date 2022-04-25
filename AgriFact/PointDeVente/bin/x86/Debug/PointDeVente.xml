@@ -1,0 +1,431 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+PointDeVente
+</name>
+</assembly>
+<members>
+<member name="T:PointDeVente.DsAgrifact.RechercheDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:PointDeVente.DsAgrifact.EntrepriseDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:PointDeVente.DsAgrifact.FamilleDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:PointDeVente.DsAgrifact.ProduitDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:PointDeVente.DsAgrifact.VFactureDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:PointDeVente.DsAgrifact.VFacture_DetailDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:PointDeVente.DsAgrifact.ReglementDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:PointDeVente.DsAgrifact.Reglement_DetailDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:PointDeVente.DsAgrifact.TVADataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:PointDeVente.DsAgrifact.ListeChoixDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:PointDeVente.DsAgrifact.TelephoneEntrepriseDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:PointDeVente.DsAgrifact.CommunesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:PointDeVente.DsAgrifact.TarifDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:PointDeVente.DsAgrifact.Tarif_DetailDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:PointDeVente.DsAgrifact.JournalCaisseDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:PointDeVente.DsAgrifact.ParametresDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:PointDeVente.DsAgrifact.ComptesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:PointDeVente.DsAgrifact.RechercheRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:PointDeVente.DsAgrifact.EntrepriseRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:PointDeVente.DsAgrifact.FamilleRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:PointDeVente.DsAgrifact.ProduitRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:PointDeVente.DsAgrifact.VFactureRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:PointDeVente.DsAgrifact.VFacture_DetailRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:PointDeVente.DsAgrifact.ReglementRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:PointDeVente.DsAgrifact.Reglement_DetailRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:PointDeVente.DsAgrifact.TVARow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:PointDeVente.DsAgrifact.ListeChoixRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:PointDeVente.DsAgrifact.TelephoneEntrepriseRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:PointDeVente.DsAgrifact.CommunesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:PointDeVente.DsAgrifact.TarifRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:PointDeVente.DsAgrifact.Tarif_DetailRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:PointDeVente.DsAgrifact.JournalCaisseRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:PointDeVente.DsAgrifact.ParametresRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:PointDeVente.DsAgrifact.ComptesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:PointDeVente.DsAgrifact.RechercheRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:PointDeVente.DsAgrifact.EntrepriseRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:PointDeVente.DsAgrifact.FamilleRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:PointDeVente.DsAgrifact.ProduitRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:PointDeVente.DsAgrifact.VFactureRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:PointDeVente.DsAgrifact.VFacture_DetailRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:PointDeVente.DsAgrifact.ReglementRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:PointDeVente.DsAgrifact.Reglement_DetailRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:PointDeVente.DsAgrifact.TVARowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:PointDeVente.DsAgrifact.ListeChoixRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:PointDeVente.DsAgrifact.TelephoneEntrepriseRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:PointDeVente.DsAgrifact.CommunesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:PointDeVente.DsAgrifact.TarifRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:PointDeVente.DsAgrifact.Tarif_DetailRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:PointDeVente.DsAgrifact.JournalCaisseRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:PointDeVente.DsAgrifact.ParametresRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:PointDeVente.DsAgrifact.ComptesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:PointDeVente.DsAgrifact">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:PointDeVente.DsAgrifactTableAdapters.RechercheTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:PointDeVente.DsAgrifactTableAdapters.EntrepriseTA">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:PointDeVente.DsAgrifactTableAdapters.FamilleTA">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:PointDeVente.DsAgrifactTableAdapters.ProduitTA">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:PointDeVente.DsAgrifactTableAdapters.VFactureTA">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:PointDeVente.DsAgrifactTableAdapters.VFacture_DetailTA">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:PointDeVente.DsAgrifactTableAdapters.ReglementTA">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:PointDeVente.DsAgrifactTableAdapters.Reglement_DetailTA">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:PointDeVente.DsAgrifactTableAdapters.TVA_TA">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:PointDeVente.DsAgrifactTableAdapters.ListeChoixTA">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:PointDeVente.DsAgrifactTableAdapters.TelephoneEntrepriseTA">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:PointDeVente.DsAgrifactTableAdapters.CommunesTA">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:PointDeVente.DsAgrifactTableAdapters.TarifTA">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:PointDeVente.DsAgrifactTableAdapters.Tarif_DetailTA">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:PointDeVente.DsAgrifactTableAdapters.JournalCaisseTA">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:PointDeVente.DsAgrifactTableAdapters.ParametresTA">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:PointDeVente.DsAgrifactTableAdapters.ComptesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:PointDeVente.DsEtats.EtatCaisseDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:PointDeVente.DsEtats.CAArticleDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:PointDeVente.DsEtats.JournalEncaissementDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:PointDeVente.DsEtats.EtatCaisseRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:PointDeVente.DsEtats.CAArticleRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:PointDeVente.DsEtats.JournalEncaissementRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:PointDeVente.DsEtats.EtatCaisseRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:PointDeVente.DsEtats.CAArticleRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:PointDeVente.DsEtats.JournalEncaissementRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:PointDeVente.DsEtats">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:PointDeVente.DsEtatsTableAdapters.EtatCaisseTA">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:PointDeVente.DsEtatsTableAdapters.CAArticleTA">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:PointDeVente.DsEtatsTableAdapters.JournalEncaissementTA">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:PointDeVente.DataGridViewEnter.ProcessCmdKey(System.Windows.Forms.Message@,System.Windows.Forms.Keys)">
+	<summary>
+	</summary>
+	<param name="msg"></param>
+	<param name="keyData"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PointDeVente.DataGridViewEnter.ProcessDialogKey(System.Windows.Forms.Keys)">
+	<summary>
+	</summary>
+	<param name="keyData"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PointDeVente.DataGridViewEnter.OnCellMouseDown(System.Windows.Forms.DataGridViewCellMouseEventArgs)">
+	<summary>
+	</summary>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:PointDeVente.DataGridViewEnter.OnCellEnter(System.Windows.Forms.DataGridViewCellEventArgs)">
+	<summary>
+	</summary>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:PointDeVente.DataGridViewEnter.OnCellBeginEdit(System.Windows.Forms.DataGridViewCellCancelEventArgs)">
+	<summary>
+	</summary>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:PointDeVente.DataGridViewEnter.ProcessDataGridViewKey(System.Windows.Forms.KeyEventArgs)">
+	<summary>
+	</summary>
+	<param name="e"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PointDeVente.DataGridViewEnter.ProcessLeftKey(System.Windows.Forms.Keys)">
+	<summary>
+	</summary>
+	<param name="keyData"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PointDeVente.DataGridViewEnter.ProcessRightKey(System.Windows.Forms.Keys)">
+	<summary>
+	</summary>
+	<param name="keyData"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PointDeVente.DataGridViewEnter.ConfigAutocompleteCombobox">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:PointDeVente.DataGridViewEnter.OnAutocompleteControlShowing(System.Object,System.Windows.Forms.DataGridViewEditingControlShowingEventArgs)">
+	<summary>
+	</summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:PointDeVente.DataGridViewEnter.ComboPreviewKeyDown(System.Object,System.Windows.Forms.PreviewKeyDownEventArgs)">
+	<summary>
+	</summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:PointDeVente.DataGridViewEnter.ComboEnter(System.Object,System.EventArgs)">
+	<summary>
+	</summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:PointDeVente.DataGridViewEnter.OnAutocompleteCellLeave(System.Object,System.Windows.Forms.DataGridViewCellEventArgs)">
+	<summary>
+	</summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="T:PointDeVente.DataGridViewEnter">
+	<summary>
+ Class permettant de gÃ©rer le grid de saisie spÃ©cifique tablÃ© sur un datagrid classique
+ ''' </summary>
+	<remarks></remarks>
+</member><member name="P:PointDeVente.My.Resources.Resources.ResourceManager">
+	<summary>
+  Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+</summary>
+</member><member name="P:PointDeVente.My.Resources.Resources.Culture">
+	<summary>
+  Remplace la propriété CurrentUICulture du thread actuel pour toutes
+  les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+</summary>
+</member><member name="T:PointDeVente.My.Resources.Resources">
+	<summary>
+  Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+</summary>
+</member>
+</members>
+</doc>

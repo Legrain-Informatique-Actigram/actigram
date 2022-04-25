@@ -1,0 +1,529 @@
+object TMetaDataObject
+  Version = '2.0.0.03'
+  object CubeMetadata: TContourMicroCube
+    CVer = '4.0.0.02'
+    RVer = '4.0.0.02'
+    ActiveNodes = 'GridView;'
+    object StyleHolder: TContourStyleHolder
+      Styles = <
+        item
+          Title = 'Default'
+          EnabledProperties = [spropFontColor, spropFontFamily, spropFontStyle, spropFontSize, spropFontPitch, spropFontCharset, spropFormat, spropBkColor, spropAlignment]
+          Font.Charset = 1
+          Font.Color = 4079911
+          Font.Height = -12
+          Font.Name = 'Arial'
+          Font.Style = []
+          Format.Value = '###,###,###,##0.00'
+        end
+        item
+          Title = 'Grandtotal'
+          EnabledProperties = [spropFontStyle, spropBkColor]
+          BkColor.Value = 3577330
+          Font.Charset = 1
+          Font.Color = -2147483640
+          Font.Height = -11
+          Font.Name = 'MS Sans Serif'
+          Font.Style = [fsBold]
+        end
+        item
+          Title = 'Rank'
+          EnabledProperties = [spropFormat]
+          Font.Charset = 1
+          Font.Color = -2147483640
+          Font.Height = -11
+          Font.Name = 'MS Sans Serif'
+          Font.Style = []
+          Format.Value = '##0'
+        end
+        item
+          Title = 'Subtotal'
+          EnabledProperties = [spropFontColor, spropBkColor]
+          BkColor.Value = 16513268
+          Font.Charset = 1
+          Font.Color = 0
+          Font.Height = -11
+          Font.Name = 'MS Sans Serif'
+          Font.Style = []
+        end
+        item
+          Title = 'Total'
+          EnabledProperties = [spropBkColor]
+          BkColor.Value = 10476025
+          Font.Charset = 1
+          Font.Color = -2147483640
+          Font.Height = -11
+          Font.Name = 'MS Sans Serif'
+          Font.Style = []
+        end>
+      CVer = '4.0.0.02'
+      RVer = '4.0.0.02'
+    end
+    object Stylesheet: TContourStylesheet
+      StyleHolder = StyleHolder
+      CVer = '4.0.0.02'
+      RVer = '4.0.0.02'
+      Rules = <>
+      Conditions = <>
+    end
+    object Cube0DB69FF4: TContourCube
+      Dims = <
+        item
+          FieldName = 'Nom'
+          Caption = 'Client'
+          FieldType = oft_String
+        end
+        item
+          FieldName = 'TypeClient'
+          Caption = 'Type client'
+          FieldType = oft_String
+        end
+        item
+          FieldName = 'nFacture'
+          Caption = 'N'#176' facture'
+          FieldType = oft_String
+        end
+        item
+          FieldName = 'DateEcheance'
+          Caption = 'Date ech'#233'ance'
+          FieldType = oft_String
+        end
+        item
+          FieldName = 'Commercial'
+          Caption = 'Commercial'
+          FieldType = oft_String
+        end
+        item
+          FieldName = 'CodePostal'
+          Caption = 'Code postal'
+          FieldType = oft_String
+        end
+        item
+          FieldName = 'Ville'
+          Caption = 'Ville'
+          FieldType = oft_String
+        end
+        item
+          FieldName = 'DateFacture'
+          FieldType = oft_Date
+        end
+        item
+          FieldName = 'Annee'
+          SrcName = 'DateFacture'
+          Modifier = mt_y_split
+        end
+        item
+          FieldName = 'Mois'
+          SrcName = 'DateFacture'
+          Modifier = mt_m_split
+        end>
+      BaseFacts = <
+        item
+          FieldName = 'MontantReglement'
+        end
+        item
+          FieldName = 'MontantTTC'
+        end
+        item
+          FieldName = 'ResteAPayer'
+        end>
+      Facts = <
+        item
+          FieldName = 'MontantReglement'
+          Formula = 'SUM($self)'
+        end
+        item
+          FieldName = 'MontantTTC'
+          Formula = 'SUM($self)'
+        end
+        item
+          FieldName = 'ResteAPayer'
+          Formula = 'SUM($self)'
+        end>
+      CVer = '4.0.0.02'
+      RVer = '4.0.0.02'
+      object Slice: TContourSlice
+        Dims = <
+          item
+            FieldName = 'Nom'
+            Axis = da_vertical
+          end
+          item
+            FieldName = 'TypeClient'
+            Axis = da_vertical
+          end
+          item
+            FieldName = 'nFacture'
+            Axis = da_vertical
+          end
+          item
+            FieldName = 'DateFacture'
+            Axis = da_vertical
+          end
+          item
+            FieldName = 'DateEcheance'
+            Axis = da_vertical
+          end
+          item
+            FieldName = 'Commercial'
+            Axis = da_vertical
+          end
+          item
+            FieldName = 'Annee'
+            Axis = da_horizontal
+          end
+          item
+            FieldName = 'CodePostal'
+          end
+          item
+            FieldName = 'Ville'
+          end
+          item
+            FieldName = 'Mois'
+          end>
+        CVer = '4.0.0.02'
+        RVer = '4.0.0.02'
+        object GridView: TContourViewGridClient
+          Caption = 'VFACTURE_IMP_Liste_Factures_Impayees.cubes'
+          Dims = <
+            item
+              FieldName = 'Nom'
+            end
+            item
+              FieldName = 'TypeClient'
+              NoTotals = True
+            end
+            item
+              FieldName = 'nFacture'
+              NoTotals = True
+            end
+            item
+              FieldName = 'DateEcheance'
+              NoTotals = True
+            end
+            item
+              FieldName = 'Commercial'
+              NoTotals = True
+            end
+            item
+              FieldName = 'CodePostal'
+              NoTotals = True
+            end
+            item
+              FieldName = 'Ville'
+              NoTotals = True
+            end
+            item
+              FieldName = 'DateFacture'
+              NoTotals = True
+            end
+            item
+              FieldName = 'Annee'
+            end
+            item
+              FieldName = 'Mois'
+            end>
+          Facts = <
+            item
+              FieldName = 'MontantReglement'
+              Caption = 'Montant r'#232'glements'
+              Appearance.EnabledProperties = [spropFormat]
+              Appearance.Font.Charset = 1
+              Appearance.Font.Color = -2147483640
+              Appearance.Font.Height = -11
+              Appearance.Font.Name = 'MS Sans Serif'
+              Appearance.Font.Style = []
+              Appearance.Format.Value = '### ### ##0.00'
+              OwnsStylesheet = True
+              Visible = True
+            end
+            item
+              FieldName = 'MontantTTC'
+              Caption = 'Montant Facture TTC'
+              Appearance.EnabledProperties = [spropFormat]
+              Appearance.Font.Charset = 1
+              Appearance.Font.Color = -2147483640
+              Appearance.Font.Height = -11
+              Appearance.Font.Name = 'MS Sans Serif'
+              Appearance.Font.Style = []
+              Appearance.Format.Value = '### ### ##0.00'
+              OwnsStylesheet = True
+              Visible = True
+            end
+            item
+              FieldName = 'ResteAPayer'
+              Caption = 'Reste '#224' payer'
+              Appearance.EnabledProperties = [spropFormat]
+              Appearance.Font.Charset = 1
+              Appearance.Font.Color = -2147483640
+              Appearance.Font.Height = -11
+              Appearance.Font.Name = 'MS Sans Serif'
+              Appearance.Font.Style = []
+              Appearance.Format.Value = '### ### ##0.00'
+              OwnsStylesheet = True
+              Visible = True
+            end>
+          Stylesheet = Stylesheet
+          CVer = '4.0.0.02'
+          RVer = '4.0.0.02'
+          object Grid0DB5E354: TContourGrid
+            BorderStyle = cbsNone
+            AllowDimOutside = True
+            AllowExpand = True
+            AllowPivot = True
+            TitleSettings.BkColor = 16772575
+            TitleSettings.Font.Charset = 1
+            TitleSettings.Font.Color = 8998176
+            TitleSettings.Font.Height = -24
+            TitleSettings.Font.Name = 'Tahoma'
+            TitleSettings.Font.Style = []
+            TitleSettings.Visible = True
+            TitleSettings.Alignment = taCenter
+            Header.BkColor = 16775927
+            Header.Font.Charset = 1
+            Header.Font.Color = 8998176
+            Header.Font.Height = -11
+            Header.Font.Name = 'Tahoma'
+            Header.Font.Style = []
+            Header.Height = 30
+            Header.Visible = False
+            Header.ParentColor = False
+            Header.UseOnExport = True
+            Header.AboveTitle = True
+            Footer.BkColor = 16775927
+            Footer.Font.Charset = 1
+            Footer.Font.Color = 8998176
+            Footer.Font.Height = -11
+            Footer.Font.Name = 'Tahoma'
+            Footer.Font.Style = []
+            Footer.Height = -1
+            Footer.Visible = False
+            Footer.ParentColor = False
+            Footer.UseOnExport = True
+            DimFilter.BkColor = -2147483633
+            DimFilter.Font.Charset = 1
+            DimFilter.Font.Color = 0
+            DimFilter.Font.Height = -11
+            DimFilter.Font.Name = 'Tahoma'
+            DimFilter.Font.Style = []
+            DimFilter.AllowFilter = True
+            DimFilter.ShowHiddenValues = False
+            FactsHeading.BkColor = 12937777
+            FactsHeading.Font.Charset = 1
+            FactsHeading.Font.Color = 16777215
+            FactsHeading.Font.Height = -11
+            FactsHeading.Font.Name = 'Tahoma'
+            FactsHeading.Font.Style = [fsBold]
+            FactsHeading.AlwaysVisible = False
+            FactsList.BkColor = 12937777
+            FactsList.Font.Charset = 1
+            FactsList.Font.Color = 16777215
+            FactsList.Font.Height = -11
+            FactsList.Font.Name = 'Tahoma'
+            FactsList.Font.Style = [fsBold]
+            FactsList.Caption = 'Faits'
+            FactsList.AllowFilter = True
+            FactsList.ListInactiveFacts = False
+            FactsList.ShowBitmap = True
+            TotalsString = 'Total'
+            DimValueStyle.BkColor = 16182500
+            DimValueStyle.Font.Charset = 1
+            DimValueStyle.Font.Color = 0
+            DimValueStyle.Font.Height = -11
+            DimValueStyle.Font.Name = 'Tahoma'
+            DimValueStyle.Font.Style = []
+            DimTitleStyle.BkColor = 4724480
+            DimTitleStyle.Font.Charset = 1
+            DimTitleStyle.Font.Color = 16777215
+            DimTitleStyle.Font.Height = -11
+            DimTitleStyle.Font.Name = 'Tahoma'
+            DimTitleStyle.Font.Style = [fsBold]
+            DimTitleInactiveStyle.BkColor = 12956081
+            DimTitleInactiveStyle.Font.Charset = 1
+            DimTitleInactiveStyle.Font.Color = 16777215
+            DimTitleInactiveStyle.Font.Height = -11
+            DimTitleInactiveStyle.Font.Name = 'Tahoma'
+            DimTitleInactiveStyle.Font.Style = [fsBold]
+            DimTitleInactiveStyle.Arrangement = ar_horizontal
+            DimTitleDraggingStyle.BkColor = 8543810
+            DimTitleDraggingStyle.Font.Charset = 1
+            DimTitleDraggingStyle.Font.Color = 16777215
+            DimTitleDraggingStyle.Font.Height = -11
+            DimTitleDraggingStyle.Font.Name = 'Tahoma'
+            DimTitleDraggingStyle.Font.Style = [fsBold]
+            OutsideBarBkColor = 15854051
+            UnusedDataAreaColor = 16645369
+            Color = 16645369
+            ParentColor = False
+          end
+          object TExtendedAttributes
+            Attributes = <
+              item
+                Name = '__stored__.__future__.GridFeature'
+                Value = 
+                  #39'object Grid0DB5E354_metahelper: TGridStyleHelper'#13#10'  DimTitleFil' +
+                  'teredStyle.BkColor = 4724480'#13#10'  DimTitleFilteredStyle.Font.Chars' +
+                  'et = DEFAULT_CHARSET'#13#10'  DimTitleFilteredStyle.Font.Color = clWhi' +
+                  'te'#13#10'  DimTitleFilteredStyle.Font.Height = -11'#13#10'  DimTitleFiltere' +
+                  'dStyle.Font.Name = '#39'Tahoma'#39#13#10'  DimTitleFilteredStyle.Font.Style ' +
+                  '= [fsBold, fsItalic]'#13#10'  DimTitleFilteredFactStyle.BkColor = 4724' +
+                  '480'#13#10'  DimTitleFilteredFactStyle.Font.Charset = DEFAULT_CHARSET'#13 +
+                  #10'  DimTitleFilteredFactStyle.Font.Color = clWhite'#13#10'  DimTitleFil' +
+                  'teredFactStyle.Font.Height = -11'#13#10'  DimTitleFilteredFactStyle.Fo' +
+                  'nt.Name = '#39'Tahoma'#39#13#10'  DimTitleFilteredFactStyle.Font.Style = [fs' +
+                  'Bold, fsItalic]'#13#10'  DimTotalValueStyle.BkColor = 16182500'#13#10'  DimT' +
+                  'otalValueStyle.Font.Charset = DEFAULT_CHARSET'#13#10'  DimTotalValueSt' +
+                  'yle.Font.Color = clBlack'#13#10'  DimTotalValueStyle.Font.Height = -11' +
+                  #13#10'  DimTotalValueStyle.Font.Name = '#39'Tahoma'#39#13#10'  DimTotalValueStyl' +
+                  'e.Font.Style = [fsBold]'#13#10'  DimGrandTotalValueStyle.BkColor = 161' +
+                  '82500'#13#10'  DimGrandTotalValueStyle.Font.Charset = DEFAULT_CHARSET'#13 +
+                  #10'  DimGrandTotalValueStyle.Font.Color = clBlack'#13#10'  DimGrandTotal' +
+                  'ValueStyle.Font.Height = -11'#13#10'  DimGrandTotalValueStyle.Font.Nam' +
+                  'e = '#39'Tahoma'#39#13#10'  DimGrandTotalValueStyle.Font.Style = [fsBold]'#13#10' ' +
+                  ' UnusedTreeAreaColor = 16645369'#13#10'  DimLevelGradient = 14007466'#13#10 +
+                  '  TreeLineColor = 14007466'#13#10'  DimLevelGradientStep = 20'#13#10'  DrawO' +
+                  'ptions = [go_DimLevelGradient, go_DrawUnusedTreeArea, go_Gradien' +
+                  'tBackground]'#13#10'  AllowDimVertical = True'#13#10'  AllowDimHorizontal = ' +
+                  'True'#13#10'end'#13#10
+              end
+              item
+                Name = '__stored__.__future__.HTREE_MODE'
+                Value = 'false'
+              end
+              item
+                Name = '__stored__.__future__.VTREE_MODE'
+                Value = 'false'
+              end>
+          end
+          object TExtendedAttributes
+            OwnerType = 'Fact'
+            OwnerName = 'MontantReglement'
+            Attributes = <
+              item
+                Name = '__stored__.__future__.Engaged'
+                Value = 'true'
+              end>
+          end
+          object TExtendedAttributes
+            OwnerType = 'Fact'
+            OwnerName = 'MontantTTC'
+            Attributes = <
+              item
+                Name = '__stored__.__future__.Engaged'
+                Value = 'true'
+              end>
+          end
+          object TExtendedAttributes
+            OwnerType = 'Fact'
+            OwnerName = 'ResteAPayer'
+            Attributes = <
+              item
+                Name = '__stored__.__future__.Engaged'
+                Value = 'true'
+              end>
+          end
+        end
+      end
+      object TExtendedAttributes
+        Attributes = <
+          item
+            Name = '__stored__.__future__.DimsHierarchy'
+            Value = 
+              #39'object Cube0DB69FF4_metahelper: TCubeFeatureHelper'#13#10'  DimsHiera' +
+              'rchy = <>'#13#10'end'#13#10
+          end>
+      end
+      object TExtendedAttributes
+        OwnerType = 'Dim'
+        OwnerName = 'Nom'
+        Attributes = <
+          item
+            Name = '__stored__.__future__.UNBALANCED'
+            Value = '+0'
+          end>
+      end
+      object TExtendedAttributes
+        OwnerType = 'Dim'
+        OwnerName = 'TypeClient'
+        Attributes = <
+          item
+            Name = '__stored__.__future__.UNBALANCED'
+            Value = '+0'
+          end>
+      end
+      object TExtendedAttributes
+        OwnerType = 'Dim'
+        OwnerName = 'nFacture'
+        Attributes = <
+          item
+            Name = '__stored__.__future__.UNBALANCED'
+            Value = '+0'
+          end>
+      end
+      object TExtendedAttributes
+        OwnerType = 'Dim'
+        OwnerName = 'DateEcheance'
+        Attributes = <
+          item
+            Name = '__stored__.__future__.UNBALANCED'
+            Value = '+0'
+          end>
+      end
+      object TExtendedAttributes
+        OwnerType = 'Dim'
+        OwnerName = 'Commercial'
+        Attributes = <
+          item
+            Name = '__stored__.__future__.UNBALANCED'
+            Value = '+0'
+          end>
+      end
+      object TExtendedAttributes
+        OwnerType = 'Dim'
+        OwnerName = 'CodePostal'
+        Attributes = <
+          item
+            Name = '__stored__.__future__.UNBALANCED'
+            Value = '+0'
+          end>
+      end
+      object TExtendedAttributes
+        OwnerType = 'Dim'
+        OwnerName = 'Ville'
+        Attributes = <
+          item
+            Name = '__stored__.__future__.UNBALANCED'
+            Value = '+0'
+          end>
+      end
+      object TExtendedAttributes
+        OwnerType = 'Dim'
+        OwnerName = 'DateFacture'
+        Attributes = <
+          item
+            Name = '__stored__.__future__.UNBALANCED'
+            Value = '+0'
+          end>
+      end
+      object TExtendedAttributes
+        OwnerType = 'Dim'
+        OwnerName = 'Annee'
+        Attributes = <
+          item
+            Name = '__stored__.__future__.UNBALANCED'
+            Value = '+0'
+          end>
+      end
+      object TExtendedAttributes
+        OwnerType = 'Dim'
+        OwnerName = 'Mois'
+        Attributes = <
+          item
+            Name = '__stored__.__future__.UNBALANCED'
+            Value = '+0'
+          end>
+      end
+    end
+  end
+end
+ 

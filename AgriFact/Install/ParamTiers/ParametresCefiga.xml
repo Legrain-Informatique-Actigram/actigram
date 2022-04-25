@@ -1,0 +1,81 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Parametres>
+    <NomDossier>Agrifact CEFIGA</NomDossier>
+    <ServiceURL>http://193.251.24.103/UpDateAgriFact/Service1.asmx</ServiceURL>
+    <ServeurSQL>localhost\AGRIFACT</ServeurSQL>
+    <BaseSQL>Agrifact</BaseSQL>
+    <saPwd>ludo</saPwd>
+    <IdMaj>Guyot</IdMaj>
+    <PwdMaj>jc</PwdMaj>
+    <Type>TDT</Type>
+    <VerifAutoMAJ>False</VerifAutoMAJ>
+    <ObjectifMarge>30</ObjectifMarge>
+    <EnTete>CEntre de FIscalité et de Gestion Agricole</EnTete>
+    <EnTeteDetail>9 bis rue Augustin Fresnel - BP 80329
+37173 CHAMBRAY LES TOURS CEDEX
+Tél : 02.47.28.30.02 - Fax : 02.47.28.79.36 - Mail : cefiga37@wanadoo.fr
+Siret : 33067508300027         APE : 741 C       NII : FR53330675083
+Centre de gestion agréé N° 3-02-370</EnTeteDetail>
+    <PiedPageDetail />
+    <InfoLegale>Tout retard de paiment entraînera des aggios calculés sur le montant TTC au taux de 1% par mois à compter de la date d'échéance et sans mise en demeure.</InfoLegale>
+    <CodeEtablissement>19406</CodeEtablissement>
+    <CodeGuichet>37072</CodeGuichet>
+    <NCompte>15004178001</NCompte>
+    <CleRIB>40</CleRIB>
+    <Domiciliation>CRCA</Domiciliation>
+    <InfoLegale2>En votre aimable règlement par chèque ou virement sur le compte référencé ci-dessous.
+En cas de virement, veuilez préciser, en libellé pour le bénéficiaire, votre nom et le N° de la facture</InfoLegale2>
+    <EMail>cefiga37@wanadoo.fr</EMail>
+    <ServiceGestionSite>http://www.actigram.com/Services/service1.asmx</ServiceGestionSite>
+    <ServerSMTP>smtp.wanadoo.fr</ServerSMTP>
+    <AdresseSite>http://www.actigram.com/services</AdresseSite>
+    <BlocNPieceDebutA>20000</BlocNPieceDebutA>
+    <BlocNPieceFinA>30000</BlocNPieceFinA>
+    <BlocNPieceDebutV>65000</BlocNPieceDebutV>
+    <BlocNPieceFinV>66000</BlocNPieceFinV>
+    <NDossierCompta>A0009207</NDossierCompta>
+    <DebutExCompta>01/05/2006 00:00:00</DebutExCompta>
+    <FinExCompta>30/04/2007 00:00:00</FinExCompta>
+    <TypeTVA>TVA sur Facturation</TypeTVA>
+    <ClientFacturationTTC>False</ClientFacturationTTC>
+    <ClientNActivite>0000</ClientNActivite>
+    <ClientNCompte>41100000</ClientNCompte>
+    <ClientNCompteAuto>False</ClientNCompteAuto>
+    <FacturationClient1>32000</FacturationClient1>
+    <FacturationFournisseur1>10000</FacturationFournisseur1>
+    <FournisseurFacturationTTC>False</FournisseurFacturationTTC>
+    <FournisseurNActivite>0000</FournisseurNActivite>
+    <FournisseurNCompte>40100000</FournisseurNCompte>
+    <FournisseurNCompteAuto>False</FournisseurNCompteAuto>
+    <NFax />
+    <NPortModem>3</NPortModem>
+    <NTel />
+    <ProduitAchat>False</ProduitAchat>
+    <ProduitDecompteStockAuto>False</ProduitDecompteStockAuto>
+    <ProduitGestionStock>False</ProduitGestionStock>
+    <ProduitNActiviteA>0000</ProduitNActiviteA>
+    <ProduitNActiviteV>0000</ProduitNActiviteV>
+    <ProduitNCompteA>60100000</ProduitNCompteA>
+    <ProduitNCompteAAuto>False</ProduitNCompteAAuto>
+    <ProduitNCompteV>70100000</ProduitNCompteV>
+    <ProduitNCompteVAuto>False</ProduitNCompteVAuto>
+    <ProduitTxTVAVente>19.6</ProduitTxTVAVente>
+    <ProduitTypeFacturation>U1</ProduitTypeFacturation>
+    <ProduitVente>True</ProduitVente>
+    <StandardModem />
+    <EcartReglement>5</EcartReglement>
+    <CodeBarreGroupe>false</CodeBarreGroupe>
+    <ImpressionSQLServer>false</ImpressionSQLServer>
+    <ModeCalculCoefRestoBio>true</ModeCalculCoefRestoBio>
+    <CheminVNC>C:\Program Files\Actigram\AgriFact\UltraVNC</CheminVNC>
+    <AdresseVNC>193.251.24.103:5500</AdresseVNC>
+    <AdresseVNCID>1</AdresseVNCID>
+    <LastLogin>demo</LastLogin>
+    <Deconnecter>False</Deconnecter>
+    <BlocNPieceDebutAReglement>100000</BlocNPieceDebutAReglement>
+    <BlocNPieceFinAReglement>150000</BlocNPieceFinAReglement>
+    <BlocNPieceDebutVReglement>80000</BlocNPieceDebutVReglement>
+    <BlocNPieceFinVReglement>100000</BlocNPieceFinVReglement>
+  </Parametres>
+</NewDataSet>

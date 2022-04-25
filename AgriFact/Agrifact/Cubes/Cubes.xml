@@ -1,0 +1,595 @@
+<DataSetCubes xmlns="http://tempuri.org/DataSetCubes.xsd">
+  <Cube>
+    <CodeCube>VFACTURE_DETAIL</CodeCube>
+    <Sql>SELECT dbo.Entreprise.Nom, dbo.Entreprise.CodePostal, dbo.Entreprise.Ville, dbo.Entreprise.Dep, dbo.VFacture_Detail.CodeProduit, dbo.VFacture_Detail.Libelle, dbo.VFacture_Detail.PrixUHT, dbo.VFacture_Detail.MontantLigneHT, dbo.VFacture_Detail.Unite1, dbo.VFacture_Detail.PrixUTVA, dbo.VFacture_Detail.PrixUTTC, dbo.VFacture_Detail.MontantLigneTVA, dbo.VFacture_Detail.MontantLigneTTC, dbo.VFacture_Detail.PrixUAchatHT, dbo.Famille.Famille, dbo.VFacture.DateFacture, CAST(dbo.VFacture.nFacture AS NVARCHAR) AS nFacture, dbo.Entreprise.TypeClient, dbo.VFacture_Detail.LibUnite1, dbo.VFacture_Detail.Unite2, dbo.VFacture_Detail.LibUnite2, dbo.TVA.TTaux, dbo.Produit.Famille2, dbo.VFacture.TxCommission, dbo.Personne.Nom AS Commercial, dbo.VFacture.Secteur, Entreprise_1.Nom AS Prescripteur, dbo.VFacture_Detail.NLot, dbo.VFacture_Detail.Remise, dbo.VFacture_Detail.MontantLigneHT * (dbo.VFacture_Detail.Remise / 100) AS RemiseHT FROM dbo.TVA INNER JOIN dbo.VFacture INNER JOIN dbo.Entreprise ON dbo.VFacture.nClient = dbo.Entreprise.nEntreprise INNER JOIN dbo.VFacture_Detail ON dbo.VFacture.nDevis = dbo.VFacture_Detail.nDevis ON dbo.TVA.TTVA = dbo.VFacture_Detail.TTVA LEFT OUTER JOIN dbo.Entreprise AS Entreprise_1 ON dbo.VFacture.nPrescripteur = Entreprise_1.nEntreprise LEFT OUTER JOIN dbo.Personne ON dbo.VFacture.nCommercial = dbo.Personne.nPersonne LEFT OUTER JOIN dbo.Produit LEFT OUTER JOIN dbo.Famille ON dbo.Produit.Famille1 = dbo.Famille.nFamille ON dbo.VFacture_Detail.CodeProduit = dbo.Produit.CodeProduit</Sql>
+    <le_titre>Détails Factures de vente</le_titre>
+    <le_champ_date>DateFacture</le_champ_date>
+    <le_type_date>YM</le_type_date>
+    <les_champs_formules>Prog CA,Prog nb1,Prog nb2</les_champs_formules>
+    <les_dimensions>Nom,CodeProduit,Libelle,Famille,TypeClient,LibUnite1,LibUnite2,nFacture,Commercial,Secteur,Famille2,Prescripteur,NLot</les_dimensions>
+    <les_formules>safevalofprev!MontantLigneHT,safevalofprev!Unite1,safevalofprev!Unite2</les_formules>
+    <les_mesures>MontantLigneHT,Unite1,MontantLigneTVA,MontantLigneTTC,Unite2,TxCommission,PrixUAchatHT,Remise,RemiseHT</les_mesures>
+    <les_titres_dim>Client,CodeProduit,Produit,Famille,Type client,Unité 1,Unité 2,N° facture,Commercial,Service,Famille2,Prescripteur,NLot</les_titres_dim>
+    <les_titres_mes>MontantLigneHT,Unite1,MontantLigneTVA,MontantLigneTTC,Unite2,Taux Commission,PrixUAchatHT,Remise,RemiseHT</les_titres_mes>
+    <p_modale>NON</p_modale>
+  </Cube>
+  <Cube>
+    <CodeCube>VFACTURE</CodeCube>
+    <Sql>SELECT Entreprise_1.Nom, Entreprise_1.CodePostal, Entreprise_1.Ville, Entreprise_1.Dep, dbo.VFacture.DateFacture, CAST(dbo.VFacture.nFacture AS NVARCHAR) AS nFacture, Entreprise_1.TypeClient, dbo.VFacture.TxCommission, CASE dbo.VFacture.ExportCompta WHEN 0 THEN 'NON' ELSE 'OUI' END AS ExportCompta, CAST(dbo.VFacture.DateExportCompta AS NVARCHAR) AS DateExportCompta, CAST(dbo.VFacture.DateEcheance AS NVARCHAR) AS DateEcheance, CASE dbo.VFacture.Paye WHEN 0 THEN 'NON' ELSE 'OUI' END AS Paye, dbo.VFacture.MontantHT, dbo.VFacture.MontantTVA, dbo.VFacture.MontantTTC, CASE dbo.VFacture.FacturationTTC WHEN 0 THEN 'NON' ELSE 'OUI' END AS FacturationTTC, dbo.Personne.Nom AS Commercial, dbo.VFacture.MontantHT * dbo.VFacture.TxCommission / 100 AS Commission, dbo.VFacture.TxCommission, dbo.VFacture.Secteur, dbo.Entreprise.Nom AS Prescripteur FROM dbo.VFacture INNER JOIN dbo.Entreprise AS Entreprise_1 ON dbo.VFacture.nClient = Entreprise_1.nEntreprise LEFT OUTER JOIN dbo.Entreprise ON dbo.VFacture.nPrescripteur = dbo.Entreprise.nEntreprise LEFT OUTER JOIN dbo.Personne ON dbo.VFacture.nCommercial = dbo.Personne.nPersonne</Sql>
+    <le_titre>Factures de vente</le_titre>
+    <le_champ_date>DateFacture</le_champ_date>
+    <le_type_date>YM</le_type_date>
+    <les_champs_formules></les_champs_formules>
+    <les_dimensions>Nom,TypeClient,nFacture,ExportCompta,DateExportCompta,DateEcheance,Paye,FacturationTTC,Commercial,Secteur,Prescripteur</les_dimensions>
+    <les_formules></les_formules>
+    <les_mesures>MontantHT,MontantTVA,MontantTTC,Commission,TxCommission</les_mesures>
+    <les_titres_dim>Client,Type client,N° facture,Export compta,Date export compta,Date echéance,Payée,Facturation TTC,Commercial,Service,Prescripteur</les_titres_dim>
+    <les_titres_mes>Montant HT,Montant TVA,Montant TTC,Commission,Taux commission</les_titres_mes>
+    <p_modale>NON</p_modale>
+  </Cube>
+  <Cube>
+    <CodeCube>VBONCOMMANDE_DETAIL</CodeCube>
+    <Sql>SELECT dbo.Entreprise.Nom, dbo.Entreprise.CodePostal, dbo.Entreprise.Ville, dbo.Entreprise.Dep, dbo.VBonCommande_Detail.CodeProduit,dbo.VBonCommande_Detail.Libelle, dbo.VBonCommande_Detail.PrixUHT, dbo.VBonCommande_Detail.MontantLigneHT, dbo.VBonCommande_Detail.Unite1,dbo.VBonCommande_Detail.PrixUTVA, dbo.VBonCommande_Detail.PrixUTTC, dbo.VBonCommande_Detail.MontantLigneTVA,dbo.VBonCommande_Detail.MontantLigneTTC, dbo.VBonCommande_Detail.PrixUAchatHT, dbo.Famille.Famille, dbo.VBonCommande.DateFacture AS DateCommande,dbo.Entreprise.TypeClient, dbo.VBonCommande_Detail.LibUnite1, dbo.VBonCommande_Detail.Unite2, dbo.VBonCommande_Detail.LibUnite2, dbo.Produit.Famille2,dbo.VBonCommande.TxCommission, CAST(dbo.VBonCommande.nFacture AS VARCHAR) AS nFacture FROM dbo.Famille RIGHT OUTER JOIN dbo.Produit RIGHT OUTER JOIN dbo.Entreprise INNER JOIN dbo.VBonCommande ON dbo.Entreprise.nEntreprise = dbo.VBonCommande.nClient INNER JOIN dbo.VBonCommande_Detail ON dbo.VBonCommande.nDevis = dbo.VBonCommande_Detail.nDevis ON dbo.Produit.CodeProduit = dbo.VBonCommande_Detail.CodeProduit ON dbo.Famille.nFamille = dbo.Produit.Famille1</Sql>
+    <le_titre>Détails Commandes Clients</le_titre>
+    <le_champ_date>DateCommande</le_champ_date>
+    <le_type_date>YM</le_type_date>
+    <les_champs_formules>Prog CA,Prog nb1,Prog nb2</les_champs_formules>
+    <les_dimensions>Nom,CodeProduit,Libelle,Famille,TypeClient,LibUnite1,LibUnite2,nFacture</les_dimensions>
+    <les_formules>safevalofprev!MontantLigneHT,safevalofprev!Unite1,safevalofprev!Unite2</les_formules>
+    <les_mesures>MontantLigneHT,Unite1,MontantLigneTVA,MontantLigneTTC,Unite2</les_mesures>
+    <les_titres_dim>Client,CodeProduit,Produit,Famille,Type client,Unité 1,Unité 2,N° BC</les_titres_dim>
+    <les_titres_mes>MontantLigneHT,Unite1,MontantLigneTVA,MontantLigneTTC,Unite2</les_titres_mes>
+    <p_modale>NON</p_modale>
+  </Cube>
+  <Cube>
+    <CodeCube>VBONLIVRAISON_DETAIL</CodeCube>
+    <Sql>SELECT dbo.Entreprise.Nom, dbo.Entreprise.CodePostal, dbo.Entreprise.Ville, dbo.Entreprise.Dep, dbo.VBonLivraison_Detail.CodeProduit, dbo.VBonLivraison_Detail.Libelle, dbo.VBonLivraison_Detail.PrixUHT, dbo.VBonLivraison_Detail.MontantLigneHT, dbo.VBonLivraison_Detail.Unite1, dbo.VBonLivraison_Detail.PrixUTVA, dbo.VBonLivraison_Detail.PrixUTTC, dbo.VBonLivraison_Detail.MontantLigneTVA, dbo.VBonLivraison_Detail.MontantLigneTTC, dbo.VBonLivraison_Detail.PrixUAchatHT, dbo.Famille.Famille, dbo.VBonLivraison.DateFacture AS DateLivraison, dbo.Entreprise.TypeClient, dbo.VBonLivraison_Detail.LibUnite1, dbo.VBonLivraison_Detail.Unite2, dbo.VBonLivraison_Detail.LibUnite2, dbo.Produit.Famille2, dbo.VBonLivraison.TxCommission, CAST(dbo.VBonLivraison.nFacture AS VARCHAR) AS nFacture FROM dbo.Produit RIGHT OUTER JOIN dbo.VBonLivraison_Detail INNER JOIN dbo.Entreprise INNER JOIN dbo.VBonLivraison ON dbo.Entreprise.nEntreprise = dbo.VBonLivraison.nClient ON dbo.VBonLivraison_Detail.nDevis = dbo.VBonLivraison.nDevis ON  dbo.Produit.CodeProduit = dbo.VBonLivraison_Detail.CodeProduit LEFT OUTER JOIN dbo.Famille ON dbo.Produit.Famille1 = dbo.Famille.nFamille</Sql>
+    <le_titre>Détails Livraisons Clients</le_titre>
+    <le_champ_date>DateLivraison</le_champ_date>
+    <le_type_date>YM</le_type_date>
+    <les_champs_formules>Prog CA,Prog nb1,Prog nb2</les_champs_formules>
+    <les_dimensions>Nom,CodeProduit,Libelle,Famille,TypeClient,LibUnite1,LibUnite2,nFacture</les_dimensions>
+    <les_formules>safevalofprev!MontantLigneHT,safevalofprev!Unite1,safevalofprev!Unite2</les_formules>
+    <les_mesures>MontantLigneHT,Unite1,MontantLigneTVA,MontantLigneTTC,Unite2</les_mesures>
+    <les_titres_dim>Client,CodeProduit,Produit,Famille,Type client,Unité 1,Unité 2,N° BL</les_titres_dim>
+    <les_titres_mes>MontantLigneHT,Unite1,MontantLigneTVA,MontantLigneTTC,Unite2</les_titres_mes>
+    <p_modale>NON</p_modale>
+  </Cube>
+  <Cube>
+    <CodeCube>VFACTURE_IMP</CodeCube>
+    <Sql>SELECT dbo.Entreprise.Nom, dbo.VFacture.DateFacture, CAST(dbo.VFacture.nFacture AS NVARCHAR) AS nFacture, SUM(dbo.Reglement_Detail.Montant) AS MontantReglement, dbo.Entreprise.TypeClient, CAST(dbo.VFacture.DateEcheance AS NVARCHAR) AS DateEcheance, dbo.VFacture.MontantTTC, dbo.Personne.Nom AS Commercial, dbo.VFacture.MontantTTC - SUM(dbo.Reglement_Detail.Montant) AS ResteAPayer, dbo.Entreprise.CodePostal, dbo.Entreprise.Ville FROM dbo.Reglement_Detail RIGHT OUTER JOIN dbo.VFacture INNER JOIN dbo.Entreprise ON dbo.VFacture.nClient = dbo.Entreprise.nEntreprise ON dbo.Reglement_Detail.nFacture = dbo.VFacture.nDevis LEFT OUTER JOIN dbo.Personne ON dbo.VFacture.nCommercial = dbo.Personne.nPersonne GROUP BY dbo.Entreprise.Nom, dbo.VFacture.DateFacture, dbo.VFacture.nFacture, dbo.Entreprise.TypeClient, dbo.VFacture.DateEcheance, dbo.VFacture.MontantTTC, dbo.Personne.Nom, dbo.Entreprise.CodePostal, dbo.Entreprise.Ville HAVING (dbo.VFacture.MontantTTC - SUM(dbo.Reglement_Detail.Montant) &gt; 0)</Sql>
+    <le_titre>Factures de vente impayées</le_titre>
+    <le_champ_date>DateFacture</le_champ_date>
+    <le_type_date>YM</le_type_date>
+    <les_champs_formules />
+    <les_dimensions>Nom,TypeClient,nFacture,DateEcheance,Commercial,CodePostal,Ville</les_dimensions>
+    <les_formules />
+    <les_mesures>MontantReglement,MontantTTC,ResteAPayer</les_mesures>
+    <les_titres_dim>Client,Type client,N° facture,Date echéance,Commercial,Code postal,Ville</les_titres_dim>
+    <les_titres_mes>Montant règlements,Montant Facture TTC,Reste à payer</les_titres_mes>
+    <p_modale>NON</p_modale>
+  </Cube>
+  <Cube>
+    <CodeCube>REGLEMENT</CodeCube>
+    <Sql>SELECT dbo.Reglement.DateReglement, dbo.Entreprise.Nom AS Payeur, dbo.Reglement.nMode, dbo.Reglement.Montant, dbo.Reglement.Perte, dbo.Reglement.Profit, CASE dbo.Reglement.Depose WHEN 0 THEN 'NON' ELSE 'OUI' END AS Depose, CASE dbo.Reglement.ExportCompta WHEN 0 THEN 'NON' ELSE 'OUI' END AS ExportCompta, CAST(dbo.Reglement.DateExportCompta AS NVARCHAR) AS DateExportCompta, dbo.Reglement.BanqueClient FROM dbo.Reglement INNER JOIN dbo.Entreprise ON dbo.Reglement.nEntreprise = dbo.Entreprise.nEntreprise</Sql>
+    <le_titre>Règlements ventes</le_titre>
+    <le_champ_date>DateReglement</le_champ_date>
+    <le_type_date>YM</le_type_date>
+    <les_dimensions>Payeur,nMode,Depose,ExportCompta,DateExportCompta,BanqueClient</les_dimensions>
+    <les_mesures>Montant,Perte,Profit</les_mesures>
+    <les_titres_dim>Payeur,Mode règlement,Déposé,Export comptable,Date export comptable</les_titres_dim>
+    <les_titres_mes>Montant règlement,Perte,Profit</les_titres_mes>
+    <p_modale>NON</p_modale>
+  </Cube>
+  <Cube>
+    <CodeCube>REGLEMENT_DETAIL</CodeCube>
+    <Sql>SELECT dbo.Reglement.DateReglement, dbo.Entreprise.Nom AS Payeur, dbo.Reglement.nMode, dbo.Reglement.Montant AS MontantReglement, CASE dbo.Reglement.Depose WHEN 0 THEN 'NON' ELSE 'OUI' END AS Depose, dbo.Reglement.BanqueClient, dbo.Reglement_Detail.Montant AS MontantReglementDetail, Entreprise_1.Nom AS Client, CAST(dbo.VFacture.nFacture AS NVARCHAR) AS nFacture, CAST(dbo.VFacture.DateFacture AS NVARCHAR) AS DateFacture, dbo.VFacture.MontantTTC AS MontantTTCFacture, CAST(dbo.VFacture.DateEcheance AS NVARCHAR) AS DateEcheance FROM dbo.Reglement INNER JOIN dbo.Entreprise ON dbo.Reglement.nEntreprise = dbo.Entreprise.nEntreprise INNER JOIN dbo.Reglement_Detail ON dbo.Reglement.nReglement = dbo.Reglement_Detail.nReglement INNER JOIN dbo.VFacture ON dbo.Reglement_Detail.nFacture = dbo.VFacture.nDevis INNER JOIN dbo.Entreprise AS Entreprise_1 ON dbo.VFacture.nClient = Entreprise_1.nEntreprise</Sql>
+    <le_titre>Détails Règlements Clients</le_titre>
+    <le_champ_date>DateReglement</le_champ_date>
+    <le_type_date>YM</le_type_date>
+    <les_dimensions>Payeur,nFacture,nMode,Depose,BanqueClient,Client,DateFacture,DateEcheance</les_dimensions>
+    <les_mesures>MontantReglement,MontantReglementDetail,MontantTTCFacture</les_mesures>
+    <les_titres_dim>Payeur,N° facture,Mode de règlement,Déposé,BanqueClient,Client,DateFacture,DateEcheance</les_titres_dim>
+    <les_titres_mes>Montant règlement, Montant affecté à la facture,Montant TTC facture</les_titres_mes>
+    <p_modale>NON</p_modale>
+  </Cube>
+  <Cube>
+    <CodeCube>REMISE_DETAIL</CodeCube>
+    <Sql>SELECT dbo.Remise.nRemiseBanque AS NumRemise, dbo.Remise.DateRemise, dbo.Remise.TypeRemise, dbo.Remise.Montant AS MontantRemise, CASE dbo.Remise.ExportCompta WHEN 0 THEN 'NON' ELSE 'OUI' END AS ExportCompta, CAST(dbo.Remise.DateExportCompta AS NVARCHAR) AS DateExportCompta, dbo.Banque.Libelle AS Banque, CAST(dbo.Reglement.DateReglement AS NVARCHAR) AS DateReglement, dbo.Reglement.Montant AS MontantReglement, dbo.Entreprise.Nom AS Payeur FROM dbo.Entreprise INNER JOIN dbo.Reglement ON dbo.Entreprise.nEntreprise = dbo.Reglement.nEntreprise RIGHT OUTER JOIN dbo.Remise INNER JOIN dbo.Remise_Detail ON dbo.Remise.nRemise = dbo.Remise_Detail.nRemise INNER JOIN dbo.Banque ON dbo.Remise.nBanque = dbo.Banque.nBanque ON dbo.Reglement.nReglement = dbo.Remise_Detail.nReglement</Sql>
+    <le_titre>Détails Remises Règlements Clients</le_titre>
+    <le_champ_date>DateRemise</le_champ_date>
+    <le_type_date>YM</le_type_date>
+    <les_dimensions>NumRemise,TypeRemise,ExportCompta,DateExportCompta,Banque,DateReglement,Payeur</les_dimensions>
+    <les_mesures>MontantRemise,MontantReglement</les_mesures>
+    <les_titres_dim>N° remise,Type remise,Export comptable,Date export comptable,Banque,Date règlement,Payeur</les_titres_dim>
+    <les_titres_mes>Montant remise,Montant règlement</les_titres_mes>
+    <p_modale>NON</p_modale>
+  </Cube>
+  <Cube>
+    <CodeCube>VFACTURE_COMMISSION</CodeCube>
+    <Sql>SELECT dbo.Personne.Nom AS Commercial, SUM(dbo.VFacture.MontantHT) AS MontantHT, SUM(dbo.VFacture.MontantTVA) AS MontantTVA, SUM(dbo.VFacture.MontantTTC) AS MontantTTC, SUM(dbo.VFacture.MontantHT * dbo.VFacture.TxCommission / 100) AS Commission, dbo.VFacture.DateFacture FROM dbo.Personne RIGHT OUTER JOIN dbo.VFacture INNER JOIN dbo.Entreprise ON dbo.VFacture.nClient = dbo.Entreprise.nEntreprise ON dbo.Personne.nPersonne = dbo.VFacture.nCommercial GROUP BY dbo.Personne.Nom, dbo.VFacture.DateFacture</Sql>
+    <le_titre>Suivi des commissions</le_titre>
+    <le_champ_date>DateFacture</le_champ_date>
+    <le_type_date>YMW</le_type_date>
+    <les_champs_formules></les_champs_formules>
+    <les_dimensions>Commercial</les_dimensions>
+    <les_formules></les_formules>
+    <les_mesures>MontantHT,MontantTVA,MontantTTC,Commission</les_mesures>
+    <les_titres_dim>Commercial</les_titres_dim>
+    <les_titres_mes>MontantHT,MontantTVA,MontantTTC,Commission</les_titres_mes>
+    <p_modale>NON</p_modale>
+  </Cube>
+  <Cube>
+    <CodeCube>AFACTURE_DETAIL</CodeCube>
+    <Sql>SELECT dbo.Entreprise.Nom, dbo.Entreprise.CodePostal, dbo.Entreprise.Ville, dbo.Entreprise.Dep, dbo.AFacture_Detail.CodeProduit, dbo.AFacture_Detail.Libelle, dbo.AFacture_Detail.PrixUHT, dbo.AFacture_Detail.MontantLigneHT, dbo.AFacture_Detail.Unite1, dbo.AFacture_Detail.PrixUTVA, dbo.AFacture_Detail.PrixUTTC, dbo.AFacture_Detail.MontantLigneTVA, dbo.AFacture_Detail.MontantLigneTTC, dbo.Famille.Famille, dbo.AFacture.DateFacture, CAST(dbo.AFacture.nFacture AS NVARCHAR) AS nFacture, dbo.Entreprise.TypeClient, dbo.AFacture_Detail.LibUnite1, dbo.AFacture_Detail.Unite2, dbo.AFacture_Detail.LibUnite2, dbo.TVA.TTaux, dbo.Produit.Famille2, dbo.Personne.Nom AS Commercial, dbo.AFacture_Detail.NLot, dbo.AFacture_Detail.Remise,  dbo.AFacture_Detail.MontantLigneHT * (dbo.AFacture_Detail.Remise / 100) AS RemiseHT FROM dbo.TVA INNER JOIN dbo.AFacture INNER JOIN dbo.Entreprise ON dbo.AFacture.nClient = dbo.Entreprise.nEntreprise INNER JOIN dbo.AFacture_Detail ON dbo.AFacture.nDevis = dbo.AFacture_Detail.nDevis ON dbo.TVA.TTVA = dbo.AFacture_Detail.TTVA LEFT OUTER JOIN dbo.Entreprise AS Entreprise_1 ON dbo.AFacture.nPrescripteur = Entreprise_1.nEntreprise LEFT OUTER JOIN dbo.Personne ON dbo.AFacture.nCommercial = dbo.Personne.nPersonne LEFT OUTER JOIN dbo.Produit LEFT OUTER JOIN dbo.Famille ON dbo.Produit.Famille1 = dbo.Famille.nFamille ON dbo.AFacture_Detail.CodeProduit = dbo.Produit.CodeProduit</Sql>
+    <le_titre>Détails Factures d'achat</le_titre>
+    <le_champ_date>DateFacture</le_champ_date>
+    <le_type_date>YM</le_type_date>
+    <les_champs_formules>Prog CA,Prog nb1,Prog nb2</les_champs_formules>
+    <les_dimensions>Nom,CodeProduit,Libelle,Famille,TypeClient,LibUnite1,LibUnite2,nFacture,Commercial,Famille2,NLot</les_dimensions>
+    <les_formules>safevalofprev!MontantLigneHT,safevalofprev!Unite1,safevalofprev!Unite2</les_formules>
+    <les_mesures>MontantLigneHT,Unite1,MontantLigneTVA,MontantLigneTTC,Unite2,Remise,RemiseHT</les_mesures>
+    <les_titres_dim>Fournisseur,CodeProduit,Produit,Famille,Type client,Unité 1,Unité 2,N° facture,Commercial,Famille2,NLot</les_titres_dim>
+    <les_titres_mes>MontantLigneHT,Unite1,MontantLigneTVA,MontantLigneTTC,Unite2,Remise,RemiseHT</les_titres_mes>
+    <p_modale>NON</p_modale>
+  </Cube>
+  <Cube>
+    <CodeCube>VFACTURE_DETAIL_Comparatif_CA_Par_Famille_Par_Annee</CodeCube>
+    <CodeParent>VFACTURE_DETAIL</CodeParent>
+    <Sql>SELECT dbo.Entreprise.Nom, dbo.Entreprise.CodePostal, dbo.Entreprise.Ville, dbo.Entreprise.Dep, dbo.VFacture_Detail.CodeProduit, dbo.VFacture_Detail.Libelle, dbo.VFacture_Detail.PrixUHT, dbo.VFacture_Detail.MontantLigneHT, dbo.VFacture_Detail.Unite1, dbo.VFacture_Detail.PrixUTVA, dbo.VFacture_Detail.PrixUTTC,  dbo.VFacture_Detail.MontantLigneTVA, dbo.VFacture_Detail.MontantLigneTTC, dbo.VFacture_Detail.PrixUAchatHT, dbo.Famille.Famille, dbo.VFacture.DateFacture, CAST(dbo.VFacture.nFacture AS NVARCHAR) AS nFacture, dbo.Entreprise.TypeClient, dbo.VFacture_Detail.LibUnite1, dbo.VFacture_Detail.Unite2, dbo.VFacture_Detail.LibUnite2, dbo.TVA.TTaux, dbo.Produit.Famille2, dbo.VFacture.TxCommission, dbo.Personne.Nom AS Commercial FROM dbo.TVA INNER JOIN dbo.VFacture INNER JOIN dbo.Entreprise ON dbo.VFacture.nClient = dbo.Entreprise.nEntreprise INNER JOIN dbo.VFacture_Detail ON dbo.VFacture.nDevis = dbo.VFacture_Detail.nDevis ON dbo.TVA.TTVA = dbo.VFacture_Detail.TTVA LEFT OUTER JOIN dbo.Personne ON dbo.VFacture.nCommercial = dbo.Personne.nPersonne LEFT OUTER JOIN dbo.Produit LEFT OUTER JOIN dbo.Famille ON dbo.Produit.Famille1 = dbo.Famille.nFamille ON dbo.VFacture_Detail.CodeProduit = dbo.Produit.CodeProduit</Sql>
+    <le_titre>Comparatif CA par famille et par année</le_titre>
+    <format_defaut />
+    <le_champ_date>DateFacture</le_champ_date>
+    <le_type_date>YM</le_type_date>
+    <les_champs_formules>Prog CA,Prog nb1,Prog nb2</les_champs_formules>
+    <les_dimensions>Nom,CodeProduit,Libelle,Famille,TypeClient,LibUnite1,LibUnite2,nFacture,Commercial</les_dimensions>
+    <les_dimensions_inv />
+    <les_formules>safevalofprev!MontantLigneHT,safevalofprev!Unite1,safevalofprev!Unite2</les_formules>
+    <les_mesures>MontantLigneHT,Unite1,MontantLigneTVA,MontantLigneTTC,Unite2,TxCommission</les_mesures>
+    <les_titres_dim>Client,CodeProduit,Produit,Famille,Type client,Unité 1,Unité 2,N° facture,Commercial</les_titres_dim>
+    <les_titres_dim_inv />
+    <les_titres_mes>MontantLigneHT,Unite1,MontantLigneTVA,MontantLigneTTC,Unite2,Taux Commission</les_titres_mes>
+    <les_types_mesures />
+    <p_frooze />
+    <p_look>Cubes\Presentations\VFACTURE_DETAIL_Comparatif_CA_Par_Famille_Par_Annee.cubes</p_look>
+    <p_modale>NON</p_modale>
+  </Cube>
+  <Cube>
+    <CodeCube>VFACTURE_DETAIL_Comparatif_CA_Par_Famille_Par_Mois</CodeCube>
+    <CodeParent>VFACTURE_DETAIL</CodeParent>
+    <Sql>SELECT dbo.Entreprise.Nom, dbo.Entreprise.CodePostal, dbo.Entreprise.Ville, dbo.Entreprise.Dep, dbo.VFacture_Detail.CodeProduit, dbo.VFacture_Detail.Libelle, dbo.VFacture_Detail.PrixUHT, dbo.VFacture_Detail.MontantLigneHT, dbo.VFacture_Detail.Unite1, dbo.VFacture_Detail.PrixUTVA, dbo.VFacture_Detail.PrixUTTC,  dbo.VFacture_Detail.MontantLigneTVA, dbo.VFacture_Detail.MontantLigneTTC, dbo.VFacture_Detail.PrixUAchatHT, dbo.Famille.Famille, dbo.VFacture.DateFacture, CAST(dbo.VFacture.nFacture AS NVARCHAR) AS nFacture, dbo.Entreprise.TypeClient, dbo.VFacture_Detail.LibUnite1, dbo.VFacture_Detail.Unite2, dbo.VFacture_Detail.LibUnite2, dbo.TVA.TTaux, dbo.Produit.Famille2, dbo.VFacture.TxCommission, dbo.Personne.Nom AS Commercial FROM dbo.TVA INNER JOIN dbo.VFacture INNER JOIN dbo.Entreprise ON dbo.VFacture.nClient = dbo.Entreprise.nEntreprise INNER JOIN dbo.VFacture_Detail ON dbo.VFacture.nDevis = dbo.VFacture_Detail.nDevis ON dbo.TVA.TTVA = dbo.VFacture_Detail.TTVA LEFT OUTER JOIN dbo.Personne ON dbo.VFacture.nCommercial = dbo.Personne.nPersonne LEFT OUTER JOIN dbo.Produit LEFT OUTER JOIN dbo.Famille ON dbo.Produit.Famille1 = dbo.Famille.nFamille ON dbo.VFacture_Detail.CodeProduit = dbo.Produit.CodeProduit</Sql>
+    <le_titre>Comparatif CA par famille et par mois</le_titre>
+    <format_defaut />
+    <le_champ_date>DateFacture</le_champ_date>
+    <le_type_date>YM</le_type_date>
+    <les_champs_formules>Prog CA,Prog nb1,Prog nb2</les_champs_formules>
+    <les_dimensions>Nom,CodeProduit,Libelle,Famille,TypeClient,LibUnite1,LibUnite2,nFacture,Commercial</les_dimensions>
+    <les_dimensions_inv />
+    <les_formules>safevalofprev!MontantLigneHT,safevalofprev!Unite1,safevalofprev!Unite2</les_formules>
+    <les_mesures>MontantLigneHT,Unite1,MontantLigneTVA,MontantLigneTTC,Unite2,TxCommission</les_mesures>
+    <les_titres_dim>Client,CodeProduit,Produit,Famille,Type client,Unité 1,Unité 2,N° facture,Commercial</les_titres_dim>
+    <les_titres_dim_inv />
+    <les_titres_mes>MontantLigneHT,Unite1,MontantLigneTVA,MontantLigneTTC,Unite2,Taux Commission</les_titres_mes>
+    <les_types_mesures />
+    <p_frooze />
+    <p_look>Cubes\Presentations\VFACTURE_DETAIL_Comparatif_CA_Par_Famille_Par_Mois.cubes</p_look>
+    <p_modale>NON</p_modale>
+  </Cube>
+  <Cube>
+    <CodeCube>VFACTURE_Liste_Factures_Par_Client_Par_Annee</CodeCube>
+    <CodeParent>VFACTURE</CodeParent>
+    <Sql>SELECT dbo.Entreprise.Nom, dbo.Entreprise.CodePostal, dbo.Entreprise.Ville, dbo.Entreprise.Dep, dbo.VFacture.DateFacture, CAST(dbo.VFacture.nFacture AS NVARCHAR) AS nFacture, dbo.Entreprise.TypeClient, dbo.VFacture.TxCommission, CASE dbo.VFacture.ExportCompta WHEN 0 THEN 'NON' ELSE 'OUI' END AS ExportCompta, CAST(dbo.VFacture.DateExportCompta AS NVARCHAR) AS DateExportCompta, CAST(dbo.VFacture.DateEcheance AS NVARCHAR) AS DateEcheance, CASE dbo.VFacture.Paye WHEN 0 THEN 'NON' ELSE 'OUI' END AS Paye, dbo.VFacture.MontantHT, dbo.VFacture.MontantTVA, dbo.VFacture.MontantTTC, CASE dbo.VFacture.FacturationTTC WHEN 0 THEN 'NON' ELSE 'OUI' END AS FacturationTTC, dbo.Personne.Nom AS Commercial, (dbo.VFacture.MontantTTC * dbo.VFacture.TxCommission / 100) AS Commission FROM dbo.Personne RIGHT OUTER JOIN dbo.VFacture INNER JOIN dbo.Entreprise ON dbo.VFacture.nClient = dbo.Entreprise.nEntreprise ON dbo.Personne.nPersonne = dbo.VFacture.nCommercial</Sql>
+    <le_titre>Liste des factures par client par année</le_titre>
+    <format_defaut />
+    <le_champ_date>DateFacture</le_champ_date>
+    <le_type_date>YM</le_type_date>
+    <les_champs_formules>Taux commission</les_champs_formules>
+    <les_dimensions>Nom,TypeClient,nFacture,ExportCompta,DateExportCompta,DateEcheance,Paye,FacturationTTC,Commercial</les_dimensions>
+    <les_dimensions_inv />
+    <les_formules>(Commission / MontantTTC) * 100</les_formules>
+    <les_mesures>MontantHT,MontantTVA,MontantTTC,Commission</les_mesures>
+    <les_titres_dim>Client,Type client,N° facture,Export compta,Date export compta,Date echéance,Payée,Facturation TTC,Commercial</les_titres_dim>
+    <les_titres_dim_inv />
+    <les_titres_mes>Montant HT,Montant TVA,Montant TTC,Commission</les_titres_mes>
+    <les_types_mesures />
+    <p_frooze />
+    <p_look>Cubes\Presentations\VFACTURE_Liste_Factures_Par_Client_Par_Annee.cubes</p_look>
+    <p_modale>NON</p_modale>
+  </Cube>
+  <Cube>
+    <CodeCube>VFACTURE_Commissions_Par_Facture_Par_Commercial_Par_Annee</CodeCube>
+    <CodeParent>VFACTURE</CodeParent>
+    <Sql>SELECT Entreprise_1.Nom, Entreprise_1.CodePostal, Entreprise_1.Ville, Entreprise_1.Dep, dbo.VFacture.DateFacture, CAST(dbo.VFacture.nFacture AS NVARCHAR) AS nFacture, Entreprise_1.TypeClient, dbo.VFacture.TxCommission, CASE dbo.VFacture.ExportCompta WHEN 0 THEN 'NON' ELSE 'OUI' END AS ExportCompta, CAST(dbo.VFacture.DateExportCompta AS NVARCHAR) AS DateExportCompta, CAST(dbo.VFacture.DateEcheance AS NVARCHAR) AS DateEcheance, CASE dbo.VFacture.Paye WHEN 0 THEN 'NON' ELSE 'OUI' END AS Paye, dbo.VFacture.MontantHT, dbo.VFacture.MontantTVA, dbo.VFacture.MontantTTC, CASE dbo.VFacture.FacturationTTC WHEN 0 THEN 'NON' ELSE 'OUI' END AS FacturationTTC, dbo.Personne.Nom AS Commercial, dbo.VFacture.MontantHT * dbo.VFacture.TxCommission / 100 AS Commission, dbo.VFacture.TxCommission, dbo.VFacture.Secteur, dbo.Entreprise.Nom AS Prescripteur FROM dbo.VFacture INNER JOIN dbo.Entreprise AS Entreprise_1 ON dbo.VFacture.nClient = Entreprise_1.nEntreprise LEFT OUTER JOIN dbo.Entreprise ON dbo.VFacture.nPrescripteur = dbo.Entreprise.nEntreprise LEFT OUTER JOIN dbo.Personne ON dbo.VFacture.nCommercial = dbo.Personne.nPersonne</Sql>
+    <le_titre>Commissions par facture par commercial par année</le_titre>
+    <le_champ_date>DateFacture</le_champ_date>
+    <le_type_date>YM</le_type_date>
+    <les_champs_formules></les_champs_formules>
+    <les_dimensions>Nom,TypeClient,nFacture,ExportCompta,DateExportCompta,DateEcheance,Paye,FacturationTTC,Commercial,Secteur,Prescripteur</les_dimensions>
+    <les_formules></les_formules>
+    <les_mesures>MontantHT,MontantTVA,MontantTTC,Commission,TxCommission</les_mesures>
+    <les_titres_dim>Client,Type client,N° facture,Export compta,Date export compta,Date echéance,Payée,Facturation TTC,Commercial,Service,Prescripteur</les_titres_dim>
+    <les_titres_mes>Montant HT,Montant TVA,Montant TTC,Commission,Taux commission</les_titres_mes>
+    <p_look>Cubes\Presentations\VFACTURE_Commissions_Par_Facture_Par_Commercial_Par_Annee.cubes</p_look>
+    <p_modale>NON</p_modale>
+  </Cube>
+  <Cube>
+    <CodeCube>VFACTURE_Commissions_Par_Facture_Par_Commercial_Par_Mois</CodeCube>
+    <CodeParent>VFACTURE</CodeParent>
+    <Sql>SELECT Entreprise_1.Nom, Entreprise_1.CodePostal, Entreprise_1.Ville, Entreprise_1.Dep, dbo.VFacture.DateFacture, CAST(dbo.VFacture.nFacture AS NVARCHAR) AS nFacture, Entreprise_1.TypeClient, dbo.VFacture.TxCommission, CASE dbo.VFacture.ExportCompta WHEN 0 THEN 'NON' ELSE 'OUI' END AS ExportCompta, CAST(dbo.VFacture.DateExportCompta AS NVARCHAR) AS DateExportCompta, CAST(dbo.VFacture.DateEcheance AS NVARCHAR) AS DateEcheance, CASE dbo.VFacture.Paye WHEN 0 THEN 'NON' ELSE 'OUI' END AS Paye, dbo.VFacture.MontantHT, dbo.VFacture.MontantTVA, dbo.VFacture.MontantTTC, CASE dbo.VFacture.FacturationTTC WHEN 0 THEN 'NON' ELSE 'OUI' END AS FacturationTTC, dbo.Personne.Nom AS Commercial, dbo.VFacture.MontantHT * dbo.VFacture.TxCommission / 100 AS Commission, dbo.VFacture.TxCommission, dbo.VFacture.Secteur, dbo.Entreprise.Nom AS Prescripteur FROM dbo.VFacture INNER JOIN dbo.Entreprise AS Entreprise_1 ON dbo.VFacture.nClient = Entreprise_1.nEntreprise LEFT OUTER JOIN dbo.Entreprise ON dbo.VFacture.nPrescripteur = dbo.Entreprise.nEntreprise LEFT OUTER JOIN dbo.Personne ON dbo.VFacture.nCommercial = dbo.Personne.nPersonne</Sql>
+    <le_titre>Commissions par facture par commercial par mois</le_titre>
+    <le_champ_date>DateFacture</le_champ_date>
+    <le_type_date>YM</le_type_date>
+    <les_champs_formules></les_champs_formules>
+    <les_dimensions>Nom,TypeClient,nFacture,ExportCompta,DateExportCompta,DateEcheance,Paye,FacturationTTC,Commercial,Secteur,Prescripteur</les_dimensions>
+    <les_formules></les_formules>
+    <les_mesures>MontantHT,MontantTVA,MontantTTC,Commission,TxCommission</les_mesures>
+    <les_titres_dim>Client,Type client,N° facture,Export compta,Date export compta,Date echéance,Payée,Facturation TTC,Commercial,Service,Prescripteur</les_titres_dim>
+    <les_titres_mes>Montant HT,Montant TVA,Montant TTC,Commission,Taux commission</les_titres_mes>
+    <p_look>Cubes\Presentations\VFACTURE_Commissions_Par_Facture_Par_Commercial_Par_Mois.cubes</p_look>
+    <p_modale>NON</p_modale>
+  </Cube>
+  <Cube>
+    <CodeCube>VFACTURE_IMP_Liste_Factures_Impayees</CodeCube>
+    <CodeParent>VFACTURE_IMP</CodeParent>
+    <Sql>SELECT dbo.Entreprise.Nom, dbo.VFacture.DateFacture, CAST(dbo.VFacture.nFacture AS NVARCHAR) AS nFacture, SUM(dbo.Reglement_Detail.Montant) AS MontantReglement, dbo.Entreprise.TypeClient, CAST(dbo.VFacture.DateEcheance AS NVARCHAR) AS DateEcheance, dbo.VFacture.MontantTTC, dbo.Personne.Nom AS Commercial, dbo.VFacture.MontantTTC - SUM(dbo.Reglement_Detail.Montant) AS ResteAPayer, dbo.Entreprise.CodePostal, dbo.Entreprise.Ville FROM dbo.Reglement_Detail RIGHT OUTER JOIN dbo.VFacture INNER JOIN dbo.Entreprise ON dbo.VFacture.nClient = dbo.Entreprise.nEntreprise ON dbo.Reglement_Detail.nFacture = dbo.VFacture.nDevis LEFT OUTER JOIN dbo.Personne ON dbo.VFacture.nCommercial = dbo.Personne.nPersonne GROUP BY dbo.Entreprise.Nom, dbo.VFacture.DateFacture, dbo.VFacture.nFacture, dbo.Entreprise.TypeClient, dbo.VFacture.DateEcheance, dbo.VFacture.MontantTTC, dbo.Personne.Nom, dbo.Entreprise.CodePostal, dbo.Entreprise.Ville HAVING (dbo.VFacture.MontantTTC - SUM(dbo.Reglement_Detail.Montant) &gt; 0)</Sql>
+    <le_titre>Factures impayées</le_titre>
+    <format_defaut />
+    <le_champ_date>DateFacture</le_champ_date>
+    <le_type_date>YM</le_type_date>
+    <les_champs_formules />
+    <les_dimensions>Nom,TypeClient,nFacture,DateEcheance,Commercial,CodePostal,Ville</les_dimensions>
+    <les_dimensions_inv />
+    <les_formules />
+    <les_mesures>MontantReglement,MontantTTC,ResteAPayer</les_mesures>
+    <les_titres_dim>Client,Type client,N° facture,Date echéance,Commercial,Code postal,Ville</les_titres_dim>
+    <les_titres_dim_inv />
+    <les_titres_mes>Montant règlements,Montant Facture TTC,Reste à payer</les_titres_mes>
+    <les_types_mesures />
+    <p_frooze />
+    <p_look>Cubes\Presentations\VFACTURE_IMP_Liste_Factures_Impayees.cubes</p_look>
+    <p_modale>NON</p_modale>
+  </Cube>
+  <Cube>
+    <CodeCube>VFACTURE_IMP_Liste_Factures_Impayees_Par_Annee</CodeCube>
+    <CodeParent>VFACTURE_IMP</CodeParent>
+    <Sql>SELECT dbo.Entreprise.Nom, dbo.VFacture.DateFacture, CAST(dbo.VFacture.nFacture AS NVARCHAR) AS nFacture, SUM(dbo.Reglement_Detail.Montant) AS MontantReglement, dbo.Entreprise.TypeClient, CAST(dbo.VFacture.DateEcheance AS NVARCHAR) AS DateEcheance, dbo.VFacture.MontantTTC, dbo.Personne.Nom AS Commercial, dbo.VFacture.MontantTTC - SUM(dbo.Reglement_Detail.Montant) AS ResteAPayer, dbo.Entreprise.CodePostal, dbo.Entreprise.Ville FROM dbo.Reglement_Detail RIGHT OUTER JOIN dbo.VFacture INNER JOIN dbo.Entreprise ON dbo.VFacture.nClient = dbo.Entreprise.nEntreprise ON dbo.Reglement_Detail.nFacture = dbo.VFacture.nDevis LEFT OUTER JOIN dbo.Personne ON dbo.VFacture.nCommercial = dbo.Personne.nPersonne GROUP BY dbo.Entreprise.Nom, dbo.VFacture.DateFacture, dbo.VFacture.nFacture, dbo.Entreprise.TypeClient, dbo.VFacture.DateEcheance, dbo.VFacture.MontantTTC, dbo.Personne.Nom, dbo.Entreprise.CodePostal, dbo.Entreprise.Ville HAVING (dbo.VFacture.MontantTTC - SUM(dbo.Reglement_Detail.Montant) &gt; 0)</Sql>
+    <le_titre>Factures impayées par année</le_titre>
+    <format_defaut />
+    <le_champ_date>DateFacture</le_champ_date>
+    <le_type_date>YM</le_type_date>
+    <les_champs_formules />
+    <les_dimensions>Nom,TypeClient,nFacture,DateEcheance,Commercial,CodePostal,Ville</les_dimensions>
+    <les_dimensions_inv />
+    <les_formules />
+    <les_mesures>MontantReglement,MontantTTC,ResteAPayer</les_mesures>
+    <les_titres_dim>Client,Type client,N° facture,Date echéance,Commercial,Code postal,Ville</les_titres_dim>
+    <les_titres_dim_inv />
+    <les_titres_mes>Montant règlements,Montant Facture TTC,Reste à payer</les_titres_mes>
+    <les_types_mesures />
+    <p_frooze />
+    <p_look>Cubes\Presentations\VFACTURE_IMP_Liste_Factures_Impayees_Par_Annee.cubes</p_look>
+    <p_modale>NON</p_modale>
+  </Cube>
+  <Cube>
+    <CodeCube>VFACTURE_CA_Par_Client_Par_Mois</CodeCube>
+    <CodeParent>VFACTURE</CodeParent>
+    <Sql>SELECT dbo.Entreprise.Nom, dbo.Entreprise.CodePostal, dbo.Entreprise.Ville, dbo.Entreprise.Dep, dbo.VFacture.DateFacture, CAST(dbo.VFacture.nFacture AS NVARCHAR) AS nFacture, dbo.Entreprise.TypeClient, dbo.VFacture.TxCommission, CASE dbo.VFacture.ExportCompta WHEN 0 THEN 'NON' ELSE 'OUI' END AS ExportCompta, CAST(dbo.VFacture.DateExportCompta AS NVARCHAR) AS DateExportCompta, CAST(dbo.VFacture.DateEcheance AS NVARCHAR) AS DateEcheance, CASE dbo.VFacture.Paye WHEN 0 THEN 'NON' ELSE 'OUI' END AS Paye, dbo.VFacture.MontantHT, dbo.VFacture.MontantTVA, dbo.VFacture.MontantTTC, CASE dbo.VFacture.FacturationTTC WHEN 0 THEN 'NON' ELSE 'OUI' END AS FacturationTTC, dbo.Personne.Nom AS Commercial, (dbo.VFacture.MontantTTC * dbo.VFacture.TxCommission / 100) AS Commission FROM dbo.Personne RIGHT OUTER JOIN dbo.VFacture INNER JOIN dbo.Entreprise ON dbo.VFacture.nClient = dbo.Entreprise.nEntreprise ON dbo.Personne.nPersonne = dbo.VFacture.nCommercial</Sql>
+    <le_titre>CA par client par mois</le_titre>
+    <format_defaut />
+    <le_champ_date>DateFacture</le_champ_date>
+    <le_type_date>YM</le_type_date>
+    <les_champs_formules>Taux commission</les_champs_formules>
+    <les_dimensions>Nom,TypeClient,nFacture,ExportCompta,DateExportCompta,DateEcheance,Paye,FacturationTTC,Commercial</les_dimensions>
+    <les_dimensions_inv />
+    <les_formules>(Commission / MontantTTC) * 100</les_formules>
+    <les_mesures>MontantHT,MontantTVA,MontantTTC,Commission</les_mesures>
+    <les_titres_dim>Client,Type client,N° facture,Export compta,Date export compta,Date echéance,Payée,Facturation TTC,Commercial</les_titres_dim>
+    <les_titres_dim_inv />
+    <les_titres_mes>Montant HT,Montant TVA,Montant TTC,Commission</les_titres_mes>
+    <les_types_mesures />
+    <p_frooze />
+    <p_look>Cubes\Presentations\VFACTURE_CA_Par_Client_Par_Mois.cubes</p_look>
+    <p_modale>NON</p_modale>
+  </Cube>
+  <Cube>
+    <CodeCube>VFACTURE_CA_Par_Client_Par_Annee</CodeCube>
+    <CodeParent>VFACTURE</CodeParent>
+    <Sql>SELECT dbo.Entreprise.Nom, dbo.Entreprise.CodePostal, dbo.Entreprise.Ville, dbo.Entreprise.Dep, dbo.VFacture.DateFacture, CAST(dbo.VFacture.nFacture AS NVARCHAR) AS nFacture, dbo.Entreprise.TypeClient, dbo.VFacture.TxCommission, CASE dbo.VFacture.ExportCompta WHEN 0 THEN 'NON' ELSE 'OUI' END AS ExportCompta, CAST(dbo.VFacture.DateExportCompta AS NVARCHAR) AS DateExportCompta, CAST(dbo.VFacture.DateEcheance AS NVARCHAR) AS DateEcheance, CASE dbo.VFacture.Paye WHEN 0 THEN 'NON' ELSE 'OUI' END AS Paye, dbo.VFacture.MontantHT, dbo.VFacture.MontantTVA, dbo.VFacture.MontantTTC, CASE dbo.VFacture.FacturationTTC WHEN 0 THEN 'NON' ELSE 'OUI' END AS FacturationTTC, dbo.Personne.Nom AS Commercial, (dbo.VFacture.MontantTTC * dbo.VFacture.TxCommission / 100) AS Commission FROM dbo.Personne RIGHT OUTER JOIN dbo.VFacture INNER JOIN dbo.Entreprise ON dbo.VFacture.nClient = dbo.Entreprise.nEntreprise ON dbo.Personne.nPersonne = dbo.VFacture.nCommercial</Sql>
+    <le_titre>CA par client par année</le_titre>
+    <format_defaut />
+    <le_champ_date>DateFacture</le_champ_date>
+    <le_type_date>YM</le_type_date>
+    <les_champs_formules>Taux commission</les_champs_formules>
+    <les_dimensions>Nom,TypeClient,nFacture,ExportCompta,DateExportCompta,DateEcheance,Paye,FacturationTTC,Commercial</les_dimensions>
+    <les_dimensions_inv />
+    <les_formules>(Commission / MontantTTC) * 100</les_formules>
+    <les_mesures>MontantHT,MontantTVA,MontantTTC,Commission</les_mesures>
+    <les_titres_dim>Client,Type client,N° facture,Export compta,Date export compta,Date echéance,Payée,Facturation TTC,Commercial</les_titres_dim>
+    <les_titres_dim_inv />
+    <les_titres_mes>Montant HT,Montant TVA,Montant TTC,Commission</les_titres_mes>
+    <les_types_mesures />
+    <p_frooze />
+    <p_look>Cubes\Presentations\VFACTURE_CA_Par_Client_Par_Annee.cubes</p_look>
+    <p_modale>NON</p_modale>
+  </Cube>
+  <Cube>
+    <CodeCube>VFACTURE_CA_Par_Commercial_Par_Mois</CodeCube>
+    <CodeParent>VFACTURE</CodeParent>
+    <Sql>SELECT dbo.Entreprise.Nom, dbo.Entreprise.CodePostal, dbo.Entreprise.Ville, dbo.Entreprise.Dep, dbo.VFacture.DateFacture, CAST(dbo.VFacture.nFacture AS NVARCHAR) AS nFacture, dbo.Entreprise.TypeClient, dbo.VFacture.TxCommission, CASE dbo.VFacture.ExportCompta WHEN 0 THEN 'NON' ELSE 'OUI' END AS ExportCompta, CAST(dbo.VFacture.DateExportCompta AS NVARCHAR) AS DateExportCompta, CAST(dbo.VFacture.DateEcheance AS NVARCHAR) AS DateEcheance, CASE dbo.VFacture.Paye WHEN 0 THEN 'NON' ELSE 'OUI' END AS Paye, dbo.VFacture.MontantHT, dbo.VFacture.MontantTVA, dbo.VFacture.MontantTTC, CASE dbo.VFacture.FacturationTTC WHEN 0 THEN 'NON' ELSE 'OUI' END AS FacturationTTC, dbo.Personne.Nom AS Commercial, (dbo.VFacture.MontantTTC * dbo.VFacture.TxCommission / 100) AS Commission FROM dbo.Personne RIGHT OUTER JOIN dbo.VFacture INNER JOIN dbo.Entreprise ON dbo.VFacture.nClient = dbo.Entreprise.nEntreprise ON dbo.Personne.nPersonne = dbo.VFacture.nCommercial</Sql>
+    <le_titre>CA par commercial par mois</le_titre>
+    <format_defaut />
+    <le_champ_date>DateFacture</le_champ_date>
+    <le_type_date>YM</le_type_date>
+    <les_champs_formules>Taux commission</les_champs_formules>
+    <les_dimensions>Nom,TypeClient,nFacture,ExportCompta,DateExportCompta,DateEcheance,Paye,FacturationTTC,Commercial</les_dimensions>
+    <les_dimensions_inv />
+    <les_formules>(Commission / MontantTTC) * 100</les_formules>
+    <les_mesures>MontantHT,MontantTVA,MontantTTC,Commission</les_mesures>
+    <les_titres_dim>Client,Type client,N° facture,Export compta,Date export compta,Date echéance,Payée,Facturation TTC,Commercial</les_titres_dim>
+    <les_titres_dim_inv />
+    <les_titres_mes>Montant HT,Montant TVA,Montant TTC,Commission</les_titres_mes>
+    <les_types_mesures />
+    <p_frooze />
+    <p_look>Cubes\Presentations\VFACTURE_CA_Par_Commercial_Par_Mois.cubes</p_look>
+    <p_modale>NON</p_modale>
+  </Cube>
+  <Cube>
+    <CodeCube>VFACTURE_CA_Par_Commercial_Par_Annee</CodeCube>
+    <CodeParent>VFACTURE</CodeParent>
+    <Sql>SELECT dbo.Entreprise.Nom, dbo.Entreprise.CodePostal, dbo.Entreprise.Ville, dbo.Entreprise.Dep, dbo.VFacture.DateFacture, CAST(dbo.VFacture.nFacture AS NVARCHAR) AS nFacture, dbo.Entreprise.TypeClient, dbo.VFacture.TxCommission, CASE dbo.VFacture.ExportCompta WHEN 0 THEN 'NON' ELSE 'OUI' END AS ExportCompta, CAST(dbo.VFacture.DateExportCompta AS NVARCHAR) AS DateExportCompta, CAST(dbo.VFacture.DateEcheance AS NVARCHAR) AS DateEcheance, CASE dbo.VFacture.Paye WHEN 0 THEN 'NON' ELSE 'OUI' END AS Paye, dbo.VFacture.MontantHT, dbo.VFacture.MontantTVA, dbo.VFacture.MontantTTC, CASE dbo.VFacture.FacturationTTC WHEN 0 THEN 'NON' ELSE 'OUI' END AS FacturationTTC, dbo.Personne.Nom AS Commercial, (dbo.VFacture.MontantTTC * dbo.VFacture.TxCommission / 100) AS Commission FROM dbo.Personne RIGHT OUTER JOIN dbo.VFacture INNER JOIN dbo.Entreprise ON dbo.VFacture.nClient = dbo.Entreprise.nEntreprise ON dbo.Personne.nPersonne = dbo.VFacture.nCommercial</Sql>
+    <le_titre>CA par commercial par année</le_titre>
+    <format_defaut />
+    <le_champ_date>DateFacture</le_champ_date>
+    <le_type_date>YM</le_type_date>
+    <les_champs_formules>Taux commission</les_champs_formules>
+    <les_dimensions>Nom,TypeClient,nFacture,ExportCompta,DateExportCompta,DateEcheance,Paye,FacturationTTC,Commercial</les_dimensions>
+    <les_dimensions_inv />
+    <les_formules>(Commission / MontantTTC) * 100</les_formules>
+    <les_mesures>MontantHT,MontantTVA,MontantTTC,Commission</les_mesures>
+    <les_titres_dim>Client,Type client,N° facture,Export compta,Date export compta,Date echéance,Payée,Facturation TTC,Commercial</les_titres_dim>
+    <les_titres_dim_inv />
+    <les_titres_mes>Montant HT,Montant TVA,Montant TTC,Commission</les_titres_mes>
+    <les_types_mesures />
+    <p_frooze />
+    <p_look>Cubes\Presentations\VFACTURE_CA_Par_Commercial_Par_Annee.cubes</p_look>
+    <p_modale>NON</p_modale>
+  </Cube>
+  <Cube>
+    <CodeCube>VFACTURE_DETAIL_Comparatif_CA_Par_Produit_Par_Mois</CodeCube>
+    <CodeParent>VFACTURE_DETAIL</CodeParent>
+    <Sql>SELECT dbo.Entreprise.Nom, dbo.Entreprise.CodePostal, dbo.Entreprise.Ville, dbo.Entreprise.Dep, dbo.VFacture_Detail.CodeProduit, dbo.VFacture_Detail.Libelle, dbo.VFacture_Detail.PrixUHT, dbo.VFacture_Detail.MontantLigneHT, dbo.VFacture_Detail.Unite1, dbo.VFacture_Detail.PrixUTVA, dbo.VFacture_Detail.PrixUTTC,  dbo.VFacture_Detail.MontantLigneTVA, dbo.VFacture_Detail.MontantLigneTTC, dbo.VFacture_Detail.PrixUAchatHT, dbo.Famille.Famille, dbo.VFacture.DateFacture, CAST(dbo.VFacture.nFacture AS NVARCHAR) AS nFacture, dbo.Entreprise.TypeClient, dbo.VFacture_Detail.LibUnite1, dbo.VFacture_Detail.Unite2, dbo.VFacture_Detail.LibUnite2, dbo.TVA.TTaux, dbo.Produit.Famille2, dbo.VFacture.TxCommission, dbo.Personne.Nom AS Commercial FROM dbo.TVA INNER JOIN dbo.VFacture INNER JOIN dbo.Entreprise ON dbo.VFacture.nClient = dbo.Entreprise.nEntreprise INNER JOIN dbo.VFacture_Detail ON dbo.VFacture.nDevis = dbo.VFacture_Detail.nDevis ON dbo.TVA.TTVA = dbo.VFacture_Detail.TTVA LEFT OUTER JOIN dbo.Personne ON dbo.VFacture.nCommercial = dbo.Personne.nPersonne LEFT OUTER JOIN dbo.Produit LEFT OUTER JOIN dbo.Famille ON dbo.Produit.Famille1 = dbo.Famille.nFamille ON dbo.VFacture_Detail.CodeProduit = dbo.Produit.CodeProduit</Sql>
+    <le_titre>Comparatif CA par produit et par mois</le_titre>
+    <format_defaut />
+    <le_champ_date>DateFacture</le_champ_date>
+    <le_type_date>YM</le_type_date>
+    <les_champs_formules>Prog CA,Prog nb1,Prog nb2</les_champs_formules>
+    <les_dimensions>Nom,CodeProduit,Libelle,Famille,TypeClient,LibUnite1,LibUnite2,nFacture,Commercial</les_dimensions>
+    <les_dimensions_inv />
+    <les_formules>safevalofprev!MontantLigneHT,safevalofprev!Unite1,safevalofprev!Unite2</les_formules>
+    <les_mesures>MontantLigneHT,Unite1,MontantLigneTVA,MontantLigneTTC,Unite2,TxCommission</les_mesures>
+    <les_titres_dim>Client,CodeProduit,Produit,Famille,Type client,Unité 1,Unité 2,N° facture,Commercial</les_titres_dim>
+    <les_titres_dim_inv />
+    <les_titres_mes>MontantLigneHT,Unite1,MontantLigneTVA,MontantLigneTTC,Unite2,Taux Commission</les_titres_mes>
+    <les_types_mesures />
+    <p_frooze />
+    <p_look>Cubes\Presentations\VFACTURE_DETAIL_Comparatif_CA_Par_Produit_Par_Mois.cubes</p_look>
+    <p_modale>NON</p_modale>
+  </Cube>
+  <Cube>
+    <CodeCube>VFACTURE_DETAIL_Comparatif_CA_Par_Produit_Par_Annee</CodeCube>
+    <CodeParent>VFACTURE_DETAIL</CodeParent>
+    <Sql>SELECT dbo.Entreprise.Nom, dbo.Entreprise.CodePostal, dbo.Entreprise.Ville, dbo.Entreprise.Dep, dbo.VFacture_Detail.CodeProduit, dbo.VFacture_Detail.Libelle, dbo.VFacture_Detail.PrixUHT, dbo.VFacture_Detail.MontantLigneHT, dbo.VFacture_Detail.Unite1, dbo.VFacture_Detail.PrixUTVA, dbo.VFacture_Detail.PrixUTTC,  dbo.VFacture_Detail.MontantLigneTVA, dbo.VFacture_Detail.MontantLigneTTC, dbo.VFacture_Detail.PrixUAchatHT, dbo.Famille.Famille, dbo.VFacture.DateFacture, CAST(dbo.VFacture.nFacture AS NVARCHAR) AS nFacture, dbo.Entreprise.TypeClient, dbo.VFacture_Detail.LibUnite1, dbo.VFacture_Detail.Unite2, dbo.VFacture_Detail.LibUnite2, dbo.TVA.TTaux, dbo.Produit.Famille2, dbo.VFacture.TxCommission, dbo.Personne.Nom AS Commercial FROM dbo.TVA INNER JOIN dbo.VFacture INNER JOIN dbo.Entreprise ON dbo.VFacture.nClient = dbo.Entreprise.nEntreprise INNER JOIN dbo.VFacture_Detail ON dbo.VFacture.nDevis = dbo.VFacture_Detail.nDevis ON dbo.TVA.TTVA = dbo.VFacture_Detail.TTVA LEFT OUTER JOIN dbo.Personne ON dbo.VFacture.nCommercial = dbo.Personne.nPersonne LEFT OUTER JOIN dbo.Produit LEFT OUTER JOIN dbo.Famille ON dbo.Produit.Famille1 = dbo.Famille.nFamille ON dbo.VFacture_Detail.CodeProduit = dbo.Produit.CodeProduit</Sql>
+    <le_titre>Comparatif CA par produit et par année</le_titre>
+    <format_defaut />
+    <le_champ_date>DateFacture</le_champ_date>
+    <le_type_date>YM</le_type_date>
+    <les_champs_formules>Prog CA,Prog nb1,Prog nb2</les_champs_formules>
+    <les_dimensions>Nom,CodeProduit,Libelle,Famille,TypeClient,LibUnite1,LibUnite2,nFacture,Commercial</les_dimensions>
+    <les_dimensions_inv />
+    <les_formules>safevalofprev!MontantLigneHT,safevalofprev!Unite1,safevalofprev!Unite2</les_formules>
+    <les_mesures>MontantLigneHT,Unite1,MontantLigneTVA,MontantLigneTTC,Unite2,TxCommission</les_mesures>
+    <les_titres_dim>Client,CodeProduit,Produit,Famille,Type client,Unité 1,Unité 2,N° facture,Commercial</les_titres_dim>
+    <les_titres_dim_inv />
+    <les_titres_mes>MontantLigneHT,Unite1,MontantLigneTVA,MontantLigneTTC,Unite2,Taux Commission</les_titres_mes>
+    <les_types_mesures />
+    <p_frooze />
+    <p_look>Cubes\Presentations\VFACTURE_DETAIL_Comparatif_CA_Par_Produit_Par_Annee.cubes</p_look>
+    <p_modale>NON</p_modale>
+  </Cube>
+  <Cube>
+    <CodeCube>VFACTURE_DETAIL_Quantites_Vendues_Par_Commercial_Par_Produit_Par_Annee</CodeCube>
+    <CodeParent>VFACTURE_DETAIL</CodeParent>
+    <Sql>SELECT dbo.Entreprise.Nom, dbo.Entreprise.CodePostal, dbo.Entreprise.Ville, dbo.Entreprise.Dep, dbo.VFacture_Detail.CodeProduit, dbo.VFacture_Detail.Libelle, dbo.VFacture_Detail.PrixUHT, dbo.VFacture_Detail.MontantLigneHT, dbo.VFacture_Detail.Unite1, dbo.VFacture_Detail.PrixUTVA, dbo.VFacture_Detail.PrixUTTC,  dbo.VFacture_Detail.MontantLigneTVA, dbo.VFacture_Detail.MontantLigneTTC, dbo.VFacture_Detail.PrixUAchatHT, dbo.Famille.Famille, dbo.VFacture.DateFacture, CAST(dbo.VFacture.nFacture AS NVARCHAR) AS nFacture, dbo.Entreprise.TypeClient, dbo.VFacture_Detail.LibUnite1, dbo.VFacture_Detail.Unite2, dbo.VFacture_Detail.LibUnite2, dbo.TVA.TTaux, dbo.Produit.Famille2, dbo.VFacture.TxCommission, dbo.Personne.Nom AS Commercial FROM dbo.TVA INNER JOIN dbo.VFacture INNER JOIN dbo.Entreprise ON dbo.VFacture.nClient = dbo.Entreprise.nEntreprise INNER JOIN dbo.VFacture_Detail ON dbo.VFacture.nDevis = dbo.VFacture_Detail.nDevis ON dbo.TVA.TTVA = dbo.VFacture_Detail.TTVA LEFT OUTER JOIN dbo.Personne ON dbo.VFacture.nCommercial = dbo.Personne.nPersonne LEFT OUTER JOIN dbo.Produit LEFT OUTER JOIN dbo.Famille ON dbo.Produit.Famille1 = dbo.Famille.nFamille ON dbo.VFacture_Detail.CodeProduit = dbo.Produit.CodeProduit</Sql>
+    <le_titre>Quantités vendues par commercial, par produit et par année</le_titre>
+    <format_defaut />
+    <le_champ_date>DateFacture</le_champ_date>
+    <le_type_date>YM</le_type_date>
+    <les_champs_formules>Prog CA,Prog nb1,Prog nb2</les_champs_formules>
+    <les_dimensions>Nom,CodeProduit,Libelle,Famille,TypeClient,LibUnite1,LibUnite2,nFacture,Commercial</les_dimensions>
+    <les_dimensions_inv />
+    <les_formules>safevalofprev!MontantLigneHT,safevalofprev!Unite1,safevalofprev!Unite2</les_formules>
+    <les_mesures>MontantLigneHT,Unite1,MontantLigneTVA,MontantLigneTTC,Unite2,TxCommission</les_mesures>
+    <les_titres_dim>Client,CodeProduit,Produit,Famille,Type client,Unité 1,Unité 2,N° facture,Commercial</les_titres_dim>
+    <les_titres_dim_inv />
+    <les_titres_mes>MontantLigneHT,Unite1,MontantLigneTVA,MontantLigneTTC,Unite2,Taux Commission</les_titres_mes>
+    <les_types_mesures />
+    <p_frooze />
+    <p_look>Cubes\Presentations\VFACTURE_DETAIL_Quantites_Vendues_Par_Commercial_Par_Produit_Par_Annee.cubes</p_look>
+    <p_modale>NON</p_modale>
+  </Cube>
+  <Cube>
+    <CodeCube>VFACTURE_DETAIL_Quantites_Vendues_Par_Commercial_Par_Produit_Par_Mois</CodeCube>
+    <CodeParent>VFACTURE_DETAIL</CodeParent>
+    <Sql>SELECT dbo.Entreprise.Nom, dbo.Entreprise.CodePostal, dbo.Entreprise.Ville, dbo.Entreprise.Dep, dbo.VFacture_Detail.CodeProduit, dbo.VFacture_Detail.Libelle, dbo.VFacture_Detail.PrixUHT, dbo.VFacture_Detail.MontantLigneHT, dbo.VFacture_Detail.Unite1, dbo.VFacture_Detail.PrixUTVA, dbo.VFacture_Detail.PrixUTTC,  dbo.VFacture_Detail.MontantLigneTVA, dbo.VFacture_Detail.MontantLigneTTC, dbo.VFacture_Detail.PrixUAchatHT, dbo.Famille.Famille, dbo.VFacture.DateFacture, CAST(dbo.VFacture.nFacture AS NVARCHAR) AS nFacture, dbo.Entreprise.TypeClient, dbo.VFacture_Detail.LibUnite1, dbo.VFacture_Detail.Unite2, dbo.VFacture_Detail.LibUnite2, dbo.TVA.TTaux, dbo.Produit.Famille2, dbo.VFacture.TxCommission, dbo.Personne.Nom AS Commercial FROM dbo.TVA INNER JOIN dbo.VFacture INNER JOIN dbo.Entreprise ON dbo.VFacture.nClient = dbo.Entreprise.nEntreprise INNER JOIN dbo.VFacture_Detail ON dbo.VFacture.nDevis = dbo.VFacture_Detail.nDevis ON dbo.TVA.TTVA = dbo.VFacture_Detail.TTVA LEFT OUTER JOIN dbo.Personne ON dbo.VFacture.nCommercial = dbo.Personne.nPersonne LEFT OUTER JOIN dbo.Produit LEFT OUTER JOIN dbo.Famille ON dbo.Produit.Famille1 = dbo.Famille.nFamille ON dbo.VFacture_Detail.CodeProduit = dbo.Produit.CodeProduit</Sql>
+    <le_titre>Quantités vendues par commercial, par produit et par mois</le_titre>
+    <format_defaut />
+    <le_champ_date>DateFacture</le_champ_date>
+    <le_type_date>YM</le_type_date>
+    <les_champs_formules>Prog CA,Prog nb1,Prog nb2</les_champs_formules>
+    <les_dimensions>Nom,CodeProduit,Libelle,Famille,TypeClient,LibUnite1,LibUnite2,nFacture,Commercial</les_dimensions>
+    <les_dimensions_inv />
+    <les_formules>safevalofprev!MontantLigneHT,safevalofprev!Unite1,safevalofprev!Unite2</les_formules>
+    <les_mesures>MontantLigneHT,Unite1,MontantLigneTVA,MontantLigneTTC,Unite2,TxCommission</les_mesures>
+    <les_titres_dim>Client,CodeProduit,Produit,Famille,Type client,Unité 1,Unité 2,N° facture,Commercial</les_titres_dim>
+    <les_titres_dim_inv />
+    <les_titres_mes>MontantLigneHT,Unite1,MontantLigneTVA,MontantLigneTTC,Unite2,Taux Commission</les_titres_mes>
+    <les_types_mesures />
+    <p_frooze />
+    <p_look>Cubes\Presentations\VFACTURE_DETAIL_Quantites_Vendues_Par_Commercial_Par_Produit_Par_Mois.cubes</p_look>
+    <p_modale>NON</p_modale>
+  </Cube>
+  <Cube>
+    <CodeCube>VBONCOMMANDE_DETAIL_Recapitulatif_BC_Clients</CodeCube>
+    <CodeParent>VBONCOMMANDE_DETAIL</CodeParent>
+    <Sql>SELECT dbo.Entreprise.Nom, dbo.Entreprise.CodePostal, dbo.Entreprise.Ville, dbo.Entreprise.Dep, dbo.VBonCommande_Detail.CodeProduit,dbo.VBonCommande_Detail.Libelle, dbo.VBonCommande_Detail.PrixUHT, dbo.VBonCommande_Detail.MontantLigneHT, dbo.VBonCommande_Detail.Unite1,dbo.VBonCommande_Detail.PrixUTVA, dbo.VBonCommande_Detail.PrixUTTC, dbo.VBonCommande_Detail.MontantLigneTVA,dbo.VBonCommande_Detail.MontantLigneTTC, dbo.VBonCommande_Detail.PrixUAchatHT, dbo.Famille.Famille, dbo.VBonCommande.DateFacture AS DateCommande,dbo.Entreprise.TypeClient, dbo.VBonCommande_Detail.LibUnite1, dbo.VBonCommande_Detail.Unite2, dbo.VBonCommande_Detail.LibUnite2, dbo.Produit.Famille2,dbo.VBonCommande.TxCommission, CAST(dbo.VBonCommande.nFacture AS VARCHAR) AS nFacture FROM dbo.Famille RIGHT OUTER JOIN dbo.Produit RIGHT OUTER JOIN dbo.Entreprise INNER JOIN dbo.VBonCommande ON dbo.Entreprise.nEntreprise = dbo.VBonCommande.nClient INNER JOIN dbo.VBonCommande_Detail ON dbo.VBonCommande.nDevis = dbo.VBonCommande_Detail.nDevis ON dbo.Produit.CodeProduit = dbo.VBonCommande_Detail.CodeProduit ON dbo.Famille.nFamille = dbo.Produit.Famille1</Sql>
+    <le_titre>Récapitulatif BC clients</le_titre>
+    <format_defaut />
+    <le_champ_date>DateCommande</le_champ_date>
+    <le_type_date>YM</le_type_date>
+    <les_champs_formules>Prog CA,Prog nb1,Prog nb2</les_champs_formules>
+    <les_dimensions>Nom,CodeProduit,Libelle,Famille,TypeClient,LibUnite1,LibUnite2,nFacture</les_dimensions>
+    <les_dimensions_inv />
+    <les_formules>safevalofprev!MontantLigneHT,safevalofprev!Unite1,safevalofprev!Unite2</les_formules>
+    <les_mesures>MontantLigneHT,Unite1,MontantLigneTVA,MontantLigneTTC,Unite2</les_mesures>
+    <les_titres_dim>Client,CodeProduit,Produit,Famille,Type client,Unité 1,Unité 2,N° BC</les_titres_dim>
+    <les_titres_dim_inv />
+    <les_titres_mes>MontantLigneHT,Unite1,MontantLigneTVA,MontantLigneTTC,Unite2</les_titres_mes>
+    <les_types_mesures />
+    <p_frooze />
+    <p_look>Cubes\Presentations\VBONCOMMANDE_DETAIL_Recapitulatif_BC_Clients.cubes</p_look>
+    <p_modale>NON</p_modale>
+  </Cube>
+  <Cube>
+    <CodeCube>REGLEMENT_Liste_Reglements_Par_Client_Par_Annee</CodeCube>
+    <CodeParent>REGLEMENT</CodeParent>
+    <Sql>SELECT dbo.Reglement.DateReglement, dbo.Entreprise.Nom AS Payeur, dbo.Reglement.nMode, dbo.Reglement.Montant, dbo.Reglement.Perte, dbo.Reglement.Profit, CASE dbo.Reglement.Depose WHEN 0 THEN 'NON' ELSE 'OUI' END AS Depose, CASE dbo.Reglement.ExportCompta WHEN 0 THEN 'NON' ELSE 'OUI' END AS ExportCompta, CAST(dbo.Reglement.DateExportCompta AS NVARCHAR) AS DateExportCompta, dbo.Reglement.BanqueClient FROM dbo.Reglement INNER JOIN dbo.Entreprise ON dbo.Reglement.nEntreprise = dbo.Entreprise.nEntreprise</Sql>
+    <le_titre>Liste des règlements par client et par année</le_titre>
+    <format_defaut />
+    <le_champ_date>DateReglement</le_champ_date>
+    <le_type_date>YM</le_type_date>
+    <les_champs_formules />
+    <les_dimensions>Payeur,nMode,Depose,ExportCompta,DateExportCompta,BanqueClient</les_dimensions>
+    <les_dimensions_inv />
+    <les_formules />
+    <les_mesures>Montant,Perte,Profit</les_mesures>
+    <les_titres_dim>Payeur,Mode règlement,Déposé,Export comptable,Date export comptable</les_titres_dim>
+    <les_titres_dim_inv />
+    <les_titres_mes>Montant règlement,Perte,Profit</les_titres_mes>
+    <les_types_mesures />
+    <p_frooze />
+    <p_look>Cubes\Presentations\REGLEMENT_Liste_Reglements_Par_Client_Par_Annee.cubes</p_look>
+    <p_modale>NON</p_modale>
+  </Cube>
+  <Cube>
+    <CodeCube>REGLEMENT_Liste_Reglements_Par_Date</CodeCube>
+    <CodeParent>REGLEMENT</CodeParent>
+    <Sql>SELECT dbo.Reglement.DateReglement, dbo.Entreprise.Nom AS Payeur, dbo.Reglement.nMode, dbo.Reglement.Montant, dbo.Reglement.Perte, dbo.Reglement.Profit, CASE dbo.Reglement.Depose WHEN 0 THEN 'NON' ELSE 'OUI' END AS Depose, CASE dbo.Reglement.ExportCompta WHEN 0 THEN 'NON' ELSE 'OUI' END AS ExportCompta, CAST(dbo.Reglement.DateExportCompta AS NVARCHAR) AS DateExportCompta, dbo.Reglement.BanqueClient FROM dbo.Reglement INNER JOIN dbo.Entreprise ON dbo.Reglement.nEntreprise = dbo.Entreprise.nEntreprise</Sql>
+    <le_titre>Liste des règlements par date</le_titre>
+    <format_defaut />
+    <le_champ_date>DateReglement</le_champ_date>
+    <le_type_date>YM</le_type_date>
+    <les_champs_formules />
+    <les_dimensions>Payeur,nMode,Depose,ExportCompta,DateExportCompta,BanqueClient</les_dimensions>
+    <les_dimensions_inv />
+    <les_formules />
+    <les_mesures>Montant,Perte,Profit</les_mesures>
+    <les_titres_dim>Payeur,Mode règlement,Déposé,Export comptable,Date export comptable</les_titres_dim>
+    <les_titres_dim_inv />
+    <les_titres_mes>Montant règlement,Perte,Profit</les_titres_mes>
+    <les_types_mesures />
+    <p_frooze />
+    <p_look>Cubes\Presentations\REGLEMENT_Liste_Reglements_Par_Date.cubes</p_look>
+    <p_modale>NON</p_modale>
+  </Cube>
+  <Cube>
+    <CodeCube>REGLEMENT_Liste_Reglements_Par_Mode_Reglement</CodeCube>
+    <CodeParent>REGLEMENT</CodeParent>
+    <Sql>SELECT dbo.Reglement.DateReglement, dbo.Entreprise.Nom AS Payeur, dbo.Reglement.nMode, dbo.Reglement.Montant, dbo.Reglement.Perte, dbo.Reglement.Profit, CASE dbo.Reglement.Depose WHEN 0 THEN 'NON' ELSE 'OUI' END AS Depose, CASE dbo.Reglement.ExportCompta WHEN 0 THEN 'NON' ELSE 'OUI' END AS ExportCompta, CAST(dbo.Reglement.DateExportCompta AS NVARCHAR) AS DateExportCompta, dbo.Reglement.BanqueClient FROM dbo.Reglement INNER JOIN dbo.Entreprise ON dbo.Reglement.nEntreprise = dbo.Entreprise.nEntreprise</Sql>
+    <le_titre>Liste des règlements par mode de règlement</le_titre>
+    <format_defaut />
+    <le_champ_date>DateReglement</le_champ_date>
+    <le_type_date>YM</le_type_date>
+    <les_champs_formules />
+    <les_dimensions>Payeur,nMode,Depose,ExportCompta,DateExportCompta,BanqueClient</les_dimensions>
+    <les_dimensions_inv />
+    <les_formules />
+    <les_mesures>Montant,Perte,Profit</les_mesures>
+    <les_titres_dim>Payeur,Mode règlement,Déposé,Export comptable,Date export comptable</les_titres_dim>
+    <les_titres_dim_inv />
+    <les_titres_mes>Montant règlement,Perte,Profit</les_titres_mes>
+    <les_types_mesures />
+    <p_frooze />
+    <p_look>Cubes\Presentations\REGLEMENT_Liste_Reglements_Par_Mode_Reglement.cubes</p_look>
+    <p_modale>NON</p_modale>
+  </Cube>
+  <Cube>
+    <CodeCube>REGLEMENT_Total_Reglements_Par_Mode_Reglement_Par_Mois</CodeCube>
+    <CodeParent>REGLEMENT</CodeParent>
+    <Sql>SELECT dbo.Reglement.DateReglement, dbo.Entreprise.Nom AS Payeur, dbo.Reglement.nMode, dbo.Reglement.Montant, dbo.Reglement.Perte, dbo.Reglement.Profit, CASE dbo.Reglement.Depose WHEN 0 THEN 'NON' ELSE 'OUI' END AS Depose, CASE dbo.Reglement.ExportCompta WHEN 0 THEN 'NON' ELSE 'OUI' END AS ExportCompta, CAST(dbo.Reglement.DateExportCompta AS NVARCHAR) AS DateExportCompta, dbo.Reglement.BanqueClient FROM dbo.Reglement INNER JOIN dbo.Entreprise ON dbo.Reglement.nEntreprise = dbo.Entreprise.nEntreprise</Sql>
+    <le_titre>Total des règlements par mode de règlement et par mois</le_titre>
+    <format_defaut />
+    <le_champ_date>DateReglement</le_champ_date>
+    <le_type_date>YM</le_type_date>
+    <les_champs_formules />
+    <les_dimensions>Payeur,nMode,Depose,ExportCompta,DateExportCompta,BanqueClient</les_dimensions>
+    <les_dimensions_inv />
+    <les_formules />
+    <les_mesures>Montant,Perte,Profit</les_mesures>
+    <les_titres_dim>Payeur,Mode règlement,Déposé,Export comptable,Date export comptable</les_titres_dim>
+    <les_titres_dim_inv />
+    <les_titres_mes>Montant règlement,Perte,Profit</les_titres_mes>
+    <les_types_mesures />
+    <p_frooze />
+    <p_look>Cubes\Presentations\REGLEMENT_Total_Reglements_Par_Mode_Reglement_Par_Mois.cubes</p_look>
+    <p_modale>NON</p_modale>
+  </Cube>
+  <Cube>
+    <CodeCube>REGLEMENT_DETAIL_Details_Reglements_Par_Payeur_Par_Facture</CodeCube>
+    <CodeParent>REGLEMENT_DETAIL</CodeParent>
+    <Sql>SELECT dbo.Reglement.DateReglement, dbo.Entreprise.Nom AS Payeur, dbo.Reglement.nMode, dbo.Reglement.Montant AS MontantReglement, CASE dbo.Reglement.Depose WHEN 0 THEN 'NON' ELSE 'OUI' END AS Depose, dbo.Reglement.BanqueClient, dbo.Reglement_Detail.Montant AS MontantReglementDetail, Entreprise_1.Nom AS Client, CAST(dbo.VFacture.nFacture AS NVARCHAR) AS nFacture, CAST(dbo.VFacture.DateFacture AS NVARCHAR) AS DateFacture, dbo.VFacture.MontantTTC AS MontantTTCFacture, CAST(dbo.VFacture.DateEcheance AS NVARCHAR) AS DateEcheance FROM dbo.Reglement INNER JOIN dbo.Entreprise ON dbo.Reglement.nEntreprise = dbo.Entreprise.nEntreprise INNER JOIN dbo.Reglement_Detail ON dbo.Reglement.nReglement = dbo.Reglement_Detail.nReglement INNER JOIN dbo.VFacture ON dbo.Reglement_Detail.nFacture = dbo.VFacture.nDevis INNER JOIN dbo.Entreprise AS Entreprise_1 ON dbo.VFacture.nClient = Entreprise_1.nEntreprise</Sql>
+    <le_titre>Détails des règlements par payeur et par facture</le_titre>
+    <le_champ_date>DateReglement</le_champ_date>
+    <le_type_date>YM</le_type_date>
+    <les_dimensions>Payeur,nFacture,nMode,Depose,BanqueClient,Client,DateFacture,DateEcheance</les_dimensions>
+    <les_mesures>MontantReglement,MontantReglementDetail,MontantTTCFacture</les_mesures>
+    <les_titres_dim>Payeur,N° facture,Mode de règlement,Déposé,BanqueClient,Client,DateFacture,DateEcheance</les_titres_dim>
+    <les_titres_mes>Montant règlement, Montant affecté à la facture,Montant TTC facture</les_titres_mes>
+    <p_look>Cubes\Presentations\REGLEMENT_DETAIL_Details_Reglements_Par_Payeur_Par_Facture.cubes</p_look>
+    <p_modale>NON</p_modale>
+  </Cube>
+  <Cube>
+    <CodeCube>REMISE_DETAIL_Liste_Remises_Par_Num_Remise</CodeCube>
+    <CodeParent>REMISE_DETAIL</CodeParent>
+    <Sql>SELECT dbo.Remise.nRemiseBanque AS NumRemise, dbo.Remise.DateRemise, dbo.Remise.TypeRemise, dbo.Remise.Montant AS MontantRemise, CASE dbo.Remise.ExportCompta WHEN 0 THEN 'NON' ELSE 'OUI' END AS ExportCompta, CAST(dbo.Remise.DateExportCompta AS NVARCHAR) AS DateExportCompta, dbo.Banque.Libelle AS Banque, CAST(dbo.Reglement.DateReglement AS NVARCHAR) AS DateReglement, dbo.Reglement.Montant AS MontantReglement, dbo.Entreprise.Nom AS Payeur FROM dbo.Entreprise INNER JOIN dbo.Reglement ON dbo.Entreprise.nEntreprise = dbo.Reglement.nEntreprise RIGHT OUTER JOIN dbo.Remise INNER JOIN dbo.Remise_Detail ON dbo.Remise.nRemise = dbo.Remise_Detail.nRemise INNER JOIN dbo.Banque ON dbo.Remise.nBanque = dbo.Banque.nBanque ON dbo.Reglement.nReglement = dbo.Remise_Detail.nReglement</Sql>
+    <le_titre>Liste des remises par numéro de remise</le_titre>
+    <le_champ_date>DateRemise</le_champ_date>
+    <le_type_date>YM</le_type_date>
+    <les_dimensions>NumRemise,TypeRemise,ExportCompta,DateExportCompta,Banque,DateReglement,Payeur</les_dimensions>
+    <les_mesures>MontantRemise,MontantReglement</les_mesures>
+    <les_titres_dim>N° remise,Type remise,Export comptable,Date export comptable,Banque,Date règlement,Payeur</les_titres_dim>
+    <les_titres_mes>Montant remise,Montant règlement</les_titres_mes>
+    <p_look>Cubes\Presentations\REMISE_DETAIL_Liste_Remises_Par_Num_Remise.cubes</p_look>
+    <p_modale>NON</p_modale>
+  </Cube>
+  <Cube>
+    <CodeCube>VBONLIVRAISON_DETAIL_Recapitulatif_BL_Clients</CodeCube>
+    <CodeParent>VBONLIVRAISON_DETAIL</CodeParent>
+    <Sql>SELECT dbo.Entreprise.Nom, dbo.Entreprise.CodePostal, dbo.Entreprise.Ville, dbo.Entreprise.Dep, dbo.VBonLivraison_Detail.CodeProduit, dbo.VBonLivraison_Detail.Libelle, dbo.VBonLivraison_Detail.PrixUHT, dbo.VBonLivraison_Detail.MontantLigneHT, dbo.VBonLivraison_Detail.Unite1, dbo.VBonLivraison_Detail.PrixUTVA, dbo.VBonLivraison_Detail.PrixUTTC, dbo.VBonLivraison_Detail.MontantLigneTVA, dbo.VBonLivraison_Detail.MontantLigneTTC, dbo.VBonLivraison_Detail.PrixUAchatHT, dbo.Famille.Famille, dbo.VBonLivraison.DateFacture AS DateLivraison, dbo.Entreprise.TypeClient, dbo.VBonLivraison_Detail.LibUnite1, dbo.VBonLivraison_Detail.Unite2, dbo.VBonLivraison_Detail.LibUnite2, dbo.Produit.Famille2, dbo.VBonLivraison.TxCommission, CAST(dbo.VBonLivraison.nFacture AS VARCHAR) AS nFacture FROM dbo.Produit RIGHT OUTER JOIN dbo.VBonLivraison_Detail INNER JOIN dbo.Entreprise INNER JOIN dbo.VBonLivraison ON dbo.Entreprise.nEntreprise = dbo.VBonLivraison.nClient ON dbo.VBonLivraison_Detail.nDevis = dbo.VBonLivraison.nDevis ON  dbo.Produit.CodeProduit = dbo.VBonLivraison_Detail.CodeProduit LEFT OUTER JOIN dbo.Famille ON dbo.Produit.Famille1 = dbo.Famille.nFamille</Sql>
+    <le_titre>Récapitulatif BL Clients</le_titre>
+    <format_defaut />
+    <le_champ_date>DateLivraison</le_champ_date>
+    <le_type_date>YM</le_type_date>
+    <les_champs_formules>Prog CA,Prog nb1,Prog nb2</les_champs_formules>
+    <les_dimensions>Nom,CodeProduit,Libelle,Famille,TypeClient,LibUnite1,LibUnite2,nFacture</les_dimensions>
+    <les_dimensions_inv />
+    <les_formules>safevalofprev!MontantLigneHT,safevalofprev!Unite1,safevalofprev!Unite2</les_formules>
+    <les_mesures>MontantLigneHT,Unite1,MontantLigneTVA,MontantLigneTTC,Unite2</les_mesures>
+    <les_titres_dim>Client,CodeProduit,Produit,Famille,Type client,Unité 1,Unité 2,N° BL</les_titres_dim>
+    <les_titres_dim_inv />
+    <les_titres_mes>MontantLigneHT,Unite1,MontantLigneTVA,MontantLigneTTC,Unite2</les_titres_mes>
+    <les_types_mesures />
+    <p_frooze />
+    <p_look>Cubes\Presentations\VBONLIVRAISON_DETAIL_Recapitulatif_BL_Clients.cubes</p_look>
+    <p_modale>NON</p_modale>
+  </Cube>
+</DataSetCubes>

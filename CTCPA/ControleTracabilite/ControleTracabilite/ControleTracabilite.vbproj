@@ -1,0 +1,839 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6F3A014F-FF2B-46B0-91F4-FC35DE2C5E91}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>ControleTracabilite.My.MyApplication</StartupObject>
+    <RootNamespace>ControleTracabilite</RootNamespace>
+    <AssemblyName>Solstyce</AssemblyName>
+    <MyType>WindowsForms</MyType>
+    <OptionStrict>On</OptionStrict>
+    <ApplicationIcon>icone.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Solstyce.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Solstyce.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DocumentationFile>Solstyce.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>Solstyce.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ascend, Version=1.0.0.6, Culture=neutral, PublicKeyToken=25c7a393ba3f37cd, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ascend.Windows.Forms, Version=1.0.0.6, Culture=neutral, PublicKeyToken=ecd86ece2d3eb46d, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="GNWizardFrameWork, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\MiniProjets\GN Wizard\GNWizard\bin\GNWizardFrameWork.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.85.5.452, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Composants Tiers\SharpZipLib0855\net-20\ICSharpCode.SharpZipLib.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Windark.Windows.Controls, Version=1.0.3553.24851, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Composants Tiers\Controls\Windark.Windows\Windark.Windows.Controls\bin\Debug\Windark.Windows.Controls.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\LicenceTraca\Securite\Activation\Cle.vb">
+      <Link>Securite\Activation\Cle.vb</Link>
+    </Compile>
+    <Compile Include="..\LicenceTraca\Securite\Activation\SaisieCle.vb">
+      <Link>Securite\Activation\SaisieCle.vb</Link>
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="..\LicenceTraca\Securite\Encryption.vb">
+      <Link>Securite\Encryption.vb</Link>
+    </Compile>
+    <Compile Include="..\LicenceTraca\Securite\Utils.vb">
+      <Link>Securite\Utils.vb</Link>
+    </Compile>
+    <Compile Include="Application\ApplicationEvents.vb" />
+    <Compile Include="Application\EcranCrystal.designer.vb">
+      <DependentUpon>EcranCrystal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Application\EcranCrystal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Application\FrChoixRestauration.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Application\FrParametres.Designer.vb">
+      <DependentUpon>FrParametres.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Application\FrParametres.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Application\FrValidAdmin.Designer.vb">
+      <DependentUpon>FrValidAdmin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Application\FrValidAdmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Application\GestionSauvegarde.vb" />
+    <Compile Include="Application\Interfaces.vb" />
+    <Compile Include="Application\Main.designer.vb">
+      <DependentUpon>Main.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Application\Main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Application\Splash.Designer.vb">
+      <DependentUpon>Splash.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Application\Splash.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuration\FrAssistantConfigurationProduit.Designer.vb">
+      <DependentUpon>FrAssistantConfigurationProduit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Configuration\FrAssistantConfigurationProduit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuration\FrDetailBareme.Designer.vb">
+      <DependentUpon>FrDetailBareme.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Configuration\FrDetailBareme.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuration\FrImportModeles.Designer.vb">
+      <DependentUpon>FrImportModeles.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Configuration\FrImportModeles.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controles\Bareme.vb" />
+    <Compile Include="Controles\GestionGrilleControle.vb" />
+    <Compile Include="Controles\GroupeControle.vb" />
+    <Compile Include="Controles\ResultatBareme.vb" />
+    <Compile Include="Data\EtatsDataset.vb">
+      <DependentUpon>EtatsDataset.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data\StocksDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StocksDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data\StocksDataSet.vb">
+      <DependentUpon>StocksDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Fabrications\FrCodeBarre.Designer.vb">
+      <DependentUpon>FrCodeBarre.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Fabrications\FrCodeBarre.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fabrications\FrImprEtiqCB.Designer.vb">
+      <DependentUpon>FrImprEtiqCB.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Fabrications\FrImprEtiqCB.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fabrications\FrListeTransfo.Designer.vb">
+      <DependentUpon>FrListeTransfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Fabrications\FrListeTransfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fabrications\GestionTransfos.vb" />
+    <Compile Include="Fabrications\FrParamFab.Designer.vb">
+      <DependentUpon>FrParamFab.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Fabrications\FrParamFab.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produits\FrRechProduits.Designer.vb">
+      <DependentUpon>FrRechProduits.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produits\FrRechProduits.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Receptions\Lots.vb" />
+    <Compile Include="Receptions\CodeBarre.vb" />
+    <Compile Include="Receptions\FrImprEtiqCB.Designer.vb">
+      <DependentUpon>FrImprEtiqCB.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Receptions\FrImprEtiqCB.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Securite\Activation\FrActivation.Designer.vb">
+      <DependentUpon>FrActivation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Securite\Activation\FrActivation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stocks\FrCodeBarreInventaire.Designer.vb">
+      <DependentUpon>FrCodeBarreInventaire.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Stocks\FrCodeBarreInventaire.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stocks\FrEtatStock.Designer.vb">
+      <DependentUpon>FrEtatStock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Stocks\FrEtatStock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stocks\FrOptionsInventaire.Designer.vb">
+      <DependentUpon>FrOptionsInventaire.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Stocks\FrOptionsInventaire.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stocks\FrInventaire.Designer.vb">
+      <DependentUpon>FrInventaire.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Stocks\FrInventaire.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stocks\FrListeMouvements.Designer.vb">
+      <DependentUpon>FrListeMouvements.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Stocks\FrListeMouvements.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stocks\FrRechLot.Designer.vb">
+      <DependentUpon>FrRechLot.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Stocks\FrRechLot.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stocks\FrSaisieMouvement.Designer.vb">
+      <DependentUpon>FrSaisieMouvement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Stocks\FrSaisieMouvement.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stocks\GestionStock.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utils\FrModifTxt.Designer.vb">
+      <DependentUpon>FrModifTxt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\FrModifTxt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utils\FrParamNV.designer.vb">
+      <DependentUpon>FrParamNV.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\FrParamNV.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utils\FrParamVNC.designer.vb">
+      <DependentUpon>FrParamVNC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\FrParamVNC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utils\FrProgressBar.Designer.vb">
+      <DependentUpon>FrProgressBar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\FrProgressBar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utils\FrListeChoix.Designer.vb">
+      <DependentUpon>FrListeChoix.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\FrListeChoix.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utils\SqlConnectionConfig.Designer.vb">
+      <DependentUpon>SqlConnectionConfig.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\SqlConnectionConfig.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Data\AgrifactTracaDataSet.vb">
+      <DependentUpon>AgrifactTracaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data\EtatsDataset.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EtatsDataset.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Etats\FrEtatNonConf.Designer.vb">
+      <DependentUpon>FrEtatNonConf.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Etats\FrEtatNonConf.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Etats\FrEtatTracaMP.Designer.vb">
+      <DependentUpon>FrEtatTracaMP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Etats\FrEtatTracaMP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Etats\FrEtatTracaLot.Designer.vb">
+      <DependentUpon>FrEtatTracaLot.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Etats\FrEtatTracaLot.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fabrications\FrSaisieTransfo.Designer.vb">
+      <DependentUpon>FrSaisieTransfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Fabrications\FrSaisieTransfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fournisseurs\FrListeFourn.Designer.vb">
+      <DependentUpon>FrListeFourn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Fournisseurs\FrListeFourn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fournisseurs\FrSaisieFourn.Designer.vb">
+      <DependentUpon>FrSaisieFourn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Fournisseurs\FrSaisieFourn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrResultatBareme.Designer.vb">
+      <DependentUpon>FrResultatBareme.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrResultatBareme.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controles\GroupeResultats.Designer.vb">
+      <DependentUpon>GroupeResultats.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\GroupeResultats.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Produits\FrListeFamilles.Designer.vb">
+      <DependentUpon>FrListeFamilles.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produits\FrListeFamilles.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produits\FrCompoProduit.Designer.vb">
+      <DependentUpon>FrCompoProduit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produits\FrCompoProduit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produits\FrFicheProduit.Designer.vb">
+      <DependentUpon>FrFicheProduit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produits\FrFicheProduit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produits\FrListeProduits.Designer.vb">
+      <DependentUpon>FrListeProduits.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produits\FrListeProduits.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Receptions\FrSaisieBR.Designer.vb">
+      <DependentUpon>FrSaisieBR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Receptions\FrSaisieBR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Receptions\FrListeBR.Designer.vb">
+      <DependentUpon>FrListeBR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Receptions\FrListeBR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utils\DatagridViewUtils.vb" />
+    <Compile Include="Data\AgrifactTracaDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AgrifactTracaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\DefinitionControle.vb" />
+    <Compile Include="Utils\Evaluator\EvalFunctions.vb" />
+    <Compile Include="Utils\Evaluator\Evaluator.vb" />
+    <Compile Include="FrApercuControles.Designer.vb">
+      <DependentUpon>FrApercuControles.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrApercuControles.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuration\FrDetailControle.Designer.vb">
+      <DependentUpon>FrDetailControle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Configuration\FrDetailControle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuration\FrListeControle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuration\FrListeControle.Designer.vb">
+      <DependentUpon>FrListeControle.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controles\GroupeControles.Designer.vb">
+      <DependentUpon>GroupeControles.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\GroupeControles.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\IconesControles.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IconesControles.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Controles\ResultatControle.vb" />
+    <Compile Include="Controles\TimePicker.Designer.vb">
+      <DependentUpon>TimePicker.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\TimePicker.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Utils\Menu.vb" />
+    <Compile Include="Utils\SqlProxy.vb" />
+    <Compile Include="Utils\UltraVNC.vb" />
+    <Compile Include="Utils\Utils.vb" />
+    <Compile Include="Utils\UtilsControles.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\LicenceTraca\Securite\Activation\SaisieCle.resx">
+      <Link>Securite\Activation\SaisieCle.resx</Link>
+      <DependentUpon>SaisieCle.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Application\EcranCrystal.resx">
+      <DependentUpon>EcranCrystal.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Application\FrChoixRestauration.resx">
+      <DependentUpon>FrChoixRestauration.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Application\FrParametres.resx">
+      <DependentUpon>FrParametres.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Application\FrValidAdmin.resx">
+      <DependentUpon>FrValidAdmin.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Application\Main.resx">
+      <DependentUpon>Main.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration\FrAssistantConfigurationProduit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrAssistantConfigurationProduit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration\FrDetailBareme.resx">
+      <DependentUpon>FrDetailBareme.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Content Include="Etats\impressionControles.xsl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptEtiquetteBR.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\CopyHS.png" />
+    <None Include="Resources\Warning.png" />
+    <None Include="Resources\OK.png" />
+    <None Include="Resources\security.png" />
+    <EmbeddedResource Include="Configuration\FrImportModeles.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrImportModeles.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fabrications\FrCodeBarre.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrCodeBarre.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fabrications\FrListeTransfo.resx">
+      <DependentUpon>FrListeTransfo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receptions\FrImprEtiqCB.resx">
+      <DependentUpon>FrImprEtiqCB.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Securite\Activation\FrActivation.resx">
+      <DependentUpon>FrActivation.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utils\FrModifTxt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrModifTxt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utils\FrParamVNC.resx">
+      <DependentUpon>FrParamVNC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utils\FrProgressBar.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrProgressBar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utils\SqlConnectionConfig.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SqlConnectionConfig.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Etats\FrEtatNonConf.resx">
+      <DependentUpon>FrEtatNonConf.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Etats\FrEtatTracaMP.resx">
+      <DependentUpon>FrEtatTracaMP.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Etats\FrEtatTracaLot.resx">
+      <DependentUpon>FrEtatTracaLot.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fabrications\FrSaisieTransfo.resx">
+      <DependentUpon>FrSaisieTransfo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fournisseurs\FrListeFourn.resx">
+      <DependentUpon>FrListeFourn.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fournisseurs\FrSaisieFourn.resx">
+      <DependentUpon>FrSaisieFourn.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrResultatBareme.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrResultatBareme.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\GroupeResultats.resx">
+      <DependentUpon>GroupeResultats.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrApercuControles.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrApercuControles.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration\FrDetailControle.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrDetailControle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration\FrListeControle.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrListeControle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\GroupeControles.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GroupeControles.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\IconesControles.resx">
+      <SubType>Designer</SubType>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>IconesControles.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produits\FrListeFamilles.resx">
+      <DependentUpon>FrListeFamilles.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produits\FrCompoProduit.resx">
+      <DependentUpon>FrCompoProduit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produits\FrFicheProduit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrFicheProduit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produits\FrListeProduits.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrListeProduits.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receptions\FrSaisieBR.resx">
+      <DependentUpon>FrSaisieBR.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receptions\FrListeBR.resx">
+      <DependentUpon>FrListeBR.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\TimePicker.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TimePicker.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\AgrifactTracaDataSet.xsc">
+      <DependentUpon>AgrifactTracaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Data\AgrifactTracaDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AgrifactTracaDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Data\AgrifactTracaDataSet.xss">
+      <DependentUpon>AgrifactTracaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="app.config" />
+    <None Include="Design\ClassDiagram1.cd" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\DataSources\DefinitionControle.datasource" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\LicenceTraca\Securite\KeysTraca.priv">
+      <Link>Securite\KeysTraca.priv</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Application\Splash.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Splash.vb</DependentUpon>
+    </EmbeddedResource>
+    <Content Include="..\..\..\AgriFact\DatabaseUpdate\bin\DatabaseUpdate.exe">
+      <Link>DatabaseUpdate.exe</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptEtatNonConf.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptEtatTracaLot.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptEtatTracaMP.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptInventaire.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptListeMouvement.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptDetailStock.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptEtatStock.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptEtatStock2.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Etats\RptEtiquetteFab.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="Fabrications\FrImprEtiqCB.resx">
+      <DependentUpon>FrImprEtiqCB.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fabrications\FrParamFab.resx">
+      <DependentUpon>FrParamFab.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produits\FrRechProduits.resx">
+      <DependentUpon>FrRechProduits.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stocks\FrCodeBarreInventaire.resx">
+      <DependentUpon>FrCodeBarreInventaire.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stocks\FrEtatStock.resx">
+      <DependentUpon>FrEtatStock.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stocks\FrOptionsInventaire.resx">
+      <DependentUpon>FrOptionsInventaire.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stocks\FrInventaire.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrInventaire.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stocks\FrListeMouvements.resx">
+      <DependentUpon>FrListeMouvements.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stocks\FrRechLot.resx">
+      <DependentUpon>FrRechLot.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stocks\FrSaisieMouvement.resx">
+      <DependentUpon>FrSaisieMouvement.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utils\FrParamNV.resx">
+      <DependentUpon>FrParamNV.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utils\FrListeChoix.resx">
+      <DependentUpon>FrListeChoix.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Content Include="Etats\RptFabrication.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\Import.png" />
+    <None Include="icone.ico" />
+    <None Include="Data\StocksDataSet.xsc">
+      <DependentUpon>StocksDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Data\StocksDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StocksDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Data\StocksDataSet.xss">
+      <DependentUpon>StocksDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\netviewer16.png" />
+    <None Include="Resources\RepeatHS.png" />
+    <None Include="Resources\RefreshDocViewHS.png" />
+    <None Include="Resources\SaveFormDesignHS.png" />
+    <None Include="Resources\splash.png" />
+    <None Include="Resources\NewCardHS.png" />
+    <None Include="Data\EtatsDataset.xsc">
+      <DependentUpon>EtatsDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Data\EtatsDataset.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EtatsDataset.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Data\EtatsDataset.xss">
+      <DependentUpon>EtatsDataset.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\DataSources\ConnectionStringBuilderWrapper.datasource" />
+    <None Include="My Project\DataSources\ControleTracabilite.My.MySettings.datasource" />
+    <None Include="My Project\DataSources\ResultatBareme.datasource" />
+    <None Include="My Project\DataSources\ResultatControle.datasource" />
+    <None Include="pdf\pdf CCP sertissage.pdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\CheckBoxHS.png" />
+    <None Include="Resources\Control_Checkbox.bmp" />
+    <None Include="Resources\Control_ComboBox.bmp" />
+    <None Include="Resources\Control_DateTimePicker.bmp" />
+    <None Include="Resources\Control_Label.bmp" />
+    <None Include="Resources\Control_NumericUpDown.bmp" />
+    <None Include="Resources\Control_RadioButton.bmp" />
+    <None Include="Resources\Control_TextBox.bmp" />
+    <None Include="Resources\Control_Timer.bmp" />
+    <None Include="Resources\Function.bmp" />
+    <None Include="Application\Menus.xml" />
+    <None Include="Resources\aide.png" />
+    <None Include="Resources\close.png" />
+    <None Include="Resources\impr.png" />
+    <None Include="Resources\liste.png" />
+    <None Include="Resources\new.png" />
+    <None Include="Resources\save.png" />
+    <None Include="Resources\controles.png" />
+    <None Include="Resources\compo.png" />
+    <None Include="Resources\filter.png" />
+    <None Include="Resources\outils.png" />
+    <None Include="Resources\Retry.bmp" />
+    <None Include="Resources\suppr.png" />
+    <None Include="Resources\inactif.bmp" />
+    <None Include="Resources\NoAction.bmp" />
+    <None Include="Resources\BarCodeHS.png" />
+    <None Include="Resources\database.bmp" />
+    <None Include="Resources\log.png" />
+    <None Include="Resources\restore.png" />
+    <None Include="Resources\ultravnc.png" />
+    <None Include="Resources\BuilderDialog_movedown.bmp" />
+    <None Include="Resources\BuilderDialog_moveup.bmp" />
+    <None Include="Resources\Resultats.png" />
+    <None Include="Resources\open.png" />
+    <None Include="Resources\actif.bmp" />
+    <None Include="Test\XmlControles.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

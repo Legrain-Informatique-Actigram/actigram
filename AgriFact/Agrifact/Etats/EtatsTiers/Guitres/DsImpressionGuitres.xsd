@@ -1,0 +1,790 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="DsImpressionFacture" targetNamespace="http://tempuri.org/DsImpressionFacture.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/DsImpressionFacture.xsd"
+	xmlns:mstns="http://tempuri.org/DsImpressionFacture.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="DsImpressionFacture" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="AReglement">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="nReglement" type="xs:decimal" />
+							<xs:element name="DateReglement" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="DateDepot" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="nEntreprise" type="xs:decimal" minOccurs="0" />
+							<xs:element name="nMode" type="xs:string" minOccurs="0" />
+							<xs:element name="nCheque" type="xs:string" minOccurs="0" />
+							<xs:element name="ModeReglement" type="xs:string" minOccurs="0" />
+							<xs:element name="Observation" type="xs:string" minOccurs="0" />
+							<xs:element name="Montant" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Perte" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Profit" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Depose" type="xs:boolean" />
+							<xs:element name="ExportCompta" type="xs:boolean" />
+							<xs:element name="BanqueClient" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Personne">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="nPersonne" type="xs:decimal" />
+							<xs:element name="DateCreation" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="DateModification" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="InfoMAJ" type="xs:string" minOccurs="0" />
+							<xs:element name="TypePersonne" type="xs:string" minOccurs="0" />
+							<xs:element name="Dep" type="xs:string" minOccurs="0" />
+							<xs:element name="Nom" type="xs:string" minOccurs="0" />
+							<xs:element name="Prenom" type="xs:string" minOccurs="0" />
+							<xs:element name="nEntreprise" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Adresse" type="xs:string" minOccurs="0" />
+							<xs:element name="CodePostal" type="xs:string" minOccurs="0" />
+							<xs:element name="Ville" type="xs:string" minOccurs="0" />
+							<xs:element name="Pays" type="xs:string" minOccurs="0" />
+							<xs:element name="NomJeuneFille" type="xs:string" minOccurs="0" />
+							<xs:element name="TypeClient" type="xs:string" minOccurs="0" />
+							<xs:element name="Fonction" type="xs:string" minOccurs="0" />
+							<xs:element name="Campagne" type="xs:string" minOccurs="0" />
+							<xs:element name="DatedeNaissance" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="LieuNaissance" type="xs:string" minOccurs="0" />
+							<xs:element name="EMail" type="xs:string" minOccurs="0" />
+							<xs:element name="Adressehttp" type="xs:string" minOccurs="0" />
+							<xs:element name="Observations" type="xs:string" minOccurs="0" />
+							<xs:element name="NpAfficher" type="xs:boolean" />
+							<xs:element name="NpRecevoirInfo" type="xs:boolean" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Produit">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="CodeProduit" type="xs:string" />
+							<xs:element name="Libelle" type="xs:string" minOccurs="0" />
+							<xs:element name="LibelleLong" type="xs:string" minOccurs="0" />
+							<xs:element name="TTVA" type="xs:string" minOccurs="0" />
+							<xs:element name="PrixAHT" type="xs:decimal" minOccurs="0" />
+							<xs:element name="PrixATTC" type="xs:decimal" minOccurs="0" />
+							<xs:element name="PrixVHT" type="xs:decimal" minOccurs="0" />
+							<xs:element name="PrixVTTC" type="xs:decimal" minOccurs="0" />
+							<xs:element name="IsPrixHT" type="xs:boolean" />
+							<xs:element name="Unite1" type="xs:string" minOccurs="0" />
+							<xs:element name="Unite2" type="xs:string" minOccurs="0" />
+							<xs:element name="ProduitAchat" type="xs:boolean" />
+							<xs:element name="ProduitVente" type="xs:boolean" />
+							<xs:element name="NCompteA" type="xs:string" minOccurs="0" />
+							<xs:element name="NActiviteA" type="xs:string" minOccurs="0" />
+							<xs:element name="NCompteV" type="xs:string" minOccurs="0" />
+							<xs:element name="NActiviteV" type="xs:string" minOccurs="0" />
+							<xs:element name="Famille1" type="xs:short" minOccurs="0" />
+							<xs:element name="Famille2" type="xs:string" minOccurs="0" />
+							<xs:element name="Famille3" type="xs:string" minOccurs="0" />
+							<xs:element name="U1U2Independant" type="xs:boolean" minOccurs="0" />
+							<xs:element name="U1xU2" type="xs:decimal" minOccurs="0" />
+							<xs:element name="CodeBarre" type="xs:string" minOccurs="0" />
+							<xs:element name="Inactif" type="xs:boolean" minOccurs="0" />
+							<xs:element name="CoefU2" type="xs:decimal" minOccurs="0" />
+							<xs:element name="TypeFacturation" type="xs:string" minOccurs="0" />
+							<xs:element name="CoefAV" type="xs:decimal" minOccurs="0" />
+							<xs:element name="ProduitCompose" type="xs:boolean" minOccurs="0" />
+							<xs:element name="Image" type="xs:string" minOccurs="0" />
+							<xs:element name="GestionStock" type="xs:boolean" minOccurs="0" />
+							<xs:element name="RefFournisseur" type="xs:string" minOccurs="0" />
+							<xs:element name="IsSortieImpr" type="xs:boolean" minOccurs="0" default="true" />
+							<xs:element name="IsHorsCRD" type="xs:boolean" minOccurs="0" default="false" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="TVA">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="nTVA" type="xs:decimal" />
+							<xs:element name="TTVA" type="xs:string" minOccurs="0" />
+							<xs:element name="TLibelle" type="xs:string" minOccurs="0" />
+							<xs:element name="TTaux" type="xs:decimal" minOccurs="0" />
+							<xs:element name="TCpt" type="xs:string" minOccurs="0" />
+							<xs:element name="TJournal" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="VBonCommande">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="nDevis" type="xs:decimal" />
+							<xs:element name="Origine" type="xs:string" minOccurs="0" />
+							<xs:element name="nOrigine" type="xs:decimal" minOccurs="0" />
+							<xs:element name="nClient" type="xs:decimal" minOccurs="0" />
+							<xs:element name="AdresseFacture" type="xs:string" minOccurs="0" />
+							<xs:element name="nPrescripteur" type="xs:decimal" minOccurs="0" />
+							<xs:element name="nPayeur" type="xs:decimal" minOccurs="0" />
+							<xs:element name="nContact" type="xs:decimal" minOccurs="0" />
+							<xs:element name="nCommercial" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Secteur" type="xs:string" minOccurs="0" />
+							<xs:element name="FacturationPrescripteur" type="xs:boolean" />
+							<xs:element name="FacturationClient" type="xs:boolean" />
+							<xs:element name="nFacture" type="xs:decimal" minOccurs="0" />
+							<xs:element name="DateFacture" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="Paye" type="xs:boolean" />
+							<xs:element name="ExportCompta" type="xs:boolean" />
+							<xs:element name="DateExportCompta" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="DateEcheance" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="Observation" type="xs:string" minOccurs="0" />
+							<xs:element name="DateRelance1" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="DateRelance2" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="Remise" type="xs:decimal" minOccurs="0" />
+							<xs:element name="MontantHT" type="xs:decimal" minOccurs="0" />
+							<xs:element name="MontantTVA" type="xs:decimal" minOccurs="0" />
+							<xs:element name="MontantTTC" type="xs:decimal" minOccurs="0" />
+							<xs:element name="nPreFacturation" type="xs:decimal" minOccurs="0" />
+							<xs:element name="DatePreFacturation" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="FacturationTTC" type="xs:boolean" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="VBonCommande_Detail">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="nDetailDevis" type="xs:decimal" />
+							<xs:element name="nDevis" type="xs:decimal" minOccurs="0" />
+							<xs:element name="nLigne" type="xs:int" minOccurs="0" />
+							<xs:element name="NLot" type="xs:string" minOccurs="0" />
+							<xs:element name="CodeProduit" type="xs:string" minOccurs="0" />
+							<xs:element name="Libelle" type="xs:string" minOccurs="0" />
+							<xs:element name="NbParution" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Unite1" type="xs:decimal" minOccurs="0" />
+							<xs:element name="LibUnite1" type="xs:string" minOccurs="0" />
+							<xs:element name="Unite2" type="xs:decimal" minOccurs="0" />
+							<xs:element name="LibUnite2" type="xs:string" minOccurs="0" />
+							<xs:element name="PrixUHT" type="xs:decimal" minOccurs="0" />
+							<xs:element name="TTVA" type="xs:string" minOccurs="0" />
+							<xs:element name="TxTva" type="xs:decimal" minOccurs="0" />
+							<xs:element name="PrixUTVA" type="xs:decimal" minOccurs="0" />
+							<xs:element name="PrixUTTC" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Remise" type="xs:decimal" minOccurs="0" />
+							<xs:element name="MontantLigneHT" type="xs:decimal" minOccurs="0" />
+							<xs:element name="MontantLigneTVA" type="xs:decimal" minOccurs="0" />
+							<xs:element name="MontantLigneTTC" type="xs:decimal" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="VBonLivraison">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="nDevis" type="xs:decimal" />
+							<xs:element name="Origine" type="xs:string" minOccurs="0" />
+							<xs:element name="nOrigine" type="xs:decimal" minOccurs="0" />
+							<xs:element name="nClient" type="xs:decimal" minOccurs="0" />
+							<xs:element name="AdresseFacture" type="xs:string" minOccurs="0" />
+							<xs:element name="nPrescripteur" type="xs:decimal" minOccurs="0" />
+							<xs:element name="nPayeur" type="xs:decimal" minOccurs="0" />
+							<xs:element name="nContact" type="xs:decimal" minOccurs="0" />
+							<xs:element name="nCommercial" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Secteur" type="xs:string" minOccurs="0" />
+							<xs:element name="FacturationPrescripteur" type="xs:boolean" />
+							<xs:element name="FacturationClient" type="xs:boolean" />
+							<xs:element name="nFacture" type="xs:decimal" minOccurs="0" />
+							<xs:element name="DateFacture" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="Paye" type="xs:boolean" />
+							<xs:element name="ExportCompta" type="xs:boolean" />
+							<xs:element name="DateExportCompta" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="DateEcheance" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="Observation" type="xs:string" minOccurs="0" />
+							<xs:element name="DateRelance1" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="DateRelance2" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="Remise" type="xs:decimal" minOccurs="0" />
+							<xs:element name="MontantHT" type="xs:decimal" minOccurs="0" />
+							<xs:element name="MontantTVA" type="xs:decimal" minOccurs="0" />
+							<xs:element name="MontantTTC" type="xs:decimal" minOccurs="0" />
+							<xs:element name="nPreFacturation" type="xs:decimal" minOccurs="0" />
+							<xs:element name="DatePreFacturation" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="FacturationTTC" type="xs:boolean" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="VBonLivraison_Detail">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="nDetailDevis" type="xs:decimal" />
+							<xs:element name="nDevis" type="xs:decimal" minOccurs="0" />
+							<xs:element name="nLigne" type="xs:int" minOccurs="0" />
+							<xs:element name="NLot" type="xs:string" minOccurs="0" />
+							<xs:element name="CodeProduit" type="xs:string" minOccurs="0" />
+							<xs:element name="Libelle" type="xs:string" minOccurs="0" />
+							<xs:element name="NbParution" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Unite1" type="xs:decimal" minOccurs="0" />
+							<xs:element name="LibUnite1" type="xs:string" minOccurs="0" />
+							<xs:element name="Unite2" type="xs:decimal" minOccurs="0" />
+							<xs:element name="LibUnite2" type="xs:string" minOccurs="0" />
+							<xs:element name="PrixUHT" type="xs:decimal" minOccurs="0" />
+							<xs:element name="TTVA" type="xs:string" minOccurs="0" />
+							<xs:element name="TxTva" type="xs:decimal" minOccurs="0" />
+							<xs:element name="PrixUTVA" type="xs:decimal" minOccurs="0" />
+							<xs:element name="PrixUTTC" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Remise" type="xs:decimal" minOccurs="0" />
+							<xs:element name="MontantLigneHT" type="xs:decimal" minOccurs="0" />
+							<xs:element name="MontantLigneTVA" type="xs:decimal" minOccurs="0" />
+							<xs:element name="MontantLigneTTC" type="xs:decimal" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="VDevis">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="nDevis" type="xs:decimal" />
+							<xs:element name="Origine" type="xs:string" minOccurs="0" />
+							<xs:element name="nOrigine" type="xs:decimal" minOccurs="0" />
+							<xs:element name="nClient" type="xs:decimal" minOccurs="0" />
+							<xs:element name="AdresseFacture" type="xs:string" minOccurs="0" />
+							<xs:element name="nPrescripteur" type="xs:decimal" minOccurs="0" />
+							<xs:element name="nPayeur" type="xs:decimal" minOccurs="0" />
+							<xs:element name="nContact" type="xs:decimal" minOccurs="0" />
+							<xs:element name="nCommercial" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Secteur" type="xs:string" minOccurs="0" />
+							<xs:element name="FacturationPrescripteur" type="xs:boolean" />
+							<xs:element name="FacturationClient" type="xs:boolean" />
+							<xs:element name="nFacture" type="xs:decimal" minOccurs="0" />
+							<xs:element name="DateFacture" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="Paye" type="xs:boolean" />
+							<xs:element name="ExportCompta" type="xs:boolean" />
+							<xs:element name="DateExportCompta" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="DateEcheance" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="Observation" type="xs:string" minOccurs="0" />
+							<xs:element name="DateRelance1" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="DateRelance2" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="Remise" type="xs:decimal" minOccurs="0" />
+							<xs:element name="MontantHT" type="xs:decimal" minOccurs="0" />
+							<xs:element name="MontantTVA" type="xs:decimal" minOccurs="0" />
+							<xs:element name="MontantTTC" type="xs:decimal" minOccurs="0" />
+							<xs:element name="nPreFacturation" type="xs:decimal" minOccurs="0" />
+							<xs:element name="DatePreFacturation" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="FacturationTTC" type="xs:boolean" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="VDevis_Detail">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="nDetailDevis" type="xs:decimal" />
+							<xs:element name="nDevis" type="xs:decimal" minOccurs="0" />
+							<xs:element name="nLigne" type="xs:int" minOccurs="0" />
+							<xs:element name="NLot" type="xs:string" minOccurs="0" />
+							<xs:element name="CodeProduit" type="xs:string" minOccurs="0" />
+							<xs:element name="Libelle" type="xs:string" minOccurs="0" />
+							<xs:element name="NbParution" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Unite1" type="xs:decimal" minOccurs="0" />
+							<xs:element name="LibUnite1" type="xs:string" minOccurs="0" />
+							<xs:element name="Unite2" type="xs:decimal" minOccurs="0" />
+							<xs:element name="LibUnite2" type="xs:string" minOccurs="0" />
+							<xs:element name="PrixUHT" type="xs:decimal" minOccurs="0" />
+							<xs:element name="TTVA" type="xs:string" minOccurs="0" />
+							<xs:element name="TxTva" type="xs:decimal" minOccurs="0" />
+							<xs:element name="PrixUTVA" type="xs:decimal" minOccurs="0" />
+							<xs:element name="PrixUTTC" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Remise" type="xs:decimal" minOccurs="0" />
+							<xs:element name="MontantLigneHT" type="xs:decimal" minOccurs="0" />
+							<xs:element name="MontantLigneTVA" type="xs:decimal" minOccurs="0" />
+							<xs:element name="MontantLigneTTC" type="xs:decimal" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="VFacture">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="nDevis" type="xs:decimal" />
+							<xs:element name="Origine" type="xs:string" minOccurs="0" />
+							<xs:element name="nOrigine" type="xs:decimal" minOccurs="0" />
+							<xs:element name="nClient" type="xs:decimal" minOccurs="0" />
+							<xs:element name="AdresseFacture" type="xs:string" minOccurs="0" />
+							<xs:element name="nPrescripteur" type="xs:decimal" minOccurs="0" />
+							<xs:element name="nPayeur" type="xs:decimal" minOccurs="0" />
+							<xs:element name="nContact" type="xs:decimal" minOccurs="0" />
+							<xs:element name="nCommercial" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Secteur" type="xs:string" minOccurs="0" />
+							<xs:element name="FacturationPrescripteur" type="xs:boolean" />
+							<xs:element name="FacturationClient" type="xs:boolean" />
+							<xs:element name="nFacture" type="xs:decimal" minOccurs="0" />
+							<xs:element name="DateFacture" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="Paye" type="xs:boolean" />
+							<xs:element name="ExportCompta" type="xs:boolean" />
+							<xs:element name="DateExportCompta" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="DateEcheance" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="Observation" type="xs:string" minOccurs="0" />
+							<xs:element name="DateRelance1" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="DateRelance2" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="Remise" type="xs:decimal" minOccurs="0" />
+							<xs:element name="MontantHT" type="xs:decimal" minOccurs="0" />
+							<xs:element name="MontantTVA" type="xs:decimal" minOccurs="0" />
+							<xs:element name="MontantTTC" type="xs:decimal" minOccurs="0" />
+							<xs:element name="nPreFacturation" type="xs:decimal" minOccurs="0" />
+							<xs:element name="DatePreFacturation" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="FacturationTTC" type="xs:boolean" minOccurs="0" />
+							<xs:element name="nRelance" type="xs:int" />
+							<xs:element name="DateRelance" type="xs:dateTime" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="VFacture_Detail">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="nDetailDevis" type="xs:decimal" />
+							<xs:element name="nDevis" type="xs:decimal" minOccurs="0" />
+							<xs:element name="nLigne" type="xs:int" minOccurs="0" />
+							<xs:element name="NLot" type="xs:string" minOccurs="0" />
+							<xs:element name="CodeProduit" type="xs:string" minOccurs="0" />
+							<xs:element name="Libelle" type="xs:string" minOccurs="0" />
+							<xs:element name="NbParution" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Unite1" type="xs:decimal" minOccurs="0" />
+							<xs:element name="LibUnite1" type="xs:string" minOccurs="0" />
+							<xs:element name="Unite2" type="xs:decimal" minOccurs="0" />
+							<xs:element name="LibUnite2" type="xs:string" minOccurs="0" />
+							<xs:element name="PrixUHT" type="xs:decimal" minOccurs="0" />
+							<xs:element name="TTVA" type="xs:string" minOccurs="0" />
+							<xs:element name="TxTva" type="xs:decimal" minOccurs="0" />
+							<xs:element name="PrixUTVA" type="xs:decimal" minOccurs="0" />
+							<xs:element name="PrixUTTC" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Remise" type="xs:decimal" minOccurs="0" />
+							<xs:element name="MontantLigneHT" type="xs:decimal" minOccurs="0" />
+							<xs:element name="MontantLigneTVA" type="xs:decimal" minOccurs="0" />
+							<xs:element name="MontantLigneTTC" type="xs:decimal" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Telephone">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="nPersonne" type="xs:decimal" />
+							<xs:element name="Type" type="xs:string" />
+							<xs:element name="Numero" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="TelephoneEntreprise">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="nEntreprise" type="xs:decimal" />
+							<xs:element name="Type" type="xs:string" />
+							<xs:element name="Numero" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="ABonReception">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="nDevis" type="xs:decimal" />
+							<xs:element name="Origine" type="xs:string" minOccurs="0" />
+							<xs:element name="nOrigine" type="xs:decimal" minOccurs="0" />
+							<xs:element name="nClient" type="xs:decimal" minOccurs="0" />
+							<xs:element name="AdresseFacture" type="xs:string" minOccurs="0" />
+							<xs:element name="nPrescripteur" type="xs:decimal" minOccurs="0" />
+							<xs:element name="nPayeur" type="xs:decimal" minOccurs="0" />
+							<xs:element name="nContact" type="xs:decimal" minOccurs="0" />
+							<xs:element name="nCommercial" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Secteur" type="xs:string" minOccurs="0" />
+							<xs:element name="FacturationPrescripteur" type="xs:boolean" />
+							<xs:element name="FacturationClient" type="xs:boolean" />
+							<xs:element name="nFacture" type="xs:decimal" minOccurs="0" />
+							<xs:element name="DateFacture" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="Paye" type="xs:boolean" />
+							<xs:element name="ExportCompta" type="xs:boolean" />
+							<xs:element name="DateExportCompta" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="DateEcheance" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="Observation" type="xs:string" minOccurs="0" />
+							<xs:element name="DateRelance1" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="DateRelance2" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="Remise" type="xs:decimal" minOccurs="0" />
+							<xs:element name="MontantHT" type="xs:decimal" minOccurs="0" />
+							<xs:element name="MontantTVA" type="xs:decimal" minOccurs="0" />
+							<xs:element name="MontantTTC" type="xs:decimal" minOccurs="0" />
+							<xs:element name="nPreFacturation" type="xs:decimal" minOccurs="0" />
+							<xs:element name="DatePreFacturation" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="FacturationTTC" type="xs:boolean" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="ABonReception_Detail">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="nDetailDevis" type="xs:decimal" />
+							<xs:element name="nDevis" type="xs:decimal" minOccurs="0" />
+							<xs:element name="nLigne" type="xs:int" minOccurs="0" />
+							<xs:element name="NLot" type="xs:string" minOccurs="0" />
+							<xs:element name="CodeProduit" type="xs:string" minOccurs="0" />
+							<xs:element name="Libelle" type="xs:string" minOccurs="0" />
+							<xs:element name="NbParution" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Unite1" type="xs:decimal" minOccurs="0" />
+							<xs:element name="LibUnite1" type="xs:string" minOccurs="0" />
+							<xs:element name="Unite2" type="xs:decimal" minOccurs="0" />
+							<xs:element name="LibUnite2" type="xs:string" minOccurs="0" />
+							<xs:element name="PrixUHT" type="xs:decimal" minOccurs="0" />
+							<xs:element name="TTVA" type="xs:string" minOccurs="0" />
+							<xs:element name="TxTva" type="xs:decimal" minOccurs="0" />
+							<xs:element name="PrixUTVA" type="xs:decimal" minOccurs="0" />
+							<xs:element name="PrixUTTC" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Remise" type="xs:decimal" minOccurs="0" />
+							<xs:element name="MontantLigneHT" type="xs:decimal" minOccurs="0" />
+							<xs:element name="MontantLigneTVA" type="xs:decimal" minOccurs="0" />
+							<xs:element name="MontantLigneTTC" type="xs:decimal" minOccurs="0" />
+							<xs:element name="PrixUTTCVente" type="xs:decimal" minOccurs="0" />
+							<xs:element name="CoefAV" type="xs:decimal" minOccurs="0" />
+							<xs:element name="MontantLigneTTCVente" type="xs:decimal" minOccurs="0" />
+							<xs:element name="PrixUTTCVenteTheo" type="xs:decimal" minOccurs="0" />
+							<xs:element name="PrixAHT1" type="xs:decimal" minOccurs="0" />
+							<xs:element name="CoefAV1" type="xs:decimal" minOccurs="0" />
+							<xs:element name="PrixVTTC1" type="xs:decimal" minOccurs="0" />
+							<xs:element name="PrixVTTCTheo" type="xs:decimal" minOccurs="0" />
+							<xs:element name="MargePrCt" type="xs:decimal" minOccurs="0" />
+							<xs:element name="MargeEuro" type="xs:decimal" minOccurs="0" />
+							<xs:element name="PrixVTTCTheo1" type="xs:decimal" minOccurs="0" />
+							<xs:element name="MargePrCt1" type="xs:decimal" minOccurs="0" />
+							<xs:element name="MargeEuro1" type="xs:decimal" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="AFacture">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="nDevis" type="xs:decimal" />
+							<xs:element name="Origine" type="xs:string" minOccurs="0" />
+							<xs:element name="nOrigine" type="xs:decimal" minOccurs="0" />
+							<xs:element name="nClient" type="xs:decimal" minOccurs="0" />
+							<xs:element name="AdresseFacture" type="xs:string" minOccurs="0" />
+							<xs:element name="nPrescripteur" type="xs:decimal" minOccurs="0" />
+							<xs:element name="nPayeur" type="xs:decimal" minOccurs="0" />
+							<xs:element name="nContact" type="xs:decimal" minOccurs="0" />
+							<xs:element name="nCommercial" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Secteur" type="xs:string" minOccurs="0" />
+							<xs:element name="FacturationPrescripteur" type="xs:boolean" />
+							<xs:element name="FacturationClient" type="xs:boolean" />
+							<xs:element name="nFacture" type="xs:decimal" minOccurs="0" />
+							<xs:element name="DateFacture" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="Paye" type="xs:boolean" />
+							<xs:element name="ExportCompta" type="xs:boolean" />
+							<xs:element name="DateExportCompta" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="DateEcheance" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="Observation" type="xs:string" minOccurs="0" />
+							<xs:element name="DateRelance1" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="DateRelance2" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="Remise" type="xs:decimal" minOccurs="0" />
+							<xs:element name="MontantHT" type="xs:decimal" minOccurs="0" />
+							<xs:element name="MontantTVA" type="xs:decimal" minOccurs="0" />
+							<xs:element name="MontantTTC" type="xs:decimal" minOccurs="0" />
+							<xs:element name="nPreFacturation" type="xs:decimal" minOccurs="0" />
+							<xs:element name="DatePreFacturation" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="FacturationTTC" type="xs:boolean" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="AFacture_Detail">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="nDetailDevis" type="xs:decimal" />
+							<xs:element name="nDevis" type="xs:decimal" minOccurs="0" />
+							<xs:element name="nLigne" type="xs:int" minOccurs="0" />
+							<xs:element name="NLot" type="xs:string" minOccurs="0" />
+							<xs:element name="CodeProduit" type="xs:string" minOccurs="0" />
+							<xs:element name="Libelle" type="xs:string" minOccurs="0" />
+							<xs:element name="NbParution" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Unite1" type="xs:decimal" minOccurs="0" />
+							<xs:element name="LibUnite1" type="xs:string" minOccurs="0" />
+							<xs:element name="Unite2" type="xs:decimal" minOccurs="0" />
+							<xs:element name="LibUnite2" type="xs:string" minOccurs="0" />
+							<xs:element name="PrixUHT" type="xs:decimal" minOccurs="0" />
+							<xs:element name="TTVA" type="xs:string" minOccurs="0" />
+							<xs:element name="TxTva" type="xs:decimal" minOccurs="0" />
+							<xs:element name="PrixUTVA" type="xs:decimal" minOccurs="0" />
+							<xs:element name="PrixUTTC" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Remise" type="xs:decimal" minOccurs="0" />
+							<xs:element name="MontantLigneHT" type="xs:decimal" minOccurs="0" />
+							<xs:element name="MontantLigneTVA" type="xs:decimal" minOccurs="0" />
+							<xs:element name="MontantLigneTTC" type="xs:decimal" minOccurs="0" />
+							<xs:element name="PrixUTTCVente" type="xs:decimal" minOccurs="0" />
+							<xs:element name="CoefAV" type="xs:decimal" minOccurs="0" />
+							<xs:element name="MontantLigneTTCVente" type="xs:decimal" minOccurs="0" />
+							<xs:element name="PrixUTTCVenteTheo" type="xs:decimal" minOccurs="0" />
+							<xs:element name="PrixAHT1" type="xs:decimal" minOccurs="0" />
+							<xs:element name="CoefAV1" type="xs:decimal" minOccurs="0" />
+							<xs:element name="PrixVTTC1" type="xs:decimal" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Famille">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="nFamille" type="xs:short" />
+							<xs:element name="Famille" type="xs:string" minOccurs="0" />
+							<xs:element name="nGroupe" type="xs:short" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Reglement">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="nReglement" type="xs:decimal" />
+							<xs:element name="DateReglement" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="DateDepot" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="nEntreprise" type="xs:decimal" minOccurs="0" />
+							<xs:element name="nMode" type="xs:string" minOccurs="0" />
+							<xs:element name="nCheque" type="xs:string" minOccurs="0" />
+							<xs:element name="ModeReglement" type="xs:string" minOccurs="0" />
+							<xs:element name="Observation" type="xs:string" minOccurs="0" />
+							<xs:element name="Montant" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Perte" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Profit" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Depose" type="xs:boolean" />
+							<xs:element name="ExportCompta" type="xs:boolean" />
+							<xs:element name="BanqueClient" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Reglement_Detail">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="nDetailReglement" type="xs:decimal" />
+							<xs:element name="nFacture" type="xs:decimal" minOccurs="0" />
+							<xs:element name="nReglement" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Montant" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Perte" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Profit" type="xs:decimal" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Remise_Detail">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="nDetailRemise" type="xs:decimal" />
+							<xs:element name="nRemise" type="xs:decimal" />
+							<xs:element name="nReglement" type="xs:decimal" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Remise">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="nRemise" type="xs:decimal" />
+							<xs:element name="nRemiseBanque" type="xs:string" minOccurs="0" />
+							<xs:element name="nBanque" type="xs:decimal" minOccurs="0" />
+							<xs:element name="DateRemise" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="TypeRemise" type="xs:string" minOccurs="0" />
+							<xs:element name="Observation" type="xs:string" minOccurs="0" />
+							<xs:element name="Montant" type="xs:decimal" minOccurs="0" />
+							<xs:element name="NExportRemise" type="xs:decimal" minOccurs="0" />
+							<xs:element name="ExportCompta" type="xs:boolean" minOccurs="0" />
+							<xs:element name="DateExportCompta" type="xs:dateTime" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Banque">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="nBanque" type="xs:decimal" />
+							<xs:element name="Libelle" type="xs:string" minOccurs="0" />
+							<xs:element name="NCompte" type="xs:string" minOccurs="0" />
+							<xs:element name="NActivite" type="xs:string" minOccurs="0" />
+							<xs:element name="RIBCodeAgence" type="xs:string" minOccurs="0" />
+							<xs:element name="RIBCodeGuichet" type="xs:string" minOccurs="0" />
+							<xs:element name="RIBNCompte" type="xs:string" minOccurs="0" />
+							<xs:element name="RIBCle" type="xs:string" minOccurs="0" />
+							<xs:element name="RIBNEmetteur" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Parametres">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="nParametre" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:decimal" />
+							<xs:element name="Logo" type="xs:base64Binary" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Entreprise">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="nEntreprise" type="xs:decimal" />
+							<xs:element name="DateCreation" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="DateModification" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="InfoMAJ" type="xs:string" minOccurs="0" />
+							<xs:element name="TypeEntreprise" type="xs:string" minOccurs="0" />
+							<xs:element name="nOrganisme" type="xs:string" minOccurs="0" />
+							<xs:element name="nMaisonMere" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Dep" type="xs:string" minOccurs="0" />
+							<xs:element name="Nom" type="xs:string" minOccurs="0" />
+							<xs:element name="Adresse" type="xs:string" minOccurs="0" />
+							<xs:element name="CodePostal" type="xs:string" minOccurs="0" />
+							<xs:element name="Ville" type="xs:string" minOccurs="0" />
+							<xs:element name="Pays" type="xs:string" minOccurs="0" />
+							<xs:element name="FormeJuridique" type="xs:string" minOccurs="0" />
+							<xs:element name="TypeClient" type="xs:string" minOccurs="0" />
+							<xs:element name="CibleCommercial" type="xs:string" minOccurs="0" />
+							<xs:element name="ModePaiement" type="xs:string" minOccurs="0" />
+							<xs:element name="Echeance" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Banque" type="xs:string" minOccurs="0" />
+							<xs:element name="RIB" type="xs:string" minOccurs="0" />
+							<xs:element name="CA" type="xs:float" minOccurs="0" />
+							<xs:element name="EMail" type="xs:string" minOccurs="0" />
+							<xs:element name="SiteInternet" type="xs:string" minOccurs="0" />
+							<xs:element name="Observations" type="xs:string" minOccurs="0" />
+							<xs:element name="FinMois" type="xs:boolean" minOccurs="0" />
+							<xs:element name="Remise" type="xs:decimal" minOccurs="0" />
+							<xs:element name="TTVA" type="xs:string" minOccurs="0" />
+							<xs:element name="FacturationTTC" type="xs:boolean" minOccurs="0" />
+							<xs:element name="Fournisseur" type="xs:boolean" minOccurs="0" />
+							<xs:element name="Client" type="xs:boolean" minOccurs="0" />
+							<xs:element name="SuffixePostal" type="xs:string" minOccurs="0" />
+							<xs:element name="AdresseLiv" type="xs:string" minOccurs="0" />
+							<xs:element name="CodePostalLiv" type="xs:string" minOccurs="0" />
+							<xs:element name="VilleLiv" type="xs:string" minOccurs="0" />
+							<xs:element name="PaysLiv" type="xs:string" minOccurs="0" />
+							<xs:element name="Inactif" type="xs:boolean" minOccurs="0" />
+							<xs:element name="LoginSite" type="xs:string" minOccurs="0" />
+							<xs:element name="PwdSite" type="xs:string" minOccurs="0" />
+							<xs:element name="IdSite" type="xs:decimal" minOccurs="0" />
+							<xs:element name="NCompteF" type="xs:string" minOccurs="0" />
+							<xs:element name="NActiviteF" type="xs:string" minOccurs="0" />
+							<xs:element name="NCompteC" type="xs:string" minOccurs="0" />
+							<xs:element name="NActiviteC" type="xs:string" minOccurs="0" />
+							<xs:element name="nTarif" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Civilite" type="xs:string" minOccurs="0" />
+							<xs:element name="Logo" type="xs:base64Binary" minOccurs="0" />
+							<xs:element name="Licence" type="xs:string" minOccurs="0" />
+							<xs:element name="SituationCompte" type="xs:decimal" minOccurs="0" />
+							<xs:element name="NTvaIntraCom" type="xs:string" minOccurs="0" />
+							<xs:element name="CodeInterne" type="xs:string" minOccurs="0" />
+							<xs:element name="Critere1" type="xs:string" minOccurs="0" />
+							<xs:element name="Critere2" type="xs:string" minOccurs="0" />
+							<xs:element name="Critere3" type="xs:string" minOccurs="0" />
+							<xs:element name="Critere4" type="xs:string" minOccurs="0" />
+							<xs:element name="AfficheStat" type="xs:boolean" minOccurs="0" />
+							<xs:element name="Siren" type="xs:string" minOccurs="0" />
+							<xs:element name="IsSuspensTaxe" type="xs:boolean" minOccurs="0" />
+							<xs:element name="IsExport" type="xs:boolean" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="TVA_Detail">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="nTVA" type="xs:decimal" />
+							<xs:element name="TTVA" type="xs:string" minOccurs="0" />
+							<xs:element name="TTaux" type="xs:decimal" minOccurs="0" />
+							<xs:element name="TCoef" type="xs:decimal" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="DsImpressionFactureKey5" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:AReglement" />
+			<xs:field xpath="mstns:nReglement" />
+		</xs:unique>
+		<xs:unique name="DsImpressionFactureKey7" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:Personne" />
+			<xs:field xpath="mstns:nPersonne" />
+		</xs:unique>
+		<xs:unique name="DsImpressionFactureKey9" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:Produit" />
+			<xs:field xpath="mstns:CodeProduit" />
+		</xs:unique>
+		<xs:unique name="DsImpressionFactureKey10" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:TVA" />
+			<xs:field xpath="mstns:nTVA" />
+		</xs:unique>
+		<xs:unique name="DsImpressionFactureKey11" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:VBonCommande" />
+			<xs:field xpath="mstns:nDevis" />
+		</xs:unique>
+		<xs:unique name="DsImpressionFactureKey12" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:VBonCommande_Detail" />
+			<xs:field xpath="mstns:nDetailDevis" />
+		</xs:unique>
+		<xs:unique name="DsImpressionFactureKey13" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:VBonLivraison" />
+			<xs:field xpath="mstns:nDevis" />
+		</xs:unique>
+		<xs:unique name="DsImpressionFactureKey14" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:VBonLivraison_Detail" />
+			<xs:field xpath="mstns:nDetailDevis" />
+		</xs:unique>
+		<xs:unique name="DsImpressionFactureKey15" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:VDevis" />
+			<xs:field xpath="mstns:nDevis" />
+		</xs:unique>
+		<xs:unique name="DsImpressionFactureKey16" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:VDevis_Detail" />
+			<xs:field xpath="mstns:nDetailDevis" />
+		</xs:unique>
+		<xs:unique name="DsImpressionFactureKey17" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:VFacture" />
+			<xs:field xpath="mstns:nDevis" />
+		</xs:unique>
+		<xs:unique name="DsImpressionFactureKey18" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:VFacture_Detail" />
+			<xs:field xpath="mstns:nDetailDevis" />
+		</xs:unique>
+		<xs:unique name="DsImpressionFactureKey19" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:Telephone" />
+			<xs:field xpath="mstns:nPersonne" />
+			<xs:field xpath="mstns:Type" />
+		</xs:unique>
+		<xs:unique name="DsImpressionFactureKey20" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:TelephoneEntreprise" />
+			<xs:field xpath="mstns:nEntreprise" />
+			<xs:field xpath="mstns:Type" />
+		</xs:unique>
+		<xs:unique name="DsImpressionFactureKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:ABonReception" />
+			<xs:field xpath="mstns:nDevis" />
+		</xs:unique>
+		<xs:unique name="DsImpressionFactureKey2" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:ABonReception_Detail" />
+			<xs:field xpath="mstns:nDetailDevis" />
+		</xs:unique>
+		<xs:unique name="DsImpressionFactureKey3" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:AFacture" />
+			<xs:field xpath="mstns:nDevis" />
+		</xs:unique>
+		<xs:unique name="DsImpressionFactureKey4" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:AFacture_Detail" />
+			<xs:field xpath="mstns:nDetailDevis" />
+		</xs:unique>
+		<xs:unique name="DsImpressionFactureKey21" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:Famille" />
+			<xs:field xpath="mstns:nFamille" />
+		</xs:unique>
+		<xs:unique name="DsImpressionFactureKey22" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:Reglement" />
+			<xs:field xpath="mstns:nReglement" />
+		</xs:unique>
+		<xs:unique name="DsImpressionFactureKey23" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:Reglement_Detail" />
+			<xs:field xpath="mstns:nDetailReglement" />
+		</xs:unique>
+		<xs:unique name="DsImpressionFactureKey25" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:Remise_Detail" />
+			<xs:field xpath="mstns:nDetailRemise" />
+		</xs:unique>
+		<xs:unique name="DsImpressionFactureKey24" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:Remise" />
+			<xs:field xpath="mstns:nRemise" />
+		</xs:unique>
+		<xs:unique name="DsImpressionFactureKey26" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:Banque" />
+			<xs:field xpath="mstns:nBanque" />
+		</xs:unique>
+		<xs:keyref name="BanqueRemise" refer="DsImpressionFactureKey26">
+			<xs:selector xpath=".//mstns:Remise" />
+			<xs:field xpath="mstns:nBanque" />
+		</xs:keyref>
+		<xs:unique name="DsImpressionFactureKey27" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:Parametres" />
+			<xs:field xpath="mstns:nParametre" />
+		</xs:unique>
+		<xs:unique name="DsImpressionFactureKey6" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:AReglement" />
+			<xs:field xpath="mstns:nReglement" />
+		</xs:unique>
+		<xs:unique name="DsImpressionFactureKey28" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:Entreprise" />
+			<xs:field xpath="mstns:nEntreprise" />
+		</xs:unique>
+	</xs:element>
+</xs:schema>

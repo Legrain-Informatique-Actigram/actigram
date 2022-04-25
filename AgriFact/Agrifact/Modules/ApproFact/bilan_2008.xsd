@@ -1,0 +1,937 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- xsd version="1.02" -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified"
+	xml:lang="fr">
+	<xs:annotation>
+		<xs:documentation xml:lang="fr">Schéma relatif au bilan annuel des ventes de produits phytopharmaceutiques par les distributeurs</xs:documentation>
+	</xs:annotation>
+	<xs:element name="BILAN">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="DISTRIBUTEUR" type="DISTRIBUTEURType" />
+				<xs:element name="ETABLISSEMENTS" type="ETABLISSEMENTSType">
+					<xs:unique name="UNIQUE_SIRET">
+						<xs:selector xpath="./ETABLISSEMENT" />
+						<xs:field xpath="SIRET" />
+					</xs:unique>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute name="ANNEE_BILAN" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:gYear">
+						<xs:enumeration value="2008" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="SOURCE">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="XLS" />
+						<xs:enumeration value="WEB" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="VERSION">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="6" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="DATE_CREATION">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:pattern value="\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="ADRESSEType">
+		<xs:sequence>
+			<xs:element name="BATIMENT">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0" fixed="false" />
+						<xs:maxLength value="38" fixed="false" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="NUMERO_ET_VOIE">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0" />
+						<xs:maxLength value="38" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="LIEU_DIT">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0" />
+						<xs:maxLength value="38" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="INSEE">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="5" />
+						<xs:pattern value="\d{5}" />
+						<xs:pattern value="2A\d{3}" />
+						<xs:pattern value="2B\d{3}" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="VENTESType">
+		<xs:sequence>
+			<xs:element name="PRODUIT" minOccurs="0" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="AMM">
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:length value="7" />
+									<xs:pattern value="\d{7}" />
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+						<xs:element name="QUANTITE" type="xs:double" />
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ETABLISSEMENTSType">
+		<xs:sequence>
+			<xs:element name="ETABLISSEMENT" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="NOM">
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:maxLength value="255" />
+									<xs:minLength value="1" />
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+						<xs:element ref="SIRET" />
+						<xs:element name="ADRESSE" type="ADRESSEType" />
+						<xs:element name="VENTES" type="VENTESType">
+							<xs:unique name="UNIQUE_AMM">
+								<xs:selector xpath="./PRODUIT" />
+								<xs:field xpath="AMM" />
+							</xs:unique>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="DISTRIBUTEURType">
+		<xs:sequence>
+			<xs:element name="NOM_ORGANISME">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="255" />
+						<xs:minLength value="1" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="NOM_SIEGE">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="255" />
+						<xs:minLength value="1" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ADRESSE" type="ADRESSEType" />
+			<xs:element name="NUMERO_AGREMENT">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="7" />
+						<xs:pattern value="XX0{5}" />
+						<xs:pattern value="AL\d{5}" />
+						<xs:pattern value="AQ\d{5}" />
+						<xs:pattern value="AU\d{5}" />
+						<xs:pattern value="BN\d{5}" />
+						<xs:pattern value="BO\d{5}" />
+						<xs:pattern value="BR\d{5}" />
+						<xs:pattern value="CE\d{5}" />
+						<xs:pattern value="CA\d{5}" />
+						<xs:pattern value="CO\d{5}" />
+						<xs:pattern value="FC\d{5}" />
+						<xs:pattern value="GU\d{5}" />
+						<xs:pattern value="GY\d{5}" />
+						<xs:pattern value="HN\d{5}" />
+						<xs:pattern value="IF\d{5}" />
+						<xs:pattern value="LR\d{5}" />
+						<xs:pattern value="LI\d{5}" />
+						<xs:pattern value="LO\d{5}" />
+						<xs:pattern value="MA\d{5}" />
+						<xs:pattern value="MP\d{5}" />
+						<xs:pattern value="NC\d{5}" />
+						<xs:pattern value="PA\d{5}" />
+						<xs:pattern value="PL\d{5}" />
+						<xs:pattern value="PI\d{5}" />
+						<xs:pattern value="PC\d{5}" />
+						<xs:pattern value="RE\d{5}" />
+						<xs:pattern value="RH\d{5}" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element ref="SIRET" />
+			<xs:element name="CODE_NAF">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="5" />
+						<xs:pattern value="\d{4}\p{Lu}" />
+						<xs:enumeration value="0111Z" />
+						<xs:enumeration value="0112Z" />
+						<xs:enumeration value="0113Z" />
+						<xs:enumeration value="0114Z" />
+						<xs:enumeration value="0115Z" />
+						<xs:enumeration value="0116Z" />
+						<xs:enumeration value="0119Z" />
+						<xs:enumeration value="0121Z" />
+						<xs:enumeration value="0122Z" />
+						<xs:enumeration value="0123Z" />
+						<xs:enumeration value="0124Z" />
+						<xs:enumeration value="0125Z" />
+						<xs:enumeration value="0126Z" />
+						<xs:enumeration value="0127Z" />
+						<xs:enumeration value="0128Z" />
+						<xs:enumeration value="0129Z" />
+						<xs:enumeration value="0130Z" />
+						<xs:enumeration value="0141Z" />
+						<xs:enumeration value="0142Z" />
+						<xs:enumeration value="0143Z" />
+						<xs:enumeration value="0144Z" />
+						<xs:enumeration value="0145Z" />
+						<xs:enumeration value="0146Z" />
+						<xs:enumeration value="0147Z" />
+						<xs:enumeration value="0149Z" />
+						<xs:enumeration value="0150Z" />
+						<xs:enumeration value="0161Z" />
+						<xs:enumeration value="0162Z" />
+						<xs:enumeration value="0163Z" />
+						<xs:enumeration value="0164Z" />
+						<xs:enumeration value="0170Z" />
+						<xs:enumeration value="0210Z" />
+						<xs:enumeration value="0220Z" />
+						<xs:enumeration value="0230Z" />
+						<xs:enumeration value="0240Z" />
+						<xs:enumeration value="0311Z" />
+						<xs:enumeration value="0312Z" />
+						<xs:enumeration value="0321Z" />
+						<xs:enumeration value="0322Z" />
+						<xs:enumeration value="0510Z" />
+						<xs:enumeration value="0520Z" />
+						<xs:enumeration value="0610Z" />
+						<xs:enumeration value="0620Z" />
+						<xs:enumeration value="0710Z" />
+						<xs:enumeration value="0721Z" />
+						<xs:enumeration value="0729Z" />
+						<xs:enumeration value="0811Z" />
+						<xs:enumeration value="0812Z" />
+						<xs:enumeration value="0891Z" />
+						<xs:enumeration value="0892Z" />
+						<xs:enumeration value="0893Z" />
+						<xs:enumeration value="0899Z" />
+						<xs:enumeration value="0910Z" />
+						<xs:enumeration value="0990Z" />
+						<xs:enumeration value="1011Z" />
+						<xs:enumeration value="1012Z" />
+						<xs:enumeration value="1013A" />
+						<xs:enumeration value="1013B" />
+						<xs:enumeration value="1020Z" />
+						<xs:enumeration value="1031Z" />
+						<xs:enumeration value="1032Z" />
+						<xs:enumeration value="1039A" />
+						<xs:enumeration value="1039B" />
+						<xs:enumeration value="1041A" />
+						<xs:enumeration value="1041B" />
+						<xs:enumeration value="1042Z" />
+						<xs:enumeration value="1051A" />
+						<xs:enumeration value="1051B" />
+						<xs:enumeration value="1051C" />
+						<xs:enumeration value="1051D" />
+						<xs:enumeration value="1052Z" />
+						<xs:enumeration value="1061A" />
+						<xs:enumeration value="1061B" />
+						<xs:enumeration value="1062Z" />
+						<xs:enumeration value="1071A" />
+						<xs:enumeration value="1071B" />
+						<xs:enumeration value="1071C" />
+						<xs:enumeration value="1071D" />
+						<xs:enumeration value="1072Z" />
+						<xs:enumeration value="1073Z" />
+						<xs:enumeration value="1081Z" />
+						<xs:enumeration value="1082Z" />
+						<xs:enumeration value="1083Z" />
+						<xs:enumeration value="1084Z" />
+						<xs:enumeration value="1085Z" />
+						<xs:enumeration value="1086Z" />
+						<xs:enumeration value="1089Z" />
+						<xs:enumeration value="1091Z" />
+						<xs:enumeration value="1092Z" />
+						<xs:enumeration value="1101Z" />
+						<xs:enumeration value="1102A" />
+						<xs:enumeration value="1102B" />
+						<xs:enumeration value="1103Z" />
+						<xs:enumeration value="1104Z" />
+						<xs:enumeration value="1105Z" />
+						<xs:enumeration value="1106Z" />
+						<xs:enumeration value="1107A" />
+						<xs:enumeration value="1107B" />
+						<xs:enumeration value="1200Z" />
+						<xs:enumeration value="1310Z" />
+						<xs:enumeration value="1320Z" />
+						<xs:enumeration value="1330Z" />
+						<xs:enumeration value="1391Z" />
+						<xs:enumeration value="1392Z" />
+						<xs:enumeration value="1393Z" />
+						<xs:enumeration value="1394Z" />
+						<xs:enumeration value="1395Z" />
+						<xs:enumeration value="1396Z" />
+						<xs:enumeration value="1399Z" />
+						<xs:enumeration value="1411Z" />
+						<xs:enumeration value="1412Z" />
+						<xs:enumeration value="1413Z" />
+						<xs:enumeration value="1414Z" />
+						<xs:enumeration value="1419Z" />
+						<xs:enumeration value="1420Z" />
+						<xs:enumeration value="1431Z" />
+						<xs:enumeration value="1439Z" />
+						<xs:enumeration value="1511Z" />
+						<xs:enumeration value="1512Z" />
+						<xs:enumeration value="1520Z" />
+						<xs:enumeration value="1610A" />
+						<xs:enumeration value="1610B" />
+						<xs:enumeration value="1621Z" />
+						<xs:enumeration value="1622Z" />
+						<xs:enumeration value="1623Z" />
+						<xs:enumeration value="1624Z" />
+						<xs:enumeration value="1629Z" />
+						<xs:enumeration value="1711Z" />
+						<xs:enumeration value="1712Z" />
+						<xs:enumeration value="1721A" />
+						<xs:enumeration value="1721B" />
+						<xs:enumeration value="1721C" />
+						<xs:enumeration value="1722Z" />
+						<xs:enumeration value="1723Z" />
+						<xs:enumeration value="1724Z" />
+						<xs:enumeration value="1729Z" />
+						<xs:enumeration value="1811Z" />
+						<xs:enumeration value="1812Z" />
+						<xs:enumeration value="1813Z" />
+						<xs:enumeration value="1814Z" />
+						<xs:enumeration value="1820Z" />
+						<xs:enumeration value="1910Z" />
+						<xs:enumeration value="1920Z" />
+						<xs:enumeration value="2011Z" />
+						<xs:enumeration value="2012Z" />
+						<xs:enumeration value="2013A" />
+						<xs:enumeration value="2013B" />
+						<xs:enumeration value="2014Z" />
+						<xs:enumeration value="2015Z" />
+						<xs:enumeration value="2016Z" />
+						<xs:enumeration value="2017Z" />
+						<xs:enumeration value="2020Z" />
+						<xs:enumeration value="2030Z" />
+						<xs:enumeration value="2041Z" />
+						<xs:enumeration value="2042Z" />
+						<xs:enumeration value="2051Z" />
+						<xs:enumeration value="2052Z" />
+						<xs:enumeration value="2053Z" />
+						<xs:enumeration value="2059Z" />
+						<xs:enumeration value="2060Z" />
+						<xs:enumeration value="2110Z" />
+						<xs:enumeration value="2120Z" />
+						<xs:enumeration value="2211Z" />
+						<xs:enumeration value="2219Z" />
+						<xs:enumeration value="2221Z" />
+						<xs:enumeration value="2222Z" />
+						<xs:enumeration value="2223Z" />
+						<xs:enumeration value="2229A" />
+						<xs:enumeration value="2229B" />
+						<xs:enumeration value="2311Z" />
+						<xs:enumeration value="2312Z" />
+						<xs:enumeration value="2313Z" />
+						<xs:enumeration value="2314Z" />
+						<xs:enumeration value="2319Z" />
+						<xs:enumeration value="2320Z" />
+						<xs:enumeration value="2331Z" />
+						<xs:enumeration value="2332Z" />
+						<xs:enumeration value="2341Z" />
+						<xs:enumeration value="2342Z" />
+						<xs:enumeration value="2343Z" />
+						<xs:enumeration value="2344Z" />
+						<xs:enumeration value="2349Z" />
+						<xs:enumeration value="2351Z" />
+						<xs:enumeration value="2352Z" />
+						<xs:enumeration value="2361Z" />
+						<xs:enumeration value="2362Z" />
+						<xs:enumeration value="2363Z" />
+						<xs:enumeration value="2364Z" />
+						<xs:enumeration value="2365Z" />
+						<xs:enumeration value="2369Z" />
+						<xs:enumeration value="2370Z" />
+						<xs:enumeration value="2391Z" />
+						<xs:enumeration value="2399Z" />
+						<xs:enumeration value="2410Z" />
+						<xs:enumeration value="2420Z" />
+						<xs:enumeration value="2431Z" />
+						<xs:enumeration value="2432Z" />
+						<xs:enumeration value="2433Z" />
+						<xs:enumeration value="2434Z" />
+						<xs:enumeration value="2441Z" />
+						<xs:enumeration value="2442Z" />
+						<xs:enumeration value="2443Z" />
+						<xs:enumeration value="2444Z" />
+						<xs:enumeration value="2445Z" />
+						<xs:enumeration value="2446Z" />
+						<xs:enumeration value="2451Z" />
+						<xs:enumeration value="2452Z" />
+						<xs:enumeration value="2453Z" />
+						<xs:enumeration value="2454Z" />
+						<xs:enumeration value="2511Z" />
+						<xs:enumeration value="2512Z" />
+						<xs:enumeration value="2521Z" />
+						<xs:enumeration value="2529Z" />
+						<xs:enumeration value="2530Z" />
+						<xs:enumeration value="2540Z" />
+						<xs:enumeration value="2550A" />
+						<xs:enumeration value="2550B" />
+						<xs:enumeration value="2561Z" />
+						<xs:enumeration value="2562A" />
+						<xs:enumeration value="2562B" />
+						<xs:enumeration value="2571Z" />
+						<xs:enumeration value="2572Z" />
+						<xs:enumeration value="2573A" />
+						<xs:enumeration value="2573B" />
+						<xs:enumeration value="2591Z" />
+						<xs:enumeration value="2592Z" />
+						<xs:enumeration value="2593Z" />
+						<xs:enumeration value="2594Z" />
+						<xs:enumeration value="2599A" />
+						<xs:enumeration value="2599B" />
+						<xs:enumeration value="2611Z" />
+						<xs:enumeration value="2612Z" />
+						<xs:enumeration value="2620Z" />
+						<xs:enumeration value="2630Z" />
+						<xs:enumeration value="2640Z" />
+						<xs:enumeration value="2651A" />
+						<xs:enumeration value="2651B" />
+						<xs:enumeration value="2652Z" />
+						<xs:enumeration value="2660Z" />
+						<xs:enumeration value="2670Z" />
+						<xs:enumeration value="2680Z" />
+						<xs:enumeration value="2711Z" />
+						<xs:enumeration value="2712Z" />
+						<xs:enumeration value="2720Z" />
+						<xs:enumeration value="2731Z" />
+						<xs:enumeration value="2732Z" />
+						<xs:enumeration value="2733Z" />
+						<xs:enumeration value="2740Z" />
+						<xs:enumeration value="2751Z" />
+						<xs:enumeration value="2752Z" />
+						<xs:enumeration value="2790Z" />
+						<xs:enumeration value="2811Z" />
+						<xs:enumeration value="2812Z" />
+						<xs:enumeration value="2813Z" />
+						<xs:enumeration value="2814Z" />
+						<xs:enumeration value="2815Z" />
+						<xs:enumeration value="2821Z" />
+						<xs:enumeration value="2822Z" />
+						<xs:enumeration value="2823Z" />
+						<xs:enumeration value="2824Z" />
+						<xs:enumeration value="2825Z" />
+						<xs:enumeration value="2829A" />
+						<xs:enumeration value="2829B" />
+						<xs:enumeration value="2830Z" />
+						<xs:enumeration value="2841Z" />
+						<xs:enumeration value="2849Z" />
+						<xs:enumeration value="2891Z" />
+						<xs:enumeration value="2892Z" />
+						<xs:enumeration value="2893Z" />
+						<xs:enumeration value="2894Z" />
+						<xs:enumeration value="2895Z" />
+						<xs:enumeration value="2896Z" />
+						<xs:enumeration value="2899A" />
+						<xs:enumeration value="2899B" />
+						<xs:enumeration value="2910Z" />
+						<xs:enumeration value="2920Z" />
+						<xs:enumeration value="2931Z" />
+						<xs:enumeration value="2932Z" />
+						<xs:enumeration value="3011Z" />
+						<xs:enumeration value="3012Z" />
+						<xs:enumeration value="3020Z" />
+						<xs:enumeration value="3030Z" />
+						<xs:enumeration value="3040Z" />
+						<xs:enumeration value="3091Z" />
+						<xs:enumeration value="3092Z" />
+						<xs:enumeration value="3099Z" />
+						<xs:enumeration value="3101Z" />
+						<xs:enumeration value="3102Z" />
+						<xs:enumeration value="3103Z" />
+						<xs:enumeration value="3109A" />
+						<xs:enumeration value="3109B" />
+						<xs:enumeration value="3211Z" />
+						<xs:enumeration value="3212Z" />
+						<xs:enumeration value="3213Z" />
+						<xs:enumeration value="3220Z" />
+						<xs:enumeration value="3230Z" />
+						<xs:enumeration value="3240Z" />
+						<xs:enumeration value="3250A" />
+						<xs:enumeration value="3250B" />
+						<xs:enumeration value="3291Z" />
+						<xs:enumeration value="3299Z" />
+						<xs:enumeration value="3311Z" />
+						<xs:enumeration value="3312Z" />
+						<xs:enumeration value="3313Z" />
+						<xs:enumeration value="3314Z" />
+						<xs:enumeration value="3315Z" />
+						<xs:enumeration value="3316Z" />
+						<xs:enumeration value="3317Z" />
+						<xs:enumeration value="3319Z" />
+						<xs:enumeration value="3320A" />
+						<xs:enumeration value="3320B" />
+						<xs:enumeration value="3320C" />
+						<xs:enumeration value="3320D" />
+						<xs:enumeration value="3511Z" />
+						<xs:enumeration value="3512Z" />
+						<xs:enumeration value="3513Z" />
+						<xs:enumeration value="3514Z" />
+						<xs:enumeration value="3521Z" />
+						<xs:enumeration value="3522Z" />
+						<xs:enumeration value="3523Z" />
+						<xs:enumeration value="3530Z" />
+						<xs:enumeration value="3600Z" />
+						<xs:enumeration value="3700Z" />
+						<xs:enumeration value="3811Z" />
+						<xs:enumeration value="3812Z" />
+						<xs:enumeration value="3821Z" />
+						<xs:enumeration value="3822Z" />
+						<xs:enumeration value="3831Z" />
+						<xs:enumeration value="3832Z" />
+						<xs:enumeration value="3900Z" />
+						<xs:enumeration value="4110A" />
+						<xs:enumeration value="4110B" />
+						<xs:enumeration value="4110C" />
+						<xs:enumeration value="4110D" />
+						<xs:enumeration value="4120A" />
+						<xs:enumeration value="4120B" />
+						<xs:enumeration value="4211Z" />
+						<xs:enumeration value="4212Z" />
+						<xs:enumeration value="4213A" />
+						<xs:enumeration value="4213B" />
+						<xs:enumeration value="4221Z" />
+						<xs:enumeration value="4222Z" />
+						<xs:enumeration value="4291Z" />
+						<xs:enumeration value="4299Z" />
+						<xs:enumeration value="4311Z" />
+						<xs:enumeration value="4312A" />
+						<xs:enumeration value="4312B" />
+						<xs:enumeration value="4313Z" />
+						<xs:enumeration value="4321A" />
+						<xs:enumeration value="4321B" />
+						<xs:enumeration value="4322A" />
+						<xs:enumeration value="4322B" />
+						<xs:enumeration value="4329A" />
+						<xs:enumeration value="4329B" />
+						<xs:enumeration value="4331Z" />
+						<xs:enumeration value="4332A" />
+						<xs:enumeration value="4332B" />
+						<xs:enumeration value="4332C" />
+						<xs:enumeration value="4333Z" />
+						<xs:enumeration value="4334Z" />
+						<xs:enumeration value="4339Z" />
+						<xs:enumeration value="4391A" />
+						<xs:enumeration value="4391B" />
+						<xs:enumeration value="4399A" />
+						<xs:enumeration value="4399B" />
+						<xs:enumeration value="4399C" />
+						<xs:enumeration value="4399D" />
+						<xs:enumeration value="4399E" />
+						<xs:enumeration value="4511Z" />
+						<xs:enumeration value="4519Z" />
+						<xs:enumeration value="4520A" />
+						<xs:enumeration value="4520B" />
+						<xs:enumeration value="4531Z" />
+						<xs:enumeration value="4532Z" />
+						<xs:enumeration value="4540Z" />
+						<xs:enumeration value="4611Z" />
+						<xs:enumeration value="4612A" />
+						<xs:enumeration value="4612B" />
+						<xs:enumeration value="4613Z" />
+						<xs:enumeration value="4614Z" />
+						<xs:enumeration value="4615Z" />
+						<xs:enumeration value="4616Z" />
+						<xs:enumeration value="4617A" />
+						<xs:enumeration value="4617B" />
+						<xs:enumeration value="4618Z" />
+						<xs:enumeration value="4619A" />
+						<xs:enumeration value="4619B" />
+						<xs:enumeration value="4621Z" />
+						<xs:enumeration value="4622Z" />
+						<xs:enumeration value="4623Z" />
+						<xs:enumeration value="4624Z" />
+						<xs:enumeration value="4631Z" />
+						<xs:enumeration value="4632A" />
+						<xs:enumeration value="4632B" />
+						<xs:enumeration value="4632C" />
+						<xs:enumeration value="4633Z" />
+						<xs:enumeration value="4634Z" />
+						<xs:enumeration value="4635Z" />
+						<xs:enumeration value="4636Z" />
+						<xs:enumeration value="4637Z" />
+						<xs:enumeration value="4638A" />
+						<xs:enumeration value="4638B" />
+						<xs:enumeration value="4639A" />
+						<xs:enumeration value="4639B" />
+						<xs:enumeration value="4641Z" />
+						<xs:enumeration value="4642Z" />
+						<xs:enumeration value="4643Z" />
+						<xs:enumeration value="4644Z" />
+						<xs:enumeration value="4645Z" />
+						<xs:enumeration value="4646Z" />
+						<xs:enumeration value="4647Z" />
+						<xs:enumeration value="4648Z" />
+						<xs:enumeration value="4649Z" />
+						<xs:enumeration value="4651Z" />
+						<xs:enumeration value="4652Z" />
+						<xs:enumeration value="4661Z" />
+						<xs:enumeration value="4662Z" />
+						<xs:enumeration value="4663Z" />
+						<xs:enumeration value="4664Z" />
+						<xs:enumeration value="4665Z" />
+						<xs:enumeration value="4666Z" />
+						<xs:enumeration value="4669A" />
+						<xs:enumeration value="4669B" />
+						<xs:enumeration value="4669C" />
+						<xs:enumeration value="4671Z" />
+						<xs:enumeration value="4672Z" />
+						<xs:enumeration value="4673A" />
+						<xs:enumeration value="4673B" />
+						<xs:enumeration value="4674A" />
+						<xs:enumeration value="4674B" />
+						<xs:enumeration value="4675Z" />
+						<xs:enumeration value="4676Z" />
+						<xs:enumeration value="4677Z" />
+						<xs:enumeration value="4690Z" />
+						<xs:enumeration value="4711A" />
+						<xs:enumeration value="4711B" />
+						<xs:enumeration value="4711C" />
+						<xs:enumeration value="4711D" />
+						<xs:enumeration value="4711E" />
+						<xs:enumeration value="4711F" />
+						<xs:enumeration value="4719A" />
+						<xs:enumeration value="4719B" />
+						<xs:enumeration value="4721Z" />
+						<xs:enumeration value="4722Z" />
+						<xs:enumeration value="4723Z" />
+						<xs:enumeration value="4724Z" />
+						<xs:enumeration value="4725Z" />
+						<xs:enumeration value="4726Z" />
+						<xs:enumeration value="4729Z" />
+						<xs:enumeration value="4730Z" />
+						<xs:enumeration value="4741Z" />
+						<xs:enumeration value="4742Z" />
+						<xs:enumeration value="4743Z" />
+						<xs:enumeration value="4751Z" />
+						<xs:enumeration value="4752A" />
+						<xs:enumeration value="4752B" />
+						<xs:enumeration value="4753Z" />
+						<xs:enumeration value="4754Z" />
+						<xs:enumeration value="4759A" />
+						<xs:enumeration value="4759B" />
+						<xs:enumeration value="4761Z" />
+						<xs:enumeration value="4762Z" />
+						<xs:enumeration value="4763Z" />
+						<xs:enumeration value="4764Z" />
+						<xs:enumeration value="4765Z" />
+						<xs:enumeration value="4771Z" />
+						<xs:enumeration value="4772A" />
+						<xs:enumeration value="4772B" />
+						<xs:enumeration value="4773Z" />
+						<xs:enumeration value="4774Z" />
+						<xs:enumeration value="4775Z" />
+						<xs:enumeration value="4776Z" />
+						<xs:enumeration value="4777Z" />
+						<xs:enumeration value="4778A" />
+						<xs:enumeration value="4778B" />
+						<xs:enumeration value="4778C" />
+						<xs:enumeration value="4779Z" />
+						<xs:enumeration value="4781Z" />
+						<xs:enumeration value="4782Z" />
+						<xs:enumeration value="4789Z" />
+						<xs:enumeration value="4791A" />
+						<xs:enumeration value="4791B" />
+						<xs:enumeration value="4799A" />
+						<xs:enumeration value="4799B" />
+						<xs:enumeration value="4910Z" />
+						<xs:enumeration value="4920Z" />
+						<xs:enumeration value="4931Z" />
+						<xs:enumeration value="4932Z" />
+						<xs:enumeration value="4939A" />
+						<xs:enumeration value="4939B" />
+						<xs:enumeration value="4939C" />
+						<xs:enumeration value="4941A" />
+						<xs:enumeration value="4941B" />
+						<xs:enumeration value="4941C" />
+						<xs:enumeration value="4942Z" />
+						<xs:enumeration value="4950Z" />
+						<xs:enumeration value="5010Z" />
+						<xs:enumeration value="5020Z" />
+						<xs:enumeration value="5030Z" />
+						<xs:enumeration value="5040Z" />
+						<xs:enumeration value="5110Z" />
+						<xs:enumeration value="5121Z" />
+						<xs:enumeration value="5122Z" />
+						<xs:enumeration value="5210A" />
+						<xs:enumeration value="5210B" />
+						<xs:enumeration value="5221Z" />
+						<xs:enumeration value="5222Z" />
+						<xs:enumeration value="5223Z" />
+						<xs:enumeration value="5224A" />
+						<xs:enumeration value="5224B" />
+						<xs:enumeration value="5229A" />
+						<xs:enumeration value="5229B" />
+						<xs:enumeration value="5310Z" />
+						<xs:enumeration value="5320Z" />
+						<xs:enumeration value="5510Z" />
+						<xs:enumeration value="5520Z" />
+						<xs:enumeration value="5530Z" />
+						<xs:enumeration value="5590Z" />
+						<xs:enumeration value="5610A" />
+						<xs:enumeration value="5610B" />
+						<xs:enumeration value="5610C" />
+						<xs:enumeration value="5621Z" />
+						<xs:enumeration value="5629A" />
+						<xs:enumeration value="5629B" />
+						<xs:enumeration value="5630Z" />
+						<xs:enumeration value="5811Z" />
+						<xs:enumeration value="5812Z" />
+						<xs:enumeration value="5813Z" />
+						<xs:enumeration value="5814Z" />
+						<xs:enumeration value="5819Z" />
+						<xs:enumeration value="5821Z" />
+						<xs:enumeration value="5829A" />
+						<xs:enumeration value="5829B" />
+						<xs:enumeration value="5829C" />
+						<xs:enumeration value="5911A" />
+						<xs:enumeration value="5911B" />
+						<xs:enumeration value="5911C" />
+						<xs:enumeration value="5912Z" />
+						<xs:enumeration value="5913A" />
+						<xs:enumeration value="5913B" />
+						<xs:enumeration value="5914Z" />
+						<xs:enumeration value="5920Z" />
+						<xs:enumeration value="6010Z" />
+						<xs:enumeration value="6020A" />
+						<xs:enumeration value="6020B" />
+						<xs:enumeration value="6110Z" />
+						<xs:enumeration value="6120Z" />
+						<xs:enumeration value="6130Z" />
+						<xs:enumeration value="6190Z" />
+						<xs:enumeration value="6201Z" />
+						<xs:enumeration value="6202A" />
+						<xs:enumeration value="6202B" />
+						<xs:enumeration value="6203Z" />
+						<xs:enumeration value="6209Z" />
+						<xs:enumeration value="6311Z" />
+						<xs:enumeration value="6312Z" />
+						<xs:enumeration value="6391Z" />
+						<xs:enumeration value="6399Z" />
+						<xs:enumeration value="6411Z" />
+						<xs:enumeration value="6419Z" />
+						<xs:enumeration value="6420Z" />
+						<xs:enumeration value="6430Z" />
+						<xs:enumeration value="6491Z" />
+						<xs:enumeration value="6492Z" />
+						<xs:enumeration value="6499Z" />
+						<xs:enumeration value="6511Z" />
+						<xs:enumeration value="6512Z" />
+						<xs:enumeration value="6520Z" />
+						<xs:enumeration value="6530Z" />
+						<xs:enumeration value="6611Z" />
+						<xs:enumeration value="6612Z" />
+						<xs:enumeration value="6619A" />
+						<xs:enumeration value="6619B" />
+						<xs:enumeration value="6621Z" />
+						<xs:enumeration value="6622Z" />
+						<xs:enumeration value="6629Z" />
+						<xs:enumeration value="6630Z" />
+						<xs:enumeration value="6810Z" />
+						<xs:enumeration value="6820A" />
+						<xs:enumeration value="6820B" />
+						<xs:enumeration value="6831Z" />
+						<xs:enumeration value="6832A" />
+						<xs:enumeration value="6832B" />
+						<xs:enumeration value="6910Z" />
+						<xs:enumeration value="6920Z" />
+						<xs:enumeration value="7010Z" />
+						<xs:enumeration value="7021Z" />
+						<xs:enumeration value="7022Z" />
+						<xs:enumeration value="7111Z" />
+						<xs:enumeration value="7112A" />
+						<xs:enumeration value="7112B" />
+						<xs:enumeration value="7120A" />
+						<xs:enumeration value="7120B" />
+						<xs:enumeration value="7211Z" />
+						<xs:enumeration value="7219Z" />
+						<xs:enumeration value="7220Z" />
+						<xs:enumeration value="7311Z" />
+						<xs:enumeration value="7312Z" />
+						<xs:enumeration value="7320Z" />
+						<xs:enumeration value="7410Z" />
+						<xs:enumeration value="7420Z" />
+						<xs:enumeration value="7430Z" />
+						<xs:enumeration value="7490A" />
+						<xs:enumeration value="7490B" />
+						<xs:enumeration value="7500Z" />
+						<xs:enumeration value="7711A" />
+						<xs:enumeration value="7711B" />
+						<xs:enumeration value="7712Z" />
+						<xs:enumeration value="7721Z" />
+						<xs:enumeration value="7722Z" />
+						<xs:enumeration value="7729Z" />
+						<xs:enumeration value="7731Z" />
+						<xs:enumeration value="7732Z" />
+						<xs:enumeration value="7733Z" />
+						<xs:enumeration value="7734Z" />
+						<xs:enumeration value="7735Z" />
+						<xs:enumeration value="7739Z" />
+						<xs:enumeration value="7740Z" />
+						<xs:enumeration value="7810Z" />
+						<xs:enumeration value="7820Z" />
+						<xs:enumeration value="7830Z" />
+						<xs:enumeration value="7911Z" />
+						<xs:enumeration value="7912Z" />
+						<xs:enumeration value="7990Z" />
+						<xs:enumeration value="8010Z" />
+						<xs:enumeration value="8020Z" />
+						<xs:enumeration value="8030Z" />
+						<xs:enumeration value="8110Z" />
+						<xs:enumeration value="8121Z" />
+						<xs:enumeration value="8122Z" />
+						<xs:enumeration value="8129A" />
+						<xs:enumeration value="8129B" />
+						<xs:enumeration value="8130Z" />
+						<xs:enumeration value="8211Z" />
+						<xs:enumeration value="8219Z" />
+						<xs:enumeration value="8220Z" />
+						<xs:enumeration value="8230Z" />
+						<xs:enumeration value="8291Z" />
+						<xs:enumeration value="8292Z" />
+						<xs:enumeration value="8299Z" />
+						<xs:enumeration value="8411Z" />
+						<xs:enumeration value="8412Z" />
+						<xs:enumeration value="8413Z" />
+						<xs:enumeration value="8421Z" />
+						<xs:enumeration value="8422Z" />
+						<xs:enumeration value="8423Z" />
+						<xs:enumeration value="8424Z" />
+						<xs:enumeration value="8425Z" />
+						<xs:enumeration value="8430A" />
+						<xs:enumeration value="8430B" />
+						<xs:enumeration value="8430C" />
+						<xs:enumeration value="8510Z" />
+						<xs:enumeration value="8520Z" />
+						<xs:enumeration value="8531Z" />
+						<xs:enumeration value="8532Z" />
+						<xs:enumeration value="8541Z" />
+						<xs:enumeration value="8542Z" />
+						<xs:enumeration value="8551Z" />
+						<xs:enumeration value="8552Z" />
+						<xs:enumeration value="8553Z" />
+						<xs:enumeration value="8559A" />
+						<xs:enumeration value="8559B" />
+						<xs:enumeration value="8560Z" />
+						<xs:enumeration value="8610Z" />
+						<xs:enumeration value="8621Z" />
+						<xs:enumeration value="8622A" />
+						<xs:enumeration value="8622B" />
+						<xs:enumeration value="8622C" />
+						<xs:enumeration value="8623Z" />
+						<xs:enumeration value="8690A" />
+						<xs:enumeration value="8690B" />
+						<xs:enumeration value="8690C" />
+						<xs:enumeration value="8690D" />
+						<xs:enumeration value="8690E" />
+						<xs:enumeration value="8690F" />
+						<xs:enumeration value="8710A" />
+						<xs:enumeration value="8710B" />
+						<xs:enumeration value="8710C" />
+						<xs:enumeration value="8720A" />
+						<xs:enumeration value="8720B" />
+						<xs:enumeration value="8730A" />
+						<xs:enumeration value="8730B" />
+						<xs:enumeration value="8790A" />
+						<xs:enumeration value="8790B" />
+						<xs:enumeration value="8810A" />
+						<xs:enumeration value="8810B" />
+						<xs:enumeration value="8810C" />
+						<xs:enumeration value="8891A" />
+						<xs:enumeration value="8891B" />
+						<xs:enumeration value="8899A" />
+						<xs:enumeration value="8899B" />
+						<xs:enumeration value="9001Z" />
+						<xs:enumeration value="9002Z" />
+						<xs:enumeration value="9003A" />
+						<xs:enumeration value="9003B" />
+						<xs:enumeration value="9004Z" />
+						<xs:enumeration value="9101Z" />
+						<xs:enumeration value="9102Z" />
+						<xs:enumeration value="9103Z" />
+						<xs:enumeration value="9104Z" />
+						<xs:enumeration value="9200Z" />
+						<xs:enumeration value="9311Z" />
+						<xs:enumeration value="9312Z" />
+						<xs:enumeration value="9313Z" />
+						<xs:enumeration value="9319Z" />
+						<xs:enumeration value="9321Z" />
+						<xs:enumeration value="9329Z" />
+						<xs:enumeration value="9411Z" />
+						<xs:enumeration value="9412Z" />
+						<xs:enumeration value="9420Z" />
+						<xs:enumeration value="9491Z" />
+						<xs:enumeration value="9492Z" />
+						<xs:enumeration value="9499Z" />
+						<xs:enumeration value="9511Z" />
+						<xs:enumeration value="9512Z" />
+						<xs:enumeration value="9521Z" />
+						<xs:enumeration value="9522Z" />
+						<xs:enumeration value="9523Z" />
+						<xs:enumeration value="9524Z" />
+						<xs:enumeration value="9525Z" />
+						<xs:enumeration value="9529Z" />
+						<xs:enumeration value="9601A" />
+						<xs:enumeration value="9601B" />
+						<xs:enumeration value="9602A" />
+						<xs:enumeration value="9602B" />
+						<xs:enumeration value="9603Z" />
+						<xs:enumeration value="9604Z" />
+						<xs:enumeration value="9609Z" />
+						<xs:enumeration value="9700Z" />
+						<xs:enumeration value="9810Z" />
+						<xs:enumeration value="9820Z" />
+						<xs:enumeration value="9900Z" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="SIRET">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:length value="14" />
+				<xs:pattern value="\d{14}" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+</xs:schema>

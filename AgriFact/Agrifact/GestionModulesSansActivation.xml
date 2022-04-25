@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<NewDataSet>
+  <Modules>
+    <ModuleStock>1</ModuleStock>
+    <ModuleEvenement>1</ModuleEvenement>
+    <ModuleAchat>1</ModuleAchat>
+    <ModuleVente>1</ModuleVente>
+    <ModuleReglement>1</ModuleReglement>
+    <ModuleBalance>1</ModuleBalance>
+    <ModuleTableauBord>1</ModuleTableauBord>
+    <ModuleGestionWeb>0</ModuleGestionWeb>
+    <ModuleGestionRelance>1</ModuleGestionRelance>
+    <ModuleGestionMarge>1</ModuleGestionMarge>
+    <ModuleCompta>1</ModuleCompta>
+    <ModuleTarif>1</ModuleTarif>
+    <ModuleContact>1</ModuleContact>
+    <ModuleApproFact>1</ModuleApproFact>
+    <VersionDemo>0</VersionDemo>
+  </Modules>
+</NewDataSet>

@@ -1,0 +1,204 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+MaquetteLectureCodeBarreSolstyce
+</name>
+</assembly>
+<members>
+<member name="M:MaquetteLectureCodeBarreSolstyce.SqlProxy.FormatSql(System.String,System.Object[])">
+	<summary>
+ Applique un format à la chaine en formattant les arguments pour être utilisés dans du SQL (doublage des ', remplacement des "," en "." dans les décimaux, format des dates, gestion des NULL)
+ </summary>
+	<param name="sql"></param>
+	<param name="values"></param>
+	<returns></returns>
+	<remarks>
+ Exemple d'utilisation : 
+ Dim sql as String = SqlProxy.FormatSql("UPDATE Client SET Nom={0}, Ville={1},CA={2}","supplément d'âme",Nothing,5/2)
+ 'sql = "UPDATE Client SET Nom=N'supplément d''âme', Ville=NULL,CA=2.5"
+ </remarks>
+</member><member name="M:MaquetteLectureCodeBarreSolstyce.SqlProxy.ExecuteDataTable(System.String,System.String)">
+	<summary>
+ Exécute une requête et en renvoie le résultat dans un objet Datatable
+ </summary>
+	<param name="sql"></param>
+	<param name="tableName"></param>
+	<returns></returns>
+	<remarks>
+ Exemple de code pour éxécuter une requête sur la base de données par défaut et la récupérer dans une Datatable :
+ Dim dt As DataTable
+ Using s As New SqlProxy
+     dt = s.ExecuteDataTable("SELECT * FROM Client")
+ End Using    
+  </remarks>
+</member><member name="M:MaquetteLectureCodeBarreSolstyce.SqlProxy.ExecuteScalarInt(System.String)">
+	<summary>
+ Exécute une requête et en renvoie le premier champ sous la forme d'un entier
+ </summary>
+	<param name="sql"></param>
+	<returns></returns>
+	<remarks>
+ Exemple de code pour éxécuter une requête sur la base de données par défaut et en récupérer le premier champs dans un entier :
+ Dim cnt As Integer = 0
+ Using s As New SqlProxy
+     cnt = s.ExecuteScalarInt("SELECT Count(*) FROM Client")
+ End Using    
+ </remarks>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.SqlProxy">
+	<summary>
+ Cette classe contient un ensemble de fonctions utiles pour accéder à des bases de donnés SQL Server
+ </summary>
+</member><member name="M:MaquetteLectureCodeBarreSolstyce.XmlUtils.GetTransformXSLTFile(System.Xml.XmlDocument,System.String)">
+	<summary>
+ Transformation XSLT d'un fichier XML
+ </summary>
+	<param name="reader">Le document XML a transformer</param>
+	<param name="XSL_Filename">L'URI serveur du fichier xslt de transformation</param>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSet.ABonReceptionDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSet.ABonReception_DetailDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSet.EntrepriseDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSet.FamilleDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSet.MouvementDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSet.Mouvement_DetailDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSet.ProduitDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSet.ABonReceptionRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSet.ABonReception_DetailRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSet.EntrepriseRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSet.FamilleRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSet.MouvementRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSet.Mouvement_DetailRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSet.ProduitRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSet.ABonReceptionRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSet.ABonReception_DetailRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSet.EntrepriseRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSet.FamilleRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSet.MouvementRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSet.Mouvement_DetailRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSet.ProduitRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSetTableAdapters.ABonReceptionTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSetTableAdapters.ABonReception_DetailTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSetTableAdapters.EntrepriseTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSetTableAdapters.FamilleTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSetTableAdapters.MouvementTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSetTableAdapters.Mouvement_DetailTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.AgrifactTracaDataSetTableAdapters.ProduitTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:MaquetteLectureCodeBarreSolstyce.Form1.AnalyserCodeBarre(System.String)">
+	<summary>
+ L'analyse simple ne récupère que le code produit est le n° de lot, elle est très légère en terme d'accès à la base de données
+ </summary>
+</member><member name="M:MaquetteLectureCodeBarreSolstyce.Form1.AnalyserCodeBarreComplete(System.String)">
+	<summary>
+ L'analyse complète retrouve les lignes concernées par le code barre dans un dataset, 
+ donnant ainsi accès à toutes les informations disponibles
+ </summary>
+</member><member name="M:MaquetteLectureCodeBarreSolstyce.Form1.ChargerDonnees">
+	<summary>
+ Ce chargement peut s'avérer long sur des bases de données volumineuses, il est donc conseillé
+ d'adapter cet exemple en limitant les données chargées au minimum nécessaire.
+ Il est aussi intéressant de ne pas recharger les données à chaque analyse si a priori de nouvelles saisies n'ont pas eu lieu
+ </summary>
+</member><member name="P:MaquetteLectureCodeBarreSolstyce.My.Resources.Resources.ResourceManager">
+	<summary>
+  Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+</summary>
+</member><member name="P:MaquetteLectureCodeBarreSolstyce.My.Resources.Resources.Culture">
+	<summary>
+  Remplace la propriété CurrentUICulture du thread actuel pour toutes
+  les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+</summary>
+</member><member name="T:MaquetteLectureCodeBarreSolstyce.My.Resources.Resources">
+	<summary>
+  Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+</summary>
+</member>
+</members>
+</doc>

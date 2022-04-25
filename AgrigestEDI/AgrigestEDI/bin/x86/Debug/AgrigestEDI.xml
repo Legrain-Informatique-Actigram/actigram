@@ -1,0 +1,4418 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+AgrigestEDI
+</name>
+</assembly>
+<members>
+<member name="P:AgrigestEDI.FrVisuPiece.NewDatePiece">
+	<summary>
+ date de la pièce
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:AgrigestEDI.FrVisuPiece.NewPiece">
+	<summary>
+ numéro de la pièce
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:AgrigestEDI.FrVisuPiece.SearchData">
+	<summary>
+ tableau des critères de recherche
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.FrVisuPiece.bgWorker_DoWork(System.Object,System.ComponentModel.DoWorkEventArgs)">
+	<summary>
+ lancement de la tache de fond du démarage
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.FrVisuPiece.bgWorker_RunWorkerCompleted(System.Object,System.ComponentModel.RunWorkerCompletedEventArgs)">
+	<summary>
+ récupère le résultat du chargement et fait disparaitre la barre de chargement
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.FrVisuPiece.bgWorker_ProgressChanged(System.Object,System.ComponentModel.ProgressChangedEventArgs)">
+	<summary>
+ affiche la barre de progression avec la valeur associé
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.FrVisuPiece.Precharger(System.Boolean)">
+	<summary>
+ Permet de faire le paramétrage de la consulter des pièces via le module de recherche
+ </summary>
+	<param name="AvancedOption"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.FrVisuPiece.LignesDgv_CellValidating(System.Object,System.Windows.Forms.DataGridViewCellValidatingEventArgs)">
+	<summary>
+ Permet de vérifier le formatage des données saisies
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.FrVisuPiece.LignesDataGridView_DataBindingComplete(System.Object,System.Windows.Forms.DataGridViewBindingCompleteEventArgs)">
+	<summary>
+ permet de sélectionner la première ligne lorsque la grille est chargé
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.FrVisuPiece.LignesBindingSource_CurrentChanged(System.Object,System.EventArgs)">
+	<summary>
+ permet de charger les paramètres adapter à la ligne qui vient de changer
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.FrVisuPiece.LignesBindingSource_CurrentItemChanged(System.Object,System.EventArgs)">
+	<summary>
+ permet de charger les paramètres adapter à la ligne apres le changement de la cellule
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.FrVisuPiece.ActionsLigne">
+	<summary>
+ permet d'appeller la fonction qui va paramétrer la ligne
+ </summary>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.FrVisuPiece.ActionsLigne(AgrigestEDI.Ligne)">
+	<summary>
+ permet de paramétrer la ligne au niveau des droits
+ </summary>
+	<param name="curLigne">ligne en cours de traitement</param>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.FrVisuPiece.FindActivites(System.String)">
+	<summary>
+ permet de retourner la liste des activitées associées à un compte
+ </summary>
+	<param name="nCompte">nom du compte</param>
+	<returns>retourne la liste des activités</returns>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.FrVisuPiece.CountActivites(System.String)">
+	<summary>
+ permet de compter le nombre d'activité lié à un compte
+ </summary>
+	<param name="nCompte">nom du compte</param>
+	<returns>retourne le nombre d'activitées</returns>
+	<remarks>permet d'afficher ou pas le bouton dans la colonne</remarks>
+</member><member name="M:AgrigestEDI.FrVisuPiece.UpdateSommes">
+	<summary>
+ permet de faire la somme des lignes et le met dans la barre de tâche et aligne les colonnes
+ </summary>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.FrVisuPiece.UpdateSommeCompte">
+	<summary>
+ met à jour les totaux du la pièce
+ </summary>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.FrVisuPiece.ToolStripButton1_Click(System.Object,System.EventArgs)">
+	<summary>
+ permet de fermer l'application
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.FrVisuPiece.BindingNavigatorDeleteItem_Click(System.Object,System.EventArgs)">
+	<summary>
+ Permet de supprimer une pièce
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.FrVisuPiece.BindingNavigatorAddNewItem_Click(System.Object,System.EventArgs)">
+	<summary>
+ Permet d'ouvrir la saisie de pièce pour en créer une nouvelle
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.FrVisuPiece.BindingNavigatorModifItem_Click(System.Object,System.EventArgs)">
+	<summary>
+ Permet d'ouvrir la saisie de pièce pour modifier la pièce passer en paramètre
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.FrVisuPiece.VisualiserLeCompteToolStripMenuItem_Click(System.Object,System.EventArgs)">
+	<summary>
+ bouton permettant de visualiser un compte
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.FrVisuPiece.ImprimerToolStripButton_Click(System.Object,System.EventArgs)">
+	<summary>
+ Bouton d'impression
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.FrVisuPiece.PiecesBindingSource_BindingComplete(System.Object,System.Windows.Forms.BindingCompleteEventArgs)">
+	<summary>
+ permet de bloquer ou d'activer les boutons du menu
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.FrVisuPiece.ReportProgress(System.Int32,System.String)">
+	<summary>
+ Barre de progession du chargement de pièce
+ </summary>
+	<param name="percent"></param>
+	<param name="status"></param>
+	<remarks></remarks>
+</member><member name="T:AgrigestEDI.DataSetBaremes.MATERIELDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetBaremes.TYPE_MATERIELDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetBaremes.BAREMEDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetBaremes.BAREME_AFFICHAGEDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetBaremes.FACON_CULTURALEDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetBaremes.BAREME_FORFAITAIREDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetBaremes.BAREME_FORFAITAIRE_AFFICHAGEDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetBaremes.ACTIF_PASSIFDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetBaremes.TYPE_PLAN_COMPTABLEDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetBaremes.FOURCHETTE_COMPTESDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetBaremes.MATERIELRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetBaremes.TYPE_MATERIELRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetBaremes.BAREMERow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetBaremes.BAREME_AFFICHAGERow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetBaremes.FACON_CULTURALERow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetBaremes.BAREME_FORFAITAIRERow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetBaremes.BAREME_FORFAITAIRE_AFFICHAGERow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetBaremes.ACTIF_PASSIFRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetBaremes.TYPE_PLAN_COMPTABLERow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetBaremes.FOURCHETTE_COMPTESRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetBaremes.MATERIELRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.DataSetBaremes.TYPE_MATERIELRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.DataSetBaremes.BAREMERowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.DataSetBaremes.BAREME_AFFICHAGERowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.DataSetBaremes.FACON_CULTURALERowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.DataSetBaremes.BAREME_FORFAITAIRERowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.DataSetBaremes.BAREME_FORFAITAIRE_AFFICHAGERowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.DataSetBaremes.ACTIF_PASSIFRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.DataSetBaremes.TYPE_PLAN_COMPTABLERowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.DataSetBaremes.FOURCHETTE_COMPTESRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.DataSetBaremes">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetBaremesTableAdapters.MATERIELTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetBaremesTableAdapters.TYPE_MATERIELTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetBaremesTableAdapters.BAREMETableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetBaremesTableAdapters.BAREME_AFFICHAGETableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetBaremesTableAdapters.FACON_CULTURALETableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetBaremesTableAdapters.BAREME_FORFAITAIRETableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetBaremesTableAdapters.BAREME_FORFAITAIRE_AFFICHAGETableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetBaremesTableAdapters.ACTIF_PASSIFTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetBaremesTableAdapters.TYPE_PLAN_COMPTABLETableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetBaremesTableAdapters.FOURCHETTE_COMPTESTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.ResourceManager">
+	<summary>
+  Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Culture">
+	<summary>
+  Remplace la propriété CurrentUICulture du thread actuel pour toutes
+  les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.ACTIVITEGENERALE">
+	<summary>
+  Recherche une chaîne localisée semblable à ACTIVITE GENERALE.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.AfficherEcran_LeNomDeClasseEstIncorrect">
+	<summary>
+  Recherche une chaîne localisée semblable à Le nom de classe est incorrect.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.AfficherEcran_PasUnEcran">
+	<summary>
+  Recherche une chaîne localisée semblable à La classe définie n'est pas un écran.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.ArreterLaTeleintervention">
+	<summary>
+  Recherche une chaîne localisée semblable à Arrêter la téléintervention.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.ChargementDesDonnees">
+	<summary>
+  Recherche une chaîne localisée semblable à Chargement des données....
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Cle_CodeUtilisateurInvalide">
+	<summary>
+  Recherche une chaîne localisée semblable à Code Utilisateur invalide.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Cle_Expiree">
+	<summary>
+  Recherche une chaîne localisée semblable à La clé d'activation a expiré depuis le {0:dd/MM/yy}..
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Cle_PasValide">
+	<summary>
+  Recherche une chaîne localisée semblable à La clé d'activation n'est pas valide..
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Cloture">
+	<summary>
+  Recherche une chaîne localisée semblable à Clôture.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Cloture_AvertissementProblemeBalance">
+	<summary>
+  Recherche une chaîne localisée semblable à Vous ne pouvez pas clôturer cet exercice car la balance n'est pas juste. Votre écart est de {0}€.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Cloture_CalculDesReports">
+	<summary>
+  Recherche une chaîne localisée semblable à Calcul des reports.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Cloture_ClotureProvisoireOK">
+	<summary>
+  Recherche une chaîne localisée semblable à Clôture provisoire réalisée.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Cloture_CreerCodeExercice">
+	<summary>
+  Recherche une chaîne localisée semblable à Génération du nouveau nom de l'exercice.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Cloture_CreerNouvelExercice">
+	<summary>
+  Recherche une chaîne localisée semblable à Création du nouvel exercice.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Cloture_DateAncienDossier">
+	<summary>
+  Recherche une chaîne localisée semblable à Détermination des dates de l'exercice actuel.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Cloture_DateNouveauDossier">
+	<summary>
+  Recherche une chaîne localisée semblable à Détermination des dates du nouvel exercice.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Cloture_EnregistrerReport">
+	<summary>
+  Recherche une chaîne localisée semblable à Mise à jour des données de report.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Cloture_ExerciceCloture">
+	<summary>
+  Recherche une chaîne localisée semblable à Exercice clôturé.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Cloture_NoCloture">
+	<summary>
+  Recherche une chaîne localisée semblable à L'exercice n'a plus de clôture.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Cloture_PlusDeCodeDispo">
+	<summary>
+  Recherche une chaîne localisée semblable à Veuillez changer d'année pour votre début d'exercice.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Cloture_TrouverExercice">
+	<summary>
+  Recherche une chaîne localisée semblable à Détermination d'un exercice existant.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.ComptabiliteCloturee">
+	<summary>
+  Recherche une chaîne localisée semblable à Comptabilité clôturée.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Date_Ecart14Mois">
+	<summary>
+  Recherche une chaîne localisée semblable à Vous ne pouvez mettre de date ayant un écart supérieur à 14 mois.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Date_Ecart1Jour">
+	<summary>
+  Recherche une chaîne localisée semblable à L'exercice doit au minimum durer un jour..
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Demarrage_ChoixDeLExploitation">
+	<summary>
+  Recherche une chaîne localisée semblable à Choix de l'exploitation.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Demarrage_ChoixDuDossier">
+	<summary>
+  Recherche une chaîne localisée semblable à Choix de l'exercice.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Demarrage_CompactageDeLaBase">
+	<summary>
+  Recherche une chaîne localisée semblable à Compactage de la base.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Demarrage_ConnexionBase">
+	<summary>
+  Recherche une chaîne localisée semblable à Connexion à la base.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Demarrage_CopiePasActivee">
+	<summary>
+  Recherche une chaîne localisée semblable à Cette copie d'Agrigest n'est pas activée.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Demarrage_OuvertureDeLApplication">
+	<summary>
+  Recherche une chaîne localisée semblable à Ouverture de l'application.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Demarrage_Restauration">
+	<summary>
+  Recherche une chaîne localisée semblable à Restauration.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Demarrage_Restore">
+	<summary>
+  Recherche une chaîne localisée semblable à L'application va revenir à la dernière sauvegarde automatique..
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Demarrage_Restore1">
+	<summary>
+  Recherche une chaîne localisée semblable à La base de données est introuvable..
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Demarrage_VerifCle">
+	<summary>
+  Recherche une chaîne localisée semblable à Vérification de la clé d'activation.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Dossier_AskSuppression">
+	<summary>
+  Recherche une chaîne localisée semblable à Voulez-vous supprimer l'exercice : {0} ?.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Dossier_AvertissementTransfert">
+	<summary>
+  Recherche une chaîne localisée semblable à Attention : il existe des pièces avant cette date pour un exercice..
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Dossier_AvertissementTransfert2">
+	<summary>
+  Recherche une chaîne localisée semblable à Celles-ci seront transférées lors de la modification..
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Dossier_AvertissementTransfert3">
+	<summary>
+  Recherche une chaîne localisée semblable à Attention il existe des pièces après cette date pour un exercice..
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Dossier_CodeExplUtilise">
+	<summary>
+  Recherche une chaîne localisée semblable à Ce code exploitation est déjà utilisé..
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Dossier_PbChoixDate">
+	<summary>
+  Recherche une chaîne localisée semblable à Il existe déjà un exercice comprenant cette date. Veuillez changer de date..
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Dossier_TextCreation">
+	<summary>
+  Recherche une chaîne localisée semblable à Création d'exercice.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Dossier_TextModif">
+	<summary>
+  Recherche une chaîne localisée semblable à Modification d'exercice.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.EcritureDuFichier">
+	<summary>
+  Recherche une chaîne localisée semblable à Ecriture du fichier....
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Enregistrement">
+	<summary>
+  Recherche une chaîne localisée semblable à Enregistrement.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.EnregistrementDesDonnees">
+	<summary>
+  Recherche une chaîne localisée semblable à Enregistrement des données....
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.EnregistrerLesModifications">
+	<summary>
+  Recherche une chaîne localisée semblable à Voulez-vous enregistrer les modifications ?.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.EnregistrerRapport">
+	<summary>
+  Recherche une chaîne localisée semblable à Souhaitez-vous enregistrer ce rapport ?.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.ErreurAppli">
+	<summary>
+  Recherche une chaîne localisée semblable à Une erreur s'est produite : .
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.ErreurCritique">
+	<summary>
+  Recherche une chaîne localisée semblable à Une erreur s'est produite, l'application va se terminer : .
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.ErreurDEnregistrement">
+	<summary>
+  Recherche une chaîne localisée semblable à Erreur d'enregistrement.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.ErreurDeSaisie">
+	<summary>
+  Recherche une chaîne localisée semblable à Erreur de saisie.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.ErreurSuppression">
+	<summary>
+  Recherche une chaîne localisée semblable à Erreur Suppression.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Etats_ActDeb">
+	<summary>
+  Recherche une chaîne localisée semblable à Activité début.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Etats_ActFin">
+	<summary>
+  Recherche une chaîne localisée semblable à Activité fin.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Etats_BtImprimer">
+	<summary>
+  Recherche une chaîne localisée semblable à Imprimer.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Etats_CptDeb">
+	<summary>
+  Recherche une chaîne localisée semblable à Compte début.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Etats_CptFin">
+	<summary>
+  Recherche une chaîne localisée semblable à Compte fin.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Etats_DateDeb">
+	<summary>
+  Recherche une chaîne localisée semblable à Date de début de période.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Etats_DateFin">
+	<summary>
+  Recherche une chaîne localisée semblable à Date de fin de période.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Etats_EditeAvecAgrigestEDI">
+	<summary>
+  Recherche une chaîne localisée semblable à Edité avec AgrigestEDI le {0:dd/MM/yy}.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Etats_LibPeriode">
+	<summary>
+  Recherche une chaîne localisée semblable à Période du {0} au {1}.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Etebac_VerifMonnaie">
+	<summary>
+  Recherche une chaîne localisée semblable à Le relevé de compte contient  des opérations qui ne sont pas libellées en euros..
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.ExerciceDuDate0AuDate1">
+	<summary>
+  Recherche une chaîne localisée semblable à Exercice du {0:dd/MM/yyyy} au {1:dd/MM/yyyy}.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Expl_AskSuppression">
+	<summary>
+  Recherche une chaîne localisée semblable à Voulez-vous supprimer tous les exercices de cette exploitation  : {0} ?.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Expl_BDDAIntegrer">
+	<summary>
+  Recherche une chaîne localisée semblable à Sélectionnez la base de données à intégrer.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Expl_BrowseBDD">
+	<summary>
+  Recherche une chaîne localisée semblable à Indiquez le chemin de la base de données..
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Expl_BrowseBDDPlanType">
+	<summary>
+  Recherche une chaîne localisée semblable à Indiquez le chemin de la base de données du plan type..
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Expl_DossierIntrouvable">
+	<summary>
+  Recherche une chaîne localisée semblable à L'exercice {0} est introuvable..
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Expl_EnleverExploitation">
+	<summary>
+  Recherche une chaîne localisée semblable à Etes-vous sûr de vouloir enlever l'exploitation '{0}' de la liste ?.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Expl_ExplIntrouvable">
+	<summary>
+  Recherche une chaîne localisée semblable à L'exploitation {0} est introuvable..
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Expl_ExploitationSupprimee">
+	<summary>
+  Recherche une chaîne localisée semblable à Exploitation supprimée.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Expl_SupprimerBDD">
+	<summary>
+  Recherche une chaîne localisée semblable à Voulez-vous aussi supprimer la base de données '{0}' ?.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Expl_VerfiSaisieNom">
+	<summary>
+  Recherche une chaîne localisée semblable à Veuillez saisir un nom d'exploitation.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Expl_VerifSaisieCode">
+	<summary>
+  Recherche une chaîne localisée semblable à Veuillez saisir un code d'exploitation ex : 00001.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Export_AskAnnulation">
+	<summary>
+  Recherche une chaîne localisée semblable à Etes-vous sûr de vouloir annuler les exports sélectionnés ?.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Export_AucuneEcrExportee">
+	<summary>
+  Recherche une chaîne localisée semblable à Aucune écriture n'a pu être exportée..
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Export_DescriptionRaccourciExports">
+	<summary>
+  Recherche une chaîne localisée semblable à Répertoire contenant les exports de comptabilité AgrigestEDI pour transmission au comptable..
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Export_ExportActi">
+	<summary>
+  Recherche une chaîne localisée semblable à Export des activités....
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Export_ExportPieces">
+	<summary>
+  Recherche une chaîne localisée semblable à Export des pièces....
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Export_ExportPLC">
+	<summary>
+  Recherche une chaîne localisée semblable à Export du plan comptable....
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Export_ExportTVA">
+	<summary>
+  Recherche une chaîne localisée semblable à Export des codes TVA....
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Export_RecapProblemes">
+	<summary>
+  Recherche une chaîne localisée semblable à L'exportation n'a pas pu être réalisée à cause des problèmes suivants :.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Export_Succes">
+	<summary>
+  Recherche une chaîne localisée semblable à Exportation réalisée avec succès.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.FIchierExistant">
+	<summary>
+  Recherche une chaîne localisée semblable à Le fichier {0} existe déjà, voulez-vous le remplacer ?.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.FichierInexistant">
+	<summary>
+  Recherche une chaîne localisée semblable à Fichier inexistant..
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.FichierIntrouvable">
+	<summary>
+  Recherche une chaîne localisée semblable à Le fichier {0} n'existe pas.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Import_ConfirmationEcraseDossier">
+	<summary>
+  Recherche une chaîne localisée semblable à Attention : Etes-vous sur de vouloir remplacer cet exercice ?.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Import_ErreurDImportation">
+	<summary>
+  Recherche une chaîne localisée semblable à Erreur d'importation.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Import_ErreurEquilibre">
+	<summary>
+  Recherche une chaîne localisée semblable à La pièce {0} du {1:dd/MM/yyyy} n'est pas équilibrée..
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Import_ErreurFichier">
+	<summary>
+  Recherche une chaîne localisée semblable à Il y a un problème dans l'enregistrement de pièce..
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Import_ErreurLignes1">
+	<summary>
+  Recherche une chaîne localisée semblable à Ligne DOS avant la ligne VER. Veuillez vérifier votre fichier..
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Import_ErreurLignes2">
+	<summary>
+  Recherche une chaîne localisée semblable à Ligne EXO avant la ligne DOS. Veuillez vérifier votre fichier..
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Import_ErreurLignes3">
+	<summary>
+  Recherche une chaîne localisée semblable à Ligne ECR avant la ligne EXO. Veuillez vérifier votre fichier..
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Import_FichierVide">
+	<summary>
+  Recherche une chaîne localisée semblable à Il n'y a pas de données dans ce fichier. Veuillez en prendre un autre..
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Import_FormatECRInconnu">
+	<summary>
+  Recherche une chaîne localisée semblable à Le fichier {0} n'est pas formaté dans une version connu de AgriGestEDI.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Import_RecapProblemes">
+	<summary>
+  Recherche une chaîne localisée semblable à L'importation n'a pas pu être réalisée à cause des problèmes suivants :.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Import_Succes">
+	<summary>
+  Recherche une chaîne localisée semblable à L'importation a été effectuée avec succès.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.ImpossibleDeSupprimerPiece">
+	<summary>
+  Recherche une chaîne localisée semblable à Impossible de supprimer la pièce : .
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Information">
+	<summary>
+  Recherche une chaîne localisée semblable à Information.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Initialisation">
+	<summary>
+  Recherche une chaîne localisée semblable à Initialisation.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.LancerLaTeleintervention">
+	<summary>
+  Recherche une chaîne localisée semblable à Lancer la téléintervention.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Modele_Collision">
+	<summary>
+  Recherche une chaîne localisée semblable à Un modèle portant ce nom existe déjà..
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Modele_CreationDeModele">
+	<summary>
+  Recherche une chaîne localisée semblable à Création de modèle.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Modele_Enregistrement">
+	<summary>
+  Recherche une chaîne localisée semblable à Enregistrement de modèle.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Modele_ModeleIntrouvable">
+	<summary>
+  Recherche une chaîne localisée semblable à Ce modèle n'existe pas.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Modele_ModeleSupprime">
+	<summary>
+  Recherche une chaîne localisée semblable à Le modèle est supprimé.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Modele_ProblemeSelection">
+	<summary>
+  Recherche une chaîne localisée semblable à Vous n'avez aucun modèle de sélectionné.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Modele_Suppression">
+	<summary>
+  Recherche une chaîne localisée semblable à Suppression de modéle.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Modele_VeuillezSaisirLeNomDuModele">
+	<summary>
+  Recherche une chaîne localisée semblable à Veuillez saisir le nom du modèle..
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.OuvertureEtat">
+	<summary>
+  Recherche une chaîne localisée semblable à Ouverture de l'état....
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.PieceSupprimee">
+	<summary>
+  Recherche une chaîne localisée semblable à Pièce supprimée.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.PLC_ActiInterdite">
+	<summary>
+  Recherche une chaîne localisée semblable à L'activité {0} ne peut être associée au compte {1}.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.PLC_AffectionActi">
+	<summary>
+  Recherche une chaîne localisée semblable à Affectation d'activités.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.PLC_AjouterActi">
+	<summary>
+  Recherche une chaîne localisée semblable à Ajouter les activités sélectionnées.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.PLC_ChoixDuCompte">
+	<summary>
+  Recherche une chaîne localisée semblable à Choix du compte....
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.PLC_CompteDejaSelect">
+	<summary>
+  Recherche une chaîne localisée semblable à Le compte {0} a déjà été sélectionné..
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.PLC_CompteExiste">
+	<summary>
+  Recherche une chaîne localisée semblable à Le compte {0} existe déjà pour cet exercice..
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.PLC_CoupleExiste">
+	<summary>
+  Recherche une chaîne localisée semblable à Le compte {0}-{1} est déjà dans le plan comptable de cet exercice..
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.PLC_CreationDesComptes">
+	<summary>
+  Recherche une chaîne localisée semblable à Création des comptes....
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.PLC_CreerActi">
+	<summary>
+  Recherche une chaîne localisée semblable à Ajouter une activité....
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.PLC_EnleverActi">
+	<summary>
+  Recherche une chaîne localisée semblable à Enlever les activités sélectionnées.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.PLC_PasDansPlanType">
+	<summary>
+  Recherche une chaîne localisée semblable à Le compte {0} ne correspond à aucune racine comptable..
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.PLC_SelectActi">
+	<summary>
+  Recherche une chaîne localisée semblable à Sélectionnez ou saisissez les activités à affecter aux comptes.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.PLC_SelectActi2">
+	<summary>
+  Recherche une chaîne localisée semblable à Sélection des activités.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.PLC_SuppressionImpossible">
+	<summary>
+  Recherche une chaîne localisée semblable à Impossible de supprimer le couple {1}/{2} car il est utilisé..
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.PLC_VerifSupprCompte">
+	<summary>
+  Recherche une chaîne localisée semblable à Voulez-vous vraiment supprimer ce compte ?.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.RecupInfos">
+	<summary>
+  Recherche une chaîne localisée semblable à Récupération des informations....
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Restauration">
+	<summary>
+  Recherche une chaîne localisée semblable à Restauration.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Restauration_SauvegardeEndommagee">
+	<summary>
+  Recherche une chaîne localisée semblable à La sauvegarde est endommagée..
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Restore_AskEcraserDossier">
+	<summary>
+  Recherche une chaîne localisée semblable à Cet exercice est déjà présent sur votre ordinateur. Souhaitez vous l'écraser ?.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Restore_AucuneSauvegardeDisponible">
+	<summary>
+  Recherche une chaîne localisée semblable à Aucune sauvegarde disponible pour le fichier '{0}{1}'..
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Restore_Cancel">
+	<summary>
+  Recherche une chaîne localisée semblable à Restauration annulée.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Restore_LectureDeLaSauvegarde">
+	<summary>
+  Recherche une chaîne localisée semblable à Lecture de la sauvegarde....
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Restore_ProblemeDeLectureDuFichier">
+	<summary>
+  Recherche une chaîne localisée semblable à Probleme de lecture du fichier : .
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Restore_RecapProblemes">
+	<summary>
+  Recherche une chaîne localisée semblable à La restauration n'a pas pu être réalisée à cause des problèmes suivants :.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Restore_RepertoireEstIntrouvable">
+	<summary>
+  Recherche une chaîne localisée semblable à Le répertoire de sauvegarde est introuvable..
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Restore_Restauree">
+	<summary>
+  Recherche une chaîne localisée semblable à La sauvegarde de '{0}{1}' du {2:dd/MM/yy HH:mm} a été restaurée.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Restore_Succes">
+	<summary>
+  Recherche une chaîne localisée semblable à Restauration effectuée avec succès.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Saisie_AppelTVASansLignes">
+	<summary>
+  Recherche une chaîne localisée semblable à Vous devez avoir des lignes pour effectuer la TVA.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Saisie_AskResetContrepartie">
+	<summary>
+  Recherche une chaîne localisée semblable à Souhaitez vous réinitialiser toutes les lignes de contrepartie ?.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Saisie_AskResetContrePartie2">
+	<summary>
+  Recherche une chaîne localisée semblable à Attention : toutes les lignes ayant un compte de contre partie seront supprimées et réécrites.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Saisie_AskResetTVA">
+	<summary>
+  Recherche une chaîne localisée semblable à Souhaitez-vous réinitialiser toutes les lignes de TVA ?.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Saisie_AskResetTVA2">
+	<summary>
+  Recherche une chaîne localisée semblable à Attention : toutes les lignes ayant un compte TVA seront supprimées et ré-écrites.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Saisie_AttentionPasPuCalcTVA">
+	<summary>
+  Recherche une chaîne localisée semblable à Attention, la TVA n'a pas pu être calculée pour certaines lignes..
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Saisie_AucunePiece">
+	<summary>
+  Recherche une chaîne localisée semblable à Aucune pièce à enregistrer.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Saisie_BlocageCloture">
+	<summary>
+  Recherche une chaîne localisée semblable à Votre comptabilité est clôturée, vous ne pouvez pas ajouter de pièce..
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Saisie_BloquageSupprDernierePiece">
+	<summary>
+  Recherche une chaîne localisée semblable à Impossible de supprimer une pièce unique..
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Saisie_CheckSaisieDesMontantsEnTTC">
+	<summary>
+  Recherche une chaîne localisée semblable à Saisie des montants en TTC.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Saisie_CollisionPiece">
+	<summary>
+  Recherche une chaîne localisée semblable à Veuillez changer le numéro de la pièce et/ou la date, car celle ci existe déjà..
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Saisie_CollisionPieces">
+	<summary>
+  Recherche une chaîne localisée semblable à Impossible d'intégrer la pièce {0}, elle existe déjà en base.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Saisie_CompteIntrouvableDansLePlanType">
+	<summary>
+  Recherche une chaîne localisée semblable à Compte introuvable dans le plan type.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Saisie_JournalEnCours">
+	<summary>
+  Recherche une chaîne localisée semblable à Journal en cours : .
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Saisie_LignesEnErreur">
+	<summary>
+  Recherche une chaîne localisée semblable à Vous ne pouvez pas enregistrer la pièce car elle comporte des lignes en erreur..
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Saisie_LignesEnErreurDansPiece">
+	<summary>
+  Recherche une chaîne localisée semblable à Vous ne pouvez pas enregistrer la pièce {0}. Elle comporte des lignes en erreur..
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Saisie_LignesSansMontant">
+	<summary>
+  Recherche une chaîne localisée semblable à Vous avez des lignes sans montant au débit ni au crédit.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Saisie_LignesSansMontantDansPiece">
+	<summary>
+  Recherche une chaîne localisée semblable à Vous avez des lignes sans montant au débit ou au crédit dans la pièce {0}..
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Saisie_NumeroExistant">
+	<summary>
+  Recherche une chaîne localisée semblable à Ce numéro de pièce existe déjà.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Saisie_PbPieceVide">
+	<summary>
+  Recherche une chaîne localisée semblable à La pièce est vide.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Saisie_PieceDejaExporteDansPiece">
+	<summary>
+  Recherche une chaîne localisée semblable à Vous ne pouvez pas modifier la pièce {0}. Elle a déjà été exportée..
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Saisie_PieceDejaExportee">
+	<summary>
+  Recherche une chaîne localisée semblable à Vous ne pouvez pas modifier cette pièce. Elle a déjà été exportée..
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Saisie_PieceInexistante">
+	<summary>
+  Recherche une chaîne localisée semblable à Cette pièce n'existe pas.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Saisie_PieceSupprimee">
+	<summary>
+  Recherche une chaîne localisée semblable à Piece supprimée.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Saisie_ProblemeDateNum">
+	<summary>
+  Recherche une chaîne localisée semblable à Vous avez des pièces ayant une mauvaise date ou numéro de pièce.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Saisie_ProblemeEquilibre">
+	<summary>
+  Recherche une chaîne localisée semblable à Veuillez équilibrer vos écritures.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Saisie_ProblemeEquilibrePourPiece">
+	<summary>
+  Recherche une chaîne localisée semblable à Veuillez équilibrer vos écritures sur la pièce {0}..
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Saisie_ProblemeSelection">
+	<summary>
+  Recherche une chaîne localisée semblable à Aucune pièce n'est sélectionnée.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Saisie_SelectionJournal">
+	<summary>
+  Recherche une chaîne localisée semblable à Veuillez sélectionner un journal.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Saisie_SoldeDeBase">
+	<summary>
+  Recherche une chaîne localisée semblable à  Solde de base : {0:C2}.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Saisie_SoldeImpossibleSurCpte">
+	<summary>
+  Recherche une chaîne localisée semblable à Vous ne pouvez pas solder la pièce avec ce compte..
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Saisie_SolderPiece">
+	<summary>
+  Recherche une chaîne localisée semblable à Clôture de pièce.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Saisie_TextConsultation">
+	<summary>
+  Recherche une chaîne localisée semblable à Consultation de la pièce.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Saisie_TextConsultationBordereau">
+	<summary>
+  Recherche une chaîne localisée semblable à Consultation des pièces sur bordereau.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Saisie_VerifConformiteQte">
+	<summary>
+  Recherche une chaîne localisée semblable à La quantité saisie n'est pas conforme. Veuillez vérifier votre saisie.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Saisie_VerifResetPiece">
+	<summary>
+  Recherche une chaîne localisée semblable à Etes-vous sûr de vouloir supprimer toutes les lignes de cette pièce ?.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Saisie_VerifSolde">
+	<summary>
+  Recherche une chaîne localisée semblable à Veuillez vérifier le solde de votre pièce..
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Saisie_VeuillezSaisirDesLignes">
+	<summary>
+  Recherche une chaîne localisée semblable à Veuillez saisir des lignes..
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Saisie_VeuillezSaisirLaTVA">
+	<summary>
+  Recherche une chaîne localisée semblable à Veuillez saisir la TVA..
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Saisie_VeuillezSaisirMontantTVA">
+	<summary>
+  Recherche une chaîne localisée semblable à Veuillez saisir tous les montants de TVA..
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Saisie_VeuillezSaisirUneQte">
+	<summary>
+  Recherche une chaîne localisée semblable à Veuillez saisir une quantité..
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.SaisieIncomplete">
+	<summary>
+  Recherche une chaîne localisée semblable à Saisie incomplète.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Sasie_CalculDeTVA">
+	<summary>
+  Recherche une chaîne localisée semblable à Calcul de TVA.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Sauvegarde">
+	<summary>
+  Recherche une chaîne localisée semblable à Sauvegarde.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Sauvegarde_Achevee">
+	<summary>
+  Recherche une chaîne localisée semblable à Sauvegarde achevée....
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Sauvegarde_CompressionDesDonnees">
+	<summary>
+  Recherche une chaîne localisée semblable à Compression des données....
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Sauvegarde_RecapProblemes">
+	<summary>
+  Recherche une chaîne localisée semblable à La sauvegarde n'a pas pu être réalisée à cause des problèmes suivants :.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Sauvegarde_Succes">
+	<summary>
+  Recherche une chaîne localisée semblable à Sauvegarde réalisée avec succès.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.SelectionDate">
+	<summary>
+  Recherche une chaîne localisée semblable à Sélection de date.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.SelectionDate_DateInferieureADateFin">
+	<summary>
+  Recherche une chaîne localisée semblable à Veuillez choisir une date inférieure à la date de fin.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.SouhaitezVousContinuer">
+	<summary>
+  Recherche une chaîne localisée semblable à Souhaitez vous continuer ?.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.Suppression">
+	<summary>
+  Recherche une chaîne localisée semblable à Suppression.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.SuppressionAnnulee">
+	<summary>
+  Recherche une chaîne localisée semblable à Suppression annulée.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.SuppressionDeDossier">
+	<summary>
+  Recherche une chaîne localisée semblable à Suppression d'exercice.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.SuppressionDePiece">
+	<summary>
+  Recherche une chaîne localisée semblable à Suppression d'une pièce.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.SuppressionDExploitation">
+	<summary>
+  Recherche une chaîne localisée semblable à Suppression d'exploitation.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.SuppressionModele">
+	<summary>
+  Recherche une chaîne localisée semblable à Etes vous sur de vouloir supprimer le modèle {0}?.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.SuppressionPiece">
+	<summary>
+  Recherche une chaîne localisée semblable à Etes-vous sûr de vouloir supprimer la pièce : {0} du {1:dd/MM/yy} ?.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.TeleinterventionEnCours">
+	<summary>
+  Recherche une chaîne localisée semblable à  - Ultra VNC : Téléintervention en cours.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.TransfertDossier">
+	<summary>
+  Recherche une chaîne localisée semblable à Transfert de pièce.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.TransfertDossier_MsgAttention1">
+	<summary>
+  Recherche une chaîne localisée semblable à Attention : des pièces vont être transférées vers l'exercice {0} depuis l'exercice {1}..
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.TransfertDossier_MsgAttention2DEB">
+	<summary>
+  Recherche une chaîne localisée semblable à La nouvelle date de début d'exercice du dossier {1} va devenir {2:dd/MM/yyyy}..
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.TransfertDossier_MsgAttention2FIN">
+	<summary>
+  Recherche une chaîne localisée semblable à La nouvelle date de fin d'exercice du dossier {1} va devenir {2:dd/MM/yyyy}..
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.TransfertDossier_Pb">
+	<summary>
+  Recherche une chaîne localisée semblable à Problème lors des transferts de pièces vers un autre exercice.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.TransfertDossier_PbDossierInexistant">
+	<summary>
+  Recherche une chaîne localisée semblable à Vous ne pouvez pas transférer les pièces car il n'existe pas d'exercice et vous ne pouvez pas en créer..
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.UltraVNC_Debut">
+	<summary>
+  Recherche une chaîne localisée semblable à La téléintervention peut commencer.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.UltraVNC_Fin">
+	<summary>
+  Recherche une chaîne localisée semblable à La téléintervention est terminée.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Strings.VerifSuppression">
+	<summary>
+  Recherche une chaîne localisée semblable à Etes vous sur de vouloir supprimer cet enregistrement?.
+</summary>
+</member><member name="T:AgrigestEDI.My.Resources.Strings">
+	<summary>
+  Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+</summary>
+</member><member name="M:AgrigestEDI.FrBordereau.bgWorker_DoWork(System.Object,System.ComponentModel.DoWorkEventArgs)">
+	<summary>
+ lancement de la tache de fond du démarage
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.FrBordereau.bgWorker_RunWorkerCompleted(System.Object,System.ComponentModel.RunWorkerCompletedEventArgs)">
+	<summary>
+ récupère le résultat du chargement et fait disparaitre la barre de chargement
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.FrBordereau.bgWorker_ProgressChanged(System.Object,System.ComponentModel.ProgressChangedEventArgs)">
+	<summary>
+ affiche la barre de progression avec la valeur associé
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.FrBordereau.TbClose_Click(System.Object,System.EventArgs)">
+	<summary>
+ permet de fermer l'application
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="F:AgrigestEDI.UcGrilleSaisieLignes.bIsLoaded">
+	<summary>
+ indique si le chargement du controle est effectué
+ </summary>
+	<remarks></remarks>
+</member><member name="P:AgrigestEDI.UcGrilleSaisieLignes.MontantTTC">
+	<summary>
+ Indique si la saisie des mouvements est en TTC ou HT
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:AgrigestEDI.UcGrilleSaisieLignes.ValidationLigne">
+	<summary>
+ Permet de savoir si les lignes sont valide pour l'enregistrement
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:AgrigestEDI.UcGrilleSaisieLignes.PieceDatasource">
+	<summary>
+ datasource de la pièce
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:AgrigestEDI.UcGrilleSaisieLignes.PieceDataMember">
+	<summary>
+ Datamember de la pièce
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:AgrigestEDI.UcGrilleSaisieLignes.Dataset">
+	<summary>
+ Dataset contenant toutes les tables pour traiter les lignes
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:AgrigestEDI.UcGrilleSaisieLignes.JournalCptContre">
+	<summary>
+ compte du journal de contre partie
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:AgrigestEDI.UcGrilleSaisieLignes.JournalCptContreLib">
+	<summary>
+ Libellé du compte de contre partie
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:AgrigestEDI.UcGrilleSaisieLignes.ReadOnlyData">
+	<summary>
+ Permet de gérer la grille de saisie en modele readonly ainsi que tous les contrôles attenant
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.UcGrilleSaisieLignes.UcGrilleSaisieLignes_Load(System.Object,System.EventArgs)">
+	<summary>
+ Chargement du controle
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.UcGrilleSaisieLignes.ProcessCmdKey(System.Windows.Forms.Message@,System.Windows.Forms.Keys)">
+	<summary>
+ Permet de gérer les évènements du clavier
+ </summary>
+	<param name="msg"></param>
+	<param name="keyData"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.UcGrilleSaisieLignes.LignesDataGridView_DataBindingComplete(System.Object,System.Windows.Forms.DataGridViewBindingCompleteEventArgs)">
+	<summary>
+ permet de sélectionner la première ligne lorsque la grille est chargé
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.UcGrilleSaisieLignes.LignesDgv_KeyUp(System.Object,System.Windows.Forms.KeyEventArgs)">
+	<summary>
+ alimente le boolean qui permet de savoir s'il est possible de changer le libellé du mouvement automatiquement ou pas
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.UcGrilleSaisieLignes.LignesDgv_RowsAdded(System.Object,System.Windows.Forms.DataGridViewRowsAddedEventArgs)">
+	<summary>
+ Permet lors de l'ajout d'un ligne dans le tableau de bloquer les colonnes en lecture seule
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.UcGrilleSaisieLignes.LignesBindingSource_AddingNew(System.Object,System.ComponentModel.AddingNewEventArgs)">
+	<summary>
+ Permet lors de l'ajout d'un ligne dans le tableau de bloquer les colonnes en lecture seule
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.UcGrilleSaisieLignes.LignesBindingSource_CurrentChanged(System.Object,System.EventArgs)">
+	<summary>
+ permet de charger les paramètres adapter à la ligne qui vient de changer
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.UcGrilleSaisieLignes.LigneCompteChanged(System.Object,System.EventArgs)">
+	<summary>
+ Permet de recharger les donénes de la ligne en fonction du compte saisie
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.UcGrilleSaisieLignes.LigneActiviteChanged(System.Object,System.EventArgs)">
+	<summary>
+ Permet de recharger le libellé de la ligne en fonction de l'activité saisie
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.UcGrilleSaisieLignes.LockCMS(System.Boolean)">
+	<summary>
+ Bloque les contextes menu
+ </summary>
+	<param name="bLockMenu"></param>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.UcGrilleSaisieLignes.LignesBindingSource_CurrentItemChanged(System.Object,System.EventArgs)">
+	<summary>
+ permet de charger les paramètres adapter à la ligne apres le changement de la cellule
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.UcGrilleSaisieLignes.ActionsLigne">
+	<summary>
+ permet d'appeller la fonction qui va paramétrer la ligne
+ </summary>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.UcGrilleSaisieLignes.ActionsLigneLock(AgrigestEDI.Ligne)">
+	<summary>
+ permet de paramétrer la ligne au niveau des droits
+ </summary>
+	<param name="curLigne">ligne en cours de traitement</param>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.UcGrilleSaisieLignes.ActionsLigne(AgrigestEDI.Ligne)">
+	<summary>
+ permet de paramétrer la ligne au niveau des droits
+ </summary>
+	<param name="curLigne">ligne en cours de traitement</param>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.UcGrilleSaisieLignes.ActionsLigneNew(AgrigestEDI.Ligne)">
+	<summary>
+ permet de paramétrer la ligne au niveau des droits
+ </summary>
+	<param name="curLigne">ligne en cours de traitement</param>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.UcGrilleSaisieLignes.ActionsLigneNewAdd">
+	<summary>
+ permet de paramétrer la ligne au niveau des droits
+ </summary>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.UcGrilleSaisieLignes.UpdateSommes(AgrigestEDI.Ligne)">
+	<summary>
+ permet de faire la somme des lignes et le met dans la barre de tâche et aligne les colonnes
+ </summary>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.UcGrilleSaisieLignes.LignesDgv_RowValidating(System.Object,System.Windows.Forms.DataGridViewCellCancelEventArgs)">
+	<summary>
+ Appel la fonction de vérification de ligne lors de la saisie
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.UcGrilleSaisieLignes.ValidateDataLine(System.Windows.Forms.DataGridViewCellCancelEventArgs)">
+	<summary>
+ Vérifie la validité de la ligne
+ </summary>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.UcGrilleSaisieLignes.cmsAjoutLigne_Click(System.Object,System.EventArgs)">
+	<summary>
+ Ajoute une ligne à la position indiqué
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.UcGrilleSaisieLignes.cmsSupprLigne_Click(System.Object,System.EventArgs)">
+	<summary>
+ supprime la ligne sélectionné
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.UcGrilleSaisieLignes.cmsVisuCompte_Click(System.Object,System.EventArgs)">
+	<summary>
+ Permet de visualiser le compte dans la fenetre de visu comtpe
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.UcGrilleSaisieLignes.cmsModifCompte_Click(System.Object,System.EventArgs)">
+	<summary>
+ Permet de modifier le compte dans la l'assistant de création de compte
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.UcGrilleSaisieLignes.cmsCopieLigne_Click(System.Object,System.EventArgs)">
+	<summary>
+ Copie la ligne sélectionnée
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.UcGrilleSaisieLignes.EndEdit">
+	<summary>
+ Permet de désactiver le mode modification du tableau
+ </summary>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.UcGrilleSaisieLignes.CleanLigne">
+	<summary>
+ Suppression des lignes contenant des comptes vides, null ou 000000000
+ </summary>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.UcGrilleSaisieLignes.CleanLigne(AgrigestEDI.Piece@)">
+	<summary>
+ Suppression des lignes contenant des comptes vides, null ou 000000000
+ </summary>
+	<param name="curPiece"></param>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.UcGrilleSaisieLignes.CleanLigne(AgrigestEDI.Modele@)">
+	<summary>
+ Suppression des lignes contenant des comptes vides, null ou 000000000
+ </summary>
+	<param name="curModele"></param>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.UcGrilleSaisieLignes.CloturePiece">
+	<summary>
+ Permet de lancer la cloture de la pièce après vérification
+ </summary>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.UcGrilleSaisieLignes.ClotureTVA">
+	<summary>
+ Permet de lancer le calcul de la TVA pour la pièce après vérification
+ </summary>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.UcGrilleSaisieLignes.CopieLigne">
+	<summary>
+ Permet de copier la ligne
+ </summary>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.UcGrilleSaisieLignes.ReloadGridLigne(System.Boolean)">
+	<summary>
+ Permet de recharger le tableau et met le curseur sur la dernière ligne
+ </summary>
+	<param name="ModifDataLigne"></param>
+	<remarks></remarks>
+</member><member name="T:AgrigestEDI.UcGrilleSaisieLignes">
+	<summary>
+ Class gérant la saisie et la consultation de ligne pour une pièce
+ </summary>
+	<remarks></remarks>
+</member><member name="T:AgrigestEDI.dbSauvRest.ActivitesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.dbSauvRest.ComptesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.dbSauvRest.DossiersDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.dbSauvRest.EmpruntGroupesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.dbSauvRest.EmpruntLignesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.dbSauvRest.ExploitationsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.dbSauvRest.ImmobilisationsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.dbSauvRest.InventaireGroupesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.dbSauvRest.InventaireLignesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.dbSauvRest.LignesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.dbSauvRest.ModLignesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.dbSauvRest.ModMouvementsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.dbSauvRest.MouvementsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.dbSauvRest.PiecesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.dbSauvRest.PlanComptableDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.dbSauvRest.ActivitesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.dbSauvRest.ComptesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.dbSauvRest.DossiersRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.dbSauvRest.EmpruntGroupesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.dbSauvRest.EmpruntLignesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.dbSauvRest.ExploitationsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.dbSauvRest.ImmobilisationsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.dbSauvRest.InventaireGroupesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.dbSauvRest.InventaireLignesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.dbSauvRest.LignesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.dbSauvRest.ModLignesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.dbSauvRest.ModMouvementsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.dbSauvRest.MouvementsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.dbSauvRest.PiecesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.dbSauvRest.PlanComptableRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.dbSauvRest.ActivitesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.dbSauvRest.ComptesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.dbSauvRest.DossiersRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.dbSauvRest.EmpruntGroupesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.dbSauvRest.EmpruntLignesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.dbSauvRest.ExploitationsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.dbSauvRest.ImmobilisationsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.dbSauvRest.InventaireGroupesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.dbSauvRest.InventaireLignesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.dbSauvRest.LignesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.dbSauvRest.ModLignesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.dbSauvRest.ModMouvementsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.dbSauvRest.MouvementsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.dbSauvRest.PiecesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.dbSauvRest.PlanComptableRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.dbSauvRest">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:AgrigestEDI.dbSauvRestTableAdapters.ActivitesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:AgrigestEDI.dbSauvRestTableAdapters.ComptesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:AgrigestEDI.dbSauvRestTableAdapters.DossiersTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:AgrigestEDI.dbSauvRestTableAdapters.EmpruntGroupesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:AgrigestEDI.dbSauvRestTableAdapters.EmpruntLignesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:AgrigestEDI.dbSauvRestTableAdapters.ExploitationsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:AgrigestEDI.dbSauvRestTableAdapters.ImmobilisationsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:AgrigestEDI.dbSauvRestTableAdapters.InventaireGroupesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:AgrigestEDI.dbSauvRestTableAdapters.InventaireLignesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:AgrigestEDI.dbSauvRestTableAdapters.LignesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:AgrigestEDI.dbSauvRestTableAdapters.ModLignesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:AgrigestEDI.dbSauvRestTableAdapters.ModMouvementsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:AgrigestEDI.dbSauvRestTableAdapters.MouvementsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:AgrigestEDI.dbSauvRestTableAdapters.PiecesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:AgrigestEDI.dbSauvRestTableAdapters.PlanComptableTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:AgrigestEDI.dsPLC.ActivitesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.dsPLC.ComptesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.dsPLC.DossiersDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.dsPLC.ExploitationsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.dsPLC.PlanComptableDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.dsPLC.ParametrageDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.dsPLC.PlanTypeDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.dsPLC.RicaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.dsPLC.ModLignesParaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.dsPLC.ModMouvementsParaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.dsPLC.ModMouvementsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.dsPLC.ModLignesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.dsPLC.ActivitesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.dsPLC.ComptesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.dsPLC.DossiersRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.dsPLC.ExploitationsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.dsPLC.PlanComptableRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.dsPLC.ParametrageRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.dsPLC.PlanTypeRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.dsPLC.RicaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.dsPLC.ModLignesParaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.dsPLC.ModMouvementsParaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.dsPLC.ModMouvementsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.dsPLC.ModLignesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.dsPLC.ActivitesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.dsPLC.ComptesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.dsPLC.DossiersRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.dsPLC.ExploitationsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.dsPLC.PlanComptableRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.dsPLC.ParametrageRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.dsPLC.PlanTypeRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.dsPLC.RicaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.dsPLC.ModLignesParaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.dsPLC.ModMouvementsParaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.dsPLC.ModMouvementsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.dsPLC.ModLignesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.dsPLC">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:AgrigestEDI.dsPLCTableAdapters.ActivitesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:AgrigestEDI.dsPLCTableAdapters.ComptesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:AgrigestEDI.dsPLCTableAdapters.DossiersTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:AgrigestEDI.dsPLCTableAdapters.ExploitationsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:AgrigestEDI.dsPLCTableAdapters.PlanComptableTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:AgrigestEDI.dsPLCTableAdapters.ParametrageTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:AgrigestEDI.dsPLCTableAdapters.PlanTypeTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:AgrigestEDI.dsPLCTableAdapters.RicaTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:AgrigestEDI.dsPLCTableAdapters.ModLignesParaTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:AgrigestEDI.dsPLCTableAdapters.ModMouvementsParaTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:AgrigestEDI.dsPLCTableAdapters.ModMouvementsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:AgrigestEDI.dsPLCTableAdapters.ModLignesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Logos.ResourceManager">
+	<summary>
+  Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Logos.Culture">
+	<summary>
+  Remplace la propriété CurrentUICulture du thread actuel pour toutes
+  les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+</summary>
+</member><member name="T:AgrigestEDI.My.Resources.Logos">
+	<summary>
+  Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+</summary>
+</member><member name="T:AgrigestEDI.dsImp.ImpJournalDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.dsImp.JournalDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.dsImp.TVADataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.dsImp.TVARecapDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.dsImp.ImpRecapTVADataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.dsImp.ImpPLCDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.dsImp.ImpRappBancaireDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.dsImp.ImpVisuPieceDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.dsImp.ImpTVAVenteDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.dsImp.ImpJournalRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.dsImp.JournalRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.dsImp.TVARow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.dsImp.TVARecapRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.dsImp.ImpRecapTVARow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.dsImp.ImpPLCRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.dsImp.ImpRappBancaireRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.dsImp.ImpVisuPieceRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.dsImp.ImpTVAVenteRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.dsImp.ImpJournalRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.dsImp.JournalRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.dsImp.TVARowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.dsImp.TVARecapRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.dsImp.ImpRecapTVARowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.dsImp.ImpPLCRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.dsImp.ImpRappBancaireRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.dsImp.ImpVisuPieceRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.dsImp.ImpTVAVenteRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.dsImp">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:AgrigestEDI.dsImpTableAdapters.ImpJournalTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:AgrigestEDI.dsImpTableAdapters.JournalTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:AgrigestEDI.dsImpTableAdapters.TVATableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:AgrigestEDI.dsImpTableAdapters.TVARecapTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:AgrigestEDI.dsImpTableAdapters.ImpRecapTVATableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:AgrigestEDI.dsImpTableAdapters.ImpPLCTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:AgrigestEDI.dsImpTableAdapters.ImpRappBancaireTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:AgrigestEDI.FrImportationIsagri.GenererPlanComptable(AgrigestEDI.dbSauvRest@,System.String)">
+	<summary>
+ générateur de plan comptable ou MAJ de celui ci s'il en manque
+ </summary>
+	<param name="dsImport"></param>
+	<param name="sDossier"></param>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.FrImportationIsagri.GenerateBaseHT">
+	<summary>
+ permet de générer les base HT de toutes les lignes TVA pour chaque pièce
+ </summary>
+</member><member name="T:AgrigestEDI.ImmobilisationsDataSet.PlanComptableDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.ImmobilisationsDataSet.ActivitesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.ImmobilisationsDataSet.ImmobilisationsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.ImmobilisationsDataSet.DossiersDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.ImmobilisationsDataSet.ComptesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.ImmobilisationsDataSet.SommeDeImmobilisationsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.ImmobilisationsDataSet.ImmobilisationsImpressionDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.ImmobilisationsDataSet.PlanComptableRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.ImmobilisationsDataSet.ActivitesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.ImmobilisationsDataSet.ImmobilisationsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.ImmobilisationsDataSet.DossiersRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.ImmobilisationsDataSet.ComptesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.ImmobilisationsDataSet.SommeDeImmobilisationsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.ImmobilisationsDataSet.ImmobilisationsImpressionRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.ImmobilisationsDataSet.PlanComptableRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.ImmobilisationsDataSet.ActivitesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.ImmobilisationsDataSet.ImmobilisationsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.ImmobilisationsDataSet.DossiersRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.ImmobilisationsDataSet.ComptesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.ImmobilisationsDataSet.SommeDeImmobilisationsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.ImmobilisationsDataSet.ImmobilisationsImpressionRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.ImmobilisationsDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:AgrigestEDI.ImmobilisationsDataSetTableAdapters.PlanComptableTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:AgrigestEDI.ImmobilisationsDataSetTableAdapters.ActivitesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:AgrigestEDI.ImmobilisationsDataSetTableAdapters.ImmobilisationsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:AgrigestEDI.ImmobilisationsDataSetTableAdapters.DossiersTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:AgrigestEDI.ImmobilisationsDataSetTableAdapters.ComptesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:AgrigestEDI.ImmobilisationsDataSetTableAdapters.SommeDeImmobilisationsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:AgrigestEDI.ImmobilisationsDataSetTableAdapters.ImmobilisationsImpressionTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.IconesAccueil.ResourceManager">
+	<summary>
+  Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.IconesAccueil.Culture">
+	<summary>
+  Remplace la propriété CurrentUICulture du thread actuel pour toutes
+  les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+</summary>
+</member><member name="T:AgrigestEDI.My.Resources.IconesAccueil">
+	<summary>
+  Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+</summary>
+</member><member name="M:AgrigestEDI.GestionParametrageImportFichier.ParametrageImportFichier.ChargerParametrageImportFichier">
+	<summary>
+ permet de charge la liste de paramétrage en chargeant la liste utilisateur et par défaut
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.GestionParametrageImportFichier.ParametrageImportFichier.EnregistrerParametrageImportFichier(System.Collections.Generic.List{AgrigestEDI.GestionParametrageImportFichier.ParametrageImportFichier})">
+	<summary>
+ permet de filtrer de la liste les éléments par defaut avant de sauvegarder
+ </summary>
+	<param name="list"></param>
+	<remarks></remarks>
+</member><member name="T:AgrigestEDI.SerializableDictionary`2">
+	<summary>
+ permet la sérialisation d'une liste
+ </summary>
+	<typeparam name="TKey"></typeparam>
+	<typeparam name="TValue"></typeparam>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.FrSaisiePiece.bgWorker_DoWork(System.Object,System.ComponentModel.DoWorkEventArgs)">
+	<summary>
+ lancement de la tache de fond du démarage
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.FrSaisiePiece.bgWorker_RunWorkerCompleted(System.Object,System.ComponentModel.RunWorkerCompletedEventArgs)">
+	<summary>
+ récupère le résultat du chargement et fait disparaitre la barre de chargement
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.FrSaisiePiece.bgWorker_ProgressChanged(System.Object,System.ComponentModel.ProgressChangedEventArgs)">
+	<summary>
+ affiche la barre de progression avec la valeur associé
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="T:AgrigestEDI.DataSetAgrigest.InventaireGroupesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetAgrigest.InventaireLignesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetAgrigest.PlanComptableDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetAgrigest.ActivitesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetAgrigest.DossiersDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetAgrigest.ExploitationsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetAgrigest.InventaireMaterielDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetAgrigest.TypeInventaireDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetAgrigest.ParamApplicationDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetAgrigest.PiecesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetAgrigest.TVADataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetAgrigest.MethodeInventaireDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetAgrigest.InventaireGroupesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetAgrigest.InventaireLignesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetAgrigest.PlanComptableRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetAgrigest.ActivitesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetAgrigest.DossiersRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetAgrigest.ExploitationsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetAgrigest.InventaireMaterielRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetAgrigest.TypeInventaireRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetAgrigest.ParamApplicationRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetAgrigest.PiecesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetAgrigest.TVARow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetAgrigest.MethodeInventaireRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetAgrigest.InventaireGroupesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.DataSetAgrigest.InventaireLignesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.DataSetAgrigest.PlanComptableRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.DataSetAgrigest.ActivitesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.DataSetAgrigest.DossiersRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.DataSetAgrigest.ExploitationsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.DataSetAgrigest.InventaireMaterielRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.DataSetAgrigest.TypeInventaireRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.DataSetAgrigest.ParamApplicationRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.DataSetAgrigest.PiecesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.DataSetAgrigest.TVARowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.DataSetAgrigest.MethodeInventaireRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.DataSetAgrigest">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetAgrigestTableAdapters.InventaireGroupesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetAgrigestTableAdapters.InventaireLignesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetAgrigestTableAdapters.PlanComptableTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetAgrigestTableAdapters.ActivitesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetAgrigestTableAdapters.DossiersTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetAgrigestTableAdapters.ExploitationsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetAgrigestTableAdapters.InventaireMaterielTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetAgrigestTableAdapters.TypeInventaireTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetAgrigestTableAdapters.ParamApplicationTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetAgrigestTableAdapters.PiecesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetAgrigestTableAdapters.TVATableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:AgrigestEDI.Utilities.FTP.FTPclient.#ctor">
+	<summary>
+ Blank constructor
+ </summary>
+	<remarks>Hostname, username and password must be set manually</remarks>
+</member><member name="M:AgrigestEDI.Utilities.FTP.FTPclient.#ctor(System.String)">
+	<summary>
+ Constructor just taking the hostname
+ </summary>
+	<param name="Hostname">in either ftp://ftp.host.com or ftp.host.com form</param>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.Utilities.FTP.FTPclient.#ctor(System.String,System.String,System.String)">
+	<summary>
+ Constructor taking hostname, username and password
+ </summary>
+	<param name="Hostname">in either ftp://ftp.host.com or ftp.host.com form</param>
+	<param name="Username">Leave blank to use 'anonymous' but set password to your email</param>
+	<param name="Password"></param>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.Utilities.FTP.FTPclient.GetCurrentDir">
+	<summary>
+ Return the current remote dir
+ </summary>
+</member><member name="M:AgrigestEDI.Utilities.FTP.FTPclient.ListDirectory(System.String)">
+	<summary>
+ Return a simple directory listing
+ </summary>
+	<param name="directory">Directory to list, e.g. /pub</param>
+	<returns>A list of filenames and directories as a List(of String)</returns>
+	<remarks>For a detailed directory listing, use ListDirectoryDetail</remarks>
+</member><member name="M:AgrigestEDI.Utilities.FTP.FTPclient.ListDirectoryDetail(System.String)">
+	<summary>
+ Return a detailed directory listing
+ </summary>
+	<param name="directory">Directory to list, e.g. /pub/etc</param>
+	<returns>An FTPDirectory object</returns>
+</member><member name="M:AgrigestEDI.Utilities.FTP.FTPclient.Upload(System.String,System.String)">
+	<summary>
+ Copy a local file to the FTP server
+ </summary>
+	<param name="localFilename">Full path of the local file</param>
+	<param name="targetFilename">Target filename, if required</param>
+	<returns></returns>
+	<remarks>If the target filename is blank, the source filename is used
+ (assumes current directory). Otherwise use a filename to specify a name
+ or a full path and filename if required.</remarks>
+</member><member name="M:AgrigestEDI.Utilities.FTP.FTPclient.Upload(System.IO.FileInfo,System.String)">
+	<summary>
+ Upload a local file to the FTP server
+ </summary>
+	<param name="fi">Source file</param>
+	<param name="targetFilename">Target filename (optional)</param>
+	<returns></returns>
+</member><member name="M:AgrigestEDI.Utilities.FTP.FTPclient.Download(System.String,System.String,System.Boolean)">
+	<summary>
+ Copy a file from FTP server to local
+ </summary>
+	<param name="sourceFilename">Target filename, if required</param>
+	<param name="localFilename">Full path of the local file</param>
+	<returns></returns>
+	<remarks>Target can be blank (use same filename), or just a filename
+ (assumes current directory) or a full path and filename</remarks>
+</member><member name="M:AgrigestEDI.Utilities.FTP.FTPclient.FtpDelete(System.String)">
+	<summary>
+ Delete remote file
+ </summary>
+	<param name="filename">filename or full path</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.Utilities.FTP.FTPclient.FtpFileExists(System.String)">
+	<summary>
+ Determine if file exists on remote FTP site
+ </summary>
+	<param name="filename">Filename (for current dir) or full path</param>
+	<returns></returns>
+	<remarks>Note this only works for files</remarks>
+</member><member name="M:AgrigestEDI.Utilities.FTP.FTPclient.GetFileSize(System.String)">
+	<summary>
+ Determine size of remote file
+ </summary>
+	<param name="filename"></param>
+	<returns></returns>
+	<remarks>Throws an exception if file does not exist</remarks>
+</member><member name="M:AgrigestEDI.Utilities.FTP.FTPclient.GetCredentials">
+	<summary>
+ Get the credentials from username/password
+ </summary>
+</member><member name="M:AgrigestEDI.Utilities.FTP.FTPclient.GetFullPath(System.String)">
+	<summary>
+ returns a full path using CurrentDirectory for a relative file reference
+ </summary>
+</member><member name="M:AgrigestEDI.Utilities.FTP.FTPclient.AdjustDir(System.String)">
+	<summary>
+ Amend an FTP path so that it always starts with /
+ </summary>
+	<param name="path">Path to adjust</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.Utilities.FTP.FTPclient.GetStringResponse(System.Net.FtpWebRequest)">
+	<summary>
+ Obtains a response stream as a string
+ </summary>
+	<param name="ftp">current FTP request</param>
+	<returns>String containing response</returns>
+	<remarks>FTP servers typically return strings with CR and
+ not CRLF. Use respons.Replace(vbCR, vbCRLF) to convert
+ to an MSDOS string</remarks>
+</member><member name="M:AgrigestEDI.Utilities.FTP.FTPclient.GetSize(System.Net.FtpWebRequest)">
+	<summary>
+ Gets the size of an FTP request
+ </summary>
+	<param name="ftp"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:AgrigestEDI.Utilities.FTP.FTPclient.Hostname">
+	<summary>
+ Hostname
+ </summary>
+	<value></value>
+	<remarks>Hostname can be in either the full URL format
+ ftp://ftp.myhost.com or just ftp.myhost.com
+ </remarks>
+</member><member name="P:AgrigestEDI.Utilities.FTP.FTPclient.Username">
+	<summary>
+ Username property
+ </summary>
+	<value></value>
+	<remarks>Can be left blank, in which case 'anonymous' is returned</remarks>
+</member><member name="F:AgrigestEDI.Utilities.FTP.FTPclient._currentDirectory">
+	<summary>
+ The CurrentDirectory value
+ </summary>
+	<remarks>Defaults to the root '/'</remarks>
+</member><member name="T:AgrigestEDI.Utilities.FTP.FTPclient">
+	<summary>
+ A wrapper class for .NET 2.0 FTP
+ </summary>
+	<remarks>
+ This class does not hold open an FTP connection but 
+ instead is stateless: for each FTP request it 
+ connects, performs the request and disconnects.
+ </remarks>
+</member><member name="T:AgrigestEDI.Utilities.FTP.FTPfileInfo.DirectoryEntryTypes">
+	<summary>
+ Identifies entry as either File or Directory
+ </summary>
+</member><member name="M:AgrigestEDI.Utilities.FTP.FTPfileInfo.#ctor(System.String,System.String)">
+	<summary>
+ Constructor taking a directory listing line and path
+ </summary>
+	<param name="line">The line returned from the detailed directory list</param>
+	<param name="path">Path of the directory</param>
+	<remarks></remarks>
+</member><member name="F:AgrigestEDI.Utilities.FTP.FTPfileInfo._ParseFormats">
+	<summary>
+ List of REGEX formats for different FTP server listing formats
+ </summary>
+	<remarks>
+ The first three are various UNIX/LINUX formats, fourth is for MS FTP
+ in detailed mode and the last for MS FTP in 'DOS' mode.
+ I wish VB.NET had support for Const arrays like C# but there you go
+ </remarks>
+</member><member name="T:AgrigestEDI.Utilities.FTP.FTPfileInfo">
+	<summary>
+ Represents a file or directory entry from an FTP listing
+ </summary>
+	<remarks>
+ This class is used to parse the results from a detailed
+ directory list from FTP. It supports most formats of
+ </remarks>
+</member><member name="M:AgrigestEDI.Utilities.FTP.FTPdirectory.#ctor(System.String,System.String)">
+	<summary>
+ Constructor: create list from a (detailed) directory string
+ </summary>
+	<param name="dir">directory listing string</param>
+	<param name="path"></param>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.Utilities.FTP.FTPdirectory.GetFiles(System.String)">
+	<summary>
+ Filter out only files from directory listing
+ </summary>
+	<param name="ext">optional file extension filter</param>
+	<returns>FTPdirectory listing</returns>
+</member><member name="M:AgrigestEDI.Utilities.FTP.FTPdirectory.GetDirectories">
+	<summary>
+ Returns a list of only subdirectories
+ </summary>
+	<returns>FTPDirectory list</returns>
+	<remarks></remarks>
+</member><member name="T:AgrigestEDI.Utilities.FTP.FTPdirectory">
+	<summary>
+ Stores a list of files and directories from an FTP result
+ </summary>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.FrAssistantCreationCompte.#ctor">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.FrAssistantCreationCompte.Dispose(System.Boolean)">
+	<summary>
+ La méthode substituée Dispose du formulaire pour nettoyer la liste des composants.
+ </summary>
+	<param name="disposing"></param>
+	<remarks></remarks>
+</member><member name="T:AgrigestEDI.DataSetImpression.SOLDESDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetImpression.ImpAnnexesTiersDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetImpression.ImpListeInvDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetImpression.SOLDESRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetImpression.ImpAnnexesTiersRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetImpression.ImpListeInvRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetImpression.SOLDESRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.DataSetImpression.ImpAnnexesTiersRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.DataSetImpression.ImpListeInvRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.DataSetImpression">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetImpressionTableAdapters.SOLDESTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetImpressionTableAdapters.ImpAnnexesTiersTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Resources.ResourceManager">
+	<summary>
+  Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Resources.Culture">
+	<summary>
+  Remplace la propriété CurrentUICulture du thread actuel pour toutes
+  les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Resources.CODE_TYPEINV_ANIMAUX">
+	<summary>
+  Recherche une chaîne localisée semblable à A.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Resources.CODE_TYPEINV_AVAUXCULTURES">
+	<summary>
+  Recherche une chaîne localisée semblable à V.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Resources.CODE_TYPEINV_FACONSCULTURALES">
+	<summary>
+  Recherche une chaîne localisée semblable à F.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Resources.CODE_TYPEINV_STOCKSENMAG">
+	<summary>
+  Recherche une chaîne localisée semblable à M.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Resources.CODE_TYPEINV_STOCKSPRODFINIS">
+	<summary>
+  Recherche une chaîne localisée semblable à P.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Resources.CODE_TYPEINV_STOCKSPRODTERRE">
+	<summary>
+  Recherche une chaîne localisée semblable à T.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Resources.CODE_TYPEMAT_OUTIL">
+	<summary>
+  Recherche une chaîne localisée semblable à O.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Resources.CODE_TYPEMAT_TRACTEUR">
+	<summary>
+  Recherche une chaîne localisée semblable à T.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Resources.Etats">
+	<summary>
+  Recherche une chaîne localisée semblable à &lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;ArrayOfMenu&gt;
+   &lt;Menu Nom="Journaux" Text="Journaux" Image="create"&gt;
+    &lt;Items&gt;
+		&lt;Item Type="Separator" Master="Journaux" Nom="Sep" Text="Journaux" /&gt;
+		&lt;Item Type="MenuItem" Master="Journaux" Nom="JournalAchats" Text="Journaux" Etat="" Image="create" IconSize="16" LockEmptyDossier="true"/&gt;
+		&lt;!--&lt;Item Type="MenuItem" Master="Journaux" Nom="JournalVentes" Text="Journal ventes" Etat="" Image="create" IconSize="16" LockEmptyDossier="true"/&gt;
+		&lt;Item Type="MenuIt [le reste de la chaîne a été tronqué]";.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Resources.FormatFichierIsagri">
+	<summary>
+  Recherche une chaîne localisée semblable à &lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;ArrayOfFormatFichierIsagri xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;FormatFichierIsagri Version="0200000"&gt;
+    &lt;FormatsLigne&gt;
+      &lt;item&gt;
+        &lt;key&gt;
+          &lt;string&gt;VER&lt;/string&gt;
+        &lt;/key&gt;
+        &lt;value&gt;
+          &lt;string&gt;VER   .{1,27}(?&amp;lt;Destruction&amp;gt;\d{1})&lt;/string&gt;
+        &lt;/value&gt;
+      &lt;/item&gt;
+      &lt;item&gt;
+        &lt;key&gt;
+          &lt;string&gt;DOS&lt;/string&gt;
+        &lt;/key&gt;
+        [le reste de la chaîne a été tronqué]";.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Resources.ListeChampBalance">
+	<summary>
+  Recherche une chaîne localisée semblable à &lt;?xml version="1.0" standalone="yes"?&gt;
+&lt;NewDataSet&gt;
+  &lt;xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"&gt;
+    &lt;xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true"&gt;
+      &lt;xs:complexType&gt;
+        &lt;xs:choice minOccurs="0" maxOccurs="unbounded"&gt;
+          &lt;xs:element name="Table1"&gt;
+            &lt;xs:complexType&gt;
+              &lt;xs:sequence&gt;
+                &lt;xs:element name="Champ" type="xs:str [le reste de la chaîne a été tronqué]";.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Resources.M1">
+	<summary>
+  Recherche une chaîne localisée semblable à Méthode détaillée par mat.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Resources.M2">
+	<summary>
+  Recherche une chaîne localisée semblable à Barème forfaitaire ha.
+</summary>
+</member><member name="P:AgrigestEDI.My.Resources.Resources.Menus">
+	<summary>
+  Recherche une chaîne localisée semblable à &lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;ArrayOfMenu&gt;
+  &lt;Menu Nom="General" Text="Général" Image="compta"&gt;
+    &lt;Items&gt;
+      &lt;Item Type="Separator" Master="SepEcr" Nom="SepEcr" Text="Ecritures" Acceuil="true"/&gt;
+      &lt;Item Type="MenuItem" Master="SepEcr" Nom="SaisiePiece" Text="Saisie sur pièce" Form="FrSaisiePiece" Image="_new" IconSize="16" Dialog="true" LockEmptyDossier="true" Acceuil="true"&gt;
+        &lt;Description&gt;Saisir les écritures une à une&lt;/Description&gt;
+      &lt;/Item&gt;
+      &lt;Item Type="MenuItem [le reste de la chaîne a été tronqué]";.
+</summary>
+</member><member name="T:AgrigestEDI.My.Resources.Resources">
+	<summary>
+  Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+</summary>
+</member><member name="M:AgrigestEDI.UtilBase.BuildSqlInsert(System.Data.DataTable)">
+	<summary>
+	</summary>
+	<param name="dt"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.UtilBase.BuildSqlUpdate(System.Data.DataTable,System.String[])">
+	<summary>
+	</summary>
+	<param name="dt"></param>
+	<param name="colCles"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.UtilBase.AppendColumn(System.Text.StringBuilder,System.String,System.Data.DataColumn)">
+	<summary>
+	</summary>
+	<param name="sb"></param>
+	<param name="format"></param>
+	<param name="col"></param>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.UtilBase.Convert_AgrigestToAgrigestEDI(System.String)">
+	<summary>
+ Permet de mettre à niveau la base de donnée de Agrigest² vers AgrigestEDI
+ </summary>
+	<param name="sCheminBase"></param>
+	<remarks></remarks>
+</member><member name="T:AgrigestEDI.DataSetdbPlanType.JournalDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetdbPlanType.PlanTypeDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetdbPlanType.TVADataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetdbPlanType.TVAAvecErreurDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetdbPlanType.JournalAvecErreurDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetdbPlanType.TypeJournalDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetdbPlanType.D_CDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetdbPlanType.TypeTVAPlanTypeDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetdbPlanType.JournalRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetdbPlanType.PlanTypeRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetdbPlanType.TVARow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetdbPlanType.TVAAvecErreurRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetdbPlanType.JournalAvecErreurRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetdbPlanType.TypeJournalRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetdbPlanType.D_CRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetdbPlanType.TypeTVAPlanTypeRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetdbPlanType.JournalRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.DataSetdbPlanType.PlanTypeRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.DataSetdbPlanType.TVARowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.DataSetdbPlanType.TVAAvecErreurRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.DataSetdbPlanType.JournalAvecErreurRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.DataSetdbPlanType.TypeJournalRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.DataSetdbPlanType.D_CRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.DataSetdbPlanType.TypeTVAPlanTypeRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.DataSetdbPlanType">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetdbPlanTypeTableAdapters.JournalTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetdbPlanTypeTableAdapters.PlanTypeTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetdbPlanTypeTableAdapters.TVATableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetdbPlanTypeTableAdapters.TVAAvecErreurTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:AgrigestEDI.DataSetdbPlanTypeTableAdapters.JournalAvecErreurTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:AgrigestEDI.ListOfModeles.Charger(System.ComponentModel.BackgroundWorker)">
+	<summary>
+ Permet de charger la liste des modèles au complet
+ </summary>
+	<param name="worker"></param>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.ListOfModeles.ChargerList(System.ComponentModel.BackgroundWorker)">
+	<summary>
+ Permet de charger la liste des modèles au complet
+ </summary>
+	<param name="worker"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.ListOfModeles.AddModele(AgrigestEDI.Modele@)">
+	<summary>
+ Permet d'ajouter un modèle à la liste
+ </summary>
+	<param name="xModele"></param>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.ListOfModeles.SuppressionDataLigne(System.Data.OleDb.OleDbTransaction@,System.String,System.String)">
+	<summary>
+ Permet de supprimer un modèle précis
+ </summary>
+	<param name="t"></param>
+	<param name="nExpl"></param>
+	<param name="sModele"></param>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.ListOfModeles.ReportProgress(System.ComponentModel.BackgroundWorker,System.Int32,System.Int32)">
+	<summary>
+ Permet d'implémenter la barre de progression du chargement des données
+ </summary>
+	<param name="worker">barre de progression de la tâche</param>
+	<param name="value">valeur en cours de progression</param>
+	<param name="max">valeur max de la barre de progression</param>
+	<remarks></remarks>
+</member><member name="T:AgrigestEDI.ListOfModeles">
+	<summary>
+ classe des listes de Modèle
+ </summary>
+	<remarks></remarks>
+</member><member name="P:AgrigestEDI.Modele.GetModele">
+	<summary>
+ Permet de retourner le modèle en cours
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:AgrigestEDI.Modele.Lignes">
+	<summary>
+ Lignes associé au modèle
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:AgrigestEDI.Modele.Modele">
+	<summary>
+ nom du modèle
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:AgrigestEDI.Modele.PrevModele">
+	<summary>
+ nom du modèle pour permettre des MAJ
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:AgrigestEDI.Modele.ExistsInBase">
+	<summary>
+ permet de savoir si le modèle existe en base
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.Modele.#ctor">
+	<summary>
+ cosntructeur
+ </summary>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.Modele.#ctor(AgrigestEDI.dbDonneesDataSet,System.String)">
+	<summary>
+ chargement d'un modèle à partir du dataset et de son nom
+ </summary>
+	<param name="ds"></param>
+	<param name="sNameMod"></param>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.Modele.#ctor(System.String)">
+	<summary>
+ constructeur d'un modèle dont le nom est passé en parametre
+ </summary>
+	<param name="sModele"></param>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.Modele.ChargerModele(System.String)">
+	<summary>
+ Permet de charger un modèle
+ </summary>
+	<param name="sModele"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.Modele.AjoutMAJModele(System.Boolean)">
+	<summary>
+ Ajoute la pièce indiqué pour un exercice d'un exploitation
+ </summary>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.Modele.SuppressionModele">
+	<summary>
+ Supprime la pièce et ses enregistrements de la base de donnée
+ </summary>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.Modele.AjoutDataLigne(System.Data.OleDb.OleDbTransaction@)">
+	<summary>
+ Ajoute les lignes et les mouvements dans la base de donnée via transaction
+ </summary>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.Modele.SuppressionDataLigne(System.Data.OleDb.OleDbTransaction@)">
+	<summary>
+ Suppression des lignes et des mouvements dans la base de donnée via transaction
+ </summary>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.Modele.CalcSommeDeb">
+	<summary>
+ calcule la somme en débit en temps réel 
+ </summary>
+	<returns>retour le débit</returns>
+	<remarks>pour le moment seulement utiliser dans la barre des tâches</remarks>
+</member><member name="M:AgrigestEDI.Modele.CalcSommeCre">
+	<summary>
+ calcule la somme en crédit en temps réel 
+ </summary>
+	<returns>retour le crédit</returns>
+	<remarks>pour le moment seulement utiliser dans la barre des tâches</remarks>
+</member><member name="M:AgrigestEDI.Modele.RafraichirBase">
+	<summary>
+ Permet de rafraichir les champs du modèle en cours
+ </summary>
+	<remarks></remarks>
+</member><member name="T:AgrigestEDI.Modele">
+	<summary>
+ Classe du Modele
+ </summary>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.ListOfPieces.Charger(System.ComponentModel.BackgroundWorker,System.Collections.Hashtable)">
+	<summary>
+ Permet d'ajouter à la list de pièces une nouvelle pièce
+ </summary>
+	<param name="worker">barre de progression de la tâche</param>
+	<param name="DataSearch">Tableau des critères de recherche</param>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.ListOfPieces.ChargerBordereau(System.DateTime,System.DateTime,System.String,System.String,System.ComponentModel.BackgroundWorker)">
+	<summary>
+ permet de charger les pièces d'un bordereau en fonction de dates et du journal 
+ </summary>
+	<param name="dtDateMin"></param>
+	<param name="dtDateMax"></param>
+	<param name="sJournal"></param>
+	<param name="sJournalContrePartie"></param>
+	<param name="worker"></param>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.ListOfPieces.AddPiece(AgrigestEDI.Piece@)">
+	<summary>
+ Permet d'ajouter une piece à la liste existante
+ </summary>
+	<param name="xPiece">Pièce à ajouter</param>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.ListOfPieces.Charger(System.String,System.ComponentModel.BackgroundWorker)">
+	<summary>
+ Permet de charger l'ensemble des pièces existante pour un exercice pour une exploitation 
+ </summary>
+	<param name="nDos">numéro du dossier</param>
+	<param name="worker">barre de progression de la tâche</param>
+	<returns>retourne la liste des pièces</returns>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.ListOfPieces.ChargerBordereau(System.String,System.DateTime,System.DateTime,System.String,System.String,System.ComponentModel.BackgroundWorker)">
+	<summary>
+ Permet de charger l'ensemble des pièces existante pour un exercice pour une exploitation pour un journal et pour une période tout cela dans le bordereau
+ </summary>
+	<param name="nDos">numéro du dossier</param>
+	<param name="worker">barre de progression de la tâche</param>
+	<returns>retourne la liste des pièces</returns>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.ListOfPieces.ChargerSearch(System.String,System.ComponentModel.BackgroundWorker,System.Collections.Hashtable)">
+	<summary>
+ Permet de charger l'ensemble des pièces existante pour un exercice pour une exploitation selon des critères de filtrage (recherche)
+ </summary>
+	<param name="nDos">numéro du dossier</param>
+	<param name="worker">barre de progression de la tâche</param>
+	<returns>retourne la liste des pièces</returns>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.ListOfPieces.ReportProgress(System.ComponentModel.BackgroundWorker,System.Int32,System.Int32)">
+	<summary>
+ Permet d'implémenter la barre de progression du chargement des données
+ </summary>
+	<param name="worker">barre de progression de la tâche</param>
+	<param name="value">valeur en cours de progression</param>
+	<param name="max">valeur max de la barre de progression</param>
+	<remarks></remarks>
+</member><member name="P:AgrigestEDI.Piece.Lignes">
+	<summary>
+ liste des lignes associées à la pièce
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:AgrigestEDI.Piece.Exporte">
+	<summary>
+ définie si la pièce a été exporté
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:AgrigestEDI.Piece.DateExport">
+	<summary>
+ date de l'export de la pièce
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:AgrigestEDI.Piece.Libelle">
+	<summary>
+ libellé de la pièce
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:AgrigestEDI.Piece.NPiece">
+	<summary>
+ numéro de la pièce
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:AgrigestEDI.Piece.NPrevPiece">
+	<summary>
+ numéro de pièce pour permettre des MAJ
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:AgrigestEDI.Piece.DatePiece">
+	<summary>
+ date de la pièce
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:AgrigestEDI.Piece.PrevDatePiece">
+	<summary>
+ date de la pièce pour permettre des MAJ
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:AgrigestEDI.Piece.Journal">
+	<summary>
+ code journal de la pièce
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:AgrigestEDI.Piece.Dossier">
+	<summary>
+ numéro du dossier
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:AgrigestEDI.Piece.PrevDossier">
+	<summary>
+ numéro de dossier de la pièce pour permettre des MAJ
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:AgrigestEDI.Piece.IsEquilibre">
+	<summary>
+ permet de définir si la pièce est équilibré
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:AgrigestEDI.Piece.IsNew">
+	<summary>
+ indique s'il s'agit d'un nouvelle pièce 
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:AgrigestEDI.Piece.MontantDebContrePartie">
+	<summary>
+ permet de définir le montant total de la contre partie au débit
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:AgrigestEDI.Piece.MontantCreContrePartie">
+	<summary>
+ permet de définir le montant total de la contre partie au crédit
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:AgrigestEDI.Piece.SoldeContrePartie">
+	<summary>
+ permet de retourner le solde de la contre partie pour la pièce
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.Piece.SetMontantContrePartie(System.String)">
+	<summary>
+ permet de cumuler le montant débit-credit de la pièce sur le compte de contre partie
+ passer en paramètre (utiliser pour le bordereau)
+ </summary>
+	<param name="Compte"></param>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.Piece.#ctor">
+	<summary>
+ constructeur par défaut
+ </summary>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.Piece.#ctor(System.Boolean,System.String)">
+	<summary>
+ détermine le numéro de pièce en fonction du journal
+ </summary>
+	<param name="bNewPiece"></param>
+	<param name="sJournal"></param>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.Piece.#ctor(System.String,System.DateTime,System.Int32)">
+	<summary>
+ détermine le numéro de pièce pour le bordereau
+ </summary>
+	<param name="sJournal"></param>
+	<param name="sDate"></param>
+	<param name="nLastPieceBordereau"></param>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.Piece.#ctor(System.Int32,System.DateTime)">
+	<summary>
+ constructeur pour charger les propriétées d'une pièce ainsi que les lignes associées
+ </summary>
+	<param name="nNumPiece"></param>
+	<param name="dtDatePiece"></param>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.Piece.#ctor(AgrigestEDI.dbDonneesDataSet.PiecesRow)">
+	<summary>
+ constructeur pour charger les propriétées d'une pièce ainsi que les lignes associées
+ </summary>
+	<param name="drp">dataset contenant la pièce ainsi que les lignes associées</param>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.Piece.#ctor(AgrigestEDI.dbDonneesDataSet.PiecesRow,System.String)">
+	<summary>
+ constructeur pour charger les propriétées d'une pièce ainsi que les lignes associées
+ </summary>
+	<param name="drp">dataset contenant la pièce ainsi que les lignes associées</param>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.Piece.DefineDateNumPiece(System.String)">
+	<summary>
+ permet grace au journal et à l'option d'incrémentation de la pièce de définir le numéro de pièce et la date
+ </summary>
+	<param name="sJournal"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.Piece.SetDataPieceFromJournal(System.String,System.Boolean)">
+	<summary>
+ permet de définie en fonction du journal le numéro de ma pièce
+ </summary>
+	<param name="sJournal"></param>
+	<param name="NumLockted"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.Piece.Clone(System.Int32)">
+	<summary>
+ permet de cloner une pièce 
+ </summary>
+	<param name="nLastPieceBordereau"></param>
+	<returns></returns>
+	<remarks>si celle ci est dans un bordereau il faut faire passer le numéro du dernier enregistrement 
+ dans le bordereau pour qu'il puisse créer sur la pièce cloné le bon numéro</remarks>
+</member><member name="M:AgrigestEDI.Piece.ChargerPiece(System.Int32,System.DateTime)">
+	<summary>
+ Chargement d'une pièce d'un exercice pour une exploitation 
+ </summary>
+	<param name="nPiece">numéro de la pièce</param>
+	<param name="dtPiece">date de la pièce</param>
+	<returns>retourne la pièce demandée</returns>
+	<remarks>My.User.Name est le numéro du dossier en cour de traitement</remarks>
+</member><member name="M:AgrigestEDI.Piece.AjoutPiece">
+	<summary>
+ Ajoute la pièce indiqué pour un exercice d'un exploitation
+ </summary>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.Piece.MAJPiece">
+	<summary>
+ MAJ la pièce indiqué pour un exercice d'un exploitation
+ </summary>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.Piece.SuppressionPiece">
+	<summary>
+ Supprime la pièce et ses enregistrements de la base de donnée
+ </summary>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.Piece.AjoutDataLigne(System.Data.OleDb.OleDbTransaction@)">
+	<summary>
+ Ajoute les lignes et les mouvements dans la base de donnée via transaction
+ </summary>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.Piece.SuppressionDataLigne(System.Data.OleDb.OleDbTransaction@)">
+	<summary>
+ Suppression des lignes et des mouvements dans la base de donnée via transaction
+ </summary>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.Piece.CalcSommeDeb">
+	<summary>
+ calcule la somme en débit en temps réel 
+ </summary>
+	<returns>retour le débit</returns>
+	<remarks>pour le moment seulement utiliser dans la barre des tâches</remarks>
+</member><member name="M:AgrigestEDI.Piece.CalcSommeCre">
+	<summary>
+ calcule la somme en crédit en temps réel 
+ </summary>
+	<returns>retour le crédit</returns>
+	<remarks>pour le moment seulement utiliser dans la barre des tâches</remarks>
+</member><member name="M:AgrigestEDI.Piece.ClosePiece(System.String,System.String,AgrigestEDI.dbDonneesDataSet.CompteTotalDataTable)">
+	<summary>
+ Permet la cloturer les écritures d'une pièce sur un compte
+ </summary>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.Piece.RafraichirBase">
+	<summary>
+ permet de rafraichir la pièce sur qui la demande a été faite
+ </summary>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.Piece.RafraichirBase(System.Int32,System.DateTime)">
+	<summary>
+ permet de rafraichir les données concernant une pièce précise sur celle en cours
+ </summary>
+	<param name="nPiece"></param>
+	<param name="dtDatePiece"></param>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.Piece.SavePieceToModele(System.String)">
+	<summary>
+ permet de sauvegarder un pièce en tant que modèle
+ </summary>
+	<param name="sNameModele"></param>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.Piece.ChargerPiece(System.String,System.Int32,System.DateTime)">
+	<summary>
+ Chargement d'une pièce d'un exercice pour une exploitation 
+ </summary>
+	<param name="nDos">numéro du dossier</param>
+	<param name="nPiece">numéro de la pièce</param>
+	<param name="dtPiece">date de la pièce</param>
+	<returns>retourne la pièce demandée</returns>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.Piece.SuppressionPiece(System.String,System.Int32,System.DateTime)">
+	<summary>
+ permet de supprimer une pièce dans la base de données
+ </summary>
+	<param name="nDos"></param>
+	<param name="nPiece"></param>
+	<param name="dtPiece"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.Piece.CloseTVAHT(System.Boolean,System.Data.DataTable)">
+	<summary>
+ Permet la cloture de la TVA pour une pièce au montant HT
+ </summary>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.Piece.IsTVAClosed(System.Data.DataTable)">
+	<summary>
+ permet de savoir lors de la cloture de la pièce si la TVA à bien été réalisé
+ </summary>
+	<param name="dtTVA"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.Piece.CloseTVATTC(System.Boolean,System.Data.DataTable)">
+	<summary>
+ Permet la cloture de la TVA pour une pièce au montant TTC
+ </summary>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.Piece.GetTableTVA(System.Data.DataTable)">
+	<summary>
+ permet de retourner la table récap des codes TVA avec les montant afin de renseigner
+ les lignes de TVA pour les pièces qui sont importer depuis un fichier isagri
+ </summary>
+	<param name="dtTVA"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:AgrigestEDI.Piece.RecapTva.GetCodeTva">
+	<summary>
+ retourne le code TVA
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:AgrigestEDI.Piece.RecapTva.IsDebitTVA">
+	<summary>
+ définie s'il existe un montant TVA à traiter
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:AgrigestEDI.Piece.RecapTva.GetValeurTVA">
+	<summary>
+ retourne le montant de la TVA 
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:AgrigestEDI.Piece.RecapTva.GetValeurHT(System.String)">
+	<summary>
+ retourne le montant de la base HT du code TVA
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.Piece.RecapTva.#ctor">
+	<summary>
+ constructeur par défaut
+ </summary>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.Piece.RecapTva.#ctor(System.String,System.Decimal,System.Decimal,System.Single)">
+	<summary>
+ Ajoute un nouveau code TVA avec ses montants associés
+ </summary>
+	<param name="Code"></param>
+	<param name="DValeurHT"></param>
+	<param name="CValeurHT"></param>
+	<param name="TauxTVA"></param>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.Piece.RecapTva.Add(System.Decimal,System.Decimal)">
+	<summary>
+ Ajoute un montant débit crédit pour un code TVA
+ </summary>
+	<param name="DValeurHT"></param>
+	<param name="CValeurHT"></param>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.Piece.RecapTva.SubtractValeurHTDeb(System.Decimal)">
+	<summary>
+ soustrait la valeur HT existant d'un autre compte TVA au montant total de la base HT entraint d'être traité
+ </summary>
+	<param name="ValeurHTDeb"></param>
+	<remarks></remarks>
+</member><member name="T:AgrigestEDI.Piece.RecapTva">
+	<summary>
+ Récapitulatif de code TVA avec leur montant HT 
+ avec suppression de montant de TVA existant dans d'autre ligne
+ </summary>
+	<remarks></remarks>
+</member><member name="P:AgrigestEDI.Piece.RecapTvaWithHT.GetValeurHT">
+	<summary>
+ retourne la valeur du montant HT de base pour la TVA
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:AgrigestEDI.Piece.RecapTvaWithHT.GetValeurTVA">
+	<summary>
+ retourne la TVA existant
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:AgrigestEDI.Piece.RecapTvaWithHT.IsDebitTVA">
+	<summary>
+ définie si il y a une valeur de TVA à traiter
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.Piece.RecapTvaWithHT.#ctor">
+	<summary>
+ constructeur par détaut
+ </summary>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.Piece.RecapTvaWithHT.#ctor(System.String,System.Boolean,System.Decimal,System.Decimal)">
+	<summary>
+ permet d'ajouter un code TVA a la liste ainsi que ses montants
+ </summary>
+	<param name="code"></param>
+	<param name="bDebit"></param>
+	<param name="valeurTVA"></param>
+	<param name="valeurHT"></param>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.Piece.RecapTvaWithHT.Add(System.Boolean,System.Decimal,System.Decimal)">
+	<summary>
+ permet d'ajouter un débit et un crédit pour le meme code TVA
+ </summary>
+	<param name="bDebit"></param>
+	<param name="valeurTVA"></param>
+	<param name="valeurHT"></param>
+	<remarks></remarks>
+</member><member name="T:AgrigestEDI.Piece.RecapTvaWithHT">
+	<summary>
+ Tableau récapitulatif pour les codes TVA avec des montants HT
+ </summary>
+	<remarks></remarks>
+</member><member name="P:AgrigestEDI.Piece.RecapTvaInvers.CodeTva">
+	<summary>
+ indique le code TVA traité
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:AgrigestEDI.Piece.RecapTvaInvers.DebitValue">
+	<summary>
+ définie s'il existe une valeur en TTC à traiter
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:AgrigestEDI.Piece.RecapTvaInvers.ValeurTVA">
+	<summary>
+ détermine la valeur de la  TVA
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:AgrigestEDI.Piece.RecapTvaInvers.ValeurHT">
+	<summary>
+ détermine la valeur de la base HT pour le code TVA
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.Piece.RecapTvaInvers.#ctor">
+	<summary>
+ constructeur par défaut
+ </summary>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.Piece.RecapTvaInvers.#ctor(System.String,System.Decimal,System.Decimal,System.Single)">
+	<summary>
+ constructeur pour la création d'un nouveau code TVA en mode TTC avec ses informations
+ </summary>
+	<param name="Code"></param>
+	<param name="DValeurTTC"></param>
+	<param name="CValeurTTC"></param>
+	<param name="TauxTVA"></param>
+	<remarks></remarks>
+</member><member name="T:AgrigestEDI.Piece.RecapTvaInvers">
+	<summary>
+ tableau récapitulatif des code TVA pour la cloture TVA en mode TTC
+ </summary>
+	<remarks></remarks>
+</member><member name="P:AgrigestEDI.Ligne.NLigne">
+	<summary>
+ numéro de la ligne
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:AgrigestEDI.Ligne.CodeTva">
+	<summary>
+ code TVA de la ligne
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:AgrigestEDI.Ligne.Libelle">
+	<summary>
+ libellé de la ligne
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:AgrigestEDI.Ligne.Compte">
+	<summary>
+ Numéro de compte de la ligne
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:AgrigestEDI.Ligne.Activite">
+	<summary>
+ code activité de la ligne pour la saisie
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:AgrigestEDI.Ligne.ActiviteShowAll">
+	<summary>
+ code activité de la ligne pour le traitement dans le code
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:AgrigestEDI.Ligne.MontantDeb">
+	<summary>
+ Montant du débit
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:AgrigestEDI.Ligne.MontantCre">
+	<summary>
+ Montant du crédit
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:AgrigestEDI.Ligne.Quantite1">
+	<summary>
+ Quantité 1
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:AgrigestEDI.Ligne.Quantite2">
+	<summary>
+ Quantité 2
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:AgrigestEDI.Ligne.Unite1">
+	<summary>
+ unité de la quantité 1
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:AgrigestEDI.Ligne.Unite2">
+	<summary>
+  unité de la quantité 2
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:AgrigestEDI.Ligne.MOrdre">
+	<summary>
+ Numéro de l'ordre (1-2-3)
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:AgrigestEDI.Ligne.MontantBaseHT">
+	<summary>
+ Montant de la base HT pour les lignes de TVA
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:AgrigestEDI.Ligne.CodeTVACompte">
+	<summary>
+ Numéro du compte de TVA pour faire la cloture de TVA
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:AgrigestEDI.Ligne.TotalDebit">
+	<summary>
+ Total du débit pour le compte de la ligne
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:AgrigestEDI.Ligne.TotalCredit">
+	<summary>
+ Total du crédit pour le compte de la ligne
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:AgrigestEDI.Ligne.ContrePartie">
+	<summary>
+ numéro du compte de contre partie
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:AgrigestEDI.Ligne.ContrePartieLib">
+	<summary>
+ Libellé du compte de contre partie
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:AgrigestEDI.Ligne.LibelleAuto">
+	<summary>
+ détermine si le libellé peut etre mis automatiquement ou pas
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>lorsque l'utilisateur a saisie quelques chose dans le libellé
+  celui ci ne peut etre changé automatiquement</remarks>
+</member><member name="P:AgrigestEDI.Ligne.CodePointageMvt">
+	<summary>
+ Code pointage associé au mouvement
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:AgrigestEDI.Ligne.DatePointageMvt">
+	<summary>
+ Date du pointage associé au mouvement
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:AgrigestEDI.Ligne.MIdANouveau">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:AgrigestEDI.Ligne.MIdANouveauSuiv">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:AgrigestEDI.Ligne.IsDonneeValide(AgrigestEDI.dbDonneesDataSet.ReglesValidationDataTable)">
+	<summary>
+ détermine si la ligne est valide
+ </summary>
+	<param name="dtaRegle"></param>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:AgrigestEDI.Ligne.DataValidationDetail">
+	<summary>
+ structure permettant de retourner les informations sur la validation de la ligne
+ </summary>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.Ligne.#ctor">
+	<summary>
+ construteur par defaut de la ligne
+ </summary>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.Ligne.#ctor(AgrigestEDI.dbDonneesDataSet.LignesRow,AgrigestEDI.dbDonneesDataSet.MouvementsRow,System.Int32)">
+	<summary>
+ Chargement d'un ligne en fonction d'un mouvement
+ </summary>
+	<param name="drl">dataset de la ligne qui va etre alimenter</param>
+	<param name="drMvt">dataset du mouvement</param>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.Ligne.#ctor(AgrigestEDI.Importations.CFONB.LigneReleve,System.String,AgrigestEDI.dbDonneesDataSet)">
+	<summary>
+ constructeur de ligne pour des données provenant de l'importe de fichier bancaire
+ </summary>
+	<param name="LigneReleveBanque"></param>
+	<param name="sCompteBanque"></param>
+	<param name="dsBase"></param>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.Ligne.#ctor(AgrigestEDI.Importations.CFONB.LigneReleve,AgrigestEDI.dbDonneesDataSet)">
+	<summary>
+ constructeur de ligne pour des données provenant de l'importe de fichier bancaire 
+ pour un compte non défini et mis en attente de validation
+ </summary>
+	<param name="LigneReleveBanque"></param>
+	<param name="dsBase"></param>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.Ligne.ChargerLignes(AgrigestEDI.dbDonneesDataSet.LignesRow,System.Int32)">
+	<summary>
+ boucle que les différents mouvement de la ligne. seul les mouvements n'ayant pas de 48800000 dans la colonne ModMCpt seront traités
+ </summary>
+	<param name="drl">liste de lignes de mouvement associées à la pièce</param>
+	<returns>retourne la liste de lignes bien formaté</returns>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.Ligne.ChargerLignes(AgrigestEDI.dbDonneesDataSet.ModLignesRow,System.Int32)">
+	<summary>
+ boucle que les différents mouvement de la ligne. seul les mouvements n'ayant pas de 48800000 dans la colonne ModMCpt seront traités
+ </summary>
+	<param name="drl"></param>
+	<param name="nOrder"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.Ligne.#ctor(AgrigestEDI.dbDonneesDataSet.ModLignesRow,AgrigestEDI.dbDonneesDataSet.ModMouvementsRow,System.Int32)">
+	<summary>
+ Permet de chargement d'un ligne de modèle à partie des lignes de mouvements en base et de la ligne asssocié
+ </summary>
+	<param name="drl"></param>
+	<param name="drMvt"></param>
+	<param name="nOrder"></param>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.Ligne.AjouteLigneModeleMouvBase(System.String,System.String,System.String,System.Int32,System.Data.OleDb.OleDbTransaction@)">
+	<summary>
+ Intègre les données des mouvements pour la ligne
+ </summary>
+	<param name="sExploitation"></param>
+	<param name="sNomModele"></param>
+	<param name="sJournal"></param>
+	<param name="nligne"></param>
+	<param name="t"></param>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.Ligne.DeterminerUnites(AgrigestEDI.dbDonneesDataSet)">
+	<summary>
+ détermine les unitées du mouvement en fonction de l'exercice en cours
+ </summary>
+	<param name="ds">dataset</param>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.Ligne.ChangementLigne(AgrigestEDI.dbDonneesDataSet@,System.Windows.Forms.BindingSource@)">
+	<summary>
+ chargement des informations du compte dans la ligne en cours 
+ </summary>
+	<param name="dsAgrigest"></param>
+	<param name="TVABindingSource"></param>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.Ligne.ChangementLigneA(AgrigestEDI.dbDonneesDataSet@)">
+	<summary>
+ chargement du libellé de la ligne en fonction de l'activité saisie
+ </summary>
+	<param name="dsAgrigest"></param>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.Ligne.ValidationDonneesSaisies(AgrigestEDI.dbDonneesDataSet.ReglesValidationDataTable)">
+	<summary>
+ Valide la cohérence des données de la ligne
+ </summary>
+	<returns>retourne les informations concertants l'intégrité de la ligne</returns>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.Ligne.CheckAndCreateComptePlanComptable(System.String,System.Data.OleDb.OleDbTransaction@,System.String)">
+	<summary>
+ Vérifie que le compte existe bien dans le plan comptable 
+ Si le compte n'existe pas il va le créer ainsi que dans le plan comptable
+ si le compte existe mais pas au niveau du plan comptable il va aller le créer
+ </summary>
+	<param name="sCompte"></param>
+	<param name="t"></param>
+	<param name="sActivite"></param>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.Ligne.CheckAndCreateComptePlanComptable(System.String,AgrigestEDI.dbDonneesDataSet,System.String,System.String)">
+	<summary>
+ Vérifie que le compte existe bien dans le plan comptable 
+ Si le compte n'existe pas il va le créer ainsi que dans le plan comptable
+ si le compte existe mais pas au niveau du plan comptable il va aller le créer
+ </summary>
+	<param name="sCompte"></param>
+	<param name="ds"></param>
+	<param name="sActivite"></param>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.Ligne.Clone">
+	<summary>
+ Permet de cloner une ligne
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.Ligne.GetLigneModele(System.Boolean)">
+	<summary>
+ Permet de retourner les lignes d'un modèles pour qu'il soit intégré à une pièce
+ </summary>
+	<param name="bInsertValeurs"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.Ligne.DefineCodeTVA(AgrigestEDI.dbDonneesDataSet@,System.Windows.Forms.BindingSource@,System.String)">
+	<summary>
+ Permet de définir les codes TVA autorisé pour le compte en filtrant le bindingsource
+ </summary>
+	<param name="dsAgrigest"></param>
+	<param name="TVABindingSource"></param>
+	<param name="cpt"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:AgrigestEDI.Ligne">
+	<summary>
+ classe de la ligne
+ </summary>
+	<remarks></remarks>
+</member><member name="T:AgrigestEDI.DatagridViewTextBoxAutoCompleteColumn">
+	<summary>
+ Class permettant de gérer un textbox dans un grid avec un système d'autocomplete
+ </summary>
+	<remarks></remarks>
+</member><member name="T:AgrigestEDI.DatagridViewComboboxColumnCustom">
+	<summary>
+ Class permettant de gérer un combobox customisé pour la saisie de N° de compte
+ </summary>
+	<remarks></remarks>
+</member><member name="T:AgrigestEDI.DatagridViewNumericTextBoxColumn">
+	<summary>
+ Class permettant de gérer un textbox avec seulement une saisie de numérique.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:AgrigestEDI.DataGridViewEnter.JumpToMontant">
+	<summary>
+ Permet de savoir s'il faut sauter ou non vers la case suivante
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>cela sautera a la case suivant dont la propriété readonly est false</remarks>
+</member><member name="T:AgrigestEDI.DataGridViewEnter">
+	<summary>
+ Class permettant de gérer le grid de saisie spécifique tablé sur un datagrid classique
+ ''' </summary>
+	<remarks></remarks>
+</member><member name="T:AgrigestEDI.ImprImmoDataSet.ImpTabImmoDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.ImprImmoDataSet.ImpTabDepImmoDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.ImprImmoDataSet.ImpRecapImmoDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.ImprImmoDataSet.ImpTabCessImmoDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.ImprImmoDataSet.ImpAmortDerDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.ImprImmoDataSet.ImpPassReelImmoDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.ImprImmoDataSet.ImpTabClaImmoDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.ImprImmoDataSet.ImpCalProvDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.ImprImmoDataSet.ImpTabImmoRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.ImprImmoDataSet.ImpTabDepImmoRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.ImprImmoDataSet.ImpRecapImmoRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.ImprImmoDataSet.ImpTabCessImmoRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.ImprImmoDataSet.ImpAmortDerRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.ImprImmoDataSet.ImpPassReelImmoRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.ImprImmoDataSet.ImpTabClaImmoRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.ImprImmoDataSet.ImpCalProvRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.ImprImmoDataSet.ImpTabImmoRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.ImprImmoDataSet.ImpTabDepImmoRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.ImprImmoDataSet.ImpRecapImmoRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.ImprImmoDataSet.ImpTabCessImmoRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.ImprImmoDataSet.ImpAmortDerRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.ImprImmoDataSet.ImpPassReelImmoRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.ImprImmoDataSet.ImpTabClaImmoRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.ImprImmoDataSet.ImpCalProvRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.ImprImmoDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="M:AgrigestEDI.GestionMenu.Menu.ChargerMenus(System.Windows.Forms.ListView)">
+	<summary>
+ Permet d'afficher le menu sur la page d'acceuil
+ </summary>
+	<param name="lv"></param>
+	<remarks></remarks>
+</member><member name="T:AgrigestEDI.GestionMenu.Menu">
+	<summary>
+ Class permettant la gestion du menu latéral
+ </summary>
+	<remarks></remarks>
+</member><member name="T:AgrigestEDI.dbDonneesDataSet.ActivitesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.dbDonneesDataSet.ComptesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.dbDonneesDataSet.DossiersDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.dbDonneesDataSet.ExploitationsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.dbDonneesDataSet.LignesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.dbDonneesDataSet.MouvementsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.dbDonneesDataSet.PiecesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.dbDonneesDataSet.PlanComptableDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.dbDonneesDataSet.TVADataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.dbDonneesDataSet.PlanTypeDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.dbDonneesDataSet.JournalDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.dbDonneesDataSet.ModLignesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.dbDonneesDataSet.ModMouvementsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.dbDonneesDataSet.CompteTotalDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.dbDonneesDataSet.ReglesValidationDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.dbDonneesDataSet.ActivitesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.dbDonneesDataSet.ComptesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.dbDonneesDataSet.DossiersRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.dbDonneesDataSet.ExploitationsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.dbDonneesDataSet.LignesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.dbDonneesDataSet.MouvementsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.dbDonneesDataSet.PiecesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.dbDonneesDataSet.PlanComptableRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.dbDonneesDataSet.TVARow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.dbDonneesDataSet.PlanTypeRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.dbDonneesDataSet.JournalRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.dbDonneesDataSet.ModLignesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.dbDonneesDataSet.ModMouvementsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.dbDonneesDataSet.CompteTotalRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.dbDonneesDataSet.ReglesValidationRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.dbDonneesDataSet.ActivitesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.dbDonneesDataSet.ComptesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.dbDonneesDataSet.DossiersRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.dbDonneesDataSet.ExploitationsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.dbDonneesDataSet.LignesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.dbDonneesDataSet.MouvementsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.dbDonneesDataSet.PiecesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.dbDonneesDataSet.PlanComptableRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.dbDonneesDataSet.TVARowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.dbDonneesDataSet.PlanTypeRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.dbDonneesDataSet.JournalRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.dbDonneesDataSet.ModLignesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.dbDonneesDataSet.ModMouvementsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.dbDonneesDataSet.CompteTotalRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.dbDonneesDataSet.ReglesValidationRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.dbDonneesDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:AgrigestEDI.dbDonneesDataSetTableAdapters.ActivitesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:AgrigestEDI.dbDonneesDataSetTableAdapters.ComptesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:AgrigestEDI.dbDonneesDataSetTableAdapters.DossiersTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:AgrigestEDI.dbDonneesDataSetTableAdapters.ExploitationsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:AgrigestEDI.dbDonneesDataSetTableAdapters.LignesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:AgrigestEDI.dbDonneesDataSetTableAdapters.MouvementsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:AgrigestEDI.dbDonneesDataSetTableAdapters.PiecesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:AgrigestEDI.dbDonneesDataSetTableAdapters.PlanComptableTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:AgrigestEDI.dbDonneesDataSetTableAdapters.TVATableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:AgrigestEDI.dbDonneesDataSetTableAdapters.PlanTypeTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:AgrigestEDI.dbDonneesDataSetTableAdapters.JournalTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:AgrigestEDI.dbDonneesDataSetTableAdapters.ModLignesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:AgrigestEDI.dbDonneesDataSetTableAdapters.ModMouvementsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:AgrigestEDI.dbDonneesDataSetTableAdapters.CompteTotalTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:AgrigestEDI.dbDonneesDataSetTableAdapters.ReglesValidationTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:AgrigestEDI.FrModele">
+	<summary>
+ Classe gérant la forme de la grille de modele
+ </summary>
+	<remarks></remarks>
+</member><member name="F:AgrigestEDI.DossierPrincipal._IsComptaCloture">
+	<summary>
+ propriété pour savoir si le dossier est cloturé
+ </summary>
+	<remarks>Attention il est possible de saisir des pièces même si c'est cloturé car la date 
+ est encore dans l'exercice du dossier, celui ci doit etre supérieur à la date de cloture pour 
+ qu'il y ai le blocage</remarks>
+</member><member name="P:AgrigestEDI.DossierPrincipal.IncrementationPiece">
+	<summary>
+ Donne le type d'incrémentation du journal
+ </summary>
+</member><member name="P:AgrigestEDI.DossierPrincipal.ExportComplet">
+	<summary>
+ Si vrai, l'option pour exporter tout le dossier est cochée par défaut
+ </summary>
+</member><member name="M:AgrigestEDI.DossierPrincipal.#ctor(System.String)">
+	<summary>
+ constructeur et initialisation des données à Zéro pour un dossier
+ </summary>
+	<param name="NameDossier">Nom du dossier</param>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.DossierPrincipal.#ctor(AgrigestEDI.dbDonneesDataSet.DossiersRow,AgrigestEDI.dbDonneesDataSet.ExploitationsRow)">
+	<summary>
+ constructeur alimentant la class à partir des lignes de dossier, d'exploitation et de journal
+ </summary>
+	<param name="xRowDossier">Ligne du dossier</param>
+	<param name="xRowExploitation">ligne de l'exploitation</param>
+	<remarks></remarks>
+</member><member name="T:AgrigestEDI.DossierPrincipal">
+	<summary>
+ Class permettant de gérer les informations principale lier à un dossier 
+ </summary>
+	<remarks></remarks>
+</member><member name="P:AgrigestEDI.ToolStripCheckBox.ToolStripCheckBoxControl">
+	<summary>
+ propriété permettant de retourner le checkbox
+ </summary>
+	<returns>checkbox</returns>
+	<remarks></remarks>
+</member><member name="P:AgrigestEDI.ToolStripCheckBox.ToolStripCheckBoxEnabled">
+	<summary>
+ permet de gérer l'état d'activation de la case à cocher
+ </summary>
+	<value>boolean</value>
+	<returns>boolean</returns>
+	<remarks></remarks>
+</member><member name="T:AgrigestEDI.ToolStripCheckBox">
+	<summary>
+ Class permettant de réaliser un CheckBox dans la barre du tool 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.AgriTools.SelectDistinct(System.Data.DataTable,System.String)">
+	<summary>
+ permet de retourner une table Distint provenant d'un autre table en faisant passer la colonne a filtrer
+ </summary>
+	<param name="sourceTable">Table contenant les informations</param>
+	<param name="sourceColumn">Colonne de filtrage</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.AgriTools.SelectDistinct(System.Data.DataTable,System.String,System.String)">
+	<summary>
+ permet de retourner une table Distint sur deux colonnes provenant d'un autre table en faisant passer la colonne a filtrer
+ </summary>
+	<param name="sourceTable">Table contenant les informations</param>
+	<param name="sourceColumn1">Première colonne de filtrage</param>
+	<param name="sourceColumn2">Seconde colonne de filtrage</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:AgrigestEDI.ActiUpdates.Updates.#ctor">
+	<remarks/>
+</member><member name="E:AgrigestEDI.ActiUpdates.Updates.GetUpdatesCompleted">
+	<remarks/>
+</member><member name="M:AgrigestEDI.ActiUpdates.Updates.GetUpdates(System.String,System.String,System.Int32)">
+	<remarks/>
+</member><member name="M:AgrigestEDI.ActiUpdates.Updates.GetUpdatesAsync(System.String,System.String,System.Int32)">
+	<remarks/>
+</member><member name="M:AgrigestEDI.ActiUpdates.Updates.GetUpdatesAsync(System.String,System.String,System.Int32,System.Object)">
+	<remarks/>
+</member><member name="M:AgrigestEDI.ActiUpdates.Updates.CancelAsync(System.Object)">
+	<remarks/>
+</member><member name="T:AgrigestEDI.ActiUpdates.Updates">
+	<remarks/>
+</member><member name="T:AgrigestEDI.ActiUpdates.dsUpdates.ApplicationsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.ActiUpdates.dsUpdates.UpdatesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgrigestEDI.ActiUpdates.dsUpdates.ApplicationsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.ActiUpdates.dsUpdates.UpdatesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgrigestEDI.ActiUpdates.dsUpdates.ApplicationsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.ActiUpdates.dsUpdates.UpdatesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgrigestEDI.ActiUpdates.dsUpdates">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:AgrigestEDI.ActiUpdates.GetUpdatesCompletedEventHandler">
+	<remarks/>
+</member><member name="P:AgrigestEDI.ActiUpdates.GetUpdatesCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:AgrigestEDI.ActiUpdates.GetUpdatesCompletedEventArgs">
+	<remarks/>
+</member><member name="T:AgrigestEDI.My.MyApplication">
+	<summary>
+Les événements suivants sont disponibles pour MyApplication :
+ 
+ Startup : déclenché lors du démarrage de l'application, avant la création du formulaire de démarrage.
+ Shutdown : déclenché après la fermeture de tous les formulaires de l'application. Cet événement n'est pas déclenché si l'application se termine de façon anormale.
+ UnhandledException : déclenché si l'application rencontre une exception non gérée.
+ StartupNextInstance : déclenché lors du lancement d'une application à instance unique et si l'application est déjà active. 
+ NetworkAvailabilityChanged : déclenché lorsque la connexion réseau est connectée ou déconnectée.
+ </summary>
+	<remarks></remarks>
+</member>
+</members>
+</doc>
